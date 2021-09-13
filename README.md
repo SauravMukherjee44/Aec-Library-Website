@@ -13,9 +13,11 @@ So, Here you go!! Using this College Library Website you can keep a record of al
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/SauravMukherjee44/Aec-Library-Website?color=2b9348"></a>
 </div>
 
-<p align="center"><img src="./assets/images/poster.jpg" height="500" width="800"></p>
+
 
 # Contribution is fun! 🧡:
+
+<p align="center"><img src="./assets/images/poster.jpg" height="500" width="800"></p>
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
