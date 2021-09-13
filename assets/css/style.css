@@ -9,7 +9,9 @@
   z-index: 999;
 }
 .bg-info{
-  background-color: #2e2e2e!important;
+/*   background-color: #2e2e2e!important;
+  box-shadow: 0px 0px 16px 9px black; */
+   background-color: #343a40 !important;
   box-shadow: 0px 0px 16px 9px black;
 }
 
@@ -27,6 +29,7 @@
 }
 
 .container h1{
+  padding: 90px;
   color: rgb(255, 255, 255);
   font-family: 'Poiret One', cursive;
   font-weight: bolder;
@@ -276,8 +279,9 @@ a.nav-link { /* To heighlight */
   }
       
   .bg-info {  /* To make nav-bar background transparent and shadow effect */
-    background-color: #ada39f00!important;
-    box-shadow: 0px 0px 16px 9px #efecec4d;
+/*     background-color: #ada39f00!important;
+    box-shadow: 0px 0px 16px 9px #efecec4d; */
+    z-index:100;
 }   
 
 
