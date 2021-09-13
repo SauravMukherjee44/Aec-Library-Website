@@ -6,7 +6,7 @@ This is a College Library Website in which you can keep a record of all the book
 </h2> 
 
 So, Here you go!! Using this College Library Website you can keep a record of all your college Books and stuffs 🤩. Excited?
-<div align="center">
+<div align="left">
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://sloc.xyz/github/SauravMukherjee44/Aec-Library-Website" alt="LOC"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://img.shields.io/github/stars/SauravMukherjee44/Aec-Library-Website" alt="Stars Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/network/members"><img src="https://img.shields.io/github/forks/SauravMukherjee44/Aec-Library-Website" alt="Forks Badge"/></a>
