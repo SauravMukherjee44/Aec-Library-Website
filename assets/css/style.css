@@ -223,3 +223,25 @@ footer {
     top: 20px;
   }
 }
+
+a.nav-link { /* To heighlight */
+  color: floralwhite !important;
+  font-size: 28px;
+}
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-info { /* To make nav-bar sticky */
+      position: fixed;
+      top: 0;
+      width: 100%;
+  }
+      
+  .bg-info {  /* To make nav-bar background transparent and shadow effect */
+    background-color: #ada39f00!important;
+    box-shadow: 0px 0px 16px 9px #efecec4d;
+}   
+
+
+strong {  /* To make text more visible */
+  color: floralwhite;
+  font-size: 25px;
+}
