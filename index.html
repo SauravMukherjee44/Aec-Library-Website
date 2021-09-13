@@ -1,93 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome -->
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous"
-  />
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>AEC Library</title>
-    
-    <!-- Title bar icon -->
-    <link rel = "icon" href ="./assets/Favicons/3.png" type = "image/x-icon"> 
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  </head>
-  
-  <body style="background-image: url('https://res.cloudinary.com/dkak37mek/image/upload/v1631397376/chuttersnap-Zf64Osndqvc-unsplash_qhr5fj.jpg?raw=true'); background-color: rgba(236, 236, 236, 0.842); background-size: cover;
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>AEC Library</title>
+
+  <!-- Title bar icon -->
+  <link rel="icon" href="./assets/Favicons/3.png" type="image/x-icon">
+
+  <!-- Adding new font -> poriet-one -->
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background-image: url('https://res.cloudinary.com/dkak37mek/image/upload/v1631397376/chuttersnap-Zf64Osndqvc-unsplash_qhr5fj.jpg?raw=true'); background-color: rgba(236, 236, 236, 0.842); background-size: cover;
   background-repeat: no-repeat;">
-  
 
-    <div id="topBtn" title="Go to Top">
-      <a href="#"><span class="fa fa-angle-up"></span></a>
+
+  <div id="topBtn" title="Go to Top">
+    <a href="#"><span class="fa fa-angle-up"></span></a>
+  </div>
+
+  <!-- pre-loader -->
+  <div id="loading"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <a class="navbar-brand ml-4" href="#"><img src="assets/logos/Logo Aec.png" alt="AEC Library" class="logo-img"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item"><a href="./public/donate-book.html" class="nav-link">Donate Books</a></li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-dark my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
     </div>
-<<<<<<< Updated upstream
-
-    <!-- pre-loader -->
-    <div id="loading"></div>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
-      <a class="navbar-brand ml-4" href="#"><img src="assets/logos/Logo Aec.png" alt="AEC Library" class="logo-img"></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item"><a href="./public/donate-book.html" class="nav-link">Donate Books</a></li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            id="searchTxt"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-dark my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
-=======
   </nav>
 
   <div id="message"></div>
 
   <div class="container my-3">
-    <br>
-    <br>
-    <br>
-    <br>
     <h1>AEC LIBRARY </h1>
     <h5 align="center">
       <a href="" style="color:black;" class="typewrite" data-period="2000"
@@ -102,134 +75,104 @@
         <div class="col-sm-10">
           <input type="text" class="input-box" id="bookName" placeholder="Book Name" />
         </div>
->>>>>>> Stashed changes
       </div>
-    </nav>
-
-    <div id="message"></div>
-
-    <div class="container my-3">
-      <h1>AEC LIBRARY </h1>
-      <h5 align="center">
-        <a href="" style="color:black;" class="typewrite" data-period="2000" data-type='[ "“If you don’t like to read, you haven’t found the right book.” – J.K. Rowling", "“That’s the thing about books. They let you travel without moving your feet.” – Jhumpa Lahiri", "“There is more treasure in books than in all the pirate’s loot on Treasure Island.” – Walt Disney", "“Some of these things are true and some of them lies. But they are all good stories.” – Hilary Mantel" ]'>
-          <span class="wrap"></span>
-        </a>
-      </h5>
-      <hr />
-      <form id="libraryForm">
-        <div class="form-group row">
-          <label for="bookName" class="col-sm-2 col-form-label">Name</label>
-          <div class="col-sm-10">
-            <input
-              type="text"
-              class="input-box"
-              id="bookName"
-              placeholder="Book Name"
-            />
-          </div>
+      <div class="form-group row">
+        <label for="Author" class="col-sm-2 col-form-label"> <strong>Author</strong></label>
+        <div class="col-sm-10">
+          <input type="text" class="input-box" id="author" placeholder="Author" />
         </div>
-        <div class="form-group row">
-          <label for="Author" class="col-sm-2 col-form-label">Author</label>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0"> <strong>Category</strong></legend>
+
           <div class="col-sm-10">
-            <input
-              type="text"
-              class="input-box"
-              id="author"
-              placeholder="Author"
-            />
-          </div>
-        </div>
-        <fieldset class="form-group">
-          <div class="row">
-            <legend class="col-form-label col-sm-2 pt-0">Category</legend>
 
-            <div class="col-sm-10">
-               
-                <div class="form-check">
+            <div class="form-check">
 
-                  <select class="form-check-input" name="type" id="type">
+              <select class="form-check-input" name="type" id="type">
 
-                    
-                    <option value="N/A">Select Category</option>
-                    <option value="Arts & Music">Arts & Music</option>
-                    <option value="Biographies">Biographies</option>
-                    <option value="Business">Business</option>
-                    <option value="Comics">Comics</option>
-                    <option value="Computer & Tech">Computers & Tech</option>
-                    <option value="Cooking">Cooking</option>
-                    <option value="Education & Reference">Education & Reference</option>
-                    <option value="Entertainment">Entertainment</option>
-                    <option value="Health & Fitness">Health & Fitness</option>
-                    <option value="History">History</option>
-                    <option value="Hobbies & Crafts">Hobbies & Crafts</option>
-                    <option value="Home & Garden">Home & Garden</option>
-                    <option value="Horror">Horror</option>
-                    <option value="Kids">Kids</option>
-                    <option value="Literature & Fiction">Literature & Fiction</option>
-                    <option value="Medical">Medical</option>
-                    <option value="Mystery">Mystery</option>
-                    <option value="Parenting">Parenting</option>
-                    <option value="Religion">Religion</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
-                    <option value="Science & Maths">Science & Maths</option>
-                    <option value="Self-Help">Self-Help</option>
-                    <option value="Social Sciences">Social Sciences</option>
-                    <option value="Sports">Sports</option>
-                    <option value="Travel">Travel</option>
-                    <option value="True Crime">True Crime</option>
-                   
-                
-                  </select>
-                </div>
+
+                <option value="N/A">Select Category</option>
+                <option value="Arts & Music">Arts & Music</option>
+                <option value="Biographies">Biographies</option>
+                <option value="Business">Business</option>
+                <option value="Comics">Comics</option>
+                <option value="Computer & Tech">Computers & Tech</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Education & Reference">Education & Reference</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Health & Fitness">Health & Fitness</option>
+                <option value="History">History</option>
+                <option value="Hobbies & Crafts">Hobbies & Crafts</option>
+                <option value="Home & Garden">Home & Garden</option>
+                <option value="Horror">Horror</option>
+                <option value="Kids">Kids</option>
+                <option value="Literature & Fiction">Literature & Fiction</option>
+                <option value="Medical">Medical</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Parenting">Parenting</option>
+                <option value="Religion">Religion</option>
+                <option value="Romance">Romance</option>
+                <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
+                <option value="Science & Maths">Science & Maths</option>
+                <option value="Self-Help">Self-Help</option>
+                <option value="Social Sciences">Social Sciences</option>
+                <option value="Sports">Sports</option>
+                <option value="Travel">Travel</option>
+                <option value="True Crime">True Crime</option>
+
+
+              </select>
             </div>
           </div>
-        </fieldset>
-
-        <div class="form-group row">
-          <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Add Book</button>
-          </div>
         </div>
-      </form>
+      </fieldset>
 
-      <div id="table">
-        <h1>Your books</h1>
-
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Author</th>
-
-              <th scope="col">Type</th>
-              <th scope="col">Category</th>
-
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody id="tableBody"></tbody>
-        </table>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Add Book</button>
+        </div>
       </div>
+    </form>
+
+    <div id="table">
+      <h1>Your books</h1>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Author</th>
+
+            <th scope="col">Type</th>
+            <th scope="col">Category</th>
+
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
     </div>
-   <div >
+  </div>
+  <div>
     <footer>
-        <div class="icons">
-            <ul>
-              <li>
-                <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
-              </li>
-              <p>2021 Copyright © Saurav Mukherjee</p>
-            </ul>
-          </div>
-      </footer>
-      
-   </div>
-</div>
-    <!-- <footer>
+      <div class="icons">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
+          </li>
+          <p>©2021 Copyright </p>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+  </div>
+  <!-- <footer>
       <div class="footer-main">
         <div class="text-center text-lg-start">
           <div>© 2020 Copyright:</div>
@@ -237,44 +180,39 @@
       </div>
     </footer> -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./assets/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <!-- Go to Top  -->
-    <script>
-      $(document).ready(function(){
-        $(window).scroll(function(){
-          if($(window).scrollTop() > 40){
-            $('#topBtn').css({
-              "opacity":"1", "pointer-events":"auto"
-            });
-          } else{
-            $('#topBtn').css({
-              "opacity":"0", "pointer-events":"none"
-            });
-          }
-        });
-
-        $("#topBtn").click(function(){
-          $('html ,body').animate({scrollTop : 0},400);
-        });
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- Go to Top  -->
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 40) {
+          $('#topBtn').css({
+            "opacity": "1", "pointer-events": "auto"
+          });
+        } else {
+          $('#topBtn').css({
+            "opacity": "0", "pointer-events": "none"
+          });
+        }
       });
-    </script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+      $("#topBtn").click(function () {
+        $('html ,body').animate({ scrollTop: 0 }, 400);
+      });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
