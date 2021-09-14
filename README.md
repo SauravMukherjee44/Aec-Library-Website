@@ -17,7 +17,13 @@ So, Here you go!! Using this College Library Website you can keep a record of al
 
 # Contribution is fun! 🧡:
 
-<p align="center"><img src="./assets/images/poster.jpg" height="500" width="800"></p>
+## 📌 Tech Stack:
+[![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)]
+[![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)]
+[![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
+
+## 📌 Sneak Peek of Main Page:
+![mockup720](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/20faae7d26b7a34fe2d7e346933dcd9c07b6e0bd/assets/images/aec.PNG)
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
