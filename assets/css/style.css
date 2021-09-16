@@ -26,6 +26,12 @@
 /* Category */
 .form-check-input{
   border-radius: 15px;
+  margin-top:10px;
+  padding: 5px;
+}
+.form-check-input:focus
+{
+  
 }
 
 .container h1{
@@ -59,6 +65,8 @@ html{
   width: 100%;
   padding-bottom: 2px;
   border-radius: 15px;
+  margin-top:14px;
+  padding-left:10px;
 }
 .input-box:focus {
   outline: none;
@@ -74,7 +82,7 @@ html{
 
 .btn {
     width: 150px;
-    height: 50px;
+    height: 40px;
     border: none;
     outline: none;
     color: #fff;
@@ -170,6 +178,7 @@ footer {
 
 .icons ul li {
   list-style: none;
+  margin-top: -6px;
 }
 
 .icons ul li a {
