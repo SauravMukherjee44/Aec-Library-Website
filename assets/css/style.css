@@ -362,9 +362,13 @@ strong {  /* To make text more visible */
   width:35px;
 }
 
-
-tr {    /* Make text visible */
-  color: floralwhite;
-  font-size: 25px;
-  font-family: -webkit-pictograph;
+form#libraryForm { /* To make form more representive */
+  border: 5px solid;
+  color: #ffe4c440;
+  box-shadow: 5px 5px 10px rgb(241 225 225 / 63%);
+  border-radius: 15px;
+  padding: 7rem;
+  align-items: center;
+  width: 100;
+  background-color: #a772498f;
 }
