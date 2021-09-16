@@ -8,6 +8,12 @@
   background: #03090f url('https://www.icegif.com/wp-content/uploads/loading-icegif.gif?fit=880%2C440&ssl=1') no-repeat center;
   z-index: 999;
 }
+.body-style{
+  background-image: url('https://res.cloudinary.com/dkak37mek/image/upload/v1631397376/chuttersnap-Zf64Osndqvc-unsplash_qhr5fj.jpg?raw=true');
+  background-color: rgba(236, 236, 236, 0.842);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .bg-info{
 /*   background-color: #2e2e2e!important;
   box-shadow: 0px 0px 16px 9px black; */
