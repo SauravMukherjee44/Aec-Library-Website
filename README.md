@@ -1,6 +1,6 @@
-<h1 align="center">College Library Website</h1>
+<h1 align="center">Open-Source Library Website</h1>
 
-This is a College Library Website in which you can keep a record of all the books you have issued. ( In development Phase )
+This is a College Library Website in which you can keep a record of all the books you have issued. [ In development Phase ]
 <h2> Website: 
 <a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit Now🚀</a>
 </h2> 
@@ -23,7 +23,7 @@ So, Here you go!! Using this College Library Website you can keep a record of al
 [![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
 
 ## 📌 Sneak Peek of Main Page:
-![mockup720](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/20faae7d26b7a34fe2d7e346933dcd9c07b6e0bd/assets/images/aec.PNG)
+![image](https://user-images.githubusercontent.com/84243683/133563450-89a2004a-2a79-4000-a268-1260c81ee2cd.png)
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
