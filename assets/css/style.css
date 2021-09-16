@@ -361,3 +361,10 @@ strong {  /* To make text more visible */
   animation-delay:7s;
   width:35px;
 }
+
+
+tr {    /* Make text visible */
+  color: floralwhite;
+  font-size: 25px;
+  font-family: -webkit-pictograph;
+}
