@@ -155,7 +155,7 @@ function deletefunction(pbookid) {
 
 window.onload=function(){
   document.getElementById('loading').style.display="none";
-  document.getElementById('body').style.display="block";
+  document.body.style.display="block"; 
 }
 // Todos"
 // 1. Store all the data to the localStorage
