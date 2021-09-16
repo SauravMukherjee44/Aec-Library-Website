@@ -11,8 +11,8 @@ So, Here you go!! Using this College Library Website you can keep a record of al
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://img.shields.io/github/stars/SauravMukherjee44/Aec-Library-Website" alt="Stars Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/network/members"><img src="https://img.shields.io/github/forks/SauravMukherjee44/Aec-Library-Website" alt="Forks Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/SauravMukherjee44/Aec-Library-Website?color=2b9348"></a>
+![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg) 
 </div>
-<br/> ![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103) <br/>
 
 
 # Contribution is fun! 🧡:
