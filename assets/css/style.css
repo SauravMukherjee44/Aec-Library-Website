@@ -36,14 +36,6 @@
   padding: 5px;
 }
 
-.container h1{
-  padding-top: 70px;
-  color: rgb(255, 255, 255);
-  font-family: 'Poiret One', cursive;
-  font-weight: bolder;
-  letter-spacing: 0.1em;
-}
-
 .navbar-light .navbar-nav
 .nav-link{
   color: rgb(255 255 255 / 50%);
