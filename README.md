@@ -1,6 +1,6 @@
 <h1 align="center">Open-Source Library Website</h1>
 
-This is a College Library Website in which you can keep a record of all the books you have issued. [ In development Phase ]
+This is a College Library Website in which you can keep a record of all the books you have issued. ( In development Phase )
 <h2> Website: 
 <a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit Now🚀</a>
 </h2> 
@@ -18,9 +18,9 @@ So, Here you go!! Using this College Library Website you can keep a record of al
 # Contribution is fun! 🧡:
 
 ## 📌 Tech Stack:
-[![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)]
-[![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)]
-[![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
+![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
+![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ## 📌 Sneak Peek of Main Page:
 ![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/a60cd4506583896b6b619b5ba3a0d6be5de80950/assets/images/aec.PNG)
