@@ -237,6 +237,12 @@ footer {
   left: 40%;
   top: 20px;
 }
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background: wheat;
+    text-align: center;
+}
 
 #topBtn{
   position: fixed;
