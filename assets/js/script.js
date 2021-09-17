@@ -6,55 +6,57 @@ function Book(name, author, type) {
 }
 
 // typrwiter text
-var TxtType = function(el, toRotate, period) {
+var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
   this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
+  this.txt = "";
   this.tick();
   this.isDeleting = false;
 };
 
-TxtType.prototype.tick = function() {
+TxtType.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
   if (this.isDeleting) {
-  this.txt = fullTxt.substring(0, this.txt.length - 1);
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
   } else {
-  this.txt = fullTxt.substring(0, this.txt.length + 1);
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
 
   var that = this;
   var delta = 200 - Math.random() * 100;
 
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-  delta = this.period;
-  this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-  this.isDeleting = false;
-  this.loopNum++;
-  delta = 500;
+  if (this.isDeleting) {
+    delta /= 2;
   }
 
-  setTimeout(function() {
-  that.tick();
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === "") {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function () {
+    that.tick();
   }, delta);
 };
 
-window.onload = function() {
-  var elements = document.getElementsByClassName('typewrite');
-  for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-type');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtType(elements[i], JSON.parse(toRotate), period);
-      }
+window.onload = function () {
+  var elements = document.getElementsByClassName("typewrite");
+  for (var i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute("data-type");
+    var period = elements[i].getAttribute("data-period");
+    if (toRotate) {
+      new TxtType(elements[i], JSON.parse(toRotate), period);
+    }
   }
   // INJECT CSS
   var css = document.createElement("style");
@@ -62,7 +64,6 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
-
 
 // Display Constructor
 function Display() {}
@@ -121,7 +122,6 @@ function libraryFormSubmit(e) {
   let name = document.getElementById("bookName").value;
   let author = document.getElementById("author").value;
   let type = document.getElementById("type").value;
- 
 
   let book = new Book(name, author, type);
   console.log(book);
@@ -153,11 +153,29 @@ function deletefunction(pbookid) {
   document.getElementById(pbookid).style.display = "none";
 }
 
-window.onload=function(){
-  document.getElementById('loading').style.display="none";
-  document.getElementById('body').style.display="block";
-}
+window.onload = function () {
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("body").style.display = "block";
+};
 // Todos"
 // 1. Store all the data to the localStorage
 // 2. Give another column as an option to delete the book
 // 3. Add a scroll bar to the view.
+let timer1;
+let preloader = document.querySelector(".preloader");
+let nav = document.querySelector(".navbar");
+timer1 = setInterval(() => {
+  preloader.classList.add("endpreloadopacity");
+  setTimeout(timer1);
+}, 4500);
+let timer2 = setInterval(() => {
+  nav.classList.remove("nav_beforepreload");
+  setTimeout(timer2);
+  document.body.style.transition = "0s none";
+  document.body.style.transition.delay = "none";
+  document.querySelector(".headervdo").classList.add("headervdo_afterpreload");
+}, 4600);
+let timer3 = setInterval(() => {
+  preloader.style.display = "none";
+  setTimeout(timer3);
+}, 5500);
