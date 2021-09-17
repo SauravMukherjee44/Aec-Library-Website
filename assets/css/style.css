@@ -1,5 +1,5 @@
 * {
-  font-family: "Poiret One", cursive;
+  font-family: 'Playfair Display', serif;
 }
 nav.navbar {
   /* margin-right: 12px !important; */
@@ -17,9 +17,12 @@ nav.navbar {
 }
 .body-style {
   background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
-  background-color: rgba(236, 236, 236, 0.842);
+  
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.9);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    z-index: 1;
 }
 .bg-info {
   /*   background-color: #2e2e2e!important;
@@ -44,7 +47,7 @@ nav.navbar {
 .container h1 {
   padding-top: 70px;
   color: rgb(255, 255, 255);
-  font-family: "Poiret One", cursive;
+  /* font-family: "Poiret One", cursive; */
   font-weight: bolder;
   letter-spacing: 0.1em;
 }
