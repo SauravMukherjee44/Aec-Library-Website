@@ -384,21 +384,21 @@ strong {
 /* scroll bar design */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(44, 24, 24);
+  background: rgb(77, 32, 32);
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(219, 16, 56);
+  background: rgb(68, 4, 17);
   border-radius: 10px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(56, 43, 8);
+  background: rgb(39, 7, 7);
   border: solid 2px rgb(41, 2, 10);
 }
 /* scroll bar end */
