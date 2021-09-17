@@ -384,7 +384,7 @@ strong {
 /* scroll bar design */
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 9px;
 }
 
 /* Track */
