@@ -1,6 +1,11 @@
 * {
   font-family: "Poiret One", cursive;
 }
+nav.navbar {
+  /* margin-right: 12px !important; */
+  /* padding-right: 12px !important; */
+  right: 0;
+}
 #loading {
   position: fixed;
   width: 100%;
@@ -393,12 +398,12 @@ strong {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(68, 4, 17);
+  background: #c68b59;
   border-radius: 10px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(39, 7, 7);
+  background: #865439;
   border: solid 2px rgb(41, 2, 10);
 }
 /* scroll bar end */
