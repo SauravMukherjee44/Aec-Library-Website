@@ -75,7 +75,7 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 
 **13.** Make sure that you're on your master branch.
 ```
-   git checlout master
+   git checkout master
 ```
 
 **14.** Now that we have fetched the upstream repository, we want to merge its changes into our local branch. This will bring that branch into sync with the upstream, without losing our local changes.
