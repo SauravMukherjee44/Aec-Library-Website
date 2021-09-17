@@ -1,5 +1,6 @@
 // Constructor
-function Book(name, author, type) {
+function Book(date, name, author, type) {
+  this.date = date;
   this.name = name;
   this.author = author;
   this.type = type;
@@ -80,10 +81,11 @@ backdrop-filter: blur( 8.5px );
 -webkit-backdrop-filter: blur( 8.5px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 ); color: white; font-weight: 900; font-size: 1.5rem;">
+                        <td> ${book.date}</td>
                         <td>${book.name}</td>
                         <td>${book.author}</td>
                         <td>${book.type}</td>
-                        <td><button style="margin-top: 0px;" class="btn btn-success" id="edit" onclick="editfunction('${book.name}','${book.author}','${book.type}','${countBooks}')">Edit</button>
+                        <td><button style="margin-top: 0px;" class="btn btn-success" id="edit" onclick="editfunction('${book.date}','${book.name}','${book.author}','${book.type}','${countBooks}')">Edit</button>
                         </td?
                         <td><button style="margin-top: 0px" class="btn btn-danger" id="edit" onclick="deletefunction('${countBooks}')">Delete</button>
                         </td>
@@ -124,11 +126,12 @@ libraryForm.addEventListener("submit", libraryFormSubmit);
 
 function libraryFormSubmit(e) {
   console.log("YOu have submitted library form");
+  let date = document.getElementById("issuedate").value;
   let name = document.getElementById("bookName").value;
   let author = document.getElementById("author").value;
   let type = document.getElementById("type").value;
 
-  let book = new Book(name, author, type);
+  let book = new Book(date, name, author, type);
   console.log(book);
 
   let display = new Display();
