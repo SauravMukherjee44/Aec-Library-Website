@@ -74,13 +74,18 @@ Display.prototype.add = function (book) {
   console.log("Adding to UI");
   tableBody = document.getElementById("tableBody");
   countBooks = countBooks + 1;
-  let uiString = `<tr id="${countBooks}">
+  let uiString = `<tr id="${countBooks}" style = "background: rgba( 148, 10, 10, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 8.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 ); color: white; font-weight: 900; font-size: 1.5rem;">
                         <td>${book.name}</td>
                         <td>${book.author}</td>
                         <td>${book.type}</td>
-                        <td><button class="btn btn-success" id="edit" onclick="editfunction('${book.name}','${book.author}','${book.type}','${countBooks}')">Edit</button>
+                        <td><button style="margin-top: 0px;" class="btn btn-success" id="edit" onclick="editfunction('${book.name}','${book.author}','${book.type}','${countBooks}')">Edit</button>
                         </td?
-                        <td><button class="btn btn-danger" id="edit" onclick="deletefunction('${countBooks}')">Delete</button>
+                        <td><button style="margin-top: 0px" class="btn btn-danger" id="edit" onclick="deletefunction('${countBooks}')">Delete</button>
                         </td>
                     </tr>`;
   tableBody.innerHTML += uiString;
