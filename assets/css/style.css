@@ -255,8 +255,9 @@ footer {
 
 .logo-img{
   margin-left: 40px;
-  height: 45px;
-  width: 80px;
+  /* Width and height same to make icon look more professional */
+  height: 3rem;
+  width: 3rem;
 }
 
 @media only screen and (max-width: 500px) {
@@ -288,4 +289,9 @@ a.nav-link { /* To heighlight */
 strong {  /* To make text more visible */
   color: floralwhite;
   font-size: 25px;
+}
+
+.row{   /* To remove the overlapping due to responsive width change */
+  display: flex;
+  flex-direction: column;
 }
