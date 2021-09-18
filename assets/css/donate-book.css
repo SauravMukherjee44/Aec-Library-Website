@@ -12,6 +12,11 @@
   border-radius: 0;
   z-index: 999;
 }
+.card-body{
+  padding: 1rem 1rem;
+  color: white;
+  background: #51c7eb;
+}
 .card-custom .form-control {
   border-radius: 40px;
   width: 80%;
@@ -71,16 +76,16 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(44, 24, 24);
+  background: rgb(77, 32, 32);
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(219, 16, 56);
+  background: #c68b59;
   border-radius: 10px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(56, 43, 8);
+  background: #c68b59;
   border: solid 2px rgb(41, 2, 10);
 }
 /* scroll bar end */
