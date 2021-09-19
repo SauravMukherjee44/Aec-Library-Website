@@ -1,6 +1,7 @@
 <h1 align="center">Open-Source Library Website</h1>
 
-This is a College Library Website in which you can keep a record of all the books you have issued. [ In development Phase ]
+This is a College Library Website in which you can keep a record of all the books you have issued. 
+<h4>[ In development Phase ]</h4>
 <h2> Website: 
 <a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit Now🚀</a>
 </h2> 
@@ -11,8 +12,8 @@ So, Here you go!! Using this College Library Website you can keep a record of al
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://img.shields.io/github/stars/SauravMukherjee44/Aec-Library-Website" alt="Stars Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/network/members"><img src="https://img.shields.io/github/forks/SauravMukherjee44/Aec-Library-Website" alt="Forks Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/SauravMukherjee44/Aec-Library-Website?color=2b9348"></a>
+<a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://badges.frapsoft.com/os/v2/open-source.svg" alt="Open Source"/></a>
 </div>
-
 
 
 # Contribution is fun! 🧡:
@@ -23,7 +24,7 @@ So, Here you go!! Using this College Library Website you can keep a record of al
 [![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
 
 ## 📌 Sneak Peek of Main Page:
-![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/a60cd4506583896b6b619b5ba3a0d6be5de80950/assets/images/aec.PNG)
+![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/7cf3bafebd9e1a6d6fa95f40822cbcdd28a4005b/assets/images/aec.PNG)
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
