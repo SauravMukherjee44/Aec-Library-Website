@@ -1,5 +1,5 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 nav.navbar {
   /* margin-right: 12px !important; */
@@ -21,24 +21,8 @@ nav.navbar {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(0,0,0,0.9);
-  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
     z-index: 1;
-}
-.title {
-  font-weight: 100;
-  font-size: 500%;
-  margin: 5%;
-}
-.labels {
-  font-style: normal;
-  font-size: 170%;
-}
-#separation {
-  margin-bottom: 3%;
-}
-.tabletitle {
-  font-weight: 200;
-  font-size: 250%;
 }
 .bg-info {
   /*   background-color: #2e2e2e!important;
@@ -81,7 +65,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* .input-box {
+.input-box {
   border: none;
   border-bottom: 1.5px solid rgba(168, 154, 154, 0.322);
   border-radius: 0px;
@@ -95,11 +79,13 @@ html {
 .input-box:focus {
   outline: none;
   border-bottom: 1.5px solid yellowgreen;
+  /* zoom: 1.1; */
   transform: scaleY(1.05);
 }
 .input-box {
   transition: border 0.5s ease-out;
-} */
+  /* transition: transform 0.5s ease-out; */
+}
 
 .btn {
   width: 150px;
