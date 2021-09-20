@@ -26,9 +26,12 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
    git clone https://github.com/your_user_name/Aec-Library-Website.git
 ```
 
-**3.** Navigate to the project directory.
+**3.** Navigate to the project directory and initialize the git.
 ```
    cd Aec-Library-Website
+```
+```
+   git init
 ```
 
 **4.** Create a new branch:
