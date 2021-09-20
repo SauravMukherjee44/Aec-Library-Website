@@ -307,7 +307,7 @@ footer {
 @media only screen and (max-width: 500px) {
   .icons ul p {
     position: absolute;
-    left: 50%;
+    left: 41.1%;
     top: 20px;
   }
 }
@@ -728,5 +728,14 @@ strong {
     height: 5rem;
     margin-bottom: -2rem;
     padding: 0rem;
+  }
+  .nav-link{
+    margin-left: 2rem;
+  }
+  .form-control{
+    margin-left: 1.5rem;
+  }
+  .my-sm-0{
+    margin-left: 1.5rem;
   }
 }
