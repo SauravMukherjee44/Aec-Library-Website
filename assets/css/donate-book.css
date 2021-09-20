@@ -85,3 +85,13 @@
   border: solid 2px rgb(41, 2, 10);
 }
 /* scroll bar end */
+
+
+
+/* For making responsive */
+
+@media (max-width:768px) {
+  .container{
+    margin-left: -1.26rem;
+  }
+}
