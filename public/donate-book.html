@@ -7,90 +7,63 @@
     <link rel="stylesheet" href="../assets/css/donate-book.css">
     <title>Donate Books</title>
 </head>
-<body style="background-image: url('https://www.vippng.com/png/full/112-1120617_pto-book-donation-program-book-donation-png.png'); background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
-    <!-- pre-loader -->
-    <div id="loading"></div>
-
-    <div class="home"></div>
-        <h2 style="text-align: center; padding: 10px 0 10px 0; color: rgba(16, 182, 211, 0.877);">DONATE BOOKS</h2>
-        <div class="card card-custom">
-            <div class="card-body">
-    <form>
-      <div class="container" >
-        <div class="form-row">
-            <div class="form-group col-md-6">
-
-               <label for="inputEmail4"> <strong>First Name</strong></label>
-              <input type="text" class="form-control" id="name" placeholder="First Name" required>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4"><strong>Last Name</strong></label>
-              <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
-
-            </div>
-          </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4"><strong>Email</strong></label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
-          </div>
-          <div class="form-group col-md-6">
-
-            <label for="inputNumber"><strong>Contact Number</strong></label>
-            <input type="tel" class="form-control" id="number" placeholder="Contact" required>
-
-          </div>
+   <body>
+    <div class="login-box">
+      <h2>Book Donation Form</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Name</label>
         </div>
-        <div class="form-group">
-          <label for="inputAddress"><strong>Address</strong></label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="A-456/4 locality" required>
+        <!-- <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Last Name</label>
+        </div> -->
+        <div class="user-box">
+          <input type="email" name="" required="">
+          <label>Email</label>
         </div>
-        <div class="form-group">
-          <label for="inputAddress2"><strong>Address 2</strong></label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Contact</label>
         </div>
-        <div class="form-row">
-          <div class="form-group col-md-4">
-            <label for="inputCity"><strong>City</strong></label>
-            <input type="text" class="form-control" id="inputCity" placeholder="City" required>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputState"> <strong>State</strong> </label>
-            <select id="inputState" class="form-control">
-              <option label="Choose"></option>
-              <option>Delhi</option>
-              <option>Bihar</option>
-              <option>Punjab</option>
-              <option>Haryana</option>
-              <option>Uttarpradesh</option>
-              <option>Rajasthan</option>
-              <option>West Bengal</option>
-              <option>Madhya Pradesh</option>
-              <option>Maharashtra</option>
-              <option>Kerala</option>
-              <option>Tamilnadu</option>
-              <option>Hyderabad</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip"> <strong>Zip</strong></label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Address</label>
         </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>City</label>
+        </div>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>State</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Zip</label>
+        </div>
+        <div class="user-box">
+          
+          
             <label class="form-check-label" for="gridCheck">
               Agree to terms and conditions
             </label>
-          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Donate</button>
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        
+
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
       </form>
     </div>
-</div>
-</div>
-    <script>
+  </body>
+    <!-- <script>
       window.onload=function(){
         document.getElementById('loading').style.display="none";
         document.getElementById('container').style.display="block";
@@ -98,7 +71,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>
 </html>
 
