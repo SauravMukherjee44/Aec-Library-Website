@@ -26,6 +26,8 @@ body {
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
+  transition-duration: 0.5s;
+  
 }
 
 .login-box h2 {
@@ -33,6 +35,9 @@ body {
   padding: 0;
   color: #fff;
   text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
 }
 
 .login-box .user-box {
@@ -115,6 +120,11 @@ body {
   background: linear-gradient(180deg, transparent, #03e9f4);
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
+}
+
+.login-box:hover{
+  transition-duration: 0.5s;
+  box-shadow: 0px 0px 19px 11px black;
 }
 
 @keyframes btn-anim2 {
