@@ -738,9 +738,4 @@ strong {
   .my-sm-0{
     margin-left: 1.5rem;
   }
-  /* Preloading screen adjusted to full screen */
-  .preloader{
-    width: 100%;
-    height: 100%;
-  }
 }
