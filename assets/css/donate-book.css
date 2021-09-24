@@ -38,6 +38,7 @@ body {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bolder;
   letter-spacing: 0.2rem;
+  margin-top: 7rem;
 }
 
 .login-box .user-box {
@@ -84,8 +85,8 @@ body {
   text-transform: uppercase;
   overflow: hidden;
   transition: .5s;
-  margin-top: 40px;
-  letter-spacing: 4px
+  margin-top: 4.2rem;
+  letter-spacing: 4px;
 }
 
 .login-box a:hover {
@@ -214,6 +215,6 @@ body {
 @media only screen and (max-width: 800px) {
   .login-box {
     top: 60%;
-    width: 500px;
+    width: 80%;
   }
 }
