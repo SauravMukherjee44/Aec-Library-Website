@@ -2,11 +2,11 @@
 
 This is a College Library Website in which you can keep a record of all the books you have issued. 
 <h4>[ In development Phase ]</h4>
-<h2> Website: 
-<a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit Now🚀</a>
+<h2> 
+<a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit our website 🚀</a>
 </h2> 
 
-So, Here you go!! Using this College Library Website you can keep a record of all your college Books and stuffs 🤩. Excited?
+So, here you go! Using this College Library Website can save a record of all your college Books and stuffs. 🤩 Excited?
 <div align="left">
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://sloc.xyz/github/SauravMukherjee44/Aec-Library-Website" alt="LOC"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://img.shields.io/github/stars/SauravMukherjee44/Aec-Library-Website" alt="Stars Badge"/></a>
@@ -16,21 +16,21 @@ So, Here you go!! Using this College Library Website you can keep a record of al
 </div>
 
 
-# Contribution is fun! 🧡:
+# Contribution is fun! 🧡
 
-## 📌 Tech Stack:
+## 📌 Tech Stack
 [![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)]
 [![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)]
 [![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
 
-## 📌 Sneak Peek of Main Page:
+## 📌 Sneak Peek of Main Page
 ![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/7cf3bafebd9e1a6d6fa95f40822cbcdd28a4005b/assets/images/aec.PNG)
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
 Happy Submissions :slightly_smiling_face:
 
-## Contribution Guidelines🏗
+## Contribution Guidelines 🏗
 
 Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. 
 To start contributing, follow the below guidelines: 
@@ -39,9 +39,8 @@ To start contributing, follow the below guidelines:
 
 **2.**  Clone your forked copy of the project.
 
-```
-https://github.com/SauravMukherjee44/Aec-Library-Website.git
-
+```bash
+$ git clone https://github.com/SauravMukherjee44/Aec-Library-Website.git
 ```
 <h1 align=center> OUR VALUABLE CONTRIBUTORS✨ </h1>
 <p align="center">
@@ -68,7 +67,7 @@ If you want to contact me, you can reach me through below handles.
 
 </div>
 
-© 2021 Saurav Mukherjee
-
+© 2021 Saurav Mukherjee and contributors\
+This project is licensed under the [**MIT license**](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/main/LICENSE).
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
