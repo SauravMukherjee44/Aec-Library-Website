@@ -58,17 +58,14 @@ section:nth-child(even) {
   background-color: rgb(241, 241, 241);
 }
 
-section {
-  min-height: 100vh;
-}
-
 video {
   padding: 10px;
 }
 
-iframe {
-  height: 75vh;
+#study{
+  margin-bottom: 40px;
 }
+
 
 img {
   padding: 10px;
@@ -77,6 +74,7 @@ img {
 section h5 {
   margin: 40px;
 }
+
 
 footer {
   background-color: #333;
@@ -92,9 +90,62 @@ footer a {
   margin-left: 4.5rem;
 }
 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
 @media (min-width:650px){
   nav a {
     margin-left: 4.5rem;
   }
+
+}
+
+@media (max-width:270px){
+  section {
+    min-height: 10rem;
+  }
+  iframe {
+    height: 10rem;
+  }
+  .name{
+    margin-left: 400px;
+  }
+  .study{
+    margin-left: 300px;
+  }
   
+}
+
+@media (max-width:650px){
+  .last{
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width:800px){
+iframe {
+  height: 55vh;
+  }
 }
