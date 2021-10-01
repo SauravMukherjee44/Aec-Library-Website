@@ -16,7 +16,7 @@ So, here you go! Using this College Library Website can save a record of all you
 </div>
 
 
-![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/1d8d62b8fcb65cb150afab704a8d8251d0a3edfe/images/WhatsApp%20Image%202021-09-28%20at%2023.03.09.jpeg)
+![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/35d1c25fa8a5e856c0b03e79ac243d6c559d0710/images/Hacktoberfest%20-%20Accepted.png)
 
 # Contribution is fun! 🧡
 
