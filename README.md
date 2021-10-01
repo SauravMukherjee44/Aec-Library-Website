@@ -13,6 +13,7 @@ So, here you go! Using this College Library Website can save a record of all you
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/network/members"><img src="https://img.shields.io/github/forks/SauravMukherjee44/Aec-Library-Website" alt="Forks Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/SauravMukherjee44/Aec-Library-Website?color=2b9348"></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://badges.frapsoft.com/os/v2/open-source.svg" alt="Open Source"/></a>
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/organization/repository)
 </div>
 
 
