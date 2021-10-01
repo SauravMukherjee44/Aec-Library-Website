@@ -1,44 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 html {
-  height: 100%;
+  height: 60rem ;
 }
 body {
   margin:0;
   padding:0;
-  font-family: sans-serif;
-
-  /* background: rgb(45, 169, 211); */
-  background: 
-    url("1.jpg")
-     center ;
-  /* background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-   background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); */
+  font-family: 'Poppins', sans-serif;
+  background: rgb(86, 45, 211);
   
 }
 
 .login-box {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
-  width: 1000px;
+  width: 650px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.671);
+  background: rgba(0, 0, 0, 0.871);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
-  border-radius: 10px;
+  box-shadow:10px 10px rgba(255, 183, 0, 0.845);
+  border-radius: 20px;
   transition-duration: 0.5s;
+  margin-bottom: 100px;
   
 }
 
 .login-box h2 {
-  margin: 0 0 30px;
+  margin: 0 0 10px;
   padding: 0;
-  color: #fff;
+  color: rgb(255, 183, 0);
   text-align: center;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bolder;
   letter-spacing: 0.2rem;
-  margin-top: 7rem;
+  margin: 3rem 0rem 3rem 0rem;
 }
 
 .login-box .user-box {
@@ -71,7 +66,7 @@ body {
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #03e9f4;
+  color: rgb(255, 183, 0);
   font-size: 12px;
 }
 
@@ -79,18 +74,18 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
+  color: rgb(255, 183, 0);
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
-  transition: .5s;
+  transition: 1s;
   margin-top: 4.2rem;
   letter-spacing: 4px;
 }
 
 .login-box a:hover {
-  background: #03e9f4;
+  background:rgb(75, 26, 222);
   color: #fff;
   border-radius: 5px;
   /* box-shadow: 0 0 5px #03e9f4,
@@ -109,8 +104,8 @@ body {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
-  animation: btn-anim1 1s linear infinite;
+  background: linear-gradient(90deg, transparent, rgb(255, 183, 0));
+  animation: btn-anim1 2s linear infinite;
 } */
 
 .login-box a span:nth-child(2) {
@@ -118,14 +113,14 @@ body {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, rgb(255, 183, 0));
   animation: btn-anim2 1s linear infinite;
-  animation-delay: .25s
+  animation-delay: 2.2s
 }
 
 .login-box:hover{
-  transition-duration: 0.5s;
-  box-shadow: 0px 0px 19px 11px black;
+  transition-duration: 0.4s;
+  box-shadow: 0px 0px 19px 11px rgb(255, 183, 0);
 }
 
 @keyframes btn-anim2 {
@@ -151,9 +146,9 @@ body {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, rgb(255, 183, 0));
   animation: btn-anim3 1s linear infinite;
-  animation-delay: .5s
+  animation-delay: 2.5s
 }
 
 @keyframes btn-anim3 {
@@ -170,9 +165,9 @@ body {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
+  background: linear-gradient(360deg, transparent, rgb(255, 183, 0));
   animation: btn-anim4 1s linear infinite;
-  animation-delay: .75s
+  animation-delay: 2.7s
 }
 
 @keyframes btn-anim4 {
