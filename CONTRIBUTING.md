@@ -6,7 +6,7 @@ Please note that this project is released with a [Contributor Code of Conduct](h
 
 ## Issues and PRs
 
-If you have suggestions for how this project could be improved, or want to report a bug, open an issue! We'd love all and any contributions. If you have questions, too, we'd love to hear them.
+If you have suggestions for how this project could be improved, or want to report a bug, add a feature, open an issue! We'd love all and any contributions. If you have questions, too, we'd love to hear them.
 
 We'd also love PRs. If you're thinking of a large PR, we advise opening up an issue first to talk about it, though! Look at the links below if you're not sure how to open a PR.
 
@@ -22,26 +22,34 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 **1.** Fork the repository by clicking on the <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://img.icons8.com/ios/24/000000/code-fork.png"></a> symbol at the top right corner.
 
 **2.** Clone the forked repository.
+
+```
+   cd Desktop
+```
+
 ```
    git clone https://github.com/your_user_name/Aec-Library-Website.git
 ```
 
 **3.** Navigate to the project directory and initialize the git.
+
 ```
    cd Aec-Library-Website
 ```
+
 ```
    git init
 ```
 
 **4.** Create a new branch:
+
 ```
    git checkout -b YourBranchName
 ```
 
 **5.** Make changes in source code.
 
-**6.** Stage your changes and commit
+**6.** Stage your changes and make a commit
 
 ```
    git add .
@@ -62,28 +70,39 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 **9.** If anyone contribute to this repository, then the changes will not reflect in your local repository. For that:
 
 **10.** Setup a reference(remote) to the original repository to get all the changes from the remote.
+
 ```
    git remote add upstream https://github.com/SauravMukherjee44/Aec-Library-Website.git
 ```
 
 **11.** Check the remotes for this repository.
+
 ```
    git remote -v
 ```
 
 **12.** Fetching from the remote repository will bring in its branches and their respective commits.
+
 ```
    git fetch upstream
 ```
 
 **13.** Make sure that you're on your master branch.
+
 ```
    git checkout master
 ```
 
 **14.** Now that we have fetched the upstream repository, we want to merge its changes into our local branch. This will bring that branch into sync with the upstream, without losing our local changes.
+
 ```
    git merge upstream/master
+```
+
+**15.** Or you can club step 12th and 14th together using:-
+
+```
+   git pull upstream main
 ```
 
 Here are a few things you can do that will increase the likelihood of your pull request being accepted:
