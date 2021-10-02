@@ -5,6 +5,9 @@ This is a College Library Website in which you can keep a record of all the book
 <h4>[ In development Phase ]</h4>
 <h2> 
 <a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit our website 🚀</a>
+
+
+<a href="https://discord.com/invite/sqFRzrj7f3" target="_blank">Join Us On Discord ⚡</a>
 </h2>
 
 So, here you go! Using this College Library Website can save a record of all your college Books and stuffs. 🤩 Excited?
