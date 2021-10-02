@@ -1,5 +1,5 @@
 * {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 nav.navbar {
   /* margin-right: 12px !important; */
@@ -7,7 +7,7 @@ nav.navbar {
   right: 0;
 }
 
-.navbar-nav li a:after{
+.navbar-nav li a:after {
   bottom: 0;
   content: "";
   display: block;
@@ -19,9 +19,9 @@ nav.navbar {
   width: 0;
 }
 
-.navbar-nav li a:hover:after{ 
+.navbar-nav li a:hover:after {
   width: 100%;
-  left: 0; 
+  left: 0;
 }
 #loading {
   position: fixed;
@@ -34,12 +34,12 @@ nav.navbar {
 }
 .body-style {
   background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
-  
+
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgba(0,0,0,0.9);
-    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
-    z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+  z-index: 1;
 }
 .bg-info {
   /*   background-color: #2e2e2e!important;
@@ -60,14 +60,14 @@ nav.navbar {
   border-radius: 15px;
   margin-top: 10px;
   padding: 5px;
-  width:25%;
+  width: 25%;
 }
 /* Authors */
 .form-check-input1 {
   border-radius: 15px;
   margin-top: 10px;
   padding: 5px;
-  width:25%;
+  width: 25%;
 }
 .container h1 {
   padding-top: 70px;
@@ -90,9 +90,9 @@ html {
   scroll-behavior: smooth;
 }
 
-#issueDate{
-  border-radius:15px;
-  height:30px;
+#issueDate {
+  border-radius: 15px;
+  height: 30px;
 }
 
 .input-box {
@@ -220,8 +220,6 @@ html {
   margin-top: 10px;
 }
 
-
-
 footer {
   position: relative;
   width: 100%;
@@ -346,7 +344,7 @@ footer {
 a.nav-link {
   /* To heighlight */
   color: floralwhite !important;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
@@ -369,7 +367,8 @@ strong {
   font-size: 25px;
 }
 
-.row{   /* To remove the overlapping due to responsive width change */
+.row {
+  /* To remove the overlapping due to responsive width change */
   display: flex;
   flex-direction: column;
 }
@@ -736,37 +735,36 @@ strong {
 }
 /* preloader end */
 
-
 /* For making responsive */
-@media (max-width:800px){
-  .body-style{
+@media (max-width: 800px) {
+  .body-style {
     box-shadow: none;
     padding: 1rem;
   }
-  #table{
+  #table {
     width: 29rem;
     height: 10rem;
   }
-  .body-style{
+  .body-style {
     width: 20rem;
   }
-  .input-box{
+  .input-box {
     width: 15rem;
   }
-  footer{
+  footer {
     width: 40rem;
     margin-left: -2rem;
     height: 5rem;
     margin-bottom: -2rem;
     padding: 0rem;
   }
-  .nav-link{
+  .nav-link {
     margin-left: 2rem;
   }
-  .form-control{
+  .form-control {
     margin-left: 1.5rem;
   }
-  .my-sm-0{
+  .my-sm-0 {
     margin-left: 1.5rem;
   }
 }
