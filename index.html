@@ -21,10 +21,11 @@
 
   <!-- Adding new font -> Playfair-display -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  
-    <!--Adding AOS in it-->
+
+  <!--Adding AOS in it-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body class="body-style">
@@ -109,7 +110,7 @@
     id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home  |  <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#"><i class="fas fa-home"></i> Home  <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item"><a href="./public/donate-book.html" class="nav-link" target="_blank">  |  Donate Books  |  </a></li>
         <li class="nav-item"><a href="resource.html" class="nav-link" target="_blank" > |  Resources</a></li>
@@ -151,26 +152,8 @@
       <div class="form-group row">
         <label for="Author" class="col-sm-2 col-form-label"> <strong>Author</strong></label>
         <div class="col-sm-10">
-            <select class="form-check-input1" id="author" name="author" style="z-index: 1;">
-                <option value="N/A">Select Author</option>
-                <option value="Agatha Christie">Agatha Christie</option>
-                <option value="Charles Dickens">Charles Dickens</option>
-                <option value="Dan Brown">Dan Brown</option>
-                <option value="Emily Bronte">Emily Bronte</option>
-                <option value="George Elliot">George Elliot</option>
-                <option value="J.K. Rowling">J.K. Rowling</option>
-                <option value="Jane Austen">Jane Austen</option>
-                <option value="John Green">John Green</option>
-                <option value="Mark Twain">Mark Twain</option>
-                <option value="Oscar Wilde">Oscar Wilde</option>
-                <option value="Rabindranath Tagore">Rabindranath Tagore</option>
-                <option value="Roald Dahl">Roald Dahl</option>
-                <option value="Rudyard Kipling">Rudyard Kipling</option>
-                <option value="Ruskin Bond">Ruskin Bond</option>
-                <option value="Sarah J. Maas">Sarah J. Maas</option>
-                <option value="Sylvia Plath">Sylvia Plath</option>
-                <option value="William Shakespeare">William Shakespeare</option>
-              </select>
+          <input type="text" class="input-box" id="author" placeholder="Author" />
+
         </div>
       </div>
       <fieldset class="form-group">
@@ -252,7 +235,7 @@
           <li>
             <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
           </li>
-          <p>©2021 Copyright </p>
+          <p>©2021 Copyright AEC Library</p>
         </ul>
       </div>
     </footer>
