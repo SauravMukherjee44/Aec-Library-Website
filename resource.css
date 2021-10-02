@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
+  padding:0;
+  margin:0;
 }
-/* Adding smooth scroll behaviour */
 html {
   scroll-behavior: smooth;
 }
@@ -10,7 +11,11 @@ h2 {
   color: rgb(0, 148, 197);
   font-weight: bold;
 }
-
+a{
+  font-size: 15px;
+  text-decoration: none;
+  color:inherit;
+}
 body {
   margin: 0px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -25,8 +30,9 @@ header h1 {
 
 header {
   padding: 40px;
-  background: url("images/10.jpg") center;
-  background-color: rgb(17, 124, 143);
+  /* background: url("images/10.jpg") center; */
+  /* background-color: rgb(17, 124, 143); */
+  background: peru;
 }
 
 nav {
@@ -36,6 +42,10 @@ nav {
 
 a {
   font-size: 15px;
+}
+nav a:hover {
+  color: white;
+  background-color: rgb(32, 32, 32);
 }
 
 nav a {
@@ -113,7 +123,37 @@ footer a {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+/*STUDY MATERIALS*/
+.study-container{
+  max-width:1300px;
+  margin:20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+  align-items: center;
+}
+.study-card{
+  margin:30px 15px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+.study-card .study-base{
+  height:350px;
+}
+.study-card .study-base img{
+  width:100%;
+  height:100%;
+  transition: all 0.2s ease-in-out;
+}
+.study-card h3{
+  background:white;
+  padding:5px 10px;
+  color:#333;
+}
 
+.study-card .study-base img:hover{
+  transform:scale(1.05);
+}
+/*!STUDY MATERIALS*/
 @media (min-width: 650px) {
   nav a {
     margin-left: 1.5rem;
@@ -138,6 +178,13 @@ footer a {
 @media (max-width: 650px) {
   .last {
     margin-bottom: 40px;
+  }
+    /*study material for smaller screens*/
+  .study-container .study-card{
+    margin:30px 0px;
+  }
+  .study-card .study-base{
+    height:420px;
   }
 }
 
@@ -173,3 +220,43 @@ footer a {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+
+.wrapper{
+  display: inline-flex;
+}
+.wrapper .static-text{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-text{
+margin-bottom: 5px;
+}
+.dynamic-text li{
+  list-style: none;
+  font-size: 40px;
+  font-weight: 500;
+  color:#eaeaea;
+}
+.dynamic-text li span{
+  position: relative;
+}
+.dynamic-text li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background:peru;
+  border-left: 2px solid #eaeaea;
+  animation: typing 1.5s steps(11) infinite;
+}
+@keyframes typing{
+  100%{
+      left: 100%;
+margin: 0 -35px 0 35px;
+  }
+}
+
