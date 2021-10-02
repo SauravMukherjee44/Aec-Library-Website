@@ -29,6 +29,20 @@ So, here you go! Using this College Library Website can save a record of all you
 ![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/35d1c25fa8a5e856c0b03e79ac243d6c559d0710/images/Hacktoberfest%20-%20Accepted.png)
 
 
+## 📌 Tech Stack
+
+[![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)]
+[![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)]
+[![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
+
+## 📌 Sneak Peek of Main Page
+
+![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/7cf3bafebd9e1a6d6fa95f40822cbcdd28a4005b/assets/images/aec.PNG)
+
+In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
+
+Happy Submissions :slightly_smiling_face:
+
 <h1> Contributing Guidelines </h1>
 
 ## Basics of Git and GitHub
@@ -117,33 +131,6 @@ Congratulations! You've already made your first contribution.🥳
 
 Good Luck for your journey
 
-
-## 📌 Tech Stack
-
-[![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)]
-[![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)]
-[![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]
-
-## 📌 Sneak Peek of Main Page
-
-![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/7cf3bafebd9e1a6d6fa95f40822cbcdd28a4005b/assets/images/aec.PNG)
-
-In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
-
-Happy Submissions :slightly_smiling_face:
-
-## Contribution Guidelines 🏗
-
-Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better.
-To start contributing, follow the below guidelines:
-
-**1.** Fork [this](https://github.com/SauravMukherjee44/Aec-Library-Website) repository.
-
-**2.** Clone your forked copy of the project.
-
-```bash
-$ git clone https://github.com/SauravMukherjee44/Aec-Library-Website.git
-```
 
 <h1 align=center> OUR VALUABLE CONTRIBUTORS✨ </h1>
 <p align="center">
