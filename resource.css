@@ -4,7 +4,9 @@
   margin:0;
 }
 
-
+html{
+  scroll-behavior: smooth;
+}
 h1,
 h2 {
   color: rgb(0, 148, 197);
