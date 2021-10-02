@@ -111,6 +111,10 @@ footer a {
   transform-origin: bottom left;
 }
 
+.notes:hover{
+  /* width: 1000px; */
+  transform: scaleY(1.2);
+}
 @media (min-width: 650px) {
   nav a {
     margin-left: 1.5rem;
