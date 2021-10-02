@@ -146,15 +146,6 @@ footer a {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /* background-color: #2196f3; */
-  /* padding: 5px; */
-}
-.grid-item {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
-  /* padding: 20px;
-  font-size: 20px;
-  text-align: center; */
 }
 
 @media screen and (max-width: 1110px) {
@@ -168,5 +159,33 @@ footer a {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  display: inline;
+}
+
+img {
+  box-shadow: 5px 3px gainsboro;
+  height: 450px;
+  border-radius: 15px;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1400px) {
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+@media screen and (max-width: 735px) {
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
   }
 }
