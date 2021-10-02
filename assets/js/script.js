@@ -183,7 +183,7 @@ let timer2 = setInterval(() => {
   setTimeout(timer2);
   document.body.style.transition = "0s none";
   document.body.style.transition.delay = "none";
-  document.querySelector(".headervdo").classList.add("headervdo_afterpreload");
+  // document.querySelector(".headervdo").classList.add("headervdo_afterpreload");
 }, 4600);
 let timer3 = setInterval(() => {
   preloader.style.display = "none";
