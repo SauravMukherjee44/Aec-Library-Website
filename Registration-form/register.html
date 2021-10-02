@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="register.css" />
+    <script src="main.js"></script>
+
+    <title>Registration from</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <div class="form-form">
+      <h6 id="head">Registration Form</h6>
+      <br />
+      <form action="" id="form-center" onsubmit=" return  click_submit();">
+        <label>First Name:</label><br />
+        <input
+          type="text"
+          name="fst-name"
+          placeholder="Enter Your First Name "
+          id="fstname"
+          class="feildsize"
+          onchange="fst();"
+        />
+        <span id="fst"></span> <br />
+
+        <label>Last Name:</label> <br />
+        <input
+          type="text"
+          name="Last-Name"
+          placeholder="Enter Your Last Name "
+          id="lstname"
+          class="feildsize"
+          onchange="lst();"
+        />
+        <span id="lst"></span><br />
+
+        <label> Date of Birth: </label><br />
+        <input type="date" id="DOB" class="feildsize" onchange="age_cal();" />
+        <span id="dob_error"></span><br />
+        <div id="age_answer"><span id="Calculate_the_age">Age :</span></div>
+
+        <label>Adddres:</label><br />
+        <input
+          type="text"
+          class="feildsize"
+          placeholder="Enter Your Addrees"
+        /><br />
+
+        <label>Email:</label><br />
+        <input
+          type="email"
+          placeholder="enter your email"
+          name="Email"
+          id="Email"
+          class="feildsize"
+          onchange="eemail();"
+        />
+        <span id="email"></span><br />
+
+        <label>Username:</label><br />
+        <input
+          type="text"
+          placeholder="enter your Username"
+          name="Username "
+          id="Username"
+          class="feildsize"
+          onchange="user();"
+        />
+        <span id="user_name"></span><br />
+
+        <label>Password:</label><br />
+        <input
+          type="password"
+          placeholder="enter your Password"
+          name="Password "
+          id="Password "
+          class="feildsize"
+          onchange="passcheck();"
+        />
+        <span id="pwd"></span><br />
+
+        <label>Confirm Password:</label><br />
+        <input
+          type="password"
+          placeholder="Confirm password"
+          name="Confirm-password "
+          id="Confirmpassword"
+          class="feildsize"
+          onchange="passcheck();"
+        />
+        <span id="cmdpwd"></span><br />
+
+        <input
+          type="checkbox"
+          id="terms_and_conditions"
+          value="1"
+          onclick=" termsandcond(this);"
+        />
+        <label id="termcondi" class="label-padding"
+          >agrees to the terms and conditions of the university
+        </label>
+        <br />
+        <br />
+
+        <div class="btn-btn">
+          <button
+            type="submit"
+            id="submit_button"
+            class="btn"
+            value="submit"
+            onclick=" click_submit() ;"
+            disabled
+          >
+            Submit
+          </button>
+        </div>
+        <br />
+        <p id="accept">!note: accept term and condition to fill the form!</p>
+      </form>
+    </div>
+  </body>
+</html>

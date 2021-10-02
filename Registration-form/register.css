@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #13292a;
+}
+
+#head {
+  padding-left: 110px;
+  padding-top: 1px;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #0c6980;
+  width: 310px;
+  height: 35px;
+  border-color: #13292a;
+}
+.form-form {
+  margin-top: 20px;
+  height: 660px;
+  width: 420px;
+  margin-left: 30%;
+  background-color: white;
+  border-color: #0c6980;
+}
+
+span {
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#form-center {
+  margin-left: 50px;
+}
+
+.btn-btn {
+  margin-left: 110px;
+}
+
+.btn {
+  border-radius: 8px;
+  width: 110px;
+  height: 25px;
+  color: #0c6980;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#age_answer {
+  height: 18px;
+  width: 157px;
+  color: #2eb5e0;
+  background-color: #c4dbe0;
+  border-style: solid;
+  border-color: #0c6980;
+  padding-left: 3px;
+  margin-bottom: 10px;
+}
+
+#Calculate_the_age {
+  color: #16171e;
+  background-color: #c4dbe0;
+  font-size: 14px;
+}
+
+label {
+  color: #00a8a8;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.feildsize {
+  background-color: #c4dbe0;
+  height: 16px;
+  width: 160px;
+  color: #16171e;
+  border-width: 2px;
+  border-color: #2eb5e0;
+  margin-bottom: 10px;
+}
+
+#accept {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  background-color: #ff0000;
+  margin-right: 85px;
+  padding-left: 11px;
+}
+
+::placeholder {
+  color: #848cc2;
+  font-size: 13px;
+}
