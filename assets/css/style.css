@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
-  font-family: 'Playfair Display', serif;
+  font-family:  'Poppins', sans-serif;;
+  box-sizing:border-box;
 }
 nav.navbar {
   /* margin-right: 12px !important; */
@@ -70,20 +73,31 @@ nav.navbar {
 html {
   scroll-behavior: smooth;
 }
-
+form .search-icon{
+  background-image: url('../images/search-icon.svg');
+  background-position:5px;
+  background-repeat:no-repeat;
+  border-radius:2rem;
+  padding-left:80px;
+}
+input{
+  font-family: 'Courier New', Courier, monospace;
+}
+.courier{
+  font-family: 'Courier New', Courier, monospace;
+}
 .input-box {
   border: none;
   border-bottom: 1.5px solid rgba(168, 154, 154, 0.322);
   border-radius: 0px;
   transition: none;
-  width: 100%;
-  padding-bottom: 2px;
-  border-radius: 15px;
+  /* width: 100%; */
+  border-radius: 1rem;
   margin-top: 14px;
-  padding-left: 10px;
+  padding:11px;
 }
 .input-box:focus {
-  outline: none;
+  outline:none;
   border-bottom: 1.5px solid yellowgreen;
   /* zoom: 1.1; */
   transform: scaleY(1.05);
@@ -92,7 +106,9 @@ html {
   transition: border 0.5s ease-out;
   /* transition: transform 0.5s ease-out; */
 }
-
+input{
+  padding:10px;
+}
 .btn {
   width: 150px;
   height: 40px;
@@ -264,6 +280,15 @@ footer {
 .icons ul li:nth-child(2) a:before {
   background: black;
 }
+.col-25{
+  width:25%;
+  float:left;
+}
+.col-75{
+  width:75%;
+  float:left;
+}
+
 /* CopyRights */
 .icons ul p {
   position: absolute;
@@ -345,8 +370,8 @@ strong {
 }
 
 .row{   /* To remove the overlapping due to responsive width change */
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 /* Animation */
 
@@ -710,8 +735,6 @@ strong {
   box-sizing: inherit;
 }
 /* preloader end */
-
-
 /* For making responsive */
 @media (max-width:800px){
   .body-style{
