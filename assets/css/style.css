@@ -78,7 +78,7 @@ html {
 }
 
 .custom-input{
-  border-radius: 5px;
+  border-radius: 5px !important;
   height: 30px;
   width: 80vw !important;
 }
