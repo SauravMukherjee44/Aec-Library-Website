@@ -130,21 +130,23 @@ function libraryFormSubmit(e) {
   let name = document.getElementById("bookName").value;
   let author = document.getElementById("author").value;
   let category = document.getElementById("category").value;
-
-  let book = new Book(date, name, author, category);
-  console.log(book);
-
-  let display = new Display();
-
-  if (display.validate(book)) {
-    display.add(book);
-    display.clear();
-    display.show("success", "Your book has been successfully added");
+  if (date == "" || name == "" || author == "" || category == "") {
+    window.alert("Field is Empty!Please Enter Something");
   } else {
-    // Show error to the user
-    display.show("danger", "Sorry you cannot add this book");
-  }
+    let book = new Book(date, name, author, category);
+    console.log(book);
 
+    let display = new Display();
+
+    if (display.validate(book)) {
+      display.add(book);
+      display.clear();
+      display.show("success", "Your book has been successfully added");
+    } else {
+      // Show error to the user
+      display.show("danger", "Sorry you cannot add this book");
+    }
+  }
   e.preventDefault();
 }
 
@@ -183,7 +185,7 @@ let timer2 = setInterval(() => {
   setTimeout(timer2);
   document.body.style.transition = "0s none";
   document.body.style.transition.delay = "none";
-  document.querySelector(".headervdo").classList.add("headervdo_afterpreload");
+  // document.querySelector(".headervdo").classList.add("headervdo_afterpreload");
 }, 4600);
 let timer3 = setInterval(() => {
   preloader.style.display = "none";
