@@ -84,7 +84,57 @@ body {
   letter-spacing: 4px;
 }
 
-.login-box a:hover {
+.submit-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(255, 183, 0);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s;
+  margin-top: 4.2rem;
+  letter-spacing: 4px;
+  background: transparent;
+}
+.submit-btn:hover {
+  background:rgb(75, 20, 222);
+  color: #fff;
+  border-radius: 5px;
+  /* box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4; */
+}
+.submit-btn span {
+  position: absolute;
+  display: block;
+}
+.submit-btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgb(255, 183, 0));
+  animation: btn-anim1 2s linear infinite;
+} */
+
+.submit-btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgb(255, 183, 0));
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 2.2s
+}
+
+.submit-btn:hover{
+  transition-duration: 0.4s;
+  box-shadow: 0px 0px 19px 11px rgb(255, 183, 0);
+}
+.submit-btn:hover {
   background:rgb(75, 26, 222);
   color: #fff;
   border-radius: 5px;
@@ -92,6 +142,25 @@ body {
               0 0 25px #03e9f4,
               0 0 50px #03e9f4,
               0 0 100px #03e9f4; */
+}
+
+.submit-btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgb(255, 183, 0));
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 2.5s
+}
+.submit-btn:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, rgb(255, 183, 0));
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 2.7s
 }
 
 .login-box a span {
