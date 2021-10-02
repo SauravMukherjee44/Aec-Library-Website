@@ -116,8 +116,8 @@
         <li class="nav-item"><a href="resource.html" class="nav-link" target="_blank" > <i class="fas fa-external-link-alt"></i> Resources</a></li>
         <li class="nav-item"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"> <i class="fas fa-sign-in-alt"></i>  Login </a></li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search" />
+      <form id="searchForm" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search" name="search" />
         <button class="btn btn-dark my-2 my-sm-0" id="searchsymbol" type="submit">
           &#128269
         </button>
@@ -243,7 +243,33 @@
               
             </tr>
           </thead>
-          <tbody id="tableBody"></tbody>
+          <tbody id="tableBody"><tr id="1" style="background: rgba( 148, 10, 10, 0.35 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 8.5px );
+            -webkit-backdrop-filter: blur( 8.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 ); color: white; font-weight: 900; font-size: 1.5rem;">
+                                    <td> 2021-10-06</td>
+                                    <td>asdasd</td>
+                                    <td>adasdas</td>
+                                    <td>Parenting</td>
+                                    <td><button style="margin-top: 0px;" class="btn btn-success" id="edit" onclick="editfunction('2021-10-06','asdasd','adasdas','Parenting','1')">Edit</button>
+                                    <button style="margin-top: 0px" class="btn btn-danger" id="edit" onclick="deletefunction('1')">Delete</button>
+                                    </td>
+                                </tr><tr id="2" style="background: rgba( 148, 10, 10, 0.35 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 8.5px );
+            -webkit-backdrop-filter: blur( 8.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 ); color: white; font-weight: 900; font-size: 1.5rem;">
+                                    <td> 2021-09-30</td>
+                                    <td>test</td>
+                                    <td>test</td>
+                                    <td>Parenting</td>
+                                    <td><button style="margin-top: 0px;" class="btn btn-success" id="edit" onclick="editfunction('2021-09-30','test','test','Parenting','2')">Edit</button>
+                                    <button style="margin-top: 0px" class="btn btn-danger" id="edit" onclick="deletefunction('2')">Delete</button>
+                                    </td>
+                                </tr></tbody>
         </table>
       </div>
      
