@@ -130,21 +130,23 @@ function libraryFormSubmit(e) {
   let name = document.getElementById("bookName").value;
   let author = document.getElementById("author").value;
   let category = document.getElementById("category").value;
-
-  let book = new Book(date, name, author, category);
-  console.log(book);
-
-  let display = new Display();
-
-  if (display.validate(book)) {
-    display.add(book);
-    display.clear();
-    display.show("success", "Your book has been successfully added");
+  if (date == "" || name == "" || author == "" || category == "") {
+    window.alert("Field is Empty!Please Enter Something");
   } else {
-    // Show error to the user
-    display.show("danger", "Sorry you cannot add this book");
-  }
+    let book = new Book(date, name, author, category);
+    console.log(book);
 
+    let display = new Display();
+
+    if (display.validate(book)) {
+      display.add(book);
+      display.clear();
+      display.show("success", "Your book has been successfully added");
+    } else {
+      // Show error to the user
+      display.show("danger", "Sorry you cannot add this book");
+    }
+  }
   e.preventDefault();
 }
 
