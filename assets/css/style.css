@@ -1,11 +1,12 @@
 * {
   font-family: 'Playfair Display', serif;
+  box-sizing: inherit;
 }
+
 nav.navbar {
-  /* margin-right: 12px !important; */
-  /* padding-right: 12px !important; */
-  right: 0;
+  right: 0rem;
 }
+
 #loading {
   position: fixed;
   width: 100%;
@@ -15,18 +16,17 @@ nav.navbar {
     no-repeat center;
   z-index: 999;
 }
+
 .body-style {
   background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
-  
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(0,0,0,0.9);
-    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
-    z-index: 1;
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+  z-index: 1;
 }
+
 .bg-info {
-  /*   background-color: #2e2e2e!important;
-  box-shadow: 0px 0px 16px 9px black; */
   background-color: #343a40 !important;
   box-shadow: 0px 0px 16px 9px black;
 }
@@ -38,22 +38,24 @@ nav.navbar {
   color: rgb(243 243 243);
   font-weight: bold;
 }
+
 /* Category */
 .form-check-input {
   border-radius: 15px;
   margin-top: 10px;
   padding: 5px;
 }
+
 /* Authors */
 .form-check-input1 {
   border-radius: 15px;
   margin-top: 10px;
   padding: 5px;
 }
+
 .container h1 {
   padding-top: 70px;
   color: rgb(255, 255, 255);
-  /* font-family: "Poiret One", cursive; */
   font-weight: bolder;
   letter-spacing: 0.1em;
 }
@@ -63,10 +65,12 @@ nav.navbar {
   transition-duration: 0.3s;
   font-weight: bold;
 }
+
 .navbar-light .navbar-nav .nav-link:hover {
   transition-duration: 0.3s;
   color: rgb(255 255 255 / 100%);
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -82,15 +86,15 @@ html {
   margin-top: 14px;
   padding-left: 10px;
 }
+
 .input-box:focus {
   outline: none;
   border-bottom: 1.5px solid yellowgreen;
-  /* zoom: 1.1; */
   transform: scaleY(1.05);
 }
+
 .input-box {
   transition: border 0.5s ease-out;
-  /* transition: transform 0.5s ease-out; */
 }
 
 .btn {
@@ -176,7 +180,6 @@ html {
   left: 0;
   top: 0;
   border-radius: 10px;
-  /* box-shadow: 0 4px black; */
 }
 
 @keyframes glowing {
@@ -205,7 +208,7 @@ footer {
   color: white;
   box-shadow: 0px 0px 16px 9px black;
 }
-/*  */
+
 .icons ul {
   display: flex;
   margin-top: 410px !important;
@@ -264,12 +267,14 @@ footer {
 .icons ul li:nth-child(2) a:before {
   background: black;
 }
+
 /* CopyRights */
 .icons ul p {
   position: absolute;
   left: 40%;
   top: 20px;
 }
+
 .table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
@@ -305,7 +310,6 @@ footer {
 
 .logo-img {
   margin-left: 40px;
-  /* Width and height same to make icon look more professional */
   height: 3rem;
   width: 3rem;
 }
@@ -319,37 +323,32 @@ footer {
 }
 
 a.nav-link {
-  /* To heighlight */
   color: floralwhite !important;
   font-size: 28px;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
-  /* To make nav-bar sticky */
   position: fixed;
   top: 0;
   width: 100%;
 }
 
 .bg-info {
-  /* To make nav-bar background transparent and shadow effect */
-  /*     background-color: #ada39f00!important;
-    box-shadow: 0px 0px 16px 9px #efecec4d; */
   z-index: 100;
 }
 
 strong {
-  /* To make text more visible */
   color: floralwhite;
   font-size: 25px;
 }
 
-.row{   /* To remove the overlapping due to responsive width change */
+.row{ 
   display: flex;
   flex-direction: column;
 }
-/* Animation */
 
+
+/* Animation */
 .bubbles img {
   width: 50px;
   animation: bubble 7s linear infinite;
@@ -474,6 +473,7 @@ strong {
   height: 140px;
   position: relative;
 }
+
 .loader:before,
 .loader:after {
   --r: -6deg;
@@ -485,13 +485,16 @@ strong {
   box-shadow: 0 16px 12px var(--shadow);
   transform: rotate(var(--r));
 }
+
 .loader:before {
   left: 4px;
 }
+
 .loader:after {
   --r: 6deg;
   right: 4px;
 }
+
 .loader div {
   width: 100%;
   height: 100%;
@@ -502,12 +505,14 @@ strong {
   box-shadow: 0 4px 6px var(--shadow);
   background-image: var(--background);
 }
+
 .loader div ul {
   margin: 0;
   padding: 0;
   list-style: none;
   position: relative;
 }
+
 .loader div ul li {
   --r: 180deg;
   --o: 0;
@@ -522,38 +527,46 @@ strong {
   -webkit-animation: var(--duration) ease infinite;
   animation: var(--duration) ease infinite;
 }
+
 .loader div ul li:nth-child(2) {
   --c: var(--page-fold);
   -webkit-animation-name: page-2;
   animation-name: page-2;
 }
+
 .loader div ul li:nth-child(3) {
   --c: var(--page-fold);
   -webkit-animation-name: page-3;
   animation-name: page-3;
 }
+
 .loader div ul li:nth-child(4) {
   --c: var(--page-fold);
   -webkit-animation-name: page-4;
   animation-name: page-4;
 }
+
 .loader div ul li:nth-child(5) {
   --c: var(--page-fold);
   -webkit-animation-name: page-5;
   animation-name: page-5;
 }
+
 .loader div ul li svg {
   width: 90px;
   height: 120px;
   display: block;
 }
+
 .loader div ul li:first-child {
   --r: 0deg;
   --o: 1;
 }
+
 .loader div ul li:last-child {
   --o: 1;
 }
+
 .loader span {
   display: block;
   left: 0;
@@ -702,9 +715,6 @@ strong {
   }
 }
 
-* {
-  box-sizing: inherit;
-}
 *:before,
 *:after {
   box-sizing: inherit;
@@ -712,7 +722,7 @@ strong {
 /* preloader end */
 
 
-/* For making responsive */
+/* Responsive */
 @media (max-width:800px){
   .body-style{
     box-shadow: none;
