@@ -43,6 +43,14 @@ nav.navbar {
   border-radius: 5px;
   margin-top: 10px;
   padding: 5px;
+  width:25%;
+}
+/* Authors */
+.form-check-input1 {
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 5px;
+  width:25%;
 }
 .container h1 {
   padding-top: 70px;
@@ -65,12 +73,18 @@ html {
   scroll-behavior: smooth;
 }
 
+#issueDate{
+  border-radius:15px;
+  height:30px;
+}
+
 .input-box {
   border: none;
   border-bottom: 1.5px solid rgba(168, 154, 154, 0.322);
   border-radius: 0px;
   transition: none;
-  width: 100%;
+  width: 33%;
+  height: 30px;
   padding-bottom: 2px;
   border-radius: 5px;
   margin-top: 14px;
@@ -108,18 +122,8 @@ html {
   cursor: pointer;
   position: relative;
   z-index: 0;
-  font-size: 1.2rem;
   border-radius: 10px;
   margin-top: 2rem;
-}
-.custom-btn{
-  display: flex;
-  align-items: center;
-}
-.custom-btn svg{
-  height: 1.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .btn:before {

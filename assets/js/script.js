@@ -126,12 +126,12 @@ libraryForm.addEventListener("submit", libraryFormSubmit);
 
 function libraryFormSubmit(e) {
   console.log("YOu have submitted library form");
-  let date = document.getElementById("issuedate").value;
+  let date = document.getElementById("issueDate").value;
   let name = document.getElementById("bookName").value;
   let author = document.getElementById("author").value;
-  let type = document.getElementById("type").value;
+  let category = document.getElementById("category").value;
 
-  let book = new Book(date, name, author, type);
+  let book = new Book(date, name, author, category);
   console.log(book);
 
   let display = new Display();
@@ -183,7 +183,7 @@ let timer2 = setInterval(() => {
   setTimeout(timer2);
   document.body.style.transition = "0s none";
   document.body.style.transition.delay = "none";
-  document.querySelector(".headervdo").classList.add("headervdo_afterpreload");
+  // document.querySelector(".headervdo").classList.add("headervdo_afterpreload");
 }, 4600);
 let timer3 = setInterval(() => {
   preloader.style.display = "none";

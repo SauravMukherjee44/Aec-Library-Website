@@ -21,7 +21,10 @@
 
   <!-- Adding new font -> Playfair-display -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
+  
+    <!--Adding AOS in it-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
 </head>
 
 <body class="body-style">
@@ -113,10 +116,8 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn custom-btn btn-dark my-2 my-sm-0" type="submit">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>  Search
+        <button class="btn btn-dark my-2 my-sm-0" type="submit">
+          Search
         </button>
       </form>
     </div>
@@ -138,6 +139,7 @@
         <label for="dateIssue" class="col-sm-2 col-form-label"> <strong>Date of Issue</strong></label>
         <div class="col-sm-10 col-lg-10">
           <input type="date" id="issuedate" class="custom-input" name="issuedate">
+
         </div>
       </div>
       <div class="form-group row">
@@ -155,14 +157,11 @@
       <fieldset class="form-group">
         <div class="row">
           <legend class="col-form-label col-sm-2 pt-0"> <strong>Category</strong></legend>
-
           <div class="col-sm-10 col-lg-10">
 
             <div class="form-check">
 
               <select class="form-check-input custom-input" name="type" id="type" style="z-index: 1;">
-
-
                 <option value="N/A">Select Category</option>
                 <option value="Arts & Music">Arts & Music</option>
                 <option value="Biographies">Biographies</option>
@@ -191,8 +190,6 @@
                 <option value="Sports">Sports</option>
                 <option value="Travel">Travel</option>
                 <option value="True Crime">True Crime</option>
-
-
               </select>
             </div>
           </div>
@@ -237,7 +234,7 @@
           <li>
             <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
           </li>
-          <p>©2021 Copyright </p>
+          <p>©2021 Copyright AEC Library</p>
         </ul>
       </div>
     </footer>
