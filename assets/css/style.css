@@ -9,6 +9,23 @@ nav.navbar {
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+=======
+
+.navbar-nav li a:after{
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-nav li a:hover:after{ 
+  width: 100%;
+  left: 0; 
 }
 #loading {
   position: fixed;
