@@ -29,9 +29,8 @@ header h1 {
 
 header {
   padding: 40px;
-  /* background: url("images/10.jpg") center; */
-  /* background-color: rgb(17, 124, 143); */
-  background: peru;
+  background: url("images/10.jpg") center;
+  background-color: rgb(17, 124, 143);
 }
 
 nav {
@@ -219,43 +218,3 @@ footer a {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-
-.wrapper{
-  display: inline-flex;
-}
-.wrapper .static-text{
-  color: #fff;
-  font-size: 60px;
-  font-weight: 400;
-}
-.wrapper .dynamic-text{
-margin-bottom: 5px;
-}
-.dynamic-text li{
-  list-style: none;
-  font-size: 40px;
-  font-weight: 500;
-  color:#eaeaea;
-}
-.dynamic-text li span{
-  position: relative;
-}
-.dynamic-text li span::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-
-  background:peru;
-  border-left: 2px solid #eaeaea;
-  animation: typing 1.5s steps(11) infinite;
-}
-@keyframes typing{
-  100%{
-      left: 100%;
-margin: 0 -35px 0 35px;
-  }
-}
-
