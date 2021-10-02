@@ -34,6 +34,10 @@ nav {
 a {
   font-size: 15px;
 }
+nav a:hover {
+  color: white;
+  background-color: rgb(32, 32, 32);
+}
 
 nav a {
   text-decoration: none;
