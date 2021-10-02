@@ -43,6 +43,15 @@ nav {
 a {
   font-size: 15px;
 }
+.view{
+  display: block;
+  padding: 10px;
+}
+h3:hover{
+  position:relative;
+  top: -3px;
+  box-shadow: 0px 4px 5px 0px #706f6f;
+}
 nav a:hover {
   color: white;
   background-color: rgb(32, 32, 32);
@@ -146,7 +155,6 @@ footer a {
 }
 .study-card h3{
   background:white;
-  padding:5px 10px;
   color:#333;
 }
 
