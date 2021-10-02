@@ -44,6 +44,7 @@ nav.navbar {
   border-radius: 15px;
   margin-top: 10px;
   padding: 5px;
+  width:25%;
 }
 
 /* Authors */
@@ -51,6 +52,7 @@ nav.navbar {
   border-radius: 15px;
   margin-top: 10px;
   padding: 5px;
+  width:25%;
 }
 
 .container h1 {
@@ -75,12 +77,18 @@ html {
   scroll-behavior: smooth;
 }
 
+#issueDate{
+  border-radius:15px;
+  height:30px;
+}
+
 .input-box {
   border: none;
   border-bottom: 1.5px solid rgba(168, 154, 154, 0.322);
   border-radius: 0px;
   transition: none;
-  width: 100%;
+  width: 33%;
+  height: 30px;
   padding-bottom: 2px;
   border-radius: 15px;
   margin-top: 14px;
