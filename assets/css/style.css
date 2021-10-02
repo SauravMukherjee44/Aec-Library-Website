@@ -100,24 +100,7 @@ html {
   transition: border 0.5s ease-out;
   /* transition: transform 0.5s ease-out; */
 }
-#searchbtn
-{
-  width: 50px;
-  height: 40px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #5282d4;
-  background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
-  background-image: -moz-linear-gradient(top, #5282d4, #28667d);
-  background-image: -ms-linear-gradient(top, #5282d4, #28667d);
-  background-image: -o-linear-gradient(top, #5282d4, #28667d);
-  background-image: linear-gradient(to bottom, #5282d4, #28667d);
-  cursor: pointer;
-  position: relative;
-  
-  
-}
+
 
 .btn {
   width: 150px;
@@ -756,7 +739,7 @@ strong {
   }
   footer{
     width: 40rem;
-    margin-left: -2rem;
+    margin-left: 4.5rem;
     height: 5rem;
     margin-bottom: -2rem;
     padding: 0rem;
