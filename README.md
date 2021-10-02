@@ -1,4 +1,4 @@
-<h1 align="center">Open-Source Library Website ( Hacktoberfest-Accepted)</h1>
+<h1 align="center">Open-Source Library Website </h1>
 
 This is a College Library Website in which you can keep a record of all the books you have issued.
 
