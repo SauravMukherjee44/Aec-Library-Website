@@ -9,7 +9,7 @@ nav.navbar {
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-=======
+}
 
 .navbar-nav li a:after{
   bottom: 0;
