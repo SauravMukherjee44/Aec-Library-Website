@@ -126,12 +126,12 @@ libraryForm.addEventListener("submit", libraryFormSubmit);
 
 function libraryFormSubmit(e) {
   console.log("YOu have submitted library form");
-  let date = document.getElementById("issuedate").value;
+  let date = document.getElementById("issueDate").value;
   let name = document.getElementById("bookName").value;
   let author = document.getElementById("author").value;
-  let type = document.getElementById("type").value;
+  let category = document.getElementById("category").value;
 
-  let book = new Book(date, name, author, type);
+  let book = new Book(date, name, author, category);
   console.log(book);
 
   let display = new Display();
