@@ -42,6 +42,8 @@ nav {
 
 a {
   font-size: 15px;
+  display: block;
+  padding: 10px;
 }
 nav a:hover {
   color: white;
@@ -146,7 +148,6 @@ footer a {
 }
 .study-card h3{
   background:white;
-  padding:5px 10px;
   color:#333;
 }
 
