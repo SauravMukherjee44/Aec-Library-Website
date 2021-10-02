@@ -1,0 +1,208 @@
+* {
+    font-family: 'Playfair Display', serif;
+  }
+  nav.navbar {
+    /* margin-right: 12px !important; */
+    /* padding-right: 12px !important; */
+    right: 0;
+  }
+  
+  .navbar-nav li a:after{
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .navbar-nav li a:hover:after{ 
+    width: 100%;
+    left: 0; 
+  }
+
+  .body-style {
+    background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.9);
+      box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+      z-index: 1;
+  }
+  .bg-info {
+    /*   background-color: #2e2e2e!important;
+    box-shadow: 0px 0px 16px 9px black; */
+    background-color: #343a40 !important;
+    box-shadow: 0px 0px 16px 9px black;
+  }
+  
+  .navbar-light .navbar-nav .active > .nav-link,
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+  .navbar-light .navbar-nav .show > .nav-link {
+    color: rgb(243 243 243);
+    font-weight: bold;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255 / 50%);
+    transition-duration: 0.3s;
+    font-weight: bold;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    transition-duration: 0.3s;
+    color: rgb(255 255 255 / 100%);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    height: 9vh;
+    background-color: #343a40;
+    color: white;
+    box-shadow: 0px 0px 16px 9px black;
+  }
+
+  .icons ul {
+    display: flex;
+    margin-top: 410px !important;
+  }
+  
+  .icons ul li {
+    list-style: none;
+    margin-top: -6px;
+  }
+  
+  .icons ul li a {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+    margin-top: 15px;
+  }
+  
+  .icons ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  
+  .icons ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .icons ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #55acee;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  
+  .icons ul li a:hover:before {
+    top: 0;
+  }
+  
+  .icons ul li:nth-child(2) a:before {
+    background: black;
+  }
+  /* CopyRights */
+  .icons ul p {
+    position: absolute;
+    left: 40%;
+    top: 20px;
+  }
+  #topBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    z-index: 9;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3 ease-in-out;
+  }
+  
+  #topBtn a {
+    height: 39px;
+    width: 37px;
+    text-align: center;
+    background: #000;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #topBtn a span {
+    color: #f2f2f2;
+    line-height: 39px;
+    font-size: 28px;
+  }
+  .logo-img {
+    margin-left: 40px;
+    /* Width and height same to make icon look more professional */
+    height: 3rem;
+    width: 3rem;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .icons ul p {
+      position: absolute;
+      left: 41.1%;
+      top: 20px;
+    }
+  }
+  
+  a.nav-link {
+    /* To heighlight */
+    color: floralwhite !important;
+    font-size: 28px;
+  }
+  
+  nav.navbar.navbar-expand-lg.navbar-light.bg-info {
+    /* To make nav-bar sticky */
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .bg-info {
+    /* To make nav-bar background transparent and shadow effect */
+    /*     background-color: #ada39f00!important;
+      box-shadow: 0px 0px 16px 9px #efecec4d; */
+    z-index: 100;
+  }
+  /*  */
+  .outer-container1{
+      position: relative;
+      top: 200px;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      width: 800px;
+      height: 300px;
+      /* align-items: center; */
+  }
+  .outer-container2 p,h3{
+      display: flex;
+        align-items: center;
+  }
