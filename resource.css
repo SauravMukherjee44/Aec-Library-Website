@@ -38,13 +38,18 @@ a{
 
 nav a {
   text-decoration: none;
-  padding: 20px;
+  padding: 20px 25px 20px 20px;
   text-align: center;
   float: left;
   color: white;
-  margin-left: 4rem;
+  
+  margin-left: 10rem;
 }
-
+nav a:hover
+{
+  background-color: #5081d0;
+  
+}
 main {
   background-color: white;
   text-align: center;
