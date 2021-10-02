@@ -237,7 +237,7 @@ footer {
 /*  */
 .icons ul {
   display: flex;
-  margin-top: 410px !important;
+  margin-bottom: -3px;
 }
 
 .icons ul li {
