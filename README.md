@@ -2,7 +2,8 @@
 
 This is a College Library Website in which you can keep a record of all the books you have issued.
 
-<h4>[ In development Phase ]</h4>
+<h4>[ In development Phase ] 
+[ Hacktoberfest-Accepted ] </h4>
 <h2> 
 <a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit our website 🚀</a>
 
