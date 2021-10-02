@@ -18,12 +18,9 @@ nav.navbar {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-<<<<<<< HEAD
+
 
 .navbar-nav li a:hover:after{
-=======
-.navbar-nav li a:hover:after{ 
->>>>>>> 895b72dcc750b739cabac5f8c5ed5d5a73df78c6
   width: 100%;
   left: 0;
 }
