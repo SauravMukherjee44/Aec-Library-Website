@@ -4,7 +4,10 @@
 }
 
 body {
-	background: #f6f5f7;
+	
+	background-image: url('Login_background.jpg');
+	background-repeat: no-repeat;
+	background-size:100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -100,7 +103,7 @@ input {
 }
 
 .container {
-	background-color: #fff;
+	background-image: url('Capture.PNG');
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
