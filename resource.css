@@ -31,8 +31,13 @@ header h1 {
 
 header {
   padding: 40px;
+<<<<<<< HEAD
+  background: 
+  url("images/10.jpg") center;
+=======
   background: url("images/10.jpg") center;
   background-color: rgb(17, 124, 143);
+>>>>>>> 8bf84b5e1066026402b54000da0284ab4df4d31e
 }
 
 nav {
