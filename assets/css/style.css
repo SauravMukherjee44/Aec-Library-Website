@@ -365,6 +365,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   width: 100%;
 }
 
+h1 {  /* To make headings look more appealing */
+    text-decoration: overline;
+}
+
 .bg-info {
   /* To make nav-bar background transparent and shadow effect */
   /*     background-color: #ada39f00!important;
