@@ -12,11 +12,11 @@ body {
 
 .login-box {
   position: absolute;
-  top: 70%;
-  left: 50%;
+  top: 5%;
+  left: 25%;
   width: 650px;
   padding: 40px;
-  transform: translate(-50%, -50%);
+/*   transform: translate(-50%, -50%); */
   background: rgba(0, 0, 0, 0.871);
   box-sizing: border-box;
   box-shadow:10px 10px rgba(255, 183, 0, 0.845);
