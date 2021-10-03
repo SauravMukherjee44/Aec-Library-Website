@@ -1,0 +1,70 @@
+
+<!--A simple login page with rich user experience and  flexible for all window sizes(responsive)-->
+
+<!--Hacktoberfest2021-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    
+        
+
+
+<link rel="stylesheet" type="text/css" href="login_style.css" />
+</head>
+<body>
+    <h2 style="color: white;">AEC Library</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			
+			
+			<input type="text" placeholder="Name" />
+			<input type="number" placeholder="Phone Number" />
+			<input type="number" placeholder="Age"/>
+			<input type="text" placeholder="Gender" />
+			<input type="text" placeholder="Marital Status" />
+			<input type="password" placeholder="Password" />
+			<button><a class='tgt' href="bjjsearch.html">Sign Up</a></button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<span>or use your account</span>
+			<input type="number" placeholder="Phone number" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button><a class='tgt' href="bjjsearch.html">Sign In</a></button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p>
+		
+	</p>
+</footer>
+</body>
+<script src = "login_script.js"></script>
+</html>

@@ -150,6 +150,43 @@ function libraryFormSubmit(e) {
   e.preventDefault();
 }
 
+// Add submit event listener to searchForm
+let searchForm = document.getElementById("searchForm");
+searchForm.addEventListener("submit", searchFormSubmit);
+
+function searchFormSubmit(e) {
+  console.log("You have submitted search form");
+  const searchText = document.getElementById("searchTxt").value;
+  if (searchText == "") {
+    window.alert("Search text is Empty! Please Enter Something");
+  } else {
+    const searchTerms = searchText.split(" ");
+    const books = document.querySelectorAll("#tableBody tr");
+
+    books.forEach((book) => {
+      const bookTitle = book.querySelector("td:nth-child(2)").textContent;
+      const bookAuthor = book.querySelector("td:nth-child(3)").textContent;
+      
+      const bookHasSearchTerms = searchBookTerms(searchTerms, { bookTitle, bookAuthor });
+      if(bookHasSearchTerms)
+        book.style.display = 'table-row';
+      else
+        book.style.display = 'none';
+    })
+  }
+  e.preventDefault();
+}
+
+function searchBookTerms(searchTerms, { ...searchAttrs }) {
+  let termFound = false;
+
+  Object.values(searchAttrs).forEach((searchAttr) => {
+    termFound = termFound || searchTerms.indexOf(searchAttr) != -1;
+  })
+
+  return termFound;
+}
+
 //edit function
 function editfunction(pbookname, pauthorname, ptype, pbookid) {
   document.getElementById("bookName").value = pbookname;
@@ -165,7 +202,7 @@ function deletefunction(pbookid) {
 
 window.onload = function () {
   document.getElementById("loading").style.display = "none";
-  document.getElementById("body").style.display = "block";
+  // document.getElementById("body").style.display = "block";
 };
 // Todos"
 // 1. Store all the data to the localStorage
