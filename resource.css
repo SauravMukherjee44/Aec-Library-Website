@@ -1,13 +1,22 @@
 * {
   box-sizing: border-box;
+  padding:0;
+  margin:0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 h1,
 h2 {
   color: rgb(0, 148, 197);
   font-weight: bold;
 }
-
+a{
+  font-size: 15px;
+  text-decoration: none;
+  color:inherit;
+}
 body {
   margin: 0px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -33,6 +42,19 @@ nav {
 
 a {
   font-size: 15px;
+}
+.view{
+  display: block;
+  padding: 10px;
+}
+h3:hover{
+  position:relative;
+  top: -3px;
+  box-shadow: 0px 4px 5px 0px #706f6f;
+}
+nav a:hover {
+  color: white;
+  background-color: rgb(32, 32, 32);
 }
 
 nav a {
@@ -110,7 +132,36 @@ footer a {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+/*STUDY MATERIALS*/
+.study-container{
+  max-width:1300px;
+  margin:20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+  align-items: center;
+}
+.study-card{
+  margin:30px 15px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+.study-card .study-base{
+  height:350px;
+}
+.study-card .study-base img{
+  width:100%;
+  height:100%;
+  transition: all 0.2s ease-in-out;
+}
+.study-card h3{
+  background:white;
+  color:#333;
+}
 
+.study-card .study-base img:hover{
+  transform:scale(1.05);
+}
+/*!STUDY MATERIALS*/
 @media (min-width: 650px) {
   nav a {
     margin-left: 1.5rem;
@@ -135,6 +186,13 @@ footer a {
 @media (max-width: 650px) {
   .last {
     margin-bottom: 40px;
+  }
+    /*study material for smaller screens*/
+  .study-container .study-card{
+    margin:30px 0px;
+  }
+  .study-card .study-base{
+    height:420px;
   }
 }
 
