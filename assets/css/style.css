@@ -369,6 +369,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   width: 100%;
 }
 
+a.nav-link {  /* To make proper space so increasing spaces between nav bar icons  */
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  padding-bottom: 0rem;
+}
+
 h1 {  /* To make headings look more appealing */
     text-decoration: overline;
 }
