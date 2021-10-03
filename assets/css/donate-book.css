@@ -12,7 +12,7 @@ body {
 
 .login-box {
   position: absolute;
-  top: 70%;
+  top: 100%;
   left: 50%;
   width: 650px;
   padding: 40px;
@@ -218,4 +218,162 @@ input[type=checkbox], input[type=radio] {
   box-sizing: border-box;
   padding: 0;
   margin-top: 1rem;
+}
+
+
+
+.navbar-nav li a:after{
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-nav li a:hover:after{ 
+  width: 100%;
+  left: 0; 
+}
+.bg-info {
+  /*   background-color: #2e2e2e!important;
+  box-shadow: 0px 0px 16px 9px black; */
+  background-color: #343a40 !important;
+  box-shadow: 0px 0px 16px 9px black;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgb(243 243 243);
+  font-weight: bold;
+}
+nav.navbar {
+  /* margin-right: 12px !important; */
+  /* padding-right: 12px !important; */
+  right: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255 255 255 / 50%);
+  transition-duration: 0.3s;
+  font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  transition-duration: 0.3s;
+  color: rgb(255 255 255 / 100%);
+}
+
+
+
+a.nav-link {
+  /* To heighlight */
+  color: floralwhite !important;
+  font-size: 28px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-info {
+  /* To make nav-bar sticky */
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+.nav-link{
+  margin-left: 2rem;
+}
+
+
+
+
+
+
+.logo-img {
+  margin-left: 40px;
+  /* Width and height same to make icon look more professional */
+  height: 3rem;
+  width: 3rem;
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  
+  width: 100%;
+  height: 9vh;
+  background-color: #343a40;
+  color: white;
+  box-shadow: 0px 0px 16px 9px black;
+}
+
+.icons ul {
+  display: flex;
+  margin-bottom: -2px;
+}
+
+.icons ul li {
+  list-style: none;
+  margin-top: -3px;
+}
+
+.icons ul li a {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+  margin-top: 16px;
+}
+
+.icons ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.icons ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.icons ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #55acee;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.icons ul li a:hover:before {
+  top: 0;
+}
+
+.icons ul li:nth-child(2) a:before {
+  background: black;
+}
+/* CopyRights */
+.icons ul p {
+  position: absolute;
+  left: 40%;
+  top: 20px;
+}
+.ml-auto{
+  margin-top: 13px;
+  font-size:20px;;
 }
