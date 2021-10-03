@@ -347,7 +347,12 @@
     
 <script>
         $(document).ready(function() {
-    $('#mytable').DataTable();
+    $('#mytable').DataTable(
+       {
+        language : {
+            "zeroRecords": ""             
+        },
+       } );
 } );
     </script>
 </body>
