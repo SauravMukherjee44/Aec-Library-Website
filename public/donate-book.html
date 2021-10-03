@@ -49,41 +49,37 @@
   </nav>
   <div class="login-box">
     <h2>Book Donation Form 📚</h2>
-    <form>
+    <form id="EnquireNow" method="POST">
       <div class="user-box">
-        <input type="text" name="" required="" autofocus>
+        <input type="text" name="name" id="name" autofocus required>
         <label>Name</label>
       </div>
-      <!-- <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Last Name</label>
-        </div> -->
       <div class="user-box">
-        <input type="email" name="" required="">
+        <input type="email" name="email" id="email" required>
         <label>Email</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="contact" id="contact" required>
         <label>Contact</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="address" id="address" required>
         <label>Address</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="country" id="country" required>
         <label>Country</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="state" id="state" required>
         <label>State</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="city" id="city" required>
         <label>City</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="zipcode" id="zipcode" required>
         <label>Zip</label>
       </div>
 
@@ -92,11 +88,11 @@
       </div>
 
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="landmark" id="landmark">
         <label>Landmark (Optional)</label>
       </div>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="Alt_Phone" id="Alt_Phone">
         <label>Alternate Phone (Optional)</label>
       </div>
       <div class="user-box">
@@ -108,13 +104,13 @@
       <input class="form-check-input" type="checkbox" id="gridCheck">
 
 
-      <a href="#">
+      <button type="submit" name="submit" id="submit" class="CTA__Submit">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
         Submit
-      </a>
+      </button>
     </form>
   </div>
   <footer>
@@ -171,6 +167,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<!-- working Ashish yadav -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../assets/js/AjaxFom.js"></script>
 <!-- working Ashish yadav -->
 </body>
 
