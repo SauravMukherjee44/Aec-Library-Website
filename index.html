@@ -9,9 +9,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>AEC Library</title>
-  <script src="./assets/js/particle.js"></script>
-
-
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <!--Adding AOS in it-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -20,7 +17,7 @@
 </head>
 
 <body>
-
+  <div id="particles-js"></div>
   <div id="topBtn" title="Go to Top">
     <a href="#"><span class="fa fa-angle-up"></span></a>
   </div>
@@ -79,7 +76,7 @@
     </div>
   </div> -->
 
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="#"><img src="assets/images/1.png" alt="AEC Library"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,14 +86,15 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link text-center" href="#"><i class="fas fa-home"></i> Home <span
+              class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item"><a href="./public/donate-book.html" class="nav-link" target="_blank"> <i
+        <li class="nav-item text-center"><a href="./public/donate-book.html" class="nav-link" target="_blank"> <i
               class="fas fa-book"></i> Donate Books </a></li>
-        <li class="nav-item"><a href="resource.html" class="nav-link" target="_blank"> <i
+        <li class="nav-item text-center"><a href="resource.html" class="nav-link" target="_blank"> <i
               class="fas fa-external-link-alt"></i> Resources</a></li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <form class="form-inline my-2 my-lg-0 justify-content-center">
         <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search" />
         <button class=" btn-dark my-2 my-sm-0" type="submit">
           Search
@@ -123,82 +121,76 @@
 
   <div id="message"></div>
 
-  <div class="container my-3">
-    <h1>Add Books</h1>
-    <h5 align="center">
-      <a href="" style="color:black;" class="typewrite" data-period="2000"
-        data-type='[ "“If you don’t like to read, you haven’t found the right book.” – J.K. Rowling", "“That’s the thing about books. They let you travel without moving your feet.” – Jhumpa Lahiri", "“There is more treasure in books than in all the pirate’s loot on Treasure Island.” – Walt Disney", "“Some of these things are true and some of them lies. But they are all good stories.” – Hilary Mantel" ]'>
-        <span class="wrap"></span>
-      </a>
-    </h5>
-    <hr />
-    <form id="libraryForm">
-      <div class="form-group row">
-        <label for="dateIssue" class="col-sm-2 col-form-label"> <strong>Date of Issue</strong></label>
-        <div class="col-sm-10">
-          <input type="date" id="issueDate" name="issueDate">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="bookName" class="col-sm-2 col-form-label"> <strong>Name</strong></label>
-        <div class="col-sm-10">
-          <input type="text" class="input-box" id="bookName" placeholder="Book Name" />
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="Author" class="col-sm-2 col-form-label"> <strong>Author</strong></label>
-        <div class="col-sm-10">
-          <input type="text" class="input-box" id="author" placeholder="Author" />
-
-        </div>
-      </div>
-      <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0"> <strong>Category</strong></legend>
+  <div class="container d-flex flex-column my-3">
+    <div class="add-books">
+      <h1>Add Books</h1>
+      <form id="libraryForm">
+        <div class="form-group row">
+          <label for="dateIssue" class="col-sm-2 col-form-label"> <strong>Date of Issue</strong></label>
           <div class="col-sm-10">
-            <div class="form-check">
-              <select class="form-check-input" name="category" id="category" style="z-index: 1;">
-                <option value="N/A">Select Category</option>
-                <option value="Arts & Music">Arts & Music</option>
-                <option value="Biographies">Biographies</option>
-                <option value="Business">Business</option>
-                <option value="Comics">Comics</option>
-                <option value="Computer & Tech">Computers & Tech</option>
-                <option value="Cooking">Cooking</option>
-                <option value="Education & Reference">Education & Reference</option>
-                <option value="Entertainment">Entertainment</option>
-                <option value="Health & Fitness">Health & Fitness</option>
-                <option value="History">History</option>
-                <option value="Hobbies & Crafts">Hobbies & Crafts</option>
-                <option value="Home & Garden">Home & Garden</option>
-                <option value="Horror">Horror</option>
-                <option value="Kids">Kids</option>
-                <option value="Literature & Fiction">Literature & Fiction</option>
-                <option value="Medical">Medical</option>
-                <option value="Mystery">Mystery</option>
-                <option value="Parenting">Parenting</option>
-                <option value="Religion">Religion</option>
-                <option value="Romance">Romance</option>
-                <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
-                <option value="Science & Maths">Science & Maths</option>
-                <option value="Self-Help">Self-Help</option>
-                <option value="Social Sciences">Social Sciences</option>
-                <option value="Sports">Sports</option>
-                <option value="Travel">Travel</option>
-                <option value="True Crime">True Crime</option>
-              </select>
-            </div>
+            <input type="date" id="issueDate" name="issueDate">
           </div>
         </div>
-      </fieldset>
-
-      <div class="form-group row">
-        <div class="col-sm-10">
-          <button type="submit" class="btn btn-primary">Add Book</button>
+        <div class="form-group row">
+          <label for="bookName" class="col-sm-2 col-form-label"> <strong>Name</strong></label>
+          <div class="col-sm-10">
+            <input type="text" id="bookName" placeholder="Book Name" />
+          </div>
         </div>
-      </div>
-    </form>
+        <div class="form-group row">
+          <label for="Author" class="col-sm-2 col-form-label"> <strong>Author</strong></label>
+          <div class="col-sm-10">
+            <input type="text" id="author" placeholder="Author" />
 
+          </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2"> <strong>Category</strong></legend>
+            <div class="col-sm-12">
+              <div class="form-check">
+                <select name="category" id="category" style="z-index: 1;">
+                  <option value="N/A">Select Category</option>
+                  <option value="Arts & Music">Arts & Music</option>
+                  <option value="Biographies">Biographies</option>
+                  <option value="Business">Business</option>
+                  <option value="Comics">Comics</option>
+                  <option value="Computer & Tech">Computers & Tech</option>
+                  <option value="Cooking">Cooking</option>
+                  <option value="Education & Reference">Education & Reference</option>
+                  <option value="Entertainment">Entertainment</option>
+                  <option value="Health & Fitness">Health & Fitness</option>
+                  <option value="History">History</option>
+                  <option value="Hobbies & Crafts">Hobbies & Crafts</option>
+                  <option value="Home & Garden">Home & Garden</option>
+                  <option value="Horror">Horror</option>
+                  <option value="Kids">Kids</option>
+                  <option value="Literature & Fiction">Literature & Fiction</option>
+                  <option value="Medical">Medical</option>
+                  <option value="Mystery">Mystery</option>
+                  <option value="Parenting">Parenting</option>
+                  <option value="Religion">Religion</option>
+                  <option value="Romance">Romance</option>
+                  <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
+                  <option value="Science & Maths">Science & Maths</option>
+                  <option value="Self-Help">Self-Help</option>
+                  <option value="Social Sciences">Social Sciences</option>
+                  <option value="Sports">Sports</option>
+                  <option value="Travel">Travel</option>
+                  <option value="True Crime">True Crime</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Add Book</button>
+          </div>
+        </div>
+      </form>
+    </div>
     <div id="table">
       <h1>YOUR BOOKS</h1>
       <div style="overflow-x:auto;">
@@ -235,6 +227,7 @@
   </footer>
   <!-- Scripts -->
   <script src="./assets/js/script.js"></script>
+  <script src="assets/js/particles.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -271,8 +264,8 @@
       once: false,
     });
 
-    particlesJS.load('particles-js', 'assets\js\p1.json', function () {
-      console.log('callback - particles.js config loaded');
+    particlesJS.load("particles-js", "assets/js/config.json", function () {
+      console.log("callback - particles.js config loaded");
     });
   </script>
 

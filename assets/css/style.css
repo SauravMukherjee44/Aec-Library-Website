@@ -6,11 +6,17 @@
   margin: 0;
 }
 
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
 body {
   width: 100%;
   scroll-behavior: smooth;
-  /* background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true"); */
-  background-color: #000000;
+  background: url(../images/black-paper.png), #020202;
 }
 
 .main-page {
@@ -61,7 +67,7 @@ body {
 
 nav.navbar {
   position: fixed;
-  background-color: #343a40db !important;
+  background-color: #000000ea !important;
   top: 0;
   width: 100%;
   z-index: 10;
@@ -70,7 +76,7 @@ nav.navbar {
 .navbar-nav li a {
   color: #f2f2f2 !important;
   font: 15px sans-serif !important;
-  margin: 0 15px;
+  margin: 10px 15px;
 }
 
 .navbar-nav li a:after {
@@ -95,8 +101,26 @@ nav.navbar {
   display: inline-flex;
 }
 
-.navbar-brand img{
+.navbar-brand img {
   width: 70%;
+  filter: invert(1);
+}
+
+.navbar-toggler {
+  color: #00ffd5 !important;
+}
+
+
+/* Form */
+
+.add-books {
+  text-align: center;
+}
+
+#libraryForm input,
+#libraryForm select {
+  border-radius: 50px;
+  padding: 1px 5px;
 }
 
 .form-control {
@@ -117,26 +141,10 @@ nav.navbar {
   transition: all 0.5s;
 }
 
-.form-inline button:hover, 
+.form-inline button:hover,
 .form-inline button:active {
   background: #295dcc;
   box-shadow: 2px 2px 5px #000;
-}
-
-/* Category */
-.form-check-input {
-  border-radius: 15px;
-  margin-top: 10px;
-  padding: 5px;
-  width: 25%;
-}
-
-/* Authors */
-.form-check-input1 {
-  border-radius: 15px;
-  margin-top: 10px;
-  padding: 5px;
-  width: 25%;
 }
 
 .container h1 {
@@ -158,23 +166,6 @@ nav.navbar {
   color: rgb(255, 255, 255, 100%);
 }
 
-#issueDate {
-  border-radius: 15px;
-  height: 30px;
-}
-
-.input-box {
-  border: none;
-  border-bottom: 1.5px solid rgba(168, 154, 154, 0.322);
-  border-radius: 0px;
-  transition: none;
-  width: 33%;
-  height: 30px;
-  padding-bottom: 2px;
-  border-radius: 15px;
-  margin-top: 14px;
-  padding-left: 10px;
-}
 
 .btn {
   width: 150px;
@@ -273,21 +264,23 @@ footer {
   height: 9vh;
   background-color: #343a40;
   color: white;
-  box-shadow: 0px 0px 16px 9px black;
 }
 
 /*  */
 .icons ul {
-  display: flex;
-  margin-top: 410px !important;
+  display: relative;
+  margin-left: 50px;
 }
 
 .icons ul li {
+  display: inline-block;
   list-style: none;
-  margin-top: -6px;
+  margin: 2vh 0;
 }
 
 .icons ul li a {
+  position: relative;
+  display: block;
   width: 40px;
   height: 40px;
   background-color: #fff;
@@ -295,13 +288,10 @@ footer {
   line-height: 35px;
   font-size: 15px;
   margin: 0 10px;
-  display: block;
   border-radius: 50%;
-  position: relative;
-  overflow: hidden;
   border: 3px solid #fff;
   z-index: 1;
-  margin-top: 15px;
+  overflow: hidden;
 }
 
 .icons ul li a .icon {
@@ -395,13 +385,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-.bg-info {
-  /* To make nav-bar background transparent and shadow effect */
-  /*     background-color: #ada39f00!important;
-    box-shadow: 0px 0px 16px 9px #efecec4d; */
-  z-index: 100;
 }
 
 strong {
@@ -795,10 +778,6 @@ strong {
 
   .body-style {
     width: 20rem;
-  }
-
-  .input-box {
-    width: 15rem;
   }
 
   footer {
