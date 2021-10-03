@@ -6,6 +6,48 @@ nav.navbar {
   /* padding-right: 12px !important; */
   right: 0;
 }
+#table
+{
+  border:5px solid white;
+  padding-right:10px;
+  padding-left:10px;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: transparent;
+  margin-left: 3px;
+  
+  font-weight: bold;
+}
+select{
+  color:black;
+}
+.dataTables_wrapper .dataTables_length select {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 5px;
+ 
+  padding: 4px;
+  color:white;
+  font-weight: bold;
+}
+
+label
+{
+  color:white;
+  font-weight:bold;
+}
+.datTables_paginate
+{
+  color:white;
+}
+.pagination-right,.pagination-left
+{
+   color:white;
+}
 
 .navbar-nav li a:after{
   bottom: 0;
@@ -73,7 +115,7 @@ nav.navbar {
   width:25%;
 }
 .container h1 {
-  padding-top: 70px;
+  padding-top: 30px;
   color: rgb(255, 255, 255);
   /* font-family: "Poiret One", cursive; */
   font-weight: bolder;
