@@ -6,10 +6,6 @@ nav.navbar {
   /* padding-right: 12px !important; */
   right: 0;
 }
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
 .navbar-nav li a:after{
   bottom: 0;
@@ -755,18 +751,28 @@ strong {
 
 
 /* For making responsive */
-@media (max-width:415px){
+@media (max-width:800px){
   .body-style{
-    overflow-y: hidden;
+    box-shadow: none;
+    padding: 1rem;
   }
   #table{
-    width: 24rem;
+    width: 29rem;
     height: 10rem;
+  }
+  .body-style{
+    width: 20rem;
   }
   .input-box{
     width: 15rem;
   }
-  
+  footer{
+    width: 40rem;
+    margin-left: -2rem;
+    height: 5rem;
+    margin-bottom: -2rem;
+    padding: 0rem;
+  }
   .nav-link{
     margin-left: 2rem;
   }
