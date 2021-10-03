@@ -1,6 +1,6 @@
 * {
   font-family: 'Playfair Display', serif;
-}
+} 
 nav.navbar {
   /* margin-right: 12px !important; */
   /* padding-right: 12px !important; */
@@ -233,7 +233,7 @@ html {
 footer {
   position: relative;
   width: 100%;
-  height: 9vh;
+  height: 11vh;
   background-color: #343a40;
   color: white;
   box-shadow: 0px 0px 16px 9px black;
