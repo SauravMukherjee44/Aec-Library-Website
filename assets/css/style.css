@@ -8,7 +8,10 @@ nav.navbar {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> faa3ffed15510d65d903e2fabbf652a33f7c4d49
 .navbar-nav li a:after{
   bottom: 0;
   content: "";
@@ -20,6 +23,7 @@ nav.navbar {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
 .navbar-nav li a:hover:after{ 
   width: 100%;
   left: 0; 
@@ -31,7 +35,11 @@ nav.navbar {
 .nav-item{
   padding-right: 15px;
 }
+<<<<<<< HEAD
 >>>>>>> upstream/main
+=======
+
+>>>>>>> faa3ffed15510d65d903e2fabbf652a33f7c4d49
 #loading {
   position: fixed;
   width: 100%;
@@ -313,12 +321,20 @@ footer {
   top: 20px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> faa3ffed15510d65d903e2fabbf652a33f7c4d49
 .ml-auto{
   margin-top: 13px;
   font-size:20px;;
 }
+<<<<<<< HEAD
 >>>>>>> upstream/main
+=======
+
+>>>>>>> faa3ffed15510d65d903e2fabbf652a33f7c4d49
 
 .table thead th {
   vertical-align: bottom;
@@ -800,3 +816,21 @@ strong {
     margin-left: 1.5rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
