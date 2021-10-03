@@ -22,6 +22,10 @@ nav.navbar {
   
   font-weight: bold;
 }
+.odd
+{
+  display:none;
+}
 select{
   color:black;
 }
@@ -29,9 +33,9 @@ select{
   border: 1px solid #aaa;
   border-radius: 3px;
   padding: 5px;
- 
+  color:yellowgreen;
   padding: 4px;
-  color:white;
+ 
   font-weight: bold;
 }
 
