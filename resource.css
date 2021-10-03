@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 h1,
@@ -12,15 +12,14 @@ h2 {
   color: rgb(0, 148, 197);
   font-weight: bold;
 }
-a{
+a {
   font-size: 15px;
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 body {
   margin: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 header h1 {
@@ -43,12 +42,12 @@ nav {
 a {
   font-size: 15px;
 }
-.view{
+.view {
   display: block;
   padding: 10px;
 }
-h3:hover{
-  position:relative;
+h3:hover {
+  position: relative;
   top: -3px;
   box-shadow: 0px 4px 5px 0px #706f6f;
 }
@@ -120,33 +119,33 @@ section h5 {
   transform-origin: bottom left;
 }
 /*STUDY MATERIALS*/
-.study-container{
-  max-width:1300px;
-  margin:20px auto;
+.study-container {
+  max-width: 1300px;
+  margin: 20px auto;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   align-items: center;
 }
-.study-card{
-  margin:30px 15px;
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+.study-card {
+  margin: 30px 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.study-card .study-base{
-  height:350px;
+.study-card .study-base {
+  height: 350px;
 }
-.study-card .study-base img{
-  width:100%;
-  height:100%;
+.study-card .study-base img {
+  width: 100%;
+  height: 100%;
   transition: all 0.2s ease-in-out;
 }
-.study-card h3{
-  background:white;
-  color:#333;
+.study-card h3 {
+  background: white;
+  color: #333;
 }
 
-.study-card .study-base img:hover{
-  transform:scale(1.05);
+.study-card .study-base img:hover {
+  transform: scale(1.05);
 }
 /*!STUDY MATERIALS*/
 @media (min-width: 650px) {
@@ -174,12 +173,12 @@ section h5 {
   .last {
     margin-bottom: 40px;
   }
-    /*study material for smaller screens*/
-  .study-container .study-card{
-    margin:30px 0px;
+  /*study material for smaller screens*/
+  .study-container .study-card {
+    margin: 30px 0px;
   }
-  .study-card .study-base{
-    height:420px;
+  .study-card .study-base {
+    height: 420px;
   }
 }
 
@@ -191,15 +190,6 @@ section h5 {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /* background-color: #2196f3; */
-  /* padding: 5px; */
-}
-.grid-item {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
-  /* padding: 20px;
-  font-size: 20px;
-  text-align: center; */
 }
 
 @media screen and (max-width: 1110px) {
@@ -215,7 +205,6 @@ section h5 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
 
     /*footer styling*/
 
@@ -366,3 +355,32 @@ footer a:hover{
   color: white;
   margin-left: 4.5rem;
 }*/
+
+.card {
+  display: inline;
+}
+
+img {
+  box-shadow: 5px 3px gainsboro;
+  height: 450px;
+  border-radius: 15px;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1400px) {
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+@media screen and (max-width: 735px) {
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+  }
+}
+

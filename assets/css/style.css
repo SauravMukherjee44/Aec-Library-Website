@@ -1,11 +1,12 @@
 * {
   font-family: 'Playfair Display', serif;
-}
+} 
 nav.navbar {
   /* margin-right: 12px !important; */
   /* padding-right: 12px !important; */
   right: 0;
 }
+
 
 .navbar-nav li a:after{
   bottom: 0;
@@ -21,6 +22,10 @@ nav.navbar {
 .navbar-nav li a:hover:after{ 
   width: 100%;
   left: 0; 
+}
+
+.nav-item{
+  padding-right: 15px;
 }
 #loading {
   position: fixed;
@@ -54,6 +59,7 @@ nav.navbar {
   color: rgb(243 243 243);
   font-weight: bold;
 }
+
 /* Category */
 .form-check-input {
   border-radius: 15px;
@@ -229,7 +235,7 @@ html {
 footer {
   position: relative;
   width: 100%;
-  height: 9vh;
+  height: 11vh;
   background-color: #343a40;
   color: white;
   box-shadow: 0px 0px 16px 9px black;
@@ -251,7 +257,7 @@ footer {
   background-color: #fff;
   text-align: center;
   line-height: 30px;
-  font-size: 15px;
+  font-size: 10px;
   margin: 0 10px;
   display: block;
   border-radius: 50%;
@@ -355,12 +361,12 @@ footer {
 a.nav-link {
   /* To heighlight */
   color: floralwhite !important;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   /* To make nav-bar sticky */
-  position: fixed;
+  position: static;
   top: 0;
   width: 100%;
 }
