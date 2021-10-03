@@ -10,11 +10,12 @@ body {
 }
 
 .login-box {
-  margin-top: 150px;
-  
-  position: absolute;
+  margin-top: 100px;
+   position: absolute;
   top: 100%;
   left: 50%;
+  top: 5%;
+  left: 25%;
   width: 650px;
   padding: 40px;
 /*   transform: translate(-50%, -50%); */
@@ -221,7 +222,7 @@ input[type='radio'] {
   padding: 0;
   margin-top: 1rem;
 }
-<<<<<<< HEAD
+
 
 
 
@@ -329,11 +330,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   color: rgb(243 243 243);
   font-weight: bold;
 }
-nav.navbar {
-  /* margin-right: 12px !important; */
-  /* padding-right: 12px !important; */
-  right: 0;
-}
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255 255 255 / 50%);
   transition-duration: 0.3s;
@@ -376,12 +372,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 
 
 footer {
-  position: fixed;
+  position:fixed;
   left: 0;
   bottom: 0;
   
   width: 100%;
-  height: 9vh;
+  height: 7vh;
   background-color: #343a40;
   color: white;
   box-shadow: 0px 0px 16px 9px black;
