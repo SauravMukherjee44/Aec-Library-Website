@@ -37,7 +37,7 @@ So, here you go! Using this College Library Website can save a record of all you
 
 ## 📌 Sneak Peek of Main Page
 
-![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/7cf3bafebd9e1a6d6fa95f40822cbcdd28a4005b/assets/images/aec.PNG)
+![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/7cf3bafebd9e1a6d6fa95f40822cbcdd28a4005b/assets/images/main.PNG)
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
