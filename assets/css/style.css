@@ -24,6 +24,10 @@ nav.navbar {
   left: 0; 
 }
 
+.nav-item{
+  padding-right: 15px;
+}
+
 #loading {
   position: fixed;
   width: 100%;
@@ -140,7 +144,12 @@ html {
   border-radius: 10px;
   margin-top: 2rem;
 }
-
+#searchsymbol{
+  width: 30px;
+}
+#searchTxt{
+  border-radius: 10px;
+}
 .btn:before {
   content: "";
   background: linear-gradient(
@@ -236,21 +245,21 @@ footer {
 
 .icons ul {
   display: flex;
-  margin-top: 410px !important;
+  margin-bottom: -2px;
 }
 
 .icons ul li {
   list-style: none;
-  margin-top: -6px;
+  margin-top: -3px;
 }
 
 .icons ul li a {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   background-color: #fff;
   text-align: center;
-  line-height: 35px;
-  font-size: 15px;
+  line-height: 30px;
+  font-size: 10px;
   margin: 0 10px;
   display: block;
   border-radius: 50%;
@@ -258,7 +267,7 @@ footer {
   overflow: hidden;
   border: 3px solid #fff;
   z-index: 1;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 .icons ul li a .icon {
@@ -299,6 +308,12 @@ footer {
   left: 40%;
   top: 20px;
 }
+
+.ml-auto{
+  margin-top: 13px;
+  font-size:20px;;
+}
+
 
 .table thead th {
   vertical-align: bottom;
@@ -780,3 +795,21 @@ strong {
     margin-left: 1.5rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
