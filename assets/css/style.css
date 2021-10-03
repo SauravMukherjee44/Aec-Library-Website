@@ -22,6 +22,10 @@ nav.navbar {
   width: 100%;
   left: 0; 
 }
+
+.nav-item{
+  padding-right: 15px;
+}
 #loading {
   position: fixed;
   width: 100%;
@@ -251,7 +255,7 @@ footer {
   background-color: #fff;
   text-align: center;
   line-height: 30px;
-  font-size: 15px;
+  font-size: 10px;
   margin: 0 10px;
   display: block;
   border-radius: 50%;
