@@ -779,3 +779,43 @@ strong {
     margin-left: 1.5rem;
   }
 }
+.new-nav{
+  background: rgba(26, 25, 25, 0.911);
+  opacity: 1;
+  height: 70px;
+  
+}
+nav ul{
+  display: flex;
+  float: right;
+  margin-top: 0px;
+  margin-right: 5px;
+  padding: 4px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 55px;
+  margin-left: 15px;
+  margin-top: 0%;
+  border-radius: 25px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  margin: 10px;
+  font-family: sans-serif;
+  font-size: 0.5cm;
+}
+nav ul li a:hover{
+  color: black;
+  
+}
+nav ul li:hover{
+  background-color: grey;
+}
+.searchBar{
+  display: inline-block;  
+  margin-left: 78%;
+  margin-right: 0px;
+  height: 40px;
+}
