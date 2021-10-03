@@ -1,6 +1,6 @@
 <h1 align="center">Open-Source Library Website </h1>
 
-This is a Open-Source Library Website in which you wil get Resources to learn different topics, Donate book section to donate your old books and Boo issue section to keep  record of all the books.
+This is a Open-Source Library Website in which you get Resources to learn different topics, Donate book section to donate your old books and Book issue section to keep  record of all the books issued.
 
 <h4>[ In development Phase ] 
 [ Hacktoberfest-Accepted ] </h4>
