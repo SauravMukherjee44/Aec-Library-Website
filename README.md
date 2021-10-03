@@ -1,6 +1,6 @@
 <h1 align="center">Open-Source Library Website </h1>
 
-This is a Open-Source Library Website in which you can keep a record of all the books you have issued.
+This is a Open-Source Library Website in which you wil get Resources to learn different topics, Donate book section to donate your old books and Boo issue section to keep  record of all the books.
 
 <h4>[ In development Phase ] 
 [ Hacktoberfest-Accepted ] </h4>
@@ -11,7 +11,6 @@ This is a Open-Source Library Website in which you can keep a record of all the 
 <a href="https://discord.com/invite/sqFRzrj7f3" target="_blank">Join Us On Discord ⚡</a>
 </h2>
 
-So, here you go! Using this College Library Website can save a record of all your college Books and stuffs. 🤩 Excited?
 
 <div align="left">
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://sloc.xyz/github/SauravMukherjee44/Aec-Library-Website" alt="LOC"/></a>
