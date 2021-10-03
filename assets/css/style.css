@@ -1,11 +1,30 @@
 * {
-  font-family: 'Hahmlet', serif;
-  font-family: 'Sora', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 nav.navbar {
   /* margin-right: 12px !important; */
   /* padding-right: 12px !important; */
   right: 0;
+}
+
+.navbar-nav li a:after{
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-nav li a:hover:after{ 
+  width: 100%;
+  left: 0; 
+}
+
+.nav-item{
+  padding-right: 15px;
 }
 #loading {
   position: fixed;
@@ -39,20 +58,25 @@ nav.navbar {
   color: rgb(243 243 243);
   font-weight: bold;
 }
-
-/* all form inputs */
-input, select{
-  padding: 5px 10px;
-  border-radius: 10px;
-  cursor: text;
-  width: 35%;
+/* Category */
+.form-check-input {
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 5px;
+  width:25%;
+}
+/* Authors */
+.form-check-input1 {
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 5px;
+  width:25%;
 }
 .container h1 {
   padding-top: 70px;
   color: rgb(255, 255, 255);
   /* font-family: "Poiret One", cursive; */
   font-weight: bolder;
-  text-shadow: 1px 1px 7px black;
   letter-spacing: 0.1em;
 }
 
@@ -69,6 +93,23 @@ html {
   scroll-behavior: smooth;
 }
 
+#issueDate{
+  border-radius:15px;
+  height:30px;
+}
+
+.input-box {
+  border: none;
+  border-bottom: 1.5px solid rgba(168, 154, 154, 0.322);
+  border-radius: 0px;
+  transition: none;
+  width: 33%;
+  height: 30px;
+  padding-bottom: 2px;
+  border-radius: 15px;
+  margin-top: 14px;
+  padding-left: 10px;
+}
 .input-box:focus {
   outline: none;
   border-bottom: 1.5px solid yellowgreen;
@@ -98,7 +139,12 @@ html {
   border-radius: 10px;
   margin-top: 2rem;
 }
-
+#searchsymbol{
+  width: 30px;
+}
+#searchTxt{
+  border-radius: 10px;
+}
 .btn:before {
   content: "";
   background: linear-gradient(
@@ -195,21 +241,21 @@ footer {
 /*  */
 .icons ul {
   display: flex;
-  margin-top: 410px !important;
+  margin-bottom: -2px;
 }
 
 .icons ul li {
   list-style: none;
-  margin-top: -6px;
+  margin-top: -3px;
 }
 
 .icons ul li a {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   background-color: #fff;
   text-align: center;
-  line-height: 35px;
-  font-size: 15px;
+  line-height: 30px;
+  font-size: 10px;
   margin: 0 10px;
   display: block;
   border-radius: 50%;
@@ -217,7 +263,7 @@ footer {
   overflow: hidden;
   border: 3px solid #fff;
   z-index: 1;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 .icons ul li a .icon {
@@ -254,9 +300,14 @@ footer {
 /* CopyRights */
 .icons ul p {
   position: absolute;
-  left: 50%;
+  left: 40%;
   top: 20px;
 }
+.ml-auto{
+  margin-top: 13px;
+  font-size:20px;;
+}
+
 .table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
