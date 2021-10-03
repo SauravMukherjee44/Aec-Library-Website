@@ -779,3 +779,13 @@ strong {
     margin-left: 1.5rem;
   }
 }
+
+div.res{
+  position: relative;
+ }
+ .res a{
+   position: absolute;
+   right: 10%;
+   top: 50%;
+    transform: translateY(-50%);   
+ }
