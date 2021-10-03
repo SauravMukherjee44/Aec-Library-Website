@@ -75,7 +75,7 @@ nav.navbar {
   width:25%;
 }
 .container h1 {
-  padding-top: 70px;
+  padding-top: 80px;
   color: rgb(255, 255, 255);
   /* font-family: "Poiret One", cursive; */
   font-weight: bolder;
@@ -346,8 +346,8 @@ footer {
 .logo-img {
   margin-left: 40px;
   /* Width and height same to make icon look more professional */
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width:  3rem;
 }
 
 @media only screen and (max-width: 500px) {
@@ -361,7 +361,7 @@ footer {
 a.nav-link {
   /* To heighlight */
   color: floralwhite !important;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
