@@ -1,12 +1,57 @@
 * {
   font-family: 'Playfair Display', serif;
-} 
+}
 nav.navbar {
   /* margin-right: 12px !important; */
   /* padding-right: 12px !important; */
   right: 0;
 }
+#table
+{
+  border:5px solid white;
+  padding-right:10px;
+  padding-left:10px;
+}
 
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: transparent;
+  margin-left: 3px;
+  
+  font-weight: bold;
+}
+.odd
+{
+  display:none;
+}
+select{
+  color:black;
+}
+.dataTables_wrapper .dataTables_length select {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 5px;
+  color:yellowgreen;
+  padding: 4px;
+ 
+  font-weight: bold;
+}
+
+label
+{
+  color:white;
+  font-weight:bold;
+}
+.datTables_paginate
+{
+  color:white;
+}
+.pagination-right,.pagination-left
+{
+   color:white;
+}
 
 .navbar-nav li a:after{
   bottom: 0;
@@ -59,7 +104,6 @@ nav.navbar {
   color: rgb(243 243 243);
   font-weight: bold;
 }
-
 /* Category */
 .form-check-input {
   border-radius: 15px;
@@ -75,7 +119,7 @@ nav.navbar {
   width:25%;
 }
 .container h1 {
-  padding-top: 80px;
+  padding-top: 30px;
   color: rgb(255, 255, 255);
   /* font-family: "Poiret One", cursive; */
   font-weight: bolder;
@@ -235,7 +279,7 @@ html {
 footer {
   position: relative;
   width: 100%;
-  height: 11vh;
+  height: 9vh;
   background-color: #343a40;
   color: white;
   box-shadow: 0px 0px 16px 9px black;
@@ -347,7 +391,7 @@ footer {
   margin-left: 40px;
   /* Width and height same to make icon look more professional */
   height: 3rem;
-  width:  3rem;
+  width: 3rem;
 }
 
 @media only screen and (max-width: 500px) {
