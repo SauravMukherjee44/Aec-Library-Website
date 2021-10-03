@@ -6,9 +6,6 @@ nav.navbar {
   /* padding-right: 12px !important; */
   right: 0;
 }
-nav{
-  padding:15px;
-}
 
 .navbar-nav li a:after{
   bottom: 0;
@@ -27,8 +24,7 @@ nav{
 }
 
 .nav-item{
-  padding: 15px;
-  font-size:15px;
+  padding-right: 15px;
 }
 #loading {
   position: fixed;
