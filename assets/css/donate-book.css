@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 html {
-  height: 60rem ;
+  height: 60rem;
 }
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
   background: rgb(86, 45, 211);
-  
 }
 
 .login-box {
@@ -19,11 +18,10 @@ body {
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.871);
   box-sizing: border-box;
-  box-shadow:10px 10px rgba(255, 183, 0, 0.845);
+  box-shadow: 10px 10px rgba(255, 183, 0, 0.845);
   border-radius: 20px;
   transition-duration: 0.5s;
   margin-bottom: 100px;
-  
 }
 
 .login-box h2 {
@@ -53,13 +51,13 @@ body {
 }
 .login-box .user-box label {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .login-box .user-box input:focus ~ label,
@@ -85,7 +83,7 @@ body {
 }
 
 .login-box a:hover {
-  background:rgb(75, 26, 222);
+  background: rgb(75, 26, 222);
   color: #fff;
   border-radius: 5px;
   /* box-shadow: 0 0 5px #03e9f4,
@@ -106,19 +104,18 @@ body {
   height: 2px;
   background: linear-gradient(90deg, transparent, rgb(255, 183, 0));
   animation: btn-anim1 2s linear infinite;
-} */
-
-.login-box a span:nth-child(2) {
+}
+*/ .login-box a span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg, transparent, rgb(255, 183, 0));
   animation: btn-anim2 1s linear infinite;
-  animation-delay: 2.2s
+  animation-delay: 2.2s;
 }
 
-.login-box:hover{
+.login-box:hover {
   transition-duration: 0.4s;
   box-shadow: 0px 0px 19px 11px rgb(255, 183, 0);
 }
@@ -127,7 +124,8 @@ body {
   0% {
     top: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     top: 100%;
   }
 }
@@ -135,11 +133,11 @@ body {
   0% {
     left: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     left: 100%;
   }
 }
-
 
 .login-box a span:nth-child(3) {
   bottom: 0;
@@ -148,14 +146,15 @@ body {
   height: 2px;
   background: linear-gradient(270deg, transparent, rgb(255, 183, 0));
   animation: btn-anim3 1s linear infinite;
-  animation-delay: 2.5s
+  animation-delay: 2.5s;
 }
 
 @keyframes btn-anim3 {
   0% {
     right: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     right: 100%;
   }
 }
@@ -167,14 +166,15 @@ body {
   height: 100%;
   background: linear-gradient(360deg, transparent, rgb(255, 183, 0));
   animation: btn-anim4 1s linear infinite;
-  animation-delay: 2.7s
+  animation-delay: 2.7s;
 }
 
 @keyframes btn-anim4 {
   0% {
     bottom: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     bottom: 100%;
   }
 }
@@ -203,23 +203,99 @@ body {
 
 @media only screen and (max-width: 1100px) {
   .login-box {
-    
     width: 700px;
   }
 }
 @media only screen and (max-width: 800px) {
   .login-box {
-    top: 60%;
+    top: 90%;
     width: 80%;
   }
 }
 
-input[type=checkbox], input[type=radio] {
+input[type='checkbox'],
+input[type='radio'] {
   box-sizing: border-box;
   padding: 0;
   margin-top: 1rem;
 }
+<<<<<<< HEAD
 
+
+
+.navbar-nav li a:after{
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0
+}
+.navbar-nav li a:hover:after{ 
+  width: 100%;
+  left: 0; 
+}
+.bg-info {
+  /*   background-color: #2e2e2e!important;
+  box-shadow: 0px 0px 16px 9px black; */
+  background-color: #343a40 !important;
+  box-shadow: 0px 0px 16px 9px black;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgb(243 243 243);
+  font-weight: bold;
+}
+nav.navbar {
+  /* margin-right: 12px !important; */
+  /* padding-right: 12px !important; */
+  right: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255 255 255 / 50%);
+  transition-duration: 0.3s;
+  font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  transition-duration: 0.3s;
+  color: rgb(255 255 255 / 100%);
+}
+
+
+
+a.nav-link {
+  /* To heighlight */
+  color: floralwhite !important;
+  font-size: 28px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-info {
+  /* To make nav-bar sticky */
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+.nav-link{
+  margin-left: 2rem;
+}
+
+
+
+
+
+
+.logo-img {
+  margin-left: 40px;
+  /* Width and height same to make icon look more professional */
+  height: 3rem;
+  width: 3rem;
+}
 
 
 .navbar-nav li a:after{
