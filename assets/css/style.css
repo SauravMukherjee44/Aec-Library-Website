@@ -344,8 +344,8 @@ footer {
 .logo-img {
   margin-left: 40px;
   /* Width and height same to make icon look more professional */
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 @media only screen and (max-width: 500px) {
