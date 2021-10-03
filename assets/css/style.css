@@ -7,6 +7,7 @@ nav.navbar {
   right: 0;
 }
 
+
 .navbar-nav li a:after{
   bottom: 0;
   content: "";
@@ -58,6 +59,7 @@ nav.navbar {
   color: rgb(243 243 243);
   font-weight: bold;
 }
+
 /* Category */
 .form-check-input {
   border-radius: 15px;
@@ -367,12 +369,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-a.nav-link {  /* To make proper space so increasing spaces between nav bar icons  */
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
-  padding-bottom: 0rem;
 }
 
 .bg-info {
