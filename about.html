@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | AEC Library</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>AEC Library</title>
+
+    <!-- Title bar icon -->
+    <link rel="icon" href="./assets/Favicons/3.png" type="image/x-icon">
+
+    <!-- Adding new font -> Playfair-display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!--Adding AOS in it-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- about css started -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            padding: 40px;
+            background: url("images/10.jpg") center;
+            /* background-color: rgb(17, 124, 143); */
+        }
+
+        .about-container {
+            background: rgba(107, 80, 46, 0.678);
+            z-index: 10;
+            margin: 100px 40px 30px 40px;
+            padding: 20px;
+        }
+
+        .about-container p {
+            color: azure;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        @media (max-width:700px) {
+
+            .about-container {
+                margin: 100px -230px 30px 20px;
+            }
+        }
+    </style>
+    <!-- about css ended -->
+</head>
+
+<body class="body-style">
+    <div class="bubbles">
+        <img src="./assets/images/bubble.png">
+        <img src="./assets/images/bubble.png">
+        <img src="./assets/images/bubble.png">
+        <img src="./assets/images/bubble.png">
+        <img src="./assets/images/bubble.png">
+        <img src="./assets/images/bubble.png">
+        <img src="./assets/images/bubble.png">
+    </div>
+
+
+    <div id="topBtn" title="Go to Top">
+        <a href="#"><span class="fa fa-angle-up"></span></a>
+    </div>
+
+    <!-- pre-loader -->
+    <!-- <div id="loading"></div> -->
+    <!-- <div class="preloader">
+        <div class="loader">
+            <div>
+                <ul>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 90 120" fill="currentColor">
+                            <path
+                                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+                            </path>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <span>Loading...</span>
+        </div>
+    </div> -->
+
+
+    <!-- Navbar started -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand ml-4" href="#"><img src="assets/logos/Logo Aec.jpg" alt="AEC Library"
+                class="logo-img"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home | <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a href="./public/donate-book.html" class="nav-link" target="_blank"> | Donate
+                        Books |
+                    </a></li>
+                <li class="nav-item"><a href="resource.html" class="nav-link" target="_blank"> | Resources</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
+                    aria-label="Search" />
+                <button class="btn btn-dark my-2 my-sm-0" type="submit">
+                    Search
+                </button>
+            </form>
+        </div>
+    </nav>
+    <!-- Navbar ended -->
+
+
+    <!-- about content started -->
+    <div class="about-container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi porro velit odit, culpa suscipit repudiandae
+            ipsum cupiditate quaerat error sit, impedit laboriosam nihil? Amet earum molestiae sed fugiat, atque a optio
+            quas consequuntur ad delectus quam explicabo ab, reiciendis quo tempora ea aspernatur nam accusamus vero at
+            similique, maiores iusto! Provident possimus doloremque amet nesciunt voluptatum voluptas laudantium quia
+            qui consequatur illum ratione sequi saepe, fuga officia, adipisci perferendis atque ipsum quisquam rerum at
+            quis. Atque explicabo laboriosam nesciunt eveniet, earum recusandae perspiciatis qui. Aliquid nobis, esse
+            sunt unde animi iusto cupiditate, perspiciatis vero autem quasi amet? Quibusdam, possimus repudiandae!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi dignissimos possimus minima quis quas
+            expedita dolor vero beatae et, praesentium debitis facere, distinctio ab doloremque aliquam fugiat, ad ea
+            earum eum a explicabo similique est unde ipsam. Quam eum, est consequuntur optio odio laboriosam accusantium
+            fugiat totam obcaecati. Architecto expedita veniam doloribus ratione aliquid doloremque ipsam ullam
+            accusamus, consectetur sequi inventore nisi sint itaque dolorem mollitia nemo nesciunt tempora explicabo
+            animi, ab vero ipsa fugit. Dignissimos numquam maiores officiis assumenda atque sit debitis ipsum magnam
+            accusamus consectetur distinctio dolorum a, vero at fugiat eligendi veniam minus illo illum. Odio
+            exercitationem repellat excepturi. Sequi enim nostrum dolor fuga odio quidem ipsam dolore aperiam asperiores
+            et nesciunt voluptatibus a necessitatibus vel reprehenderit, quas accusamus omnis laudantium, error impedit
+            molestiae quisquam magni ducimus quo. Repellat reiciendis, laborum praesentium blanditiis labore veniam
+            quaerat quis sed omnis voluptates ducimus iste, accusantium quo eaque, consequatur facilis. Illo sit
+            voluptatem laboriosam ex esse exercitationem fugiat corporis ullam repellendus. Minima laudantium illum
+            architecto ipsa voluptatibus molestias, blanditiis quaerat neque dignissimos, consequatur non excepturi,
+            nemo ab sunt? Doloribus fugit quas culpa beatae eveniet velit ipsa iste praesentium sit accusamus quos,
+            officiis laudantium. Sed exercitationem repellendus culpa repellat consequatur architecto nostrum facere
+            voluptatibus minima perferendis ab laudantium ipsam, neque iusto labore soluta expedita porro autem deleniti
+            numquam tempore explicabo accusamus! Ratione modi assumenda dolorum non aliquid alias ex accusamus
+            aspernatur eos quo rerum neque et, minus quisquam blanditiis deserunt temporibus repellendus porro. Corrupti
+            adipisci tenetur porro voluptatum dolorem aut sapiente voluptates maxime facilis magnam aperiam, quae fuga,
+            voluptatibus, est possimus id praesentium error quos officia ex iste! Facere obcaecati, in doloremque
+            debitis illo sequi laudantium ducimus sint, aliquid architecto soluta iusto atque totam, veniam quas ipsa
+            hic illum autem voluptatibus amet aperiam non! Magnam ipsum, repellendus animi illum error nobis, corrupti
+            dolores, accusantium doloribus deleniti ipsa minus quaerat maiores quos adipisci deserunt ea praesentium!
+            Voluptatum vitae blanditiis assumenda similique suscipit corrupti nobis excepturi libero fugit molestias hic
+            optio maiores tempore amet eaque asperiores, quasi, commodi facere, voluptate accusantium impedit iure
+            ratione. Eligendi assumenda officia praesentium repudiandae! Dolorem architecto fuga cum molestiae
+            accusantium dicta adipisci iste libero, nam dolor ex tempora nobis enim numquam perferendis deleniti
+            accusamus tenetur! Corporis sapiente nisi ea in soluta necessitatibus, saepe ipsum a provident. Earum
+            doloribus eaque necessitatibus numquam incidunt, odit quasi corrupti adipisci, amet nam aliquid assumenda
+            sed. Perferendis est molestias fugiat unde nulla, tenetur harum molestiae earum tempore velit, ea officia
+            sit quis non qui. Repudiandae, amet! Autem quae beatae, cumque fugiat repudiandae temporibus sint quis?
+            Totam recusandae veniam beatae repudiandae saepe officia autem perferendis voluptates nemo laudantium
+            consectetur, ab minima rem illo necessitatibus fuga ea velit sequi quas deserunt quo iure asperiores
+            adipisci? Soluta vel quas dolorum inventore molestiae debitis a vitae minus exercitationem, odit enim
+            doloremque cum culpa explicabo amet consequuntur porro aperiam et corrupti veritatis ratione ea iure?
+            Mollitia delectus ipsam, vero rerum dolore quas illo magnam quo voluptatem nulla similique, id quaerat sint
+            facere nisi minus, totam eius. Atque, molestias sunt iusto quos ab cumque molestiae? Reiciendis, nam.
+            Molestiae, consequatur nesciunt quisquam nisi at illo quam labore asperiores corrupti exercitationem nostrum
+            praesentium iusto optio nemo atque neque itaque, dolore reprehenderit sequi error ea repudiandae! Odio ipsa
+            minima sit, provident voluptatum obcaecati accusamus ad corrupti tempore, unde perferendis dolores deserunt
+            aspernatur vero nihil modi dicta porro sequi ea molestiae consequuntur quibusdam cumque? Natus, porro a!
+            Optio et corrupti inventore dolorem eaque? Quidem molestiae, vel reprehenderit, suscipit voluptatem dolore
+            illo optio, atque repellendus voluptates quae sapiente? Quidem possimus debitis odio officia saepe illum a
+            numquam, dicta nam at consectetur quos ratione ullam velit libero corrupti ea consequatur vitae enim tenetur
+            provident quisquam? Maxime, quibusdam. Molestias libero dolore enim corporis totam modi ullam cupiditate
+            expedita ipsa possimus nemo, adipisci sint natus ad delectus maiores laudantium magni animi facere
+            recusandae sunt eaque id, aspernatur sequi! Nisi rerum labore, dolorem sit culpa nemo veniam ipsum quam amet
+            ex perspiciatis, adipisci ratione illum corporis laudantium hic magni ducimus commodi qui numquam quibusdam
+            animi a id omnis. Quas blanditiis eius excepturi ducimus libero voluptatibus perferendis expedita eos ab
+            molestiae distinctio, totam amet eaque odit sed tempora temporibus sit fugit nesciunt earum! Ut aut repellat
+            perspiciatis mollitia, quis voluptate aliquid nobis est ipsam quasi sapiente ipsum excepturi soluta quos
+            reiciendis repudiandae eos velit sit facere dolores labore amet possimus incidunt aspernatur. Optio dolores
+            earum voluptas incidunt ipsam. Voluptas accusantium sit quibusdam, perspiciatis enim quidem et aspernatur
+            facere consequuntur omnis error harum aliquid, quam illum libero soluta eveniet distinctio officia?
+            Blanditiis sequi consectetur, alias similique sed hic. Voluptas, qui harum quibusdam pariatur laborum,
+            ratione commodi numquam facilis reprehenderit repellat cum cumque rerum excepturi atque et dolore sequi nisi
+            necessitatibus, aliquam quaerat a! Impedit animi quidem illum doloremque sequi itaque ipsam cumque molestias
+            beatae, assumenda quibusdam facilis, tempore vero sit saepe culpa alias possimus ipsum corporis id nesciunt
+            debitis? Illo atque, harum repellendus ipsa et, nostrum repudiandae commodi unde quis dignissimos delectus
+            facilis aliquid nihil corrupti ut veritatis, eveniet ea quas maiores nulla. Quaerat, dolore similique
+            dolorum cumque consequatur fuga, praesentium libero recusandae voluptates nulla quia corrupti velit
+            veritatis consequuntur illo temporibus nisi debitis aperiam rem doloremque cum. Labore itaque odio deserunt
+            qui magni impedit quibusdam quisquam illum officiis in asperiores delectus ad sequi est possimus, molestias
+            ipsum mollitia perspiciatis harum voluptas soluta nesciunt magnam! Vel in nihil voluptate veniam doloribus
+            magnam, quam aut facilis veritatis quaerat? Cum, numquam nisi.</p>
+    </div>
+    <!-- about content ended -->
+
+
+    <!-- footer started -->
+    <footer>
+        <div class="icons">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i>
+                    </a>
+                </li>
+                <p>©2021 Copyright </p>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer ended -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Go to Top  -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 40) {
+                    $('#topBtn').css({
+                        "opacity": "1", "pointer-events": "auto"
+                    });
+                } else {
+                    $('#topBtn').css({
+                        "opacity": "0", "pointer-events": "none"
+                    });
+                }
+            });
+
+            $("#topBtn").click(function () {
+                $('html ,body').animate({ scrollTop: 0 }, 400);
+            });
+        });
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
+
+</body>
+
+</html>
