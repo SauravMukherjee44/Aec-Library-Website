@@ -13,13 +13,8 @@ body {
   margin-top: 150px;
   
   position: absolute;
-<<<<<<< HEAD
   top: 100%;
   left: 50%;
-=======
-  top: 5%;
-  left: 25%;
->>>>>>> upstream/main
   width: 650px;
   padding: 40px;
 /*   transform: translate(-50%, -50%); */
