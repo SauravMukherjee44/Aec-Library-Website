@@ -166,7 +166,7 @@ function searchFormSubmit(e) {
     books.forEach((book) => {
       const bookTitle = book.querySelector("td:nth-child(2)").textContent;
       const bookAuthor = book.querySelector("td:nth-child(3)").textContent;
-      
+
       const bookHasSearchTerms = searchBookTerms(searchTerms, { bookTitle, bookAuthor });
       if(bookHasSearchTerms)
         book.style.display = 'table-row';
