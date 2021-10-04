@@ -23,7 +23,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['contact']) &
 	$mail->Username="reply8489@gmail.com";
 	$mail->Password="Yaduvanshi1920"; 
 	$mail->SetFrom("reply8489@gmail.com");
-	$mail->addAddress("yadavashishdhirendra@gmail.com"); // Add your Email address To Get form data on your email
+	$mail->addAddress("codeincommunity@gmail.com"); // Add your Email address To Get form data on your email
 	$mail->IsHTML(true);
 	$mail->Subject="Enquiry Form";
 	$mail->Body=$html;
