@@ -4,7 +4,6 @@
 }
 
 body {
-	
 	background-image: url('Login_background.jpg');
 	background-repeat: no-repeat;
 	background-size:100%;
@@ -13,7 +12,6 @@ body {
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
 	margin: -20px 0 50px;
 }
 
@@ -23,6 +21,8 @@ h1 {
 }
 
 h2 {
+	margin-top: 35px;
+	font-size: 2.1em;
 	text-align: center;
 }
 
@@ -47,7 +47,6 @@ a {
 
 .tgt{
 	border-radius: 20px;
-	
 	background-color: #296288;
 	color: #FFFFFF;
 	font-size: 12px;
@@ -59,7 +58,6 @@ a {
 
 button {
 	border-radius: 20px;
-	
 	background-color: #296288;
 	color: #FFFFFF;
 	font-size: 12px;
