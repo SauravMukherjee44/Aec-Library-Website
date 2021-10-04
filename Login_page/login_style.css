@@ -261,3 +261,13 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+
+.input__tag{
+	outline: none;
+}
+
+.input__tag:focus{
+	border: 2px solid #167683;
+	margin: 6px 0px;
+	padding: 12px 13px;
+}
