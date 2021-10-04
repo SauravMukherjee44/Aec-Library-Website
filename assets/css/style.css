@@ -4,6 +4,29 @@
   font-family: 'Playfair Display', serif;
 }
 
+nav.navbar {
+  /* margin-right: 12px !important; */
+  /* padding-right: 12px !important; */
+  right: 0;
+}
+#table
+{
+  border:none;
+  border-radius: 20px;
+  /* background: linear-gradient(to right, #3898dd, #36d4f0, #85daa8); */
+  /* background: linear-gradient(to bottom, #0c0c0c, #2a2a2a, #646665); */
+  background: linear-gradient(to right, #0a5f81, #093b3f, #1b1b1b);
+  padding-right:15px;
+  padding-left:15px;
+  padding-bottom: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 2px 5px 2px black;
+}
+
+#table h1{
+  color: black;
+}
+
 body {
   background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
   background-size: cover;
@@ -324,9 +347,10 @@ footer {
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-  background: wheat;
+  border: none;
+  background: rgb(114, 113, 112);
   text-align: center;
+  color: black;
 }
 
 #topBtn {
