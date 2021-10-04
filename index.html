@@ -45,6 +45,12 @@
     <a href="#"><span class="fa fa-angle-up"></span></a>
   </div>
 
+<!--scroll bar feature addition-->
+          <div id="progressbar"></div>
+	       <div id="scrollpath"></div>
+	     <div id="percent"></div>
+<!--scroll bar feature ends here--> 
+
   <!-- pre-loader -->
   <!-- <div id="loading"></div>
     <div class="preloader">
@@ -304,6 +310,17 @@
         </div>
       </div>
     </footer> -->
+
+      <!--scroll featuring-->
+<script type ="text/javascript">
+	  let progress = document.getElementById('progressbar');
+	  let totalHeight = document.body.scrollHeight - window.innerHeight;
+	  window.onscroll = function(){ 
+	      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+		  progress.style.height = progressHeight + "%";
+		  }
+		  </script>
+      <!--scrolling feature end here-->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
