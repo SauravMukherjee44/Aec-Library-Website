@@ -375,3 +375,12 @@ footer {
 .d-flex{
   margin-bottom: 0px;
 }
+
+.btn-prime{
+  transition-duration: 0.3s;
+}
+
+.fas{
+  font-size: 15px;
+  color: rgba(255, 183, 0, 0.845);
+}
