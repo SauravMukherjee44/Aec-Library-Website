@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-html {
-  height: 60rem;
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,15 +8,9 @@ body {
 }
 
 .login-box {
-  margin-top: 100px;
-   position: absolute;
-  top: 100%;
-  left: 50%;
-  top: 5%;
-  left: 25%;
+  margin: auto;
   width: 650px;
   padding: 40px;
-/*   transform: translate(-50%, -50%); */
   background: rgba(0, 0, 0, 0.871);
   box-sizing: border-box;
   box-shadow: 10px 10px rgba(255, 183, 0, 0.845);
@@ -89,10 +81,6 @@ body {
   background: rgb(75, 26, 222);
   color: #fff;
   border-radius: 5px;
-  /* box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4; */
 }
 
 .login-box a span {
@@ -108,7 +96,7 @@ body {
   background: linear-gradient(90deg, transparent, rgb(255, 183, 0));
   animation: btn-anim1 2s linear infinite;
 }
-*/ .login-box a span:nth-child(2) {
+.login-box a span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -182,27 +170,9 @@ body {
   }
 }
 
-/* scroll bar design */
-/* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  display: none;
 }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgb(77, 32, 32);
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #c68b59;
-  border-radius: 10px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #c68b59;
-  border: solid 2px rgb(41, 2, 10);
-}
-/* scroll bar end */
 
 @media only screen and (max-width: 1100px) {
   .login-box {
@@ -223,9 +193,6 @@ input[type='radio'] {
   margin-top: 1rem;
 }
 
-
-
-
 .navbar-nav li a:after{
   bottom: 0;
   content: "";
@@ -242,10 +209,8 @@ input[type='radio'] {
   left: 0; 
 }
 .bg-info {
-  /*   background-color: #2e2e2e!important;
-  box-shadow: 0px 0px 16px 9px black; */
   background-color: #343a40 !important;
-  box-shadow: 0px 0px 16px 9px black;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
@@ -253,45 +218,24 @@ input[type='radio'] {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
   color: rgb(243 243 243);
-  font-weight: bold;
-}
-nav.navbar {
-  /* margin-right: 12px !important; */
-  /* padding-right: 12px !important; */
-  right: 0;
 }
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255 255 255 / 50%);
   transition-duration: 0.3s;
-  font-weight: bold;
 }
 .navbar-light .navbar-nav .nav-link:hover {
   transition-duration: 0.3s;
   color: rgb(255 255 255 / 100%);
 }
 
-
-
 a.nav-link {
-  /* To heighlight */
   color: floralwhite !important;
-  font-size: 28px;
+  font-size: 18px;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-info {
-  /* To make nav-bar sticky */
-  position: relative;
-  top: 0;
-  width: 100%;
-}
 .nav-link{
   margin-left: 2rem;
 }
-
-
-
-
-
 
 .logo-img {
   margin-left: 40px;
@@ -299,7 +243,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   height: 3rem;
   width: 3rem;
 }
-
 
 .navbar-nav li a:after{
   bottom: 0;
@@ -316,52 +259,30 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   width: 100%;
   left: 0; 
 }
-.bg-info {
-  /*   background-color: #2e2e2e!important;
-  box-shadow: 0px 0px 16px 9px black; */
-  background-color: #343a40 !important;
-  box-shadow: 0px 0px 16px 9px black;
-}
 
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link {
-  color: rgb(243 243 243);
-  font-weight: bold;
-}
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255 255 255 / 50%);
   transition-duration: 0.3s;
-  font-weight: bold;
 }
 .navbar-light .navbar-nav .nav-link:hover {
   transition-duration: 0.3s;
   color: rgb(255 255 255 / 100%);
 }
 
-
-
 a.nav-link {
-  /* To heighlight */
   color: floralwhite !important;
-  font-size: 28px;
+  font-size: 18px;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
-  /* To make nav-bar sticky */
-  position: relative;
-  top: 0;
+  position: fixed;
   width: 100%;
+  z-index: 99999;
 }
+
 .nav-link{
   margin-left: 2rem;
 }
-
-
-
-
-
 
 .logo-img {
   margin-left: 40px;
@@ -370,16 +291,13 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   width: 3rem;
 }
 
-
 footer {
-  position:fixed;
-  left: 0;
-  bottom: 0;
+  margin-top: 50px;
   width: 100%;
-  height: 7vh;
   background-color: #343a40;
   color: white;
-  box-shadow: 0px 0px 16px 9px black;
+  box-shadow: rgba(0, 0, 0, 0.856) 0px 1px 3px, rgba(0, 0, 0, 0.61) 0px 1px 2px;
+  margin-bottom: 0px;
 }
 
 .icons ul {
@@ -444,9 +362,16 @@ footer {
 .icons ul p {
   position: absolute;
   left: 40%;
-  top: 20px;
 }
 .ml-auto{
   margin-top: 13px;
   font-size:20px;;
+}
+
+#login-container{
+  padding-top: 6.5em;
+}
+
+.d-flex{
+  margin-bottom: 0px;
 }
