@@ -8,9 +8,18 @@ nav.navbar {
 }
 #table
 {
-  border:5px solid white;
-  padding-right:10px;
-  padding-left:10px;
+  border:none;
+  border-radius: 20px;
+  /* background: linear-gradient(to right, #3898dd, #36d4f0, #85daa8); */
+  /* background: linear-gradient(to bottom, #0c0c0c, #2a2a2a, #646665); */
+  background: linear-gradient(to right, #0a5f81, #093b3f, #1b1b1b);
+  padding-right:15px;
+  padding-left:15px;
+  padding-bottom: 10px;
+}
+
+#table h1{
+  color: black;
 }
 
 .dataTables_wrapper .dataTables_filter input {
@@ -356,9 +365,10 @@ footer {
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-  background: wheat;
+  border: none;
+  background: rgb(114, 113, 112);
   text-align: center;
+  color: black;
 }
 
 #topBtn {
