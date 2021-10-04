@@ -105,7 +105,7 @@ html {
   border-bottom: 1.5px solid rgba(168, 154, 154, 0.322);
   border-radius: 0px;
   transition: none;
-  width: 33%;
+  width: 50%;
   height: 30px;
   padding-bottom: 2px;
   border-radius: 15px;
@@ -213,6 +213,20 @@ html {
   border-radius: 10px;
   /* box-shadow: 0 4px black; */
 }
+.hero-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.left-div{
+  width: 40vw;
+}
+.right-div{
+  width: 40vw;
+}
+
 
 @keyframes glowing {
   0% {
@@ -783,5 +797,13 @@ strong {
   }
   .my-sm-0{
     margin-left: 1.5rem;
+  }
+}
+@media (max-width:992px){
+  .left-div{
+    width: 90vw;
+  }
+  .right-div{
+    width: 90vw;
   }
 }
