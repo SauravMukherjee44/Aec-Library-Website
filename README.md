@@ -1,6 +1,6 @@
 <h1 align="center">Open-Source Library Website </h1>
 
-This is an Open-Source Library Website in which you get Resources to learn different topics, Donate book section to donate your old books, and a Book issue section to keep a record of all the books issued.
+This is a Open-Source Library Website in which you can keep a record of all the books you have issued.
 
 <h4>[ In development Phase ] 
 [ Hacktoberfest-Accepted ] </h4>
@@ -11,6 +11,7 @@ This is an Open-Source Library Website in which you get Resources to learn diffe
 <a href="https://discord.com/invite/sqFRzrj7f3" target="_blank">Join Us On Discord ⚡</a>
 </h2>
 
+So, here you go! Using this College Library Website can save a record of all your college Books and stuffs. 🤩 Excited?
 
 <div align="left">
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://sloc.xyz/github/SauravMukherjee44/Aec-Library-Website" alt="LOC"/></a>
@@ -37,7 +38,7 @@ This is an Open-Source Library Website in which you get Resources to learn diffe
 
 ## 📌 Sneak Peek of Main Page
 
-![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/301dcb41313d6651d47c6360e06487925cb15d11/assets/images/image%20(2).PNG)
+![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/7cf3bafebd9e1a6d6fa95f40822cbcdd28a4005b/assets/images/aec.PNG)
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
