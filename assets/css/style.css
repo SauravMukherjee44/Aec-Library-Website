@@ -1,10 +1,67 @@
 * {
   font-family: 'Playfair Display', serif;
-} 
+}
 nav.navbar {
   /* margin-right: 12px !important; */
   /* padding-right: 12px !important; */
   right: 0;
+}
+#table
+{
+  border:none;
+  border-radius: 20px;
+  /* background: linear-gradient(to right, #3898dd, #36d4f0, #85daa8); */
+  /* background: linear-gradient(to bottom, #0c0c0c, #2a2a2a, #646665); */
+  background: linear-gradient(to right, #0a5f81, #093b3f, #1b1b1b);
+  padding-right:15px;
+  padding-left:15px;
+  padding-bottom: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 2px 5px 2px black;
+}
+
+#table h1{
+  color: black;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: transparent;
+  margin-left: 3px;
+  
+  font-weight: bold;
+}
+.odd
+{
+  display:none;
+}
+select{
+  color:black;
+}
+.dataTables_wrapper .dataTables_length select {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 5px;
+  color:yellowgreen;
+  padding: 4px;
+ 
+  font-weight: bold;
+}
+
+label
+{
+  color:white;
+  font-weight:bold;
+}
+.datTables_paginate
+{
+  color:white;
+}
+.pagination-right,.pagination-left
+{
+   color:white;
 }
 
 .navbar-nav li a:after{
@@ -73,7 +130,7 @@ nav.navbar {
   width:25%;
 }
 .container h1 {
-  padding-top: 70px;
+  padding-top: 40px;
   color: rgb(255, 255, 255);
   /* font-family: "Poiret One", cursive; */
   font-weight: bolder;
@@ -233,7 +290,7 @@ html {
 footer {
   position: relative;
   width: 100%;
-  height: 11vh;
+  height: 9vh;
   background-color: #343a40;
   color: white;
   box-shadow: 0px 0px 16px 9px black;
@@ -310,9 +367,10 @@ footer {
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-  background: wheat;
+  border: none;
+  background: rgb(114, 113, 112);
   text-align: center;
+  color: black;
 }
 
 #topBtn {
@@ -359,7 +417,7 @@ footer {
 a.nav-link {
   /* To heighlight */
   color: floralwhite !important;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
@@ -367,12 +425,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-a.nav-link {  /* To make proper space so increasing spaces between nav bar icons  */
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
-  padding-bottom: 0rem;
 }
 
 .bg-info {
