@@ -16,6 +16,8 @@ nav.navbar {
   padding-right:15px;
   padding-left:15px;
   padding-bottom: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 2px 5px 2px black;
 }
 
 #table h1{
