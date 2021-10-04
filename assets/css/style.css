@@ -198,9 +198,11 @@ html {
 }
 #searchsymbol{
   width: 30px;
+  height:30px;
 }
 #searchTxt{
   border-radius: 10px;
+  height: 30px;
 }
 .btn:before {
   content: "";
@@ -422,9 +424,10 @@ a.nav-link {
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   /* To make nav-bar sticky */
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
+  height: 45px;
 }
 
 .bg-info {
