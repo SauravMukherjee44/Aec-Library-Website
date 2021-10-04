@@ -384,3 +384,8 @@ footer {
   font-size: 15px;
   color: rgba(255, 183, 0, 0.845);
 }
+
+#searchTxt:focus{
+  border-color: rgb(255, 183, 0);
+  outline: none;
+}
