@@ -144,12 +144,9 @@ section h5 {
   color: #333;
 }
 
-
 .study-card .study-base img:hover {
   transform: scale(1.05);
 }
-
-
 /*!STUDY MATERIALS*/
 @media (min-width: 650px) {
   nav a {
