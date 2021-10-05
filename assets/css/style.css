@@ -80,9 +80,9 @@ label
   left: 0; 
 }
 
-.nav-item{
+/* .nav-item{
   padding-right: 15px;
-}
+} */
 #loading {
   position: fixed;
   width: 100%;
@@ -198,9 +198,11 @@ html {
 }
 #searchsymbol{
   width: 30px;
+  height:30px;
 }
 #searchTxt{
   border-radius: 10px;
+  height: 30px;
 }
 .btn:before {
   content: "";
@@ -422,9 +424,10 @@ a.nav-link {
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   /* To make nav-bar sticky */
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
+  height: 45px;
 }
 
 .bg-info {
@@ -841,93 +844,6 @@ strong {
     margin-left: 1.5rem;
   }
 }
-.header{
-  height: 60px;
-  color: white;
-  background-color: rgb(48, 46, 46);
-  width: 100%;
-}
-.header ul{
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  justify-content: space-between;
-  height: 55px;
-}
-.header ul li{
-  margin-right: 20px;
-}
-.new-nav{
-  height: 50px;
-  background-color:#f3d094;
-  align-items: center;
-}
-.new-nav ul{
-  margin-left: 40px;
-  margin-right: 40px;
-  /* margin-top: 17px; */
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  align-items: center;
-}
-.new-nav li {
-  font-family: sans-serif;
-  margin: 20px;
-  list-style-type: none;
-}
-.new-nav li a{
-  font-weight: 300;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #000;
-}
-.new-nav li a:hover{
-  color: rgb(94, 80, 80);
-}
-.container{
-  height: 300px;
-  width: 690px;
-  color: black;
-  margin-top: 170px;
-  margin-left: 20px;
-  background-color: white;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-}
-.container div{
-  font-family: 'Source Sans Pro', sans-serif;
-  margin: 30px;
-  text-align: center;
-}
-.line{  
-  font-size: 0.6cm;
-}
-#bold{
-  font-size: 1cm;
-  font-family: 'Nunito', sans-serif;
-  font-weight:bolder;
-}
-#search{
-  align-items: center;
-}
-#searchTxt, #searchsymbol{
-  margin: 0;
-}
-#searchForm{
-  display: inline-block;
-  border: 1px solid grey;
-  border-radius: 5px;
-  align-items: center;
-}
-.nav-link{
-  font-family: sans-serif;
-  font-size: 0.5cm;
-}
-.login a:hover{
-  color: grey;
-}
-
 .suggestion{
   height: 120px;
   background-color: white;
@@ -991,7 +907,7 @@ strong {
   background-color: white;
 }
 .member section{
-  border: 2px solid rgb(235, 167, 167);
+  /* border: 2px solid rgb(235, 167, 167); */
   width: 50%;
 }
 .donate div{
@@ -1273,4 +1189,89 @@ input[type=checkbox], input[type=radio] {
   font-weight: bolder;
   color: white;
 }
-
+.header{
+  height: 60px;
+  color: white;
+  background-color: rgb(48, 46, 46);
+  width: 100%;
+}
+.header ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  height: 55px;
+}
+.header ul li{
+  margin-right: 20px;
+}
+.new-nav{
+  height: 50px;
+  background-color:#f3d094;
+  align-items: center;
+}
+.new-nav ul{
+  margin-left: 40px;
+  margin-right: 40px;
+  /* margin-top: 17px; */
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+}
+.new-nav li {
+  font-family: sans-serif;
+  margin: 20px;
+  list-style-type: none;
+}
+.new-nav li a{
+  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+}
+.new-nav li a:hover{
+  color: rgb(94, 80, 80);
+}
+.contain{
+  height: 300px;
+  width: 690px;
+  color: black;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.contain div{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 30px;
+  text-align: center;
+}
+.line{  
+  font-size: 0.6cm;
+}
+#bold{
+  font-size: 1cm;
+  font-family: 'Nunito', sans-serif;
+  font-weight:bolder;
+}
+#search{
+  align-items: center;
+}
+#searchTxt, #searchsymbol{
+  margin: 0;
+}
+#searchForm{
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 5px;
+  align-items: center;
+}
+.nav-link{
+  font-family: sans-serif;
+  font-size: 0.5cm;
+}
+.login a:hover{
+  color: grey;
+}
