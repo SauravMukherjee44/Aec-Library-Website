@@ -198,7 +198,7 @@ html {
 }
 #searchsymbol{
   width: 30px;
-  height:30px;
+  height:40px;
 }
 #searchTxt{
   border-radius: 10px;
@@ -1274,4 +1274,44 @@ input[type=checkbox], input[type=radio] {
 }
 .login a:hover{
   color: grey;
+}
+.container div{
+  /* border: 2px solid white; */
+  /* width: 50%; */
+  margin-left: 0;
+}
+.container{
+  display: flex;
+  margin-left: 20px;
+  width: 100%;
+  margin-right: 0;
+  padding-left: 30px;
+}
+.col-sm-10 input,.form-check-input1, .form-check-input{
+  width: 100%;
+}
+.col-sm-10{
+  width: 300px;
+}
+.form-group{
+  width: 350px;
+}
+.issue {
+  height: 40px;
+  font-size: 25px;
+  padding-left: 5px;
+}
+#libraryForm{
+  width: 360px;
+}
+.right{
+  width: 790px;
+  padding-left: 55px;
+  padding-right: 0px;
+  justify-items: right;
+  
+}
+#table{
+  width: 92%;
+  /* padding: 0; */
 }
