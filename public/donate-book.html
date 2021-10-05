@@ -14,9 +14,13 @@
 
   <link rel="stylesheet" href="../assets/css/donate-book.css">
   <link rel="icon" href=../assets/Favicons/8.png> <title>Donate Books</title>
+
 </head>
 
 <body>
+  <!-- particle.js -->
+  <div id="particles-js"></div>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-info">
     <a class="navbar-brand ml-4" href="#"><img src="../assets/logos/finalLogo.png" alt="AEC Library"
         class="logo-img"></a>
@@ -56,10 +60,6 @@
           <input type="text" name="" required="" autofocus>
           <label>Name</label>
         </div>
-        <!-- <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Last Name</label>
-        </div> -->
         <div class="user-box">
           <input type="email" name="" required="">
           <label>Email</label>
@@ -135,39 +135,34 @@
       </div>
       <div>
         <p>
-          <a href="#" style="color: antiquewhite;">Contact Us </a>
+          <a href="#" style="color: #faebd7;">Contact Us </a>
           &emsp;&emsp;
         </p>
 
       </div>
     </div>
-    <!-- <div class="icons">
-      <ul>
-        <li>
-        <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
-        </li>
-        <li>
-        <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
-        </li>
-        <a href="./public/contact us .html" style="color: antiquewhite;">Contact Us</a>  
-    
-        <p>©2021 Copyright AEC Library</p>
-      </ul>
-      </div> -->
   </footer>
-</body>
-<script>
-  window.onload = function () {
-    document.getElementById('loading').style.display = "none";
-    document.getElementById('container').style.display = "block";
-  }
-</script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- scripts -->
+  <script src="../assets/js/particles.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script>
+    window.onload = function () {
+      document.getElementById('loading').style.display = "none";
+      document.getElementById('container').style.display = "block";
+    }
+    particlesJS.load("particles-js", "../assets/js/config.json", function () {
+      console.log("callback - particles.js config loaded");
+    });
+  </script>
 </body>
 
 </html>
