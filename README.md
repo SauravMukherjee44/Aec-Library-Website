@@ -37,7 +37,7 @@ This is an Open-Source Library Website in which you get Resources to learn diffe
 
 ## 📌 Sneak Peek of Main Page
 
-![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/301dcb41313d6651d47c6360e06487925cb15d11/assets/images/image%20(2).PNG)
+![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/fe70772d4a36fe9e5865180de79217ea90f9abe6/assets/images/aec%20(2).png)
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
