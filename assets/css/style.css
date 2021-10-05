@@ -372,7 +372,8 @@ footer {
   border: none;
   background: rgb(114, 113, 112);
   text-align: center;
-  color: black;
+  color: whitesmoke;
+  font-weight: lighter;
 }
 
 #topBtn {
@@ -844,3 +845,23 @@ strong {
     margin-left: 1.5rem;
   }
 }
+#xxx{
+  overflow-y: scroll;
+    height: 30rem;
+    overflow-x: hidden;
+    background-color: #ffffff94;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 820px) {
+    #maincontainer{
+      flex-direction: column;
+    }
+
+  }
+  td img{
+    height: 115px;
+  }
+ th{
+   color: white;
+ }

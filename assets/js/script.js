@@ -228,3 +228,4 @@ let timer3 = setInterval(() => {
   preloader.style.display = "none";
   setTimeout(timer3);
 }, 5500);
+
