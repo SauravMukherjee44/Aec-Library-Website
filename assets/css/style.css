@@ -1209,6 +1209,7 @@ input[type=checkbox], input[type=radio] {
 .new-nav{
   height: 50px;
   background-color:#f3d094;
+  padding: 0 0 20px 0;
   align-items: center;
 }
 .new-nav ul{
@@ -1226,8 +1227,8 @@ input[type=checkbox], input[type=radio] {
   list-style-type: none;
 }
 .new-nav li a{
-  font-weight: 300;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
   color: #000;
 }
 .new-nav li a:hover{
