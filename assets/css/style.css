@@ -1002,7 +1002,6 @@ strong {
   font-size: 1cm;
   font-family: Arial, Helvetica, sans-serif;
 }
-.donate-btn{
 
 .donate-btn {
   background-color: rgb(35, 108, 156);
@@ -1011,40 +1010,6 @@ strong {
   border-radius: 10px;
 
 }
-
-
-.donate-btn:hover{
-
- transform: scale(1.1);
- transition: 0.5s;
-  
-}
-
-.donate-btn:not(:hover) {
-  transition: 0.5s ;
-}
-
-.submit-btn:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
-.submit-btn:not(:hover) {
-  transition: 0.5s ;
-}
-
-.add-book-btn:hover{
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
-.add-book-btn:not(:hover) {
-  transition: 0.5s ;
-}
-
-
-.donate-btn a{
-  text-decoration: none;
 
 .donate-btn a {
   color: white;
