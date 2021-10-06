@@ -5,14 +5,24 @@
 
 body {
 	background-image: url('Login_background.jpg');
+	background-color: #464646;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
 	background-repeat: no-repeat;
-	background-size:100%;
+	background-attachment: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
 	margin: -20px 0 50px;
+
+	@media screen and (max-width: ){
+		
+	}
 }
 
 h1 {
@@ -51,10 +61,11 @@ a {
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
-	padding: 12px 45px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding: 10px 5px;	
 }
+
 
 button {
 	border-radius: 20px;
@@ -89,7 +100,7 @@ form {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 0 50px;
+	padding: 0 10px;
 	height: 100%;
 	text-align: center;
 }
