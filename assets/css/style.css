@@ -84,9 +84,6 @@ label {
   left: 0;
 }
 
-/* .nav-item{
-  padding-right: 15px;
-} */
 #loading {
   position: fixed;
   width: 100%;
@@ -1360,9 +1357,13 @@ a {
   align-items: center;
 }
 
+.icons_{
+  padding: 0 12px;
+}
+
 .new-nav li {
   font-family: sans-serif;
-  margin: 20px;
+  margin: 10px 25px;
   list-style-type: none;
 }
 
@@ -1537,4 +1538,19 @@ a {
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+.nav-item a{
+  padding: 10px 10px 15px;
+}
+
+.nav-item :hover {
+
+  background-color: rgb(247, 191, 9);
+  opacity: 1;
+  border: 2px solid goldenrod;
+}
+
+.nav-item a{
+text-decoration: none;
 }
