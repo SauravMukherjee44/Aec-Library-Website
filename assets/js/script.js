@@ -162,7 +162,7 @@ function deletefunction(pbookid) {
 }
 
 window.onload = function () {
-  document.getElementById("loading").style.display = "none";
+  document.getElementById("loader").style.display = "none";
   document.getElementById("body").style.display = "block";
 };
 // Todos"

@@ -4,63 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/donate-book.css">
-    <link rel="icon" href=../assets/Favicons/8.png>
+    <link rel="stylesheet" href="/css/donate-book.css">
+    <link rel="icon" href="/Favicons/8.png">
     <title>Donate Books</title>
 </head>
    <body>
     <div class="login-box">
       <h2>Book Donation Form 📚</h2>
-      <form>
+      <form action="/public/donate-book.html" method="post">
         <div class="user-box">
-          <input type="text" name="" required="">
+          <input type="text" name="name" required>
           <label>Name</label>
         </div>
-        <!-- <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Last Name</label>
-        </div> -->
         <div class="user-box">
-          <input type="email" name="" required="">
+          <input type="email" name="email" required>
           <label>Email</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
+          <input type="text" name="contact" required>
           <label>Contact</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
+          <input type="text" name="address" required>
           <label>Address</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
+          <input type="text" name="city" required>
           <label>City</label>
         </div>
           <div class="user-box">
-            <input type="text" name="" required="">
+            <input type="text" name="state" required >
             <label>State</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
+          <input type="text" name="zip" required>
           <label>Zip</label>
         </div>
         <div class="user-box">
-          
-          
             <label class="form-check-label" for="gridCheck">
               Agree to terms and conditions
             </label>
         </div>
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        
-
-        <a href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Submit
-        </a>
+        <input class="form-check-input" name="checked" type="checkbox" id="gridCheck" required>
+        <br>
+        <br>
+        <button class="btn btn-success">submit</button>
       </form>
     </div>
   </body>
