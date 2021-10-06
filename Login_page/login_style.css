@@ -4,16 +4,20 @@
 }
 
 body {
-	
 	background-image: url('Login_background.jpg');
+	background-color: #464646;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
 	background-repeat: no-repeat;
-	background-size:100%;
+	background-attachment: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
 	margin: -20px 0 50px;
 }
 
@@ -23,6 +27,8 @@ h1 {
 }
 
 h2 {
+	margin-top: 35px;
+	font-size: 2.1em;
 	text-align: center;
 }
 
@@ -47,19 +53,18 @@ a {
 
 .tgt{
 	border-radius: 20px;
-	
 	background-color: #296288;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
-	padding: 12px 45px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding: 10px 5px;	
 }
+
 
 button {
 	border-radius: 20px;
-	
 	background-color: #296288;
 	color: #FFFFFF;
 	font-size: 12px;
@@ -68,6 +73,8 @@ button {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
+	border: 2px solid #333;
+	outline: none;
 }
 
 button:active {
@@ -79,6 +86,7 @@ button:focus {
 }
 
 button.ghost {
+	cursor: pointer;
 	background-color: transparent;
 	border-color: #FFFFFF;
 }
@@ -89,7 +97,7 @@ form {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 0 50px;
+	padding: 0 10px;
 	height: 100%;
 	text-align: center;
 }
@@ -105,7 +113,7 @@ input {
 .container {
 	background-image: url('Capture.PNG');
 	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
@@ -262,4 +270,14 @@ footer i {
 footer a {
     color: #3c97bf;
     text-decoration: none;
+}
+
+.input__tag{
+	outline: none;
+}
+
+.input__tag:focus{
+	border: 2px solid #167683;
+	margin: 6px 0px;
+	padding: 12px 13px;
 }
