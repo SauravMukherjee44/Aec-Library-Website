@@ -19,10 +19,6 @@ body {
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
 	margin: -20px 0 50px;
-
-	@media screen and (max-width: ){
-		
-	}
 }
 
 h1 {
