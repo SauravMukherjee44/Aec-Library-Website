@@ -1380,6 +1380,7 @@ a {
   align-items: center;
 }
 
+
 .new-nav ul {
   margin-left: 40px;
   margin-right: 40px;
@@ -1390,9 +1391,14 @@ a {
   align-items: center;
 }
 
+.icons_{
+  padding: 0 12px;
+}
+
+
 .new-nav li {
   font-family: sans-serif;
-  margin: 20px;
+  margin: 10px 25px;
   list-style-type: none;
 }
 
@@ -1437,6 +1443,8 @@ a {
 #search {
   align-items: center;
 }
+
+
 
 #searchTxt,
 #searchsymbol {
@@ -1567,4 +1575,19 @@ a {
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+
+.nav-item a{
+  padding: 10px 10px 15px;
+}
+
+.nav-item :hover {
+
+  background-color: rgb(247, 191, 9);
+  opacity: 1;
+}
+
+.nav-item a{
+text-decoration: none;
 }
