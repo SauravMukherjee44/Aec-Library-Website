@@ -94,6 +94,7 @@ label {
 
 .body-style {
   background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
+
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.9);
