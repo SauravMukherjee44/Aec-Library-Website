@@ -3,7 +3,8 @@
   padding: 0;
   margin: 0;
 }
-/* To make scroll-bar appealing */
+/* To enhance scroll-bar  */
+
 ::-webkit-scrollbar {
   width: 13px;
 }
