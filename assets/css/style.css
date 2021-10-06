@@ -8,6 +8,17 @@ nav.navbar {
   right: 0;
 }
 
+nav.new-nav { /* to make nav bar position fixed */
+    position: fixed;
+    width: 100%;
+}
+
+header.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 #table {
   border: none;
   border-radius: 20px;
@@ -1328,7 +1339,7 @@ a {
 .header {
   height: 60px;
   color: white;
-  background-color: rgb(48, 46, 46);
+  background-color: #1f201eed;
   width: 100%;
 }
 
@@ -1346,7 +1357,7 @@ a {
 
 .new-nav {
   height: 50px;
-  background-color: #f3d094;
+  background-color: #e9bf76ed;
   align-items: center;
 }
 
