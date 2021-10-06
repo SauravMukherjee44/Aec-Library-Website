@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/donate-book.css">
-    <link rel="icon" href="/Favicons/8.png">
-    <title>Donate Books</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Bootstrap v4.3 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -14,6 +11,10 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="../assets/css/donate-book.css">
+  <link rel="icon" href=../assets/Favicons/8.png> <title>Donate Books</title>
+
 </head>
 
 <body>
@@ -55,35 +56,37 @@
   <div class="wrapper">
     <div class="login-box">
       <h2>Book Donation Form 📚</h2>
-      <form action="/public/donate-book.html" method="post">
+      <form>
         <div class="user-box">
-          <input type="text" name="name" required autofocus>
+          <input type="text" name="" required="" autofocus>
           <label>Name</label>
         </div>
         <div class="user-box">
-          <input type="email" name="email" required>
+          <input type="email" name="" required="">
           <label>Email</label>
         </div>
         <div class="user-box">
-          <input type="text" name="contact" required>
+          <input type="text" name="" required="">
           <label>Contact</label>
         </div>
         <div class="user-box">
-          <input type="text" name="address" required>
+          <input type="text" name="" required="">
           <label>Address</label>
         </div>
         <div class="user-box">
-          <input type="text" name="city" required>
-          <label>City</label>
-        </div>
-          <div class="user-box">
-            <input type="text" name="state" required >
-            <label>State</label>
           <input type="text" name="" required="">
           <label>Country</label>
         </div>
         <div class="user-box">
-          <input type="text" name="zip" required>
+          <input type="text" name="" required="">
+          <label>State</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>City</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" required="">
           <label>Zip</label>
         </div>
 
@@ -92,15 +95,26 @@
         </div>
 
         <div class="user-box">
-            <label class="form-check-label" for="gridCheck">
-              Agree to terms and conditions
-            </label>
+          <input type="text" name="" required="">
+          <label>Landmark (Optional)</label>
         </div>
-        <input class="form-check-input" name="checked" type="checkbox" id="gridCheck" required>
-        <br>
-        <br>
-        <button class="btn btn-success">submit</button>
-
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Alternate Phone (Optional)</label>
+        </div>
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <div class="user-box">
+          <label class="form-check-label" for="gridCheck">
+            I have read and understood the terms and conditions
+          </label>
+        </div>
+        <a href="#" class="submit-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
       </form>
     </div>
   </div>
