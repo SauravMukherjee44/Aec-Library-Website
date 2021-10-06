@@ -8,17 +8,37 @@ nav.navbar {
   right: 0;
 }
 
-#table {
+ /* #table {
   border: none;
   border-radius: 20px;
   /* background: linear-gradient(to right, #3898dd, #36d4f0, #85daa8); */
   /* background: linear-gradient(to bottom, #0c0c0c, #2a2a2a, #646665); */
-  background: linear-gradient(to right, #0a5f81, #093b3f, #1b1b1b);
+  /*background: linear-gradient(to right, #0a5f81, #093b3f, #1b1b1b);
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 10px;
   border: 3px solid black;
   box-shadow: 2px 2px 5px 2px black;
+*/
+
+#table { 
+   
+    border-radius: 20px;
+    
+    background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8);
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border: 3px solid #efe088;
+    box-shadow: 2px 2px 5px 2px #ddbcbc;
+}
+
+
+.table thead th {
+    vertical-align: bottom;
+    border: none;
+    
+    color: black;
 }
  
 #table h1 {
@@ -84,6 +104,9 @@ label {
   left: 0;
 }
 
+/* .nav-item{
+  padding-right: 15px;
+} */
 #loading {
   position: fixed;
   width: 100%;
@@ -441,7 +464,17 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   height: 45px;
 }
 
-.bg-info {
+a.nav-link {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-bottom: 0rem;
+}
+
+h1 {  /* To make headings look more appealing */
+    text-decoration: overline;
+}
+
+.bg-info { /* To make proper distance between nav bar icons */
   /* To make nav-bar background transparent and shadow effect */
   /*     background-color: #ada39f00!important;
     box-shadow: 0px 0px 16px 9px #efecec4d; */
@@ -1357,13 +1390,9 @@ a {
   align-items: center;
 }
 
-.icons_{
-  padding: 0 12px;
-}
-
 .new-nav li {
   font-family: sans-serif;
-  margin: 10px 25px;
+  margin: 20px;
   list-style-type: none;
 }
 
@@ -1538,18 +1567,4 @@ a {
 
 ::-webkit-scrollbar {
   width: 0;
-}
-
-.nav-item a{
-  padding: 10px 10px 15px;
-}
-
-.nav-item :hover {
-
-  background-color: rgb(247, 191, 9);
-  opacity: 1;
-}
-
-.nav-item a{
-text-decoration: none;
 }
