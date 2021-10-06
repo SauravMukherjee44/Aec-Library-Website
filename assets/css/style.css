@@ -20,6 +20,7 @@ header.header {
 }
 
 #table {
+ /* #table {
   border: none;
   border-radius: 20px;
   /* background: linear-gradient(to right, #3898dd, #36d4f0, #85daa8); */
@@ -30,6 +31,26 @@ header.header {
   padding-bottom: 10px;
   border: 3px solid black;
   box-shadow: 2px 2px 5px 2px black;
+} */
+
+#table { 
+   
+    border-radius: 20px;
+    
+    background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8);
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border: 3px solid #efe088;
+    box-shadow: 2px 2px 5px 2px #ddbcbc;
+}
+
+
+.table thead th {
+    vertical-align: bottom;
+    border: none;
+    
+    color: black;
 }
  
 #table h1 {
@@ -455,7 +476,17 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   height: 45px;
 }
 
-.bg-info {
+a.nav-link {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-bottom: 0rem;
+}
+
+h1 {  /* To make headings look more appealing */
+    text-decoration: overline;
+}
+
+.bg-info { /* To make proper distance between nav bar icons */
   /* To make nav-bar background transparent and shadow effect */
   /*     background-color: #ada39f00!important;
     box-shadow: 0px 0px 16px 9px #efecec4d; */
