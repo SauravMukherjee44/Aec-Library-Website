@@ -84,9 +84,6 @@ label {
   left: 0;
 }
 
-/* .nav-item{
-  padding-right: 15px;
-} */
 #loading {
   position: fixed;
   width: 100%;
@@ -444,17 +441,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   height: 45px;
 }
 
-a.nav-link {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-    padding-bottom: 0rem;
-}
-
-h1 {  /* To make headings look more appealing */
-    text-decoration: overline;
-}
-
-.bg-info { /* To make proper distance between nav bar icons */
+.bg-info {
   /* To make nav-bar background transparent and shadow effect */
   /*     background-color: #ada39f00!important;
     box-shadow: 0px 0px 16px 9px #efecec4d; */
@@ -1370,9 +1357,13 @@ a {
   align-items: center;
 }
 
+.icons_{
+  padding: 0 12px;
+}
+
 .new-nav li {
   font-family: sans-serif;
-  margin: 20px;
+  margin: 10px 25px;
   list-style-type: none;
 }
 
@@ -1547,4 +1538,18 @@ a {
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+.nav-item a{
+  padding: 10px 10px 15px;
+}
+
+.nav-item :hover {
+
+  background-color: rgb(247, 191, 9);
+  opacity: 1;
+}
+
+.nav-item a{
+text-decoration: none;
 }
