@@ -122,7 +122,7 @@ label {
 
 /* Category */
 .form-check-input {
-  border-radius: 15px;
+  border-radius: 6px;
   margin-top: 10px;
   padding: 5px;
   width: 25%;
@@ -130,7 +130,7 @@ label {
 
 /* Authors */
 .form-check-input1 {
-  border-radius: 15px;
+  border-radius: 6px; /* border redius decreased */
   margin-top: 10px;
   padding: 5px;
   width: 25%;
@@ -160,7 +160,7 @@ html {
 }
 
 #issueDate {
-  border-radius: 15px;
+  border-radius: 6px;
   height: 30px;
 }
 
@@ -172,7 +172,7 @@ html {
   width: 33%;
   height: 30px;
   padding-bottom: 2px;
-  border-radius: 15px;
+  border-radius: 6px;
   margin-top: 14px;
   padding-left: 10px;
 }
