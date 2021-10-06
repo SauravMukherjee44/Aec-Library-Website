@@ -318,11 +318,12 @@ a.nav-link {
 footer {
   position: relative;
   width: 100%;
-  background-color: #343a40;
-  color: white;
-  box-shadow: 0px 0px 16px 9px black;
+  background-color: #000000cc;
+  color: rgb(255, 183, 0);
+  box-shadow: 0px 0px 16px 2px black;
   padding: 15px 0;
   text-align: center;
+  font-weight: 500;
 }
 
 footer p {
@@ -407,6 +408,7 @@ footer p {
 
   footer {
     font-size: 12px;
+    color: rgb(255, 183, 0);
   }
 
   a.nav-link {
