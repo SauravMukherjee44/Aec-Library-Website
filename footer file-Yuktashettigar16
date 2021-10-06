@@ -1,0 +1,76 @@
+<!-- can be added as a footer -->
+<footer id="footer">
+        <section class="contact" id="Contact">
+            <div class="max-width">
+                <h2 class="title">Contact US</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="text">Contact Details</div>
+                        <p>Contact us for any details</p>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="head">Address</div>
+                                    <div class="sub-title">xyz, India</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title">xyz21@gmail.</comdiv>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="info">
+                                    <div class="head">Phone</div>
+                                    <div class="sub-title">(91) 12345 67890​</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.977563573153!2d77.5643664138822!3d12.909163519740353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156310100001%3A0x71be53da4480fbbe!2sDayananda%20Sagar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1625143947075!5m2!1sen!2sin"
+                            width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- footer section start -->
+        <footer>
+            <span>Created by US </a> | <span class="far fa-copyright"></span> 2021 All Rights Reserved.</span>
+        </footer>
+    
+
+    </body>
+    
+    </html>
+    
+    
+    
+    
+    
+    CSS file :
+    <!-- required colors and attributes can be added to make it look better-->
+    
+    
+/* footer section styling */
+
+footer {
+    background: #111;
+    padding: 40px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: #f47932;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
