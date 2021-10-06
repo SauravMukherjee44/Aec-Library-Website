@@ -130,22 +130,61 @@ function libraryFormSubmit(e) {
   let name = document.getElementById("bookName").value;
   let author = document.getElementById("author").value;
   let category = document.getElementById("category").value;
-
-  let book = new Book(date, name, author, category);
-  console.log(book);
-
-  let display = new Display();
-
-  if (display.validate(book)) {
-    display.add(book);
-    display.clear();
-    display.show("success", "Your book has been successfully added");
+  if (date == "" || name == "" || author == "" || category == "") {
+    window.alert("Field is Empty!Please Enter Something");
   } else {
-    // Show error to the user
-    display.show("danger", "Sorry you cannot add this book");
-  }
+    let book = new Book(date, name, author, category);
+    console.log(book);
 
+    let display = new Display();
+
+    if (display.validate(book)) {
+      display.add(book);
+      display.clear();
+      display.show("success", "Your book has been successfully added");
+    } else {
+      // Show error to the user
+      display.show("danger", "Sorry you cannot add this book");
+    }
+  }
   e.preventDefault();
+}
+
+// Add submit event listener to searchForm
+let searchForm = document.getElementById("searchForm");
+searchForm.addEventListener("submit", searchFormSubmit);
+
+function searchFormSubmit(e) {
+  console.log("You have submitted search form");
+  const searchText = document.getElementById("searchTxt").value;
+  if (searchText == "") {
+    window.alert("Search text is Empty! Please Enter Something");
+  } else {
+    const searchTerms = searchText.split(" ");
+    const books = document.querySelectorAll("#tableBody tr");
+
+    books.forEach((book) => {
+      const bookTitle = book.querySelector("td:nth-child(2)").textContent;
+      const bookAuthor = book.querySelector("td:nth-child(3)").textContent;
+
+      const bookHasSearchTerms = searchBookTerms(searchTerms, { bookTitle, bookAuthor });
+      if(bookHasSearchTerms)
+        book.style.display = 'table-row';
+      else
+        book.style.display = 'none';
+    })
+  }
+  e.preventDefault();
+}
+
+function searchBookTerms(searchTerms, { ...searchAttrs }) {
+  let termFound = false;
+
+  Object.values(searchAttrs).forEach((searchAttr) => {
+    termFound = termFound || searchTerms.indexOf(searchAttr) != -1;
+  })
+
+  return termFound;
 }
 
 //edit function
@@ -162,8 +201,8 @@ function deletefunction(pbookid) {
 }
 
 window.onload = function () {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("body").style.display = "block";
+  document.getElementById("loading").style.display = "none";
+  // document.getElementById("body").style.display = "block";
 };
 // Todos"
 // 1. Store all the data to the localStorage
@@ -183,7 +222,7 @@ let timer2 = setInterval(() => {
   setTimeout(timer2);
   document.body.style.transition = "0s none";
   document.body.style.transition.delay = "none";
-  document.querySelector(".headervdo").classList.add("headervdo_afterpreload");
+  // document.querySelector(".headervdo").classList.add("headervdo_afterpreload");
 }, 4600);
 let timer3 = setInterval(() => {
   preloader.style.display = "none";

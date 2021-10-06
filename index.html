@@ -9,26 +9,34 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
   <!-- Style CSS -->
   <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap');
+  </style>
   <title>AEC Library</title>
-
+ 
   <!-- Title bar icon -->
-  <link rel="icon" href="/Favicons/3.png" type="image/x-icon">
+  <link rel="icon" href="./assets/logos/finalLogo.png" type="image/x-icon">
 
   <!-- Adding new font -> Playfair-display -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  
-    <!--Adding AOS in it-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  
+
+  <!--Adding AOS in it-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!--data table-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 </head>
 
 <body class="body-style">
-  
+
   <div class="bubbles">
   <img src="/images/bubble.png">
   <img src="/images/bubble.png">
@@ -37,15 +45,21 @@
   <img src="/images/bubble.png">
   <img src="/images/bubble.png">
   <img src="/images/bubble.png">
-</div>
+  </div>
 
 
   <div id="topBtn" title="Go to Top">
     <a href="#"><span class="fa fa-angle-up"></span></a>
   </div>
 
+<!--scroll bar feature addition-->
+          <div id="progressbar"></div>
+	       <div id="scrollpath"></div>
+	     <div id="percent"></div>
+<!--scroll bar feature ends here--> 
+
   <!-- pre-loader -->
-  <!-- <div id="loading"></div> -->
+  <div id="loading"></div>
     <div class="preloader">
       <div class="loader">
         <div>
@@ -96,7 +110,8 @@
         </div>
         <span>Loading</span>
       </div>
-    </div>
+    </div> 
+
 
   <nav class="navbar navbar-expand-lg navbar-light bg-info">
     <a class="navbar-brand ml-4" href="#"><img src="/logos/logo.png" Aec.jpg" alt="AEC Library" class="logo-img"></a>
@@ -109,32 +124,51 @@
     id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home  |  <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#"><i class="fas fa-home"></i> Home  <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item"><a href="./public/donate-book.html" class="nav-link" target="_blank">  |  Donate Books  |  </a></li>
-        <li class="nav-item"><a href="resource.html" class="nav-link" target="_blank" > |  Resources</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link" target="_blank"> <i class="fas fa-book"></i> About </a></li>
+        <li class="nav-item"><a href="./public/donate-book.html" class="nav-link" target="_blank"> <i class="fas fa-book"></i>  Donate Books </a></li>
+        <li class="nav-item"><a href="resource.html" class="nav-link" target="_blank" > <i class="fas fa-external-link-alt"></i> Resources</a></li>
+        <li class="nav-item"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"> <i class="fas fa-sign-in-alt"></i>  Login </a></li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-dark my-2 my-sm-0" type="submit">
-          Search
+      <form id="searchForm" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search" name="search"/>
+        <button class="btn btn-dark my-2 my-sm-0" id="searchsymbol" type="submit">
+          &#128269
         </button>
       </form>
     </div>
+  </nav> -->
+  <header class="header">
+    <ul>
+      <li class="logo" style="font-size: 0.8cm;font-weight: bold;"><img src="assets/logos/finalLogo.png"
+          alt="AEC Library" class="logo-img"> AEC LIBRARY</li>
+      <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i class="fas fa-sign-in-alt"></i> LOGIN </a></li>
+    </ul>
+  </header>
+  <nav class="new-nav">
+    <ul>
+      <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+      <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i> ABOUT</a></li>
+      <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
+      <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
+      <li class="nav-item"><a href="/Login_page/login_page.html"><i class="fas fa-sign-in-alt"></i>LOGIN</a></li>
+      <li class="nav-item"><a href="./public/contact us .html"></i> CONTACT US</a></li>
+    </ul>
   </nav>
 
-  <div id="message"></div>
+  <!-- <div id="message"></div> -->
 
-  <div class="container my-3">
-    <h1>AEC LIBRARY </h1>
-    <h5 alignItems="center">
+  <!-- <div class="container my-5"> -->
+    <!-- <h1>AEC LIBRARY </h1>
+    <h5 align="center">
       <a href="" style="color:black;" class="typewrite" data-period="2000"
         data-type='[ "“If you don’t like to read, you haven’t found the right book.” – J.K. Rowling", "“That’s the thing about books. They let you travel without moving your feet.” – Jhumpa Lahiri", "“There is more treasure in books than in all the pirate’s loot on Treasure Island.” – Walt Disney", "“Some of these things are true and some of them lies. But they are all good stories.” – Hilary Mantel" ]'>
         <span class="wrap"></span>
       </a>
     </h5>
-    <hr />
-    <form id="libraryForm">
+    <hr /> -->
+    <!-- <form id="libraryForm">
       <div class="form-group row">
         <label for="dateIssue" class="col-sm-2 col-form-label"> <strong>Date of Issue</strong></label>
         <div class="col-sm-10">
@@ -150,9 +184,33 @@
       <div class="form-group row">
         <label for="Author" class="col-sm-2 col-form-label"> <strong>Author</strong></label>
         <div class="col-sm-10">
-          <input type="text" class="input-box" id="author" placeholder="Author" />
 
+          <select class="form-check-input1" name="type" id="type" style="z-index: 1;">
+
+
+            <option value="N/A">Select Author</option>
+            <option value="Agatha Christie">Agatha Christie</option>
+            <option value="Charles Dickens">Charles Dickens</option>
+            <option value="Dan Brown">Dan Brown</option>
+            <option value="Emily Bronte">Emily Bronte</option>
+            <option value="George Elliot">George Elliot</option>
+            <option value="J.K. Rowling">J.K. Rowling</option>
+            <option value="Jane Austen">Jane Austen</option>
+            <option value="John Green">John Green</option>
+            <option value="Mark Twain">Mark Twain</option>
+            <option value="Oscar Wilde">Oscar Wilde</option>
+            <option value="Rabindranath Tagore">Rabindranath Tagore</option>
+            <option value="Roald Dahl">Roald Dahl</option>
+            <option value="Rudyard Kipling">Rudyard Kipling</option>
+            <option value="Ruskin Bond">Ruskin Bond</option>
+            <option value="Sarah J. Maas">Sarah J. Maas</option>
+            <option value="Sylvia Plath">Sylvia Plath</option>
+            <option value="William Shakespeare">William Shakespeare</option>
+            <option value="Other">Other</option>
+          </select>
+          <input type="text" class="input-box" id="author" placeholder="Author" />
         </div>
+
       </div>
       <fieldset class="form-group">
         <div class="row">
@@ -200,32 +258,325 @@
           <button type="submit" class="btn btn-primary">Add Book</button>
         </div>
       </div>
-    </form>
+    </form> -->
 
-    <div id="table">
-      <h1>YOUR BOOKS</h1>
-      <div style="overflow-x:auto;" >
-        <table class="table table-striped">
+    <!-- <div id="table">
+      <h1>Your Books</h1>
+      <div style="overflow-x:auto;">
+        <table class="table table-striped" id="mytable">
           <thead>
             <tr>
               <th scope="col">Date of Issue</th>
               <th scope="col">Name</th>
               <th scope="col">Author</th>
-  
+
               <th scope="col">Type</th>
               <th scope="col">Category</th>
-              
+
             </tr>
           </thead>
           <tbody id="tableBody"></tbody>
         </table>
       </div>
-     
+
+    </div> -->
+  <!-- </div> -->
+  <div class="container my-5">
+    <!-- <h1>AEC LIBRARY </h1>
+    <h5 align="center">
+      <a href="" style="color:black;" class="typewrite" data-period="2000"
+        data-type='[ "“If you don’t like to read, you haven’t found the right book.” – J.K. Rowling", "“That’s the thing about books. They let you travel without moving your feet.” – Jhumpa Lahiri", "“There is more treasure in books than in all the pirate’s loot on Treasure Island.” – Walt Disney", "“Some of these things are true and some of them lies. But they are all good stories.” – Hilary Mantel" ]'>
+        <span class="wrap"></span>
+      </a>
+    </h5>
+    <hr /> -->
+    <div autofocus>
+      <form id="libraryForm">
+        <div class="form-group row">
+          <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
+          <label for="dateIssue" class="issue">Date of Issue</label>
+          <div class="col-sm-10">
+            <input type="date" id="issueDate" name="issueDate">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="bookName" class="col-sm-2 col-form-label"> <strong>Name</strong></label>
+          <div class="col-sm-10">
+            <input type="text" class="input-box" id="bookName" placeholder="Book Name" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Author" class="col-sm-2 col-form-label"> <strong>Author</strong></label>
+          <div class="col-sm-10">
+
+            <select class="form-check-input1" name="type" id="type" style="z-index: 1;">
+
+
+              <option value="N/A">Select Author</option>
+              <option value="Agatha Christie">Agatha Christie</option>
+              <option value="Charles Dickens">Charles Dickens</option>
+              <option value="Dan Brown">Dan Brown</option>
+              <option value="Emily Bronte">Emily Bronte</option>
+              <option value="George Elliot">George Elliot</option>
+              <option value="J.K. Rowling">J.K. Rowling</option>
+              <option value="Jane Austen">Jane Austen</option>
+              <option value="John Green">John Green</option>
+              <option value="Mark Twain">Mark Twain</option>
+              <option value="Oscar Wilde">Oscar Wilde</option>
+              <option value="Rabindranath Tagore">Rabindranath Tagore</option>
+              <option value="Roald Dahl">Roald Dahl</option>
+              <option value="Rudyard Kipling">Rudyard Kipling</option>
+              <option value="Ruskin Bond">Ruskin Bond</option>
+              <option value="Sarah J. Maas">Sarah J. Maas</option>
+              <option value="Sylvia Plath">Sylvia Plath</option>
+              <option value="William Shakespeare">William Shakespeare</option>
+              <option value="Other">Other</option>
+            </select>
+            <!-- <input type="text" class="input-box" id="author" placeholder="Author" /> -->
+          </div>
+
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0"> <strong>Category</strong></legend>
+
+            <div class="col-sm-10">
+              <div class="form-check">
+                <select class="form-check-input" name="category" id="category" style="z-index: 1;">
+                  <option value="N/A">Select Category</option>
+                  <option value="Arts & Music">Arts & Music</option>
+                  <option value="Biographies">Biographies</option>
+                  <option value="Business">Business</option>
+                  <option value="Comics">Comics</option>
+                  <option value="Computer & Tech">Computers & Tech</option>
+                  <option value="Cooking">Cooking</option>
+                  <option value="Education & Reference">Education & Reference</option>
+                  <option value="Entertainment">Entertainment</option>
+                  <option value="Health & Fitness">Health & Fitness</option>
+                  <option value="History">History</option>
+                  <option value="Hobbies & Crafts">Hobbies & Crafts</option>
+                  <option value="Home & Garden">Home & Garden</option>
+                  <option value="Horror">Horror</option>
+                  <option value="Kids">Kids</option>
+                  <option value="Literature & Fiction">Literature & Fiction</option>
+                  <option value="Medical">Medical</option>
+                  <option value="Mystery">Mystery</option>
+                  <option value="Parenting">Parenting</option>
+                  <option value="Religion">Religion</option>
+                  <option value="Romance">Romance</option>
+                  <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
+                  <option value="Science & Maths">Science & Maths</option>
+                  <option value="Self-Help">Self-Help</option>
+                  <option value="Social Sciences">Social Sciences</option>
+                  <option value="Sports">Sports</option>
+                  <option value="Travel">Travel</option>
+                  <option value="True Crime">True Crime</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Add Book</button>
+          </div>
+        </div>
+      </form>
     </div>
+    <div class="right">
+      <div id="table">
+        <h1>Your Books</h1>
+        <div style="overflow-x:auto;">
+          <table class="table table-striped" id="mytable">
+            <thead>
+              <tr>
+                <th scope="col">Date of Issue</th>
+                <th scope="col">Name</th>
+                <th scope="col">Author</th>
+                <th scope="col">Type</th>
+                <th scope="col">Category</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="contain">
+        <div class="line"><b id="bold"> Choose and read the book </b><br>on your comfort zone </div>
+        <div id="search">
+          <form id="searchForm" class="form-inline my-2 my-lg-0">
+            <button class="btn btn-dark my-2 my-sm-0">Keyword</button>
+            <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search for a book"
+              aria-label="Search" name="search" style="border: none;" />
+            <button class="btn btn-dark my-2 my-sm-0" id="searchsymbol" type="submit">
+              &#128269
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="suggestion">
+    <ul class="list">
+      <li class="suggest">518+ <br> Journals</li>
+      <li class="suggest">213+ <br> referrals</li>
+      <li class="suggest">1052+ <br> e-books</li>
+    </ul>
+  </div>
+  <div class="book">
+    <div class="tex">
+      <br>
+      <b>Books and more</b>
+      <br>
+      Read some books on one of your favourite topics from the AE library
+    </div>
+    <br>
+    <div class="options">
+      <button class="book-option">All</button>
+      <button class="book-option">Books</button>
+      <button class="book-option">E-books</button>
+      <button class="book-option">Audio books</button>
+    </div>
+    <br>
+    <div class="book-img">
+      <ul class="books">
+        <li><a href="#"><img src="images/9.png" alt="not"></a></li>
+        <li><a href="#"><img src="images/9.png" alt="not"></a></li>
+        <li><a href="#"><img src="images/9.png" alt="not"></a></li>
+        <li><a href="#"><img src="images/9.png" alt="not"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="member">
+    <section class="donate">
+      <div class="text"><b>Become member</b>
+        <br>by donating your books to <br>help others
+      </div>
+      <div>
+        <button class="donate-btn"><a href="./public/donate-book.html">DONATE NOW</a></button>
+      </div>
+    </section>
+    <section class="photo"><img src="images/8.png" alt=""><img src="images/17.png.png" alt=""></section>
+  </div>
+  <br>
+  <div class="member" id="res">
+    <section class="photo"><img src="images/8.png" alt=""><img src="images/17.png.png" alt=""></section>
+    <section class="donate">
+      <div class="text"><b>Resources</b>
+        <br>get an exclusive access to all <br>the materials available in our <br>environment which help you
+        <br>to satisfy your needs and wants
+      </div>
+      <div>
+        <button class="donate-btn"><a href="resource.html">Learn More</a></button>
+      </div>
+    </section>
+  </div>
+  <br><br>
+  <div class="blogs">
+    <br>
+    <h1><b class='latest-blogs'> Latest Blogs</b></h1>
+    <p class="latest-blogs-p">Regular records of your thoughts, opinions or experiences that you put on the <br>internet for other people to
+      read </p>
+  </div>
+  <div class="update">
+    <div class="login-box">
+      <form>
+        <div class="user-box">
+          <input type="text" name="" required="" >
+          <label>Name</label>
+        </div>
+        <!-- <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Last Name</label>
+        </div> -->
+        <div class="user-box">
+          <input type="email" name="" required="">
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Message</label>
+        </div>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+    </div>
+    <!-- <div class="stay-update">STAY UPDATED</div> -->
+  </div>
+
+  <div class="contact">
+    <ul>
+      <li class="heading">Contact:</li>
+      <li>Ph:95768xyza</li>
+      <li>E:hello@acelibrary.com</li>
+      <li>
+        <ul id="logos">
+          <li>
+            <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul>
+      <li class="heading">Community</li>
+      <li>Our Story</li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Refund Policy</a></li>
+      <li><a href="#">Terms Of use</a> </li>
+      <li>Accessibility</li>
+      <li><a href="#">Publishing process</a> </li>
+    </ul>
+    <ul>
+      <li class="heading">Company</li>
+      <li><a href="#">Contact us</a> </li>
+      <li><a href="./public/terms&conditions.html">Terms and conditions</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Careers</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" class="heading">Subscribe to our newsletter</a> </li>
+    </ul>
   </div>
   <div>
     <footer>
-      <div class="icons">
+      <div class="d-flex">
+        <div class="icons">
+
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="ml-auto">
+
+          <p>©2021 Copyright AEC Library</p>
+        </div>
+        <div class="ml-auto">
+          <p>
+            <a href="./public/contact us .html" style="color: antiquewhite;"> </a>
+            &emsp;&emsp;
+          </p>
+
+        </div>
+      </div>
+      <!-- <div class="icons">
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
@@ -233,9 +584,11 @@
           <li>
             <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
           </li>
-          <p>©2021 Copyright </p>
+          <a href="./public/contact us .html" style="color: antiquewhite;">Contact Us</a>  
+
+          <p>©2021 Copyright AEC Library</p>
         </ul>
-      </div>
+      </div> -->
     </footer>
 
   </div>
@@ -248,10 +601,22 @@
       </div>
     </footer> -->
 
+      <!--scroll featuring-->
+<script type ="text/javascript">
+	  let progress = document.getElementById('progressbar');
+	  let totalHeight = document.body.scrollHeight - window.innerHeight;
+	  window.onscroll = function(){ 
+	      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+		  progress.style.height = progressHeight + "%";
+		  }
+		  </script>
+      <!--scrolling feature end here-->
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="/js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
   <!-- Go to Top  -->
   <script>
     $(document).ready(function () {
@@ -281,12 +646,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
-     <script>
-      AOS.init({
-        offset: 200,
-        duration: 1000,
-      });
-    </script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+    });
+  </script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#mytable').DataTable();
+    });
+  </script>
 </body>
+
 
 </html>
