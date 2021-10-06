@@ -3,6 +3,25 @@
   padding: 0;
   margin: 0;
 }
+/* To make scroll-bar appealing */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0a0a0a99; 
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0087ca; 
+}
 
 html {
   scroll-behavior: smooth;
