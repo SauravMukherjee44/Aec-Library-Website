@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap);
 html {
   height: 60rem ;
@@ -61,7 +54,8 @@ nav.navbar {
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255 255 255 / 50%);
   transition-duration: 0.3s;
-  font-weight: bold;
+  font-size: 1.1rem;
+ 
 }
 .navbar-light .navbar-nav .nav-link:hover {
   transition-duration: 0.3s;
@@ -85,7 +79,19 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 .nav-link{
   margin-left: 2rem;
 }
-
+.form-inline button{
+  width: 45px;
+  height: 35px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #5282d4;
+  background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  z-index: 0;
+}
 
 
 
@@ -359,7 +365,7 @@ footer {
   bottom: 0;
   
   width: 100%;
-  height: 9vh;
+  height: 7vh;
   background-color: #343a40;
   color: white;
   box-shadow: 0px 0px 16px 9px black;
@@ -376,8 +382,8 @@ footer {
 }
 
 .icons ul li a {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background-color: #fff;
   text-align: center;
   line-height: 30px;
@@ -430,6 +436,8 @@ footer {
   top: 20px;
 }
 .ml-auto{
-  margin-top: 13px;
-  font-size:20px;;
+  margin-top: 10px;
+  font-size:15px;
+  line-height: 1.5;
+  
 }
