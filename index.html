@@ -13,11 +13,14 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Style CSS -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap');
   </style>
+  
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>AEC Library</title>
  
@@ -29,8 +32,7 @@
 
   <!--Adding AOS in it-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
   <!--data table-->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 </head>
@@ -114,11 +116,13 @@
 
   <header class="header">
     <ul>
-      <li class="logo" style="font-size: 0.8cm;font-weight: bold;"><img src="assets/logos/finalLogo.png"
+      <li class="logo" style="font-size: 0.8cm"><img src="assets/logos/finalLogo.png"
           alt="AEC Library" class="logo-img"> AEC LIBRARY</li>
-      <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i class="fas fa-sign-in-alt"></i> LOGIN </a></li>
+      <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i class="fas fa-sign-in-alt"></i> Login</a></li>
     </ul>
   </header>
+
+
   <nav class="new-nav">
     <ul>
       <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
@@ -126,8 +130,7 @@
       <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
       <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
       <li class="nav-item"><a href="./sign up page/index.html"><i class="fas fa-sign-in-alt"></i>SIGN UP</a></li>
-      <li class="nav-item"><a href="./public/contact us .html"></i> CONTACT US</a></li>
-
+      <li class="nav-item"><a href="./public/contact us .html"><i class="fas fa-phone"></i> CONTACT US</a></li>
     </ul>
   </nav>
 
@@ -138,20 +141,20 @@
           <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
           <label for="dateIssue" class="issue">Date of Issue</label>
           <div class="col-sm-10">
-            <input type="date" id="issueDate" name="issueDate">
+            <input type="date" id="issueDate" name="issueDate" class = "input-box">
           </div>
         </div>
         <div class="form-group row">
-          <label for="bookName" class="col-sm-2 col-form-label"> <strong>Name</strong></label>
+          <label for="bookName" class="col-sm-2 col-form-label issue"> <strong>Name</strong></label>
           <div class="col-sm-10">
             <input type="text" class="input-box" id="bookName" placeholder="Book Name" />
           </div>
         </div>
         <div class="form-group row">
-          <label for="Author" class="col-sm-2 col-form-label"> <strong>Author</strong></label>
+          <label for="Author" class="col-sm-2 col-form-label issue"> <strong>Author</strong></label>
           <div class="col-sm-10">
 
-            <select class="form-check-input1" name="type" id="type" style="z-index: 1;">
+            <select class="form-check-input1 input-box" name="type" id="type" style="z-index: 1;">
 
 
               <option value="N/A">Select Author</option>
@@ -180,11 +183,11 @@
         </div>
         <fieldset class="form-group">
           <div class="row">
-            <legend class="col-form-label col-sm-2 pt-0"> <strong>Category</strong></legend>
+            <legend class="col-form-label col-sm-2 pt-0 issue"> <strong>Category</strong></legend>
 
             <div class="col-sm-10">
               <div class="form-check">
-                <select class="form-check-input" name="category" id="category" style="z-index: 1;">
+                <select class="form-check-input input-box" name="category" id="category" style="z-index: 1;">
                   <option value="N/A">Select Category</option>
                   <option value="Arts & Music">Arts & Music</option>
                   <option value="Biographies">Biographies</option>
@@ -221,7 +224,7 @@
 
         <div class="form-group row">
           <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Add Book</button>
+            <button type="submit" class="btn btn-primary" id="add-book-btn">Add Book</button>
           </div>
         </div>
       </form>

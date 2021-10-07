@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', serif;
+}
+
+.header{
+  padding: 8px;
+}
+
+.login a{
+  font-size: 15px;
 }
 
 nav.navbar {
@@ -1356,7 +1366,8 @@ a {
 }
 
 .header {
-  height: 60px;
+  z-index: 1002;
+  position: fixed;
   color: white;
   background-color: rgb(48, 46, 46);
   width: 100%;
@@ -1367,7 +1378,6 @@ a {
   flex-direction: row;
   list-style-type: none;
   justify-content: space-between;
-  height: 55px;
 }
 
 .header ul li {
@@ -1375,16 +1385,13 @@ a {
 }
 
 .new-nav {
-  height: 50px;
   background-color: #f3d094;
   align-items: center;
 }
 
 
 .new-nav ul {
-  margin-left: 40px;
-  margin-right: 40px;
-  /* margin-top: 17px; */
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1590,4 +1597,45 @@ a {
 
 .nav-item a{
 text-decoration: none;
+}
+
+nav .new-nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  z-index: 999;
+}
+
+.new-nav{
+  padding-top: 90px;
+  padding-bottom: 10px;
+  border-radius: 0px 0px 15px 15px;
+  width: fit-content;
+  margin: auto;
+}
+
+#loading{
+  z-index: 9999;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fas{
+  margin-right: 5px;
+}
+
+.input-box, #issueDate, #category{
+  margin-left: -8px;
+  border-radius: 0px;
+}
+
+#category{
+  margin-left: -28px;
+}
+
+#add-book-btn{
+  margin-left: -8px;
+  background-color: #002bff;
+  border-radius: 3px;
 }
