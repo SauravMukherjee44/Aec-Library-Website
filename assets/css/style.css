@@ -944,7 +944,7 @@ strong {
   }
 
   .body-style {
-    width: 100%;
+    width: 104.5%;
   }
 
   .input-box {
@@ -1590,4 +1590,40 @@ a {
 
 .nav-item a{
 text-decoration: none;
+}
+
+@media (max-width: 350px){
+  #libraryForm{
+    
+  }
+  .container{
+    display: block;
+  }
+  .navBody{
+    width: 100rem;
+  }
+  .new-nav ul{
+    margin-left: -21rem;
+  }
+  .header ul{
+    width: fit-content;
+  }
+  a.nav-link {
+    padding-left: 43rem !important;
+  }
+  #table {
+    width: 134%;
+    padding: 0rem;
+    height: 20rem;
+  }
+  .contain {
+    height: 24rem;
+    width: 62rem;
+  }
+  .book{
+    width: 75rem;
+  }
+  .list li{
+    width: 75rem;
+  }
 }
