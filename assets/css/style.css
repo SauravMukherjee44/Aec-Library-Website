@@ -8,41 +8,24 @@ nav.navbar {
   right: 0;
 }
 
- /* #table {
+#table {
   border: none;
   border-radius: 20px;
   /* background: linear-gradient(to right, #3898dd, #36d4f0, #85daa8); */
   /* background: linear-gradient(to bottom, #0c0c0c, #2a2a2a, #646665); */
-  /*background: linear-gradient(to right, #0a5f81, #093b3f, #1b1b1b);
+  background: linear-gradient(to right, #d4b217, #ee840b, #db2424);
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 10px;
   border: 3px solid black;
   box-shadow: 2px 2px 5px 2px black;
-*/
-
-#table { 
-   
-    border-radius: 20px;
-    
-    background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8);
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 10px;
-    border: 3px solid #efe088;
-    box-shadow: 2px 2px 5px 2px #ddbcbc;
+  /* height: 40px; */
 }
 
-
-.table thead th {
-    vertical-align: bottom;
-    border: none;
-    
-    color: black;
-}
- 
 #table h1 {
   color: black;
+  text-align: center;
+  margin-top: -30px;
 }
 
 .dataTables_wrapper .dataTables_filter input {
@@ -67,10 +50,14 @@ select {
   border: 1px solid #aaa;
   border-radius: 3px;
   padding: 5px;
-  color: yellowgreen;
+  color: black;
   padding: 4px;
 
   font-weight: bold;
+}
+.dataTables_wrapper .dataTables_length select option
+{
+  color:black;
 }
 
 label {
@@ -104,9 +91,14 @@ label {
   left: 0;
 }
 
-/* .nav-item{
+.nav-item{
   padding-right: 15px;
-} */
+  vertical-align: center;
+  padding-bottom: 15px;
+  padding-top: -10px;
+  margin-top: -5px;
+  position : relative;
+}
 #loading {
   position: fixed;
   width: 100%;
@@ -142,7 +134,7 @@ label {
 
 /* Category */
 .form-check-input {
-  border-radius: 15px;
+  border-radius: 10px;
   margin-top: 10px;
   padding: 5px;
   width: 25%;
@@ -150,7 +142,7 @@ label {
 
 /* Authors */
 .form-check-input1 {
-  border-radius: 15px;
+  border-radius: 10px;
   margin-top: 10px;
   padding: 5px;
   width: 25%;
@@ -180,8 +172,12 @@ html {
 }
 
 #issueDate {
-  border-radius: 15px;
-  height: 30px;
+  
+  padding: 10px;
+  /* width: 200px; */
+  text-align: left;
+  border-radius: 10px;
+  height: 35px;
 }
 
 .input-box {
@@ -192,7 +188,7 @@ html {
   width: 33%;
   height: 30px;
   padding-bottom: 2px;
-  border-radius: 15px;
+  border-radius: 10px;
   margin-top: 14px;
   padding-left: 10px;
 }
@@ -228,8 +224,12 @@ html {
   margin-top: 2rem;
 }
 
+#submit-new{
+  margin-left: 50px;
+}
+
 #searchsymbol {
-  width: 30px;
+  width: 45px;
   height: 41px;
 }
 
@@ -440,6 +440,8 @@ footer p {
   /* Width and height same to make icon look more professional */
   height: 3rem;
   width: 3rem;
+  margin-right: 10px;
+  margin-left:5px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -464,17 +466,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   height: 45px;
 }
 
-a.nav-link {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-    padding-bottom: 0rem;
-}
-
-h1 {  /* To make headings look more appealing */
-    text-decoration: overline;
-}
-
-.bg-info { /* To make proper distance between nav bar icons */
+.bg-info {
   /* To make nav-bar background transparent and shadow effect */
   /*     background-color: #ada39f00!important;
     box-shadow: 0px 0px 16px 9px #efecec4d; */
@@ -909,30 +901,6 @@ strong {
 
 /* For making responsive */
 @media (max-width:800px) {
-
-  html {
-    width:73.7rem;
-  }
-
-  #loading {
-    width: 73.7;
-  }
-  .preloader{
-    width: 100%;
-    height: 100%;
-  
-  }
- /* .member{
-   font-size: 5rem;
- } */
-
- .latest-blogs {
-    font-size: 4rem;
- }
-
- .latest-blogs-p{
-   font-size: 3.5rem;
- }
   .body-style {
     box-shadow: none;
     padding: 1rem;
@@ -944,7 +912,7 @@ strong {
   }
 
   .body-style {
-    width: 100%;
+    width: 20rem;
   }
 
   .input-box {
@@ -965,16 +933,28 @@ strong {
 }
 
 .suggestion {
-  height: 120px;
+  height: 150px;
   background-color: white;
+  justify-content: center;
+  display: flex;
+  /* text-align: center; */
+
 }
 
 .list li {
-  width: 380px;
-  height: 120px;
+  width: 300px;
+  height: 130px;
   text-align: center;
   font-size: 1cm;
   list-style: none;
+  border: 2px solid red;
+  border-radius: 10px;
+  border-width: 7px;
+  margin: 40px;
+  margin-top:10px;
+  background-color: rgb(41, 174, 226);
+  
+  /* margin-bottom:3px; */
 }
 
 .list {
@@ -1043,13 +1023,23 @@ strong {
 .member section {
   /* border: 2px solid rgb(235, 167, 167); */
   width: 50%;
+  
 }
 
+.donate{
+  border :5px solid red;
+  margin: 50px;
+  /* padding: 20px; */
+  border-radius: 8px;
+
+
+}
 .donate div {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 30px;
   font-size: 0.5cm;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .text b {
@@ -1059,8 +1049,9 @@ strong {
 
 .donate-btn {
   background-color: rgb(35, 108, 156);
-  height: 45px;
+  height: 40px;
   width: 155px;
+  margin-bottom: 5px;
   border-radius: 10px;
 
 }
@@ -1375,11 +1366,14 @@ a {
 }
 
 .new-nav {
-  height: 50px;
+  height: 60px;
   background-color: #f3d094;
   align-items: center;
-}
+  justify-content: center;
+  /* margin-top: -15px; */
 
+
+}
 
 .new-nav ul {
   margin-left: 40px;
@@ -1391,14 +1385,9 @@ a {
   align-items: center;
 }
 
-.icons_{
-  padding: 0 12px;
-}
-
-
 .new-nav li {
   font-family: sans-serif;
-  margin: 10px 25px;
+  margin: 20px;
   list-style-type: none;
 }
 
@@ -1419,7 +1408,8 @@ a {
   margin-top: 50px;
   margin-left: 50px;
   background-color: white;
-  border-radius: 30px;
+  border-radius: 30px ;
+  border:4px solid rgb(17, 17, 17);
   display: flex;
   flex-direction: column;
 }
@@ -1443,8 +1433,6 @@ a {
 #search {
   align-items: center;
 }
-
-
 
 #searchTxt,
 #searchsymbol {
@@ -1514,8 +1502,9 @@ a {
 }
 
 #table {
-  width: 92%;
+  /* width: 92%; */
   /* padding: 0; */
+  margin: 50px;
 }
 
 /*scrolling effect starts from here*/
@@ -1575,19 +1564,4 @@ a {
 
 ::-webkit-scrollbar {
   width: 0;
-}
-
-
-.nav-item a{
-  padding: 10px 10px 15px;
-}
-
-.nav-item :hover {
-
-  background-color: rgb(247, 191, 9);
-  opacity: 1;
-}
-
-.nav-item a{
-text-decoration: none;
 }
