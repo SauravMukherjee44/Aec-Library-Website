@@ -1621,12 +1621,17 @@ nav .new-nav ul{
   border-radius: 3px;
 }
 
-#table{
+#table, .contain, #libraryForm{
   width: 750px;
-  border:none;
   background-color: wheat;
   box-shadow: none;
   border: 4px solid brown;
+  border-radius: 7px;
+}
+
+#libraryForm{
+  width: 400px;
+  padding: 15px;
 }
 
 #table label{
@@ -1648,4 +1653,12 @@ nav .new-nav ul{
 .search-btn{
   border-radius:3px;
   margin-top: 0px;
+}
+
+.right{
+  padding-left: 15px;
+}
+
+.container{
+  margin-left: 4.3em;
 }
