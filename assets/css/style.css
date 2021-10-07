@@ -129,6 +129,9 @@ label
   padding: 5px;
   width:25%;
 }
+.container {
+	background-color: rgba(205,205,255,0.5);
+}
 .container h1 {
   padding-top: 40px;
   color: rgb(255, 255, 255);
