@@ -1332,7 +1332,7 @@ input[type=radio] {
 
 .contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: rgb(153, 150, 150);
   width: 100%;
 }
