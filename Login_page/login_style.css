@@ -367,5 +367,32 @@ footer a {
 	
 	  }
 	  
-	
+	@media only screen and (max-width: 500px) {
+	.container{
+		overflow-y: scroll;
+	}
+	/* Hide scrollbar for Chrome, Safari and Opera */
+    .container::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .container {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    } 
+	.form-container {
+		position: absolute;
+		top: 280px;
+	}
+	.sign-in-container {
+		width: 100%;
+	}
+	.overlay-container {
+		position: absolute;
+		left: 0;
+		height: 60%;
+		width: 100%;
+	}
+}
   
