@@ -69,7 +69,7 @@ select {
   border: 1px solid #aaa;
   border-radius: 3px;
   padding: 5px;
-  color: yellowgreen;
+  color: #c42821;
   padding: 4px;
 
   font-weight: bold;
@@ -213,7 +213,7 @@ html {
 
 .btn {
   width: 150px;
-  height: 40px;
+  height: 41px;
   border: none;
   outline: none;
   color: #fff;
@@ -231,7 +231,7 @@ html {
 }
 
 #searchsymbol {
-  width: 30px;
+  width: 41px;
   height: 41px;
 }
 
@@ -977,16 +977,18 @@ strong {
   text-align: center;
   font-size: 1cm;
   list-style: none;
+  text-shadow: 3px 4px 8px #c4c4c4;
 }
 
 .list {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .book {
  
   background-color: #f3d094;
-  
+
 }
 
 .tex {
@@ -1013,8 +1015,6 @@ strong {
 
 
 
-
-
 .options {
   display: flex;
   justify-content: center;
@@ -1027,6 +1027,11 @@ strong {
   margin-right: 10px;
   border: none;
   border-radius: 15px;
+  padding: 0.2rem 1rem;
+  transition: all 0.3s ease 0s;
+}
+.book-option:hover {
+  background-color: #d1af74;
 }
 
 .member {
@@ -1319,13 +1324,34 @@ input[type=radio] {
 
 .contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: rgb(153, 150, 150);
   width: 100%;
 }
 
 .contact ul {
   margin: 25px;
+}
+#subcribe{
+  border: 2px solid rgb(153, 150, 150);
+  border-radius: 10px 0px 0px 10px;
+  padding-left: 3%;
+  height: 5vh;
+  width: 12vw;
+  position: relative;
+  outline: none;
+  
+}
+.label{
+  position: absolute;
+  font-size: 0.85rem !important;
+  height: 5vh;
+  padding-left: 0.3%;
+  padding-top: 0.3%;
+  border-radius: 0px 10px 10px 0px;
+  background: #5282d4;
+  background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  cursor: pointer;
 }
 
 .contact ul li,
@@ -1336,11 +1362,11 @@ a {
   font-size: large;
   margin: 5px;
 }
-
 .heading {
   list-style: none;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bolder;
+  padding-bottom: 2%;
 }
 
 .footer {
@@ -1377,6 +1403,9 @@ a {
   align-items: center;
 }
 
+.fas{
+  margin-right: 6px;
+}
 
 .new-nav ul {
   margin-left: 40px;
@@ -1451,7 +1480,7 @@ a {
 #searchForm {
   display: inline-block;
   border: 1px solid grey;
-  border-radius: 5px;
+  border-radius: 12px;
   align-items: center;
 }
 
@@ -1480,8 +1509,18 @@ a {
 
 .col-sm-10 input,
 .form-check-input1,
-.form-check-input {
+.form-check-input{
   width: 100%;
+  padding: 3%;
+  border-radius: 5px;
+  outline: none;
+}
+#issueDate{
+   border-radius: 5px;
+   padding-left: 3%;
+   padding: 3%;
+   outline: none;
+   height: 5vh;
 }
 
 .col-sm-10 {
@@ -1589,7 +1628,6 @@ a {
 text-decoration: none;
 }
 
-
 .books1 img{
   margin:30px 50px;
     width:  250px;
@@ -1624,3 +1662,4 @@ text-decoration: none;
   color:#fff;
   background: #00729D;
 }
+
