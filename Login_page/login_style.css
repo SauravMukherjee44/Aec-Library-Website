@@ -26,6 +26,8 @@ h1 {
 	margin: 0;
 }
 
+
+
 h2 {
 	margin-top: 35px;
 	font-size: 2.1em;
@@ -42,14 +44,18 @@ p {
 
 span {
 	font-size: 12px;
+	margin-top: 1px;
+	margin-bottom: 12px;
 }
 
 a {
-	color: #333;
+	color: rgb(255, 255, 255);
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
+	outline: none;
 }
+
 
 .tgt{
 	border-radius: 20px;
@@ -64,7 +70,7 @@ a {
 
 
 button {
-	border-radius: 20px;
+
 	background-color: #296288;
 	color: #FFFFFF;
 	font-size: 12px;
@@ -73,10 +79,25 @@ button {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
-	border: 2px solid #333;
+	border: 2px solid #296288;
 	outline: none;
+
+    /* box-shadow: 3px 2px 2px #424242; */
+	box-shadow: 4px 3px 8px 1px rgba(0,0,0,0.5);
+    border-radius: 15px;
 }
 
+
+input:hover{
+outline: none;
+}
+
+button:hover{
+	background-color: black;
+	cursor: pointer;
+	border-color: black;
+
+}
 button:active {
 	transform: scale(0.95);
 }
@@ -102,13 +123,27 @@ form {
 	text-align: center;
 }
 
+
 input {
-	background-color: #eee;
+	outline: none;
+	background-color: #00000012;
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
-	width: 100%;
+	width: 90%;
+	border-radius: 20px;
+	/* box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.4); */
+
 }
+
+.input__tag:focus{
+	/* border: 2px solid #167683; */
+	box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.4);
+	margin: 6px 0px;
+	padding: 12px 13px;
+	outline: none;
+}
+
 
 .container {
 	background-image: url('Capture.PNG');
@@ -276,8 +311,61 @@ footer a {
 	outline: none;
 }
 
-.input__tag:focus{
-	border: 2px solid #167683;
-	margin: 6px 0px;
-	padding: 12px 13px;
-}
+
+
+
+	
+	.animate1 {
+		
+		font-size: 45px;
+		font-size: 2.1em;
+		/* text-align: center; */
+		font-weight: 700;
+		letter-spacing: 8px;
+		margin-bottom: 20px;
+		position: relative;
+	}
+	
+	.animate2{
+		font-size: 20px;
+		line-height: 29px;
+		color: white;
+		letter-spacing: 0.5px;
+	}
+	
+	
+
+	
+	/* Animation */
+	
+	
+	.animate1 {
+		animation: text 3s 1;
+	  }
+	  
+	  /* text animation */
+	  
+	  @keyframes text {
+	
+		0%{
+			color: #296288;
+			margin-bottom: -40px;
+	
+		}
+	
+		30%{
+			letter-spacing: 25px;
+			margin-bottom: -40px;
+		}
+		
+		85%{
+			letter-spacing: 8px;
+			margin-bottom: -40px;
+		}
+	
+	
+	
+	  }
+	  
+	
+  
