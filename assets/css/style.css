@@ -935,7 +935,6 @@ strong {
  }
   .body-style {
     box-shadow: none;
-    padding: 1rem;
   }
 
   #table {
@@ -1003,18 +1002,22 @@ strong {
 }
 
 .books {
-  margin-left: 100px;
-  margin-right: 100px;
+  gap: 1rem;
   display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .books li {
   width: 200px;
   height: 300px;
 }
-
+.books li a {
+  margin: 0;
+}
 .books li img {
   width: 200px;
   height: 300px;
@@ -1045,8 +1048,10 @@ strong {
 
 .member {
   height: 400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
 }
 
@@ -1055,9 +1060,14 @@ strong {
   width: 50%;
 }
 
+.member section.donate{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
 .donate div {
   text-align: center;
-  margin-top: 60px;
   font-size: 0.5cm;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -1082,12 +1092,15 @@ strong {
 }
 
 .photo img {
-  width: 310px;
-  height: 400px;
+  min-width: 0;
+  height: auto;
+  object-fit: contain;
 }
 
 .photo {
   display: flex;
+  height: 100%;
+  justify-content: space-around;
 }
 
 .blogs {
@@ -1332,13 +1345,26 @@ input[type=radio] {
 
 .contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: rgb(153, 150, 150);
   width: 100%;
+  padding: 2rem 0;
 }
-
+.contact .email{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.contact label {
+  position: relative;
+  margin: 0;
+}
 .contact ul {
-  margin: 25px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #subcribe{
   border: 2px solid rgb(153, 150, 150);
@@ -1445,7 +1471,7 @@ a {
 
 .contain {
   height: 300px;
-  width: 690px;
+  width: 100%;
   color: black;
   margin-top: 50px;
   margin-left: 50px;
@@ -1506,10 +1532,8 @@ a {
 
 .container {
   display: flex;
-  margin-left: 20px;
   width: 100%;
-  margin-right: 0;
-  padding-left: 30px;
+  margin: 20px auto;
 }
 
 .col-sm-10 input,
@@ -1547,17 +1571,11 @@ a {
 }
 
 .right {
-  width: 790px;
-  padding-left: 55px;
-  padding-right: 0px;
+  width: 95%;
   justify-items: right;
 
 }
 
-#table {
-  width: 92%;
-  /* padding: 0; */
-}
 
 /*scrolling effect starts from here*/
 
