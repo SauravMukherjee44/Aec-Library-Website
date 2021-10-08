@@ -912,9 +912,9 @@ strong {
 /* For making responsive */
 @media (max-width:800px) {
 
-  html {
+/*   html {
     width:73.7rem;
-  }
+  } */
 
   #loading {
     width: 73.7;
@@ -928,22 +928,23 @@ strong {
    font-size: 5rem;
  } */
 
- .latest-blogs {
+/*  .latest-blogs {
     font-size: 4rem;
  }
 
  .latest-blogs-p{
    font-size: 3.5rem;
- }
+ } */
+  
   .body-style {
     box-shadow: none;
     padding: 1rem;
   }
 
-  #table {
+/*   #table {
     width: 29rem;
     height: 10rem;
-  }
+  } */
 
   .body-style {
     width: 100%;
@@ -961,9 +962,9 @@ strong {
     margin-left: 1.5rem;
   }
 
-  .my-sm-0 {
+/*   .my-sm-0 {
     margin-left: 1.5rem;
-  }
+  } */
 }
 
 .suggestion {
@@ -986,9 +987,8 @@ strong {
 }
 
 .book {
- 
+  min-height: 490px;
   background-color: #f3d094;
-
 }
 
 .tex {
@@ -1005,15 +1005,34 @@ strong {
 .books1 {
 
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
+
 .books1 div{
   height:500px;
   
 }
 
 
+
+
+.books li {
+  width: 200px;
+  height: 300px;
+  margin: 20px 0px;
+}
+
+.books li img {
+/*   width: 200px;
+  height: 300px; */
+   width: 100%;
+  height: 100%;
+  transition: all 0.4s ease 0s;
+}
+.books li img:hover {
+    transform: scale(1.1);
+}
 
 .options {
   display: flex;
@@ -1035,7 +1054,7 @@ strong {
 }
 
 .member {
-  height: 400px;
+   min-height: 400px;
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -1324,7 +1343,8 @@ input[type=radio] {
 
 .contact {
   display: flex;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  justify-content: space-between;
   background-color: rgb(153, 150, 150);
   width: 100%;
 }
@@ -1379,7 +1399,8 @@ a {
 }
 
 .header {
-  height: 60px;
+/*   height: 60px; */
+   min-height: 60px;
   color: white;
   background-color: rgb(48, 46, 46);
   width: 100%;
@@ -1398,7 +1419,8 @@ a {
 }
 
 .new-nav {
-  height: 50px;
+/*   height: 50px; */
+  min-height: 50px;
   background-color: #f3d094;
   align-items: center;
 }
@@ -1412,7 +1434,8 @@ a {
   margin-right: 40px;
   /* margin-top: 17px; */
   display: flex;
-  flex-direction: row;
+/*   flex-direction: row; */
+   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -1661,5 +1684,127 @@ text-decoration: none;
   text-decoration: none;
   color:#fff;
   background: #00729D;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 0 0% 10% 25%;
+  }
+
+  #table {
+    width: 80vw;
+  }
+
+  .contain {
+    width: 80vw;
+  }
+
+  .member {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .member .donate {
+    width: 40%;
+  }
+
+  .member .photo {
+    width: 60%;
+  }
+
+  .photo img {
+    width: 60%;
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header ul {
+    padding-left: 15px;
+  }
+  .header ul li {
+    margin-right: 0;
+  }
+
+  .right {
+    padding-left: 0;
+  }
+
+  .books {
+    margin-left: 0px;
+    margin-right: 40px;
+  }
+
+  .member {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .member .donate {
+    width: 100%;
+  }
+
+  .member .photo {
+    width: 100%;
+  }
+
+  .donate div {
+    margin-top: 30px;
+  }
+
+  .photo img {
+    width: 50%;
+    height: 60%;
+  }
+
+  .photo {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-img {
+    margin-left: 5px;
+  }
+
+  .new-nav ul {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .new-nav li {
+    margin: 10px 8px;
+  }
+
+  .left {
+    padding: 0 0 5% 5%;
+  }
+
+  .contain {
+    height: 400px;
+  }
+
+  #search {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .list li {
+    width: 300px;
+    height: 100px;
+    font-size: 0.8cm;
+  }
+
+  .books li {
+    width: 180px;
+    height: 270px;
+    margin: 20px 0px;
+  }
 }
 
