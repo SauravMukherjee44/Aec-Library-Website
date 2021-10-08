@@ -1,7 +1,5 @@
 * {
   font-family: 'Playfair Display', serif;
-  margin: 0;
-  padding: 0;
 }
 
 nav.navbar {
@@ -1017,11 +1015,6 @@ strong {
   text-align: center;
 }
 
-
-.tex  {
-  font-size: 0.7cm;
-  font-family: 'Source Sans Pro', sans-serif;
-
 .book .tex {
   margin-top: 0;
   font-family: 'Poppins', sans-serif;
@@ -1035,26 +1028,21 @@ strong {
   font-size: 48px;
   margin-bottom: 40px;
   display: inline-block;
-
 }
 
+.book div {
+  height: max-content;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
-
-.books1 {
-
+.books {
+  margin-left: 100px;
+  margin-right: 100px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   list-style: none;
 }
-
-.books1 div{
-  height:500px;
-  
-}
-
-
-
 
 .books li {
   width: 200px;
@@ -1250,7 +1238,6 @@ p {
   height: 450px;
   color: white;
 }
-
 
 .login-box {
   /* position: absolute; */
@@ -1776,41 +1763,9 @@ a {
   text-decoration: none;
 }
 
-.books1 img{
-  margin:30px 50px;
-    width:  250px;
-  height: 300px;
-  object-fit: cover;
-  display :block;
- 
+.book-img ul {
+  list-style: none;
 }
-.book p{
-  font-size:1rem;
-}
-
-
-.bookbtn{
- 
-  margin:20px 70px;
-  padding:10px 10px;
-
-  text-decoration: none;
-  background: #00A9D4;
-  color: #fff;
- 
-  cursor: pointer;
-  text-align: center;
-  width: 190px;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: 0.5s;
-}
-.bookbtn:hover {
-  text-decoration: none;
-  color:#fff;
-  background: #00729D;
-}
-
 
 @media only screen and (max-width: 1000px) {
   .container {
@@ -1932,4 +1887,3 @@ a {
     margin: 20px 0px;
   }
 }
-
