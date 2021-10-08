@@ -1411,6 +1411,9 @@ a {
   align-items: center;
 }
 
+.fas{
+  margin-right: 6px;
+}
 
 .new-nav ul {
   margin-left: 40px;
