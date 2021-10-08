@@ -1,5 +1,7 @@
 * {
   font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
 }
 
 nav.navbar {
@@ -982,42 +984,36 @@ strong {
 }
 
 .book {
-  height: 490px;
+ 
   background-color: #f3d094;
-  ;
+  
 }
 
 .tex {
   text-align: center;
 }
 
-.tex b {
+.tex  {
   font-size: 0.7cm;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.book div {
-  height: max-content;
-  font-family: 'Source Sans Pro', sans-serif;
-}
 
-.books {
-  margin-left: 100px;
-  margin-right: 100px;
+
+.books1 {
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-.books li {
-  width: 200px;
-  height: 300px;
+.books1 div{
+  height:500px;
+  
 }
 
-.books li img {
-  width: 200px;
-  height: 300px;
-}
+
+
+
 
 .options {
   display: flex;
@@ -1095,6 +1091,7 @@ p {
   height: 450px;
   color: white;
 }
+
 
 .login-box {
   /* position: absolute; */
@@ -1590,4 +1587,40 @@ a {
 
 .nav-item a{
 text-decoration: none;
+}
+
+
+.books1 img{
+  margin:30px 50px;
+    width:  250px;
+  height: 300px;
+  object-fit: cover;
+  display :block;
+ 
+}
+.book p{
+  font-size:1rem;
+}
+
+
+.bookbtn{
+ 
+  margin:20px 70px;
+  padding:10px 10px;
+
+  text-decoration: none;
+  background: #00A9D4;
+  color: #fff;
+ 
+  cursor: pointer;
+  text-align: center;
+  width: 190px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+.bookbtn:hover {
+  text-decoration: none;
+  color:#fff;
+  background: #00729D;
 }
