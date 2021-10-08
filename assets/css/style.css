@@ -22,15 +22,16 @@ nav.navbar {
 */
 
 #table { 
-   
+  text-align: center;
     border-radius: 20px;
-    
-    background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8);
-    padding-right: 15px;
-    padding-left: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8); */
+    /* padding-right: 15px;
+    padding-left: 15px; */
     padding-bottom: 10px;
-    border: 3px solid #efe088;
-    box-shadow: 2px 2px 5px 2px #ddbcbc;
+    border: none;
+    /* box-shadow: 2px 2px 5px 2px #ddbcbc; */
+    box-shadow: 2px 2px 5px 2px black;
 }
 
 
@@ -38,13 +39,16 @@ nav.navbar {
     vertical-align: bottom;
     border: none;
     
-    color: black;
+    color: white;
 }
  
 #table h1 {
-  color: black;
+  color: white;
 }
 
+#books-content{
+  padding: 10px;
+}
 .dataTables_wrapper .dataTables_filter input {
   border: 1px solid #aaa;
   border-radius: 3px;
@@ -404,7 +408,7 @@ footer p {
 .table thead th {
   vertical-align: bottom;
   border: none;
-  background: rgb(114, 113, 112);
+  background: rgb(255, 255, 255);
   text-align: center;
   color: black;
 }
