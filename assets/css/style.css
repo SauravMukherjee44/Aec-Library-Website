@@ -1752,6 +1752,7 @@ a {
 }
 #libraryForm .form-check-input {
   width: 100%;
+  position: relative;
 }
 #libraryForm label {
   width: 100%;
