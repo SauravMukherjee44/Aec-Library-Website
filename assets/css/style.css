@@ -1060,6 +1060,8 @@ strong {
   
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 
@@ -1287,6 +1289,9 @@ p {
 .update {
   height: 450px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-box {
@@ -1936,10 +1941,4 @@ a {
     height: 270px;
     margin: 20px 0px;
   }
-}
-
-.icons{
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
