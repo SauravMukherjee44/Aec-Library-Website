@@ -1758,7 +1758,8 @@ a {
   padding: 0 1rem;
   position: relative;
 }
-#libraryForm input, select {
+#libraryForm input,
+select {
   width: 100%;
   border-radius: 5px;
   padding: 0 1rem;
@@ -1766,7 +1767,9 @@ a {
   margin: 1rem 0;
   position: relative;
 }
-
+#libraryForm .btn-primary {
+  margin: 0;
+}
 .form-group {
   width: 100%;
 }
@@ -1776,7 +1779,7 @@ a {
   font-size: 25px;
   padding-left: 5px;
 }
-.hero-left{
+.hero-left {
   flex: 1;
   width: 100%;
 }
