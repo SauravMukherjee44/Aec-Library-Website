@@ -28,6 +28,7 @@ nav.navbar {
   box-shadow: 2px 2px 5px 2px black;
 */
 
+
 #table {
   text-align: center;
   border-radius: 20px;
@@ -39,6 +40,7 @@ nav.navbar {
   border: none;
   /* box-shadow: 2px 2px 5px 2px #ddbcbc; */
   box-shadow: 2px 2px 5px 2px black;
+
 }
 #table {
   border-radius: 20px;
@@ -52,22 +54,28 @@ nav.navbar {
 }
 
 .table thead th {
+
   vertical-align: bottom;
   border: none;
 
   color: white;
 
+
   vertical-align: bottom;
   border: none;
 
   color: black;
+
+
 }
 
 #table h1 {
   color: white;
 }
 
+
 #books-content {
+
   padding: 10px;
 }
 .dataTables_wrapper .dataTables_filter input {
@@ -114,7 +122,7 @@ label {
 
 .navbar-nav li a:after {
   bottom: 0;
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   left: 50%;
@@ -137,13 +145,15 @@ label {
   width: 100%;
   height: 100vh;
   background: #03090f
+
     url("https://www.icegif.com/wp-content/uploads/loading-icegif.gif?fit=880%2C440&ssl=1")
+
     no-repeat center;
   z-index: 999;
 }
 
 .body-style {
-  background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
+  background-image: url('https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true');
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -316,7 +326,7 @@ html {
 
 .btn:after {
   z-index: -1;
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -412,7 +422,7 @@ footer p {
 }
 
 .icons ul li a:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
@@ -675,7 +685,7 @@ strong {
 .loader:before,
 .loader:after {
   --r: -6deg;
-  content: "";
+  content: '';
   position: absolute;
   bottom: 8px;
   width: 120px;
@@ -969,12 +979,16 @@ strong {
  .latest-blogs-p{
    font-size: 3.5rem;
  } */
+
   /*
+
   .body-style {
     box-shadow: none;
     padding: 1rem;
   }
+
 */
+
   /*   #table {
     width: 29rem;
     height: 10rem;
@@ -1031,6 +1045,22 @@ strong {
 
 .suggestion .list .suggest {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #033150;
+}
+
+.suggestion .list {
+  padding: 0;
+  margin: 0;
+}
+
+.suggestion .list .suggest {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1126,6 +1156,11 @@ strong {
   flex-wrap: wrap;
 }
 
+.book .options {
+  margin-top: -4px;
+  margin-bottom: 18px;
+}
+
 .book-option {
   background-color: #f1dab3;
   font-family: "Poppins", sans-serif;
@@ -1204,6 +1239,7 @@ strong {
   border-radius: 10px;
 }
 
+
 .donate div:last-child .donate-btn {
   outline: none;
   border-radius: 6px;
@@ -1237,6 +1273,7 @@ strong {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   border-radius: 6px;
+
 }
 
 .donate div:last-child .donate-btn a:hover {
@@ -1630,7 +1667,6 @@ a {
   display: flex;
   margin: 0 auto;
   padding: 0;
-  /* flex-flow: row wrap; */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -1908,6 +1944,7 @@ select {
     width: 40%;
   }
 
+
   .photo img {
     width: 60%;
     height: 70%;
@@ -1915,9 +1952,11 @@ select {
 }
 
 @media only screen and (max-width: 800px) {
+
   .header ul li {
     margin-right: 0;
   }
+
 
   .hero-right {
     padding-left: 0;
@@ -1956,6 +1995,7 @@ select {
 }
 
 @media only screen and (max-width: 600px) {
+
   .header .logo,
   .header .login a {
     font-size: 1rem;
