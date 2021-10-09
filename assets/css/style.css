@@ -995,10 +995,11 @@ strong {
 }
 
 .suggestion {
-  height: 120px;
+  
   background-color: white;
   display: flex;
-  justify-content: center;
+  overflow: hidden;
+  overflow-x: auto;
   align-items: center;
 }
 
@@ -1828,11 +1829,7 @@ a {
   padding: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  .new-nav ul {
-    flex-direction: column;
-  }
-}
+
 @media only screen and (max-width: 1000px) {
   .container {
     display: flex;
@@ -1916,7 +1913,9 @@ a {
   .logo-img {
     margin-left: 5px;
   }
-
+  .new-nav ul {
+    flex-direction: column;
+  }
   .new-nav ul {
     margin-left: 0px;
     margin-right: 0px;
@@ -1939,6 +1938,9 @@ a {
     width: 100%;
   }
 
+  .list{
+    flex-wrap: wrap;
+  }
   .list li {
     width: 300px;
     height: 100px;
