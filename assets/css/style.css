@@ -1744,6 +1744,28 @@ a {
 .col-sm-10 {
   width: 300px;
 }
+#libraryForm {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+  width: 100%;
+}
+#libraryForm .form-check-input {
+  width: 100%;
+}
+#libraryForm label {
+  width: 100%;
+  padding: 0 1rem;
+  position: relative;
+}
+#libraryForm input, select {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0 1rem;
+  height: 5rem;
+  margin: 1rem 0;
+  position: relative;
+}
 
 .form-group {
   width: 100%;
@@ -1754,12 +1776,16 @@ a {
   font-size: 25px;
   padding-left: 5px;
 }
-
-.right {
+.hero-left{
+  flex: 1;
+  width: 100%;
+}
+.hero-right {
   width: 100%;
   padding-left: 55px;
   display: flex;
   gap: 1rem;
+  flex: 1;
   padding: 0;
   margin: 0;
   padding-right: 0px;
@@ -1890,7 +1916,7 @@ a {
     margin-right: 0;
   }
 
-  .right {
+  .hero-right {
     padding-left: 0;
   }
 
