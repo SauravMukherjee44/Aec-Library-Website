@@ -114,25 +114,24 @@
 
   <header class="header">
     <ul>
-      <li class="logo" style="font-size: 0.8cm;font-weight: bold;"><img src="assets/logos/finalLogo.png"
-          alt="AEC Library" class="logo-img"> AEC LIBRARY</li>
+      <li class="logo" style="font-size: 0.8cm;font-weight: bold;"><a href="/"><img src="assets/logos/finalLogo.png"
+        alt="AEC Library" class="logo-img"></a>AEC LIBRARY</li>
       <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i class="fas fa-sign-in-alt"></i> LOGIN </a></li>
     </ul>
   </header>
   <nav class="new-nav">
     <ul>
       <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
-      <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i> ABOUT</a></li>
+      <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
       <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
       <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
       <li class="nav-item"><a href="./sign up page/index.html"><i class="fas fa-sign-in-alt"></i>SIGN UP</a></li>
-      <li class="nav-item"><a href="./public/contact us .html"></i> CONTACT US</a></li>
-
+      <li class="nav-item"><a href="./public/contact us .html"><i class="fas fa-address-book"></i>CONTACT US</a></li>
     </ul>
   </nav>
 
   <div class="container my-5">
-    <div autofocus>
+    <div autofocus class="left">
       <form id="libraryForm">
         <div class="form-group row">
           <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
@@ -229,7 +228,7 @@
     <div class="right">
       <div id="table">
         <h1>Your Books</h1>
-        <div style="overflow-x:auto;">
+        <div style="overflow-x:auto;" id="books-content">
           <table class="table table-striped" id="mytable">
             <thead>
               <tr>
@@ -370,20 +369,13 @@
 
   <div class="contact">
     <ul>
-      <li class="heading">Contact:</li>
-      <li>Ph:95768xyza</li>
-      <li>E:hello@acelibrary.com</li>
-      <li>
-        <ul id="logos">
-          <li>
-            <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
-          </li>
-        </ul>
-      </li>
+      <li class="heading"><a>Contact:</a></li>
+      <li><a>Ph:95768xyza</a></li>
+      <li><a>E:hello@acelibrary.com</a></li>
+      <li><a href="https://www.linkedin.com/in/sauravmukherjee44/"> Linkedin</a></li>
+      <li><a href="https://github.com/SauravMukherjee44" target="github">Github</a></li>
+      <li><a href="https://twitter.com/mesourav44"> Twitter</a></li>
+      <li><a href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw" target="YouTube">YouTube</a></li>
     </ul>
     <ul>
       <li class="heading">Community</li>
@@ -403,6 +395,7 @@
     </ul>
     <ul>
       <li><a href="#" class="heading">Subscribe to our newsletter</a> </li>
+      <li><input type="email" id="subcribe" placeholder="Email"><label for="subcribe" class="label">Sign up</label></li>
     </ul>
   </div>
   <div>
