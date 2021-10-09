@@ -1071,8 +1071,8 @@ strong {
 }
 
 .book {
-  height: auto;
-  min-height: 490px;
+
+ 
   background-color: #f3d094;
   padding: 2rem;
 }
@@ -1096,6 +1096,7 @@ strong {
   display: inline-block;
 }
 
+
 .book div {
   height: max-content;
   font-family: "Source Sans Pro", sans-serif;
@@ -1111,15 +1112,12 @@ strong {
   list-style: none;
 }
 
-.books li {
-  width: 200px;
-  height: 300px;
-  margin: 20px 0px;
+.books div{
+  height:500px;
+
 }
 
-.book .books li:hover {
-  animation: bookBounce infinite 1.2s both;
-}
+
 
 .books li img {
   width: 200px;
@@ -1144,6 +1142,40 @@ strong {
   100% {
     transform: translateY(0);
   }
+}
+.books1 img{
+  margin:30px 50px;
+    width:  250px;
+  height: 300px;
+  object-fit: cover;
+  display :block;
+ 
+}
+.book p{
+  font-size:1rem;
+}
+
+
+.bookbtn{
+ 
+  margin:40px 70px;
+  padding:10px 10px;
+
+  text-decoration: none;
+  background: #00A9D4;
+  color: #fff;
+ 
+  cursor: pointer;
+  text-align: center;
+  width: 190px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+.bookbtn:hover {
+  text-decoration: none;
+  color:#fff;
+  background: #00729D;
 }
 
 .options {
