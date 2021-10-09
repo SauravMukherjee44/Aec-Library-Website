@@ -347,10 +347,10 @@ html {
 footer {
   position: relative;
   width: 100%;
-  background-color: #343a40;
+  background-color: rgb(52, 58, 64);
   color: white;
-  box-shadow: 0px 0px 16px 9px black;
-  padding: 15px 0;
+  box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
+  padding: 15px 0px;
   text-align: center;
 }
 
@@ -358,7 +358,7 @@ footer p {
   margin: 0;
 }
 
-.footer-wrapper{
+.footer-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1119,8 +1119,6 @@ strong {
   flex-wrap: wrap;
 }
 
-
-
 .book-option {
   background-color: #f1dab3;
   font-family: "Poppins", sans-serif;
@@ -1545,14 +1543,12 @@ a {
 }
 .contact .email {
   width: 100%;
-
-
 }
-.contact .email #subcribe{
+.contact .email #subcribe {
   width: 80%;
 }
-.contact .email label{
-    width: 20%;
+.contact .email label {
+  width: 20%;
 }
 .heading {
   list-style: none;
@@ -1602,14 +1598,16 @@ a {
 }
 
 .new-nav ul {
-  margin-left: 40px;
-  margin-right: 40px;
+  /* margin-left: 40px; */
+  /* margin-right: 40px; */
   /* margin-top: 17px; */
   display: flex;
-  /*   flex-direction: row; */
-  flex-flow: row wrap;
+  margin: 0 auto;
+  padding: 0;
+  /* flex-flow: row wrap; */
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .icons_ {
@@ -1697,7 +1695,7 @@ a {
   width: 100%;
   /*margin-right: 0;*/
   margin: 0 auto;
-  
+
   gap: 2rem;
 }
 
@@ -1830,6 +1828,11 @@ a {
   padding: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .new-nav ul {
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .container {
     display: flex;
