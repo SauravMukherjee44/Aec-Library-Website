@@ -2,7 +2,8 @@
   font-family: "Playfair Display", serif;
 }
 
-html, body{
+html,
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -1001,7 +1002,6 @@ strong {
 }
 
 .suggestion {
-  
   background-color: white;
   display: flex;
   overflow: hidden;
@@ -1593,7 +1593,25 @@ a {
 .header ul li {
   margin-right: 20px;
 }
+.header .logo {
+  display: inline-flex;
+  font-weight: bold;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  align-content: center;
+}
 
+.header .login a {
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  align-items: center;
+}
+.header .logo,
+.header .login a {
+  font-size: 24px;
+}
 .new-nav {
   /*   height: 50px; */
   min-height: 50px;
@@ -1836,7 +1854,6 @@ a {
   padding: 0;
 }
 
-
 @media only screen and (max-width: 1000px) {
   .container {
     display: flex;
@@ -1873,7 +1890,6 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
-
   .header ul li {
     margin-right: 0;
   }
@@ -1915,6 +1931,10 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+  .header .logo,
+  .header .login a {
+    font-size: 1rem;
+  }
   .logo-img {
     margin-left: 5px;
   }
@@ -1943,7 +1963,7 @@ a {
     width: 100%;
   }
 
-  .list{
+  .list {
     flex-wrap: wrap;
   }
   .list li {
