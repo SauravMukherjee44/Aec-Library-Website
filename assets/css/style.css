@@ -1,5 +1,6 @@
 * {
   font-family: 'Playfair Display', serif;
+  overflow-x: hidden;
 }
 
 nav.navbar {
@@ -1059,7 +1060,8 @@ strong {
   
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 
@@ -1287,6 +1289,9 @@ p {
 .update {
   height: 450px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-box {
