@@ -1059,9 +1059,10 @@ strong {
 .books {
   margin-left: 100px;
   margin-right: 100px;
+  gap: 1rem;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
 }
 
@@ -1102,14 +1103,15 @@ strong {
 
 .options {
   display: flex;
+  margin: 1rem 0;
+  padding: 0 1rem;
   justify-content: center;
-  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  flex-wrap: wrap;
 }
 
-.book .options {
-  margin-top: -4px;
-  margin-bottom: 18px;
-}
+
 
 .book-option {
   background-color: #f1dab3;
@@ -1176,7 +1178,7 @@ strong {
 .donate div b {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  line-height: 0;
+  line-height: 1;
   font-size: 48px;
   margin-bottom: 40px;
   display: inline-block;
@@ -1816,6 +1818,8 @@ a {
 
 .book-img ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 1000px) {
