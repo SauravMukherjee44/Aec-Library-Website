@@ -358,9 +358,18 @@ footer p {
   margin: 0;
 }
 
+.footer-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
 .icons ul {
   display: flex;
   margin: 0;
+  padding: 0;
 }
 
 .icons ul li {
@@ -1028,8 +1037,7 @@ strong {
   height: auto;
   min-height: 490px;
   background-color: #f3d094;
-  padding: 20px 0;
-  padding-top: 30px;
+  padding: 2rem;
 }
 
 .tex {
@@ -1045,7 +1053,7 @@ strong {
 .tex b {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  line-height: 0;
+  line-height: 1;
   font-size: 48px;
   margin-bottom: 40px;
   display: inline-block;
@@ -1261,7 +1269,7 @@ p {
 }
 
 .update {
-  height: 450px;
+  padding: 2rem 0;
   color: white;
 }
 
@@ -1277,7 +1285,7 @@ p {
   box-shadow: 10px 10px rgba(255, 183, 0, 0.845);
   border-radius: 20px;
   transition-duration: 0.5s;
-  margin: 50px;
+  margin: 0 auto;
 }
 
 .login-box h2 {
