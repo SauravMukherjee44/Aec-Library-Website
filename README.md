@@ -5,10 +5,10 @@ This is an Open-Source Library Website in which you get Resources to learn diffe
 <h4>[ In development Phase ] 
 [ Hacktoberfest-Accepted ] </h4>
 <h2> 
-<a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit our website 🚀</a>
+📌<a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit our website 🚀</a>
 
 
-<a href="https://discord.com/invite/sqFRzrj7f3" target="_blank">Join Us On Discord ⚡</a>
+📌<a href="https://discord.com/invite/sqFRzrj7f3" target="_blank">Join Us On Discord ⚡</a>
 </h2>
 
 
