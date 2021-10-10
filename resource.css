@@ -139,6 +139,31 @@ section h5 {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* COURSES */
+#courses {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* YouTube Recommendation */
+#yt {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* QUESTION BANK */
+#qb {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 /*STUDY MATERIALS*/
 .study-container {
   max-width: 1300px;
@@ -405,3 +430,29 @@ img {
   }
 }
 
+/* for making Youtube section, course video section responsive */
+@media only screen and (max-width: 470px) {
+  #yt iframe {
+    width: 100%;
+    height: 200px;
+    padding: 7px 10px;
+  }
+  #courses video {
+    width: 100%;
+    height: 200px;
+    padding: 7px 10px;
+  }
+}
+
+@media only screen and (min-width: 470px) and (max-width: 650px) {
+  #yt iframe {
+    width: 50%;
+    height: 200px;
+    padding: 7px 10px;
+  }
+  #courses video {
+    width: 50%;
+    height: 200px;
+    padding: 7px 10px;
+  }
+}
