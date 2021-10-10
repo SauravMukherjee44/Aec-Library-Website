@@ -308,7 +308,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 }
 
 a.nav-link {
-  font-size: 24px;
+  font-size: 18git checkout -bpx;
   color:rgb(255, 183, 0) !important;
   font-weight: 400;
 
@@ -424,3 +424,19 @@ footer p {
   background-color: #000000cc;
   border-color: #000000cc;
 }
+
+
+@media (max-width: 767px) {
+  #searchForm {
+    margin: 0px 20px 0px 20px;
+  }
+
+  footer{
+    padding: 12px 8px 12px 8px;
+  }
+
+  .icons ul {
+    padding-left: 0px;
+  }
+}
+
