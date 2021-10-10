@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!--data table-->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="body-style">
@@ -51,65 +52,65 @@
     <a href="#"><span class="fa fa-angle-up"></span></a>
   </div>
 
-<!--scroll bar feature addition-->
-          <div id="progressbar"></div>
-	       <div id="scrollpath"></div>
-	     <div id="percent"></div>
-<!--scroll bar feature ends here--> 
+  <!--scroll bar feature addition-->
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+  <div id="percent"></div>
+  <!--scroll bar feature ends here-->
 
   <!-- pre-loader -->
   <div id="loading"></div>
-    <div class="preloader">
-      <div class="loader">
-        <div>
-          <ul>
-            <li>
-              <svg viewBox="0 0 90 120" fill="currentColor">
-                <path
-                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <svg viewBox="0 0 90 120" fill="currentColor">
-                <path
-                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <svg viewBox="0 0 90 120" fill="currentColor">
-                <path
-                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <svg viewBox="0 0 90 120" fill="currentColor">
-                <path
-                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <svg viewBox="0 0 90 120" fill="currentColor">
-                <path
-                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <svg viewBox="0 0 90 120" fill="currentColor">
-                <path
-                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
-                ></path>
-              </svg>
-            </li>
-          </ul>
-        </div>
-        <span>Loading</span>
+  <div class="preloader">
+    <div class="loader">
+      <div>
+        <ul>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+          <li>
+            <svg viewBox="0 0 90 120" fill="currentColor">
+              <path
+                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
+              </path>
+            </svg>
+          </li>
+        </ul>
       </div>
-    </div> 
+      <span>Loading</span>
+    </div>
+  </div>
 
   <!-- <nav class="navbar navbar-expand-lg navbar-light bg-info">
     <a class="navbar-brand ml-4" href="#"><img src="assets/logos/finalLogo.png" alt="AEC Library" class="logo-img"></a>
@@ -141,7 +142,8 @@
     <ul>
       <li class="logo" style="font-size: 0.8cm;font-weight: bold;"><img src="assets/logos/finalLogo.png"
           alt="AEC Library" class="logo-img"> AEC LIBRARY</li>
-      <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i class="fas fa-sign-in-alt"></i> LOGIN </a></li>
+      <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i
+            class="fas fa-sign-in-alt"></i> LOGIN </a></li>
     </ul>
   </header>
   <nav class="new-nav">
@@ -158,7 +160,7 @@
   <!-- <div id="message"></div> -->
 
   <!-- <div class="container my-5"> -->
-    <!-- <h1>AEC LIBRARY </h1>
+  <!-- <h1>AEC LIBRARY </h1>
     <h5 align="center">
       <a href="" style="color:black;" class="typewrite" data-period="2000"
         data-type='[ "“If you don’t like to read, you haven’t found the right book.” – J.K. Rowling", "“That’s the thing about books. They let you travel without moving your feet.” – Jhumpa Lahiri", "“There is more treasure in books than in all the pirate’s loot on Treasure Island.” – Walt Disney", "“Some of these things are true and some of them lies. But they are all good stories.” – Hilary Mantel" ]'>
@@ -166,7 +168,7 @@
       </a>
     </h5>
     <hr /> -->
-    <!-- <form id="libraryForm">
+  <!-- <form id="libraryForm">
       <div class="form-group row">
         <label for="dateIssue" class="col-sm-2 col-form-label"> <strong>Date of Issue</strong></label>
         <div class="col-sm-10">
@@ -258,7 +260,7 @@
       </div>
     </form> -->
 
-    <!-- <div id="table">
+  <!-- <div id="table">
       <h1>Your Books</h1>
       <div style="overflow-x:auto;">
         <table class="table table-striped" id="mytable">
@@ -433,19 +435,41 @@
     </div>
     <br>
     <div class="options">
-      <button class="book-option">All</button>
-      <button class="book-option">Books</button>
-      <button class="book-option">E-books</button>
-      <button class="book-option">Audio books</button>
+      <div id="buttons"></div>
     </div>
     <br>
-    <div class="book-img">
-      <ul class="books">
-        <li><a href="#"><img src="images/9.png" alt="not"></a></li>
-        <li><a href="#"><img src="images/9.png" alt="not"></a></li>
-        <li><a href="#"><img src="images/9.png" alt="not"></a></li>
-        <li><a href="#"><img src="images/9.png" alt="not"></a></li>
-      </ul>
+    <div class="container">
+      <div class="book-img">
+
+        <div id="gallery">
+
+          <div>
+            <a
+              href="https://www.alvinisd.net/cms/lib03/TX01001897/Centricity/Domain/1077/pro_html5_and_css3_design_patterns.pdf"><img
+                src="https://sauravmukherjee44.github.io/Aec-Library-Website/images/bookimage1.png"
+                data-tags="Web Design,HTML" alt="Alt 1" /></a>
+          </div>
+          <div>
+            <a href="https://si.sari-mutiara.ac.id/download/file/web-design-with-html-and-css-digital-classroom.pdf">
+              <img src="https://sauravmukherjee44.github.io/Aec-Library-Website/images/bookimage2.png"
+                data-tags="HTML,Web Design" alt="Alt 2" />
+            </a>
+          </div>
+
+          <div>
+            <a href="https://www.ciwcertified.com/resources/documents/sample-chapter/CCT02CDHTCSCK1405.PDF"><img
+                src="https://sauravmukherjee44.github.io/Aec-Library-Website/images/bookimage3.png"
+                data-tags="Advanced HTML & CSS3" alt="Alt 3" /></a>
+          </div>
+
+          <div>
+            <a
+              href="https://www.doc-developpement-durable.org/file/Projets-informatiques/cours-&-manuels-informatiques/htm-html-xml-ccs/Sams%20Teach%20Yourself%20HTML,%20CSS,%20and%20JavaScript%20All%20in%20One.pdf">
+              <img src="https://sauravmukherjee44.github.io/Aec-Library-Website/images/bookimage4.png"
+                data-tags="HTML CSS Javascript" alt="Alt 4" /></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="member">
@@ -483,7 +507,7 @@
     <div class="login-box">
       <form>
         <div class="user-box">
-          <input type="text" name="" required="" >
+          <input type="text" name="" required="">
           <label>Name</label>
         </div>
         <!-- <div class="user-box">
@@ -599,16 +623,16 @@
       </div>
     </footer> -->
 
-      <!--scroll featuring-->
-<script type ="text/javascript">
-	  let progress = document.getElementById('progressbar');
-	  let totalHeight = document.body.scrollHeight - window.innerHeight;
-	  window.onscroll = function(){ 
-	      let progressHeight = (window.pageYOffset / totalHeight) * 100;
-		  progress.style.height = progressHeight + "%";
-		  }
-		  </script>
-      <!--scrolling feature end here-->
+  <!--scroll featuring-->
+  <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+  </script>
+  <!--scrolling feature end here-->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -657,6 +681,11 @@
       $('#mytable').DataTable();
     });
   </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/filter.js"></script>
 </body>
 
 
