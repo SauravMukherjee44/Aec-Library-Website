@@ -199,7 +199,7 @@ nav.navbar {
 a.nav-link {
   /* To heighlight */
   color: floralwhite !important;
-  font-size: 28px;
+  font-size: 17px;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
@@ -231,6 +231,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   /* Width and height same to make icon look more professional */
   height: 3rem;
   width: 3rem;
+  padding: 4px;
 }
 #contact {
 width: 500px;
@@ -535,7 +536,9 @@ font-size: 0.8em;
 a.nav-link {
   /* To heighlight */
   color: floralwhite !important;
-  font-size: 20px;
+  font-size: 17px;
+  margin-left: 0rem;
+
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
@@ -547,7 +550,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 }
 
 .nav-item a{
-  padding: 10px 10px 15px;
+  padding: 15px 10px;
 }
 
 .nav-item :hover {
