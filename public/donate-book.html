@@ -13,6 +13,7 @@
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="../assets/css/donate-book.css">
+
   <link rel="icon" href=../assets/Favicons/8.png> <title>Donate Books</title>
 
 </head>
@@ -76,16 +77,28 @@
           <label>Address</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Country</label>
+          <label>Select Country: </label><br><br>
+          <select name="state" id="countySel" size="1" required="">
+           <option value="" selected="selected">Select Country</option>
+          </select>
+          <br>
+          <br>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
-          <label>State</label>
+          <label>Select State: </label><br><br>
+          <select name="countrya" id="stateSel" size="1" required="">
+          <option value="" selected="selected">Please select Country first</option>
+          </select>
+          <br>
+          <br>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
-          <label>City</label>
+          <label>Select City: </label><br><br>
+          <select name="district" id="districtSel" size="1" required="">
+         <option value="" selected="selected">Please select State first</option>
+         </select>
+         <br>
+          <br>
         </div>
         <div class="user-box">
           <input type="text" name="" required="">
@@ -189,7 +202,9 @@
   </footer>
 
   <!-- scripts -->
-  <script src="../assets/js/particles.min.js"></script>
+  
+  <script src="../assets/js/Donate_Book.js"></script>
+  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
@@ -209,5 +224,5 @@
     });
   </script>
 </body>
-
+ <script src="../assets/js/Donate_Book.js"></script>
 </html>
