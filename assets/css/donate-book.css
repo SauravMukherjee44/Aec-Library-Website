@@ -441,7 +441,6 @@ footer p {
 }
 
 
-
 @media (min-width: 768px) and (max-width: 991px) {
   #searchForm {
   padding: 0px 40px 0px 40px;
@@ -461,3 +460,4 @@ footer{
   bottom: -68px;
 }
 }
+
