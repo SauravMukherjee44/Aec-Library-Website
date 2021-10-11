@@ -3,15 +3,35 @@
 }
 
 nav.navbar {
+  /* margin-right: 12px !important; */
+  /* padding-right: 12px !important; */
   right: 0;
 }
+
+/* #table {
+  border: none;
+  border-radius: 20px;
+  /* background: linear-gradient(to right, #3898dd, #36d4f0, #85daa8); */
+/* background: linear-gradient(to bottom, #0c0c0c, #2a2a2a, #646665); */
+/*background: linear-gradient(to right, #0a5f81, #093b3f, #1b1b1b);
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 2px 5px 2px black;
+*/
+
 
 #table { 
   text-align: center;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.7);
+    /* background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8); */
+    /* padding-right: 15px;
+    padding-left: 15px; */
     padding-bottom: 10px;
     border: none;
+    /* box-shadow: 2px 2px 5px 2px #ddbcbc; */
     box-shadow: 2px 2px 5px 2px black;
 }
 #table {
@@ -105,6 +125,9 @@ label {
   left: 0;
 }
 
+/* .nav-item{
+  padding-right: 15px;
+} */
 #loading {
   position: fixed;
   width: 100%;
@@ -126,6 +149,8 @@ label {
 }
 
 .bg-info {
+  /*   background-color: #2e2e2e!important;
+  box-shadow: 0px 0px 16px 9px black; */
   background-color: #343a40 !important;
   box-shadow: 0px 0px 16px 9px black;
 }
@@ -475,6 +500,10 @@ h1 {
 }
 
 .bg-info {
+  /* To make proper distance between nav bar icons */
+  /* To make nav-bar background transparent and shadow effect */
+  /*     background-color: #ada39f00!important;
+    box-shadow: 0px 0px 16px 9px #efecec4d; */
   z-index: 100;
 }
 
@@ -494,7 +523,7 @@ strong {
 
 .bubbles img {
   width: 50px;
-  animation: bubble 7s linear infinite;
+  animation: bubble 9s linear infinite;
 }
 
 .bubbles {
@@ -626,7 +655,7 @@ strong {
   --text: #6c7486;
   --page: rgba(255, 255, 255, 0.36);
   --page-fold: rgba(255, 255, 255, 0.52);
-  --duration: 3s;
+  --duration: 4s;
   width: 200px;
   height: 140px;
   position: relative;
@@ -907,6 +936,9 @@ strong {
 
 /* For making responsive */
 @media (max-width: 800px) {
+  /*   html {
+    width:73.7rem;
+  } */
 
   #loading {
     width: 73.7;
@@ -915,11 +947,27 @@ strong {
     width: 100%;
     height: 100%;
   }
+  /* .member{
+   font-size: 5rem;
+ } */
+
+  /*  .latest-blogs {
+    font-size: 4rem;
+  }
+
+ .latest-blogs-p{
+   font-size: 3.5rem;
+ } */
 
   .body-style {
     box-shadow: none;
     padding: 1rem;
   }
+
+  /*   #table {
+    width: 29rem;
+    height: 10rem;
+  } */
 
   .body-style {
     width: 100%;
@@ -936,6 +984,10 @@ strong {
   .form-control {
     margin-left: 1.5rem;
   }
+
+  /*   .my-sm-0 {
+    margin-left: 1.5rem;
+  } */
 }
 
 .suggestion {
@@ -977,7 +1029,11 @@ strong {
 }
 
 .book {
-background-color: #f3d094;
+
+ 
+  background-color: #f3d094;
+  
+
 }
 
 .tex {
@@ -999,6 +1055,8 @@ background-color: #f3d094;
   display: inline-block;
 }
 
+
+
 .books1 {
   
   display: flex;
@@ -1011,6 +1069,8 @@ background-color: #f3d094;
   height:500px;
 
 }
+
+
 
 .books li img {
   width: 200px;
@@ -1106,6 +1166,7 @@ background-color: #f3d094;
 }
 
 .member section {
+  /* border: 2px solid rgb(235, 167, 167); */
   width: 50%;
 }
 
@@ -1231,8 +1292,12 @@ p {
 }
 
 .login-box {
+  /* position: absolute; */
+  /* top: 70%; */
+  /* left: 50%; */
   width: 650px;
   padding: 40px;
+  /* transform: translate(-50%, -50%); */
   background: rgba(0, 0, 0, 0.871);
   box-sizing: border-box;
   box-shadow: 10px 10px rgba(255, 183, 0, 0.845);
@@ -1304,6 +1369,10 @@ p {
   background: rgb(75, 26, 222);
   color: #fff;
   border-radius: 5px;
+  /* box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4; */
 }
 
 .login-box a span {
@@ -1459,7 +1528,7 @@ input[type='radio'] {
   border: 2px solid rgb(153, 150, 150);
   border-radius: 10px 0px 0px 10px;
   padding-left: 3%;
-  height: 5vh;
+  height: 35px;
   width: 12vw;
   position: relative;
   outline: none;
@@ -1467,7 +1536,8 @@ input[type='radio'] {
 .label {
   position: absolute;
   font-size: 0.85rem !important;
-  height: 5vh;
+  height: 35px;
+  padding: 10px;
   padding-left: 0.3%;
   padding-top: 0.3%;
   border-radius: 0px 10px 10px 0px;
@@ -1616,6 +1686,8 @@ a {
 }
 
 .container div {
+  /* border: 2px solid white; */
+  /* width: 50%; */
   margin-left: 0;
 }
 
@@ -1670,6 +1742,7 @@ a {
 
 #table {
   width: 92%;
+  /* padding: 0; */
 }
 
 /*scrolling effect starts from here*/
@@ -1737,6 +1810,78 @@ a {
 .nav-item :hover {
   background-color: rgb(247, 191, 9);
   opacity: 1;
+}
+
+.nav-item a{
+text-decoration: none;
+}
+.faq-heading{
+  text-align: center;
+  padding: 20px 60px;
+  color: #fff;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+background-color: #F3D094;
+height: 700px;
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+  color: #444;
+  cursor: pointer;
+  padding: 20px 20px;
+  width: 60%;
+  font-size: 2rem;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq .faq-body{
+  opacity: 0;
+  padding: 0 1rem;
+  
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+ 
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+.faq .faq-body.active{
+  opacity: 1;
+  padding: 1rem;
+  
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
+
+.faq-body{
+ margin: auto;
+ width: 60%; 
+ padding: 0px 18px;
+ background-color: white;
+ display: none;
+ overflow: hidden;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+  background-color: #f5dbdb;
+}
+/* Style the faq-page panel. Note: hidden by default */
+
+.faq-page:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
 }
 
 .nav-item a {
@@ -1867,3 +2012,4 @@ a {
     margin: 20px 0px;
   }
 }
+
