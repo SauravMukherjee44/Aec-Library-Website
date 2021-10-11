@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 /* scroll bar design */
 /* width */
@@ -42,7 +41,7 @@
 body {
   width: 100%;
   height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #562dd3;
 }
 
@@ -96,8 +95,8 @@ body {
   transition: 0.5s;
 }
 
-.login-box .user-box input:focus~label,
-.login-box .user-box input:valid~label {
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
   color: rgb(255, 183, 0);
@@ -221,8 +220,8 @@ body {
   }
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
   margin-top: 15px;
@@ -232,7 +231,7 @@ input[type='radio'] {
 .navbar {
   background-color: #000000cc !important;
   padding: 0rem;
-  box-shadow : 0px 0px 16px 2px black; 
+  box-shadow: 0px 0px 16px 2px black;
 }
 
 .navbar-nav li a:after {
@@ -244,7 +243,7 @@ input[type='radio'] {
   position: relative;
   background: #fff;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0
+  width: 0;
 }
 
 .navbar-nav li a:hover:after {
@@ -252,14 +251,13 @@ input[type='radio'] {
   left: 0;
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .show > .nav-link {
   color: rgb(243 243 243);
   font-weight: bold;
 }
-
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   /* To make nav-bar sticky */
@@ -299,7 +297,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   color: rgb(255 255 255 / 50%);
   transition-duration: 0.3s;
   font-weight: bold;
-  
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -309,9 +306,40 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 
 a.nav-link {
   font-size: 24px;
-  color:rgb(255, 183, 0) !important;
+  color: rgb(255, 183, 0) !important;
   font-weight: 400;
+}
+/* adding name,image,nameof book */
+#donation-info {
+  height: 50rem;
+  width: 50rem;
+  background-color: #000000cc;
 
+  border-radius: 20px;
+  margin: auto;
+}
+.donater-img {
+  height: 30%;
+  margin-top: 50px;
+  border-radius: 100%;
+}
+.carousel-item-section {
+  padding: 209px;
+  padding-top: 104px;
+  margin: auto;
+}
+h3 {
+  color: white;
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 6%;
+}
+h1 {
+  color: white;
+  font-size: 31px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
 }
 
 /* footer */
@@ -324,6 +352,7 @@ footer {
   padding: 15px 0;
   text-align: center;
   font-weight: 500;
+  margin-top: 80px;
 }
 
 footer p {
@@ -414,7 +443,25 @@ footer p {
   a.nav-link {
     margin: 5px 40px;
     font-size: 18px;
-  
+  }
+
+  /* donate-sec */
+  #donation-info {
+    width: 90%;
+  }
+  .carousel-item-section {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20%;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .donater-img {
+    padding: 0% 20%;
   }
 }
 .btn-dark {
