@@ -305,8 +305,13 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 }
 
 a.nav-link {
+
   font-size: 24px;
   color: rgb(255, 183, 0) !important;
+
+  font-size: 18git checkout -bpx;
+  color:rgb(255, 183, 0) !important;
+
   font-weight: 400;
 }
 /* adding name,image,nameof book */
@@ -415,7 +420,9 @@ footer p {
 .icons ul li:nth-child(2) a:before {
   background: black;
 }
-
+.icons ul li:nth-child(4) a:before {
+  background: red;
+}
 /* Media Query */
 @media only screen and (max-width: 800px) {
   .wrapper {
@@ -469,3 +476,41 @@ footer p {
   background-color: #000000cc;
   border-color: #000000cc;
 }
+
+
+
+@media (max-width: 767px) {
+  #searchForm {
+    margin: 0px 20px 0px 20px;
+  }
+
+  footer{
+    padding: 12px 8px 12px 8px;
+  }
+
+  .icons ul {
+    padding-left: 0px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #searchForm {
+  padding: 0px 40px 0px 40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.nav-link {
+  margin-left: 0rem;
+}
+
+footer{
+  bottom: -68px;
+}
+}
+

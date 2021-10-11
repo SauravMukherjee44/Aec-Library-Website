@@ -417,7 +417,9 @@ footer p {
 .icons ul li:nth-child(2) a:before {
   background: black;
 }
-
+.icons ul li:nth-child(4) a:before {
+  background: red;
+}
 .ml-auto {
   margin-top: 13px;
   font-size: 20px;
@@ -521,7 +523,7 @@ strong {
 
 .bubbles img {
   width: 50px;
-  animation: bubble 7s linear infinite;
+  animation: bubble 9s linear infinite;
 }
 
 .bubbles {
@@ -653,7 +655,7 @@ strong {
   --text: #6c7486;
   --page: rgba(255, 255, 255, 0.36);
   --page-fold: rgba(255, 255, 255, 0.52);
-  --duration: 3s;
+  --duration: 4s;
   width: 200px;
   height: 140px;
   position: relative;
@@ -1287,6 +1289,7 @@ p {
 .update {
   height: 450px;
   color: white;
+  
 }
 
 .login-box {
@@ -1302,6 +1305,8 @@ p {
   border-radius: 20px;
   transition-duration: 0.5s;
   margin: 50px;
+  margin-left:auto;
+  margin-right: auto;
 }
 
 .login-box h2 {
@@ -1526,7 +1531,7 @@ input[type='radio'] {
   border: 2px solid rgb(153, 150, 150);
   border-radius: 10px 0px 0px 10px;
   padding-left: 3%;
-  height: 5vh;
+  height: 35px;
   width: 12vw;
   position: relative;
   outline: none;
@@ -1534,7 +1539,8 @@ input[type='radio'] {
 .label {
   position: absolute;
   font-size: 0.85rem !important;
-  height: 5vh;
+  height: 35px;
+  padding: 10px;
   padding-left: 0.3%;
   padding-top: 0.3%;
   border-radius: 0px 10px 10px 0px;
@@ -1809,6 +1815,78 @@ a {
   opacity: 1;
 }
 
+.nav-item a{
+text-decoration: none;
+}
+.faq-heading{
+  text-align: center;
+  padding: 20px 60px;
+  color: #fff;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+background-color: #F3D094;
+height: 700px;
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+  color: #444;
+  cursor: pointer;
+  padding: 20px 20px;
+  width: 60%;
+  font-size: 2rem;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq .faq-body{
+  opacity: 0;
+  padding: 0 1rem;
+  
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+ 
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+.faq .faq-body.active{
+  opacity: 1;
+  padding: 1rem;
+  
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
+
+.faq-body{
+ margin: auto;
+ width: 60%; 
+ padding: 0px 18px;
+ background-color: white;
+ display: none;
+ overflow: hidden;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+  background-color: #f5dbdb;
+}
+/* Style the faq-page panel. Note: hidden by default */
+
+.faq-page:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+}
+
 .nav-item a {
   text-decoration: none;
 }
@@ -1937,3 +2015,4 @@ a {
     margin: 20px 0px;
   }
 }
+
