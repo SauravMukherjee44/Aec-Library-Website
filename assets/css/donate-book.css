@@ -34,10 +34,10 @@
 }
 
 /* reset universal */
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
   width: 100%;
@@ -230,8 +230,9 @@ input[type='radio'] {
 
 /* navbar */
 .navbar {
-  background-color: #343a40 !important;
-  box-shadow: 0px 0px 16px 9px black;
+  background-color: #000000cc !important;
+  padding: 0rem;
+  box-shadow : 0px 0px 16px 2px black; 
 }
 
 .navbar-nav li a:after {
@@ -265,6 +266,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   position: relative;
   top: 0;
   width: 100%;
+  padding: 0rem 0rem;
 }
 
 .nav-link {
@@ -297,6 +299,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   color: rgb(255 255 255 / 50%);
   transition-duration: 0.3s;
   font-weight: bold;
+  
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -305,18 +308,22 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 }
 
 a.nav-link {
-  font-size: 20px;
+  font-size: 18git checkout -bpx;
+  color:rgb(255, 183, 0) !important;
+  font-weight: 400;
+
 }
 
 /* footer */
 footer {
   position: relative;
   width: 100%;
-  background-color: #343a40;
-  color: white;
-  box-shadow: 0px 0px 16px 9px black;
+  background-color: #000000cc;
+  color: rgb(255, 183, 0);
+  box-shadow: 0px 0px 16px 2px black;
   padding: 15px 0;
   text-align: center;
+  font-weight: 500;
 }
 
 footer p {
@@ -379,7 +386,9 @@ footer p {
 .icons ul li:nth-child(2) a:before {
   background: black;
 }
-
+.icons ul li:nth-child(4) a:before {
+  background: red;
+}
 /* Media Query */
 @media only screen and (max-width: 800px) {
   .wrapper {
@@ -401,10 +410,33 @@ footer p {
 
   footer {
     font-size: 12px;
+    color: rgb(255, 183, 0);
   }
 
   a.nav-link {
     margin: 5px 40px;
     font-size: 18px;
+  
   }
 }
+.btn-dark {
+  color: #fff;
+  background-color: #000000cc;
+  border-color: #000000cc;
+}
+
+
+@media (max-width: 767px) {
+  #searchForm {
+    margin: 0px 20px 0px 20px;
+  }
+
+  footer{
+    padding: 12px 8px 12px 8px;
+  }
+
+  .icons ul {
+    padding-left: 0px;
+  }
+}
+

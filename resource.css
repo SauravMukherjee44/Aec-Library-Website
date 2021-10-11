@@ -4,21 +4,40 @@
   margin: 0;
 }
 
+/* To enhance scroll-bar  */
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0a0a0a99; 
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0087ca; 
+}
+
 html {
   scroll-behavior: smooth;
 }
-
-h1, h2 {
+h1,
+h2 {
   color: rgb(0, 148, 197);
   font-weight: bold;
 }
-
 a {
   font-size: 15px;
   text-decoration: none;
   color: inherit;
 }
-
 body {
   margin: 0px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -44,18 +63,15 @@ nav {
 a {
   font-size: 15px;
 }
-
 .view {
   display: block;
   padding: 10px;
 }
-
 h3:hover {
   position: relative;
   top: -3px;
   box-shadow: 0px 4px 5px 0px #706f6f;
 }
-
 nav a:hover {
   color: white;
   background-color: rgb(32, 32, 32);
@@ -79,7 +95,7 @@ h2 {
   padding: 20px;
 }
 
-#qb {
+section:nth-child(even) {
   background-color: rgb(241, 241, 241);
 }
 
@@ -98,21 +114,8 @@ img {
 section h5 {
   margin: 40px;
 }
-
-footer {
-  background-color: #333;
-  overflow: hidden;
-}
-
-footer a {
-  text-decoration: none;
-  padding: 20px;
-  text-align: center;
-  float: left;
-  color: white;
-  margin-left: 4.5rem;
-}
-
+ 
+  
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -137,8 +140,31 @@ footer a {
   transform-origin: bottom left;
 }
 
-/*STUDY MATERIALS*/
+/* COURSES */
+#courses {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
+/* YouTube Recommendation */
+#yt {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* QUESTION BANK */
+#qb {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*STUDY MATERIALS*/
 .study-container {
   max-width: 1300px;
   margin: 20px auto;
@@ -147,22 +173,18 @@ footer a {
   flex-wrap: wrap;
   align-items: center;
 }
-
 .study-card {
   margin: 30px 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .study-card .study-base {
   height: 350px;
 }
-
 .study-card .study-base img {
   width: 100%;
   height: 100%;
   transition: all 0.2s ease-in-out;
 }
-
 .study-card h3 {
   background: white;
   color: #333;
@@ -171,9 +193,7 @@ footer a {
 .study-card .study-base img:hover {
   transform: scale(1.05);
 }
-
 /*!STUDY MATERIALS*/
-
 @media (min-width: 650px) {
   nav a {
     margin-left: 1.5rem;
@@ -213,7 +233,6 @@ footer a {
     height: 55vh;
   }
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -232,6 +251,156 @@ footer a {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+    /*footer styling*/
+
+footer .footer-1{
+  width: 100%;
+  position:relative;
+  bottom: 0;
+  left: 0;
+  background:#111;
+}
+footer .content{
+   max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+   width: 33%;
+   transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+  font-family:'Times New Roman', Times, serif;
+    
+}
+footer .content p{
+ text-align: justify;
+ font-family: 'Cambria', Georgia, 'Times New Roman', serif;
+}
+footer .content .lower .topic{
+   margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #eb2f06;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+   border-color: #eb2f06;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+footer .bottom a{
+  color: aqua;
+  }
+footer a{
+   transition: all 0.3s ease;
+}
+footer a:hover{
+   color: #eb2f06;
+}
+@media (max-width:1100px) {
+   footer .content .middle{
+    padding-left: 50px;
+   }
+}
+@media (max-width:950px){
+  footer .content .box{
+     width: 50%;
+    }
+  .content .right{
+     margin-top: 40px;
+    }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+    }
+   footer .content .box{
+     width: 100%;
+     margin-top: 30px;
+    }
+  footer .content .middle{
+    padding-left: 0;
+   }
+}
+                                            /* FOOTER styling over here*/
+
+                                        
+ /*footer {
+  background-color: #333;
+  overflow: hidden;
+}*/
+
+/*footer a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  float: left;
+  color: white;
+  margin-left: 4.5rem;
+}*/
 
 .card {
   display: inline;
@@ -254,7 +423,6 @@ img {
     grid-template-columns: repeat(2, 2fr);
   }
 }
-
 @media screen and (max-width: 735px) {
   .card-section {
     display: grid;
@@ -262,32 +430,29 @@ img {
   }
 }
 
-/* Ashish Yadav styling */
-
-article {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background-color: rgb(241, 241, 241);
-}
-
-.Wrapper {
-  padding: 17px 12px 25px 12px;
-  border-radius: 7px;
-  transition: .4s ease-in-out;
-}
-
-@media screen and (max-width:768px) {
-  article {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+/* for making Youtube section, course video section responsive */
+@media only screen and (max-width: 470px) {
+  #yt iframe {
+    width: 100%;
+    height: 200px;
+    padding: 7px 10px;
+  }
+  #courses video {
+    width: 100%;
+    height: 200px;
+    padding: 7px 10px;
   }
 }
 
-@media screen and (max-width: 640px) {
-  article {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+@media only screen and (min-width: 470px) and (max-width: 650px) {
+  #yt iframe {
+    width: 50%;
+    height: 200px;
+    padding: 7px 10px;
+  }
+  #courses video {
+    width: 50%;
+    height: 200px;
+    padding: 7px 10px;
   }
 }
-
-/* Ashish yadav styling */

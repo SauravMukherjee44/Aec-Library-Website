@@ -133,20 +133,22 @@ function libraryFormSubmit(e) {
   if (date == "" || name == "" || author == "" || category == "") {
     window.alert("Field is Empty!Please Enter Something");
   } else {
-    let book = new Book(date, name, author, category);
-    console.log(book);
-
-    let display = new Display();
-
-    if (display.validate(book)) {
-      display.add(book);
-      display.clear();
-      display.show("success", "Your book has been successfully added");
-    } else {
-      // Show error to the user
-      display.show("danger", "Sorry you cannot add this book");
-    }
-  }
+     // Show error to the user
+     display.show("danger", "Sorry you cannot add this book");
+     let book = new Book(date, name, author, category);
+     console.log(book);
+ 
+     let display = new Display();
+ 
+     if (display.validate(book)) {
+       display.add(book);
+       display.clear();
+       display.show("success", "Your book has been successfully added");
+     } else {
+       // Show error to the user
+       display.show("danger", "Sorry you cannot add this book");
+     }
+   }
   e.preventDefault();
 }
 
@@ -228,3 +230,20 @@ let timer3 = setInterval(() => {
   preloader.style.display = "none";
   setTimeout(timer3);
 }, 5500);
+
+var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
