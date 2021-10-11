@@ -137,6 +137,15 @@ a.nav-link {
     display: block;
     border-radius: 10px;
     cursor: pointer;
+    margin-bottom: 200%;
+}
+
+#topBtn a:hover{
+    background-color: white;
+}
+
+#topBtn a span:hover{
+    color: black;
 }
 
 #topBtn a span {
@@ -411,7 +420,9 @@ footer p {
 .icons ul li:nth-child(2) a:before {
     background: black;
 }
-
+.icons ul li:nth-child(4) a:before {
+    background: red;
+}
 /* Media Query */
 
 @media only screen and (max-width: 1200px) {

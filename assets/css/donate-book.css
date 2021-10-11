@@ -308,7 +308,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 }
 
 a.nav-link {
-  font-size: 24px;
+  font-size: 18git checkout -bpx;
   color:rgb(255, 183, 0) !important;
   font-weight: 400;
 
@@ -386,7 +386,9 @@ footer p {
 .icons ul li:nth-child(2) a:before {
   background: black;
 }
-
+.icons ul li:nth-child(4) a:before {
+  background: red;
+}
 /* Media Query */
 @media only screen and (max-width: 800px) {
   .wrapper {
@@ -422,3 +424,184 @@ footer p {
   background-color: #000000cc;
   border-color: #000000cc;
 }
+
+/* adding name,image,nameof book */
+#donation-info {
+  height: 50rem;
+  width: 50rem;
+  background-color: #000000cc;
+
+  border-radius: 20px;
+  margin: auto;
+}
+.donater-img {
+  height: 30%;
+  margin-top: 50px;
+  border-radius: 100%;
+}
+.carousel-item-section {
+  padding: 209px;
+  padding-top: 104px;
+  margin: auto;
+}
+h3 {
+  color: white;
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 6%;
+}
+h1 {
+  color: white;
+  font-size: 31px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #000000cc;
+  color: rgb(255, 183, 0);
+  box-shadow: 0px 0px 16px 2px black;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 80px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.icons ul {
+  display: flex;
+  margin: 0;
+}
+
+.icons ul li {
+  list-style: none;
+}
+
+.icons ul li a {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  margin: 0 0 0 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  border: 3px solid #fff;
+}
+
+.icons ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.icons ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.icons ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #55acee;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.icons ul li a:hover:before {
+  top: 0;
+}
+
+.icons ul li:nth-child(2) a:before {
+  background: black;
+}
+.icons ul li:nth-child(4) a:before {
+  background: red;
+}
+/* Media Query */
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .login-box {
+    padding: 40px;
+  }
+
+  .login-box h2 {
+    font-size: 25px;
+  }
+
+  .login-box .user-box label,
+  .login-box form a {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+    color: rgb(255, 183, 0);
+  }
+
+  a.nav-link {
+    margin: 5px 40px;
+    font-size: 18px;
+  }
+
+  /* donate-sec */
+  #donation-info {
+    width: 90%;
+  }
+  .carousel-item-section {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20%;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .donater-img {
+    padding: 0% 20%;
+  }
+}
+.btn-dark {
+  color: #fff;
+  background-color: #000000cc;
+  border-color: #000000cc;
+}
+
+
+
+
+@media (max-width: 767px) {
+  #searchForm {
+    margin: 0px 20px 0px 20px;
+  }
+
+  footer{
+    padding: 12px 8px 12px 8px;
+  }
+
+  .icons ul {
+    padding-left: 0px;
+  }
+}
+
