@@ -1105,8 +1105,7 @@ strong {
 }
 
 .books {
-  margin-left: 100px;
-  margin-right: 100px;
+display: flex;
   gap: 1rem;
   display: flex;
   flex-flow: row wrap;
@@ -1144,6 +1143,10 @@ strong {
   100% {
     transform: translateY(0);
   }
+}
+.books1{
+  display: flex;
+  justify-content: space-around;
 }
 .books1 img{
   margin:30px 50px;
@@ -2073,6 +2076,11 @@ height: 700px;
     padding-left: 0;
   }
 
+  .books1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
   .books {
     margin-left: 0px;
     margin-right: 40px;
