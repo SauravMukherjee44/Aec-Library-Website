@@ -21,17 +21,23 @@
   <title>Contact Us</title>
 </head>
 <body>
+
+<ul class="navbar-nav mr-auto">
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-info">
-		<a class="navbar-brand ml-4" href="#"><img src="../assets/logos/Logo Aec.jpg" alt="AEC Library" class="logo-img"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-		  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
 	
+	
+		<a class="navbar-brand " href="#"><img src="../assets/logos/finalLogo.png" alt="AEC Library" class="logo-img"></a>
+
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 		<div class="collapse navbar-collapse"
 		id="navbarSupportedContent">
-		  <ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
+		  
+			<li class="nav-item ">
 			  <a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home  <span class="sr-only">(current)</span></a>
 			</li>
 		    <li class="nav-item"><a href="../about.html" class="nav-link" target="_blank"> <i class="fas fa-book"></i>  About</a></li>
@@ -39,37 +45,71 @@
 			<li class="nav-item"><a href="../resource.html" class="nav-link" target="_blank" > <i class="fas fa-external-link-alt"></i> Resources</a></li>
 			<li class="nav-item"><a href="../Login_page/login_page.html" class="nav-link" target="_blank"> <i class="fas fa-sign-in-alt"></i>  Login </a></li>
 			<li class="nav-item"><a href="../sign up page/index.html" class="nav-link" target="_blank"> <i class="fas fa-sign-in-alt"></i>  SIGN UP </a></li>
-		  </ul>
+
+		  
 		  <form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search" />
 			<button class="btn btn-dark my-2 my-sm-0" id="searchsymbol" type="submit">
 			  &#128269
 			</button>
 		  </form>
-		</div>
-	  </nav>
+		  
 
-<section id="contact">
-	<div class="sectionheader">	<h1>CONTACT US</h1></div>
-	<article>
-	<p>Send your queries to us</p>
-		
-			<label for="checkcontact" class="contactbutton"><div class="mail"></div></label><input id="checkcontact" type="checkbox">
+		  
+		</div>
 	
-			<form action="" method="post" class="contactform">
-				<p class="input_wrapper"><input type="text" name="contact_nom" value=""  id ="contact_nom"><label for="contact_nom">Name</label></p>
-				<p class="input_wrapper"><input type="text" name="contact_email" value=""  id ="contact_email"><label for="contact_email">Email</label></p>
-				<p class="input_wrapper"><input type="text" name="contact_sujet" value=""  id ="contact_sujet"><label for="contact_sujet">Subject</label></p>
-				<p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
-				<p class="submit_wrapper"><input type="submit" value="Submit"></p>			
-			</form>
-	</article>
-    
-</section>
+	  </nav>
+	  </ul>
+	  
+
+	  <div class="define">
+	  <div class="contact-form">
+		<div class="first-container">
+		 <div class="info-container">
+			 <strong><h2 style="color: white;" >AEC Libraray</h2></strong>
+		   <div> 
+			 <h3>Address</h3>
+			 <p>A-block, Street no-4, New Delhi- 110044, India</p>
+		   </div>
+		   <div> 
+			 <h3>Lets Talk</h3>
+			 <p>+1 800 1236879</p>
+		   </div>
+		   <div> 
+			 <h3>General Support</h3>
+			 <p>contact@example.com</p>
+		   </div>
+		 </div>
+		</div>
+		<div class="second-container">
+		  <h2>Send Us A Message</h2>
+		  <form>
+			<div class="form-group"  align="center">
+			  <label for="name-input">Tell us your name*</label>
+			  <input id="name-input" type="text" placeholder="First name" required="">
+			  <input type="text" placeholder="Last name" required="">
+			</div>
+			<div class="form-group">
+			  <label for="email-input">Enter your email</label>
+			  <input id="email-input" type="text" placeholder="Eg. example@gmail.com" required="">
+			</div>
+			<div class="form-group">
+			  <label for="phone-input">Enter phone number</label>
+			  <input id="phone-input" type="text" placeholder="Eg. _1800 000000" required="">
+			</div>
+			<div class="form-group">
+			  <label for="message-textarea">Message</label>
+			  <input class="textarea" id="message-textarea" placeholder="Write us a message"></input>
+			</div>
+			<button class="btn">Send message</button>
+		</form>
+		</div>
+	  </div>
+	</div>
+
 <footer>
 	<div class="d-flex">
   <div class="icons">
-
 	 <ul>
 	  <li>
 		<a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
@@ -77,22 +117,21 @@
 	  <li>
 		<a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
 	  </li>
-	  
 	</ul>
   </div>
   <div class="ml-auto">
-
 	  <p>©2021     Copyright AEC Library</p>
   </div>
   <div class="ml-auto">
 	  <p>
-	 <a href="#" style="color: antiquewhite;">Contact Us </a>  
+	 <a href="#" style="color: antiquewhite;" onclick="return false;">Contact Us </a>  
 	 &emsp;&emsp;
 	 </p>
-
   </div>
 </div>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
