@@ -1107,7 +1107,7 @@ strong {
   gap: 1rem;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -1752,13 +1752,12 @@ a {
 }
 
 .container {
-  display: flex;
-  /*margin-left: 20px;*/
-  width: 100%;
-  /*margin-right: 0;*/
-  margin: 0 auto;
-
   gap: 2rem;
+  display: flex;
+  margin-left: 20px;
+  width: 100%;
+  margin-right: 0;
+  padding-left: 30px;
 }
 
 .col-sm-10 input,
@@ -1922,6 +1921,9 @@ select {
     flex-direction: column;
     align-items: center;
     align-content: center;
+    margin-right: 0;
+    margin: 0 auto;
+    padding-left: 0;
   }
 
   .left {
