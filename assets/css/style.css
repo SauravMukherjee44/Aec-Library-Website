@@ -1289,6 +1289,7 @@ p {
 .update {
   height: 450px;
   color: white;
+  
 }
 
 .login-box {
@@ -1304,6 +1305,8 @@ p {
   border-radius: 20px;
   transition-duration: 0.5s;
   margin: 50px;
+  margin-left:auto;
+  margin-right: auto;
 }
 
 .login-box h2 {
