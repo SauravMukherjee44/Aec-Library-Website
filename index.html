@@ -114,8 +114,8 @@
 
   <header class="header">
     <ul>
-      <li class="logo" style="font-size: 0.8cm;font-weight: bold;"><a href="#" onclick="return false;"><img src="assets/logos/finalLogo.png"
-        alt="AEC Library" class="logo-img"></a>AEC LIBRARY</li>
+      <li class="logo"><img src="assets/logos/finalLogo.png"
+          alt="AEC Library" class="logo-img"> AEC LIBRARY</li>
       <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i class="fas fa-sign-in-alt"></i> LOGIN </a></li>
     </ul>
   </header>
@@ -131,24 +131,26 @@
   </nav>
 
   <div class="container my-5">
-    <div autofocus class="left">
+
+    <div class="hero-left" autofocus>
+
       <form id="libraryForm">
         <div class="form-group row">
           <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
           <label for="dateIssue" class="issue">Date of Issue</label>
-          <div class="col-sm-10">
+          <div class="col">
             <input type="date" id="issueDate" name="issueDate">
           </div>
         </div>
         <div class="form-group row">
-          <label for="bookName" class="col-sm-2 col-form-label"> <strong>Name</strong></label>
-          <div class="col-sm-10">
-            <input type="text" class="input-box" id="bookName" placeholder="Book Name"/>
+          <label for="bookName" class="col col-form-label"> <strong>Name</strong></label>
+          <div class="col">
+            <input type="text" class="input-box" id="bookName" placeholder="Book Name" />
           </div>
         </div>
         <div class="form-group row">
-          <label for="Author" class="col-sm-2 col-form-label"> <strong>Author</strong></label>
-          <div class="col-sm-10">
+          <label for="Author" class="col col-form-label"> <strong>Author</strong></label>
+          <div class="col">
 
             <select class="form-check-input1" name="type" id="type" style="z-index: 1;">
 
@@ -179,9 +181,9 @@
         </div>
         <fieldset class="form-group">
           <div class="row">
-            <legend class="col-form-label col-sm-2 pt-0"> <strong>Category</strong></legend>
+            <legend class="col-form-label col pt-0"> <strong>Category</strong></legend>
 
-            <div class="col-sm-10">
+            <div class="col">
               <div class="form-check">
                 <select class="form-check-input" name="category" id="category" style="z-index: 1;">
                   <option value="N/A">Select Category</option>
@@ -219,13 +221,13 @@
         </fieldset>
 
         <div class="form-group row">
-          <div class="col-sm-10">
+          <div class="col">
             <button type="submit" class="btn btn-primary">Add Book</button>
           </div>
         </div>
       </form>
     </div>
-    <div class="right">
+    <div class="hero-right">
       <div id="table">
         <h1>Your Books</h1>
         <div style="overflow-x:auto;" id="books-content">
@@ -439,12 +441,16 @@
     </ul>
     <ul>
       <li><a href="#" class="heading">Subscribe to our newsletter</a> </li>
+
+      <li><div class="email"><input type="email" id="subcribe" placeholder="Email"><label for="subcribe" class="label">Sign up</label></div></li>
+
       <li class="newsletter"><input type="email" id="subcribe" placeholder="Email"><label for="subcribe" class="label">Sign up</label></li>
+
     </ul>
   </div>
   <div>
     <footer>
-      <div class="d-flex">
+      <div class="footer-wrapper">
         <div class="icons">
 
           <ul>
@@ -462,10 +468,11 @@
             </li>
           </ul>
         </div>
-        <div class="ml-auto">
+        <div>
 
           <p>©2021 Copyright AEC Library</p>
         </div>
+        <!--
         <div class="ml-auto">
           <p>
             <a href="./public/contact us .html" style="color: antiquewhite;"> </a>
@@ -473,6 +480,7 @@
           </p>
 
         </div>
+        -->
       </div>
     </footer>
 
