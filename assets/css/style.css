@@ -379,8 +379,8 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 0;
-  gap: 1rem;
+  margin: 0.2rem 0;
+  gap: 0.3rem;
 }
 
 .icons ul {
@@ -1606,7 +1606,7 @@ input[type="radio"] {
   border: 2px solid rgb(153, 150, 150);
   border-radius: 10px 0px 0px 10px;
   padding-left: 3%;
-  height: 5vh;
+  height: 35px;
   width: 100%;
   position: relative;
   outline: none;
@@ -1617,8 +1617,8 @@ input[type="radio"] {
   height: 35px;
   padding: 10px;
   padding-left: 0.4%;
-  padding-right: 0.5%;
-  padding-top: 0.3%;
+  padding-right: 0.8%;
+  padding-top: 1%;
   border-radius: 0px 10px 10px 0px;
   background: #5282d4;
   background-image: linear-gradient(to bottom, #5282d4, #28667d);
@@ -1656,6 +1656,7 @@ a {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bolder;
   padding-bottom: 2%;
+  padding-right: 18px;
 }
 
 .footer {
@@ -1853,10 +1854,10 @@ a {
 }
 #libraryForm input,
 select {
-  width: 100%;
+  width: 80%;
   border-radius: 5px;
   padding: 0 1rem;
-  height: 5rem;
+  height: 3.5rem;
   margin: 1rem 0;
   position: relative;
 }
