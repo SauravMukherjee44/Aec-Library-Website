@@ -1551,12 +1551,17 @@ input[type='radio'] {
   font-size: 0.85rem !important;
   height: 35px;
   padding: 10px;
-  padding-left: 0.3%;
+  padding-left: 0.4%;
+  padding-right: 0.5%;
   padding-top: 0.3%;
   border-radius: 0px 10px 10px 0px;
   background: #5282d4;
   background-image: linear-gradient(to bottom, #5282d4, #28667d);
   cursor: pointer;
+}
+
+.newsletter{
+  padding-right: 75px;
 }
 
 .contact ul li,
