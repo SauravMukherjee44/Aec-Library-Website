@@ -1154,6 +1154,16 @@ display: flex;
   height: 300px;
   object-fit: cover;
   display :block;
+ transition: .5s;
+}
+
+.books1 img:hover{
+  margin:30px 50px;
+    width:  250px;
+  height: 300px;
+  transform: scale(1.1);
+  object-fit: cover;
+  display :block;
  
 }
 .book p{
@@ -1606,16 +1616,24 @@ input[type="radio"] {
   font-size: 0.85rem !important;
   height: 35px;
   padding: 10px;
-  padding-left: 0.3%;
+  padding-left: 0.4%;
+  padding-right: 0.5%;
   padding-top: 0.3%;
   border-radius: 0px 10px 10px 0px;
   background: #5282d4;
   background-image: linear-gradient(to bottom, #5282d4, #28667d);
   cursor: pointer;
 }
+
 .contact ul li {
   position: relative;
 }
+
+
+.newsletter{
+  padding-right: 75px;
+}
+
 .contact ul li,
 a {
   color: black;
