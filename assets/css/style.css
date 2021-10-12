@@ -1,5 +1,5 @@
 * {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 nav.navbar {
@@ -21,18 +21,17 @@ nav.navbar {
   box-shadow: 2px 2px 5px 2px black;
 */
 
-
-#table { 
+#table {
   text-align: center;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    /* background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8); */
-    /* padding-right: 15px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8); */
+  /* padding-right: 15px;
     padding-left: 15px; */
-    padding-bottom: 10px;
-    border: none;
-    /* box-shadow: 2px 2px 5px 2px #ddbcbc; */
-    box-shadow: 2px 2px 5px 2px black;
+  padding-bottom: 10px;
+  border: none;
+  /* box-shadow: 2px 2px 5px 2px #ddbcbc; */
+  box-shadow: 2px 2px 5px 2px black;
 }
 #table {
   border-radius: 20px;
@@ -46,24 +45,22 @@ nav.navbar {
 }
 
 .table thead th {
+  vertical-align: bottom;
+  border: none;
 
-    vertical-align: bottom;
-    border: none;
-    
-    color: white;
+  color: white;
 
   vertical-align: bottom;
   border: none;
 
   color: black;
-
 }
 
 #table h1 {
   color: white;
 }
 
-#books-content{
+#books-content {
   padding: 10px;
 }
 .dataTables_wrapper .dataTables_filter input {
@@ -110,7 +107,7 @@ label {
 
 .navbar-nav li a:after {
   bottom: 0;
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   left: 50%;
@@ -133,13 +130,13 @@ label {
   width: 100%;
   height: 100vh;
   background: #03090f
-    url('https://www.icegif.com/wp-content/uploads/loading-icegif.gif?fit=880%2C440&ssl=1')
+    url("https://www.icegif.com/wp-content/uploads/loading-icegif.gif?fit=880%2C440&ssl=1")
     no-repeat center;
   z-index: 999;
 }
 
 .body-style {
-  background-image: url('https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true');
+  background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -262,7 +259,7 @@ html {
 }
 
 .btn:before {
-  content: '';
+  content: "";
   background: linear-gradient(
     45deg,
     #ff0000,
@@ -312,7 +309,7 @@ html {
 
 .btn:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -399,7 +396,7 @@ footer p {
 }
 
 .icons ul li a:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 0;
@@ -664,7 +661,7 @@ strong {
 .loader:before,
 .loader:after {
   --r: -6deg;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 8px;
   width: 120px;
@@ -1018,7 +1015,7 @@ strong {
 }
 
 .suggestion .list .suggest {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1029,11 +1026,7 @@ strong {
 }
 
 .book {
-
- 
   background-color: #f3d094;
-  
-
 }
 
 .tex {
@@ -1042,12 +1035,12 @@ strong {
 
 .book .tex {
   margin-top: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 17px;
 }
 
 .tex b {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   line-height: 0;
   font-size: 48px;
@@ -1055,22 +1048,16 @@ strong {
   display: inline-block;
 }
 
-
-
 .books1 {
-  
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   list-style: none;
 }
 
-.books div{
-  height:500px;
-
+.books div {
+  height: 500px;
 }
-
-
 
 .books li img {
   width: 200px;
@@ -1096,28 +1083,25 @@ strong {
     transform: translateY(0);
   }
 }
-.books1 img{
-  margin:30px 50px;
-    width:  250px;
+.books1 img {
+  margin: 30px 50px;
+  width: 250px;
   height: 300px;
   object-fit: cover;
-  display :block;
- 
+  display: block;
 }
-.book p{
-  font-size:1rem;
+.book p {
+  font-size: 1rem;
 }
 
-
-.bookbtn{
- 
-  margin:40px 70px;
-  padding:10px 10px;
+.bookbtn {
+  margin: 40px 70px;
+  padding: 10px 10px;
 
   text-decoration: none;
-  background: #00A9D4;
+  background: #00a9d4;
   color: #fff;
- 
+
   cursor: pointer;
   text-align: center;
   width: 190px;
@@ -1127,8 +1111,8 @@ strong {
 }
 .bookbtn:hover {
   text-decoration: none;
-  color:#fff;
-  background: #00729D;
+  color: #fff;
+  background: #00729d;
 }
 
 .options {
@@ -1144,7 +1128,7 @@ strong {
 
 .book-option {
   background-color: #f1dab3;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 300;
   margin: 0px 15px;
@@ -1186,13 +1170,13 @@ strong {
 
 .donate div:first-child {
   margin-top: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
 }
 
 .donate div:last-child {
   margin-top: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
 }
 
@@ -1202,7 +1186,7 @@ strong {
 }
 
 .donate div b {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   line-height: 0;
   font-size: 48px;
@@ -1245,7 +1229,7 @@ strong {
   justify-content: center;
   align-items: center;
   letter-spacing: 1px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   border-radius: 6px;
 }
@@ -1283,13 +1267,12 @@ strong {
 .blogs h1,
 p {
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .update {
   height: 450px;
   color: white;
-  
 }
 
 .login-box {
@@ -1305,7 +1288,7 @@ p {
   border-radius: 20px;
   transition-duration: 0.5s;
   margin: 50px;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -1509,8 +1492,8 @@ p {
   }
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
   margin-top: 1rem;
@@ -1553,13 +1536,13 @@ input[type='radio'] {
 a {
   color: black;
   list-style: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: large;
   margin: 5px;
 }
 .heading {
   list-style: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: bolder;
   padding-bottom: 2%;
 }
@@ -1627,7 +1610,7 @@ a {
 
 .new-nav li a {
   font-weight: 300;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #000;
 }
 
@@ -1648,7 +1631,7 @@ a {
 }
 
 .contain div {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 30px;
   text-align: center;
 }
@@ -1659,7 +1642,7 @@ a {
 
 #bold {
   font-size: 1cm;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bolder;
 }
 
@@ -1770,7 +1753,7 @@ a {
 }
 
 #progressbar:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1781,7 +1764,7 @@ a {
 }
 
 #progressbar:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1815,20 +1798,20 @@ a {
   opacity: 1;
 }
 
-.nav-item a{
-text-decoration: none;
+.nav-item a {
+  text-decoration: none;
 }
-.faq-heading{
+.faq-heading {
   text-align: center;
   padding: 20px 60px;
   color: #fff;
 }
-.faq-container{
-display: flex;
-justify-content: center;
-flex-direction: column;
-background-color: #F3D094;
-height: 700px;
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f3d094;
+  height: 700px;
 }
 
 /* Style the buttons that are used to open and close the faq-page body */
@@ -1841,33 +1824,33 @@ height: 700px;
   transition: 0.4s;
   margin: auto;
 }
-.faq .faq-body{
+.faq .faq-body {
   opacity: 0;
   padding: 0 1rem;
-  
+
   border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
- 
+
   -webkit-transition: all 0.2s ease 0.15s;
   -o-transition: all 0.2s ease 0.15s;
   transition: all 0.2s ease 0.15s;
 }
-.faq .faq-body.active{
+.faq .faq-body.active {
   opacity: 1;
   padding: 1rem;
-  
+
   -webkit-transition: all 0.35s ease 0.15s;
   -o-transition: all 0.35s ease 0.15s;
   transition: all 0.35s ease 0.15s;
 }
 
-.faq-body{
- margin: auto;
- width: 60%; 
- padding: 0px 18px;
- background-color: white;
- display: none;
- overflow: hidden;
+.faq-body {
+  margin: auto;
+  width: 60%;
+  padding: 0px 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
@@ -1877,7 +1860,7 @@ height: 700px;
 /* Style the faq-page panel. Note: hidden by default */
 
 .faq-page:after {
-  content: '\02795';
+  content: "\02795";
   font-size: 13px;
   color: #777;
   float: right;
@@ -2015,4 +1998,3 @@ height: 700px;
     margin: 20px 0px;
   }
 }
-
