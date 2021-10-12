@@ -1102,6 +1102,16 @@ strong {
   height: 300px;
   object-fit: cover;
   display :block;
+ transition: .5s;
+}
+
+.books1 img:hover{
+  margin:30px 50px;
+    width:  250px;
+  height: 300px;
+  transform: scale(1.1);
+  object-fit: cover;
+  display :block;
  
 }
 .book p{
