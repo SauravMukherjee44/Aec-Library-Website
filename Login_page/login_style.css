@@ -170,11 +170,12 @@ input {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 16px;
+  font-size: 15px;
+  width: 80%;
 }
 
 .signup_link a {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .container.right-panel-active .sign-in-container {
