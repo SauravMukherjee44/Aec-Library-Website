@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
+  overflow: hidden;
 }
 nav.navbar {
   /* margin-right: 12px !important; */
