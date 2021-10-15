@@ -1057,6 +1057,15 @@ strong {
 }
 
 .suggestion .list {
+  display: flex;
+}
+
+.suggestion .list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestion .list {
   padding: 0;
   margin: 0;
 }

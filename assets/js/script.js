@@ -247,3 +247,34 @@ for (i = 0; i < faq.length; i++) {
         }
     });
 }
+
+// counter on home page
+$(window).on("scroll load resize", function(){
+  checkScroll();
+  console.log($(window).scrollTop());
+});
+function checkScroll(){
+  if($(window).scrollTop() > 330){
+    const counters = document.querySelectorAll('.counter');
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        if (count < target) {
+          counter.innerText = count + 1;
+          setTimeout(updateCount, 8);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  } else {
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText=0;
+    });
+  }
+}
