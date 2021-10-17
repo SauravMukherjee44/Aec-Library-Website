@@ -217,6 +217,9 @@ let preloader = document.querySelector(".preloader");
 let nav = document.querySelector(".navbar");
 timer1 = setInterval(() => {
   preloader.classList.add("endpreloadopacity");
+  $(' html, body').css({
+    overflow: 'auto'
+  });
   setTimeout(timer1);
 }, 4500);
 let timer2 = setInterval(() => {
