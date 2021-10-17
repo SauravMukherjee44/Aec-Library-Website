@@ -43,7 +43,7 @@ In order to make a hassle-free environment, I implore you all (_while contributi
 
 Happy Submissions :slightly_smiling_face:
 
-<h1 align=center> Project Maintainer ❤️ </h1>
+<h1 align=center> Project Maintainer ⚡ </h1>
 <p align="center">
   <a href="https://github.com/SauravMukherjee44"><img src="https://github.com/SauravMukherjee44/Aec-Library-Website/blob/e2d7870b91f240964e9841a2a147aaf564b5fdb7/images/admin.jpg" width=150px height=150px /></a> 
 	<p align="center">
