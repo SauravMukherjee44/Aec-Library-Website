@@ -14,6 +14,8 @@
           var gender = document.reg_form.gender;    
           var email = document.reg_form.email;    
           var mobile = document.reg_form.mobile;    
+          var password = document.reg_form.password;
+          var confirm_password = document.reg_form.confirm_password;
               
   
           if (fname.value.length <= 0) {    
@@ -46,6 +48,22 @@
               mobile.focus();    
               return false;    
           } 
+
+
+
+       
+
+
+          if(password.value != confirm_password.value) {
+            
+            alert("Passwords Don't Match");
+            confirm_password.focus();
+            return false;
+          } 
+
+
+
+
           return false;    
       }    
   </script>    
@@ -73,15 +91,15 @@
             </div>
             <div class="input-box">
               <span class="details">Phone Number</span>
-              <input type="number" name="mobile" placeholder="Enter your number" required />
+              <input type="text" name="mobile" placeholder="Enter your number" required="" pattern="[789][0-9]{9}"  title="Phone number starting with 7-9 and remaining 9 digit within 0-9" />
             </div>
             <div class="input-box">
               <span class="details">Password</span>
-              <input type="password" placeholder="Enter your password" required />
+              <input type="password" placeholder="Enter your password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" id="password" name="password" />
             </div>
             <div class="input-box">
               <span class="details">Confirm Password</span>
-              <input type="password" placeholder="Confirm your password" required />
+              <input type="password" placeholder="Confirm your password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" id="confirm_password" name="confirm_password" />
             </div>
           </div>
           <div class="gender-details">
@@ -105,7 +123,7 @@
             </div>
           </div>
           <div class="button">
-            <input type="submit" value="Register" />
+            <input type="submit" value="Register" onsubmit="validate()" onclick="validate()" />
           </div>
         </form>
 
@@ -129,6 +147,11 @@
               uname.focus();  
               return false;  
           }  
+
+
+
+
+}
     </script>   
   </body>
 </html>
