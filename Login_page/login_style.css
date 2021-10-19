@@ -322,18 +322,19 @@ footer a {
 }
 
 .animate1 {
-  font-size: 45px;
+  font-size: 50px;
   font-size: 2.1em;
-  /* text-align: center; */
-  font-weight: 700;
-  letter-spacing: 8px;
-  margin-bottom: 20px;
+  text-align: center; 
+  font-weight: 750;
+  letter-spacing:5px;
+  margin-bottom: -20px;
   position: relative;
 }
 
 .animate2 {
   font-size: 20px;
-  line-height: 29px;
+  text-align: center; 
+  line-height: 30px;
   color: white;
   letter-spacing: 0.5px;
 }
@@ -341,7 +342,7 @@ footer a {
 /* Animation */
 
 .animate1 {
-  animation: text 3s 1;
+  animation: text 2s 1;
 }
 
 /* text animation */
@@ -353,7 +354,7 @@ footer a {
   }
 
   30% {
-    letter-spacing: 25px;
+    letter-spacing: 20px;
     margin-bottom: -40px;
   }
 
