@@ -6,29 +6,74 @@
     <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
     <title>SIGN UP - AEC Library</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>    
+      function validate() {    
+          var fname = document.reg_form.fname;    
+          var lname = document.reg_form.uname;       
+          var gender = document.reg_form.gender;    
+          var email = document.reg_form.email;    
+          var mobile = document.reg_form.mobile;    
+              
+  
+          if (fname.value.length <= 0) {    
+              alert("Name is required");    
+              fname.focus();    
+              return false;    
+          }    
+          if (lname.value.length <= 0) {    
+              alert("Last Name is required");    
+              lname.focus();    
+              return false;    
+          }    
+          if (address.value.length <= 0) {    
+              alert("Address is required");    
+              address.focus();    
+              return false;    
+          }    
+          if (gender.value.length <= 0) {    
+              alert("Gender is required");    
+              gender.focus();    
+              return false;    
+          }    
+          if (email.value.length <= 0) {    
+              alert("Email Id is required");    
+              email.focus();    
+              return false;    
+          }    
+          if (mobile.value.length <= 0) {    
+              alert("Mobile number is required");    
+              mobile.focus();    
+              return false;    
+          } 
+          return false;    
+      }    
+  </script>    
+
+
   </head>
   <body>
     <div class="container">
       <strong><h1 align="center">AEC Library</h1></strong>
       <div class="title">SIGN UP</div>
       <div class="content">
-        <form action="#">
+        <form method="" action="" name="reg_form" onsubmit="return validate()">
           <div class="user-details">
             <div class="input-box">
               <span class="details">Full Name</span>
-              <input type="text" placeholder="Enter your name" required />
+              <input type="text" name="fname" placeholder="Enter your name"  required />
             </div>
             <div class="input-box">
               <span class="details">Username</span>
-              <input type="text" placeholder="Enter your username" required />
+              <input type="text" name="uname" placeholder="Enter your username" required />
             </div>
             <div class="input-box">
               <span class="details">Email</span>
-              <input type="email" placeholder="Enter your email" required="" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"  />
+              <input type="email" name="email" placeholder="Enter your email" required="" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"  />
             </div>
             <div class="input-box">
               <span class="details">Phone Number</span>
-              <input type="text" placeholder="Enter your number" required />
+              <input type="number" name="mobile" placeholder="Enter your number" required />
             </div>
             <div class="input-box">
               <span class="details">Password</span>
@@ -40,9 +85,9 @@
             </div>
           </div>
           <div class="gender-details">
-            <input type="radio" name="gender" id="dot-1" />
-            <input type="radio" name="gender" id="dot-2" />
-            <input type="radio" name="gender" id="dot-3" />
+            <input type="radio" name="gender" id="dot-1" required/>
+            <input type="radio" name="gender" id="dot-2" required/>
+            <input type="radio" name="gender" id="dot-3" required/>
             <span class="gender-title">Gender</span>
             <div class="category">
               <label for="dot-1">
@@ -69,5 +114,22 @@
         </p>       
       </div>
     </div>
+
+    <script>  
+      function validate() {  
+          var fname = document.reg_form.fname;  
+          var uname = document.reg_form.lname;  
+          if (fname.value.length <= 0) {  
+              alert("Name is required");  
+              fname.focus();  
+              return false;  
+          }  
+          if (uname.value.length <= 0) {  
+              alert("Username is required");  
+              uname.focus();  
+              return false;  
+          }  
+    </script>   
   </body>
 </html>
+
