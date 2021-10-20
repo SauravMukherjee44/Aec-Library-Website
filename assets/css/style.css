@@ -1115,20 +1115,13 @@ strong {
 }
 
 .books {
-display: flex;
+  display: flex;
   gap: 1rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   list-style: none;
 }
-
-.books div{
-  height:500px;
-
-}
-
-
 
 .books li img {
   width: 200px;
@@ -1155,9 +1148,15 @@ display: flex;
   }
 }
 .books1{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
   justify-content: space-around;
 }
+
+.books1 div{
+  align-self: center;
+}
+
 .books1 img{
   margin:30px 50px;
     width:  250px;
