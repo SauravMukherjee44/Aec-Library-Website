@@ -2771,6 +2771,13 @@ a {
 	line-height: 102px;
 	padding: 30px;
 }
+.book-2 .bk-back p {
+  color: #fff;
+  font-size: 13px;
+  padding: 90px 40px;
+  text-align: center;
+  font-weight: 700;
+}
 
 .book-2 .bk-cover h2 span:first-child {
 	position: relative;
