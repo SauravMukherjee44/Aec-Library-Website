@@ -345,6 +345,11 @@ footer a {
   animation: text 2s 1;
 }
 
+.text-danger{
+  color: red;
+  font-size: bold;
+}
+
 /* text animation */
 
 @keyframes text {

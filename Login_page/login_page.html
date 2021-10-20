@@ -36,14 +36,15 @@
 			</form>
 		</div>
 		<div class="form-container sign-in-container">
-			<form action="#">
+			<form action="#" onsubmit="return validate()">
 				<h1>Sign in</h1>
 				<span>or use your account</span>
-				<input class="input__tag" placeholder="Phone number" required/>
-				<input class="input__tag" type="password" placeholder="Password" required/>
-			
+				<input class="input__tag" placeholder="Phone number" id="phone"  required="" />
+				<span id="mobileno" class="text-danger font-weight-bold"> </span>
+				<input class="input__tag" type="password" placeholder="Password" id="password" required="" />
+				<span id="pass" class="text-danger font-weight-bold"> </span>
 				<a href="#">Forgot your password?</a>
-				<button><a href="bjjsearch.html">Sign In</a></button>
+				<button onclick=" return validate()"><a href="../index.html">Sign In</a></button>
 			    
 			</form>
 			<p class="signup_link">
@@ -67,5 +68,52 @@
 		</p>
 	</footer>
 </body>
+<script type="text/javascript">
+
+function validate(){
+
+var mobileNumber = document.getElementById('phone').value;
+var pass = document.getElementById('password').value;
+var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+            
+	        if(mobileNumber == ""){
+					document.getElementById('mobileno').innerHTML =" ** Please fill the Mobile Number field";
+					return false;
+				}
+			if(isNaN(mobileNumber)){
+				document.getElementById('mobileno').innerHTML =" ** User must write digits only not characters";
+				return false;
+			}
+			if(mobileNumber.length!=10){
+				document.getElementById('mobileno').innerHTML =" ** Mobile Number must be 10 digits only";
+				return false;
+			}
+
+		
+
+
+			if(pass.length <7) {
+				document.getElementById('pass').innerHTML =" ** Passwords lenght must be greater than equal to 8";
+				return false;	
+			}
+
+			if(re.test(pass)){
+
+			}else{
+				document.getElementById('pass').innerHTML =" ** min 8 letter password, with at least a symbol, upper and lower case letters and a number ";
+				return false;
+
+			}
+
+			
+
+
+
+		}
+
+</script>
+
+
 <script src = "login_script.js"></script>
 </html>
