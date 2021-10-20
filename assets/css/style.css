@@ -2683,24 +2683,27 @@ a {
 .book-1 .bk-back,
 .book-1 .bk-left,
 .book-1 .bk-front:after {
-	background-color: #ff924a;
+	background-color: #100c33;
 }
 
 .book-1 .bk-cover {
-	background-image: url(https://tympanus.net/Development/3DBookShowcase/images/1.png);
+	
 	background-repeat: no-repeat;
 	background-position: 10px 40px;
 }
 
 .book-1 .bk-cover h2 {
 	position: absolute;
-	bottom: 0;
+  width:80%;
+  height:200px;
+	bottom: 100px;
 	right: 0;
 	left: 0;
 	padding: 30px;
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(218, 194, 194, 0.2);
 	color: #fff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+  transform: rotate(0deg);
 }
 
 .book-1 .bk-cover h2 span:first-child,
@@ -2790,8 +2793,6 @@ a {
 	text-align: right;
 }
 
-
-
 /* Book 3 */
 
 .book-3 .bk-front > div,
@@ -2802,19 +2803,23 @@ a {
 }
 
 .book-3 .bk-cover {
-	background-image: url(https://tympanus.net/Development/3DBookShowcase/images/3.png);
 	background-repeat: no-repeat;
 	background-position: 100% 95%;
 }
 
 .book-3 .bk-cover h2 {
 	position: absolute;
-	top: 40px;
-	right: 40px;
-	left: 40px;
-	padding-top: 15px;
+  width:30%;
+  height:300px;
+	bottom: 170px;
+	right: 0;
+	left: 50px;
+  top:50px;
+	padding: 30px;
+	background: rgba(157, 228, 77, 0.2);
 	color: #fff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+  transform: rotate(0deg);
 }
 
 .book-3 .bk-cover h2 span:first-child,
