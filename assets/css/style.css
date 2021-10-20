@@ -2774,17 +2774,6 @@ a {
 	display: block;
 }
 
-.book-2 .bk-cover h2 span:first-child:before {
-	content: 'A novel';
-	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
-	text-transform: uppercase;
-	position: absolute;
-	color: red;
-	font-size: 20px;
-	right: -15px;
-	bottom: -60px;
-}
-
 .book-2 .bk-cover h2 span:last-child {
 	font-size: 30px;
     padding-top: 130px;
@@ -2794,28 +2783,6 @@ a {
     position: relative;
 }
 
-
-.book-2 .bk-cover h2 span:last-child:before {
-	content: 'by';
-	font-size: 16px;
-	color: red;
-	position: absolute;
-	top: -32px;
-	left: 62px;
-	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
-}
-
-.book-2 .bk-cover h2 span:last-child:after {
-	content: '';
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background: #f9ed65;
-	position: absolute;
-	top: 5px;
-	left: 101px;
-}
-
 .book-2 .bk-left h2 {
 	font-size: 20px;
 	line-height: 40px;
@@ -2823,13 +2790,6 @@ a {
 	text-align: right;
 }
 
-.book-2 .bk-back p {
-	color: red;
-	font-size: 13px;
-	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
-	padding: 40px;
-	text-align: center;
-}
 
 
 /* Book 3 */
