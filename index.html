@@ -152,7 +152,7 @@
           <label for="Author" class="col col-form-label"> <strong>Author</strong></label>
           <div class="col">
 
-            <select class="form-check-input1" name="type" id="type" style="z-index: 1;" >
+            <select class="form-check-input1" name="author" id="author" onchange='CheckAuthor(this.value);' style="z-index: 1;" >
 
 
               <option value="N/A">Select Author</option>
@@ -175,7 +175,7 @@
               <option value="William Shakespeare">William Shakespeare</option>
               <option value="Other">Other</option>
             </select>
-            <!-- <input type="text" class="input-box" id="author" placeholder="Author" /> -->
+             <input type="text" class="input-box" id="other_author" name="other_author" placeholder="Enter Author" style='display:none;' />
           </div>
 
         </div>
@@ -553,6 +553,18 @@
       $('#mytable').DataTable();
     });
   </script>
+
+<script type="text/javascript">
+  function CheckAuthor(val){
+   var element=document.getElementById('other_author');
+   if(val=='Other')
+     element.style.display='block';
+   else  
+     element.style.display='none';
+  }
+  
+  </script> 
+
 </body>
 
 
