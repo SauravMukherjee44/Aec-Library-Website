@@ -33,10 +33,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!--data table-->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
-  <!-- google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body class="body-style">
@@ -156,7 +152,7 @@
           <label for="Author" class="col col-form-label"> <strong>Author</strong></label>
           <div class="col">
 
-            <select class="form-check-input1" name="type" id="type" style="z-index: 1;" >
+            <select class="form-check-input1" name="author" id="author" onchange='CheckAuthor(this.value);' style="z-index: 1;" >
 
 
               <option value="N/A">Select Author</option>
@@ -179,7 +175,7 @@
               <option value="William Shakespeare">William Shakespeare</option>
               <option value="Other">Other</option>
             </select>
-            <!-- <input type="text" class="input-box" id="author" placeholder="Author" /> -->
+             <input type="text" class="input-box" id="other_author" name="other_author" placeholder="Enter Author" style='display:none;' />
           </div>
 
         </div>
@@ -292,140 +288,30 @@
   
     
      <div class="books1">
-        
-        <div class="container-class">
-          <div class="main-class">
-            <ul id="bk-list" class="bk-list clearfix">
-              <li>
-                <div class="bk-book book-1 bk-bookdefault">
-                  <div class="bk-front">
-                    <div class="bk-cover-back"></div>
-                    <div class="bk-cover">
-                      <h2>
-                            <span>HTML5 & CSS3</span>
-                            
-                          </h2>
-                    </div>
-                  </div>
-                  <div class="bk-page">
-                    <div class="bk-content bk-content-current">
-                      <p>Let's see what's insdie!</p>
-                    </div>
-                    
-                  </div>
-                  <div class="bk-back">
-                    <p>Pro HTML5 and CSS3 Design Patterns is a reference book and a cookbook on how to style web pages using CSS3 and HTML5. It contains 350 ready–to–use patterns (CSS3 and HTML5 code snippets) that you can copy and paste into your code. Each pattern can be combined with other patterns to create an unlimited number of solutions, and each pattern works reliably in all major browsers without the need for browser hacks</p>
-                  </div>
-                  <div class="bk-right"></div>
-                  <div class="bk-left">
-                    <h2>
-                      <span>HTML5 & CSS3</span>
-                     
-                        </h2>
-                  </div>
-                  <div class="bk-top"></div>
-                  <div class="bk-bottom"></div>
-                </div>
-                <div class="bk-info">
-                  <button class="bk-bookback">Flip</button>
-                  <a href="https://www.alvinisd.net/cms/lib03/TX01001897/Centricity/Domain/1077/pro_html5_and_css3_design_patterns.pdf"><button class="bk-bookview">Download as pdf
-                  </button></a>
-                  <h3>
-                    <span>HTML5 & CSS3</span>
-                   
-                      </h3>
-                  <p>Pro HTML5 and CSS3 Design Patterns is a reference book and a cookbook on how to style web pages using CSS3 and HTML5 with great fun!</p>
-                </div>
-              </li>
-              <li>
-                <div class="bk-book book-2 bk-bookdefault">
-                  <div class="bk-front">
-                    <div class="bk-cover-back"></div>
-                    <div class="bk-cover">
-                      <h2>
-                        <span>HTML & CSS</span>
-                        
-                          </h2>
-                    </div>
-                  </div>
-                  <div class="bk-page">
-                    <div class="bk-content bk-content-current">
-                      <p>Let's see what's insdie!</p>
-                    </div>
-                    
-                  </div>
-                  <div class="bk-back">
-                    <p>"An invaluable full–color training package for Web design
-                      Web design consists of using multiple software tools and codes–such as Dreamweaver, Flash, Silverlight, Illustrator, Photoshop, HTML, and CSS, among others–to craft a unique, robust, and interactive websites. This book teaches you how to effectively use all the major tools involved in web design to create a site that is both attractive and functional.</p>
-                  </div>
-                  <div class="bk-right"></div>
-                  <div class="bk-left">
-                    <h2>
-                          <span>HTML & CSS</span>
-                         
-                        </h2>
-                  </div>
-                  <div class="bk-top"></div>
-                  <div class="bk-bottom"></div>
-                </div>
-                <div class="bk-info">
-                  <button class="bk-bookback">Flip</button>
-                  <a href="https://si.sari-mutiara.ac.id/download/file/web-design-with-html-and-css-digital-classroom.pdf"><button class="bk-bookview">Download as pdf
-                  </button></a>
-                  <h3>
-                    <span>HTML & CSS</span>
-                    
-                      </h3>
-                  <p>This book teaches you how to effectively use all the major tools involved in web design to create a site that is both attractive and functional. </p>
-                </div>
-              </li>
-              <li>
-                <div class="bk-book book-3 bk-bookdefault">
-                  <div class="bk-front">
-                    <div class="bk-cover-back"></div>
-                    <div class="bk-cover">
-                      <h2>
-                            <span>HTML & CSS</span>
-                            
-                          </h2>
-                    </div>
-                  </div>
-                  <div class="bk-page">
-                    <div class="bk-content bk-content-current">
-                      <p>Let's see what's insdie!</p>
-                    </div>
-                    
-                  </div>
-                  <div class="bk-back">
-                    <img src="https://tympanus.net/Development/3DBookShowcase/images/3.png" alt="cat">
-                    <p>CIW is the world’s fastest-growing vendor-neutral Internet skills training and certification program for students and professionals. More than a certification or a curriculum publisher, CIW is a Web technology standard adopted by academic institutions, governments and businesses worldwide. CMIT is an approved CIW training provider and provides CIW official training materials.</p>
-                  </div>
-                  <div class="bk-right"></div>
-                  <div class="bk-left">
-                    <h2>
-                      <span>HTML & CSS</span>
-                      
-                        </h2>
-                  </div>
-                  <div class="bk-top"></div>
-                  <div class="bk-bottom"></div>
-                </div>
-                <div class="bk-info">
-                  <button class="bk-bookback">Flip</button>
-                  <a href="https://www.ciwcertified.com/resources/documents/sample-chapter/CCT02CDHTCSCK1405.PDF"><button class="bk-bookview">Download as pdf
-                  </button></a>
-                  <h3>
-                    <span>HTML & CSS</span>
-                   
-                      </h3>
-                  <p>CIW is the world’s fastest-growing vendor-neutral Internet skills training and certification program for students and professionals.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <div>
+          <img src="images/bookimage1.png" alt="not">
+          <a href="https://www.alvinisd.net/cms/lib03/TX01001897/Centricity/Domain/1077/pro_html5_and_css3_design_patterns.pdf"><button class="bookbtn">Download as pdf
+          </button></a>
+         </div>
+         
+        <div>
+          <img src="images/bookimage2.png" alt="not">
+          <a href="https://si.sari-mutiara.ac.id/download/file/web-design-with-html-and-css-digital-classroom.pdf"><button class="bookbtn">Download as pdf
+          </button></a>
         </div>
-
-
+        
+        <div>
+          <img src="images/bookimage3.png" alt="not">
+          <a href="https://www.ciwcertified.com/resources/documents/sample-chapter/CCT02CDHTCSCK1405.PDF"><button class="bookbtn">Download as pdf
+          </button></a>
+        </div>
+        <div>
+          <img src="images/bookimage4.png" alt="not">
+          <a href="https://www.doc-developpement-durable.org/file/Projets-informatiques/cours-&-manuels-informatiques/htm-html-xml-ccs/Sams%20Teach%20Yourself%20HTML,%20CSS,%20and%20JavaScript%20All%20in%20One.pdf">
+          <button class="bookbtn">Download as pdf</button></a>
+        </div>
+  
+        
   
       </div>
   </section>
@@ -645,122 +531,6 @@
       });
     });
   </script>
-  <!-- recommended books section styling -->
-  
-  <script>
-
-var Books = (function() {
-
-var $books = $('#bk-list > li > div.bk-book'),
-  booksCount = $books.length;
-
-function init() {
-
-  $books.each(function() {
-
-    var $book = $(this),
-      $other = $books.not($book),
-      $parent = $book.parent(),
-      $page = $book.children('div.bk-page'),
-      $bookview = $parent.find('button.bk-bookview'),
-      $content = $page.children('div.bk-content'),
-      current = 0;
-
-    $parent.find('button.bk-bookback').on('click', function() {
-
-      $bookview.removeClass('bk-active');
-
-      if ($book.data('flip')) {
-
-        $book.data({
-          opened: false,
-          flip: false
-        }).removeClass('bk-viewback').addClass('bk-bookdefault');
-
-      } else {
-
-        $book.data({
-          opened: false,
-          flip: true
-        }).removeClass('bk-viewinside bk-bookdefault').addClass('bk-viewback');
-
-      }
-
-    });
-
-    $bookview.on('click', function() {
-
-      var $this = $(this);
-
-      $other.data('opened', false).removeClass('bk-viewinside').parent().css('z-index', 0).find('button.bk-bookview').removeClass('bk-active');
-      if (!$other.hasClass('bk-viewback')) {
-        $other.addClass('bk-bookdefault');
-      }
-
-      if ($book.data('opened')) {
-        $this.removeClass('bk-active');
-        $book.data({
-          opened: false,
-          flip: false
-        }).removeClass('bk-viewinside').addClass('bk-bookdefault');
-      } else {
-        $this.addClass('bk-active');
-        $book.data({
-          opened: true,
-          flip: false
-        }).removeClass('bk-viewback bk-bookdefault').addClass('bk-viewinside');
-        $parent.css('z-index', booksCount);
-        current = 0;
-        $content.removeClass('bk-content-current').eq(current).addClass('bk-content-current');
-      }
-
-    });
-
-    if ($content.length > 1) {
-
-      var $navPrev = $('<span class="bk-page-prev">&lt;</span>'),
-        $navNext = $('<span class="bk-page-next">&gt;</span>');
-
-      $page.append($('<nav></nav>').append($navPrev, $navNext));
-
-      $navPrev.on('click', function() {
-        if (current > 0) {
-          --current;
-          $content.removeClass('bk-content-current').eq(current).addClass('bk-content-current');
-        }
-        return false;
-      });
-
-      $navNext.on('click', function() {
-        if (current < $content.length - 1) {
-          ++current;
-          $content.removeClass('bk-content-current').eq(current).addClass('bk-content-current');
-        }
-        return false;
-      });
-
-    }
-
-  });
-
-}
-
-return {
-  init: init
-};
-
-})();
-
-$(function() {
-
-Books.init();
-
-});
-  </script>
-
-
-
-
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
@@ -783,6 +553,18 @@ Books.init();
       $('#mytable').DataTable();
     });
   </script>
+
+<script type="text/javascript">
+  function CheckAuthor(val){
+   var element=document.getElementById('other_author');
+   if(val=='Other')
+     element.style.display='block';
+   else  
+     element.style.display='none';
+  }
+  
+  </script> 
+
 </body>
 
 
