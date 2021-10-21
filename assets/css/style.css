@@ -1084,7 +1084,7 @@ strong {
 
 .book {
 
- 
+  font-family: 'Newsreader', serif;
   background-color: #f3d094;
   padding: 2rem;
 }
@@ -1148,6 +1148,7 @@ strong {
   }
 }
 .books1{
+  font-family: 'Newsreader', serif;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
   justify-content: space-around;
@@ -1155,6 +1156,7 @@ strong {
 
 .books1 div{
   align-self: center;
+  
 }
 
 .books1 img{
@@ -2191,3 +2193,696 @@ height: 700px;
   }
 }
 
+
+
+
+
+/* recommended books section renew */
+/* General Demo Style */
+
+html {
+	height: 100%;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+body {
+	background: #f6f6f6;
+	font-weight: 400;
+	font-size: 15px;
+	color: #333;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.demo-2 body {
+	background: url(https://tympanus.net/Development/3DBookShowcase/images/wood.jpg);
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+.container-class {
+  font-family: 'Newsreader', serif;
+	width: 100%;
+	position: relative;
+}
+
+.main-class,
+.container-class > header {
+	width: 90%;
+	max-width: 1060px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 30px 50px 30px;
+}
+
+
+.container-class > header {
+	padding: 30px 30px 40px 30px;
+}
+
+.container-class > header h1 {
+	font-size: 34px;
+	line-height: 38px;
+	margin: 0;
+	font-weight: 700;
+	color: #333;
+	float: left;
+}
+
+
+/* Header Style */
+
+.codrops-top {
+	line-height: 24px;
+	font-size: 11px;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.codrops-top a {
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255, 255, 255, 0.8);
+	color: #000;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+
+/* Demo Buttons Style */
+
+.codrops-demos {
+	float: right;
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 10px;
+	color: #666;
+	font-weight: 700;
+	line-height: 30px;
+	border-bottom: 4px solid transparent;
+}
+
+.codrops-demos a:hover {
+	color: #000;
+	border-color: #000;
+}
+
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	color: #aaa;
+	border-color: #aaa;
+}
+
+.support-note {
+	color: #d7823e;
+	font-size: 16px;
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+	text-align: left;
+	clear: both;
+}
+
+.bookshelf {
+	width: 100%;
+	height: 63px;
+	z-index: -1;
+	margin-top: -25px;
+	background: transparent url(https://tympanus.net/Development/3DBookShowcase/images/shelf.png) no-repeat center center;
+	position: relative;
+}
+
+
+/*book showcase*/
+
+.bk-list {
+	list-style: none;
+	position: relative;
+}
+
+.bk-list li {
+	position: relative;
+	width: 300px;
+	float: left;
+	z-index: 1;
+	margin: 0px 50px 40px 0;
+	-webkit-perspective: 1800px;
+	perspective: 1800px;
+}
+
+.bk-list li:last-child {
+	margin-right: 0;
+}
+
+.bk-info {
+	position: relative;
+	margin-top: 440px;
+}
+
+.bk-info h3 {
+	padding: 25px 0 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	font-size: 26px;
+}
+
+.bk-info h3 span:first-child {
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	display: block;
+	color: #777;
+}
+
+.bk-info p {
+	line-height: 24px;
+	color: #444;
+	min-height: 160px;
+}
+
+.bk-info button {
+	background: #FC756F;
+	border: none;
+	color: #fff;
+	display: inline-block;
+	padding: 3px 15px;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-right: 4px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.bk-info button.bk-active,
+.bk-info button:active {
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.no-touch .bk-info button:hover,
+.bk-info button.bk-active {
+	background: #d0544e;
+}
+
+.bk-list li .bk-book {
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform .5s;
+	transition: transform .5s;
+}
+
+.bk-list li .bk-book.bk-bookdefault:hover {
+	-webkit-transform: rotate3d(0, 1, 0, 35deg);
+	transform: rotate3d(0, 1, 0, 35deg);
+}
+
+.bk-list li .bk-book > div,
+.bk-list li .bk-front > div {
+	display: block;
+	position: absolute;
+}
+
+.bk-list li .bk-front {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+	-webkit-transition: -webkit-transform .5s;
+	transition: transform .5s;
+	-webkit-transform: translate3d(0, 0, 20px);
+	transform: translate3d(0, 0, 20px);
+	z-index: 10;
+}
+
+.bk-list li .bk-front > div {
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.bk-list li .bk-page {
+	-webkit-transform: translate3d(0, 0, 19px);
+	transform: translate3d(0, 0, 19px);
+	display: none;
+	width: 295px;
+	height: 390px;
+	top: 5px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	z-index: 9;
+}
+
+.bk-list li .bk-front,
+.bk-list li .bk-back,
+.bk-list li .bk-front > div {
+	width: 300px;
+	height: 400px;
+}
+
+.bk-list li .bk-left,
+.bk-list li .bk-right {
+	width: 40px;
+	left: -20px;
+}
+
+.bk-list li .bk-top,
+.bk-list li .bk-bottom {
+	width: 295px;
+	height: 40px;
+	top: -15px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.bk-list li .bk-back {
+	-webkit-transform: rotate3d(0, 1, 0, -180deg) translate3d(0, 0, 20px);
+	transform: rotate3d(0, 1, 0, -180deg) translate3d(0, 0, 20px);
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+	border-radius: 3px 0 0 3px;
+}
+
+.bk-list li .bk-cover-back {
+	background-color: #000;
+	-webkit-transform: rotate3d(0, 1, 0, -179deg);
+	transform: rotate3d(0, 1, 0, -179deg);
+}
+
+.bk-list li .bk-right {
+	height: 390px;
+	top: 5px;
+	-webkit-transform: rotate3d(0, 1, 0, 90deg) translate3d(0, 0, 295px);
+	-moz-transform: rotate3d(0, 1, 0, 90deg) translate3d(0, 0, 295px);
+	transform: rotate3d(0, 1, 0, 90deg) translate3d(0, 0, 295px);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.bk-list li .bk-left {
+	height: 400px;
+	-webkit-transform: rotate3d(0, 1, 0, -90deg);
+	transform: rotate3d(0, 1, 0, -90deg);
+}
+
+.bk-list li .bk-top {
+	-webkit-transform: rotate3d(1, 0, 0, 90deg);
+	transform: rotate3d(1, 0, 0, 90deg);
+}
+
+.bk-list li .bk-bottom {
+	-webkit-transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 390px);
+	transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 390px);
+}
+
+
+/* Transform classes */
+
+.bk-list li .bk-viewinside .bk-front {
+	-webkit-transform: translate3d(0, 0, 20px) rotate3d(0, 1, 0, -160deg);
+	transform: translate3d(0, 0, 20px) rotate3d(0, 1, 0, -160deg);
+}
+
+.bk-list li .bk-book.bk-viewinside {
+	-webkit-transform: translate3d(0, 0, 150px) rotate3d(0, 1, 0, 0deg);
+	transform: translate3d(0, 0, 150px) rotate3d(0, 1, 0, 0deg);
+}
+
+.bk-list li .bk-book.bk-viewback {
+	-webkit-transform: translate3d(0, 0, 0px) rotate3d(0, 1, 0, 180deg);
+	transform: translate3d(0, 0, 0px) rotate3d(0, 1, 0, 180deg);
+}
+
+
+/* Main colors and content */
+
+.bk-list li .bk-page,
+.bk-list li .bk-right,
+.bk-list li .bk-top,
+.bk-list li .bk-bottom {
+	background-color: #fff;
+}
+
+.bk-list li .bk-front > div {
+	border-radius: 0 3px 3px 0;
+	box-shadow: inset 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bk-list li .bk-front:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	bottom: 1px;
+	left: -1px;
+	width: 1px;
+}
+
+.bk-list li .bk-cover:after,
+.bk-list li .bk-back:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 10px;
+	bottom: 0;
+	width: 3px;
+	background: rgba(0, 0, 0, 0.06);
+	box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
+}
+
+.bk-list li .bk-back:after {
+	left: auto;
+	right: 10px;
+}
+
+.bk-left h2 {
+	width: 400px;
+	height: 40px;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: rotate(90deg) translateY(-40px);
+	transform: rotate(90deg) translateY(-40px);
+}
+
+.bk-content {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	bottom: 20px;
+	right: 20px;
+	padding: 30px;
+	overflow: hidden;
+	background: #fff;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+	cursor: default;
+}
+
+.bk-content-current {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.bk-content p {
+	padding: 0 0 10px;
+	-webkit-font-smoothing: antialiased;
+	color: #000;
+	font-size: 25px;
+  font-weight: bolder;
+	line-height: 30px;
+	text-align: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.bk-page nav {
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+	position: relative;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.bk-page nav span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	color: #aaa;
+	background: #f0f0f0;
+	border-radius: 50%;
+}
+
+
+/* Individual style & artwork */
+
+
+/* Book 1 */
+
+.book-1 .bk-front > div,
+.book-1 .bk-back,
+.book-1 .bk-left,
+.book-1 .bk-front:after {
+	background-color: #100c33;
+}
+
+.book-1 .bk-cover {
+	
+	background-repeat: no-repeat;
+	background-position: 10px 40px;
+}
+
+.book-1 .bk-cover h2 {
+	position: absolute;
+  width:80%;
+  height:200px;
+	bottom: 100px;
+	right: 0;
+	left: 0;
+	padding: 30px;
+	background: rgba(218, 194, 194, 0.2);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+  transform: rotate(0deg);
+}
+
+.book-1 .bk-cover h2 span:first-child,
+.book-1 .bk-left h2 span:first-child {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 13px;
+	padding-right: 20px;
+}
+
+.book-1 .bk-cover h2 span:first-child {
+	display: block;
+}
+
+.book-1 .bk-cover h2 span:last-child,
+.book-1 .bk-left h2 span:last-child {
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+
+.book-1 .bk-content p {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.book-1 .bk-left h2 {
+	color: #fff;
+	font-size: 15px;
+	line-height: 40px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+.book-1 .bk-back p {
+	color: #fff;
+	font-size: 13px;
+	padding: 40px;
+	text-align: center;
+	font-weight: 700;
+}
+
+
+/* Book 2 */
+
+.book-2 .bk-front > div,
+.book-2 .bk-back,
+.book-2 .bk-left,
+.book-2 .bk-front:after {
+	background-color: #222;
+}
+
+.book-2 .bk-cover {
+	background-image: url(https://tympanus.net/Development/3DBookShowcase/images/2.png);
+	background-repeat: no-repeat;
+	background-position: 98% 0%;
+}
+
+.book-2 .bk-cover h2,
+.book-2 .bk-left h2 {
+	color: #fff;
+	font-family: 'the_godfatherregular', Georgia, serif;
+	font-weight: 400;
+}
+
+.book-2 .bk-cover h2 {
+	font-size: 138px;
+	line-height: 102px;
+	padding: 30px;
+}
+.book-2 .bk-back p {
+  color: #fff;
+  font-size: 13px;
+  padding: 90px 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.book-2 .bk-cover h2 span:first-child {
+	position: relative;
+	display: block;
+}
+
+.book-2 .bk-cover h2 span:last-child {
+	font-size: 30px;
+    padding-top: 130px;
+    line-height: 81px;
+    padding-left: 40px;
+    display: block;
+    position: relative;
+}
+
+.book-2 .bk-left h2 {
+	font-size: 20px;
+	line-height: 40px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+/* Book 3 */
+
+.book-3 .bk-front > div,
+.book-3 .bk-back,
+.book-3 .bk-left,
+.book-3 .bk-front:after {
+	background-color: #a4c19e;
+}
+
+.book-3 .bk-cover {
+	background-repeat: no-repeat;
+	background-position: 100% 95%;
+}
+
+.book-3 .bk-cover h2 {
+	position: absolute;
+  width:30%;
+  height:300px;
+	bottom: 170px;
+	right: 0;
+	left: 50px;
+  top:50px;
+	padding: 30px;
+	background: rgba(157, 228, 77, 0.2);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+  transform: rotate(0deg);
+}
+
+.book-3 .bk-cover h2 span:first-child,
+.book-3 .bk-left h2 span:first-child {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 13px;
+	padding-right: 20px;
+}
+
+.book-3 .bk-cover h2 span:first-child {
+	display: block;
+}
+
+.book-3 .bk-cover h2 span:last-child,
+.book-3 .bk-left h2 span:last-child,
+.book-3 .bk-content p {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.book-3 .bk-left h2 {
+	color: #fff;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.book-3 .bk-back img {
+	width: 150px;
+  height: 100px;
+	display: block;
+	margin: 30px auto 0;
+}
+
+.book-3 .bk-back p {
+	color: #fff;
+	font-size: 12px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	padding: 15px;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/* Fallbacks */
+
+.no-csstransforms3d .bk-list li .bk-book > div,
+.no-csstransforms3d .bk-list li .bk-book .bk-cover-back {
+	display: inline-block;
+}
+
+.no-csstransforms3d .bk-list li .bk-book > div.bk-front {
+	display: block;
+}
+
+.no-csstransforms3d .bk-info button,
+.no-js .bk-info button {
+	display: inline-block;
+}
