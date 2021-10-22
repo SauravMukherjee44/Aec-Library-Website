@@ -133,20 +133,22 @@ function libraryFormSubmit(e) {
   if (date == "" || name == "" || author == "" || category == "") {
     window.alert("Field is Empty!Please Enter Something");
   } else {
-    let book = new Book(date, name, author, category);
-    console.log(book);
-
-    let display = new Display();
-
-    if (display.validate(book)) {
-      display.add(book);
-      display.clear();
-      display.show("success", "Your book has been successfully added");
-    } else {
-      // Show error to the user
-      display.show("danger", "Sorry you cannot add this book");
-    }
-  }
+     // Show error to the user
+     display.show("danger", "Sorry you cannot add this book");
+     let book = new Book(date, name, author, category);
+     console.log(book);
+ 
+     let display = new Display();
+ 
+     if (display.validate(book)) {
+       display.add(book);
+       display.clear();
+       display.show("success", "Your book has been successfully added");
+     } else {
+       // Show error to the user
+       display.show("danger", "Sorry you cannot add this book");
+     }
+   }
   e.preventDefault();
 }
 
@@ -215,6 +217,9 @@ let preloader = document.querySelector(".preloader");
 let nav = document.querySelector(".navbar");
 timer1 = setInterval(() => {
   preloader.classList.add("endpreloadopacity");
+  $(' html, body').css({
+    overflow: 'auto'
+  });
   setTimeout(timer1);
 }, 4500);
 let timer2 = setInterval(() => {
@@ -228,3 +233,51 @@ let timer3 = setInterval(() => {
   preloader.style.display = "none";
   setTimeout(timer3);
 }, 5500);
+
+var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+
+// counter on home page
+$(window).on("scroll load resize", function(){
+  checkScroll();
+  console.log($(window).scrollTop());
+});
+function checkScroll(){
+  if($(window).scrollTop() > 330){
+    const counters = document.querySelectorAll('.counter');
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        if (count < target) {
+          counter.innerText = count + 1;
+          setTimeout(updateCount, 8);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  } else {
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText=0;
+    });
+  }
+}

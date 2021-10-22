@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,24 +72,137 @@
         }
     </style>
     <!-- about css ended -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/logos/finalLogo.png" type="image/x-icon" />
+  <title>About | AEC Library</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="assets/css/About.css" />
+
+  <!-- Adding new font -> Playfair-display -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+
+  <!--Adding AOS in it-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body class="body-style">
-    <div class="bubbles">
-        <img src="./assets/images/bubble.png">
-        <img src="./assets/images/bubble.png">
-        <img src="./assets/images/bubble.png">
-        <img src="./assets/images/bubble.png">
-        <img src="./assets/images/bubble.png">
-        <img src="./assets/images/bubble.png">
-        <img src="./assets/images/bubble.png">
+  <div class="bubbles">
+    <img src="./assets/images/bubble.png" />
+    <img src="./assets/images/bubble.png" />
+    <img src="./assets/images/bubble.png" />
+    <img src="./assets/images/bubble.png" />
+    <img src="./assets/images/bubble.png" />
+    <img src="./assets/images/bubble.png" />
+    <img src="./assets/images/bubble.png" />
+  </div>
+
+  <div id="topBtn" title="Go to Top">
+    <a href="#"><span class="fa fa-angle-up"></span></a>
+  </div>
+
+  <!-- Navbar started -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <a class="navbar-brand ml-4" href="index.html"><img src="assets/logos/finalLogo.png" alt="AEC Library"
+        class="logo-img" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active" target="_blank" onclick="return false;">
+            <i class="fas fa-book"></i> About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./public/donate-book.html" class="nav-link" target="_blank">
+            <i class="fas fa-book"></i> Donate Books
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="resource.html" class="nav-link" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Resources</a>
+        </li>
+        <li class="nav-item">
+          <a href="./Login_page/login_page.html" class="nav-link" target="_blank">
+            <i class="fas fa-sign-in-alt"></i> Login
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./sign up page/index.html" class="nav-link" target="_blank">
+            <i class="fas fa-sign-in-alt"></i> SIGN UP
+          </a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search" required/>
+        <button class="btn btn-dark my-2 my-sm-0" type="submit">
+          🔍
+        </button>
+      </form>
     </div>
+  </nav>
+  <!-- Navbar ended -->
 
-
-    <div id="topBtn" title="Go to Top">
-        <a href="#"><span class="fa fa-angle-up"></span></a>
+  <!-- about content started -->
+  <div class="about-container">
+    <!-- <div class="my-5"> -->
+    <h1 class="text-center">About Us</h1>
+    <div class="py-3 mx-md-5 mx-3">
+      <p>
+        Designed for both large and small library systems, AEC Library is a
+        comprehensive library management system. For managing circulation
+        and stock, this is ideal for institutional, public, and digital
+        libraries. In order to manage and automate the processing of even
+        the largest of libraries, the AEC Library website was developed.
+        According to the end user's requirements, the website is capable of
+        managing Book Issues, Returns, and generating various Reports for
+        Record-Keeping and Review purposes.
+      </p>
+      <h2 class="text-white">
+        <strong>Why to use AEC Library?</strong>
+      </h2>
+      <p>
+        Through AEC Library, the distribution process is controlled and
+        centralized, reducing the risk of loss of books, over-ordering, and
+        expensive replacements. The AEC Library gives easy-to-understand
+        information on each form of the system, as well as describing each
+        field on the form. In addition to being easy to use, AEC Library can
+        generate instant reports with ease. The software has been designed
+        to be flexible and user-friendly by librarians and media
+        specialists.
+      </p>
+      <h2 class="text-white">
+        <strong>Features of AEC Library?</strong>
+      </h2>
+      <p>
+        <i class="far fa-hand-point-right"></i> Store various types of books, journals, newspapers, magazines,
+        etc.<br>
+        <i class="far fa-hand-point-right"></i> Organize the books based on their subjects.<br>
+        <i class="far fa-hand-point-right"></i> New books can be added easily.<br>
+        <i class="far fa-hand-point-right"></i> Checkout is easy with this method.<br>
+        <i class="far fa-hand-point-right"></i> Checking in is quick and easy.<br>
+        <i class="far fa-hand-point-right"></i> For late returns, automatic fine calculation is available.<br>
+        <i class="far fa-hand-point-right"></i> A book can be searched using different criteria.<br>
+        <i class="far fa-hand-point-right"></i> Number of books, number of books issued, number of journals, etc.<br>
+        <i class="far fa-hand-point-right"></i> A simple way to see how many books a student has received.
+      </p>
     </div>
-
 
 
     <!-- Navbar started -->
@@ -119,9 +233,42 @@
                     Search
                 </button>
             </form>
+
+     <div align="center">
+      <a href="https://github.com/SauravMukherjee44"><img src="./UI Design/Library poster.png" width=30% height=30% /></a> 
+     </div>
+    <!-- </div> -->
+    <h4 class="text-white" style="text-align: center;">
+      <strong>Also read our  <a href="./public/terms&conditions.html" style="color: lightsteelblue; text-decoration: underline;">Terms and Conditions</a></strong>
+    </h4>
+    <br>
+  </div>
+  <!-- about content ended -->
+
+  <!-- footer started -->
+  <div>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="icons">
+
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
+            </li>
+	    <li>
+              <a href="https://twitter.com/mesourav44"><i class="fab fa-twitter icon"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw"><i class="fab fa-youtube icon"></i></a>
+            </li>
+          </ul>
+
         </div>
-    </nav>
-    <!-- Navbar ended -->
+        <div>
+
 
 
     <!-- about content started -->
@@ -303,51 +450,58 @@
                 </li>
                 <p>©2021 Copyright </p>
             </ul>
+  <p>©2021 Copyright AEC Library</p>
+
         </div>
+        
     </footer>
-    <!-- footer ended -->
 
+  </div>
+  <!-- footer ended -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./assets/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <!-- Go to Top  -->
-    <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 40) {
-                    $('#topBtn').css({
-                        "opacity": "1", "pointer-events": "auto"
-                    });
-                } else {
-                    $('#topBtn').css({
-                        "opacity": "0", "pointer-events": "none"
-                    });
-                }
-            });
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="../assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- Go to Top  -->
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 40) {
+          $("#topBtn").css({
+            opacity: "1",
+            "pointer-events": "auto",
+          });
+        } else {
+          $("#topBtn").css({
+            opacity: "0",
+            "pointer-events": "none",
+          });
+        }
+      });
 
-            $("#topBtn").click(function () {
-                $('html ,body').animate({ scrollTop: 0 }, 400);
-            });
-        });
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script>
-        AOS.init({
-            offset: 200,
-            duration: 1000,
-        });
-    </script>
-
+      $("#topBtn").click(function () {
+        $("html ,body").animate({
+          scrollTop: 0
+        }, 400);
+      });
+    });
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+    });
+  </script>
 </body>
 
 </html>

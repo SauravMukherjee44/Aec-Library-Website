@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
+    <title>SIGN UP - AEC Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>    
+      function validate() {    
+          var fname = document.reg_form.fname;    
+          var lname = document.reg_form.uname;       
+          var gender = document.reg_form.gender;    
+          var email = document.reg_form.email;    
+          var mobile = document.reg_form.mobile;    
+          var password = document.reg_form.password;
+          var confirm_password = document.reg_form.confirm_password;
+              
+  
+          if (fname.value.length <= 0) {    
+              alert("Name is required");    
+              fname.focus();    
+              return false;    
+          }    
+          if (lname.value.length <= 0) {    
+              alert("Last Name is required");    
+              lname.focus();    
+              return false;    
+          }    
+          if (address.value.length <= 0) {    
+              alert("Address is required");    
+              address.focus();    
+              return false;    
+          }    
+          if (gender.value.length <= 0) {    
+              alert("Gender is required");    
+              gender.focus();    
+              return false;    
+          }    
+          if (email.value.length <= 0) {    
+              alert("Email Id is required");    
+              email.focus();    
+              return false;    
+          }    
+          if (mobile.value.length <= 0) {    
+              alert("Mobile number is required");    
+              mobile.focus();    
+              return false;    
+          } 
+
+
+
+       
+
+
+          if(password.value != confirm_password.value) {
+            
+            alert("Passwords Don't Match");
+            confirm_password.focus();
+            return false;
+          } 
+
+
+
+
+          return false;    
+      }    
+  </script>    
+
+
+  </head>
+  <body>
+    <div class="container">
+      <strong><h1 align="center">AEC Library</h1></strong>
+      <div class="title">SIGN UP</div>
+      <div class="content">
+        <form method="" action="" name="reg_form" onsubmit="return validate()">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" name="fname" placeholder="Enter your name"  required />
+            </div>
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input type="text" name="uname" placeholder="Enter your username" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="email" name="email" placeholder="Enter your email" required="" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"  />
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text" name="mobile" placeholder="Enter your number" required="" pattern="[789][0-9]{9}"  title="Phone number starting with 7-9 and remaining 9 digit within 0-9" />
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="password" placeholder="Enter your password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" id="password" name="password" />
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input type="password" placeholder="Confirm your password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" id="confirm_password" name="confirm_password" />
+            </div>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1" required/>
+            <input type="radio" name="gender" id="dot-2" required/>
+            <input type="radio" name="gender" id="dot-3" required/>
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register" onsubmit="validate()" onclick="validate()" />
+          </div>
+        </form>
+
+        <p class="signup_link">
+          Already have an account? <a href="../Login_page/login_page.html">Sign In</a>
+        </p>       
+      </div>
+    </div>
+
+   
+
+
+    <a href="../index.html"><h4 style="color: black; background-color: rgb(246, 249, 252); border-radius: 30px; padding: 10px;">◀ Go back to Home</h4></a>
+   
+   
+
+
+
+
+    <script>  
+      function validate() {  
+          var fname = document.reg_form.fname;  
+          var uname = document.reg_form.lname;  
+          if (fname.value.length <= 0) {  
+              alert("Name is required");  
+              fname.focus();  
+              return false;  
+          }  
+          if (uname.value.length <= 0) {  
+              alert("Username is required");  
+              uname.focus();  
+              return false;  
+          }  
+
+
+
+
+}
+    </script>   
+  </body>
+</html>
+
