@@ -7,9 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Style CSS -->
   <link rel="stylesheet" href="resource.css"/>
+	 <!-- bootstrap-css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  
 <!-- font awseome cdn linking-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- bootstrap script-->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
 </head>
 
 <body>
@@ -51,10 +57,11 @@
     <h2 class="hover-underline-animation">Informative Youtube Channels</h2>
     <section id="yt">
 
-      <iframe width="33%" height="75%" src="https://www.youtube.com/embed/hmS6rhq8jkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="33%" height="75%" src="https://www.youtube.com/embed/KxUj-0R2yxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe class="last" width="33%" height="75%" src="https://www.youtube.com/embed/LwglfLv5otA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="32%" src="https://www.youtube.com/embed/hmS6rhq8jkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="32%" src="https://www.youtube.com/embed/KxUj-0R2yxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="last" width="32%" src="https://www.youtube.com/embed/LwglfLv5otA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
+
     <section id="ncert">
         <h2 class="hover-underline-animation"> NCERT Books </h2>
             <div id="ncert_books" class="NC">
@@ -101,12 +108,45 @@
                     <a target="_blank" href="Notes/Coordination Compound 3.pdf"><img src="images/4.png" alt=""
                             width="24%" height="60%"></a>
                 </div>
+<h2 class="hover-underline-animation">Question Banks</h2>
+    <section id="qb" class="study-container">
+        
+        <!-- <a target="_blank" href="Notes/Surface Chemistry  Complete NCERT.pdf"><img src="images/1.png" alt="" width="24%" height="60%"></a>
+        <a target="_blank" href="Notes/Solid State New Complete Chapter Notes.pdf"><img src="images/2.png" alt="" width="24%" height="60%"></a>
+        <a target="_blank" href="Notes/Electrochemistry  Complete NCERT.pdf"><img src="images/3.png" alt="" width="24%" height="60%"></a>
+        <a target="_blank" href="Notes/Coordination Compound 3.pdf"><img src="images/4.png" alt="" width="24%" height="60%"></a> -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner study-card">
+              <div class="carousel-item active study-base">
+                <img src="images/2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item study-base">
+                <img src="images/3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item study-base">
+                <img src="images/4.png" class="d-block w-100" alt="...">
+              </div>
+
             </div>
-    </section>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    
+    
+    
+    
+    
+    </section> 
 
     <h2 class="hover-underline-animation">Study Materials</h2>
   <section id="study" class="study-container">
-        <div class="study-card ">
+        <!-- <div class="study-card ">
             <div class="study-base">
                 <img src="images/5.png" alt="image1">
             </div>
@@ -131,7 +171,40 @@
             <h3><a target="_blank" class="view" href="Notes/Solid State New Complete Chapter Notes.pdf">View</a><h3>
         </div>
     
+     </main> -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner study-base ">
+      <div class="carousel-item active study-card  ">
+        <img src="images/5.png" class="d-block w-100" alt="...">
+      </div>
+      <!-- <h3><a target="_blank" class="view" href="Notes/Surface Chemistry Complete NCERT.pdf">View</a><h3> -->
+      <div class="carousel-item study-card">
+        <img src="images/6.jpg" class="d-block w-100" alt="...">
+      </div>
+      <!-- <h3><a target="_blank" class="view" href="Notes/Solid State New Complete Chapter Notes.pdf">View</a><h3></h3> -->
+      <div class="carousel-item study-card ">
+        <img src="images/7.jpg" class="d-block w-100" alt="...">
+      </div>
+      <!-- <h3><a target="_blank" class="view" href="Notes/Solid State New Complete Chapter Notes.pdf">View</a><h3></h3> -->
+      <div class="carousel-item study-card ">
+        <img src="images/9.png" class="d-block w-100" alt="...">
+      </div>
+      <!-- <h3><a target="_blank" class="view" href="Notes/Solid State New Complete Chapter Notes.pdf">View</a><h3> -->
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+      </a>
+     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+      </a>
+    </div>
+   </section>
 </main>
+    
+
+   
 <!--FOoTer section Updated-->
 
 <footer>
@@ -146,12 +219,12 @@
                 </div>
                <div class="lower">
                      <div class="topic"><a href="./public/contact us .html" style="color: antiquewhite;">Contact Us </a></div>
-                     <div class="phone">
+                     <!-- <div class="phone">
                          <a href="#"><i class="fa fa-volume-control-phone"></i>+91 123 456 7891</a>
-                     </div>
+                     </div> -->
                          <div class="email">
-                             <a href=""><i class="fa fa-github-square"></i></a> <br>
-                             <a href=""><i class="fa fa-user-circle"></i></a>
+                             <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><i class="fa fa-github-square"></i>Github</a> <br>
+                             <!-- <a href=""><i class="fa fa-user-circle"></i></a> -->
                            </div>
                  </div>
              </div>
@@ -170,17 +243,17 @@
                                  <input type="submit" name="" value="Send">
                                      <div class="media-icons">
 
-                                         <a class="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
-                                         <a class="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
-                                         <a class="linkedin" href="" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                         <a class="Github" href="" target="_blank"><i class="fa fa-github-square"></i></a>
-                                         <a class="Blog" href="" target="_blank"><i class="fa fa-rss-square" ></i></a>
+                                         <a class="Twitter" href="https://twitter.com/mesourav44" target="_blank"><i class="fa fa-twitter"></i></a>
+                                         <a class="Instagram" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                                         <a class="linkedin" href="https://www.linkedin.com/in/sauravmukherjee44/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                         <a class="Github" href="https://github.com/SauravMukherjee44/" target="_blank"><i class="fa fa-github-square"></i></a>
+                                         <a class="Blog" href="#" target="_blank"><i class="fa fa-rss-square" ></i></a>
                                      </div>
                              </form>
                             </div>
                          </div>
              <div class="bottom">
-				<p>Copyright © 2021 <a href="#"> @ OpenSource </a> All rights reserved</p>
+				<p>Copyright © 2021 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"> @ AEC Library </a> All rights reserved</p>
             </div>
                                
          </div>

@@ -1,14 +1,16 @@
 <h1 align="center">Open-Source Library Website </h1>
 
 This is an Open-Source Library Website in which you get Resources to learn different topics, Donate book section to donate your old books, and a Book issue section to keep a record of all the books issued.
+This website helps you to find the books easily without any cost and the best part about the website is that you can also contribute to the website for others to use the resourses by donating the books you have , all categories of books are welcomed for donation. 
+Come forward to donate the books !!!  
 
 <h4>[ In development Phase ] 
 [ Hacktoberfest-Accepted ] </h4>
 <h2> 
-<a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit our website 🚀</a>
+📌<a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit our website 🚀</a>
 
 
-<a href="https://discord.com/invite/sqFRzrj7f3" target="_blank">Join Us On Discord ⚡</a>
+📌<a href="https://discord.com/invite/sqFRzrj7f3" target="_blank">Join Us On Discord ⚡</a>
 </h2>
 
 
@@ -37,11 +39,60 @@ This is an Open-Source Library Website in which you get Resources to learn diffe
 
 ## 📌 Sneak Peek of Main Page
 
-![image](https://user-images.githubusercontent.com/86077008/136499419-a65664a3-b570-4198-a53e-c5044756bdeb.png)
+![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/98ca1f783823e29e2ba5e831e33d09280bc062cf/assets/images/aec%20(2).png)
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
 Happy Submissions :slightly_smiling_face:
+
+<h1 align=center> Project Maintainer ⚡ </h1>
+<p align="center">
+  <a href="https://github.com/SauravMukherjee44"><img src="https://github.com/SauravMukherjee44/Aec-Library-Website/blob/e2d7870b91f240964e9841a2a147aaf564b5fdb7/images/admin.jpg" width=150px height=150px /></a> 
+	<p align="center">
+
+
+<h1 align=center> OUR VALUABLE CONTRIBUTORS✨ </h1>
+<p align="center">
+  
+	
+<a href="https://github.com/SauravMukherjee44/Aec-Library-Website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SauravMukherjee44/Aec-Library-Website" />
+</a>
+
+<h1 align=center>Happy Coding 👨‍💻 </h1>
+
+---
+
+<h2>📬 Contact</h2>
+
+If you want to contact me, you can reach me through below handles.
+<div align="center">
+
+<a  href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw" target="_blank"><img alt="YouTube" src="https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" /></a>
+<a  href="https://www.linkedin.com/in/sauravmukherjee44/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://twitter.com/mesourav44" target="_blank"><img src="https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white&alt=twitter" /></a>
+<a href="mailto:mesouravofficial@gmail.com"><img  alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+<a  href="https://t.me/Saurav_44"><img alt=" Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a>
+<a  href="https://discord.com/users/758681549993541684"><img alt=" Discord" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white">
+<a  href="https://www.instagram.com/mesouravofficial/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+   </a> 
+   
+</div>
+	
+ <div align="center">
+      
+   <h1 align="center">CodeIN Community</h1>
+      <img width="10%" align="center"   src="https://github.com/SauravMukherjee44/SauravMukherjee44/blob/01033044396cd45db3731e6ac37284dc5386e2cd/CodeIN%20Logo.png" >
+ 
+I have started a Community named CodeIN Community [Community of Coding Enthusiasts] Where we share Resources, Roadmaps to learn different technologies and share opportunities related to different tech programs. Also, We organize Events on different technologies to help people to get started with these technologies.
+
+  <span> <h2>Join the Community on Discord ⚡</h2>
+<a  href="https://discord.gg/hWwbgP4dz9"><img alt=" Discord" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a>
+<a  href="https://t.me/CodeINCommunity"><img alt=" Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a>
+<a  href="https://www.linkedin.com/company/codein-community/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a></span>
+   
+ </div>
+
 
 <h1> Contributing Guidelines </h1>
 
@@ -132,30 +183,6 @@ Congratulations! You've already made your first contribution.🥳
 Good Luck for your journey
 
 
-<h1 align=center> OUR VALUABLE CONTRIBUTORS✨ </h1>
-<p align="center">
-  
-	
-<a href="https://github.com/SauravMukherjee44/Aec-Library-Website/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=SauravMukherjee44/Aec-Library-Website" />
-</a>
-
-<h1 align=center>Happy Coding 👨‍💻 </h1>
-
----
-
-<h2>📬 Contact</h2>
-
-If you want to contact me, you can reach me through below handles.
-
-<div align="center">
-
-<a  href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw" target="_blank"><img alt="YouTube" src="https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" /></a>
-<a  href="https://www.linkedin.com/in/sauravmukherjee44/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://twitter.com/mesourav44" target="_blank"><img src="https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white&alt=twitter" /></a>
-<a href="mailto:mesouravofficial@gmail.com"><img  alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-
-</div>
 
 © 2021 Saurav Mukherjee and contributors\
 This project is licensed under the [**MIT license**](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/main/LICENSE).

@@ -1,7 +1,15 @@
 * {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
 nav.navbar {
   /* margin-right: 12px !important; */
   /* padding-right: 12px !important; */
@@ -22,17 +30,18 @@ nav.navbar {
 */
 
 
-#table { 
+#table {
   text-align: center;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    /* background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8); */
-    /* padding-right: 15px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8); */
+  /* padding-right: 15px;
     padding-left: 15px; */
-    padding-bottom: 10px;
-    border: none;
-    /* box-shadow: 2px 2px 5px 2px #ddbcbc; */
-    box-shadow: 2px 2px 5px 2px black;
+  padding-bottom: 10px;
+  border: none;
+  /* box-shadow: 2px 2px 5px 2px #ddbcbc; */
+  box-shadow: 2px 2px 5px 2px black;
+
 }
 #table {
   border-radius: 20px;
@@ -47,15 +56,17 @@ nav.navbar {
 
 .table thead th {
 
-    vertical-align: bottom;
-    border: none;
-    
-    color: white;
+  vertical-align: bottom;
+  border: none;
+
+  color: white;
+
 
   vertical-align: bottom;
   border: none;
 
   color: black;
+
 
 }
 
@@ -63,7 +74,9 @@ nav.navbar {
   color: white;
 }
 
-#books-content{
+
+#books-content {
+
   padding: 10px;
 }
 .dataTables_wrapper .dataTables_filter input {
@@ -133,7 +146,9 @@ label {
   width: 100%;
   height: 100vh;
   background: #03090f
-    url('https://www.icegif.com/wp-content/uploads/loading-icegif.gif?fit=880%2C440&ssl=1')
+
+    url("https://www.icegif.com/wp-content/uploads/loading-icegif.gif?fit=880%2C440&ssl=1")
+
     no-repeat center;
   z-index: 999;
 }
@@ -262,7 +277,7 @@ html {
 }
 
 .btn:before {
-  content: '';
+  content: "";
   background: linear-gradient(
     45deg,
     #ff0000,
@@ -350,10 +365,10 @@ html {
 footer {
   position: relative;
   width: 100%;
-  background-color: #343a40;
+  background-color: rgb(52, 58, 64);
   color: white;
-  box-shadow: 0px 0px 16px 9px black;
-  padding: 15px 0;
+  box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
+  padding: 15px 0px;
   text-align: center;
 }
 
@@ -361,9 +376,18 @@ footer p {
   margin: 0;
 }
 
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.2rem 0;
+  gap: 0.3rem;
+}
+
 .icons ul {
   display: flex;
   margin: 0;
+  padding: 0;
 }
 
 .icons ul li {
@@ -523,7 +547,7 @@ strong {
 
 .bubbles img {
   width: 50px;
-  animation: bubble 7s linear infinite;
+  animation: bubble 9s linear infinite;
 }
 
 .bubbles {
@@ -655,7 +679,7 @@ strong {
   --text: #6c7486;
   --page: rgba(255, 255, 255, 0.36);
   --page-fold: rgba(255, 255, 255, 0.52);
-  --duration: 3s;
+  --duration: 4s;
   width: 200px;
   height: 140px;
   position: relative;
@@ -959,10 +983,14 @@ strong {
    font-size: 3.5rem;
  } */
 
+  /*
+
   .body-style {
     box-shadow: none;
     padding: 1rem;
   }
+
+*/
 
   /*   #table {
     width: 29rem;
@@ -991,15 +1019,15 @@ strong {
 }
 
 .suggestion {
-  height: 120px;
   background-color: white;
   display: flex;
-  justify-content: center;
+  overflow: hidden;
+  overflow-x: auto;
   align-items: center;
 }
 
 .list li {
-  width: 380px;
+  width: 100vw;
   height: 120px;
   text-align: center;
   font-size: 1cm;
@@ -1010,6 +1038,32 @@ strong {
 .list {
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
+}
+
+.suggestion .list {
+  padding: 0;
+  margin: 0;
+}
+
+.suggestion .list .suggest {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #033150;
+}
+
+.suggestion .list {
+  display: flex;
+}
+
+.suggestion .list li {
+  display: flex;
+  flex-direction: column;
 }
 
 .suggestion .list {
@@ -1032,8 +1086,7 @@ strong {
 
  
   background-color: #f3d094;
-  
-
+  padding: 2rem;
 }
 
 .tex {
@@ -1042,35 +1095,33 @@ strong {
 
 .book .tex {
   margin-top: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 17px;
 }
 
 .tex b {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
-  line-height: 0;
+  line-height: 1;
   font-size: 48px;
   margin-bottom: 40px;
   display: inline-block;
 }
 
 
+.book div {
+  height: max-content;
+  font-family: "Source Sans Pro", sans-serif;
+}
 
-.books1 {
-  
+.books {
+  display: flex;
+  gap: 1rem;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
 }
-
-.books div{
-  height:500px;
-
-}
-
-
 
 .books li img {
   width: 200px;
@@ -1096,10 +1147,30 @@ strong {
     transform: translateY(0);
   }
 }
+.books1{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+  justify-content: space-around;
+}
+
+.books1 div{
+  align-self: center;
+}
+
 .books1 img{
   margin:30px 50px;
     width:  250px;
   height: 300px;
+  object-fit: cover;
+  display :block;
+ transition: .5s;
+}
+
+.books1 img:hover{
+  margin:30px 50px;
+    width:  250px;
+  height: 300px;
+  transform: scale(1.1);
   object-fit: cover;
   display :block;
  
@@ -1133,8 +1204,12 @@ strong {
 
 .options {
   display: flex;
+  margin: 1rem 0;
+  padding: 0 1rem;
   justify-content: center;
-  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  flex-wrap: wrap;
 }
 
 .book .options {
@@ -1144,7 +1219,7 @@ strong {
 
 .book-option {
   background-color: #f1dab3;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 300;
   margin: 0px 15px;
@@ -1162,6 +1237,7 @@ strong {
   min-height: 400px;
   display: flex;
   justify-content: space-between;
+  padding: 2rem 0;
   background-color: white;
 }
 
@@ -1174,7 +1250,9 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1.2rem 0;
   align-items: center;
+  flex: 1;
 }
 
 .donate div {
@@ -1186,13 +1264,13 @@ strong {
 
 .donate div:first-child {
   margin-top: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
 }
 
 .donate div:last-child {
   margin-top: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
 }
 
@@ -1202,9 +1280,9 @@ strong {
 }
 
 .donate div b {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
-  line-height: 0;
+  line-height: 1;
   font-size: 48px;
   margin-bottom: 40px;
   display: inline-block;
@@ -1217,15 +1295,18 @@ strong {
   border-radius: 10px;
 }
 
+
 .donate div:last-child .donate-btn {
   outline: none;
   border-radius: 6px;
   border: none;
   display: flex;
+  position: relative;
+  z-index: 1;
   justify-content: center;
   align-items: center;
   padding: 0;
-  box-shadow: 2px 2px 4px rgba(1, 53, 88, 0.589);
+  box-shadow: 2px 2px 4px rgb(1 53 88 / 59%);
   transition: all 0.3s;
 }
 
@@ -1245,33 +1326,32 @@ strong {
   justify-content: center;
   align-items: center;
   letter-spacing: 1px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   border-radius: 6px;
+
 }
 
 .donate div:last-child .donate-btn a:hover {
   text-decoration: none;
 }
 
-.photo img {
-  width: 310px;
-  height: 400px;
-}
-
 .photo {
   display: flex;
-  justify-content: start;
+  flex: 1;
   align-items: center;
+  justify-content: space-around;
 }
-
+/*
 #res .photo {
   justify-content: end;
 }
-
+*/
 .photo img {
-  width: 360px;
   height: 100%;
+  max-width: 310px;
+  max-height: 400px;
+  min-width: 0;
   object-fit: contain;
 }
 
@@ -1283,12 +1363,13 @@ strong {
 .blogs h1,
 p {
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .update {
-  height: 450px;
+  padding: 2rem 0;
   color: white;
+  
 }
 
 .login-box {
@@ -1303,7 +1384,7 @@ p {
   box-shadow: 10px 10px rgba(255, 183, 0, 0.845);
   border-radius: 20px;
   transition-duration: 0.5s;
-  margin: 50px;
+  margin: 0 auto;
 }
 
 .login-box h2 {
@@ -1506,8 +1587,8 @@ p {
   }
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
   margin-top: 1rem;
@@ -1516,48 +1597,75 @@ input[type='radio'] {
 .contact {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   background-color: rgb(153, 150, 150);
   width: 100%;
+  justify-content: space-around;
+  padding: 1.2rem;
+  gap: 1rem;
 }
 
 .contact ul {
-  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 #subcribe {
   border: 2px solid rgb(153, 150, 150);
   border-radius: 10px 0px 0px 10px;
   padding-left: 3%;
-  height: 5vh;
-  width: 12vw;
+  height: 35px;
+  width: 100%;
   position: relative;
   outline: none;
 }
 .label {
   position: absolute;
   font-size: 0.85rem !important;
-  height: 5vh;
-  padding-left: 0.3%;
-  padding-top: 0.3%;
+  height: 35px;
+  padding: 10px;
+  padding-left: 0.4%;
+  padding-right: 0.8%;
+  padding-top: 1%;
   border-radius: 0px 10px 10px 0px;
   background: #5282d4;
   background-image: linear-gradient(to bottom, #5282d4, #28667d);
   cursor: pointer;
 }
 
+.contact ul li {
+  position: relative;
+}
+
+
+.newsletter{
+  padding-right: 75px;
+}
+
 .contact ul li,
 a {
   color: black;
   list-style: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: large;
   margin: 5px;
 }
+.contact .email {
+  width: 100%;
+}
+.contact .email #subcribe {
+  width: 80%;
+}
+.contact .email label {
+  width: 20%;
+}
 .heading {
   list-style: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: bolder;
   padding-bottom: 2%;
+  padding-right: 18px;
 }
 
 .footer {
@@ -1570,7 +1678,6 @@ a {
 }
 
 .header {
-  /*   height: 60px; */
   min-height: 60px;
   color: white;
   background-color: rgb(48, 46, 46);
@@ -1582,13 +1689,33 @@ a {
   flex-direction: row;
   list-style-type: none;
   justify-content: space-between;
-  height: 55px;
+  padding: 1rem;
+  margin: 0;
+  align-items: center;
 }
 
 .header ul li {
   margin-right: 20px;
 }
+.header .logo {
+  display: inline-flex;
+  font-weight: bold;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  align-content: center;
+}
 
+.header .login a {
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  align-items: center;
+}
+.header .logo,
+.header .login a {
+  font-size: 24px;
+}
 .new-nav {
   /*   height: 50px; */
   min-height: 50px;
@@ -1601,14 +1728,15 @@ a {
 }
 
 .new-nav ul {
-  margin-left: 40px;
-  margin-right: 40px;
+  /* margin-left: 40px; */
+  /* margin-right: 40px; */
   /* margin-top: 17px; */
   display: flex;
-  /*   flex-direction: row; */
-  flex-flow: row wrap;
+  margin: 0 auto;
+  padding: 0;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .icons_ {
@@ -1623,7 +1751,7 @@ a {
 
 .new-nav li a {
   font-weight: 300;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #000;
 }
 
@@ -1633,7 +1761,7 @@ a {
 
 .contain {
   height: 300px;
-  width: 690px;
+  width: 100%;
   color: black;
   margin-top: 50px;
   margin-left: 50px;
@@ -1644,7 +1772,7 @@ a {
 }
 
 .contain div {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 30px;
   text-align: center;
 }
@@ -1655,7 +1783,7 @@ a {
 
 #bold {
   font-size: 1cm;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bolder;
 }
 
@@ -1691,6 +1819,7 @@ a {
 }
 
 .container {
+  gap: 2rem;
   display: flex;
   margin-left: 20px;
   width: 100%;
@@ -1717,9 +1846,35 @@ a {
 .col-sm-10 {
   width: 300px;
 }
-
+#libraryForm {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+  width: 100%;
+}
+#libraryForm .form-check-input {
+  width: 100%;
+  position: relative;
+}
+#libraryForm label {
+  width: 100%;
+  padding: 0 1rem;
+  position: relative;
+}
+#libraryForm input,
+select {
+  width: 80%;
+  border-radius: 5px;
+  padding: 0 1rem;
+  height: 3.5rem;
+  margin: 1rem 0;
+  position: relative;
+}
+#libraryForm .btn-primary {
+  margin: 0;
+}
 .form-group {
-  width: 350px;
+  width: 100%;
 }
 
 .issue {
@@ -1727,23 +1882,29 @@ a {
   font-size: 25px;
   padding-left: 5px;
 }
-
-#libraryForm {
-  width: 360px;
+.hero-left {
+  flex: 1;
+  width: 100%;
 }
-
-.right {
-  width: 790px;
+.hero-right {
+  width: 100%;
   padding-left: 55px;
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  padding: 0;
+  margin: 0;
   padding-right: 0px;
   justify-items: right;
+  flex-direction: column;
 }
 
+/*
 #table {
   width: 92%;
-  /* padding: 0; */
+  padding: 0; 
 }
-
+*/
 /*scrolling effect starts from here*/
 
 #scrollpath {
@@ -1766,7 +1927,7 @@ a {
 }
 
 #progressbar:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1777,7 +1938,7 @@ a {
 }
 
 #progressbar:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1811,18 +1972,97 @@ a {
   opacity: 1;
 }
 
+.nav-item a{
+text-decoration: none;
+}
+.faq-heading{
+  text-align: center;
+  padding: 20px 60px;
+  color: #fff;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+background-color: #F3D094;
+height: 700px;
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+  color: #444;
+  cursor: pointer;
+  padding: 20px 20px;
+  width: 60%;
+  font-size: 2rem;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq .faq-body{
+  opacity: 0;
+  padding: 0 1rem;
+  
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+ 
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+.faq .faq-body.active{
+  opacity: 1;
+  padding: 1rem;
+  
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
+
+.faq-body{
+ margin: auto;
+ width: 60%; 
+ padding: 0px 18px;
+ background-color: white;
+ display: none;
+ overflow: hidden;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+  background-color: #f5dbdb;
+}
+/* Style the faq-page panel. Note: hidden by default */
+
+.faq-page:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+}
+
 .nav-item a {
   text-decoration: none;
 }
 
 .book-img ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 1000px) {
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-right: 0;
+    margin: 0 auto;
+    padding-left: 0;
   }
 
   .left {
@@ -1830,11 +2070,11 @@ a {
   }
 
   #table {
-    width: 80vw;
+    width: 100%;
   }
 
   .contain {
-    width: 80vw;
+    width: 100%;
   }
 
   .member {
@@ -1846,9 +2086,6 @@ a {
     width: 40%;
   }
 
-  .member .photo {
-    width: 60%;
-  }
 
   .photo img {
     width: 60%;
@@ -1857,17 +2094,21 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
-  .header ul {
-    padding-left: 15px;
-  }
+
   .header ul li {
     margin-right: 0;
   }
 
-  .right {
+
+  .hero-right {
     padding-left: 0;
   }
 
+  .books1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
   .books {
     margin-left: 0px;
     margin-right: 40px;
@@ -1901,10 +2142,17 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .header .logo,
+  .header .login a {
+    font-size: 1rem;
+  }
   .logo-img {
     margin-left: 5px;
   }
-
+  .new-nav ul {
+    flex-direction: column;
+  }
   .new-nav ul {
     margin-left: 0px;
     margin-right: 0px;
@@ -1927,6 +2175,9 @@ a {
     width: 100%;
   }
 
+  .list {
+    flex-wrap: wrap;
+  }
   .list li {
     width: 300px;
     height: 100px;
@@ -1939,3 +2190,4 @@ a {
     margin: 20px 0px;
   }
 }
+

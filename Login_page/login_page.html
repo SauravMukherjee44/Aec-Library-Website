@@ -5,6 +5,7 @@
 
 
 <!DOCTYPE html>
+<body style="background-color:powderblue;">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,9 +16,10 @@
     
 		<link rel="stylesheet" type="text/css" href="login_style.css" />
 		<link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon">
-</head>
-<body>
-  <h2 style="color: white;">AEC Library</h2>
+	</head>
+	<body>
+		<h2 style="color: white;">AEC Library</h2>
+		
 	<div class="container" id="container">
 		<div class="form-container sign-up-container">
 			<form action="#">
@@ -34,31 +36,84 @@
 			</form>
 		</div>
 		<div class="form-container sign-in-container">
-			<form action="#">
+			<form action="#" onsubmit="return validate()">
 				<h1>Sign in</h1>
 				<span>or use your account</span>
-				<input class="input__tag" placeholder="Phone number" />
-				<input class="input__tag" type="password" placeholder="Password" />
-			
+				<input class="input__tag" placeholder="Phone number" id="phone"  required="" />
+				<span id="mobileno" class="text-danger font-weight-bold"> </span>
+				<input class="input__tag" type="password" placeholder="Password" id="password" required="" />
+				<span id="pass" class="text-danger font-weight-bold"> </span>
 				<a href="#">Forgot your password?</a>
-				<button><a href="bjjsearch.html">Sign In</a></button>
+				<button onclick=" return validate()"><a href="../index.html">Sign In</a></button>
 			    
 			</form>
+			<p class="signup_link">
+          			Don't Have an account? <a href="../sign up page/index.html"><strong>Sign up</strong></a>
+        	</p>
 		</div>
 		<div class="overlay-container">
 			<div class="overlay">
 				<div class="overlay-panel overlay-right">
-					<h1 class="animate1">Welcome Back!</h1>
-					<p class="animate2">To keep connected with us please login with your personal info</p>
+					<h1 class="animate1" >Welcome  Back!</h1>
+					<br>
+					<p class="animate2" >To keep connected with us please login with your personal info</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	<a href="../index.html"><h4 style="color: black; background-color: lightskyblue; border-radius: 10px; padding: 10px;">◀ Go back to Home</h4></a>
 
 	<footer>
 		<p>
 		</p>
 	</footer>
 </body>
+<script type="text/javascript">
+
+function validate(){
+
+var mobileNumber = document.getElementById('phone').value;
+var pass = document.getElementById('password').value;
+var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+            
+	        if(mobileNumber == ""){
+					document.getElementById('mobileno').innerHTML =" ** Please fill the Mobile Number field";
+					return false;
+				}
+			if(isNaN(mobileNumber)){
+				document.getElementById('mobileno').innerHTML =" ** User must write digits only not characters";
+				return false;
+			}
+			if(mobileNumber.length!=10){
+				document.getElementById('mobileno').innerHTML =" ** Mobile Number must be 10 digits only";
+				return false;
+			}
+
+		
+
+
+			if(pass.length <7) {
+				document.getElementById('pass').innerHTML =" ** Passwords lenght must be greater than equal to 8";
+				return false;	
+			}
+
+			if(re.test(pass)){
+
+			}else{
+				document.getElementById('pass').innerHTML =" ** min 8 letter password, with at least a symbol, upper and lower case letters and a number ";
+				return false;
+
+			}
+
+			
+
+
+
+		}
+
+</script>
+
+
 <script src = "login_script.js"></script>
 </html>
