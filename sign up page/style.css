@@ -8,6 +8,7 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -19,6 +20,7 @@ body {
   /* color: #fff; */
 }
 .container {
+  margin: 10px;
   max-width: 700px;
   width: 100%;
   background-color: #fff;
@@ -37,7 +39,8 @@ body {
   left: 0;
   bottom: 0;
   height: 3px;
-  width: 30px;
+  /* width: 30px; */
+  width: 98px;
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
@@ -105,6 +108,7 @@ form input[type='radio'] {
   display: none;
 }
 form .button {
+
   height: 45px;
   margin: 35px 0;
 }
