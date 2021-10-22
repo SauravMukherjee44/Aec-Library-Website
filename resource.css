@@ -169,7 +169,15 @@ section h5 {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
+/* NCERT */
+#ncert{
+  max-width: 1300px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
 /*STUDY MATERIALS*/
 .study-container {
   max-width: 1300px;
@@ -243,6 +251,8 @@ section h5 {
     height: 420px;
   }
 }
+
+
 
 @media (min-width: 800px) {
   iframe {
