@@ -120,6 +120,14 @@ body {
 
 .submit-btn {
   margin: 70px 0 0 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 8px 25px;
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
 }
 
 .login-box a:hover {
