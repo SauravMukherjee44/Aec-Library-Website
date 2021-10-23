@@ -2213,4 +2213,39 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+#change1{
+  height: 200px;
+  -moz-animation: blink normal 4s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 4s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 4s infinite ease-in-out; /* IE */
+    animation: fade normal 4s infinite ease-in-out;
+}
+#change2{
+  height: 200px;
+  -moz-animation: blink normal 4s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 4s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 4s infinite ease-in-out; /* IE */
+    animation: fade normal 4s infinite ease-in-out;
+}
+#change3{
+  height: 200px;
+  -moz-animation: blink normal 4s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 4s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 4s infinite ease-in-out; /* IE */
+    animation: fade normal 4s infinite ease-in-out;
+}
+#change4{
+  height: 200px;
+  -moz-animation: blink normal 4s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 4s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 4s infinite ease-in-out; /* IE */
+    animation: fade normal 4s infinite ease-in-out;
+}
+@keyframes fade
+{
+  0% {opacity:1}
+  25%{opacity:0.66}
+  50% {opacity:0.33}
+  100% {opacity:0}
+}
 
