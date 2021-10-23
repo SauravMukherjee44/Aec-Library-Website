@@ -10,7 +10,7 @@ Come forward to donate the books !!!
 📌<a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit our website 🚀</a>
 
 
-📌<a href="https://discord.com/invite/sqFRzrj7f3" target="_blank">Join Us On Discord ⚡</a>
+📌<a href="https://codeincommunity.bio.link/" target="_blank">Join our Tech Community ⚡</a>
 </h2>
 
 
