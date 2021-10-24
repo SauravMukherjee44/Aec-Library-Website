@@ -350,28 +350,28 @@
       read </p>
       <div class="gallery">
         <a target="_blank" href="Blog/img2.jpg">
-          <img src="Blog/img2.jpg" alt="Cinque Terre" width="600" height="400">
+          <img id ="change1" src="Blog/img2.jpg" alt="Cinque Terre" width="600" height="400">
         </a>
         <div class="desc">Add a description of the image here</div>
       </div>
       
       <div class="gallery">
         <a target="_blank" href="Blog/img5.jpg">
-          <img src="Blog/img5.jpg" alt="Forest">
+          <img id ="change2" src="Blog/img5.jpg" alt="Forest">
         </a>
         <div class="desc">Add a description of the image here</div>
       </div>
       
       <div class="gallery">
         <a target="_blank" href="Blog/img3.jpg">
-          <img src="Blog/img3.jpg" alt="Northern Lights" width="600" height="400">
+          <img id ="change3" src="Blog/img3.jpg" alt="Northern Lights" width="600" height="400">
         </a>
         <div class="desc">Add a description of the image here</div>
       </div>
       
       <div class="gallery">
         <a target="_blank" href="Blog/img4.jpg">
-          <img src="Blog/img4.jpg" alt="Mountains" width="600" height="400">
+          <img id ="change4" src="Blog/img4.jpg" alt="Mountains" width="600" height="400">
         </a>
         <div class="desc">Add a description of the image here</div>
       </div>
@@ -648,6 +648,42 @@
   }
   
   </script> 
+  <script>
+    count1 = 0;
+        urlarray1 = ["Blog/img1.jpg","Blog/img2.jpg","Blog/img3.jpg","Blog/img5.jpg","Blog/img2.jpg"]
+        setInterval(function(){
+          document.getElementById("change1").src = urlarray1[count1%5];
+          count1++;
+
+      },4000);
+
+      count2 = 0;
+        urlarray2 = ["Blog/img2.jpg","Blog/img6.jpg","Blog/img7.jpg","Blog/img8.jpg","Blog/img2.jpg"]
+        setInterval(function(){
+          document.getElementById("change2").src = urlarray2[count2%5];
+          count2++;
+
+      },4000);
+
+      count3 = 0;
+        urlarray3 = ["Blog/img3.jpg","Blog/img9.jpg","Blog/img10.jfif","Blog/img7.jpg","Blog/img3.jpg"]
+        setInterval(function(){
+          document.getElementById("change3").src = urlarray3[count3%5];
+          count3++;
+
+      },4000);
+
+      
+  </script>
+  <script>
+    count4 = 0;
+        urlarray4 = ["Blog/img5.jpg","Blog/img4.jpg","Blog/img11.jpg","Blog/img12.jfif","Blog/img9.jfif"]
+        setInterval(function(){
+          document.getElementById("change4").src = urlarray4[count4%5];
+          count4++;
+
+      },4000);
+  </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
