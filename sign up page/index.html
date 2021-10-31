@@ -95,7 +95,20 @@
             </div>
             <div class="input-box">
               <span class="details">Password</span>
-              <input type="password" placeholder="Enter your password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" id="password" name="password" />
+              <input type="password" placeholder="Enter your password" id="myInput" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" id="password" name="password" />
+              <input type="checkbox" onclick="myFunction()">Show Password
+
+              <script>
+              function myFunction() {
+              var x = document.getElementById("myInput");
+              if (x.type === "password") {
+                x.type = "text";
+              } 
+              else {
+                      x.type = "password";
+                   }                               
+                                         }
+              </script>            
             </div>
             <div class="input-box">
               <span class="details">Confirm Password</span>
