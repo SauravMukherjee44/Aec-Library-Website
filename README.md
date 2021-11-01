@@ -5,7 +5,7 @@ This website helps you to find the books easily without any cost and the best pa
 Come forward to donate the books !!!  
 
 <h4>[ In development Phase ] 
-[ Hacktoberfest-Accepted ] </h4>
+
 <h2> 
 📌<a href="https://sauravmukherjee44.github.io/Aec-Library-Website/" target="_blank">Visit our website 🚀</a>
 
@@ -26,9 +26,6 @@ Come forward to donate the books !!!
 
 
 # Contribution is fun! 🧡
-
-![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/35d1c25fa8a5e856c0b03e79ac243d6c559d0710/images/Hacktoberfest%20-%20Accepted.png)
-
 
 ## 📌 Tech Stack
 
