@@ -81,7 +81,7 @@ If you want to contact me, you can reach me through below handles.
    <h1 align="center">CodeIN Community</h1>
       <img width="10%" align="center"   src="https://github.com/SauravMukherjee44/SauravMukherjee44/blob/01033044396cd45db3731e6ac37284dc5386e2cd/CodeIN%20Logo.png" >
  
-I have started a Community named CodeIN Community [Community of Coding Enthusiasts] Where we share Resources, Roadmaps to learn different technologies and share opportunities related to different tech programs. Also, We organize Events on different technologies to help people to get started with these technologies.
+I have started a Community named CodeIN Community (Community of Coding Enthusiasts) where we share resources, roadmaps to learn different technologies and share opportunities related to different tech-related programs. Also, we organize events on different technologies to help people to get started with these technologies as well.
 
   <span> <h2>Join the Community on Discord ⚡</h2>
 <a  href="https://discord.gg/hWwbgP4dz9"><img alt=" Discord" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a>
@@ -173,11 +173,11 @@ Now you are ready to help the project by opening a pull request means you now te
 
 <p align="center">  <img  src="https://i.imgur.com/aGaqAD5.png">  </p>
 
-Remember your upstream base branch should be main and source should be your feature branch. Click on create pull request and add a name to your pull request. You can also describe your feature.
+Remember your upstream base branch should be `main` and source should be your feature branch. Click on `Create Pull Request` and add a name to your pull request. You can also describe your feature there.
 
 Congratulations! You've already made your first contribution.🥳
 
-Good Luck for your journey
+Good Luck for your journey!
 
 
 
