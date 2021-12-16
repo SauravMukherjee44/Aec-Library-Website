@@ -125,6 +125,7 @@ let libraryForm = document.getElementById("libraryForm");
 libraryForm.addEventListener("submit", libraryFormSubmit);
 
 function libraryFormSubmit(e) {
+  e.preventDefault();
   console.log("YOu have submitted library form");
   let date = document.getElementById("issueDate").value;
   let name = document.getElementById("bookName").value;
@@ -134,11 +135,11 @@ function libraryFormSubmit(e) {
     window.alert("Field is Empty!Please Enter Something");
   } else {
      // Show error to the user
-     display.show("danger", "Sorry you cannot add this book");
+     let display = new Display();
+
+    //  display.show("danger", "Sorry you cannot add this book");
      let book = new Book(date, name, author, category);
      console.log(book);
- 
-     let display = new Display();
  
      if (display.validate(book)) {
        display.add(book);
@@ -149,7 +150,6 @@ function libraryFormSubmit(e) {
        display.show("danger", "Sorry you cannot add this book");
      }
    }
-  e.preventDefault();
 }
 
 // Add submit event listener to searchForm
