@@ -1757,7 +1757,11 @@ a {
 }
 
 .new-nav li a:hover {
-  color: rgb(94, 80, 80);
+  color: #f3d094;
+  background-color: #000;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: all .2s ease-in;
 }
 
 .contain {
@@ -1808,10 +1812,25 @@ a {
   font-family: sans-serif;
   font-size: 0.5cm;
 }
-
-.login a:hover {
-  color: grey;
+.login{
+  position: relative;
+  color: #F3D094;
 }
+.login a:after {
+  content: "";
+  position: absolute;
+  background-color: wheat;
+  height: 3px;
+  width: 0;
+  left: 22px;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.login a:hover::after{
+  width: 75%;
+}
+
 
 .container div {
   /* border: 2px solid white; */
