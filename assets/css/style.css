@@ -162,6 +162,8 @@ label {
   background-color: rgba(0, 0, 0, 0.9);
   box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
   z-index: 1;
+  position: fixed;
+  height: 100%;
 }
 
 .bg-info {
@@ -1715,7 +1717,7 @@ a {
 }
 .header .logo,
 .header .login a {
-  font-size: 24px;
+  font-size: 17px;
 }
 .new-nav {
   /*   height: 50px; */
