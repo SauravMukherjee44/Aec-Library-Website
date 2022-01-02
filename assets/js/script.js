@@ -85,12 +85,24 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); color: white; font-weight: 900; f
                         <td>${book.name}</td>
                         <td>${book.author}</td>
                         <td>${book.type}</td>
-                        <td><button style="margin-top: 0px;" class="btn btn-success" id="edit" onclick="editfunction('${book.date}','${book.name}','${book.author}','${book.type}','${countBooks}')">Edit</button>
+                        <td><button style="margin-top: 0px;" class="btn btn-success" id="edit" onclick="editfunction('${book.name}','${book.author}','${book.type}','${countBooks}','${book.date}')">Edit</button>
                         </td?
                         <td><button style="margin-top: 0px" class="btn btn-danger" id="edit" onclick="deletefunction('${countBooks}')">Delete</button>
                         </td>
                     </tr>`;
   tableBody.innerHTML += uiString;
+};
+
+
+Display.prototype.edit = function (book) {
+  console.log("Adding to UI");
+  tableBody = document.getElementById("tableBody");
+  const info=(document.getElementById(countBooks).childNodes);
+  info[1].textContent=book.date;
+  info[3].textContent=book.name;
+  info[5].textContent=book.author;
+  info[7].textContent=book.type;
+
 };
 
 // Implement the clear function
@@ -142,9 +154,19 @@ function libraryFormSubmit(e) {
      console.log(book);
  
      if (display.validate(book)) {
-       display.add(book);
+       let edit =document.getElementById("addBook").classList.contains("edit");
+       if(edit){
+         display.edit(book);
+         console.log("I am in edit");
+         document.getElementById("addBook").textContent="Add Book";
+        document.getElementById("addBook").classList.remove("edit");
+       }
+       else{
+        display.add(book);
+       }
+       
        display.clear();
-       display.show("success", "Your book has been successfully added");
+      //  display.show("success", "Your book has been successfully added");
      } else {
        // Show error to the user
        display.show("danger", "Sorry you cannot add this book");
@@ -190,11 +212,16 @@ function searchBookTerms(searchTerms, { ...searchAttrs }) {
 }
 
 //edit function
-function editfunction(pbookname, pauthorname, ptype, pbookid) {
+function editfunction(pbookname, pauthorname, ptype, pbookid,pbookdate) {
+  
+  document.getElementById("issueDate").value=pbookdate;
   document.getElementById("bookName").value = pbookname;
+  document.getElementById("addBook").textContent="Edit";
+  document.getElementById("addBook").classList.add("edit");
   document.getElementById("author").value = pauthorname;
-  document.getElementById(ptype).checked = true;
-  document.getElementById(pbookid).style.display = "none";
+  document.getElementById("category").value = ptype;
+  // document.getElementById(ptype).checked = true;
+  // document.getElementById(pbookid).style.display = "none";
 }
 
 //Delete function
