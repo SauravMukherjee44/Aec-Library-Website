@@ -47,11 +47,11 @@ nav.navbar {
 #table {
   border-radius: 20px;
 
-  background: linear-gradient(to right, #f2c782fa, #cdaa7e, #d3c8a8);
+  background: linear-gradient(to right, #121213fa);
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 10px;
-  border: 3px solid #efe088;
+  border: 3px solid #f1f52b;
   box-shadow: 2px 2px 5px 2px #ddbcbc;
 }
 
@@ -59,7 +59,7 @@ nav.navbar {
 
   vertical-align: bottom;
   border: none;
-
+  font-family: 'Courier New', Courier, monospace;
   color: white;
 
 
@@ -68,6 +68,11 @@ nav.navbar {
 
   color: black;
 
+
+}
+.hero-right.contain{
+  background-color: #000;
+  
 
 }
 
@@ -219,7 +224,7 @@ html {
 }
 
 #issueDate {
-  border-radius: 15px;
+  border-radius: 20px;
   height: 30px;
 }
 
@@ -247,19 +252,21 @@ html {
   transition: border 0.5s ease-out;
   /* transition: transform 0.5s ease-out; */
 }
+.btn :hover{
+  color: black;
+  cursor: pointer;
+}
+::placeholder{
+  font-weight: 800;
+  color: black;
+}
 
 .btn {
   width: 150px;
   height: 41px;
   border: none;
   outline: none;
-  color: #fff;
-  background: #5282d4;
-  background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
-  background-image: -moz-linear-gradient(top, #5282d4, #28667d);
-  background-image: -ms-linear-gradient(top, #5282d4, #28667d);
-  background-image: -o-linear-gradient(top, #5282d4, #28667d);
-  background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  color: rgb(8, 8, 8);
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -279,19 +286,7 @@ html {
 
 .btn:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
+  
   top: -2px;
   left: -2px;
   background-size: 400%;
@@ -299,7 +294,7 @@ html {
   filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
+  
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
   border-radius: 10px;
@@ -332,12 +327,8 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #5282d4;
-  background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
-  background-image: -moz-linear-gradient(top, #5282d4, #28667d);
-  background-image: -ms-linear-gradient(top, #5282d4, #28667d);
-  background-image: -o-linear-gradient(top, #5282d4, #28667d);
-  background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  background: #ec9f10;
+  color: red;
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -614,26 +605,20 @@ strong {
 
 /* scroll bar design */
 /* width */
-::-webkit-scrollbar {
-  width: 9px;
+body::-webkit-scrollbar {
+  width: 18px;               /* width of the entire scrollbar */
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgb(77, 32, 32);
+body::-webkit-scrollbar-track {
+  background: rgb(95, 95, 94);        /* color of the tracking area */
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #c68b59;
-  border-radius: 10px;
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(235, 252, 7);    /* color of the scroll thumb */
+  border-radius: 15px;       /* roundness of the scroll thumb */
+ 
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #865439;
-  border: solid 2px rgb(41, 2, 10);
-}
 
 /* scroll bar end */
 /* preloader */
@@ -1086,7 +1071,7 @@ strong {
 .book {
 
  
-  background-color: #f3d094;
+  background-color: #ec9f10;
   padding: 2rem;
 }
 
@@ -1187,7 +1172,7 @@ strong {
   padding:10px 10px;
 
   text-decoration: none;
-  background: #00A9D4;
+  background: #1b0874;
   color: #fff;
  
   cursor: pointer;
@@ -1196,6 +1181,7 @@ strong {
   border-radius: 5px;
   font-size: 1rem;
   transition: 0.5s;
+  border-color: #00729D;
 }
 .bookbtn:hover {
   text-decoration: none;
@@ -1358,7 +1344,7 @@ strong {
 
 .blogs {
   height: 450px;
-  background-color: #f1dab3;
+  background-color: #ec9f10;
 }
 
 .blogs h1,
@@ -1550,31 +1536,6 @@ p {
   }
 }
 
-/* scroll bar design */
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgb(77, 32, 32);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #c68b59;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #c68b59;
-  border: solid 2px rgb(41, 2, 10);
-}
-
-/* scroll bar end */
-
 @media only screen and (max-width: 1100px) {
   .login-box {
     width: 700px;
@@ -1720,7 +1681,7 @@ a {
 .new-nav {
   /*   height: 50px; */
   min-height: 50px;
-  background-color: #f3d094;
+  background-color: #ec9f10;
   align-items: center;
 }
 
@@ -1757,9 +1718,8 @@ a {
 }
 
 .new-nav li a:hover {
-  color: #f3d094;
+  color: #f33607;
   background-color: #000;
-  border-radius: 10px;
   font-weight: 800;
   transition: all .2s ease-in;
 }
@@ -1767,19 +1727,23 @@ a {
 .contain {
   height: 300px;
   width: 100%;
-  color: black;
+  color: rgb(252, 248, 248);
   margin-top: 50px;
   margin-left: 50px;
-  background-color: white;
+  background-color: rgb(7, 7, 7);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
+  opacity: 1;
+  
 }
 
 .contain div {
   font-family: "Source Sans Pro", sans-serif;
   margin: 30px;
   text-align: center;
+  border-color: rgb(235, 252, 7);
+  border-radius: 2px;
 }
 
 .line {
@@ -1814,12 +1778,12 @@ a {
 }
 .login{
   position: relative;
-  color: #F3D094;
+  color: #ddf503;
 }
 .login a:after {
   content: "";
   position: absolute;
-  background-color: wheat;
+  background-color: rgb(245, 229, 6);
   height: 3px;
   width: 0;
   left: 22px;
@@ -1846,6 +1810,8 @@ a {
   margin-right: 0;
   padding-left: 30px;
   margin-left: 60px;
+  border: rgb(235, 252, 7);
+  border-radius: 2px;
 }
 
 .col-sm-10 input,
@@ -1928,46 +1894,8 @@ select {
 */
 /*scrolling effect starts from here*/
 
-#scrollpath {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.05);
-}
 
-#progressbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100%;
-  background: linear-gradient(to top, #008aff, #00ffe7);
-  animation: animate 5s linear infinite;
-}
 
-#progressbar:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, #008aff, #00ffe7);
-  filter: blur(10px);
-}
-
-#progressbar:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, #008aff, #00ffe7);
-  filter: blur(30px);
-}
 
 @keyframes animate {
   0%,
@@ -1989,7 +1917,8 @@ select {
 }
 
 .nav-item :hover {
-  background-color: rgb(247, 191, 9);
+  background-color: rgb(5, 5, 5);
+  color: red;
   opacity: 1;
 }
 
@@ -2005,7 +1934,7 @@ text-decoration: none;
 display: flex;
 justify-content: center;
 flex-direction: column;
-background-color: #F3D094;
+background-color: #ec9f10;
 height: 700px;
 }
 
