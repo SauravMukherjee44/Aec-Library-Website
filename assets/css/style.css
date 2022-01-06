@@ -1845,12 +1845,13 @@ a {
   width: 100%;
   margin-right: 0;
   padding-left: 30px;
+  margin-left: 60px;
 }
 
 .col-sm-10 input,
 .form-check-input1,
 .form-check-input {
-  width: 100%;
+  width: 80%;
   padding: 3%;
   border-radius: 5px;
   outline: none;
@@ -1873,7 +1874,7 @@ a {
   width: 100%;
 }
 #libraryForm .form-check-input {
-  width: 100%;
+  width: 80%;
   position: relative;
 }
 #libraryForm label {
