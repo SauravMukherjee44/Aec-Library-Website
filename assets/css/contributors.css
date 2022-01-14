@@ -107,7 +107,9 @@ body{
     align-items: center;
     justify-content: center;
     
-    margin-right: 20px;
+    margin-right: 60px;
+    margin-left: 20px;
+   
     
   }
   .members{
@@ -123,7 +125,21 @@ body{
   }
   .member-name{
       text-align: center;
+      border: 2px solid grey;
+      border-radius: 10px;
+      width: 128px;
+      background: transparent;
+     transition: all 0.6s;
+     cursor: pointer;
+      
   }
+  .member-name:hover{
+    background: rgb(90, 90, 90);
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+   border: 2px solid rgb(90,90,90);
+  }
+ 
   .member-name a{
       text-decoration: none;
       color: white;
@@ -131,23 +147,9 @@ body{
       font-size: 15px;
       text-transform: capitalize;
       transition: all 0.5s;
+     
   }
-  .member-name a::after{
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: relative;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
- .member-name a:hover:after{
-    width: 100%;
-    left: 0; 
-    
- }
+ 
   .member-pic img{
    height: 108px;
    width: 108px;
