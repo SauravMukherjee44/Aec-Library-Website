@@ -16,5 +16,5 @@ jobs:
         with:
           token: '${{ secrets.GITHUB_TOKEN }}'
           author: '${{github.actor}}'
-          repo: niloysikdar/Kahani (Replace this with your own GitHub username and Repo name)
+          repo: SauravMukherjee44/Aec-Library-Website
           maxIssue: 2
