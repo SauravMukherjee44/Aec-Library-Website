@@ -28,7 +28,48 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap');
+	  body{
+        padding:10% 3% 10% 3%;
+     
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
   </style>
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+     
+
+    <div class="mode">
+        Dark mode:            
+        <span class="change">OFF</span>
+    </div>
+     
+    <div>
+       
+        <h3>Light and Dark Mode</h3>
+         
+        
+         
+<p>
+            Click on the switch on top-right
+            to move to dark mode.
+        </p>
+ 
+    </div>
+     
+    <script>
+        $( ".change" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+                $( "body" ).removeClass( "dark" );
+                $( ".change" ).text( "OFF" );
+            } else {
+                $( "body" ).addClass( "dark" );
+                $( ".change" ).text( "ON" );
+            }
+        });
+    </script>
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>AEC Library</title>
  
