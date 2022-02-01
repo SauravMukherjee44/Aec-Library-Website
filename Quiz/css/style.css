@@ -1,48 +1,7 @@
-:root {
-    font-size: 62.5%;
-  }
-  
-  * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    margin-bottom: 1rem;
-  }
-  
-  h1 {
-    font-size: 5.4rem;
-    color: #56a5eb;
-    margin-bottom: 5rem;
-  }
-  
-  h1 > span {
-    font-size: 2.4rem;
-    font-weight: 500;
-  }
-  
-  h2 {
-    font-size: 4.2rem;
-    margin-bottom: 4rem;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 2.8rem;
-    font-weight: 500;
-  }
   
   /* These will be used for all pages  */
   
-  .container {
+  .quiz-container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -52,7 +11,7 @@
     margin: 0 auto;
     padding: 2rem;
   }
-  .container::before{
+  .quiz-container::before{
     content: "";
     background:url("/Quiz/bg.jpg") no-repeat center center/cover;
     position: absolute;
@@ -64,7 +23,7 @@
     width: 100vw;
   }
 
-  .container > * {
+  .quiz-container > * {
     width: 100%;
   }
   
@@ -138,9 +97,4 @@
   box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
-}
-
-/* For end.html  */
-#end > a{
-  text-decoration: none;
 }

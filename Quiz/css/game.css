@@ -1,4 +1,31 @@
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
 
+h1 {
+  font-size: 5.4rem;
+  color: #56a5eb;
+  margin-bottom: 5rem;
+}
+
+h1 > span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -67,7 +94,7 @@
   }
   
   /* LOADER */
-  #loader {
+  #quizLoader {
     border: 1.6rem solid white;
     border-radius: 50%;
     border-top: 1.6rem solid #56a5eb;
