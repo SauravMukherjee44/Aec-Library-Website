@@ -132,7 +132,7 @@ video {
 }
 
 #study {
-  margin-bottom: 40px;
+  margin-bottom: none !important;
 }
 
 img {
@@ -233,13 +233,19 @@ h3.hover-underline-animation {
 }
 
 /*STUDY MATERIALS*/
-.study-container {
+/* .study-container { */
+#study{
   max-width: 1300px;
-  margin: 20px auto;
+  z-index: 10000;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: none !important;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("assets/images/Background1.jpg");
+  background-color: white;
 }
 
 .study-card {
