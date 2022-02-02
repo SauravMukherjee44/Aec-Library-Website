@@ -43,24 +43,36 @@ a {
 
 body {
   margin: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 header h1 {
   text-align: center;
   font-size: 40px;
   color: white;
+  opacity: 0.6;
+  font-weight: bolder;
+  font-family: monospace;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px #fff;
 }
 
 header {
   padding: 40px;
   background: url("images/10.jpg") center;
   background-color: rgb(17, 124, 143);
+  text-align: center;
 }
 
 nav {
   background-color: #333;
   overflow: hidden;
+  border-bottom: 1px solid black;
+  border-top: 0.1px solid black;
+  background-image:linear-gradient(rgba(0,0,0,.52),rgba(0,0,0,0.52)), url('assets/images/Navbar_background.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 a {
@@ -75,12 +87,16 @@ a {
 h3:hover {
   position: relative;
   top: -3px;
-  box-shadow: 0px 4px 5px 0px #706f6f;
 }
 
 nav a:hover {
-  color: white;
-  background-color: rgb(32, 32, 32);
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgb(78, 74, 74);
+  color: rgb(233, 221, 221);
+  text-shadow: 0px 0px 14px rgb(233, 221, 221);
+  transition-delay: 0.2s;
+  transition-timing-function: ease;
 }
 
 nav a {
@@ -88,21 +104,27 @@ nav a {
   padding: 20px;
   text-align: center;
   float: left;
-  color: white;
+  background-color: rgb(233, 221, 221);
+  color: rgb(78, 74, 74);
+  border-radius: 29px;
   margin-left: 1rem;
+  margin: 10px;
+  padding:9px ;
 }
 
 main {
   background-color: white;
   text-align: center;
+  background: url("assets/images/Resource_Background.jpg");
 }
 
 h2 {
   padding: 20px;
 }
 
-section:nth-child(even) {
-  background-color: rgb(241, 241, 241);
+/* section:nth-child(even) { */
+section {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("assets/images/Background1.jpg");
 }
 
 video {
@@ -121,11 +143,11 @@ section h5 {
   margin: 40px;
 }
 
-
 .hover-underline-animation {
   display: inline-block;
   position: relative;
   color: #0087ca;
+  text-shadow: 0px 0px 12px #0087ca;
 }
 
 .hover-underline-animation:after {
@@ -152,27 +174,58 @@ section h5 {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  border-radius: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
-
+#courses video {
+  border-radius: 20px;
+  padding: none !important;
+}
+#courses video:hover {
+  transform: scaleY(1.019);
+}
 /* YouTube Recommendation */
 #yt {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  border-radius: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 5px;
 }
-
+iframe {
+  border-radius: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding: 4px;
+}
+iframe:hover {
+  transform: scaleY(1.01);
+}
+h3.hover-underline-animation {
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
 /* QUESTION BANK */
 #qb {
   display: flex;
   text-align: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 8px;
 }
 /* NCERT */
-#ncert{
-  max-width: 1300px;
-  margin: 20px auto;
+#ncert {
+  max-width: 1340px;
+  border-radius: 8px;
+  margin: 20px;
+  margin-left: 6px !important;
+  margin-right: 5px !important;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -191,7 +244,7 @@ section h5 {
 
 .study-card {
   margin: 30px 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .study-card .study-base {
@@ -207,12 +260,30 @@ section h5 {
 .study-card h3 {
   background: white;
   color: #333;
+  border-radius: 10px;
+  margin-top: 14px;
+  margin-left: 4px;
+}
+.study-card h3:hover{
+  background-color: rgb(0, 86, 179);
+  transform: none;
+  top: 0px;
+  font-weight: bold;
+  box-shadow: none;
+  transition: .35s;
+
+}
+.study-card h3:hover >a{
+  color: white;
+  text-decoration: none;
 }
 
 .study-card .study-base img:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
-
+#study{
+  background: none;
+}
 /*!STUDY MATERIALS*/
 @media (min-width: 650px) {
   nav a {
@@ -252,8 +323,6 @@ section h5 {
     height: 420px;
   }
 }
-
-
 
 @media (min-width: 800px) {
   iframe {
@@ -314,13 +383,12 @@ footer .content .topic {
   font-weight: 600;
   color: #fff;
   margin-bottom: 16px;
-  font-family: 'Times New Roman', Times, serif;
-
+  font-family: "Times New Roman", Times, serif;
 }
 
 footer .content p {
   text-align: justify;
-  font-family: 'Cambria', Georgia, 'Times New Roman', serif;
+  font-family: "Cambria", Georgia, "Times New Roman", serif;
 }
 
 footer .content .lower .topic {
@@ -331,12 +399,15 @@ footer .content .lower i {
   padding-right: 16px;
 }
 
+
 footer .content .middle {
   padding-left: 80px;
 }
 
 footer .content .middle a {
   line-height: 32px;
+  font-family: cursive;
+  color: #0087ca;
 }
 
 footer .content .right input[type="text"] {
@@ -349,6 +420,12 @@ footer .content .right input[type="text"] {
   padding-left: 10px;
   font-size: 17px;
   border: 2px solid #222222;
+}
+footer .content .right input[type="text"]:focus{
+  box-shadow: 0px 0px 2px #d9d9d9;
+  border: none;
+
+
 }
 
 footer .content .right input[type="submit"] {
@@ -369,6 +446,9 @@ footer .content .right input[type="submit"] {
 .content .right input[type="submit"]:hover {
   background: none;
   color: #eb2f06;
+  font-weight: bold;
+  border: 1px solid #eb2f06;
+  transition-delay: .2s;
 }
 
 footer .content .media-icons a {
@@ -385,7 +465,12 @@ footer .content .media-icons a {
 }
 
 .content .media-icons a:hover {
-  border-color: #eb2f06;
+  /* border-color: #eb2f06;
+  background-color: #eb2f06;
+  color: #0087ca; */
+  border-color: #f93d14;
+  background-color: #f93d14;
+  color: #6ebbff;
 }
 
 footer .bottom {
@@ -393,7 +478,8 @@ footer .bottom {
   text-align: right;
   color: #d9d9d9;
   padding: 0 40px 5px 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 footer .bottom a {
@@ -408,13 +494,13 @@ footer a:hover {
   color: #eb2f06;
 }
 
-@media (max-width:1100px) {
+@media (max-width: 1100px) {
   footer .content .middle {
     padding-left: 50px;
   }
 }
 
-@media (max-width:950px) {
+@media (max-width: 950px) {
   footer .content .box {
     width: 50%;
   }
@@ -424,7 +510,7 @@ footer a:hover {
   }
 }
 
-@media (max-width:560px) {
+@media (max-width: 560px) {
   footer {
     position: relative;
   }
@@ -440,7 +526,6 @@ footer a:hover {
 }
 
 /* FOOTER styling over here*/
-
 
 /*footer {
   background-color: #333;
