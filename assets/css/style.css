@@ -1971,8 +1971,9 @@ select {
 }
 .faq-heading {
   text-align: center;
-  padding: 20px 60px;
-  color: #fff;
+  padding: 10px 60px;
+  color: black;
+  text-decoration: none;
 }
 .faq-container {
   display: flex;
@@ -1984,13 +1985,15 @@ select {
 
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
-  color: #444;
+  color: black;
   cursor: pointer;
   padding: 20px 20px;
   width: 60%;
-  font-size: 2rem;
-  transition: 0.4s;
+  font-size: 1.47rem;
+  transition: 1.4s ease;
   margin: auto;
+  border-bottom: 2px solid #000;
+  text-decoration: none;
 }
 .faq .faq-body {
   opacity: 0;
@@ -2023,7 +2026,7 @@ select {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
-  background-color: #f5dbdb;
+  background-color: #f1c476;
 }
 /* Style the faq-page panel. Note: hidden by default */
 
