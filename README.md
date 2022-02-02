@@ -168,7 +168,7 @@ The first command adds all the files or you can add specific files by removing -
 
 You now have a new branch containing the modifications you want in the project you forked. Now, push your new branch to your remote github fork. 
 
-`$ git push origin contributor`
+`$ git push origin main`
 Now you are ready to help the project by opening a pull request means you now tell the project managers to add the feature or bug fix to original repository. You can open a pull request by clicking on green icon -
 
 <p align="center">  <img  src="https://i.imgur.com/aGaqAD5.png">  </p>
