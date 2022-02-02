@@ -17,6 +17,8 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -28,6 +30,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
   </style>
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>AEC Library</title>
@@ -47,6 +50,7 @@
   <!--data table-->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
   <script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+ 
 </head>
 
 <body class="body-style">
@@ -374,107 +378,118 @@
     </section>
   </div>
   <br><br>
+
   <div class="blogs">
-    <br>
     <h1><b class='latest-blogs'> Latest Blogs</b></h1>
     <p class="latest-blogs-p">Regular records of your thoughts, opinions or experiences that you put on the <br>internet for other people to
       read </p>
-      <div class="gallery">
-        <a target="_blank" href="Blog/img2.jpg">
-          <img id ="change1" src="Blog/img2.jpg" alt="Cinque Terre" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
+      <div class="blog-content">
+    <div class="blog-carousel">
+      <div class="inner">
+      <img src="./Blog/img1.jpg" >
+      <img src="./Blog/img2.jpg" >
+      <img src="./Blog/img3.jpg" >
+      <img src="./Blog/img4.jpg" >
+      <img src="./Blog/img5.jpg" >
+      <img src="./Blog/img6.jpg" >
+      <img src="./Blog/img7.jpg" >
+      <img src="./Blog/img11.jpg" >
       </div>
-      
-      <div class="gallery">
-        <a target="_blank" href="Blog/img5.jpg">
-          <img id ="change2" src="Blog/img5.jpg" alt="Forest">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-      
-      <div class="gallery">
-        <a target="_blank" href="Blog/img3.jpg">
-          <img id ="change3" src="Blog/img3.jpg" alt="Northern Lights" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-      
-      <div class="gallery">
-        <a target="_blank" href="Blog/img4.jpg">
-          <img id ="change4" src="Blog/img4.jpg" alt="Mountains" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-  </div>
-    <p class="latest-blogs-p"><b>Regular records of your thoughts, opinions or experiences that you put on the <br>internet for other people to read.</b></p>
-    <div class="container">
-      <div class="row"></div>
-        <div class="col-sm-5">
-          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-            <img src="images/blog1.png" class="card-img-top" alt="blog1">
-            <div class="card-header"><h6>23rd October 2021</h6></div>
-            <div class="card-body">
-              <h5 class="card-title">What is Machine-Learning?</h5>
-              <p class="card-text"> 
-                <h6>Machine Learning is the field of study that gives computers the capability to learn without being explicitly programmed. ML is one of the most exciting technologies that one would have ever come across.</h6></p>
-              <a href="/blog1.html" class="btn btn-primary">Read more</a>
-              <div class="card-footer">
-              by Rudramadhaba Mishra
-              </div>
-            </div>
-          </div>
+    </div>
+    <div class="desc-carousel">
+      <div class="inner">
+        <div class="desc">
+          <h1>Title1</h1>
+          <p>Add image description here</p>
         </div>
-	<div class="col-sm-5">
-          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-            <img src="images/blog11.jpg" class="card-img-top" alt="blog4">
-            <div class="card-header"><h6>30th October,21</h6></div>
-            <div class="card-body">
-              <h5 class="card-title">What is Web development?</h5>
-              <p class="card-text"><h6> Web development refers to building, creating, and maintaining websites. The web development process includes web design, 
-		    web content development, client-side/server-side scripting and network security configuration, among other tasks.</h6></p>
-              <a href="#" class="btn btn-primary">Read more</a>
-              <div class="card-footer">
-                by Palak Bhogra
-                </div>
-            </div>
-          </div>
+        <div class="desc">
+          <h1>Title2</h1>
+          <p>Add image description here</p>
         </div>
-	
-	
-        <div class="col-sm-5">
-          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-            <img src="images/blog2.png" class="card-img-top" alt="blog2">
-            <div class="card-header"><h6>1 Nov 2021</h6></div>
-            <div class="card-body">
-              <h5 class="card-title">What is HTML?</h5>
-              <p class="card-text"><h6>Hyper Text Markup Language is used for creating web pages and web applications.</h6></p>
-              <a href="#" class="btn btn-primary">Read more</a>
-              <div class="card-footer">
-                by Himansu Hansda
-                </div>
-            </div>
-          </div>
+        <div class="desc">
+          <h1>Title3</h1>
+          <p>Add image description here</p>
         </div>
-        <div class="col-sm-5">
-          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-            <img src="images/blog3.jpg" class="card-img-top" alt="blog3">
-            <div class="card-header"><h6>29 Oct 2021</h6></div>
-            <div class="card-body">
-              <h5 class="card-title"><h5>Python</h5>
-              <p class="card-text"><h6>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming.</h6></p>
-              <a href="#" class="btn btn-primary">Read more</a>
-              <div class="card-footer">
-                by mantosh
-                </div>
-            </div>
-          </div>
-          </div>
+        <div class="desc">
+          <h1>Title4</h1>
+          <p>Add image description here</p>
+        </div>
+        <div class="desc">
+          <h1>Title5</h1>
+          <p>Add image description here</p>
+        </div>
+        <div class="desc">
+          <h1>Title6</h1>
+          <p>Add image description here</p>
+        </div>
+        <div class="desc">
+          <h1>Title7</h1>
+          <p>Add image description here</p>
+        </div>
+        <div class="desc">
+          <h1>Title8</h1>
+          <p>Add image description here</p>
         </div>
       </div>
     </div>
+  </div>
+ </div>
+
+  <div class="blog-container">
+     <div class="card1">
+      <div class="card-bg"></div>
+       <div class="owner">
+         <h1>Machine-Learning</h1>
+         <p>Posted by  Rudramadhaba Mishra</p>
+         <p>October 23, 2021</p>
+       </div>
+       <div class="info">
+         <p>Machine Learning is the field of study that gives computers the capability to learn without being explicitly programmed. ML is one of the most exciting technologies that one would have ever come across.</p>
+       </div>
+       <button onclick="location.href='https://www.simplilearn.com/tutorials/machine-learning-tutorial/what-is-machine-learning'" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></button>
+     </div>
+     <div class="card2">
+      <div class="card-bg"></div>
+      <div class="owner">
+        <h1>Web development</h1>
+         <p>Posted by  Palak Bhogra</p>
+         <p>October 30, 2021</p>
+      </div>
+      <div class="info">
+        <p>Web development refers to building, creating, and maintaining websites. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.
+       </p>
+      </div>
+      <button onclick="location.href='https://www.w3schools.com/whatis/'" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></button>
+     </div>
+     <div class="card3">
+      <div class="card-bg"></div>
+      <div class="owner">
+        <h1>HTML</h1>
+         <p>Posted by  Himansu Hansda</p>
+         <p>November 1, 2021</p>
+      </div>
+      <div class="info">
+        <p>Hyper Text Markup Language is used for creating web pages and web applications.
+</p>
+      </div>
+      <button onclick="location.href='https://developer.mozilla.org/en-US/docs/Web/HTML'" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></button>
+     </div>
+     <div class="card4">
+      <div class="card-bg"></div>
+      <div class="owner">
+        <h1>Python</h1>
+         <p>Posted by  Mantosh</p>
+         <p>October 29, 2021</p>
+      </div>
+      <div class="info">
+        <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming.
+</p>
+      </div>
+      <button onclick="location.href='https://www.codecademy.com/catalog/language/python'" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></button>
+     </div>
+    </div>
     
-</div>
+
 
   <div class="update">
     <div class="login-box">
