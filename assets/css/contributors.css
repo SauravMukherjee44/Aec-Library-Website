@@ -19,10 +19,10 @@ body{
     background-size: cover;
     
     line-height:1.5em;
-   
-
 }
-
+:root {
+  --nav-bg:#0099CC;
+}
 .define{
   height: 100vh;
   display: flex;
@@ -48,6 +48,8 @@ body{
   }
   .bg-info {
     background-color: #343a40 !important;
+    background-color: var(--nav-bg) !important;
+    /* background-color: #0099CC !important; */
   }
   
   .navbar-light .navbar-nav .active > .nav-link,
@@ -76,6 +78,7 @@ body{
   a.nav-link {
     /* To heighlight */
     color: floralwhite !important;
+    /* color: #EBEBEB  !important; */
     font-size: 28px;
   }
   
@@ -125,19 +128,22 @@ body{
   }
   .member-name{
       text-align: center;
-      border: 2px solid grey;
+      /* border: 2px solid grey; */
+      border: 2px solid var(--nav-bg);
       border-radius: 10px;
       width: 128px;
       background: transparent;
-     transition: all 0.6s;
-     cursor: pointer;
+      transition: all 0.6s;
+      cursor: pointer;
       
-  }
-  .member-name:hover{
-    background: rgb(90, 90, 90);
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-   border: 2px solid rgb(90,90,90);
+    }
+    .member-name:hover{
+      /* background: rgb(90, 90, 90); */
+      background: var(--nav-bg);
+      color: rgb(255, 255, 255);
+      font-weight: bolder;
+      /* border: 2px solid rgb(90,90,90); */
+      border: 2px solid var(--nav-bg);
   }
  
   .member-name a{
