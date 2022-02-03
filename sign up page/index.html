@@ -1,181 +1,86 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
-    <title>SIGN UP - AEC Library</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script>    
-      function validate() {    
-          var fname = document.reg_form.fname;    
-          var lname = document.reg_form.uname;       
-          var gender = document.reg_form.gender;    
-          var email = document.reg_form.email;    
-          var mobile = document.reg_form.mobile;    
-          var password = document.reg_form.password;
-          var confirm_password = document.reg_form.confirm_password;
-              
-  
-          if (fname.value.length <= 0) {    
-              alert("Name is required");    
-              fname.focus();    
-              return false;    
-          }    
-          if (lname.value.length <= 0) {    
-              alert("Last Name is required");    
-              lname.focus();    
-              return false;    
-          }    
-          if (address.value.length <= 0) {    
-              alert("Address is required");    
-              address.focus();    
-              return false;    
-          }    
-          if (gender.value.length <= 0) {    
-              alert("Gender is required");    
-              gender.focus();    
-              return false;    
-          }    
-          if (email.value.length <= 0) {    
-              alert("Email Id is required");    
-              email.focus();    
-              return false;    
-          }    
-          if (mobile.value.length <= 0) {    
-              alert("Mobile number is required");    
-              mobile.focus();    
-              return false;    
-          } 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/sign up page/style.css" />
+  <title>SIGN UP - AEC Library</title>
+</head>
 
+<body>
+  <div class="container">
+    <div class="welcome__box">
+      <img class="welcome__image" src="signup.svg" alt="">
+    </div>
+    <div class="registration__box">
+      <h2>Sign Up Form</h2>
 
-
-       
-
-
-          if(password.value != confirm_password.value) {
-            
-            alert("Passwords Don't Match");
-            confirm_password.focus();
-            return false;
-          } 
-
-
-
-
-          return false;    
-      }    
-  </script>    
-
-
-  </head>
-  <body>
-    <div class="container">
-      <strong><h1 align="center">AEC Library</h1></strong>
-      <div class="title">SIGN UP</div>
-      <div class="content">
-        <form method="" action="" name="reg_form" onsubmit="return validate()">
-          <div class="user-details">
-            <div class="input-box">
-              <span class="details">Full Name</span>
-              <input type="text" name="fname" placeholder="Enter your name"  required />
+      <div class="form">
+        <form action="" class="form__form" method="POST" >
+          <div class="form__first">
+            <div class="form_div">
+              <input type="text" name="firstName" id="firstName" class="form_input" autocomplete="off" placeholder=" "
+                required>
+              <label for="firstName" class="form_label">First Name</label>
             </div>
-            <div class="input-box">
-              <span class="details">Username</span>
-              <input type="text" name="uname" placeholder="Enter your username" required />
+            <div class="form_div">
+              <input type="text" name="lastName" id="lastName" class="form_input" autocomplete="off" placeholder=" "
+                required>
+              <label for="lastName" class="form_label">Last Name</label>
             </div>
-            <div class="input-box">
-              <span class="details">Email</span>
-              <input type="email" name="email" placeholder="Enter your email" required="" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"  />
+            <div class="form_div">
+              <input type="email" name="email" id="email" class="form_input" autocomplete="off" placeholder=" "
+                required>
+              <label for="email" class="form_label">Email</label>
             </div>
-            <div class="input-box">
-              <span class="details">Phone Number</span>
-              <input type="text" name="mobile" placeholder="Enter your number" required="" pattern="[789][0-9]{9}"  title="Phone number starting with 7-9 and remaining 9 digit within 0-9" />
-            </div>
-            <div class="input-box">
-              <span class="details">Password</span>
-              <input type="password" placeholder="Enter your password" id="myInput" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" id="password" name="password" />
-              <input type="checkbox" onclick="myFunction()">Show Password
-
-              <script>
-              function myFunction() {
-              var x = document.getElementById("myInput");
-              if (x.type === "password") {
-                x.type = "text";
-              } 
-              else {
-                      x.type = "password";
-                   }                               
-                                         }
-              </script>            
-            </div>
-            <div class="input-box">
-              <span class="details">Confirm Password</span>
-              <input type="password" placeholder="Confirm your password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" id="confirm_password" name="confirm_password" />
+            <div class="form_div">
+              <input type="tel" name="phone" id="phone" class="form_input" autocomplete="off" placeholder=" " required>
+              <label for="phone" class="form_label">Phone No.</label>
             </div>
           </div>
-          <div class="gender-details">
-            <input type="radio" name="gender" id="dot-1" required/>
-            <input type="radio" name="gender" id="dot-2" required/>
-            <input type="radio" name="gender" id="dot-3" required/>
-            <span class="gender-title">Gender</span>
-            <div class="category">
-              <label for="dot-1">
-                <span class="dot one"></span>
-                <span class="gender">Male</span>
-              </label>
-              <label for="dot-2">
-                <span class="dot two"></span>
-                <span class="gender">Female</span>
-              </label>
-              <label for="dot-3">
-                <span class="dot three"></span>
-                <span class="gender">Prefer not to say</span>
-              </label>
+          <div class="form__second">
+            <div class="form_div">
+              <input type="password" name="password" id="password" class="form_input" autocomplete="off" placeholder=" "
+                required>
+              <label for="password" class="form_label">Password</label>
+            </div>
+            <div class="form_div">
+              <input type="password" name="confirmPassword" id="confirmPassword" class="form_input" autocomplete="off"
+                placeholder=" " required>
+              <label for="confirmPassword" class="form_label">Confirm Password</label>
+            </div>
+            <div class="form_div">
+              <input type="text" name="username" id="username" class="form_input" autocomplete="off" placeholder=" " required>
+              <label for="roll" class="form_label">Username</label>
+            </div>
+            <div class="form_div">
+              <input type="radio" name="gender" id="male" value="MALE">
+              <label for="gender">Male</label>
+
+              <input type="radio" name="gender" id="female" value="FEMALE">
+              <label for="gender">Female</label>
             </div>
           </div>
-          <div class="button">
-            <input type="submit" value="Register" onsubmit="validate()" onclick="validate()" />
-          </div>
+          <input type="submit" class="register" value="Register">
         </form>
-
-        <p class="sign_in_link">
-          Already have an account? <a href="../Login_page/login_page.html">Sign In</a>
-        </p>       
+        <div class="welcome__login">
+          Have an account?
+          <a href="/Login_page/login_page.html">Click here</a>
+        </div>
       </div>
     </div>
+    <div class="strip__triangle"></div>
+    <div class="strip"></div>
+  </div>
+  <div class="quiz-exit">
+    <a href="/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+        style="fill: #1985e4;">
+        <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
+      </svg></a>
+  </div>
+  <script src="index.js"></script>
+</body>
 
-   
-
-
-    <a href="../index.html" style="text-decoration: none;"><h4 style="color: black; background-color: lightskyblue; border-radius: 10px; padding: 10px;">◀ Go back to Home</h4></a>
-   
-   
-
-
-
-
-    <script>  
-      function validate() {  
-          var fname = document.reg_form.fname;  
-          var uname = document.reg_form.lname;  
-          if (fname.value.length <= 0) {  
-              alert("Name is required");  
-              fname.focus();  
-              return false;  
-          }  
-          if (uname.value.length <= 0) {  
-              alert("Username is required");  
-              uname.focus();  
-              return false;  
-          }  
-
-
-
-
-}
-    </script>   
-  </body>
 </html>
-
