@@ -353,7 +353,12 @@ a.nav-link {
 footer {
     position: relative;
     width: 100%;
-    background-color: rgb(52, 58, 64);
+    background-color: rgb(92, 32, 8);
+  background: transparent;
+    text-shadow: 1px 1px 1px black;
+    border-top: 1px solid rgba (0,0,0,0.3);
+    
+
     color: white;
     box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
     padding: 15px 0px;
@@ -363,6 +368,29 @@ footer {
   footer p {
     margin: 0;
   }
+
+  .footer-col ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    border-radius: 0px;
+    color:rgb(255, 255, 255);
+  }
+
+  .footer-col ul li a {
+    text-decoration: none;
+    opacity: 0.8 
+  }
+
+  .footer-col ul li {
+    display: inline-block;
+    padding: 0px 60px;
+    
+  }
+
   
   .footer-wrapper {
     display: flex;
