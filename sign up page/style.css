@@ -204,25 +204,23 @@ body::before{
     margin-left: 2rem;
 }
 
-  /* Exit */
-  .quiz-exit{
-    position: absolute;
-    bottom: 0;
-    left: 1rem;
-    margin: 2rem;
-    background-color: white;
-    padding: 0.5rem;
-    border-radius: 50%;
-    border: 2px solid #56a5eb;
-  }
-
-  .quiz-exit:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
-  }
-
-  a{
-    text-decoration: none;
-  }
+/* Exit */
+.quiz-exit{
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  margin: 2rem;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #56a5eb;
+}
+.quiz-exit:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+a{
+  text-decoration: none;
+}
