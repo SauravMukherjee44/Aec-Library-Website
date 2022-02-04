@@ -40,8 +40,9 @@ body {
 
 /* navbar */
 .navbar {
-    background-color: #343a40 !important;
-    box-shadow: 0px 0px 16px 9px black;
+    background-color:#6f4e37b0 !important;
+    /* box-shadow: 0px 0px 16px 9px black; */
+    
 }
 
 /* .navbar-nav li a:after {
@@ -80,10 +81,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
     margin-left: 2rem;
 }
 
-.logo-img {
-    height: 3rem;
-    width: 3rem;
-}
+
 
 /* .navbar-nav li a:after {
     bottom: 0;
@@ -95,6 +93,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
     background: #fff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
+}
+.nav-item
+{
+   padding: 0px 20px 0px 0px; 
 }
 
 .navbar-nav li a:hover:after {
@@ -471,11 +473,13 @@ footer {
     font-size: 28px;
   }
   
-  .logo-img {
-    margin-left: 40px;
+  .logo-img{
+    margin-left: 20px;
+    margin-right: 125px;
     /* Width and height same to make icon look more professional */
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
+   
   }
 /* Media Query */
 
