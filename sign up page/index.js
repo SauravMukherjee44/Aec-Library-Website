@@ -1,8 +1,7 @@
 
 
 const form = document.getElementById('form');
-const firstName = document.getElementById("firstName");
-const lastName = document.getElementById("lastName");
+const fullName = document.getElementById("firstName");
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const phone = document.getElementById('phone');
@@ -25,22 +24,16 @@ const isValidPhone = phone => {
 }
 
 const validateInputs = () => {
-    const firstNameValue = firstName.value.trim();
-    const lastNameValue = lastName.value.trim();
+    const nameValue = fullName.value.trim();
     const usernameValue = username.value.trim();
     const emailValue = email.value.trim();
     const phoneValue = phone.value.trim();
     const passwordValue = password.value.trim();
     const confirmPassValue = confirmPassword.value.trim();
 
-    if (firstNameValue === '') {
+    if (nameValue === '') {
         alert("Firstname is required !");
-        firstName.focus();
-    }
-
-    if (lastNameValue === '') {
-        alert("Lasttname is required !");
-        lastName.focus();
+        fullName.focus();
     }
 
     if (usernameValue === '') {
