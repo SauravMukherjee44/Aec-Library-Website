@@ -18,42 +18,46 @@
       <h2>Sign Up Form</h2>
 
       <div class="form">
-        <form action="" class="form__form" method="POST" >
+        <form action="" class="form__form" method="POST" id="form">
           <div class="form__first">
             <div class="form_div">
-              <input type="text" name="firstName" id="firstName" class="form_input" autocomplete="off" placeholder=" "
-                required>
+              <input type="text" name="firstName" id="firstName" class="form_input" autocomplete="off" placeholder=" ">
               <label for="firstName" class="form_label">First Name</label>
+              <div class="error"></div>
             </div>
             <div class="form_div">
-              <input type="text" name="lastName" id="lastName" class="form_input" autocomplete="off" placeholder=" "
-                required>
+              <input type="text" name="lastName" id="lastName" class="form_input" autocomplete="off" placeholder=" ">
               <label for="lastName" class="form_label">Last Name</label>
+              <div class="error"></div>
             </div>
             <div class="form_div">
-              <input type="email" name="email" id="email" class="form_input" autocomplete="off" placeholder=" "
-                required>
+              <input type="email" name="email" id="email" class="form_input" autocomplete="off" placeholder=" ">
               <label for="email" class="form_label">Email</label>
+              <div class="error"></div>
             </div>
             <div class="form_div">
-              <input type="tel" name="phone" id="phone" class="form_input" autocomplete="off" placeholder=" " required>
+              <input type="tel" name="phone" id="phone" class="form_input" autocomplete="off" placeholder=" ">
               <label for="phone" class="form_label">Phone No.</label>
+              <div class="error"></div>
             </div>
           </div>
           <div class="form__second">
             <div class="form_div">
-              <input type="password" name="password" id="password" class="form_input" autocomplete="off" placeholder=" "
-                required>
+              <input type="password" name="password" id="password" class="form_input" autocomplete="off"
+                placeholder=" ">
               <label for="password" class="form_label">Password</label>
+              <div class="error"></div>
             </div>
             <div class="form_div">
               <input type="password" name="confirmPassword" id="confirmPassword" class="form_input" autocomplete="off"
-                placeholder=" " required>
+                placeholder=" ">
               <label for="confirmPassword" class="form_label">Confirm Password</label>
+              <div class="error"></div>
             </div>
             <div class="form_div">
-              <input type="text" name="username" id="username" class="form_input" autocomplete="off" placeholder=" " required>
+              <input type="text" name="username" id="username" class="form_input" autocomplete="off" placeholder=" ">
               <label for="roll" class="form_label">Username</label>
+              <div class="error"></div>
             </div>
             <div class="form_div">
               <input type="radio" name="gender" id="male" value="MALE">
