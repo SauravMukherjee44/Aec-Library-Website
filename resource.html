@@ -500,14 +500,6 @@
 
                         <a class="ncertbooks" target="_blank" href="https://drive.google.com/drive/folders/1BRXmQuwjGasfMs04TOb0twQmaL6a_eAT"><img class="books" src="images\class9thhis.jpg" alt=""
                                                         width="24%" height="60%"></a>
-                            
-                
-
-
-
-
-        
-    
                                     
              </div>
 
@@ -563,6 +555,90 @@
                                             width="24%" height="60%"></a>
                                 </div>
                                 </div>
+    </section>
+    <h2 class="hover-underline-animation">Audio Books</h2>
+    <section id="audio-books" class="audio-books-container" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('assets/images/Background1.jpg');margin-left:5px;margin-right:5px;border-radius:8px;max-width:1340px;">
+         <div class="audio-book-card ">
+            <div class="audio-book-thumbnail">
+                <img src="assets/images/Penetration Testing with Python.png" alt="image1">
+            </div>
+            <audio  src="assets/audioBooks/Cyber Security and Penetration Testing with Python.mp3"></audio>
+            <div class="progressbar-container" id="progress-container">
+                <div class="progress-duration-meter">
+                    <div class="current-time" id="current-time">0:00</div>
+                    <div class="duration" id="duration">14:01</div>
+                </div>
+                <div class="progress-div" id="progress-div-1">
+                    <div class="progress" id="progress-1"></div>
+                </div>
+            </div>
+            <h3>
+                <p class="play-button-container">
+                    <i class="fa fa-play play-button not-playing"></i>
+                </p>
+                <h3>
+        </div>
+        <div class="audio-book-card ">
+            <div class="audio-book-thumbnail">
+                <img src="assets/images/Automate the Boring Stuff with Python.jpg" alt="image1">
+            </div>
+            <audio  src="assets/audioBooks/Automate the Boring Stuff with Python.mp3"></audio>
+            <div class="progressbar-container" id="progress-container">
+                <div class="progress-duration-meter">
+                    <div class="current-time">0:00</div>
+                    <div class="duration">11:05</div>
+                </div>
+                <div class="progress-div" id="progress-div-2">
+                    <div class="progress" id="progress-2"></div>
+                </div>
+            </div>
+            <h3>
+                <p class="play-button-container">
+                    <i class="fa fa-play play-button not-playing"></i>
+                </p>
+            </h3>
+        </div>
+        <div class="audio-book-card">
+            <div class="audio-book-thumbnail">
+                <img src="assets/images/Data Science from Scratch.jpg" alt="image2">
+            </div>
+            <audio  src="assets/audioBooks/Data Science from Scratch.mp3"></audio>
+            <div class="progressbar-container" id="progress-container">
+                <div class="progress-duration-meter">
+                    <div class="current-time">0:00</div>
+                    <div class="duration">11:02</div>
+                </div>
+                <div class="progress-div" id="progress-div-3">
+                    <div class="progress" id="progress-3"></div>
+                </div>
+            </div>
+            <h3>
+                <p class="play-button-container">
+                    <i class="fa fa-play play-button not-playing"></i>
+                </p>
+                <h3>
+        </div>
+        <div class="audio-book-card">
+            <div class="audio-book-thumbnail">
+                <img src="assets/images/Asynchronous JavaScript.png" alt="image1">
+            </div>
+            <audio src="assets/audioBooks/JavaScript Asynchronous Programming.mp3"></audio>
+            <div class="progressbar-container" id="progress-container">
+                <div class="progress-duration-meter">
+                    <div class="current-time">0:00</div>
+                    <div class="duration">13:56</div>
+                </div>
+                <div class="progress-div" id="progress-div-4">
+                    <div class="progress" id="progress-4"></div>
+                </div>
+            </div>
+            <h3>
+                <p class="play-button-container">
+                    <i class="fa fa-play play-button not-playing"></i>
+                </p>
+                <h3>
+        </div>
+    
     </section>
     <h2 class="hover-underline-animation">Study Materials</h2>
     <section id="study" class="study-container" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('assets/images/Background1.jpg');margin-left:5px;margin-right:5px;border-radius:8px;max-width:1340px;">
@@ -674,7 +750,103 @@
          </div>
      </div>                     
 </footer>
-   	         
+<script >
+
+    const play = document.querySelectorAll(".play-button");
+    const audioBooks = document.querySelectorAll("audio");
+    let progress = document.querySelectorAll('.progress');
+    let durationIndicator = document.querySelectorAll(".duration");
+    let currentTimeIndicator = document.querySelectorAll(".current-time");
+    const progressBar = document.querySelectorAll('.progress-div');
+    let isAudioPlaying = false;
+    for(let j =0;j<play.length;j++){
+        const pauseAudioBook = ()=>{
+            isAudioPlaying = false;
+            audioBooks[j].pause();
+            play[j].classList.replace('fa-pause','fa-play');
+            play[j].style.left = "2px";
+            play[j].classList.add("not-playing");
+        };
+        const playAudioBook = ()=>{
+            isAudioPlaying = true;
+            let noOfAudioNotPlaying = document.querySelectorAll(".not-playing");
+            if(noOfAudioNotPlaying.length ==4){
+                audioBooks[j].play();
+                play[j].classList.replace('fa-play','fa-pause');
+                play[j].style.left = "1px";
+                play[j].classList.remove("not-playing");
+
+            }else{
+                if(noOfAudioNotPlaying.length < 4){
+                    noOfAudioNotPlaying.forEach((audio_book)=>{
+                        let audioTag = audio_book.parentElement.parentElement.parentElement.querySelector("audio");
+                        audioTag.pause();
+                    })
+                    if(noOfAudioNotPlaying.length==4){
+                        audioBooks[j].play();
+                        play[j].classList.replace('fa-play','fa-pause');
+                        play[j].style.left = "1px";
+                        play[j].classList.remove("not-playing");
+                    }
+                
+            };
+            }
+    };
+
+        play[j].addEventListener("click",()=>{
+        if(isAudioPlaying){
+                pauseAudioBook();
+            }
+            else{
+                    playAudioBook();
+                }
+            });
+        audioBooks[j].addEventListener('timeupdate',(event)=>{
+            const {currentTime, duration} = event.srcElement;
+            let audioProgressTime = (currentTime/duration) * 100;
+            progress[j].style.width = `${audioProgressTime}%`;
+            let minuteDuration = Math.floor(duration/60);
+            let secondDuration = Math.floor(duration %60);
+            if(secondDuration<10){
+                secondDuration = `0${secondDuration}`;
+            }
+            let totalDuration = `${minuteDuration}:${secondDuration}`;
+            durationIndicator[j].textContent = `${totalDuration}`;
+            let minuteCurrentTime = Math.floor(currentTime/60);
+            let secondCurrentTime = Math.floor(currentTime %60);
+            if(secondCurrentTime <10){
+                secondCurrentTime = `0${secondCurrentTime}`;
+            }
+            let totalCurrentTime = `${minuteCurrentTime}:${secondCurrentTime}`;
+            currentTimeIndicator[j].textContent = `${totalCurrentTime}`;
+    
+            
+        })
+        progressBar[j].addEventListener("click",(event)=>{
+            const { duration} = audioBooks[j];
+            let move_progress = ((event.offsetX / event.srcElement.clientWidth)*duration);
+            audioBooks[j].currentTime = move_progress;
+        })
+        audioBooks[j].addEventListener("ended",(event)=>{
+            play[j].classList.replace('fa-pause','fa-repeat');
+            pauseAudioBook();
+            play[j].addEventListener('click',(event)=>{
+                playAudioBook();
+                play[j].classList.replace('fa-repeat','fa-pause');
+                play[j].addEventListener('click',(event)=>{
+
+                if(isAudioPlaying){
+                    pauseAudioBook();
+                }
+                else{
+                    playAudioBook();
+                                }                })
+            })
+        })
+}
+
+
+</script>   
 </body>
 </html>
 
