@@ -45,7 +45,7 @@ body {
     
 }
 
-.navbar-nav li a:after {
+/* .navbar-nav li a:after {
     bottom: 0;
     content: "";
     display: block;
@@ -55,7 +55,7 @@ body {
     background: #fff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0
-}
+} */
 
 .navbar-nav li a:hover:after {
     width: 100%;
@@ -83,7 +83,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 
 
 
-.navbar-nav li a:after {
+/* .navbar-nav li a:after {
     bottom: 0;
     content: "";
     display: block;
@@ -102,7 +102,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 .navbar-nav li a:hover:after {
     width: 100%;
     left: 0;
-}
+} */
 
 .navbar-light .navbar-nav .nav-link {
     color: rgb(255 255 255 / 50%);
