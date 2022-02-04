@@ -1980,7 +1980,8 @@ select {
   justify-content: center;
   flex-direction: column;
   background-color: #f3d094;
-  height: 700px;
+  min-height: 100vh;
+  /* height: 700px; */
 }
 
 /* Style the buttons that are used to open and close the faq-page body */
@@ -1995,36 +1996,20 @@ select {
   border-bottom: 2px solid #000;
   text-decoration: none;
 }
-.faq .faq-body {
-  opacity: 0;
-  padding: 0 1rem;
-
-  border-bottom: 1px solid #e5e5e5;
-  overflow: hidden;
-
-  -webkit-transition: all 0.2s ease 0.15s;
-  -o-transition: all 0.2s ease 0.15s;
-  transition: all 0.2s ease 0.15s;
-}
-.faq .faq-body.active {
-  opacity: 1;
-  padding: 1rem;
-
-  -webkit-transition: all 0.35s ease 0.15s;
-  -o-transition: all 0.35s ease 0.15s;
-  transition: all 0.35s ease 0.15s;
-}
-
 .faq-body {
   margin: auto;
   width: 60%;
   padding: 0px 18px;
-  background-color: white;
+  font-size: 1.36rem;
+  background-color: #f3d094;
   display: none;
   overflow: hidden;
 }
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
+.faq-body p{
+  margin-top: 28px;
+  font-family: "Source Sans Pro", sans-serif   !important;
+}
+/* Add a background color to the button if it is clicked on when you move the mouse over it (hover) */
 .faq-page:hover {
   background-color: #f1c476;
 }
