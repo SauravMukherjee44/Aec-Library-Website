@@ -1,226 +1,298 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-
-*,*::after,*::before{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Lora', serif;
-}
-
 body{
-    display: flex;
-    flex-direction: column;
-    overflow-y: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	background: linear-gradient(90deg, rgba(70,77,128,1) 0%, rgba(70,117,128,1) 42%, rgba(142,196,207,1) 100%);
+}
+::placeholder{
+	color:#fff;
 }
 
-body::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0; 
-  background: url('bg.jpg') no-repeat center center/cover;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: .6;
+.section{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+
 .container{
-    align-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6rem;
-    height: 500px;
-    width: 950px;
-    background: linear-gradient(to right, #3a0ca3,#4cc9f0);
-    background: linear-gradient(to right, #d9ed92,#184e77);
-    background: linear-gradient(to right, #7ef29d,#0f68a9);
-    position: relative;
-
-}
-.strip__triangle{
-    position: absolute;
-    right: -23px;
-    top:17px;
-    transform: rotate(90deg);
-    width: 0; 
-    height: 0; 
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;    
-    border-bottom: 15px solid #cae6ff;
+	width: 60%;
+	height: 34rem;
+	padding: 0;
+	margin: 0;
+	background-image: url('bg1.jpg');
+	background-size: cover;
+	background-position: center center;
+	border-radius: 20px;
+	box-shadow: 4px 6px 23px 4px rgba(0,0,0,0.75);
 }
 
-.strip{
-    position: absolute;
-    right: -14px;
-    height: 450px;
-    width: 15px;
-    background-color: #cae6ff;
-    border-bottom-right-radius: 5px;
+.signUp-form::before{
+	content: "AEC Library - Sign Up ";
+	position: absolute;
+	top: 7rem;
+	left: 40%;
+	color: white;
+	font-size: 25px;
+}
+.signUp-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6rem 5rem;
 }
 
-/* Registration Box  */
-
-.container .registration__box{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 450px;
-    width: 600px;
-    background-color: #b7efc5;
-    background-color: #cae6ff;
-    border-top-left-radius:10% 50%;
-    border-bottom-left-radius: 10% 50%;
+.signUp-form{
+	display: flex;
 }
-
-
-.container .registration__box h2{
-    color:#444444;
-    
+.signUp-form input{
+	padding: 10px;
+	border:none;
+	background:transparent;
+	outline: none;
+	color: #fff;
+	margin: 10px;
 }
-
-/* Registration button  */
-
-.container .registration__box .register{
-    position: absolute;
-    bottom: 4rem;
-    right: 3rem;
-    outline: none;
-    border: none;
-    background-color:#0f68a9;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: bold;
-    border-radius: 20px;
-    width: 80px;
-    height: 35px;
-    cursor: pointer;
-}
-
-.container .registration__box .register:hover{
-  background-color:#0e4670;
+.form-group{
+	border-bottom: 1px solid #fff;
+	margin:15px;
 
 }
-
-/* Welcome Box  */
-.container .welcome__box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 450px;
-    width: 350px;
+.form-group i{
+	color: #fff;
+	font-size: 24px;
 }
 
-.container .welcome__box .welcome__image{
-    width: 300px;
-    height: 200px;
+.no-border{
+	border: none;
 }
 
-.container .registration__box .welcome__login{
-    position: absolute;
-    bottom: 4rem;
-    left: 4rem;
-    color: red;
-}
-/* Form  */
-
-.container .registration__box .form__form{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 15px 0px ;
-    display: flex;
-    height: 300px;
-    width: 500px;
+#male, #female{
+	margin-top: 2rem;
 }
 
-
-.form__form > div{
-    width: 45%;
-    height: 90%;
+#male + label,
+#female + label{
+	color: white;
 }
-
-
-.form_div{
-    position: relative;
-    height: 40px;
-    margin-bottom: 0.5rem;
-}
-.form_input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    outline: none;
-    padding-left: 1rem;
-    color:  #3b3b3b;
-    font-size: 14px;
-    border-radius: 0.50rem;
-    background-color: transparent;
-}
-.form_label{
-    position: absolute;
-    top: 0.5rem;
-    left: 1rem;
-    padding: 0.25rem;
-    transition: .3s ease-in-out;
-    color:  #575757;
-}
-
-.form_label:hover{
-    cursor: text;
-}
-
-.form_input:focus + .form_label{
-    top: -0.5rem;
-    left: 0.8rem;
-    font-weight: 500;
-    font-size: 0.75rem;
-    background-color: #cae6ff;
-    color: #2c2c2c;   
+.btn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
 
 }
-.form_input:not(:placeholder-shown).form_input:not(:focus) + .form_label{
-    top: -0.5rem;
-    left: 0.8rem;
-    font-weight: 500;
-    font-size: 0.75rem;
-    z-index: 2;
-    background-color: #cae6ff;
+.btn #button{
+	padding:10px 0px 10px 0px;
+	background-color: #46758059;
+	border:1px solid #467580;
+	border-radius: 20px;
+	color: #fff;
+	width: 100%;
+	font-size: 18px;
+	outline: none;
+	margin-top: 4rem;
+}
+.btn #button:hover{
+	background:#467580;
+	cursor: pointer;
 }
 
-/* Radio Buttons */
-
-#female{
-    margin-left: 2rem;
-}
-#male,#female{
-    margin-top: 1rem;
-    margin-left: 2rem;
+.redirect{
+	color: white;
+	position: absolute;
+	bottom: 8rem;
+	left: 32%;
 }
 
 /* Exit */
 .quiz-exit{
-  position: absolute;
-  bottom: 0;
-  left: 1rem;
-  margin: 2rem;
-  background-color: white;
-  padding: 0.5rem;
-  border-radius: 50%;
-  border: 2px solid #56a5eb;
+	position: absolute;
+	bottom: 0;
+	left: 1rem;
+	margin: 2rem;
+    width: 36px;
+    height: 36px;
+	background-color: white;
+	padding: 0.5rem;
+	border-radius: 50%;
+	border: 2px solid #56a5eb;
+  }
+  .quiz-exit:hover {
+	cursor: pointer;
+	box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+	transform: translateY(-0.1rem);
+	transition: transform 150ms;
+  }
+  a{
+	text-decoration: none;
+	color: #56a5eb;
+  }
+  
+@media only screen and (max-width: 425px){
+
+    .section{
+        height: 100vh;
+    }
+    .container{
+        width: 90%;
+        height: 95vh;
+    }
+    .signUp-form::before{
+        font-size: 15px;
+        top: 2.5rem;
+        left: 31%;
+    }
+    .signUp-form{
+        flex-direction: column;
+        top: -2rem;
+    }
+    .signUp-box{
+        padding: 1rem;
+    }
+
+    .first-box{
+        height: 40vh;
+    }
+    .second-box{
+        height: 40vh;
+    }
+
+    .signUp-form input{
+        padding: 0;
+    }
+
+    .form-group input{
+        font-size: 10px;
+    }
+
+    .form-group i{
+        font-size: 10px;
+    }
+
+    #male , #female{
+        margin-top: 0.6rem;
+    }
+    #male + label , #female + label{
+        font-size: 10px;
+    }
+
+    #fullName{
+        margin-top: 3rem;
+    }
+
+    .btn #button{
+        padding:8px 0px 8px 0px;
+        width: 80%;
+        font-size: 10px;
+        margin-top: 2rem;
+    }
+
+    .redirect{
+        font-size: 10px;
+        bottom: 7rem;
+    }
+
+    .quiz-exit{
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        margin: 2rem;
+    }
 }
-.quiz-exit:hover {
-  cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-  transform: translateY(-0.1rem);
-  transition: transform 150ms;
+
+@media only screen and (max-width: 768px) and (min-width: 426px){
+	
+	.container{
+		width: 80%;
+	}	
+    .signUp-form::before{
+        font-size: 24px;
+        top: 2.5rem;
+        left: 35%;
+    }
+
+	.signUp-form input{
+		padding: 0;
+	}
+
+    .form-group input{
+        font-size: 14px;
+		padding-left: 1rem;
+    }
+
+    .form-group i{
+        font-size: 14px;
+		position: relative;
+		top: 1.6rem;
+    }
+
+    #male + label , #female + label{
+        font-size: 14px;
+    }
+
+    .btn #button{
+        padding:8px 0px 8px 0px;
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .redirect{
+        font-size: 14px;
+        bottom: 6rem;
+		left: 22.5%;
+    }
+
+    .quiz-exit{
+        left: 5rem;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+    }
 }
-a{
-  text-decoration: none;
+
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+	.container{
+		width: 80%;
+	}	
+    .signUp-form::before{
+        font-size: 26px;
+        top: 4rem;
+        left: 38%;
+    }
+
+    .form-group input{
+        font-size: 16px;
+    }
+
+    .form-group i{
+        font-size: 16px;
+    }
+
+    #male + label , #female + label{
+        font-size: 16px;
+    }
+
+    .btn #button{
+        padding:10px 0px 10px 0px;
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .redirect{
+        font-size: 16px;
+        bottom: 5rem;
+		left: 22.5%;
+    }
+	.quiz-exit{
+        left: 6rem;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+    }
 }
