@@ -135,8 +135,11 @@ video {
   margin-bottom: none !important;
 }
 
-img {
+.books {
   padding: 10px;
+  box-shadow: 5px 3px gainsboro;
+  height: 450px;
+  border-radius: 15px;
 }
 
 section h5 {
@@ -174,17 +177,48 @@ section h5 {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  border-radius: 8px;
+  /* border-radius: 8px;
   margin-left: 4px;
-  margin-right: 4px;
+  margin-right: 4px; */
 }
-#courses video {
+/* #courses video {
   border-radius: 20px;
   padding: none !important;
 }
 #courses video:hover {
   transform: scaleY(1.019);
+} */
+
+.courseCard{
+  margin: 5px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 30%;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0 ,0 ,0 ,0.1);
+  float: left;
 }
+
+.courseCard:hover{
+  box-shadow: 0px 30px 18px -8px rgba(0 ,0 ,0 ,0.1);
+  transform: scale(1.05, 1.05);
+}
+
+.courseCardImage{
+  height: 60px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.courseCardTitle{
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 12px 24px 12px 24px;
+  font-size: 20px;
+}
+
 /* YouTube Recommendation */
 #yt {
   display: flex;
@@ -665,11 +699,11 @@ footer a:hover {
   display: inline;
 }
 
-img {
+/* img {
   box-shadow: 5px 3px gainsboro;
   height: 450px;
   border-radius: 15px;
-}
+} */
 
 .card-section {
   display: grid;
@@ -698,9 +732,9 @@ img {
     padding: 7px 10px;
   }
 
-  #courses video {
+  #courses .courseCardImage{
     width: 100%;
-    height: 200px;
+    height: 80px;
     padding: 7px 10px;
   }
 }
@@ -712,9 +746,9 @@ img {
     padding: 7px 10px;
   }
 
-  #courses video {
+  #courses .courseCardImage{
     width: 50%;
-    height: 200px;
+    height: 80px;
     padding: 7px 10px;
   }
 }

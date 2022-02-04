@@ -40,11 +40,12 @@ body {
 
 /* navbar */
 .navbar {
-    background-color: #343a40 !important;
-    box-shadow: 0px 0px 16px 9px black;
+    background-color:#6f4e37b0 !important;
+    /* box-shadow: 0px 0px 16px 9px black; */
+    
 }
 
-.navbar-nav li a:after {
+/* .navbar-nav li a:after {
     bottom: 0;
     content: "";
     display: block;
@@ -54,7 +55,7 @@ body {
     background: #fff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0
-}
+} */
 
 .navbar-nav li a:hover:after {
     width: 100%;
@@ -80,12 +81,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
     margin-left: 2rem;
 }
 
-.logo-img {
-    height: 3rem;
-    width: 3rem;
-}
 
-.navbar-nav li a:after {
+
+/* .navbar-nav li a:after {
     bottom: 0;
     content: "";
     display: block;
@@ -96,11 +94,15 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
+.nav-item
+{
+   padding: 0px 20px 0px 0px; 
+}
 
 .navbar-nav li a:hover:after {
     width: 100%;
     left: 0;
-}
+} */
 
 .navbar-light .navbar-nav .nav-link {
     color: rgb(255 255 255 / 50%);
@@ -353,16 +355,38 @@ a.nav-link {
 footer {
     position: relative;
     width: 100%;
-    background-color: rgb(52, 58, 64);
-    color: white;
-    box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
-    padding: 15px 0px;
-    text-align: center;
+    
+    background-color: #6f4e37b0 !important
+
   }
   
   footer p {
     margin: 0;
   }
+
+  .footer-col ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    border-radius: 0px;
+    color:rgb(255, 255, 255);
+    
+  }
+
+  .footer-col ul li a {
+    text-decoration: none;
+    opacity: 0.8 
+  }
+
+  .footer-col ul li {
+    display: inline-block;
+    padding: 0px 70px;
+    
+  }
+
   
   .footer-wrapper {
     display: flex;
@@ -471,11 +495,13 @@ footer {
     font-size: 28px;
   }
   
-  .logo-img {
-    margin-left: 40px;
+  .logo-img{
+    margin-left: 20px;
+    margin-right: 125px;
     /* Width and height same to make icon look more professional */
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
+   
   }
 /* Media Query */
 
