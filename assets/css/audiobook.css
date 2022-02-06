@@ -1,0 +1,46 @@
+@import "compass/css3";
+
+.audiobook {
+
+    margin: 40px 70px;
+    padding: 10px 10px;
+
+    text-decoration: none;
+    text-align: center;
+    width: 190px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.5s;
+
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    background: #3590f8;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 20px;
+    @include transition(box-shadow .25s ease);
+
+    &:after {
+        content: '';
+        display: inline-block;
+        color: #94a657;
+        background: #fff;
+        font-family: 'FontAwesome';
+        padding: 3px;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        margin-left: 8px;
+        padding-left: 4.5px;
+        padding-right: 1.5px;
+    }
+
+    &.playing {
+        &:after {
+            padding: 3px;
+            content: '';
+        }
+    }
+}
