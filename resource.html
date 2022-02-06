@@ -3,6 +3,7 @@
 <head>
 	<title>Resources</title>
     <link rel="icon" href="./assets/logos/finalLogo.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- Title bar icon -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,7 +13,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="AEC LIBRARY">
-    
+    <style media="screen">
+  .carousel-cell {
+    width: 100%;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+    }
+	
+  </style>
   <!-- Style CSS -->
   <link rel="stylesheet" href="resource.css"/>
 	 <!-- bootstrap-css -->
@@ -49,297 +60,196 @@
 <main>
     <h2 class="hover-underline-animation">Courses</h2><br/>
     <h3 class="hover-underline-animation">Web Development Courses</h3><br/><br/>
+    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
+	  <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">
+	  <img width="33%" height="300" src="https://oilab.in/public/img/courses/full-stack-web-developer.jpg"> 
+        </a>
+		 <a href="https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/" target="_blank">
+	<img width="33%" height="300" src="https://mgdvq45m3ss2gaon92odwxol-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/Web-Development.jpg">
+        </a>
+		 <a href="https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide/" target="_blank">
+	<img width="33%" height="300" src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1024x784.jpg">
+        </a>
+	
+		</div> 
 
-    <section id="courses">
-        
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/1430746_2f43_10.jpg?secure=1nVxO7bGRxFT4tE5kCjVYg%3D%3D%2C1643910469"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>The Complete Web Developer in 2022: Zero to Mastery</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/822444_a6db.jpg?secure=7TQodxiuvzERDAiChUB4cQ%3D%3D%2C1643944845"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>Python and Django Full Stack Web Developer Bootcamp</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/833442_b26e_5.jpg?secure=vfzplTV-_zLu5o-eG4UllQ%3D%3D%2C1643944845"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>Angular & NodeJS - The MEAN Stack Guide</p>
-            </div>
-        </div>
-    </section>
-
-    <br/><br/>
+		<div class="carousel-cell">
+		<a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">
+	  <img width="33%" height="300" src="https://industrialtraining.pro/wp-content/uploads/2021/12/web-development-1.png">
+        </a>
+		<a href="https://www.udemy.com/course/the-complete-web-developer-course-2/" target="_blank">
+	<img width="33%" height="300" src="https://cdn3.vectorstock.com/i/1000x1000/11/77/web-development-courses-concept-banner-header-vector-31221177.jpg">
+        </a>
+		<a href="https://www.udemy.com/course/web-developer-course/" target="_blank">
+	<img width="33%" height="300" src="https://www.acewebacademy.com/blog/wp-content/uploads/2013/09/44-Why-to-Choose-Web-Development-Courses-min.png">
+        </a>
+		</div>
+	</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <br><br>
+  
     <h3 class="hover-underline-animation">App Development Courses</h3><br/><br/>
+    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
 
-    <section id="courses">
-        
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/master-android-7-nougat-java-app-development-step-by-step/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/919872_ed54_6.jpg?secure=58Ta2jB4c6qW2NVqXsYLyg%3D%3D%2C1643947901"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>Android Java Masterclass - Become an App Developer</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/1708340_7108_5.jpg?secure=99txakOYtcF7T2rBm4syoA%3D%3D%2C1643947843"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>Flutter & Dart - The Complete Guide [2022 Edition]</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/react-native-the-practical-guide/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/1436092_2024_4.jpg?secure=GqSRh75xWyZtOShtgpv1fA%3D%3D%2C1643947843"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>React Native - The Practical Guide [2022 Edition]</p>
-            </div>
-        </div>
-    </section>
+	  <a href="https://www.udemy.com/course/master-android-7-nougat-java-app-development-step-by-step/" target="_blank">
+	  <img width="33%" height="300" src="https://5.imimg.com/data5/YO/AC/GLADMIN-61733573/mobile-app-development-courses-500x500.png"> 
+        </a>
+		  <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/" target="_blank">
+	<img width="33%" height="300" src="https://slaconsultantsgurgaon.in/wp_files/wp-content/uploads_gurgaon/2018/10/Mobile-Application-Training-Course-in-Gurgaon.png">
+        </a>
+		<a href="https://www.udemy.com/course/react-native-the-practical-guide/" target="_blank">
+	<img width="33%" height="300" src="https://viit.pk/frontend/img/android-app-designing.png">
+        </a>
+	
+		</div> 
 
-    <br/><br/>
+		<div class="carousel-cell">
+		<a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">
+	  <img width="33%" height="300" src="https://edu.varistor.in/wp-content/uploads/android-app-changes.png">
+        </a>
+		<a href="https://www.udemy.com/course/the-complete-web-developer-course-2/" target="_blank">
+	<img width="33%" height="300" src="https://www.aptechlearningdelhi.com/images/course/full/mobile-app-development.jpg">
+        </a>
+		<a href="https://www.udemy.com/course/web-developer-course/" target="_blank">
+	<img width="33%" height="300" src="https://1qkeyv41u1op36vgbm47q0i6-wpengine.netdna-ssl.com/wp-content/uploads/2021/08/Mobile-App-Development-Process.png">
+        </a>
+		</div>
+	</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <br><br>
+
     <h3 class="hover-underline-animation">Programming Languages Courses</h3><br/><br/>
+    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
 
-    <section id="courses">
-        
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/the-python-mega-course/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/692188_9da7_26.jpg?secure=clK1jTzCBAOof0XbBSDipg%3D%3D%2C1643945468"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>The Python Mega Course 2022: Buils 10 Real-World Programs</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/beg-modern-cpp/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/1026276_b23a_5.jpg?secure=vOq8K6VOowdwRAE99luKMg%3D%3D%2C1643945950"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>Complete Modern C++ <br/>(C++11/14/17)</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/master-practical-java-development/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/827692_91ad_2.jpg?secure=inFloExGthfL-9UAwNyj6A%3D%3D%2C1643946164"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>The Complete Java Certification Course: Industry Ready Core Java</p>
-            </div>
-        </div>
-    </section>
+	  <a href="https://www.udemy.com/course/beg-modern-cpp/" target="_blank">
+	  <img width="33%" height="300" src="https://hackernoon.com/images/VyvcKdbWHbTaN3QzRCQQS7pXASq1-9x7p315b.jpeg"> 
+        </a>
+		  <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/" target="_blank">
+	<img width="33%" height="300" src="https://preview.redd.it/31b2ii8hchi31.jpg?auto=webp&s=309fe75e96212cf42c4120ca5adedaef52c41e01">
+        </a>
+		<a href="https://www.udemy.com/course/master-practical-java-development/" target="_blank">
+	<img width="33%" height="300" src="https://i.pinimg.com/originals/2b/d2/ec/2bd2ec72b3391c8b8df8c7d274b877e2.jpg">
+        </a>
+	
+		</div> 
 
-    <br/><br/>
+		<div class="carousel-cell">
+		<a href="https://www.udemy.com/course/javascript-essentials/" target="_blank">
+	  <img width="33%" height="300" src="https://mpng.subpng.com/20180417/ite/kisspng-web-development-javascript-logo-java-plum-5ad58e75bc9174.9127947515239450777724.jpg">
+        </a>
+		<a href="https://www.udemy.com/course/r-basics/" target="_blank">
+	<img width="33%" height="300" src="https://d1zx6djv3kb1v7.cloudfront.net/wp-content/media/2020/05/R-PROGRAMMING-LANGUAGE-i2tutorials.jpg">
+        </a>
+		<a href="https://www.udemy.com/course/go-programming-language-crash-course/" target="_blank">
+	<img width="33%" height="300" src="https://www.atatus.com/blog/content/images/size/w960/2020/06/golang-auto-build-versioning.png">
+        </a>
+		</div>
+	</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <br><br>
+
     <h3 class="hover-underline-animation">Data Science Courses</h3><br/><br/>
+    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
 
-    <section id="courses">
-        
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/machinelearning/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/950390_270f_3.jpg?secure=3Ut3xMmcebWtM6Yf1KfFTw%3D%3D%2C1643947128"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>Machine Learning A-Z™: Hands-On Python & R In Data Science</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/artificial-intelligence-in-unity/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/1349250_c17d_2.jpg?secure=j-Or7tG0aFQDsHpcYACBFw%3D%3D%2C1643947355"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>The Beginner's Guide to Artificial Intelligence in Unity</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/python-data-science-machine-learning-bootcamp/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/1318112_faa8_5.jpg?secure=tqAWlp-2iKkU7xow-VnMDw%3D%3D%2C1643947480"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>Complete 2022 Data Science & Machine Learning Bootcamp</p>
-            </div>
-        </div>
-    </section>
+	  <a href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/" target="_blank">
+	  <img width="33%" height="300" src="https://skillsupedu.com/image/all-courses/data-science-with-python-training.jpg"> 
+        </a>
+		  <a href="https://www.udemy.com/course/deeplearning/" target="_blank">
+	<img width="33%" height="300" src="https://www.meritglobaltraining.com/images/data1.png">
+        </a>
+		<a href="https://www.udemy.com/course/datascience/" target="_blank">
+	<img width="33%" height="300" src="https://www.promosystech.com/temp/assets/img/demo/datas.png">
+        </a>
+	
+		</div> 
 
-    <br/><br/>
+		<div class="carousel-cell">
+		<a href="https://www.udemy.com/course/statistics-for-data-science-and-business-analysis/" target="_blank">
+	  <img width="33%" height="300" src="https://sgp1.digitaloceanspaces.com/hh-certificates/images/1617166416garfg.webp">
+        </a>
+		<a href="https://www.udemy.com/course/data-science-and-machine-learning-bootcamp-with-r/" target="_blank">
+	<img width="33%" height="300" src="http://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2014/04/datasc-adv-datasc-trainingimg1.jpg">
+        </a>
+		<a href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/" target="_blank">
+	<img width="33%" height="300" src="https://www.iimtindia.net/Blog/wp-content/uploads/2021/06/Data-Science.jpg">
+        </a>
+		</div>
+	</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <br><br>
+
     <h3 class="hover-underline-animation">Database Design & Development Courses</h3><br/><br/>
+    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
 
-    <section id="courses">
-        
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/the-complete-oracle-sql-certification-course/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/866196_be1d.jpg?secure=89ctdMvUe63HCb8sP1Xzdw%3D%3D%2C1643949270"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>The Complete Oracle SQL Certification Course</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/1187016_51b3.jpg?secure=zFX6S9VDEbi2HNj7JQLJwA%3D%3D%2C1643949270"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/mongodb-the-complete-developers-guide/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/1906852_93c6_2.jpg?secure=hfIPVMwwTtkh46wywVYdhQ%3D%3D%2C1643949270"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>MongoDB - The Complete Developer's Guide 2022</p>
-            </div>
-        </div>
-    </section>
+	  <a href="https://www.udemy.com/course/the-complete-oracle-sql-certification-course/" target="_blank">
+	  <img width="33%" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy7XhADect5JBubSvySQbd_l_ov6yRyVZ9LWuaVcX1uRC70nC_7955hUPqX9mBHNUVuw&usqp=CAU"> 
+        </a>
+		  <a href="https://www.udemy.com/course/mongodb-the-complete-developers-guide/" target="_blank">
+	<img width="33%" height="300" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.png">
+        </a>
+		<a href="https://www.udemy.com/course/datascience/" target="_blank">
+	<img width="33%" height="300" src="https://logosvector.net/wp-content/uploads/2015/10/mongodb-logo-vector-download.jpg">
+        </a>
+	
+		</div> 
 
-    <br/><br/>
+		<div class="carousel-cell">
+		<a href="https://www.udemy.com/course/learn-graphql-with-net-core-for-absolute-beginners/" target="_blank">
+	  <img width="33%" height="300" src="https://engineering.icf.com/wp-content/uploads/2020/03/graphql.png">
+        </a>
+		<a href="https://www.udemy.com/course/xslt-xpath-and-xquery-fundamentals/" target="_blank">
+	<img width="33%" height="300" src="https://cdn.educba.com/academy/wp-content/uploads/2020/04/XQuery-Functions.jpg">
+        </a>
+		<a href="https://www.udemy.com/course/sql-master-sql-with-phpmyadmin-and-mysql-engine/" target="_blank">
+	<img width="33%" height="300" src="https://jusksmith.files.wordpress.com/2020/06/phpmyadmin-logo.jpg">
+        </a>
+		</div>
+	</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <br><br>
+
     <h3 class="hover-underline-animation">Game Development Courses</h3><br/><br/>
+    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
 
-    <section id="courses">
-        
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/unitycourse/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/258316_55e9_11.jpg?secure=e0sr7xhZtVzFj3snpGIIdA%3D%3D%2C1643948905"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>Complete C# Unity Game Developer 2D- for Web, Mac & PC</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/unrealengine-cpp/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/1334868_f4f7_10.jpg?secure=rt__tZUdtUXYU6A2FX4a_w%3D%3D%2C1643949847"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>Unreal Engine 4 Mastery: Create Multiplayer Games with C++</p>
-            </div>
-        </div>
-        <div class="courseCard">
-            <div class="courseCardImage" style="height: 220px; width: 100%; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                <a href="https://www.udemy.com/course/blendercharacters/" target="_blank"><img 
-                    src="https://img-b.udemycdn.com/course/240x135/1356020_2c30_4.jpg?secure=Al_fK6FXq6rTamNz8ArrBg%3D%3D%2C1643949935"
-                    alt="course_image"
-                    style="height: 220px;
-                    width: 100%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;"/></a>
-            </div>
-            <div class="courseCardTitle">
-                <p>Blender Character Creator v2.0 for Video Games Design</p>
-            </div>
-        </div>
-    </section><br/>
+	  <a href="https://www.udemy.com/course/unrealcourse/" target="_blank">
+	  <img width="33%" height="300" src="https://img-c.udemycdn.com/course/240x135/657932_c7e0_4.jpg"> 
+        </a>
+		  <a href="https://www.udemy.com/course/unitycourse2/" target="_blank">
+	<img width="33%" height="300" src="https://img-c.udemycdn.com/course/240x135/1178124_76bb_10.jpg">
+        </a>
+		<a href="https://www.udemy.com/course/the-ultimate-guide-to-game-development-with-unity/" target="_blank">
+	<img width="33%" height="300" src="https://img-c.udemycdn.com/course/240x135/1328572_b05d_5.jpg">
+        </a>
+	
+		</div> 
+
+		<div class="carousel-cell">
+		<a href="https://www.udemy.com/course/unrealblueprint/" target="_blank">
+	  <img width="33%" height="300" src="https://img-c.udemycdn.com/course/240x135/1946104_668a_2.jpg">
+        </a>
+		<a href="https://www.udemy.com/course/make-games-without-code-unity-visual-scripting/" target="_blank">
+	<img width="33%" height="300" src="https://img-c.udemycdn.com/course/240x135/3597670_8349_2.jpg">
+        </a>
+		<a href="https://www.udemy.com/course/unityandroidgamecourse/" target="_blank">
+	<img width="33%" height="300" src="https://thumbs.dreamstime.com/b/game-development-outline-icon-element-gaming-mobile-concept-web-apps-thin-line-can-be-used-white-background-165647954.jpg">
+        </a>
+		</div>
+	</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <br><br>
+
 
 
     <!-- <section id="courses">
@@ -359,95 +269,236 @@
     <h2 class="hover-underline-animation">Informative Youtube Channels</h2>
 	<br>
 	<h3 class="hover-underline-animation">Open Source Tutorials</h3>
-    <section id="yt" >
-
-      <iframe width="33%" src="https://www.youtube.com/embed/hmS6rhq8jkI" alt="Open-Source" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="33%" src="https://www.youtube.com/embed/KxUj-0R2yxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="33%" src="https://www.youtube.com/embed/3HqN-YS8eso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</section>
-	<br>
+    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/hmS6rhq8jkI" alt="Open-Source" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/KxUj-0R2yxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/3HqN-YS8eso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/yzeVMecydCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/SXW_bA4SGqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/Hkoml2mXDD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/8xRwsJ2ahfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/fMdfDnGX9S8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/LNyWK1mdFMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <br><br>
 	<h3 class="hover-underline-animation">Git & Github</h3>
-	<br>
-	 <section id="yt">
-      <iframe width="33%" src="https://www.youtube.com/embed/PQsJR8ci3J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/PQsJR8ci3J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/uaeKhfhYE0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/apGV9Kg7ics" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     
-	 </section>
-	 <br>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/gwWKnnCMQ5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/uj4fy4kpaOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/RGOj5yH7evk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/WbwIoQYP6no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/SWYqp7iY_Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/iR5WIknxdkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
+	 </div>
+    </div>
+	<br><br>
 	<h3 class="hover-underline-animation">HTML Tutorials</h3>
-	 <br>
-	 <section id="yt">
+	 <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
       <iframe width="33%" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/BsDoLVMnmZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	  <iframe width="33%" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	  </section>
-	<br>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/2ulnJImMmKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/88PXJAA6szs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/Ut4RpySLM6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/MDLn5-zSQQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/THp_EowtJ0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/FNGoExJlLQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
+	 </div>
+    </div>
+	<br><br>
 	<h3 class="hover-underline-animation">Machine Learning</h3>
-	<br>
-	  <section id="yt">
+	 <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
       <iframe width="33%" src="https://www.youtube.com/embed/lUSixxX9pK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/GwIo3gDZCVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/IoZGSQ07e8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	  </section>
-	  <br>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/Pj0neYUp9Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/RnFGwxJwx-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/NWONeJKn6kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/eq7KF7JTinU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/7eh4d6sabA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/Q59X518JZHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
+	 </div>
+    </div>
+	<br><br>
 	   <h3 class="hover-underline-animation">DevOps Tutorials</h3>
-	  <br>
-	  <section id="yt">
+	 <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
       <iframe width="33%" src="https://www.youtube.com/embed/j5Zsa_eOXeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/hQcFE0RD0cQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/5KtRF4NuUWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	  </section>
-	<br>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/S_0q75eD8Yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/wUz5iuKz1OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/tgmM3_2dZwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/JHoy3lDZOfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/ZtvpS5eVVDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/a9_oMNSgX2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
+	 </div>
+    </div>
+	<br><br>
 	<h3 class="hover-underline-animation">Node.js Tutorials</h3>
-	<br>
-	<section id="yt">
+	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
+	  <iframe width="33%" src="https://www.youtube.com/embed/TlB_eWDSMt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="33%" src="https://www.youtube.com/embed/IIpiLZGTWuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="33%" src="https://www.youtube.com/embed/ENrzD9HAZK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/KE_wDYp-Xu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/nZRbnBBupBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/fBNz5xF-Kx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
       <iframe width="33%" src="https://www.youtube.com/embed/BLl32FvcdVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/ipnWAKoiBtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/JnvKXcSI7yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
-	  <br>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
+	 </div>
+    </div>
+	<br><br>
 	  <h3 class="hover-underline-animation">MERN Tutorials</h3>
-	  <br>
-	<section id="yt">
+	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
       <iframe width="33%" src="https://www.youtube.com/embed/7CqJlxBYj-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/I7EDAR2GRVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/ktjafK4SgWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	  </section>
-	  <br>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/mrHNSanmqQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/YhJ-lPiCfyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/ngc9gnGgUdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/EzF-ul6jv3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/-Vd5RRZXIyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/wgGkF4k9c7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
+	 </div>
+    </div>
+	<br><br>
 	  <h3 class="hover-underline-animation">CSS Tutorials</h3>
-	  <br>
-	 <section id="yt">
+	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
       <iframe width="33%" src="https://www.youtube.com/embed/Edsxf_NBFrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/1Rs2ND1ryYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/3_9znKVNe5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	  </section>
-  <br>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/WyxzAU3p8CE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/FqmB-Zj2-PA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/ieTHC78giGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/u5-K_ua9sOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/1PnVor36_40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/yfoY53QXEnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
+	 </div>
+    </div>
+	<br><br>
    <h3 class="hover-underline-animation">Bootstrap Tutorials</h3>
-  <br>
-	 <section id="yt">
+	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
       <iframe width="33%" src="https://www.youtube.com/embed/vpAJ0s5S2t0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/-qfEOE4vtxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/jeZ-URjZM_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	  </section>
-	<br>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/QE5oQh63gGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/4sosXZsdy-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/eow125xV5-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/5GcQtLDGXy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/008dZPBZtLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/Qb8DLdSYBAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
+	 </div>
+    </div>
+	<br><br>
 	 <h3 class="hover-underline-animation">C++ Tutorials</h3>
-	<br>
-	 <section id="yt">
+	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
       <iframe width="33%" src="https://www.youtube.com/embed/vLnPwxZdW4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/yGB9jhsEsr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/BClS40yzssA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	  </section>
-<br> 
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/GQp1zzTwrIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/Umm1ZQ5ltZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/McojvctVsUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/KC47C8sg2zQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/VJ6YdCuKsfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/_bYFu9mBnr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
+	 </div>
+    </div>
+	<br><br>
 <h3 class="hover-underline-animation">Data Structure and Algorithm Tutorials</h3>
-<br>
-	 <section id="yt">
+	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
       <iframe width="33%" src="https://www.youtube.com/embed/8hly31xKli0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/hCrO_cR7kno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="33%" src="https://www.youtube.com/embed/BBpAmxU_NQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	  </section>
-<br>
-    
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/RBSGKlAvoiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/B31LgI4Y4DQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/MtVZAXepMPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-cell">
+        <iframe width="33%" src="https://www.youtube.com/embed/YOfXMQnUlZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/4iFALQ1ACdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="33%" src="https://www.youtube.com/embed/5_5oE5lgrhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
+	 </div>
+    </div>
+	<br><br>
 
 	
 <h2 class="hover-underline-animation"> NCERT Books </h2>
@@ -849,4 +900,3 @@
 </script>   
 </body>
 </html>
-
