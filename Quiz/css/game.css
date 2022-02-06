@@ -124,6 +124,11 @@ h3 {
     border: 2px solid #56a5eb;
   }
 
+  .quiz-exit svg{
+    width: 36px;
+    height: 36px;
+  }
+
   .quiz-exit:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
@@ -134,3 +139,65 @@ h3 {
   a{
     text-decoration: none;
   }
+
+@media screen and (max-width : 425px) {
+  .choice-container{
+    font-size: 15px;
+    width: 70%;
+    margin: auto;
+  }
+  h2{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hud-prefix{
+    font-size: 18px;
+  }
+
+  .quiz-exit{
+    padding: 0;
+    left: 0.5rem;
+  }
+
+  .quiz-exit svg{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width : 768px) and (min-width : 426px) {
+  .choice-container{
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+  }
+  h2{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p.hud-prefix{
+    font-size: 20px;
+    margin-right: 3rem;
+  }
+
+  #score{
+    margin-right: 3rem;
+  }
+
+  #progressBar,
+  #progressText{
+    margin-left: 3rem;
+  }
+  .quiz-exit{
+    padding: 0.2rem;
+    left: 0.5rem;
+  }
+
+  .quiz-exit svg{
+    width: 36px;
+    height: 36px;
+  }
+  
+}
