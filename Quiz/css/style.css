@@ -98,3 +98,44 @@
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
+
+@media screen and (max-width : 425px) {
+  .quiz-section{
+    flex-direction: column;
+    height: max-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .quiz-svg{
+    width: 50%;
+    margin: auto;
+  }
+  
+  .quiz-main{
+    width:90%;
+    font-size: 20px;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .quiz-img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+  }
+
+  .quiz-btn{
+    margin: auto;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width : 768px) and (min-width : 426px) {
+  .quiz-img{
+    width: 120px;
+    height: 120px;
+    margin: 5rem auto;
+  }
+  
+}
