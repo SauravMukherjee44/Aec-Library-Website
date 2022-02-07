@@ -138,7 +138,8 @@ video {
 .books {
   padding: 10px;
   box-shadow: 5px 3px gainsboro;
-  height: 450px;
+  width: 100%;
+  height: 400px;
   border-radius: 15px;
 }
 
@@ -172,15 +173,15 @@ section h5 {
 }
 
 /* COURSES */
-#courses {
+/*#courses {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  /* border-radius: 8px;
+  border-radius: 8px;
   margin-left: 4px;
-  margin-right: 4px; */
-}
+  margin-right: 4px;
+}*/
 /* #courses video {
   border-radius: 20px;
   padding: none !important;
@@ -220,16 +221,6 @@ section h5 {
 }
 
 /* YouTube Recommendation */
-#yt {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  border-radius: 8px;
-  margin-left: 4px;
-  margin-right: 4px;
-  padding: 5px;
-}
 iframe {
   border-radius: 10px;
   padding-left: 3px;
@@ -255,7 +246,7 @@ h3.hover-underline-animation {
 }
 /* NCERT */
 #ncert {
-  max-width: 1340px;
+  width: 100%;
   border-radius: 8px;
   margin: 20px;
   margin-left: 6px !important;
@@ -265,9 +256,14 @@ h3.hover-underline-animation {
   flex-wrap: wrap;
   align-items: center;
 }
+.NC{
+  width: 21%;
+  margin-top: 20px;
+}
+
 /* Audio Books*/
 #audio-books {
-  max-width: 1300px;
+  width: 100%;
   z-index: 10000;
   margin-left: 5px;
   margin-right: 5px;
@@ -494,6 +490,38 @@ h3.hover-underline-animation {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px){
+  .NC{
+    width: 30%;
+  }
+  .books{
+    height: 300px;
+  }
+  .carousel-cell img{
+    width: 40%;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+}
+@media screen and (max-width: 700px){
+  .courseCard{
+    width: 40%;
+  }
+  .NC{
+    width: 45%;
+  }
+}
+@media screen and (max-width: 500px){
+  .courseCard{
+    width: 75%;
+  }
+  .NC{
+    width: 70%;
   }
 }
 
@@ -726,18 +754,12 @@ footer a:hover {
 }
 
 /* for making Youtube section, course video section responsive */
-@media only screen and (max-width: 470px) {
-  #yt iframe {
+/*@media only screen and (max-width: 470px) {
+   iframe {
     width: 100%;
     height: 200px;
     padding: 7px 10px;
-  }
-
-  #courses .courseCardImage{
-    width: 100%;
-    height: 80px;
-    padding: 7px 10px;
-  }
+  }#yt
 }
 
 @media only screen and (min-width: 470px) and (max-width: 650px) {
@@ -746,10 +768,4 @@ footer a:hover {
     height: 200px;
     padding: 7px 10px;
   }
-
-  #courses .courseCardImage{
-    width: 50%;
-    height: 80px;
-    padding: 7px 10px;
-  }
-}
+}*/
