@@ -130,3 +130,12 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width : 768px) and (min-width : 426px) {
+  .quiz-img{
+    width: 120px;
+    height: 120px;
+    margin: 5rem auto;
+  }
+  
+}
