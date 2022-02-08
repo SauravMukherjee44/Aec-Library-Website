@@ -105,14 +105,14 @@
   transform: none;
 }
 /* FORMS */
-form {
+.highscore-form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-input {
+#username {
   margin-bottom: 1rem;
   width: 20rem;
   padding: 1.5rem;
@@ -121,7 +121,7 @@ input {
   box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
 
-input::placeholder {
+#username::placeholder {
   color: #aaa;
 }
 
