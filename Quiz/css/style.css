@@ -99,6 +99,32 @@
   transition: transform 150ms;
 }
 
+.quiz-btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+/* FORMS */
+.highscore-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#username {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+#username::placeholder {
+  color: #aaa;
+}
+
 @media screen and (max-width : 425px) {
   .quiz-section{
     flex-direction: column;

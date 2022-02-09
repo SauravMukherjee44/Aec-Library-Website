@@ -16,9 +16,11 @@
       padding: 0;
       color: #333;
     }
-    :root{
+
+    :root {
       font-size: 62.5%;
     }
+
     h1 {
       font-size: 5.4rem;
       color: #56a5eb;
@@ -35,15 +37,17 @@
   <div class="quiz-container">
     <div id="end" class="flex-center flex-column">
       <h1 id="finalScore"></h1>
+      <form class="highscore-form">
+        <input type="text" name="username" id="username" placeholder="username" />
+        <button type="submit" class="quiz-btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+          Save
+        </button>
+      </form>
       <a class="quiz-btn" href="/Quiz/pages/game.html">Play Again</a>
       <a class="quiz-btn" href="/index.html">Go Home</a>
     </div>
   </div>
-  <script>
-    const finalScore = document.getElementById('finalScore');
-    const mostRecentScore = localStorage.getItem('mostRecentScore');
-    finalScore.innerText = `Your Score : ${mostRecentScore}`;
-  </script>
+  <script src="/Quiz/js/end.js"></script>
 </body>
 
 </html>
