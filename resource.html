@@ -627,6 +627,10 @@
                 <p class="play-button-container">
                     <i class="fa fa-play play-button not-playing"></i>
                 </p>
+                <p class="volume-button-container">
+                    <i class="fa fa-volume-up volume-button"></i>
+                        <input type="range" value="100" class="volume-indicator not-showing">
+                </p>
                 <h3>
         </div>
         <div class="audio-book-card ">
@@ -646,6 +650,10 @@
             <h3>
                 <p class="play-button-container">
                     <i class="fa fa-play play-button not-playing"></i>
+                </p>
+                <p class="volume-button-container">
+                    <i class="fa fa-volume-up volume-button"></i>
+                        <input type="range" value="100" class="volume-indicator not-showing">
                 </p>
             </h3>
         </div>
@@ -667,6 +675,10 @@
                 <p class="play-button-container">
                     <i class="fa fa-play play-button not-playing"></i>
                 </p>
+                <p class="volume-button-container">
+                    <i class="fa fa-volume-up volume-button"></i>
+                        <input type="range" value="100" class="volume-indicator not-showing">
+                </p>
                 <h3>
         </div>
         <div class="audio-book-card">
@@ -686,6 +698,10 @@
             <h3>
                 <p class="play-button-container">
                     <i class="fa fa-play play-button not-playing"></i>
+                </p>
+                <p class="volume-button-container">
+                    <i class="fa fa-volume-up volume-button"></i>
+                        <input type="range" value="100" class="volume-indicator not-showing">
                 </p>
                 <h3>
         </div>
@@ -809,8 +825,55 @@
     let durationIndicator = document.querySelectorAll(".duration");
     let currentTimeIndicator = document.querySelectorAll(".current-time");
     const progressBar = document.querySelectorAll('.progress-div');
+    const volumeIcon = document.querySelectorAll(".volume-button");
+    const volumeIndicator = document.querySelectorAll(".volume-indicator");
     let isAudioPlaying = false;
     for(let j =0;j<play.length;j++){
+          //Increase or Decrease Volume
+          let initialVolume = volumeIndicator[j].value;
+          volumeIcon[j].addEventListener("mouseover",()=>{
+              let volumeBarNotVisible = document.querySelectorAll(".not-showing");
+              let volumeBarVisible = document.querySelectorAll(".showing");
+              if(volumeBarVisible.length == 0){
+                  volumeIndicator[j].style.display = "block";
+                  volumeIndicator[j].classList.replace("not-showing","showing");
+              }
+              else{
+                  volumeBarVisible.forEach((volume_bar)=>{
+                      volume_bar.style.display ="none";
+                      volume_bar.classList.replace("showing","not-showing");
+                  })
+                  volumeIndicator[j].style.display = "block";
+                  volumeIndicator[j].classList.replace("not-showing","showing");
+              }
+          })
+          document.addEventListener("click",()=>{
+              volumeIndicator[j].style.display = "none";
+          })
+          volumeIcon[j].addEventListener("click",()=>{
+              audioBooks[j].volume = 0;
+              if(volumeIcon[j].classList.contains('fa-volume-off')==true){
+                      audioBooks[j].volume = initialVolume/100;
+                      volumeIndicator[j].value=initialVolume;
+                      volumeIcon[j].classList.replace("fa-volume-off","fa-volume-up");
+              }else{
+                  volumeIcon[j].classList.replace("fa-volume-up","fa-volume-off");
+                  volumeIndicator[j].value=0;
+      
+              }
+          })
+          volumeIndicator[j].addEventListener("input",()=>{
+              audioBooks[j].volume = (volumeIndicator[j].value)/100;
+              if(volumeIndicator[j].value==0){
+                  audioBooks[0].volume = 0;
+                  volumeIcon[j].classList.replace("fa-volume-up","fa-volume-off");
+              }else{
+              volumeIcon[j].classList.replace("fa-volume-off","fa-volume-up");
+      
+          }
+      
+          })
+        //Pause functionality
         const pauseAudioBook = ()=>{
             isAudioPlaying = false;
             audioBooks[j].pause();
@@ -818,6 +881,7 @@
             play[j].style.left = "2px";
             play[j].classList.add("not-playing");
         };
+        // Play functionality
         const playAudioBook = ()=>{
             isAudioPlaying = true;
             let noOfAudioNotPlaying = document.querySelectorAll(".not-playing");
@@ -852,6 +916,7 @@
                     playAudioBook();
                 }
             });
+        //Audio Time Change functionality
         audioBooks[j].addEventListener('timeupdate',(event)=>{
             const {currentTime, duration} = event.srcElement;
             let audioProgressTime = (currentTime/duration) * 100;
