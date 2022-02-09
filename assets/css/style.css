@@ -1761,15 +1761,20 @@ a {
 .contain {
   height: 300px;
   width: 100%;
-  color: black;
+  color: white;
   margin-top: 50px;
   margin-left: 50px;
-  background-color: white;
+  
+  background: rgba(92, 92, 81, 0.582);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
 }
 
+.contain:hover{
+  transform: scale(1.1);
+ 
+}
 .contain div {
   font-family: "Source Sans Pro", sans-serif;
   margin: 30px;
@@ -1921,7 +1926,14 @@ select {
   padding-right: 0px;
   justify-items: right;
   flex-direction: column;
+  
 }
+#table{
+  background:rgb(0,0,0,0.5);
+  cursor: auto;
+}
+#mytable{
+  border-radius:20px;
 
 /*
 #table {
