@@ -43,8 +43,9 @@ nav.navbar {
 }
 #table {
   border-radius: 20px;
-
-  background: linear-gradient(to right, #f2c782fa, #cdaa7e, #d3c8a8);
+  background:rgb(0,0,0,0.5);
+  cursor: auto;
+  
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 10px;
@@ -1928,12 +1929,12 @@ select {
   flex-direction: column;
   
 }
-#table{
+/*#table{
   background:rgb(0,0,0,0.5);
   cursor: auto;
-}
-#mytable{
-  border-radius:20px;
+}*/
+/*#mytable{
+  border-radius:20px;}*/
 
 /*
 #table {
