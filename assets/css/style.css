@@ -41,6 +41,10 @@ nav.navbar {
   /* box-shadow: 2px 2px 5px 2px #ddbcbc; */
   box-shadow: 2px 2px 5px 2px black;
 }
+ .hero-left + .hero-right{
+  margin-right:-10rem;
+
+}
 #table {
   border-radius: 20px;
   background:rgb(0,0,0,0.5);
@@ -974,7 +978,10 @@ strong {
   /*   html {
     width:73.7rem;
   } */
-
+  .hero-left + .hero-right{
+    margin-right:0;
+  
+  }
   #loading {
     width: 73.7;
   }
