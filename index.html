@@ -255,7 +255,7 @@
         <div style="overflow-x:auto;" id="books-content">
           <table class="table table-striped" id="mytable">
             <thead>
-              <tr>
+              <tr id="data">
                 <th scope="col">Date of Issue</th>
                 <th scope="col">Name</th>
                 <th scope="col">Author</th>
@@ -263,7 +263,11 @@
                 <th scope="col">Category</th>
               </tr>
             </thead>
-            <tbody id="tableBody"></tbody>
+            <tbody id="tableBody">
+              <!-- <ul>
+                <li></li>
+              </ul> -->
+            </tbody>
           </table>
         </div>
       </div>
@@ -273,7 +277,7 @@
           <form id="searchForm" class="form-inline my-2 my-lg-0">
             <button class="btn btn-dark my-2 my-sm-0">Keyword</button>
             <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search for a book"
-              aria-label="Search" name="search" style="border: none;" />
+              aria-label="Search" name="search" style="border: none;" onkeyup="searchbooks()" />
             <button class="btn btn-dark my-2 my-sm-0" id="searchsymbol" type="submit">
               &#128269
             </button>
@@ -284,6 +288,38 @@
   </div>
   <br>
   <br>
+
+  <!-- *****************************************************changes*********************************************** -->
+  <script>
+    function searchbooks()
+    {
+      var q = document.getElementById("searchTxt");
+  var v = q.value.toLowerCase();
+  var rows = document.getElementsByTagName("tr");
+  //var on = 0;
+  for ( var i = 0; i < rows.length; i++ ) {
+    var fullname = rows[i].getElementsByTagName("td");
+    fullname = fullname[1].innerHTML.toLowerCase();
+    console.log(fullname);
+    if ( fullname.indexOf(v) > -1  ) {
+        if ( fullname.indexOf(v) > -1 )  {
+        rows[i].style.display = "";
+      } else {
+        rows[i].style.display = "none";
+      }
+    }
+  }
+  // var n = document.getElementById("noresults");
+  // if ( on == 0 && n ) {
+  //   n.style.display = "";
+  //   document.getElementById("qt").innerHTML = q.value;
+  // } else {
+  //   n.style.display = "none";
+  // }
+    }
+
+  </script>
+  <!-- ****************************************************done******************************************** -->
   <div class="suggestion">
     <ul class="list">
         <li>
@@ -623,17 +659,16 @@
     <!-- <div class="stay-update">STAY UPDATED</div> -->
   </div>
 
-<!-- Quiz section  ********** Starts *********-->
+<!-- Quiz section under issue #534  ********** Starts *********-->
   <div class="quiz-section">
     <img class="quiz-svg" src="/Quiz/quiz.svg" alt="">
     <div class="quiz-main">
         <div class="quiz-text">Bored ? Here's a quick quiz for you </div>
         <a class="quiz-btn" href="/Quiz/pages/game.html">Play</a>
-        <a class="quiz-btn" href="/Quiz/pages/highscore.html">High Scores</a>
     </div>
     <img class="quiz-img" src="/Quiz/brain.png" alt="">
   </div>
-<!-- Quiz section  ********* Ends ********** -->
+<!-- Quiz section under issue #534  ********* Ends ********** -->
 
         
         <section class="faq-container">
