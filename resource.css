@@ -138,7 +138,8 @@ video {
 .books {
   padding: 10px;
   box-shadow: 5px 3px gainsboro;
-  height: 450px;
+  width: 100%;
+  height: 400px;
   border-radius: 15px;
 }
 
@@ -172,15 +173,15 @@ section h5 {
 }
 
 /* COURSES */
-#courses {
+/*  #courses {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  /* border-radius: 8px;
+  border-radius: 8px;
   margin-left: 4px;
-  margin-right: 4px; */
-}
+  margin-right: 4px;
+} */
 /* #courses video {
   border-radius: 20px;
   padding: none !important;
@@ -220,7 +221,7 @@ section h5 {
 }
 
 /* YouTube Recommendation */
-#yt {
+/*#yt {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -229,7 +230,7 @@ section h5 {
   margin-left: 4px;
   margin-right: 4px;
   padding: 5px;
-}
+}*/
 iframe {
   border-radius: 10px;
   padding-left: 3px;
@@ -255,19 +256,24 @@ h3.hover-underline-animation {
 }
 /* NCERT */
 #ncert {
-  max-width: 1340px;
+  width: 100%;
   border-radius: 8px;
   margin: 20px;
   margin-left: 6px !important;
   margin-right: 5px !important;
+  padding-bottom: 40px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
 }
+.NC{
+  width: 22%;
+  margin-top: 10px;
+}
 /* Audio Books*/
 #audio-books {
-  max-width: 1300px;
+  width: 100%;
   z-index: 10000;
   margin-left: 5px;
   margin-right: 5px;
@@ -361,6 +367,38 @@ h3.hover-underline-animation {
 }
 .audio-book-card h3:hover{
   top: 0px !important;
+}
+@media screen and (max-width: 900px){
+  .NC{
+    width: 30%;
+    margin-top: 15px;
+  }
+  .books{
+    height: 300px;
+  }
+  .carousel-cell img{
+    width: 40%;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+}
+@media screen and (max-width: 700px){
+  .courseCard{
+    width: 40%;
+  }
+  .NC{
+    width: 45%;
+  }
+}
+@media screen and (max-width: 500px){
+  .courseCard{
+    width: 75%;
+  }
+  .NC{
+    width: 70%;
+  }
 }
 .play-button-container:hover {
   background-color: #fff;
@@ -753,7 +791,7 @@ footer a:hover {
 }
 
 /* for making Youtube section, course video section responsive */
-@media only screen and (max-width: 470px) {
+/*@media only screen and (max-width: 470px) {
   #yt iframe {
     width: 100%;
     height: 200px;
@@ -765,9 +803,9 @@ footer a:hover {
     height: 80px;
     padding: 7px 10px;
   }
-}
+}*/
 
-@media only screen and (min-width: 470px) and (max-width: 650px) {
+/*@media only screen and (min-width: 470px) and (max-width: 650px) {
   #yt iframe {
     width: 50%;
     height: 200px;
@@ -779,4 +817,4 @@ footer a:hover {
     height: 80px;
     padding: 7px 10px;
   }
-}
+}*/

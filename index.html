@@ -16,6 +16,13 @@
 
 
   <!-- Bootstrap CSS -->
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
 
@@ -140,7 +147,27 @@
       <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i class="fas fa-sign-in-alt"></i> LOGIN </a></li>
     </ul>
   </header>
-  <nav class="new-nav">
+      <nav class="new-nav navbar-expand-lg navbar-light">
+        <!-- navbar brand -->
+        <!-- <a href="index.html" class="navbar-brand" id="nb"> Pictionary </a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- hamburger menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- navbar items -->
+          <ul class="ms-auto">
+            <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+            <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
+            <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
+            <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
+            <li class="nav-item"><a href="./sign up page/index.html"><i class="fas fa-sign-in-alt"></i>SIGN UP</a></li>
+            <li class="nav-item"><a href="./public/contact us .html"><i class="fas fa-address-book"></i>CONTACT US</a></li>
+            <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
+          </ul>
+        </div>
+      </nav>
+  <!--<nav class="new-nav">
     <ul>
       <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
       <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
@@ -150,7 +177,7 @@
       <li class="nav-item"><a href="./public/contact us .html"><i class="fas fa-address-book"></i>CONTACT US</a></li>
       <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
     </ul>
-  </nav>
+  </nav>-->
 
   <div class="container my-5">
 
