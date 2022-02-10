@@ -155,11 +155,11 @@
   <div class="container my-5">
 
     <div class="hero-left" autofocus>
-
+       <h2 id="IssueHere">Issue Here</h2>
       <form id="libraryForm">
         <div class="form-group row">
           <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
-          <label for="dateIssue" class="issue">Date of Issue</label>
+          <label for="dateIssue" class="issue"><span>Date of Issue</span></label>
           <div class="col">
             <input type="date" id="issueDate" name="issueDate">
           </div>
@@ -203,7 +203,7 @@
         </div>
         <fieldset class="form-group">
           <div class="row">
-            <legend class="col-form-label col pt-0"> <strong>Category</strong></legend>
+            <legend class="col-form-label col pt-0"><label for="category"><strong>Category</strong></label> </legend>
 
             <div class="col">
               <div class="form-check">
@@ -250,10 +250,10 @@
       </form>
     </div>
     <div class="hero-right">
-      <div id="table">
+      <div id="table" >
         <h1>Your Books</h1>
         <div style="overflow-x:auto;" id="books-content">
-          <table class="table table-striped" id="mytable">
+          <table class="table table-striped" id="mytable" style="cursor: default">
             <thead>
               <tr>
                 <th scope="col">Date of Issue</th>
@@ -268,7 +268,7 @@
         </div>
       </div>
       <div class="contain">
-        <div class="line"><b id="bold"> Choose and read the book </b><br>on your comfort zone </div>
+        <div class="line"><b id="bold"> Choose and read books </b><br>from your comfort zone </div>
         <div id="search">
           <form id="searchForm" class="form-inline my-2 my-lg-0">
             <button class="btn btn-dark my-2 my-sm-0">Keyword</button>
