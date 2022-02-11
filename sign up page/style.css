@@ -130,7 +130,7 @@ body{
 	text-decoration: none;
 	color: #56a5eb;
   }
-  
+
 @media only screen and (max-width: 425px){
 
     .section{
@@ -207,10 +207,10 @@ body{
 }
 
 @media only screen and (max-width: 768px) and (min-width: 426px){
-	
+
 	.container{
 		width: 80%;
-	}	
+	}
     .signUp-form::before{
         font-size: 24px;
         top: 2.5rem;
@@ -259,7 +259,7 @@ body{
 @media only screen and (max-width: 1024px) and (min-width: 769px){
 	.container{
 		width: 80%;
-	}	
+	}
     .signUp-form::before{
         font-size: 26px;
         top: 4rem;
