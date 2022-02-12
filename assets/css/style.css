@@ -2486,6 +2486,10 @@ select {
   left: 3%;
 }
 
+.alanBtn-root {
+  bottom: 60px !important;
+}
+
 @media only screen and (max-width: 912px) {
   .blog-container {
     grid-template-columns: 1fr 1fr;
