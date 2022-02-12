@@ -12,11 +12,11 @@
 </head>
 
 <body>
-
+<h1 id="err"></h1>
   <div class="section">
     <div class="container">
       <div class="signUp-box">
-        <form action="" class="signUp-form" id="form">
+        <form class="signUp-form" id="form">
           <div class="first-box">
             <div class="form-group">
               <i class="fa fa-address-book-o" ></i>
@@ -52,22 +52,39 @@
               <input type="password" name="" id="confirmPassword" placeholder="Confirm your password">
             </div>
             <div class="btn">
-              <input type="submit" value="Register" id="button">
+              <button>submit</button>
             </div>
           </div>
         </form>
 
       </div>
-      <div class="redirect">Already have an account ? <br> <a href="">Sign-In</a></div>
+      <div class="redirect">Already have an account ? <br> <a href="/Login_page/login_page.html">Sign-In</a></div>
     </div>
 
   </div>
+
+  <div class="logged_in" style="display:block;">
+    <h1>You Are Already Logged In</h1>
+    <button id="logged_out">Log Out</button>
+  </div>
+
   <div class="quiz-exit">
     <a href="/index.html"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"
         style="fill: #1985e4;">
         <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
       </svg></a>
   </div>
+
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+  <script type="text/javascript">
+    const { createClient } = supabase
+    const supabaseUrl = `https://cvhyilfsattdglfdmvcu.supabase.co`
+    const supabaseAnonKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2aHlpbGZzYXR0ZGdsZmRtdmN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ1NTE5MTksImV4cCI6MTk2MDEyNzkxOX0.wvKZxYcBbeUy9aJTw3XzbySmBJ8PkxVGXeopoucQpGY`
+
+    const _supabase = createClient(supabaseUrl, supabaseAnonKey)
+
+    console.log(_supabase);
+  </script>
 
   <script src="index.js"></script>
 </body>
