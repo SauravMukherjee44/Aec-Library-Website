@@ -1374,6 +1374,7 @@ p {
 .update {
   padding: 2rem 0;
   color: white;
+display: flex;
 }
 
 .login-box {
@@ -1383,12 +1384,18 @@ p {
   width: 650px;
   padding: 40px;
   /* transform: translate(-50%, -50%); */
-  background: rgba(0, 0, 0, 0.871);
+
   box-sizing: border-box;
-  box-shadow: 10px 10px rgba(255, 183, 0, 0.845);
+  
   border-radius: 20px;
   transition-duration: 0.5s;
   margin: 0 auto;
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .login-box h2 {
@@ -1407,14 +1414,15 @@ p {
 
 .login-box .user-box input {
   width: 100%;
+  text-align: center;
   padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
+  font-size: 20px;
+  color: white;
   margin-bottom: 20px;
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
-  background: transparent;
+  background-color:rgba(128, 128, 128, 0.37) ;
 }
 
 .login-box .user-box label {
@@ -1432,8 +1440,9 @@ p {
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: rgb(255, 183, 0);
-  font-size: 12px;
+  color: rgb(252, 231, 193);
+  font-size: 13px;
+  font-weight: bolder;
 }
 
 .login-box form a {
@@ -1448,10 +1457,33 @@ p {
   transition: 1s;
   margin-top: 4.2rem;
   letter-spacing: 4px;
+  background-color: rgb(54, 47, 47);
+}
+.update img{
+  border-radius: 200px;
+  height: 20rem;
+  width: 20rem;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+
+.login-box textarea{
+  background: transparent;
+  width: 100%;
+  padding: 14px;
+  background: rgba(104, 87, 87, 0.479);
+box-shadow: 0 8px 32px 0 rgba(0, 2, 19, 0.37);
+backdrop-filter: blur( 70px );
+-webkit-backdrop-filter: blur( 90px );
+border-radius: 10px;
+border: 0px solid rgba( 255, 255, 255, 0.18 );
+  /* box-shadow: 0px 0px 19px 0px black; */
+  color: whitesmoke;
+  outline: none;
 }
 
 .login-box a:hover {
-  background: rgb(75, 26, 222);
+  background: rgb(7, 7, 7);
   color: #fff;
   border-radius: 5px;
   /* box-shadow: 0 0 5px #03e9f4,
@@ -1486,7 +1518,7 @@ p {
 
 .login-box:hover {
   transition-duration: 0.4s;
-  box-shadow: 0px 0px 19px 11px rgb(255, 183, 0);
+  box-shadow: 0px 0px 15px 5px lavender;
 }
 
 @keyframes btn-anim2 {
@@ -2454,6 +2486,10 @@ select {
   left: 3%;
 }
 
+.alanBtn-root {
+  bottom: 60px !important;
+}
+
 @media only screen and (max-width: 912px) {
   .blog-container {
     grid-template-columns: 1fr 1fr;
@@ -2544,5 +2580,24 @@ select {
   }
   .new-nav button{
     margin-left: 76%;
+  }
+}
+@media(max-width:1024px){
+  .update img{
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+@media(max-width:425px){
+  .update img{
+    margin-left: 0;
+    padding: 0;
+   width: 0px;
+   height: 0px;
+   
+  }
+  .login-box .user-box input{
+    font-size: 15px;
+    /* padding: 8px; */
   }
 }
