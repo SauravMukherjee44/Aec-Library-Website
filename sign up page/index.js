@@ -39,6 +39,7 @@ const user = _supabase.auth.user()
 if(user){
   section.style.display="none";
   logged_in.style.display-"block";
+  alert(`${user.user_metadata.first_name} You are logged in`);
 }
 else{
   logged_in.style.display="none";
