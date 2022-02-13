@@ -64,7 +64,7 @@
   </div>
 
   <div class="logged_in" style="display:block;">
-    <h1>You Are Already Logged In</h1>
+    <span id="username">You Are Already Logged In</span>
     <button id="logged_out">Log Out</button>
   </div>
 
@@ -83,7 +83,7 @@
 
     const _supabase = createClient(supabaseUrl, supabaseAnonKey)
 
-    console.log(_supabase);
+    //console.log(_supabase);
   </script>
 
   <script src="index.js"></script>
