@@ -22,6 +22,19 @@
   <link rel="stylesheet" href="../assets/css/donate-book.css">
 
   <link rel="icon" href=../assets/Favicons/8.png> <title>Donate Books</title>
+  <style>
+  table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+  </style>
 
 </head>
 
@@ -59,26 +72,26 @@
   <div class="wrapper">
     <div class="login-box">
       <h2>Book Donation Form 📚</h2>
-      <form>
+      <form id="donation_form">
         <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Name</label>
+          <input type="text" id="name" name="" required="">
+          <label>Name of Donated Book</label>
         </div>
         <div class="user-box">
-          <input type="email" name="" required="">
+          <input type="email" id="email" name="" required="">
           <label>Email</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Contact</label>
+          <input type="number" id="contact" name="" required="">
+          <label>Contact Number</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
+          <input type="text" name="" id="address" required="">
           <label>Address</label>
         </div>
         <div class="user-box">
           <label>Select Country: </label><br><br>
-          <select name="state" id="countySel" size="1" required="">
+          <select name="state" class="country" id="countySel" size="1" required="">
            <option value="" selected="selected">Select Country</option>
           </select>
           <br>
@@ -86,7 +99,7 @@
         </div>
         <div class="user-box">
           <label>Select State: </label><br><br>
-          <select name="countrya" id="stateSel" size="1" required="">
+          <select name="country" class="state" id="stateSel" size="1" required="">
           <option value="" selected="selected">Please select Country first</option>
           </select>
           <br>
@@ -94,14 +107,14 @@
         </div>
         <div class="user-box">
           <label>Select City: </label><br><br>
-          <select name="district" id="districtSel" size="1" required="">
+          <select name="district" class="city" id="districtSel" size="1" required="">
          <option value="" selected="selected">Please select State first</option>
          </select>
          <br>
           <br>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
+          <input id="zip" type="text" name="" required="">
           <label>Zip</label>
         </div>
 
@@ -123,7 +136,7 @@
             I have read and understood the terms and conditions
           </label>
         </div>
-        <Button href="#" class="submit-btn">
+        <Button class="submit-btn">
           <span></span>
           <span></span>
           <span></span>
@@ -135,40 +148,36 @@
   </div>
 
   <!-- adding name,image,name of book of people who made donation -->
-  <section id=donation-info>
-    <div id="carouselExampleControls " class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner ">
-        <div class="carousel-item active carousel-item-section ">
-          <h1>THANK YOU PEOPLE!!</h1>
-          <img src="female.png" class="d-block w-100 donater-img" alt="...">
-          <h3>Name</h3>
-          <h3>Name of Book  Donated</h3>
-        </div>
-        <div class="carousel-item carousel-item-section">
-          <h1>THANK YOU PEOPLES!!</h1>
-          <img src="man.png" class="d-block w-100 donater-img" alt="...">
-          <h3>Name</h3>
-          <h3>Name of Book  Donated</h3>
-        </div>
-        <div class="carousel-item carousel-item-section">
-          <h1>THANK YOU PEOPLES!!</h1>
-          <img src="woman.png" class="d-block w-100 donater-img" alt="...">
-          <h3>Name</h3>
-          <h3>Name of Book  Donated</h3>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+  <div id=donation-info>
 
-  </section>
-  
+      <table class="donated_book">
+        <tr>
+          <th>Book</th>
+          <th>Email</th>
+          <th>Contact</th>
+          <th>Address</th>
+          <th>Zip</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <!-- <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td> -->
+        </tr>
+
+      </table>
+
+  </div>
+
    <!-- here -->
 
   <footer>
@@ -202,9 +211,9 @@
   </footer>
 
   <!-- scripts -->
-  
+
   <script src="../assets/js/Donate_Book.js"></script>
-  
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
@@ -223,6 +232,61 @@
       console.log("callback - particles.js config loaded");
     });
   </script>
+<script src="https://unpkg.com/@supabase/supabase-js"></script>
+  <script>
+  const donationForm = document.getElementById('donation_form');
+  const { createClient } = supabase
+  const supabaseUrl = `https://cvhyilfsattdglfdmvcu.supabase.co`
+  const supabaseAnonKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2aHlpbGZzYXR0ZGdsZmRtdmN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ1NTE5MTksImV4cCI6MTk2MDEyNzkxOX0.wvKZxYcBbeUy9aJTw3XzbySmBJ8PkxVGXeopoucQpGY`
+
+  const _supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+  const donatedBook = document.querySelector('.donated_book');
+  const { data, error } = _supabase
+  .from('donated_book')
+  .select().then(res=>{
+    var data = res.data;
+    console.log(data.length);
+    for(let i=0;i<data.length;i++){
+      donatedBook.innerHTML +=`<tr>
+        <td>${data[i].name}</td>
+        <td>${data[i].email}</td>
+        <td>${data[i].contact}</td>
+        <td>${data[i].address}</td>
+        <td>${data[i].zip}</td>
+        <td>${data[i].country}</td>
+      </tr>`
+    }
+  })
+
+  donationForm.addEventListener('submit',e=>{
+    e.preventDefault();
+    const { data, error } = _supabase
+      .from('donated_book')
+      .insert([
+        {
+          email:document.getElementById('email').value,
+          name:document.getElementById('name').value,
+          contact : document.getElementById('contact').value,
+          address : document.getElementById('address').value,
+          country : document.querySelector('.country').value,
+          city : document.querySelector('.city').value,
+          zip : document.getElementById('zip').value,
+        }
+      ]).then(res=>{
+        console.log(res);
+        if(res.error){
+          alert(res.error.message);
+        }
+        else{
+        alert('Data Added');
+        }
+      })
+  })
+  </script>
+
+
+
 </body>
  <script src="../assets/js/Donate_Book.js"></script>
 </html>
