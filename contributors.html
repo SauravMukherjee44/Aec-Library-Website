@@ -150,7 +150,7 @@
                   contributorID = contributors.map(contributor => contributor.id);
                   var contributor_container = document.getElementById("contributors_container");
                   for (let contributor_index = 0; contributor_index < contributorID.length; contributor_index++) {
-                      contributor_container.innerHTML += `<div class="contributor_div"><a href="https://github.com/${contributorImage[contributor_index]}" target="_blank_"><img src="https://avatars.githubusercontent.com/u/${contributorID[contributor_index]}"/></a><div><h4>@${contributorImage[contributor_index]}</h4><p>Contributions: ${contributors[contributor_index].contributions}</p></div></div>`;
+                      contributor_container.innerHTML += `<div class="contributor_div"><a href="https://github.com/${contributorImage[contributor_index]}" target="_blank_"><img src="https://avatars.githubusercontent.com/u/${contributorID[contributor_index]}"/></a><div><h4>${contributorImage[contributor_index]}</h4><p>Contributions: ${contributors[contributor_index].contributions}</p></div></div>`;
                   }
               })
               .catch((e) => console.error(e));
