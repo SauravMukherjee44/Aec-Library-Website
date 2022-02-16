@@ -147,38 +147,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </div>
   </div>
 
-  <!-- adding name,image,name of book of people who made donation -->
-  <div id=donation-info>
-
-      <table class="donated_book">
-        <tr>
-          <th>Book</th>
-          <th>Email</th>
-          <th>Contact</th>
-          <th>Address</th>
-          <th>Zip</th>
-          <th>Country</th>
-        </tr>
-        <tr>
-          <!-- <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td> -->
-        </tr>
-
-      </table>
-
-  </div>
-
-   <!-- here -->
+  <!-- adding name,image,name of book of people who made donation -->   <!-- here -->
 
   <footer>
     <div class="d-flex justify-content-between align-items-center">
@@ -242,22 +211,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   const _supabase = createClient(supabaseUrl, supabaseAnonKey);
 
   const donatedBook = document.querySelector('.donated_book');
-  const { data, error } = _supabase
-  .from('donated_book')
-  .select().then(res=>{
-    var data = res.data;
-    console.log(data.length);
-    for(let i=0;i<data.length;i++){
-      donatedBook.innerHTML +=`<tr>
-        <td>${data[i].name}</td>
-        <td>${data[i].email}</td>
-        <td>${data[i].contact}</td>
-        <td>${data[i].address}</td>
-        <td>${data[i].zip}</td>
-        <td>${data[i].country}</td>
-      </tr>`
-    }
-  })
+
 
   donationForm.addEventListener('submit',e=>{
     e.preventDefault();
