@@ -25,5 +25,5 @@ _supabase.auth.onAuthStateChange((event, session) => {
 
 const user = _supabase.auth.user();
 if(user){
-  window.location.replace("/sign up page/index.html")
+  window.location.replace("/sign up page/index.html");
 }
