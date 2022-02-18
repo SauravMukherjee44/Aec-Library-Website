@@ -59,16 +59,50 @@
       </ul>
     </div>
   </nav>
-  <div class="container">
+  <div class="container_header">
     <h1>Our Contributors <i class="fas fa-user-friends"></i></h1>
+    <input  id="searchBox" type="text" placeholder="Search...">
   </div>
   <div id="contributors_container">
     <!-- Contributors container -->
   </div>
   <div>
-
     <footer>
+    
       <div class="footer-wrapper">
+      <div class ="container" >
+        <div class ="row" style="display: flex;justify-content: space-between;">
+          <div class="footer-col" style="display: flex;flex-direction: column;align-items: center;">
+            <h4 style="color: bisque;"><u>Quick Links</u></h4>
+            <ul style="display: flex;flex-direction: column;">
+              <li><a href="/index.html" style="color: cyan;">Home</a></li>
+              <li><a href="/donate-book.html" style="color: cyan;">Donate Books</a></li>
+              <li><a href="/resource.html" style="color: cyan;">Resources</a></li>
+              <li><a href="/public/contact%20us%20.html" style="color: cyan;">Contact Us</a></li>
+              <li><a href="http://127.0.0.1:5502/index.html#" style="color: cyan;">Privacy Policy</a></li>
+           </ul>  
+           </div>
+            <div class="footer-col footer-col-address">
+              <h4 style="color: cornsilk;font-weight: bold;margin-left: 24px;">Address</h4>
+              <div class="content">
+                <div class="place">
+                  <span class="fas fa-map-marker-alt" style="color: cornsilk;"></span>
+                  <span class="text" style="color: cornsilk;">A-block,Street no-4,New Delhi-110044,India</span>
+                </div>
+              </div>
+              <div class="phone">
+                <span class="fas fa-phone-alt" style="color: cornsilk;"></span>
+                <span class="text" style="color: cornsilk;">+1 800 1236879</span>
+              </div>
+              <div class="email">
+                <span class="fas fa-envelope" style="color: cornsilk;"></span>
+                <span class="text" style="color: cornsilk;">contact@example.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="footer-wrapper">
         <div class="icons">
 
           <ul>
@@ -78,7 +112,7 @@
             <li>
               <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
             </li>
-            <li>
+	          <li>
               <a href="https://twitter.com/mesourav44"><i class="fab fa-twitter icon"></i></a>
             </li>
             <li>
@@ -88,11 +122,10 @@
         </div>
         <div>
 
-          <p>©2021 Copyright AEC Library</p>
+          <p style="color: cornsilk;margin-bottom: 4px;">&#169 2021 Copyright&nbsp;<a href="https://github.com/SauravMukherjee44/Aec-Library-Website">@AEC Library</a></p>
         </div>
-
+        </div>
     </footer>
-
   </div>
   <script src="../assets/js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -135,28 +168,41 @@
       duration: 1000,
     });
   </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-    <script>
-       const contributorInfo = function(){
-          const repository_name = 'Aec-Library-Website';
-          const repository_holder = 'SauravMukherjee44';
-          axios
-              .get(
-                  `https://api.github.com/repos/${repository_holder}/${repository_name}/contributors`
-              )
-              .then((res) => {
-                  const contributors = res.data;
-                  contributorImage = contributors.map(contributor => contributor.login);
-                  contributorID = contributors.map(contributor => contributor.id);
-                  var contributor_container = document.getElementById("contributors_container");
-                  for (let contributor_index = 0; contributor_index < contributorID.length; contributor_index++) {
-                      contributor_container.innerHTML += `<div class="contributor_div"><a href="https://github.com/${contributorImage[contributor_index]}" target="_blank_"><img src="https://avatars.githubusercontent.com/u/${contributorID[contributor_index]}"/></a><div><h4>${contributorImage[contributor_index]}</h4><p>Contributions: ${contributors[contributor_index].contributions}</p></div></div>`;
-                  }
-              })
-              .catch((e) => console.error(e));
-      };
-      contributorInfo();
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script>
+    let contributorsReference = [];
+    const searchBox = document.getElementById("searchBox");
+    const contributorsContainer = document.getElementById('contributors_container');
+    searchBox.addEventListener('keyup', (key_value) => {
+      const inputValueLower = key_value.target.value.toLowerCase();
+      const filteredData = contributorsReference.filter(reference => {
+        return reference.login.toLowerCase().includes(inputValueLower);
+      });
+      displayDataCards(filteredData);
+    })
+    const contributorInfo = async function() {
+      try {
+        const data = await fetch('https://api.github.com/repos/SauravMukherjee44/Aec-Library-Website/contributors?per_page=100');
+        contributorsReference = await data.json();
+        displayDataCards(contributorsReference);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    const displayDataCards = function(contributorReferences){
+      const textLiteral = contributorReferences
+        .map((contribReference) => {
+          return `
+        <div class="contributor_div"><a href="${contribReference.html_url}" target="_blank_"><img src="${contribReference.avatar_url}"/></a><div><h4>${contribReference.login}</h4><p>Contributions: ${contribReference.contributions}</p></div></div>
+        `;
+        })
+        .join('');
+      contributorsContainer.innerHTML = textLiteral;
+    };
+
+    contributorInfo();
+  </script>
 </body>
 
 </html>
