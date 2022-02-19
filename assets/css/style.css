@@ -1459,6 +1459,11 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   letter-spacing: 4px;
   background-color: rgb(54, 47, 47);
 }
+
+#txtid::placeholder{
+	color: white;
+}
+
 .update img{
   border-radius: 200px;
   height: 20rem;
