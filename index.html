@@ -806,14 +806,14 @@
       <form method="post" autocomplete="off" name="google-sheet" bgcolor="#00000">
          
          <!-- <h6 align="left" style="color:black;"> Name:</h6>-->
-            <label style="color:black;">Name: &nbsp;&nbsp;</label><input type="text" class="input" name="Name"  placeholder="Enter Your Name">
+            <label style="color:black;">Name: &nbsp;&nbsp;</label><input type="text" class="input" name="Name" required placeholder="Enter Your Name">
 			
             <br><br>
         
             <!--<h6 align="left" style="color:black;"> Email_Address:</h6>-->
-           <label style="color:black;">Email: &nbsp;&nbsp;</label> <input type="text" class="input" name="Email"   placeholder="Enter Your Email">
+           <label style="color:black;">Email: &nbsp;&nbsp;</label> <input type="text" class="input" name="Email" required placeholder="Enter Your Email">
             <br><br>
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="background-color:peru; border-color:black; color:white" type="submit" id="btnSubmit">Subscribe</button>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="background-color:peru; border-color:black; color:white" type="submit" id="btnSubmit" onclick="alert('Thank You.. \n Your Valuable Response is Stored successfully!!')">Subscribe</button>
 		 <div id="msg"></div>
 		 <script>
 				const scriptURL = 'https://script.google.com/macros/s/AKfycbz5WCRS6VpGC_cjBpJNlY4A-MkwiOUCDv0BSSniX0d0AgcVmFPU/exec'
