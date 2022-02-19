@@ -1,6 +1,50 @@
   
   /* These will be used for all pages  */
   
+  #box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: auto;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 2.5rem;
+    margin-left:10vw;
+    margin-bottom:5vw;
+  }
+  .quiz-section {
+    --borderWidth: 10px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .quiz-section:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
   .quiz-container {
     width: 100vw;
     height: 100vh;
@@ -83,9 +127,10 @@
   text-decoration: none;
 }
 .quiz-btn{
+  margin-left:3rem;
   font-size: 1.8rem;
   padding: 1rem 0;
-  width: 20rem;
+  width: 10rem;
   text-align: center;
   border: 0.1rem solid #56a5eb;
   margin-bottom: 1rem;

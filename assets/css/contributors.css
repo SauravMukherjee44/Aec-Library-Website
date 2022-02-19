@@ -21,8 +21,8 @@ body{
     padding:0;
     font-family: 'Poppins', sans-serif;
     box-shadow: none;
+    background-image: url('Background.jpg');
     background-size: cover;
-    background: var(--main-bg);
     line-height:1.5em;
 }
 /* scroll bar design */
@@ -127,6 +127,9 @@ body{
     top: 0;
     width: 100%;
   }
+  .navbar-brand{
+    margin-left: 24px !important;
+  }
   /* .nav-link{
     margin-left: 2rem;
   } */
@@ -140,77 +143,84 @@ body{
     height: 3rem;
     width: 3rem;
   }
- 
   .container h1{
+    color: var(--nav-bg);
       color: white;
-      color: var(--nav-bg);
       text-transform: uppercase;
       text-align: center;
       margin-top: 20px;
+      text-shadow: 5px 5px 11px rgb(255, 255, 255);
   }
-  .rows{
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 60px;
-    margin-left: 20px; */
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    gap: 1rem;
-  }
-  .members{
+
+
+  #contributors_container {
+    padding: 30px;
     display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    width: 110px;
-    height: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    transform: translateY(100px);
+    margin-bottom: 25%;
+    padding-top: 0px ;
+    
   }
-  .member-name{
-    text-align: center;
-    /* border: 2px solid grey; */
-    border: 2px solid var(--nav-bg);
-    border-radius: 10px;
-    width: 128px;
-    width:100%;
-    background: transparent;
-    transition: all 0.6s;
-    cursor: pointer;
-    height: 25%;
-      
-  }
-    .member-name:hover{
-    /* background: rgb(90, 90, 90); */
-    background: var(--nav-bg);
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-    /* border: 2px solid rgb(90,90,90); */
-    border: 2px solid var(--nav-bg);
-  }
- 
-  .member-name a{
-      text-decoration: none;
+  
+  #contributors_container .contributor_div {
+      max-width: 270px;
+      min-height: 350px;
+      width: 100%;
+      padding-bottom: 15px;
+      background-color: rgba(255,255,255,0.1);
+      border-top: 1px solid rgba(255,255,255,0.5);
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
       color: white;
-     font-weight: 500;
-      font-size: 15px;
-      text-transform: capitalize;
-      transition: all 0.5s;
+      transition: all 0.3s ease-in-out;
+      box-shadow:10px 10px 15px black !important;
+      backdrop-filter: blur(16px);
+     
+  
   }
- 
-  .member-pic img{
-   height: 108px;
-   width: 108px;
+  
    
+  #contributors_container .contributor_div:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 20px 3px black !important;
+  }
+  
+  #contributors_container .contributor_div h4 {
+    text-shadow: 6px 6px 10px black;
+  }
+  #contributors_container .contributor_div p {
+    margin-bottom: 5px;
+    text-shadow: 6px 6px 10px black;
+  
+  }
+  
+  #contributors_container a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    margin-right: 10px;
+    border-radius: 5%;
+  
+  }
+  
+  #contributors_container img {
+    height: 180px;
+    width: auto;
     border-radius: 50%;
-  }
-  .member-name{
-     margin-top: 7px;
-  }
-  .line{
-      width: 400px;
-    height: 3px;
-    background: #fff;
-    background: var(--nav-bg);
-    margin: auto;
+    margin: 5px;
+    box-shadow: 0px 0px 16px 2px black;
+               
+  
   }
   /* footer */
 footer {
@@ -295,5 +305,12 @@ footer {
   }
   .line {
     width: 100px;
+  }
+  .navbar-brand{
+    width: 120px;
+    margin-left: 0px !important;
+  }
+  .navbar-toggler{
+    font-size: 12px;
   }
 }
