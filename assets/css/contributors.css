@@ -21,8 +21,9 @@ body{
     padding:0;
     font-family: 'Poppins', sans-serif;
     box-shadow: none;
-    background-image: url('Background.jpg');
     background-size: cover;
+    /* background: url('.//') */
+    background:url('Background.jpg');
     line-height:1.5em;
 }
 /* scroll bar design */
@@ -143,16 +144,39 @@ body{
     height: 3rem;
     width: 3rem;
   }
-  .container h1{
+  .container_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container_header input{
+    width: 85%;
+    border: 2px solid #656464;
+    outline: none;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 1rem;
+    height: 40px;
+    padding: 5px;
+    padding-left: 15px;
+    color: white;
+    margin-top: 15px;
+    background-color: #1a2238ed;
+    backdrop-filter: blur(5px);
+  }
+  .container_header input:focus{
+    border-color: rgb(156, 155, 155);
+    box-shadow: 0px 0px 15px black;
+  }
+  .container_header h1{
     color: var(--nav-bg);
       color: white;
       text-transform: uppercase;
       text-align: center;
       margin-top: 20px;
-      text-shadow: 5px 5px 11px rgb(255, 255, 255);
+      text-shadow: 2px 2px 8px rgba(199, 199, 199, 0.788);
   }
-
-
+  
   #contributors_container {
     padding: 30px;
     display: flex;
@@ -162,7 +186,6 @@ body{
     text-align: right;
     transform: translateY(100px);
     margin-bottom: 25%;
-    padding-top: 0px ;
     
   }
   
@@ -171,9 +194,10 @@ body{
       min-height: 350px;
       width: 100%;
       padding-bottom: 15px;
+      /* border: 2px solid var(--red); */
       background-color: rgba(255,255,255,0.1);
       border-top: 1px solid rgba(255,255,255,0.5);
-      border: 1px solid rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(0, 0, 0, 0.3);
       border-radius: 10px;
       margin: 10px;
       display: flex;
@@ -223,7 +247,7 @@ body{
   
   }
   /* footer */
-footer {
+/* footer {
     position: relative;
     width: 100%;
     background-color: rgb(52, 58, 64);
@@ -237,17 +261,101 @@ footer {
   
   footer p {
     margin: 0;
+    color: white;
   }
   
   .footer-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0.2rem 0.2rem;
+    gap: 0.3rem;
+  }
+   */
+  /* .footer-wrapper .icons ul{
+    display: flex;
+    flex-direction: column !important;
+  }
+  .footer-wrapper .icons ul li{
+    margin: 7px;
+  }
+  .footer-wrapper .icons ul li a{
+    font-size: 20px;
+  }
+  .footer-wrapper .icons ul li .fab{
+    font-size: 20px;
+  } */
+  footer {
+    position: relative;
+    width: 100%;
+    
+    background-color: #6f4e37e8 !important;
+    backdrop-filter: blur(4px);
+
+  }
+  footer p {
+    margin: 0;
+  }
+  .footer-col{
+    display: flex;
+    margin-top: 1.25rem;
+  }
+
+  .footer-col ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    border-radius: 0px;
+    color:rgb(255, 255, 255);
+    
+  }
+
+  .footer-col ul li a {
+    text-decoration: none;
+    opacity: 0.8 
+  }
+
+  .footer-col ul li {
+    display: inline-block;
+    padding: 0px 50px;
+    padding-top: 10px;
+    
+  }
+
+  
+  .footer-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0.2rem 0;
     gap: 0.3rem;
   }
-  
-  
+  .footer-col-address{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+  .footer-col-address div{
+    margin-top:7px;
+    margin-bottom: 7px;
+  }
+  .footer-wrapper .icons{
+    position: relative;
+    top: -10px;
+  }
+  .footer-wrapper .icons ul li a{
+    width: 35px;
+    height: 35px;
+    font-size: 1.375rem;
+    padding-top: 6px;
+    border:none;
+  }
 @media only screen and (max-width: 1200px) {
   a.nav-link {
       font-size: 17px;
@@ -265,10 +373,18 @@ footer {
     grid-template-columns: repeat(4,1fr);
   }
 }
-
+@media (max-width:460px){
+  .footer-wrapper .container .row{
+    margin-left: 100px !important;
+    margin-bottom: 20px !important;
+  }
+}
 @media (max-width: 800px) {
   footer {
       font-size: 12px;
+  }
+  .footer-col ul li{
+    font-size: 14px;
   }
 
   a.nav-link {
@@ -286,7 +402,7 @@ footer {
   .rows {
     grid-template-columns: repeat(2,1fr);
   }
-  .container h1 {
+  .container_header h1 {
     font-size: 1.5rem;
 
   }
@@ -300,7 +416,7 @@ footer {
     padding-left:20%;
     gap: .6rem;
   }
-  .container h1 {
+  .container_header h1 {
     font-size: 1rem;
   }
   .line {
