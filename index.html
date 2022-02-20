@@ -60,6 +60,8 @@
 
   <!-- Audiobook css -->
   <link rel="stylesheet" href="assets/css/audiobook.css">
+  <!-- Pop-up msg -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
 
 </head>
 
@@ -686,25 +688,21 @@
     <img src="./assets/images/feedback.jpg" alt="feedback" />
     <div class="login-box">
 
-      <form >
+      <form id="feedbackForm" method="POST" action="">
         <div class="user-box">
-          <input type="text" name="" required="" >
+          <input type="text" name="feedbackName" id="feedbackName" required >
           <label>Name</label>
         </div>
-        <!-- <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Last Name</label>
-        </div> -->
         <div class="user-box">
-          <input type="email" name="" required="">
+          <input type="email" name="feedbackEmail" id="feedbackEmail" required>
           <label>Email</label>
         </div>
         <div class="user-box">
 
-          <textarea id="txtid" name="txtname" rows="1"  maxlength="200" required="" placeholder="Type your message here">Message</textarea>
+          <textarea id="txtid" name="txtname" rows="1"  maxlength="200" required placeholder="Type your message here"></textarea>
 
         </div>
-        <a href="#">
+        <a href="#feedbackForm" id="formAnchor">
           <span></span>
           <span></span>
           <span></span>
@@ -713,6 +711,36 @@
         </a>
       </form>
     </div>
+    <script>
+      const btn = document.getElementById("formAnchor");
+      const form = document.getElementById("feedbackForm");
+      const feedbackName = document.getElementById("feedbackName");
+      const feedbackEmail = document.getElementById("feedbackEmail");
+      const msg = document.getElementById("txtid");
+
+      function isEmail(email) {
+              let regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;                
+              return regexp.test(String(email).toLowerCase());
+      }
+
+      btn.addEventListener("click",()=>{  
+        if(feedbackName.value==""){
+          swal("Error !","Please enter a valid name","error");
+        }
+        else if(!isEmail(feedbackEmail.value)){
+          swal("Error !","Please enter a valid email","error");
+        }
+        else if(msg.value==""){
+          swal("Error !","Please enter a message","error");          
+        }
+        else{
+          swal("Thank You !", "Your feedback is posted !", "success");
+          form.reset();
+        }
+      })
+
+    </script>
+
     <!-- <div class="stay-update">STAY UPDATED</div> -->
   </div>
 
