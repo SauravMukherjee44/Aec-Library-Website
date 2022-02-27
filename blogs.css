@@ -1,0 +1,29 @@
+
+.container {
+  padding: 2px 16px;
+  background-color: #C0C0C0;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+ 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+  
+}
+
+.footer-wrapper {
+  text-align: center;
+  padding: 3px;
+  background-color: #995734	;
+  color: white;
+}
