@@ -231,13 +231,13 @@ section h5 {
   margin-right: 4px;
   padding: 5px;
 }*/
-iframe {
+.iframe {
   border-radius: 10px;
   padding-left: 3px;
   padding-right: 3px;
   padding: 4px;
 }
-iframe:hover {
+.iframe:hover {
   transform: scaleY(1.01);
 }
 h3.hover-underline-animation {
