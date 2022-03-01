@@ -49,7 +49,7 @@ nav.navbar {
   border-radius: 20px;
   background:rgb(0,0,0,0.5);
   cursor: auto;
-  
+
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 10px;
@@ -180,11 +180,13 @@ label {
 label[for="category"]{
   display: none;
 }
+
 #IssueHere{
   color:white;
-  margin-left:9vw;
-  justify-content: center;
+  margin-left:35%;
+  margin-right:40%;
   padding-top:40px;
+  width: 300px;
 }
 /* Authors */
 .form-check-input1 {
@@ -193,8 +195,9 @@ label[for="category"]{
   padding: 5px;
   width: 25%;
   cursor: pointer;
- 
+
 }
+
 label[for="Author"]{
   display: none;
 }
@@ -976,7 +979,7 @@ strong {
   } */
   .hero-left + .hero-right{
     margin-right:0;
-  
+
   }
   #loading {
     width: 73.7;
@@ -1382,7 +1385,7 @@ display: flex;
   /* transform: translate(-50%, -50%); */
 
   box-sizing: border-box;
-  
+
   border-radius: 20px;
   transition-duration: 0.5s;
   margin: 0 auto;
@@ -1457,7 +1460,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 #txtid::placeholder{
-	color: white;
+    color: white;
 }
 
 .update img{
@@ -1810,7 +1813,7 @@ a {
   color: white;
   margin-top: 50px;
   margin-left: 50px;
-  
+
   background: rgba(92, 92, 81, 0.582);
   border-radius: 30px;
   display: flex;
@@ -1819,7 +1822,7 @@ a {
 
 .contain:hover{
   transform: scale(1.1);
- 
+
 }
 .contain div {
   font-family: "Source Sans Pro", sans-serif;
@@ -1895,9 +1898,10 @@ a {
 .col-sm-10 input,
 .form-check-input1,
 .form-check-input {
-  width: 80%;
+  width: 95%;
   padding: 3%;
-  border-radius: 5px;
+  margin-left: 16px;
+  border-radius: 10px;
   outline: none;
 }
 #issueDate {
@@ -1918,7 +1922,7 @@ a {
   width: 100%;
 }
 #libraryForm .form-check-input {
-  width: 80%;
+  width: 100%;
   position: relative;
 }
 #libraryForm label {
@@ -1928,15 +1932,17 @@ a {
 }
 #libraryForm input,
 select {
-  width: 80%;
+  width: 95%;
   border-radius: 10px;
   padding: 0 1rem;
   height: 3.5rem;
   margin: 1rem 0;
+  margin-left: 16px;
   position: relative;
 }
 #libraryForm .btn-primary {
   margin: 0;
+  margin-left: 16px;
 }
 .form-group {
   width: 100%;
@@ -1948,7 +1954,7 @@ select {
   padding-left: 5px;
 }
 .hero-left {
-  
+
   flex: 1;
   width: 100%;
   background: rgba( 255, 255, 255, 0.25 );
@@ -1972,7 +1978,7 @@ select {
   padding-right: 0px;
   justify-items: right;
   flex-direction: column;
-  
+
 }
 /*#table{
   background:rgb(0,0,0,0.5);
@@ -1984,7 +1990,7 @@ select {
 /*
 #table {
   width: 92%;
-  padding: 0; 
+  padding: 0;
 }
 */
 /*scrolling effect starts from here*/
@@ -2501,7 +2507,7 @@ select {
     align-items: center;
   }
   .desc-carousel h1{
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
   .desc-carousel p{
     font-size: 1rem;
@@ -2533,7 +2539,7 @@ select {
     font-size: 13px;
   }
   .desc-carousel h1{
-    font-size: 1rem; 
+    font-size: 1rem;
   }
   .desc-carousel p{
     font-size: 0.8rem;
@@ -2549,7 +2555,7 @@ select {
   }
   .donate div b{
     font-size: 30px;
-  } 
+  }
   .donate div h4{
     font-size: 18px;
   }
@@ -2595,7 +2601,7 @@ select {
     padding: 0;
    width: 0px;
    height: 0px;
-   
+
   }
   .login-box .user-box input{
     font-size: 15px;
