@@ -4,6 +4,7 @@
 }
 
 body {
+  overflow: hidden; 
   background-image: url('Login_background.jpg');
   background-color: #464646;
   -webkit-background-size: cover;
@@ -78,7 +79,7 @@ button {
   outline: none;
 
   /* box-shadow: 3px 2px 2px #424242; */
-  box-shadow: 4px 3px 8px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 3px 4px 1px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
 
