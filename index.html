@@ -912,19 +912,13 @@
       <li><a href="#">Information</a></li>
     </ul>
    <ul>
-      <li><a href="" class="heading" onclick="return false;">Subscribe to our newsletter</a> </li>
-<br>
-      <form method="post" autocomplete="off" name="google-sheet" bgcolor="#00000">
-
-         <!-- <h6 align="left" style="color:black;"> Name:</h6>-->
-            <label style="color:black;">Name: &nbsp;&nbsp;</label><input type="text" class="input" name="Name" required placeholder="Enter Your Name">
-
-            <br><br>
-
-            <!--<h6 align="left" style="color:black;"> Email_Address:</h6>-->
-           <label style="color:black;">Email: &nbsp;&nbsp;</label> <input type="text" class="input" name="Email" required placeholder="Enter Your Email">
-            <br><br>
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="background-color:peru; border-color:black; color:white" type="submit" id="btnSubmit" onclick="alert('Thank You.. \n Your Valuable Response is Stored successfully!!')">Subscribe</button>
+    <li class="newsletter-heading"><a href="" class="heading" onclick="return false;">Subscribe to our newsletter</a> </li>
+    <form method="post" autocomplete="off" name="google-sheet" bgcolor="#00000">
+      <div class="newsletter-form">
+         <div class="newsletter-name"> <input type="text" class="input" name="Name" required placeholder="&#xf007;   Enter your name"></div>
+        <div class="newsletter-email"> <input type="text" class="input" name="Email" required placeholder="&#xf0e0;   Enter your email"></div>
+     <div class="newsletter-submit"><button type="submit" id="btnSubmit" onclick="alert('Thank You.. \n Your Valuable Response is Stored successfully!!')">SUBSCRIBE</button></div> 
+    </div>    
 		 <div id="msg"></div>
 		 <script>
 				const scriptURL = 'https://script.google.com/macros/s/AKfycbz5WCRS6VpGC_cjBpJNlY4A-MkwiOUCDv0BSSniX0d0AgcVmFPU/exec'
