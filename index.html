@@ -692,15 +692,19 @@
       <form id="feedbackForm" method="POST" action="">
         <div class="user-box">
           <input type="text" name="feedbackName" id="feedbackName" required >
+          <span class="line"></span>
           <label>Name</label>
         </div>
         <div class="user-box">
           <input type="email" name="feedbackEmail" id="feedbackEmail" required>
+          <span class="line"></span>
           <label>Email</label>
         </div>
         <div class="user-box">
 
-          <textarea id="txtid" name="txtname" rows="1"  maxlength="200" required placeholder="Type your message here"></textarea>
+          <textarea id="txtid" name="txtname" rows="1"  maxlength="200" required ></textarea>
+          <span class="line2"></span>
+          <label>Message</label>
 
         </div>
         <a href="#feedbackForm" id="formAnchor">
