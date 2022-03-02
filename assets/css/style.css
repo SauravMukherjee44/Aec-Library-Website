@@ -1591,7 +1591,7 @@ border: 0px solid rgba( 255, 255, 255, 0.18 );
 /* scroll bar design */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
 }
 
 /* Track */
