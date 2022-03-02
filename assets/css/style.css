@@ -8,7 +8,6 @@ html,
 body {
   font-family: "Playfair Display", serif;
   width: 100%;
-  overflow: hidden;
 }
 nav.navbar {
   /* margin-right: 12px !important; */
@@ -2042,7 +2041,7 @@ select {
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+  width: 10px;
 }
 
 .nav-item a {
