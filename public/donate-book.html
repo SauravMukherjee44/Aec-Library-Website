@@ -1,155 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="title" content="AEC Library is a comprehensive library management system">
-  <meta name="description" content="Designed for both large and small library systems, AEC Library is a comprehensive library management system. For managing circulation and stock, this is ideal for institutional, public, and digital libraries. In order to manage and automate the processing of even the largest of libraries, the AEC Library website was developed. According to the end user's requirements, the website is capable of managing Book Issues, Returns, and generating various Reports for Record-Keeping and Review purposes.">
-  <meta name="keywords" content="AEC, library systems, library, digital libraries, books">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="language" content="English">
-  <meta name="author" content="AEC LIBRARY">
+    <meta name="title" content="AEC Library is a comprehensive library management system">
+    <meta name="description" content="Designed for both large and small library systems, AEC Library is a comprehensive library management system. For managing circulation and stock, this is ideal for institutional, public, and digital libraries. In order to manage and automate the processing of even the largest of libraries, the AEC Library website was developed. According to the end user's requirements, the website is capable of managing Book Issues, Returns, and generating various Reports for Record-Keeping and Review purposes.">
+    <meta name="keywords" content="AEC, library systems, library, digital libraries, books">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="AEC LIBRARY">
 
-  <!-- Bootstrap v4.3 -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- Bootstrap v4.3 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="../assets/css/donate-book.css">
+    <link rel="stylesheet" href="../assets/css/donate-book.css">
 
-  <link rel="icon" href=../assets/Favicons/8.png> <title>Donate Books</title>
-  <style>
-  table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {background-color: #f2f2f2;}
-  </style>
+    <link rel="icon" href=../assets/Favicons/8.png>
+    <title>Donate Books</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 
 </head>
 
 <body>
-  <!-- particle.js -->
-  <div id="particles-js"></div>
+    <!-- particle.js -->
+    <div id="particles-js"></div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand ml-4" href="../index.html"><img src="../assets/logos/finalLogo.png" alt="AEC Library"
-        class="logo-img"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand ml-4" href="../index.html"><img src="../assets/logos/finalLogo.png" alt="AEC Library" class="logo-img"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home <span
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home <span
               class="sr-only">(current)</span></a>
-                 </li>
-                <li class="nav-item"><a href="../about.html" class="nav-link" target="_blank"> <i class="fas fa-book"></i> About </a></li>
-        <li class="nav-item"><a href="#" class="nav-link" target="_blank" onclick="return false;"> <i
-              class="fas fa-book"></i> Donate Books </a></li>
-        <li class="nav-item"><a href=".././resource.html" class="nav-link"> <i class="fas fa-external-link-alt"></i>
-            Resources</a></li>
-        <li class="nav-item"><a href="../Login_page/login_page.html" class="nav-link" target="_blank"> <i
-              class="fas fa-sign-in-alt"></i> Login </a></li>
-        <li class="nav-item"><a href="../sign up page/index.html" class="nav-link" target="_blank"> <i
-              class="fas fa-sign-in-alt"></i> SIGN UP </a></li>
-      </ul>
-    </div>
-  </nav>
+                </li>
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link" target="_blank"> <i class="fas fa-book"></i> About </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" target="_blank" onclick="return false;"> <i class="fas fa-book"></i> Donate Books </a>
+                </li>
+                <li class="nav-item">
+                    <a href=".././resource.html" class="nav-link"> <i class="fas fa-external-link-alt"></i> Resources
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Login_page/login_page.html" class="nav-link" target="_blank"> <i class="fas fa-sign-in-alt"></i> Login </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../sign up page/index.html" class="nav-link" target="_blank"> <i class="fas fa-sign-in-alt"></i> SIGN UP </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <div class="wrapper">
-    <div class="login-box">
-      <h2>Book Donation Form 📚</h2>
-      <form id="donation_form">
-        <div class="user-box">
-          <input type="text" id="name" name="" required="">
-          <label>Name of Donated Book</label>
-        </div>
-        <div class="user-box">
-          <input type="email" id="email" name="" required="">
-          <label>Email</label>
-        </div>
-        <div class="user-box">
-          <input type="number" id="contact" name="" required="">
-          <label>Contact Number</label>
-        </div>
-        <div class="user-box">
-          <input type="text" name="" id="address" required="">
-          <label>Address</label>
-        </div>
-        <div class="user-box">
-          <label>Select Country: </label><br><br>
-          <select name="state" class="country" id="countySel" size="1" required="">
+    <div class="wrapper">
+        <div class="login-box">
+            <h2>Book Donation Form 📚</h2>
+            <form id="donation_form">
+                <div class="user-box">
+                    <input type="text" id="name" name="" required="">
+                    <label>Name of Donated Book</label>
+                </div>
+                <div class="user-box">
+                    <input type="email" id="email" name="" required="">
+                    <label>Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="number" id="contact" name="" required="">
+                    <label>Contact Number</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="" id="address" required="">
+                    <label>Address</label>
+                </div>
+                <div class="user-box">
+                    <label>Select Country: </label><br><br>
+                    <select name="state" class="country" id="countySel" size="1" required="">
            <option value="" selected="selected">Select Country</option>
           </select>
-          <br>
-          <br>
-        </div>
-        <div class="user-box">
-          <label>Select State: </label><br><br>
-          <select name="country" class="state" id="stateSel" size="1" required="">
+                    <br>
+                    <br>
+                </div>
+                <div class="user-box">
+                    <label>Select State: </label><br><br>
+                    <select name="country" class="state" id="stateSel" size="1" required="">
           <option value="" selected="selected">Please select State first</option>
           </select>
-          <br>
-          <br>
-        </div>
-        <div class="user-box">
-          <label>Select City: </label><br><br>
-          <select name="district" class="city" id="districtSel" size="1" required="">
+                    <br>
+                    <br>
+                </div>
+                <div class="user-box">
+                    <label>Select City: </label><br><br>
+                    <select name="district" class="city" id="districtSel" size="1" required="">
          <option value="" selected="selected">Please select City first</option>
          </select>
-         <br>
-          <br>
-        </div>
-        <div class="user-box">
-          <input id="zip" type="text" name="" required="">
-          <label>Zip</label>
-        </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="user-box">
+                    <input id="zip" type="text" name="" required="">
+                    <label>Zip</label>
+                </div>
 
-        <div>
-          <a href="terms&conditions.html"> <u> Terms and Conditions </u></a>
-        </div>
+                <div>
+                    <a href="terms&conditions.html"> <u> Terms and Conditions </u></a>
+                </div>
 
-        <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Landmark (Optional)</label>
-        </div>
-        <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Alternate Phone (Optional)</label>
-        </div>
-        <input class="form-check-input" type="checkbox" id="gridCheck" required="">
-        <div class="user-box">
-          <label class="form-check-label" for="gridCheck">
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Landmark (Optional)</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Alternate Phone (Optional)</label>
+                </div>
+                <input class="form-check-input" type="checkbox" id="gridCheck" required="">
+                <div class="user-box">
+                    <label class="form-check-label" for="gridCheck">
             I have read and understood the terms and conditions
           </label>
-        </div>
-        <Button class="submit-btn">
+                </div>
+                <Button class="submit-btn">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           Submit
         </Button>
-      </form>
+            </form>
+        </div>
     </div>
-  </div>
 
-  <!-- adding name,image,name of book of people who made donation -->   <!-- here -->
+    <!-- adding name,image,name of book of people who made donation -->
+    <!-- here -->
 
-  <footer>
+    <!-- <footer>
     <div class="d-flex justify-content-between align-items-center">
       <div class="icons">
         <ul>
@@ -177,70 +186,171 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </p>
       </div>
     </div>
-  </footer>
+  </footer> -->
+    <div class="contact">
+        <ul>
+            <li class="heading">Contact:</li>
+            <li>Ph:95768xyza</li>
+            <li>E:hello@acelibrary.com</li>
+            <li><a href="https://www.linkedin.com/in/sauravmukherjee44/"> Linkedin</a></li>
+            <li><a href="https://github.com/SauravMukherjee44" target="github">Github</a></li>
+            <li><a href="https://twitter.com/mesourav44"> Twitter</a></li>
+            <li><a href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw" target="YouTube">YouTube</a></li>
+        </ul>
+        <ul>
+            <li class="heading">Community</li>
+            <li>Our Story</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Terms Of use</a> </li>
+            <li>Accessibility</li>
+            <li><a href="#">Publishing process</a> </li>
+        </ul>
+        <ul>
+            <li class="heading">Company</li>
+            <li><a href="public/contact us .html" target="_blank">Contact us</a> </li>
+            <li><a href="./public/terms&conditions.html">Terms and conditions</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Information</a></li>
+        </ul>
+        <ul>
+            <li><a href="" class="heading" onclick="return false;">Subscribe to our newsletter</a> </li>
+            <br>
+            <form method="post" autocomplete="off" name="google-sheet" bgcolor="#00000">
 
-  <!-- scripts -->
+                <!-- <h6 align="left" style="color:black;"> Name:</h6>-->
+                <label style="color:black;">Name: &nbsp;&nbsp;</label><input type="text" class="input" name="Name" required placeholder="Enter Your Name">
 
-  <script src="../assets/js/Donate_Book.js"></script>
+                <br><br>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
-  <script>
-    window.onload = function () {
-      document.getElementById('loading').style.display = "none";
-      document.getElementById('container').style.display = "block";
-    }
-    particlesJS.load("particles-js", "../assets/js/config.json", function () {
-      console.log("callback - particles.js config loaded");
-    });
-  </script>
-<script src="https://unpkg.com/@supabase/supabase-js"></script>
-  <script>
-  const donationForm = document.getElementById('donation_form');
-  const { createClient } = supabase
-  const supabaseUrl = `https://cvhyilfsattdglfdmvcu.supabase.co`
-  const supabaseAnonKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2aHlpbGZzYXR0ZGdsZmRtdmN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ1NTE5MTksImV4cCI6MTk2MDEyNzkxOX0.wvKZxYcBbeUy9aJTw3XzbySmBJ8PkxVGXeopoucQpGY`
+                <!--<h6 align="left" style="color:black;"> Email_Address:</h6>-->
+                <label style="color:black;">Email: &nbsp;&nbsp;</label> <input type="text" class="input" name="Email" required placeholder="Enter Your Email">
+                <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button style="background-color:peru; border-color:black; color:white" type="submit" id="btnSubmit" onclick="alert('Thank You.. \n Your Valuable Response is Stored successfully!!')">Subscribe</button>
+                <div id="msg"></div>
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5WCRS6VpGC_cjBpJNlY4A-MkwiOUCDv0BSSniX0d0AgcVmFPU/exec'
+                    const form = document.forms['google-sheet']
 
-  const _supabase = createClient(supabaseUrl, supabaseAnonKey);
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, {
+                                method: 'post',
+                                body: new FormData(form)
+                            })
+                            .then(reponse => alart("Thanks For Connecting..! We will Contact you soon..."))
+                            .catch(error => console.error('Error!', error.message))
+                    })
+                </script>
+                <!-- CSS only -->
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 
-  const donatedBook = document.querySelector('.donated_book');
+            </form>
 
+        </ul>
+    </div>
+    <div>
+        <footer>
+            <div class="footer-wrapper">
+                <div class="icons">
 
-  donationForm.addEventListener('submit',e=>{
-    e.preventDefault();
-    const { data, error } = _supabase
-      .from('donated_book')
-      .insert([
-        {
-          email:document.getElementById('email').value,
-          name:document.getElementById('name').value,
-          contact : document.getElementById('contact').value,
-          address : document.getElementById('address').value,
-          country : document.querySelector('.country').value,
-          city : document.querySelector('.city').value,
-          zip : document.getElementById('zip').value,
+                    <ul>
+                        <li>
+                            <a title="linkedin" target="_blank" href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
+                        </li>
+                        <li>
+                            <a title="github" target="_blank" href="https://github.com/SauravMukherjee44/"> <i class="fab fa-github icon"></i> </a>
+                        </li>
+                        <li>
+                            <a title="twitter" target="_blank" href="https://twitter.com/mesourav44/"><i class="fab fa-twitter icon"></i></a>
+                        </li>
+                        <li>
+                            <a title="youtube" target="_blank" href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw/"><i class="fab fa-youtube icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+
+                    <p>©2021 Copyright AEC Library</p>
+                </div>
+                <!--
+    <div class="ml-auto">
+      <p>
+        <a href="./public/contact us .html" style="color: antiquewhite;"> </a>
+        &emsp;&emsp;
+      </p>
+
+    </div>
+    -->
+            </div>
+        </footer>
+
+    </div>
+    </div>
+
+    <!-- scripts -->
+
+    <script src="../assets/js/Donate_Book.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script>
+        window.onload = function() {
+            document.getElementById('loading').style.display = "none";
+            document.getElementById('container').style.display = "block";
         }
-      ]).then(res=>{
-        console.log(res);
-        if(res.error){
-          alert(res.error.message);
-        }
-        else{
-        alert('Data Added');
-        }
-      })
-  })
-  </script>
+        particlesJS.load("particles-js", "../assets/js/config.json", function() {
+            console.log("callback - particles.js config loaded");
+        });
+    </script>
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    <script>
+        const donationForm = document.getElementById('donation_form');
+        const {
+            createClient
+        } = supabase
+        const supabaseUrl = `https://cvhyilfsattdglfdmvcu.supabase.co`
+        const supabaseAnonKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2aHlpbGZzYXR0ZGdsZmRtdmN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ1NTE5MTksImV4cCI6MTk2MDEyNzkxOX0.wvKZxYcBbeUy9aJTw3XzbySmBJ8PkxVGXeopoucQpGY`
+
+        const _supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+        const donatedBook = document.querySelector('.donated_book');
+
+
+        donationForm.addEventListener('submit', e => {
+            e.preventDefault();
+            const {
+                data,
+                error
+            } = _supabase
+                .from('donated_book')
+                .insert([{
+                    email: document.getElementById('email').value,
+                    name: document.getElementById('name').value,
+                    contact: document.getElementById('contact').value,
+                    address: document.getElementById('address').value,
+                    country: document.querySelector('.country').value,
+                    city: document.querySelector('.city').value,
+                    zip: document.getElementById('zip').value,
+                }]).then(res => {
+                    console.log(res);
+                    if (res.error) {
+                        alert(res.error.message);
+                    } else {
+                        alert('Data Added');
+                    }
+                })
+        })
+    </script>
 
 
 
 </body>
- <script src="../assets/js/Donate_Book.js"></script>
+<script src="../assets/js/Donate_Book.js"></script>
+
 </html>
