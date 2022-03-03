@@ -1371,79 +1371,116 @@ p {
 }
 
 .update {
+  margin: 10px;
   padding: 2rem 0;
   color: white;
-display: flex;
+  display: flex;
 }
 
+/* Contact form position styles*/
 .login-box {
-  /* position: absolute; */
-  /* top: 70%; */
-  /* left: 50%; */
-  width: 650px;
+  width: 60%;
   padding: 40px;
-  /* transform: translate(-50%, -50%); */
-
+  background: rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
-
   border-radius: 20px;
   transition-duration: 0.5s;
   margin: 0 auto;
-  background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 10px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.login-box h2 {
-  margin: 0 0 10px;
-  padding: 0;
-  color: rgb(255, 183, 0);
-  text-align: center;
-  font-weight: bolder;
-  letter-spacing: 0.2rem;
-  margin: 3rem 0rem 3rem 0rem;
+  box-shadow: 0px 0px 15px 5px lavender;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .login-box .user-box {
   position: relative;
+  margin: 3em 0;
+  width: 100%;
 }
 
-.login-box .user-box input {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 20px;
-  color: white;
-  margin-bottom: 20px;
+.login-box .title {
+  position: relative;
+  width: max-content;
+  margin: 0 auto 0.7em;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: rgb(255, 183, 0);
+  letter-spacing: 3px;
+}
+
+/* styles for input fields  */
+.login-box .user-box input,
+.login-box .user-box textarea {
+  width: 90%;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px 20px;
+  height: 1.875em;
+  font-size: 1rem;
   border: none;
-  border-bottom: 1px solid #fff;
   outline: none;
-  background-color:rgba(128, 128, 128, 0.37) ;
+  background: none;
+  opacity: 0.8;
+}
+
+.login-box .user-box textarea {
+  position: relative;
+  height: 3em 0;
+  resize: none;
 }
 
 .login-box .user-box label {
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
+  top: 50%;
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  left: 10px;
+  transform: translateY(-80%);
   pointer-events: none;
   transition: 0.5s;
 }
 
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: rgb(252, 231, 193);
-  font-size: 13px;
-  font-weight: bolder;
+.login-box .user-box textarea label {
+  transform: translateY(-90%);
 }
 
+/*for line below user-box field */
+.login-box .user-box .line::before,
+.login-box .user-box .line2::before {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #f1f1f1;
+  transition: 0.5s;
+}
+
+.login-box .user-box :focus ~ label,
+.login-box .user-box :valid ~ label {
+  top: -1px;
+  font-size: 1rem;
+  color: rgb(255, 183, 0);
+}
+
+.login-box .user-box :focus ~ .line::before,
+.login-box .user-box :valid ~ .line::before {
+  background: rgb(255, 183, 0);
+}
+
+.login-box .user-box textarea :focus ~ label,
+.login-box .user-box textarea :valid ~ label {
+  top: -1.5px;
+  font-size: 1rem;
+  color: rgb(255, 183, 0);
+}
+
+.login-box .user-box :focus ~ .line2::before,
+.login-box .user-box :valid ~ .line2::before {
+  background: rgb(255, 183, 0);
+}
+
+/* button styles */
 .login-box form a {
   position: relative;
   display: inline-block;
@@ -1454,48 +1491,36 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   text-transform: uppercase;
   overflow: hidden;
   transition: 1s;
-  margin-top: 4.2rem;
+  margin-top: 1.5rem;
   letter-spacing: 4px;
   background-color: rgb(54, 47, 47);
 }
 
-#txtid::placeholder{
-    color: white;
+#txtid::placeholder {
+  color: white;
 }
 
-.update img{
+.update img {
   border-radius: 200px;
   height: 20rem;
   width: 20rem;
   margin-left: 30px;
   margin-top: 60px;
-}
-
-.login-box textarea{
-  background: transparent;
-  width: 100%;
-  padding: 14px;
-  background: rgba(104, 87, 87, 0.479);
-box-shadow: 0 8px 32px 0 rgba(0, 2, 19, 0.37);
-backdrop-filter: blur( 70px );
--webkit-backdrop-filter: blur( 90px );
-border-radius: 10px;
-border: 0px solid rgba( 255, 255, 255, 0.18 );
-  /* box-shadow: 0px 0px 19px 0px black; */
-  color: whitesmoke;
-  outline: none;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .login-box a:hover {
   background: rgb(7, 7, 7);
   color: #fff;
   border-radius: 5px;
-  /* box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4; */
 }
 
+.login-box:hover {
+  transition-duration: 0.4s;
+  box-shadow: 0 0px 15px 5px rgb(255, 183, 0);
+}
+/* styles for transition around button */
 .login-box a span {
   position: absolute;
   display: block;
@@ -1505,89 +1530,79 @@ border: 0px solid rgba( 255, 255, 255, 0.18 );
   top: 0;
   left: -100%;
   width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgb(255, 183, 0));
-  animation: btn-anim1 2s linear infinite;
+  height: 3px;
+  background: linear-gradient(to right, transparent, rgba(255, 183, 0, 0.6));
+  animation: btn-anim1 1s linear infinite;
 }
 
-*/ .login-box a span:nth-child(2) {
+.login-box a span:nth-child(2) {
   top: -100%;
   right: 0;
-  width: 2px;
+  width: 3px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, rgb(255, 183, 0));
-  animation: btn-anim2 1s linear infinite;
-  animation-delay: 2.2s;
-}
-
-.login-box:hover {
-  transition-duration: 0.4s;
-  box-shadow: 0px 0px 15px 5px lavender;
-}
-
-@keyframes btn-anim2 {
-  0% {
-    top: -100%;
-  }
-
-  50%,
-  100% {
-    top: 100%;
-  }
-}
-
-@keyframes btn-anim1 {
-  0% {
-    left: -100%;
-  }
-
-  50%,
-  100% {
-    left: 100%;
-  }
+  background: linear-gradient(to bottom, transparent, rgba(255, 183, 0, 0.6));
+  animation: btn-anim2 1s linear 0.25s infinite;
 }
 
 .login-box a span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, rgb(255, 183, 0));
-  animation: btn-anim3 1s linear infinite;
-  animation-delay: 2.5s;
+  height: 3px;
+  background: linear-gradient(to left, transparent, rgba(255, 183, 0, 0.6));
+  animation: btn-anim3 1s linear 0.5s infinite;
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, rgba(255, 183, 0, 0.6));
+  animation: btn-anim4 1s linear 0.75s infinite;
+}
+
+/* button animations */
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
 }
 
 @keyframes btn-anim3 {
   0% {
     right: -100%;
   }
-
   50%,
   100% {
     right: 100%;
   }
 }
 
-.login-box a span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, rgb(255, 183, 0));
-  animation: btn-anim4 1s linear infinite;
-  animation-delay: 2.7s;
-}
-
 @keyframes btn-anim4 {
   0% {
     bottom: -100%;
   }
-
   50%,
   100% {
     bottom: 100%;
   }
 }
+/* end of contact form styles */
 
 /* scroll bar design */
 /* width */
@@ -1614,16 +1629,24 @@ border: 0px solid rgba( 255, 255, 255, 0.18 );
 
 /* scroll bar end */
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 850px) {
+  .update img {
+    width: 15rem;
+    height: 15rem;
+    margin: 25px;
+  }
   .login-box {
-    width: 700px;
+    width: 55%;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 720px) {
+  .update {
+    display: block;
+    text-align: center;
+  }
   .login-box {
-    top: 60%;
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -2587,24 +2610,5 @@ select {
   }
   .new-nav button{
     margin-left: 76%;
-  }
-}
-@media(max-width:1024px){
-  .update img{
-    margin-left: 0;
-    padding: 20px;
-  }
-}
-@media(max-width:425px){
-  .update img{
-    margin-left: 0;
-    padding: 0;
-   width: 0px;
-   height: 0px;
-
-  }
-  .login-box .user-box input{
-    font-size: 15px;
-    /* padding: 8px; */
   }
 }
