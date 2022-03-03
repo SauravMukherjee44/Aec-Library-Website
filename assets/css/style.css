@@ -1,21 +1,31 @@
 * {
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 html,
 body {
+
     font-family: "Playfair Display", serif;
     width: 100%;
     overflow: hidden;
+
 }
 
 nav.navbar {
+
     /* margin-right: 12px !important; */
     /* padding-right: 12px !important; */
     right: 0;
 }
+
+
+
+
+
 
 
 /* #table {
@@ -36,6 +46,7 @@ nav.navbar {
 */
 
 #table {
+
     text-align: center;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -113,10 +124,12 @@ label {
 
 .datTables_paginate {
     color: white;
+
 }
 
 .pagination-right,
 .pagination-left {
+
     color: white;
 }
 
@@ -135,6 +148,7 @@ label {
 .navbar-nav li a:hover:after {
     width: 100%;
     left: 0;
+
 }
 
 
@@ -143,6 +157,7 @@ label {
 } */
 
 #loading {
+
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -162,20 +177,24 @@ label {
   box-shadow: 0px 0px 16px 9px black; */
     background-color: #343a40 !important;
     box-shadow: 0px 0px 16px 9px black;
+
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
+
 .navbar-light .navbar-nav .show>.nav-link {
     color: rgb(243 243 243);
     font-weight: bold;
+
 }
 
 
 /* Category */
 
 .form-check-input {
+
     border-radius: 15px;
     margin-top: 10px;
     padding: 5px;
@@ -193,10 +212,11 @@ label[for="category"] {
     margin-right: 40%;
     padding-top: 40px;
     width: 300px;
-}
+
 
 
 /* Authors */
+
 
 .form-check-input1 {
     border-radius: 20px;
@@ -216,9 +236,10 @@ label[for="bookName"] {
 
 label[for="dateIssue"] {
     display: none;
-}
+
 
 .container h1 {
+
     padding-top: 40px;
     color: rgb(255, 255, 255);
     /* font-family: "Poiret One", cursive; */
@@ -371,12 +392,14 @@ html {
 
 .space {
     margin-top: 10px;
+
 }
 
 
 /* footer */
 
 footer {
+
     position: relative;
     width: 100%;
     background-color: rgb(52, 58, 64);
@@ -454,13 +477,17 @@ footer p {
 
 .icons ul li:nth-child(2) a:before {
     background: black;
+
 }
 
 .icons ul li:nth-child(4) a:before {
+
     background: red;
+
 }
 
 .ml-auto {
+
     margin-top: 13px;
     font-size: 20px;
 }
@@ -557,12 +584,14 @@ strong {
     /* To remove the overlapping due to responsive width change */
     display: flex;
     flex-direction: column;
+
 }
 
 
 /* Animation */
 
 .bubbles img {
+
     width: 50px;
     animation: bubble 9s linear infinite;
 }
@@ -623,6 +652,7 @@ strong {
 .bubbles img:nth-child(7) {
     animation-delay: 7s;
     width: 35px;
+
 }
 
 
@@ -632,30 +662,37 @@ strong {
 /* width */
 
 ::-webkit-scrollbar {
+
     width: 9px;
+
 }
 
 
 /* Track */
 
 ::-webkit-scrollbar-track {
+
     background: rgb(77, 32, 32);
+
 }
 
 
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
+
     background: #c68b59;
     border-radius: 10px;
-}
+
 
 
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
+
     background: #865439;
     border: solid 2px rgb(41, 2, 10);
+
 }
 
 
@@ -665,6 +702,7 @@ strong {
 /* preloader */
 
 .headervdo_afterpreload {
+
     transition: ease-in 5s;
     opacity: 100;
 }
@@ -699,6 +737,7 @@ strong {
     width: 200px;
     height: 140px;
     position: relative;
+
 }
 
 .loader:before,
@@ -946,6 +985,7 @@ strong {
     100% {
         transform: rotateY(0deg);
     }
+
 }
 
 
@@ -955,6 +995,7 @@ strong {
 /* For making responsive */
 
 @media (max-width: 800px) {
+
     /*   html {
     width:73.7rem;
   } */
@@ -972,12 +1013,14 @@ strong {
    font-size: 5rem;
  } */
     /*  .latest-blogs {
+
     font-size: 4rem;
   }
 
  .latest-blogs-p{
    font-size: 3.5rem;
  } */
+
     /*
 
   .body-style {
@@ -986,6 +1029,7 @@ strong {
   }
 
 */
+
     /*   #table {
     width: 29rem;
     height: 10rem;
@@ -1003,11 +1047,13 @@ strong {
         margin-left: 1.5rem;
     }
     /*   .my-sm-0 {
+
     margin-left: 1.5rem;
   } */
 }
 
 .suggestion {
+
     background-color: white;
     display: flex;
     overflow: hidden;
@@ -1130,9 +1176,11 @@ strong {
     100% {
         transform: translateY(0);
     }
+
 }
 
 .books1 {
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     justify-content: space-around;
@@ -1158,9 +1206,11 @@ strong {
     transform: scale(1.1);
     object-fit: cover;
     display: block;
+
 }
 
 .book p {
+
     font-size: 1rem;
 }
 
@@ -1176,9 +1226,11 @@ strong {
     border-radius: 5px;
     font-size: 1rem;
     transition: 0.5s;
+
 }
 
 .bookbtn:hover {
+
     text-decoration: none;
     color: #fff;
     background: #00729d;
@@ -1320,6 +1372,7 @@ strong {
     flex: 1;
     align-items: center;
     justify-content: space-around;
+
 }
 
 
@@ -1330,15 +1383,18 @@ strong {
 */
 
 .photo img {
+
     height: 100%;
     max-width: 310px;
     max-height: 400px;
     min-width: 0;
     object-fit: contain;
+
 }
 
 .blogs h1,
 p {
+
     text-align: center;
     font-family: "Poppins", sans-serif;
 }
@@ -1348,12 +1404,14 @@ p {
     padding: 2rem 0;
     color: white;
     display: flex;
+
 }
 
 
 /* Contact form position styles*/
 
 .login-box {
+
     width: 60%;
     padding: 40px;
     background: rgba(0, 0, 0, 0.25);
@@ -1380,6 +1438,7 @@ p {
     font-size: 1.8rem;
     color: rgb(255, 183, 0);
     letter-spacing: 3px;
+
 }
 
 
@@ -1387,6 +1446,7 @@ p {
 
 .login-box .user-box input,
 .login-box .user-box textarea {
+
     width: 90%;
     color: #fff;
     font-size: 1rem;
@@ -1418,6 +1478,7 @@ p {
 
 .login-box .user-box textarea label {
     transform: translateY(-90%);
+
 }
 
 
@@ -1425,6 +1486,7 @@ p {
 
 .login-box .user-box .line::before,
 .login-box .user-box .line2::before {
+
     content: '';
     position: absolute;
     top: 35px;
@@ -1457,12 +1519,14 @@ p {
 .login-box .user-box :focus~.line2::before,
 .login-box .user-box :valid~.line2::before {
     background: rgb(255, 183, 0);
+
 }
 
 
 /* button styles */
 
 .login-box form a {
+
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -1500,12 +1564,14 @@ p {
 .login-box:hover {
     transition-duration: 0.4s;
     box-shadow: 0 0px 15px 5px rgb(255, 183, 0);
+
 }
 
 
 /* styles for transition around button */
 
 .login-box a span {
+
     position: absolute;
     display: block;
 }
@@ -1544,12 +1610,14 @@ p {
     height: 100%;
     background: linear-gradient(to top, transparent, rgba(255, 183, 0, 0.6));
     animation: btn-anim4 1s linear 0.75s infinite;
+
 }
 
 
 /* button animations */
 
 @keyframes btn-anim1 {
+
     0% {
         left: -100%;
     }
@@ -1587,6 +1655,7 @@ p {
     100% {
         bottom: 100%;
     }
+
 }
 
 
@@ -1599,36 +1668,45 @@ p {
 /* width */
 
 ::-webkit-scrollbar {
+
     width: 10px;
+
 }
 
 
 /* Track */
 
 ::-webkit-scrollbar-track {
+
     background: rgb(77, 32, 32);
+
 }
 
 
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
+
     background: #c68b59;
     border-radius: 10px;
+
 }
 
 
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
+
     background: #c68b59;
     border: solid 2px rgb(41, 2, 10);
+
 }
 
 
 /* scroll bar end */
 
 @media only screen and (max-width: 850px) {
+
     .update img {
         width: 15rem;
         height: 15rem;
@@ -1647,10 +1725,12 @@ p {
     .login-box {
         width: 90%;
     }
+
 }
 
 input[type="checkbox"],
 input[type="radio"] {
+
     box-sizing: border-box;
     padding: 0;
     margin-top: 1rem;
@@ -1672,6 +1752,7 @@ input[type="radio"] {
     align-items: center;
     margin: 0;
     padding: 0;
+
 }
 
 #subcribe {
@@ -1682,9 +1763,11 @@ input[type="radio"] {
     width: 100%;
     position: relative;
     outline: none;
+
 }
 
 .label {
+
     position: absolute;
     font-size: 0.85rem !important;
     height: 35px;
@@ -1704,7 +1787,10 @@ input[type="radio"] {
 
 .newsletter {
     padding-right: 75px;
+
 }
+
+/* end of newsletter styles */
 
 .contact ul li,
 a {
@@ -1713,21 +1799,28 @@ a {
     font-family: "Source Sans Pro", sans-serif;
     font-size: large;
     margin: 5px;
-}
+
 
 .contact .email {
+
     width: 100%;
+
 }
 
 .contact .email #subcribe {
+
     width: 80%;
+
 }
 
 .contact .email label {
+
     width: 20%;
+
 }
 
 .heading {
+
     list-style: none;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: bolder;
@@ -1763,9 +1856,11 @@ a {
 
 .header ul li {
     margin-right: 20px;
+
 }
 
 .header .logo {
+
     display: inline-flex;
     font-weight: bold;
     flex-direction: row;
@@ -1779,14 +1874,18 @@ a {
     display: inline-flex;
     padding: 0;
     align-items: center;
+
 }
 
 .header .logo,
 .header .login a {
+
     font-size: 24px;
+
 }
 
 .new-nav {
+
     /*   height: 50px; */
     min-height: 50px;
     background-color: #f3d094;
@@ -1853,9 +1952,11 @@ a {
 
 .contain:hover {
     transform: scale(1.1);
+
 }
 
 .contain div {
+
     font-family: "Source Sans Pro", sans-serif;
     margin: 30px;
     text-align: center;
@@ -1873,10 +1974,12 @@ a {
 
 #search {
     align-items: center;
+
 }
 
 #searchTxt,
 #searchsymbol {
+
     margin: 0;
 }
 
@@ -1890,14 +1993,18 @@ a {
 .nav-link {
     font-family: sans-serif;
     font-size: 0.5cm;
+
 }
 
 .login {
+
     position: relative;
     color: #f3d094;
+
 }
 
 .login a:after {
+
     content: "";
     position: absolute;
     background-color: wheat;
@@ -1926,19 +2033,23 @@ a {
     margin-right: 0;
     padding-left: 30px;
     margin-left: 60px;
+
 }
 
 .col-sm-10 input,
 .form-check-input1,
 .form-check-input {
+
     width: 95%;
     padding: 3%;
     margin-left: 16px;
     border-radius: 10px;
     outline: none;
+
 }
 
 #issueDate {
+
     border-radius: 5px;
     padding-left: 3%;
     padding: 3%;
@@ -1948,28 +2059,36 @@ a {
 
 .col-sm-10 {
     width: 300px;
+
 }
 
 #libraryForm {
+
     display: flex;
     flex-direction: column;
     /* flex: 1; */
     width: 100%;
+
 }
 
 #libraryForm .form-check-input {
+
     width: 100%;
     position: relative;
+
 }
 
 #libraryForm label {
+
     width: 100%;
     padding: 0 1rem;
     position: relative;
+
 }
 
 #libraryForm input,
 select {
+
     width: 95%;
     border-radius: 10px;
     padding: 0 1rem;
@@ -1977,14 +2096,18 @@ select {
     margin: 1rem 0;
     margin-left: 16px;
     position: relative;
+
 }
 
 #libraryForm .btn-primary {
+
     margin: 0;
     margin-left: 16px;
+
 }
 
 .form-group {
+
     width: 100%;
 }
 
@@ -2019,6 +2142,7 @@ select {
     padding-right: 0px;
     justify-items: right;
     flex-direction: column;
+
 }
 
 
@@ -2043,6 +2167,7 @@ select {
 /*scrolling effect starts from here*/
 
 #scrollpath {
+
     position: fixed;
     top: 0;
     right: 0;
@@ -2108,28 +2233,34 @@ select {
 
 .nav-item a {
     text-decoration: none;
+
 }
 
 .faq-heading {
+
     text-align: center;
     padding: 10px 60px;
     color: black;
     text-decoration: none;
+
 }
 
 .faq-container {
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: #f3d094;
     min-height: 100vh;
     /* height: 700px; */
+
 }
 
 
 /* Style the buttons that are used to open and close the faq-page body */
 
 .faq-page {
+
     color: black;
     cursor: pointer;
     padding: 20px 20px;
@@ -2139,9 +2270,11 @@ select {
     margin: auto;
     border-bottom: 2px solid #000;
     text-decoration: none;
+
 }
 
 .faq-body {
+
     margin: auto;
     width: 60%;
     padding: 0px 18px;
@@ -2154,27 +2287,33 @@ select {
 .faq-body p {
     margin-top: 28px;
     font-family: "Source Sans Pro", sans-serif !important;
+
 }
 
 
 /* Add a background color to the button if it is clicked on when you move the mouse over it (hover) */
 
 .faq-page:hover {
+
     background-color: #f1c476;
+
 }
 
 
 /* Style the faq-page panel. Note: hidden by default */
 
 .faq-page:after {
+
     content: "\02795";
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
+
 }
 
 .active:after {
+
     content: "\2796";
 }
 
@@ -2320,24 +2459,30 @@ select {
     height: 80%;
     width: 50%;
     overflow: hidden;
+
 }
 
 .blog-content {
+
     height: 80%;
     width: 80%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .blog-carousel {
+
     height: 80%;
     width: 50%;
     overflow: hidden;
+
 }
 
 .blog-carousel img {
+
     height: 100%;
     width: 100%;
 }
@@ -2358,13 +2503,17 @@ select {
 .desc-carousel>div {
     height: 100%;
     width: 100%;
+
 }
 
 .desc {
+
     height: 100%;
+
 }
 
 .desc-carousel h1 {
+
     text-decoration: none;
     font-weight: bold;
     font-size: 1.75rem;
@@ -2481,9 +2630,17 @@ select {
     text-align: justify;
     font-size: 1rem;
     font-weight: bold;
+
 }
 
+
+
+
+
+
+
 .card-bg {
+
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     height: 100%;
@@ -2508,19 +2665,25 @@ select {
 .card1:hover {
     background: url(../../blog1.jpg);
     background-size: cover;
+
 }
 
 .card2:hover {
+
     background: url(../../images/blog11.jpg);
     background-size: cover;
+
 }
 
 .card3:hover {
+
     background: url(../../images/blog2.png);
     background-size: cover;
+
 }
 
 .card4:hover {
+
     background: url(../../images/blog3.jpg);
     background-size: cover;
 }

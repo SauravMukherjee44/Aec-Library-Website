@@ -369,18 +369,24 @@ footer p {
     margin-bottom: 0;
     text-align: center;
     border-radius: 0px;
+
     color: rgb(255, 255, 255);
 }
 
+
 .footer-col ul li a {
     text-decoration: none;
+
     opacity: 0.8
 }
 
+
 .footer-col ul li {
     display: inline-block;
+
     padding: 0px 70px;
 }
+
 
 .footer-wrapper {
     display: flex;
