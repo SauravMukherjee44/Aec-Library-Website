@@ -685,20 +685,24 @@
   <div class="update">
     <img src="./assets/images/feedback.jpg" alt="feedback" />
     <div class="login-box">
-
+      <h1 class="title">Get In touch</h1>
       <form id="feedbackForm" method="POST" action="">
         <div class="user-box">
-          <input type="text" name="feedbackName" id="feedbackName" required >
+          <input type="text" name="feedbackName" id="feedbackName" required>
+          <span class="line"></span>
           <label>Name</label>
         </div>
         <div class="user-box">
           <input type="email" name="feedbackEmail" id="feedbackEmail" required>
+          <span class="line"></span>
           <label>Email</label>
         </div>
         <div class="user-box">
-
-          <textarea id="txtid" name="txtname" rows="1"  maxlength="200" required placeholder="Type your message here"></textarea>
-
+  
+          <textarea id="txtid" name="txtname" rows="1" maxlength="200" required></textarea>
+          <span class="line2"></span>
+          <label>Message</label>
+  
         </div>
         <a href="#feedbackForm" id="formAnchor">
           <span></span>
@@ -717,21 +721,21 @@
       const msg = document.getElementById("txtid");
 
       function isEmail(email) {
-              let regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-              return regexp.test(String(email).toLowerCase());
+        let regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return regexp.test(String(email).toLowerCase());
       }
 
-      btn.addEventListener("click",()=>{
-        if(feedbackName.value==""){
-          swal("Error !","Please enter a valid name","error");
+      btn.addEventListener("click", () => {
+        if (feedbackName.value == "") {
+          swal("Error !", "Please enter a valid name", "error");
         }
-        else if(!isEmail(feedbackEmail.value)){
-          swal("Error !","Please enter a valid email","error");
+        else if (!isEmail(feedbackEmail.value)) {
+          swal("Error !", "Please enter a valid email", "error");
         }
-        else if(msg.value==""){
-          swal("Error !","Please enter a message","error");
+        else if (msg.value == "") {
+          swal("Error !", "Please enter a message", "error");
         }
-        else{
+        else {
           swal("Thank You !", "Your feedback is posted !", "success");
           form.reset();
         }
@@ -814,6 +818,63 @@
           <!-- faq answer -->
           <div class="faq-body">
               <p>Click on the "Donate books" button and fill out the form with your details. We will reach out to you with further details.</p>
+          </div>
+        </div>
+        <div class="faq-five">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: What is the benefits of an account in Aec-Library ? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p><ol>
+                <li>Contriibute to Aec-library : 
+                    Aec-library is a community initiative to build a robust book catalog.Anyone can add or edit data about books and blogs.
+                </li>
+                <li>
+                  Personalize your experience :
+                  We are always adding new features to our site so you can make your experience more personal .
+                </li>
+              </ol></p>
+          </div>
+        </div>
+        <div class="faq-six">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How can I find a book here? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>Go to the "CHoose and read books" section and search the book you are looking for .</p>
+          </div>
+        </div>
+        <div class="faq-seven">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: I haven't found a book but it's not readable format>Is something wrong? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>This is not supposed to happen but if it happens please leave a message on out "Contact us" section.We will definitely look in it. </p>
+          </div>
+        </div>
+        <div class="faq-eight">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How can I download a book? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>Go to our "Recommended Book" secion. Choose your book which you want to download then click on the "Download as pdf".
+                Happy reading :)</p>
+          </div>
+        </div>
+        <div class="faq-nine">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How many books can I check-out at once? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>You can check-out as many books as you want.</p>
+          </div>
+        </div>
+        <div class="faq-ten">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How can I access in Online library? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>Go to our "Resources" section.Cick on the "All resources". You can find out in our environment all recources to satisfy your need. </p>
           </div>
         </div>
 
