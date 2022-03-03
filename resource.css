@@ -244,6 +244,47 @@ h3.hover-underline-animation {
   margin-top: 0px;
   margin-bottom: 8px;
 }
+/* Navigate to Top Button styling */
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#topBtn a:hover {
+  background: #F0FFC2;
+  transform-origin: center center;
+}
+
+#topBtn a span:hover {
+  background: #BFFFF0;
+  color: #362706;
+  transform-origin: center center;
+}
+
+#topBtn a {
+  display: block;
+  text-align: center;
+  height: 40px;
+  width: 38px;
+  background: #219F94;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#topBtn a span {
+  color: #EEEEEE;
+  width: 38px;
+  border-radius: 15px;
+  line-height: 39px;
+  text-decoration: none;
+  font-size: 32px;
+}
 /* QUESTION BANK */
 #qb {
   display: flex;
