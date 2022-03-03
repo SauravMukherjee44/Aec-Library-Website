@@ -16,6 +16,8 @@ nav.navbar {
 	right: 0;
 }
 
+
+
 /* #table {
   border: none;
   border-radius: 20px;
@@ -259,23 +261,26 @@ html {
 }
 
 .btn {
-	width: 150px;
-	height: 41px;
-	border: none;
-	outline: none;
-	color: #fff;
-	background: #5282d4;
-	opacity: 0.9;
-	background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
-	background-image: -moz-linear-gradient(top, #5282d4, #28667d);
-	background-image: -ms-linear-gradient(top, #5282d4, #28667d);
-	background-image: -o-linear-gradient(top, #5282d4, #28667d);
-	background-image: linear-gradient(to bottom, #5282d4, #28667d);
-	cursor: pointer;
-	position: relative;
-	z-index: 0;
-	border-radius: 10px;
-	margin-top: 2rem;
+
+  width: 150px;
+  height: 41px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #5282d4;
+  opacity: 0.9;
+  background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
+  background-image: -moz-linear-gradient(top, #5282d4, #28667d);
+  background-image: -ms-linear-gradient(top, #5282d4, #28667d);
+  background-image: -o-linear-gradient(top, #5282d4, #28667d);
+  background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-left: 80px;
+
 }
 
 #searchsymbol {
