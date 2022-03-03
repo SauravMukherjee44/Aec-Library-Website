@@ -4,7 +4,10 @@
   margin: 0;
 }
 
+
 /* To enhance scroll-bar  */
+
+
 
 ::-webkit-scrollbar {
   width: 13px;
@@ -243,6 +246,47 @@ section h5 {
 h3.hover-underline-animation {
   margin-top: 0px;
   margin-bottom: 8px;
+}
+/* Navigate to Top Button styling */
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#topBtn a:hover {
+  background: #F0FFC2;
+  transform-origin: center center;
+}
+
+#topBtn a span:hover {
+  background: #BFFFF0;
+  color: #362706;
+  transform-origin: center center;
+}
+
+#topBtn a {
+  display: block;
+  text-align: center;
+  height: 40px;
+  width: 38px;
+  background: #219F94;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#topBtn a span {
+  color: #EEEEEE;
+  width: 38px;
+  border-radius: 15px;
+  line-height: 39px;
+  text-decoration: none;
+  font-size: 32px;
 }
 /* QUESTION BANK */
 #qb {
@@ -644,11 +688,8 @@ footer .content .right input[type="text"] {
 footer .content .right input[type="text"]:focus{
   box-shadow: 0px 0px 2px #d9d9d9;
   border: none;
-
-
 }
-
-footer .content .right input[type="submit"] {
+footer .content .right .btn{
   height: 42px;
   width: 100%;
   font-size: 18px;
@@ -662,15 +703,13 @@ footer .content .right input[type="submit"] {
   border: 2px solid #eb2f06;
   transition: all 0.3s ease-in-out;
 }
-
-.content .right input[type="submit"]:hover {
+.content .right .btn:hover {
   background: none;
   color: #eb2f06;
   font-weight: bold;
   border: 1px solid #eb2f06;
   transition-delay: .2s;
 }
-
 footer .content .media-icons a {
   font-size: 16px;
   height: 45px;
