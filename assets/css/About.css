@@ -351,64 +351,72 @@ a.nav-link {
     width: 35px;
 }
 
-/* footer */
+
+/* footer added*/
+
 footer {
     position: relative;
+    margin-top: -200px;
+    bottom: 0;
     width: 100%;
-    
-    background-color: #6f4e37b0 !important
+    margin-top: 7px;
+    background-color: #6f4e37b0 !important;
+    clear: both;
+}
 
-  }
-  
-  footer p {
-    margin: 0;
-  }
-
-  .footer-col ul {
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 20px;
-    margin-bottom: 0;
+.footer-social {
+    width: 350px !important;
+    padding-top: 25PX;
+    height: 80px;
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
     text-align: center;
-    border-radius: 0px;
-    color:rgb(255, 255, 255);
-    display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          align-content: center;
-          justify-content: center;
-    
-  }
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color:white;
+}
 
-  .footer-col ul li a {
+.footer-parent,
+.footer-copyright {
+    width: 60vw !important;
+    margin: 5px auto;
+    text-align: center;
+    padding: 0;
+    word-spacing: 2px;
+    color: cornsilk !important;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    
+
+}
+
+.footer-parent li a{
+    color: cornsilk !important;
     text-decoration: none;
-    opacity: 0.8 ;
-    color: rgb(241, 181, 16);
-  }
-  .footer-col ul li a:hover{
-    color:#00ffd5;
-  }
-
-  .footer-col ul li {
-    display: inline-block;
-    padding: 0px 34px;
     
-  }
 
-  
-  .footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0.2rem 0;
-    gap: 0.3rem;
-  }
+}
+.footer-parent li a:hover{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
   
   .icons ul {
     display: flex;
     margin: 0;
+    margin-top:10px;
     padding: 0;
+    width: 30vw;
+        margin: 15px auto;
+       justify-content: space-evenly;
+
   }
   
   .icons ul li {
@@ -418,8 +426,9 @@ footer {
   .icons ul li a {
     display: block;
     position: relative;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
     background-color: #fff;
     text-align: center;
     line-height: 20px;
@@ -429,14 +438,22 @@ footer {
     overflow: hidden;
     z-index: 1;
     border: 3px solid #fff;
-  }
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
   
   .icons ul li a .icon {
     position: relative;
     color: #262626;
     transition: 0.5s;
     z-index: 3;
-  }
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
   
   .icons ul li a:hover .icon {
     color: #fff;
