@@ -1036,9 +1036,9 @@
                  </div>
                     <div class="right box">
                          <div class="topic">Feedback</div>
-                             <form action="#">
-                                 <input type="text" placeholder="Enter your valuable feedback">
-                                 <input type="submit" name="" value="Send">
+                             <form action="#" name="feedbackform" onsubmit="return feedbackvalidate()">
+                                 <input type="text" placeholder="Enter your valuable feedback" name="feedback">
+                                 <button type="submit" class="btn">Send</button>
                                      <div class="media-icons">
 
                                          <a class="Twitter" href="https://twitter.com/mesourav44" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -1201,7 +1201,17 @@
         })
 }
 
-
+function feedbackvalidate (){
+    let x=document.forms["feedbackform"]["feedback"].value;
+    if(x==""){
+        alert("Feedback must be filled out");
+        return false;
+    }
+    else{
+        alert("Thanks for your feedback");
+        return true;
+    } 
+}
 </script>   
 </body>
 </html>

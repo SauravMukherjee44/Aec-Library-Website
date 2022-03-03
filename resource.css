@@ -644,11 +644,8 @@ footer .content .right input[type="text"] {
 footer .content .right input[type="text"]:focus{
   box-shadow: 0px 0px 2px #d9d9d9;
   border: none;
-
-
 }
-
-footer .content .right input[type="submit"] {
+footer .content .right .btn{
   height: 42px;
   width: 100%;
   font-size: 18px;
@@ -662,15 +659,13 @@ footer .content .right input[type="submit"] {
   border: 2px solid #eb2f06;
   transition: all 0.3s ease-in-out;
 }
-
-.content .right input[type="submit"]:hover {
+.content .right .btn:hover {
   background: none;
   color: #eb2f06;
   font-weight: bold;
   border: 1px solid #eb2f06;
   transition-delay: .2s;
 }
-
 footer .content .media-icons a {
   font-size: 16px;
   height: 45px;
