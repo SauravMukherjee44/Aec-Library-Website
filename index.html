@@ -145,7 +145,7 @@
   <header class="header">
     <ul>
       <li class="logo"><img src="assets/logos/finalLogo.png"
-          alt="AEC Library" class="logo-img"> AEC LIBRARY</li> 
+          alt="AEC Library" class="logo-img"> AEC LIBRARY</li>
       <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i class="fas fa-sign-in-alt"></i> LOGIN </a></li>
     </ul>
   </header>
@@ -158,13 +158,12 @@
         <!-- hamburger menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- navbar items -->
-
           <ul class="ms-auto">
             <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
             <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
             <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
             <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
-			<li class="nav-item"><a href="blogs.html"><i class="fas fa-external-link-alt"></i>BLOGS</a></li>
+            <li class="nav-item"><a href="./sign up page/index.html"><i class="fas fa-sign-in-alt"></i>SIGN UP</a></li>
             <li class="nav-item"><a href="./public/contact us .html"><i class="fas fa-address-book"></i>CONTACT US</a></li>
             <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
           </ul>
@@ -207,9 +206,9 @@
 
     <div class="hero-left" autofocus>
        <h2 id="IssueHere">Issue Here</h2>
-      
-      
-      
+
+
+
        <form id="libraryForm">
         <div class="form-group row">
           <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
@@ -255,46 +254,44 @@
           </div>
 
         </div>
-        <fieldset class="form-group">
-          <div class="row">
-            <legend class="col-form-label col pt-0"><label for="category"><strong>Category</strong></label> </legend>
+        <div class="form-group row">
+          <label for="Author" class="col col-form-label"> <strong>Category</strong></label>
+          <div class="col">
 
-            <div class="col">
-              <div class="form-check">
-                <select class="form-check-input" name="category" id="category" style="z-index: 1;">
-                  <option value="N/A">Select Category</option>
-                  <option value="Arts & Music">Arts & Music</option>
-                  <option value="Biographies">Biographies</option>
-                  <option value="Business">Business</option>
-                  <option value="Comics">Comics</option>
-                  <option value="Computer & Tech">Computers & Tech</option>
-                  <option value="Cooking">Cooking</option>
-                  <option value="Education & Reference">Education & Reference</option>
-                  <option value="Entertainment">Entertainment</option>
-                  <option value="Health & Fitness">Health & Fitness</option>
-                  <option value="History">History</option>
-                  <option value="Hobbies & Crafts">Hobbies & Crafts</option>
-                  <option value="Home & Garden">Home & Garden</option>
-                  <option value="Horror">Horror</option>
-                  <option value="Kids">Kids</option>
-                  <option value="Literature & Fiction">Literature & Fiction</option>
-                  <option value="Medical">Medical</option>
-                  <option value="Mystery">Mystery</option>
-                  <option value="Parenting">Parenting</option>
-                  <option value="Religion">Religion</option>
-                  <option value="Romance">Romance</option>
-                  <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
-                  <option value="Science & Maths">Science & Maths</option>
-                  <option value="Self-Help">Self-Help</option>
-                  <option value="Social Sciences">Social Sciences</option>
-                  <option value="Sports">Sports</option>
-                  <option value="Travel">Travel</option>
-                  <option value="True Crime">True Crime</option>
-                </select>
-              </div>
-            </div>
+            <select class="form-check-input1" name="category" id="category" style="z-index: 1;">
+
+
+              <option value="N/A">Select Category</option>
+              <option value="Arts & Music">Arts & Music</option>
+              <option value="Biographies">Biographies</option>
+              <option value="Business">Business</option>
+              <option value="Comics">Comics</option>
+              <option value="Computer & Tech">Computers & Tech</option>
+              <option value="Cooking">Cooking</option>
+              <option value="Education & Reference">Education & Reference</option>
+              <option value="Entertainment">Entertainment</option>
+              <option value="Health & Fitness">Health & Fitness</option>
+              <option value="History">History</option>
+              <option value="Hobbies & Crafts">Hobbies & Crafts</option>
+              <option value="Home & Garden">Home & Garden</option>
+              <option value="Horror">Horror</option>
+              <option value="Kids">Kids</option>
+              <option value="Literature & Fiction">Literature & Fiction</option>
+              <option value="Medical">Medical</option>
+              <option value="Mystery">Mystery</option>
+              <option value="Parenting">Parenting</option>
+              <option value="Religion">Religion</option>
+              <option value="Romance">Romance</option>
+              <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
+              <option value="Science & Maths">Science & Maths</option>
+              <option value="Self-Help">Self-Help</option>
+              <option value="Social Sciences">Social Sciences</option>
+              <option value="Sports">Sports</option>
+              <option value="Travel">Travel</option>
+              <option value="True Crime">True Crime</option>
+            </select>
           </div>
-        </fieldset>
+        </div>
 
         <div class="form-group row">
           <div class="col">
@@ -720,11 +717,11 @@
       const msg = document.getElementById("txtid");
 
       function isEmail(email) {
-              let regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;                
+              let regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
               return regexp.test(String(email).toLowerCase());
       }
 
-      btn.addEventListener("click",()=>{  
+      btn.addEventListener("click",()=>{
         if(feedbackName.value==""){
           swal("Error !","Please enter a valid name","error");
         }
@@ -732,7 +729,7 @@
           swal("Error !","Please enter a valid email","error");
         }
         else if(msg.value==""){
-          swal("Error !","Please enter a message","error");          
+          swal("Error !","Please enter a message","error");
         }
         else{
           swal("Thank You !", "Your feedback is posted !", "success");
@@ -857,12 +854,12 @@
       <li><a href="" class="heading" onclick="return false;">Subscribe to our newsletter</a> </li>
 <br>
       <form method="post" autocomplete="off" name="google-sheet" bgcolor="#00000">
-         
+
          <!-- <h6 align="left" style="color:black;"> Name:</h6>-->
             <label style="color:black;">Name: &nbsp;&nbsp;</label><input type="text" class="input" name="Name" required placeholder="Enter Your Name">
-			
+
             <br><br>
-        
+
             <!--<h6 align="left" style="color:black;"> Email_Address:</h6>-->
            <label style="color:black;">Email: &nbsp;&nbsp;</label> <input type="text" class="input" name="Email" required placeholder="Enter Your Email">
             <br><br>
@@ -871,14 +868,14 @@
 		 <script>
 				const scriptURL = 'https://script.google.com/macros/s/AKfycbz5WCRS6VpGC_cjBpJNlY4A-MkwiOUCDv0BSSniX0d0AgcVmFPU/exec'
 				const form = document.forms['google-sheet']
-				
+
 				form.addEventListener('submit', e =>{
 				e.preventDefault()
 				fetch(scriptURL, {method: 'post', body: new FormData(form)})
 				.then(reponse => alart("Thanks For Connecting..! We will Contact you soon..."))
 				.catch(error => console.error('Error!', error.message))
 				})
-				
+
 			</script>
 			<!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" >
