@@ -384,11 +384,13 @@ footer p {
 .footer-col ul li {
     display: inline-block;
 
+
     padding: 0px 70px;
 }
 
 
 .footer-wrapper {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -539,6 +541,7 @@ footer p {
     }
 }
 
+
 .contact {
     display: flex;
     flex-flow: row wrap;
@@ -633,4 +636,5 @@ footer p {
     align-items: center;
     margin: 0.2rem 0;
     gap: 0.3rem;
+
 }
