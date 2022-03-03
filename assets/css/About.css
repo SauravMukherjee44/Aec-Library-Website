@@ -383,8 +383,22 @@ footer {
 
   .footer-col ul li {
     display: inline-block;
-    padding: 0px 70px;
+    padding: 0px 20px;
+    margin: 10px;
     
+  }
+
+  .quickcenter {
+    /* margin-left: 30px; */
+    text-align: center;
+  }
+
+  .footer-col ul {
+    margin-left: 140px;
+  }
+
+  .footer-col .address{
+    margin-left: 10px;
   }
 
   
@@ -542,3 +556,43 @@ footer {
     }
 }
 
+.libpos{
+  border-radius: 10%;
+}
+
+.animated-border-button {
+  background-color: #c08d41;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+  border-radius:6%;
+}
+
+.animated-border-button:before,
+.animated-border-button:after {
+  border: 0 solid transparent;
+  transition: all 0.3s;
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 24px;
+}
+
+.animated-border-button:before {
+  border-top: 2px solid #3f2c10;
+  right: 0;
+  top: -4px;
+}
+
+.animated-border-button:after {
+  border-bottom: 2px solid #3f2c10;
+  bottom: -4px;
+  left: 0;
+}
+
+.animated-border-button:hover:before,
+.animated-border-button:hover:after {
+  width: 100%;
+}
