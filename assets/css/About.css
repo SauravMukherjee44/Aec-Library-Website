@@ -373,17 +373,26 @@ footer {
     text-align: center;
     border-radius: 0px;
     color:rgb(255, 255, 255);
+    display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
     
   }
 
   .footer-col ul li a {
     text-decoration: none;
-    opacity: 0.8 
+    opacity: 0.8 ;
+    color: rgb(241, 181, 16);
+  }
+  .footer-col ul li a:hover{
+    color:#00ffd5;
   }
 
   .footer-col ul li {
     display: inline-block;
-    padding: 0px 70px;
+    padding: 0px 34px;
     
   }
 
