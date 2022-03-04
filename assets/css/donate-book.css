@@ -43,9 +43,7 @@ body {
   width: 100%;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
- 
   background-image: url(https://img-cdn.inc.com/image/upload/images/panoramic/GettyImages-577674005_492115_zfpgiw.jpg);
-
 
 }
 
@@ -126,6 +124,7 @@ body {
 
 .submit-btn {
   margin: 70px 0 0 0 !important;
+  border: 2px solid rgb(247, 227, 162); border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
