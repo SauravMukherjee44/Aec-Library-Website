@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <head>
 	<title>Resources</title>
@@ -923,7 +922,7 @@
         </div>
         <div class="audio-book-card ">
             <div class="audio-book-thumbnail">
-                <img src="assets/images/Automate the Boring Stuff with Python.jpg" alt="image1">
+                <img src="assets/images/Automate the Boring Stuff with Python.jpg" alt="image2">
             </div>
             <audio  src="assets/audioBooks/Automate the Boring Stuff with Python.mp3"></audio>
             <div class="progressbar-container" id="progress-container">
@@ -947,7 +946,7 @@
         </div>
         <div class="audio-book-card">
             <div class="audio-book-thumbnail">
-                <img src="assets/images/Data Science from Scratch.jpg" alt="image2">
+                <img src="assets/images/Data Science from Scratch.jpg" alt="image3">
             </div>
             <audio  src="assets/audioBooks/Data Science from Scratch.mp3"></audio>
             <div class="progressbar-container" id="progress-container">
@@ -971,7 +970,7 @@
         </div>
         <div class="audio-book-card">
             <div class="audio-book-thumbnail">
-                <img src="assets/images/Asynchronous JavaScript.png" alt="image1">
+                <img src="assets/images/Asynchronous JavaScript.png" alt="image4">
             </div>
             <audio src="assets/audioBooks/JavaScript Asynchronous Programming.mp3"></audio>
             <div class="progressbar-container" id="progress-container">
@@ -1111,12 +1110,12 @@
                                     <div class="social-container">
                                          <ul class="social-icons">
 
-                                         <li><a  href="https://twitter.com/mesourav44" target="_blank"><i class="fa fa-twitter"></i><span>- Twitter</span></a></li>
-                                        <li> <a  href="#" target="_blank"><i class="fa fa-instagram"></i><span>- Instagram</span></a></li>
-                                        <li><a  href="https://www.linkedin.com/in/sauravmukherjee44/" target="_blank"><i class="fa fa-linkedin"></i><span>- LinkedIn</span></a></li> 
-                                        <li> <a  href="https://github.com/SauravMukherjee44/" target="_blank"><i class="fa fa-github-square"></i><span>- Github</span></a></li>
-                                         <li><a  href="#" target="_blank"><i class="fa fa-rss-square" ></i><span>- Blog</span></a></li>
-                                        </ul>
+                                         <a class="Twitter" href="https://twitter.com/mesourav44" target="_blank"><i class="fab fa-twitter"></i></a>
+                                         <a class="Instagram" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                         <a class="linkedin" href="https://www.linkedin.com/in/sauravmukherjee44/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                         <a class="Github" href="https://github.com/SauravMukherjee44/" target="_blank"><i class="fab fa-github-square"></i></a>
+                                         <a class="Blog" href="#" target="_blank"><i class="fa fa-rss-square" ></i></a>
+
                                      </div>
                              </form>
                             </div>
@@ -1159,11 +1158,15 @@
     const progressBar = document.querySelectorAll('.progress-div');
     const volumeIcon = document.querySelectorAll(".volume-button");
     const volumeIndicator = document.querySelectorAll(".volume-indicator");
+    const card = document.querySelectorAll(".audio-book-card");
     let isAudioPlaying = false;
+
+   
     for(let j =0;j<play.length;j++){
           //Increase or Decrease Volume
           let initialVolume = volumeIndicator[j].value;
           volumeIcon[j].addEventListener("mouseover",()=>{
+            volumeIcon[j].style.right = "100px";
               let volumeBarNotVisible = document.querySelectorAll(".not-showing");
               let volumeBarVisible = document.querySelectorAll(".showing");
               if(volumeBarVisible.length == 0){
@@ -1177,11 +1180,18 @@
                   })
                   volumeIndicator[j].style.display = "block";
                   volumeIndicator[j].classList.replace("not-showing","showing");
+                  
               }
           })
-          document.addEventListener("click",()=>{
+
+    
+          volumeIndicator[j].addEventListener("mouseout",()=>{
               volumeIndicator[j].style.display = "none";
+              volumeIcon[j].style.right = "20px";
           })
+          
+
+
           volumeIcon[j].addEventListener("click",()=>{
               audioBooks[j].volume = 0;
               if(volumeIcon[j].classList.contains('fa-volume-off')==true){
