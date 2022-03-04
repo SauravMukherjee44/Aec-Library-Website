@@ -323,16 +323,53 @@
         </div>
       </div>
       <div class="contain">
-        <div class="line"><b id="bold"> Choose and read books </b><br>from your comfort zone </div>
+        <!-- <div class="line"><b id="bold"> Choose and read books </b><br>from your comfort zone </div> -->
         <div id="search">
           <form id="searchForm" class="form-inline my-2 my-lg-0">
-            <button class="btn btn-dark my-2 my-sm-0">Keyword</button>
+             <!-- <button class="btn btn-dark my-2 my-sm-0">Keyword</button>
             <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search for a book"
               aria-label="Search" name="search" style="border: none;" onkeyup="searchbooks()" />
             <button class="btn btn-dark my-2 my-sm-0" id="searchsymbol" type="submit">
               &#128269;
-            </button>
-          </form>
+            </button>  -->
+            <h2 class="search-heading">Choose and read books</h2>
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+              <ul id="myUL">
+                <li><a href="http://Notes/physicselectricitynotes.pdf">Current Electricity Problem book</a></li>
+                <li><a href="http://Notes/physicsmagnetism.pdf">Electricity and Magnetism</a></li>
+                <li><a href="http://Notes/chemsurfacechem.pdf">Chemistry</a></li>
+                <li><a href="http://Notes/chempblock.pdf">p-Block Elements chemistry </a></li>
+                <li><a href="http://Notes/csds.pdf">Data structure in C & C++</a></li>
+                <li><a href="http://Notes/sqldbms.pdf">DBMS</a></li>
+                <li><a href="http://Notes/bsprincipleofmanagement.pdf">Principal of Management</a></li>
+                <li><a href="http://Notes/ecomoneyandbanking.pdf">Economics of Money and Banking</a></li>
+                <li><a href="http://Samplepapers/cbse10science.pdf">Science Sample Question Paper for class-10</a></li>
+                <li><a href="http://Samplepapers/cbse10science1.pdf">Science Question Bank for class-10</a></li>
+                <li><a href="http://Samplepapers/class12phy.pdf">Physics Sample Question Paper for class-12</a></li>
+                <li><a href="http://Samplepapers/class12chem.pdf">Chemistry Sample Question Paper for class-12</a></li>
+                <li><a href="http://Samplepapers/class12bio.pdf">Biology Sample Question Paper for class-12</a></li>
+                <li><a href="http://Samplepapers/class12maths.pdf">CBSE Mathmatics Sample Question Paper for class-12</a></li>
+                <li><a href="http://Samplepapers/jee.pdf">JEE MAIN Sample Question Paper</a></li>
+                <li><a href="http://Samplepapers/neet.pdf">NEET Sample Question Paper</a></li>
+                <li><a href="https://drive.google.com/file/d/1IjxZaCtEeMwdmuO2b0Vs45Su8jvG3fwa/view">Science Book for Class-10</a></li>
+                <li><a href="https://drive.google.com/file/d/1cN04y7Gqe03HEb_zXbHdhpeA3AsRW1g5/view">Science Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/file/d/12a0_JGZ2GTqUzckFDdBLLaJGoV8jKKV0/view">Science Book for Class-08</a></li>
+                <li><a href="https://drive.google.com/file/d/1PGqKZZqWD8o6-auHsqLrwxCsXyilPkP6/view">Science Book for Class-07</a></li>
+                <li><a href="https://drive.google.com/file/d/1DlxE-x8-uUY4hWq7AvlKFWWAEhSFFLbw/preview">Physics for Class-12</a></li>
+                <li><a href="https://drive.google.com/file/d/1aXHembo-Cy5xSkt7cdwfk3tUo6rK2PZ-/preview">Chemistry for Class-12</a></li>
+                <li><a href="https://drive.google.com/file/d/1DlAxpsZ5E3clkp-aNUsQOeh1vI1EXd-R/preview">Biology for Class-12</a></li>
+                <li><a href="https://drive.google.com/file/d/0B8buzf-hm2wyZy1fQmVNM1gyTnM/view?resourcekey=0-wVoCHiiwS3rvs7r_dNvj8Q">Economics for Class-12</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1YWwfkGfaiDxxg0agGGCSxZe-1Qmpvahb">Supplementary Reader in English for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1OtLBgu-9AVSSH6O1Z0AocQPoYNFUL_3S">Beehive Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/18675WSWNHURqKWQUe4ZGvd0nXOQCk4dk">Mathmatics Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1b2DM6ed7LigVtZ2jEWCKhyevNegnfUu4">First-Flight Book for Class-10</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1RmpwGFb5QCPXG-yBKhCsquW90V8U6RJZ">NCERT Mathmatics book for Class-10</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1YTmwfxEdDmMT3dLVmCACLW1N-7fGnE_z">Democratic Politics-1 book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1xsnrX7060su6dZ84LYAq8-0QedIatMrh">Contemporary India-1 book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1BRXmQuwjGasfMs04TOb0twQmaL6a_eAT">Social Science Book for Class-09</a></li>
+              </ul>
+        
+            </form>
         </div>
       </div>
     </div>
@@ -344,7 +381,26 @@
   <br>
 
   <!-- *****************************************************changes*********************************************** -->
+ 
   <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+  <!-- <script>
     function searchbooks()
     {
       var q = document.getElementById("searchTxt");
@@ -372,7 +428,7 @@
   // }
     }
 
-  </script>
+  </script> -->
   <!-- ****************************************************done******************************************** -->
   <div class="suggestion">
     <ul class="list">
@@ -897,11 +953,11 @@
     </ul>
     <ul>
       <li class="heading">Community</li>
-      <li>Our Story</li>
+      <li><a href="#">Our Story</a></li>
       <li><a href="#">Privacy Policy</a></li>
       <li><a href="#">Refund Policy</a></li>
       <li><a href="#">Terms Of use</a> </li>
-      <li>Accessibility</li>
+      <li><a href="#">Accessibility</a></li>
       <li><a href="#">Publishing process</a> </li>
     </ul>
     <ul>
