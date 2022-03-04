@@ -471,6 +471,8 @@ footer p {
   color: black;
 }
 
+/* Go to Top Button styling */
+
 #topBtn {
   position: fixed;
   bottom: 10px;
@@ -478,23 +480,37 @@ footer p {
   z-index: 9;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3 ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 #topBtn a {
-  height: 39px;
-  width: 37px;
+  height: 40px;
+  width: 38px;
   text-align: center;
-  background: #000;
+  background: #361500;
   display: block;
   border-radius: 10px;
   cursor: pointer;
 }
 
 #topBtn a span {
-  color: #f2f2f2;
+  color: #EFFFFD;
+  width: 38px;
   line-height: 39px;
-  font-size: 28px;
+  font-size: 32px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#topBtn a span:hover {
+  color: #362706;
+  background: #CC9544;
+  transform-origin: center center;
+}
+
+#topBtn a:hover {
+  background: #CC9544;
+  transform-origin: center center;
 }
 
 .logo-img {
