@@ -227,10 +227,10 @@
           <label for="Author" class="col col-form-label"> <strong>Author</strong></label>
           <div class="col">
 
-            <select class="form-check-input1" name="author" id="author" onchange='CheckAuthor(this.value);' style="z-index: 1;" >
+            <select class="form-check-input1" name="author" id="author" onchange='CheckAuthor(this.value);' style="z-index: 1;" required>
 
 
-              <option value="N/A">Select Author</option>
+              <option value="" disabled selected>Select Author</option>
               <option value="Agatha Christie">Agatha Christie</option>
               <option value="Charles Dickens">Charles Dickens</option>
               <option value="Dan Brown">Dan Brown</option>
@@ -420,59 +420,60 @@
      <div class="books1">
         <div>
           <img src="images/bookimage1.png" alt="not">
-          <a href="https://www.alvinisd.net/cms/lib03/TX01001897/Centricity/Domain/1077/pro_html5_and_css3_design_patterns.pdf" target="_blank"><button class="bookbtn">Download as pdf
+          <a href="https://www.alvinisd.net/cms/lib03/TX01001897/Centricity/Domain/1077/pro_html5_and_css3_design_patterns.pdf" target="_blank"><button class="btn btn-default  ">Download as pdf
           </button></a>
          </div>
 
         <div>
           <img src="images/bookimage2.png" alt="not">
-          <a href="https://si.sari-mutiara.ac.id/download/file/web-design-with-html-and-css-digital-classroom.pdf" target="_blank"><button class="bookbtn">Download as pdf
+          <a href="https://si.sari-mutiara.ac.id/download/file/web-design-with-html-and-css-digital-classroom.pdf" target="_blank"><button class="btn btn-default  ">Download as pdf
           </button></a>
         </div>
 
         <div>
           <img src="images/bookimage3.png" alt="not">
-          <a href="https://www.ciwcertified.com/resources/documents/sample-chapter/CCT02CDHTCSCK1405.PDF" target="_blank"><button class="bookbtn">Download as pdf
+          <a href="https://www.ciwcertified.com/resources/documents/sample-chapter/CCT02CDHTCSCK1405.PDF" target="_blank"><button class="btn btn-default  ">Download as pdf
           </button></a>
         </div>
         <div>
           <img src="images/bookimage4.png" alt="not">
           <a href="https://www.doc-developpement-durable.org/file/Projets-informatiques/cours-&-manuels-informatiques/htm-html-xml-ccs/Sams%20Teach%20Yourself%20HTML,%20CSS,%20and%20JavaScript%20All%20in%20One.pdf" target="_blank">
-          <button class="bookbtn">Download as pdf</button></a>
+          <button class="btn btn-default  ">Download as pdf</button></a>
         </div>
         <div>
           <img src="images/bookimage5.png" alt="not">
           <a href="https://wtf.tw/ref/duckett.pdf" target="_blank">
-          <button class="bookbtn">Download as pdf</button></a>
+          <button class="btn btn-default  ">Download as pdf</button></a>
         </div>
         <div>
           <img src="images/bookimage6.png" alt="not">
           <a href="http://home.fa.utl.pt/~cfig/Bibliografia%20Computacao/HTML5%20and%20CSS3%20Visual%20QuickStart%20Guide%20(7th%20Edition)/HTML5%20and%20CSS3%20Visual%20QuickStart%20Guide.pdf" target="_blank">
-          <button class="bookbtn">Download as pdf</button></a>
+          <button class="btn btn-default  ">Download as pdf</button></a>
         </div>
         <div>
           <img src="images/bookimage7.png" alt="not">
           <a href="https://wtf.tw/ref/robbins.pdf" target="_blank">
-          <button class="bookbtn">Download as pdf</button></a>
+          <button class="btn btn-default  ">Download as pdf</button></a>
         </div>
         <div>
           <img src="images/bookimage8.png" alt="not">
           <a href="https://www.dcpehvpm.org/E-Content/BCA/BCA-II/Web%20Technology/the-complete-reference-html-css-fifth-edition.pdf" target="_blank">
-          <button class="bookbtn">Download as pdf</button></a>
+          <button class="btn btn-default  ">Download as pdf</button></a>
         </div>
         <div>
           <img src="images/bookimage9.png" alt="not">
           <a href="http://artsites.ucsc.edu/sdaniel/170a_2014/Head_First_HTML_CSS_XHTML.pdf" target="_blank">
-          <button class="bookbtn">Download as pdf</button></a>
+          <button class="btn btn-default  ">Download as pdf</button></a>
         </div>
         <div>
           <img src="images/bookimage10.png" alt="not">
           <a href="https://pepa.holla.cz/wp-content/uploads/2015/11/JavaScript-A-Beginners-Guide-Fourth-Edition1.pdf" target="_blank">
-          <button class="bookbtn">Download as pdf</button></a>
+          <button class="btn btn-default  ">Download as pdf</button></a>
         </div>
       </div>
 
       <div>
+        <br>
         <center><h3>Listen to Audiobooks</h3></center>
 
         <div class="books1">
@@ -650,7 +651,7 @@
         <p>Web development refers to building, creating, and maintaining websites. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.
        </p>
       </div>
-      <a href=https://www.w3schools.com/whatis/" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
+      <a href="https://www.w3schools.com/whatis/" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
      </div>
      <div class="card3">
       <div class="card-bg"></div>
@@ -685,19 +686,23 @@
   <div class="update">
     <img src="./assets/images/feedback.jpg" alt="feedback" />
     <div class="login-box">
-
+      <h1 class="title">Get In touch</h1>
       <form id="feedbackForm" method="POST" action="">
         <div class="user-box">
-          <input type="text" name="feedbackName" id="feedbackName" required >
+          <input type="text" name="feedbackName" id="feedbackName" required>
+          <span class="line"></span>
           <label>Name</label>
         </div>
         <div class="user-box">
           <input type="email" name="feedbackEmail" id="feedbackEmail" required>
+          <span class="line"></span>
           <label>Email</label>
         </div>
         <div class="user-box">
 
-          <textarea id="txtid" name="txtname" rows="1"  maxlength="200" required placeholder="Type your message here"></textarea>
+          <textarea id="txtid" name="txtname" rows="1" maxlength="200" required></textarea>
+          <span class="line2"></span>
+          <label>Message</label>
 
         </div>
         <a href="#feedbackForm" id="formAnchor">
@@ -717,21 +722,21 @@
       const msg = document.getElementById("txtid");
 
       function isEmail(email) {
-              let regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-              return regexp.test(String(email).toLowerCase());
+        let regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return regexp.test(String(email).toLowerCase());
       }
 
-      btn.addEventListener("click",()=>{
-        if(feedbackName.value==""){
-          swal("Error !","Please enter a valid name","error");
+      btn.addEventListener("click", () => {
+        if (feedbackName.value == "") {
+          swal("Error !", "Please enter a valid name", "error");
         }
-        else if(!isEmail(feedbackEmail.value)){
-          swal("Error !","Please enter a valid email","error");
+        else if (!isEmail(feedbackEmail.value)) {
+          swal("Error !", "Please enter a valid email", "error");
         }
-        else if(msg.value==""){
-          swal("Error !","Please enter a message","error");
+        else if (msg.value == "") {
+          swal("Error !", "Please enter a message", "error");
         }
-        else{
+        else {
           swal("Thank You !", "Your feedback is posted !", "success");
           form.reset();
         }
@@ -816,6 +821,63 @@
               <p>Click on the "Donate books" button and fill out the form with your details. We will reach out to you with further details.</p>
           </div>
         </div>
+        <div class="faq-five">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: What is the benefits of an account in Aec-Library ? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p><ol>
+                <li>Contriibute to Aec-library :
+                    Aec-library is a community initiative to build a robust book catalog.Anyone can add or edit data about books and blogs.
+                </li>
+                <li>
+                  Personalize your experience :
+                  We are always adding new features to our site so you can make your experience more personal .
+                </li>
+              </ol></p>
+          </div>
+        </div>
+        <div class="faq-six">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How can I find a book here? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>Go to the "CHoose and read books" section and search the book you are looking for .</p>
+          </div>
+        </div>
+        <div class="faq-seven">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: I haven't found a book but it's not readable format>Is something wrong? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>This is not supposed to happen but if it happens please leave a message on out "Contact us" section.We will definitely look in it. </p>
+          </div>
+        </div>
+        <div class="faq-eight">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How can I download a book? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>Go to our "Recommended Book" secion. Choose your book which you want to download then click on the "Download as pdf".
+                Happy reading :)</p>
+          </div>
+        </div>
+        <div class="faq-nine">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How many books can I check-out at once? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>You can check-out as many books as you want.</p>
+          </div>
+        </div>
+        <div class="faq-ten">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How can I access in Online library? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>Go to our "Resources" section.Cick on the "All resources". You can find out in our environment all recources to satisfy your need. </p>
+          </div>
+        </div>
 
         </section>
 
@@ -835,11 +897,11 @@
     </ul>
     <ul>
       <li class="heading">Community</li>
-      <li>Our Story</li>
+      <li><a href="#">Our Story</a></li>
       <li><a href="#">Privacy Policy</a></li>
       <li><a href="#">Refund Policy</a></li>
       <li><a href="#">Terms Of use</a> </li>
-      <li>Accessibility</li>
+      <li><a href="#">Accessibility</a></li>
       <li><a href="#">Publishing process</a> </li>
     </ul>
     <ul>
@@ -851,19 +913,13 @@
       <li><a href="#">Information</a></li>
     </ul>
    <ul>
-      <li><a href="" class="heading" onclick="return false;">Subscribe to our newsletter</a> </li>
-<br>
-      <form method="post" autocomplete="off" name="google-sheet" bgcolor="#00000">
-
-         <!-- <h6 align="left" style="color:black;"> Name:</h6>-->
-            <label style="color:black;">Name: &nbsp;&nbsp;</label><input type="text" class="input" name="Name" required placeholder="Enter Your Name">
-
-            <br><br>
-
-            <!--<h6 align="left" style="color:black;"> Email_Address:</h6>-->
-           <label style="color:black;">Email: &nbsp;&nbsp;</label> <input type="text" class="input" name="Email" required placeholder="Enter Your Email">
-            <br><br>
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="background-color:peru; border-color:black; color:white" type="submit" id="btnSubmit" onclick="alert('Thank You.. \n Your Valuable Response is Stored successfully!!')">Subscribe</button>
+    <li class="newsletter-heading"><a href="" class="heading" onclick="return false;">Subscribe to our newsletter</a> </li>
+    <form method="post" autocomplete="off" name="google-sheet" bgcolor="#00000">
+      <div class="newsletter-form">
+         <div class="newsletter-name"> <input type="text" class="input" name="Name" required placeholder="&#xf007;   Enter your name"></div>
+        <div class="newsletter-email"> <input type="text" class="input" name="Email" required placeholder="&#xf0e0;   Enter your email"></div>
+     <div class="newsletter-submit"><button type="submit" id="btnSubmit" onclick="alert('Thank You.. \n Your Valuable Response is Stored successfully!!')">SUBSCRIBE</button></div> 
+    </div>    
 		 <div id="msg"></div>
 		 <script>
 				const scriptURL = 'https://script.google.com/macros/s/AKfycbz5WCRS6VpGC_cjBpJNlY4A-MkwiOUCDv0BSSniX0d0AgcVmFPU/exec'
