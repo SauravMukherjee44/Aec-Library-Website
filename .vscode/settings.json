@@ -1,5 +1,4 @@
 {
-
-    "liveServer.settings.port": 5502
+	"editor.formatOnSave": false,
+	"liveServer.settings.port": 5502
 }
-
