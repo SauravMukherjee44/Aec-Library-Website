@@ -378,9 +378,9 @@ h3.hover-underline-animation {
 }
 
 .volume-indicator{
-  position: absolute;
-  top: -4px;
-  right: -30px;
+  position: relative;
+  top: 0;
+  left: 50px;
   width: 80px;
   display: none;
 }
@@ -401,6 +401,7 @@ h3.hover-underline-animation {
   top: 12px;
   left: 2px;
 }
+
 /*----------------*/
 .audio-book-card h3 p{
   margin-bottom: 10px;
@@ -450,7 +451,9 @@ h3.hover-underline-animation {
   border: none;
   transition-delay: 0.25s;
 }
-.progressbar-container {
+
+
+.progressbar-container{
   width: 100%;
   height: auto;
   padding: 10px 0;
@@ -470,7 +473,7 @@ h3.hover-underline-animation {
   margin-left: 5px;
   margin-right: 5px;
 }
-.progress {
+.progress{
   position: absolute;
   top: 0;
   left: 0;
@@ -492,7 +495,7 @@ h3.hover-underline-animation {
 /*STUDY MATERIALS*/
 /* .study-container { */
 #study{
-  max-width: 1300px;
+  max-width: 100%;
   z-index: 10000;
   margin-left: 5px;
   margin-right: 5px;
