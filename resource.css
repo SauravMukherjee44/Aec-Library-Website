@@ -76,6 +76,46 @@ nav {
   background-position: center;
   background-size: cover;
 }
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 12rem;
+  background-color: transparent;
+  width: 100%;
+  overflow: scroll;
+ 
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; 
+
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+.search-heading{
+  padding:0  !important; 
+}
+/* ----------------------- */
 
 a {
   font-size: 15px;
