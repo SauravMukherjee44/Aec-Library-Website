@@ -56,7 +56,7 @@ body {
 
 .login-box {
   padding: 60px;
-  background-image: linear-gradient(to bottom right, #fda085, #fad354 );
+  background: rgba(73, 46, 13, 0.781);
   background-repeat:no-repeat;
   object-fit: cover;
   border-radius: 20px;
@@ -71,6 +71,7 @@ body {
   font-weight: bolder;
   letter-spacing: 0.2rem;
   margin: 20px 0;
+  color: #fff;
 }
 
 .login-box .user-box {
@@ -78,11 +79,7 @@ body {
 }
 
 .login-box .user-box input {
-  width: 100%;
-  padding: 10px 0;
   font-size: 16px;
-  
-  margin-bottom: 20px;
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
@@ -93,152 +90,80 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 16px;
   color: #fff;
   pointer-events: none;
   transition: 0.5s;
 }
 
-.login-box .user-box input:focus~label,
-.login-box .user-box input:valid~label {
+.login-box .user-box input.form__input:focus~label,
+.login-box .user-box input.form__input:valid~label {
   top: -20px;
   left: 0;
   color: white;
   font-size: 12px;
-}
-
-.login-box form a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: 1s;
-  margin: 20px 0;
-  letter-spacing: 4px;
+  padding: 0px;
 }
 
 .submit-btn {
   margin: 70px 0 0 0 !important;
   border: 2px solid rgb(247, 227, 162); border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 8px 25px;
-  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+
 }
 
-.login-box a:hover {
-  background: rgb(75, 26, 222);
-  color: #fff;
-  border-radius: 5px;
+input.form-control {
+  padding: 1rem;
+  border-radius: 0px;
 }
 
-.login-box a span {
-  position: absolute;
-  display: block;
+.form-control {
+  margin-bottom: 2rem;
+  background: transparent;
+  color: #fff !important;
 }
 
-.login-box a span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgb(255, 183, 0));
-  animation: btn-anim1 2s linear infinite;
+.form-control:focus {
+  box-shadow: none;
+  background: transparent;
 }
 
-.login-box a span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, rgb(255, 183, 0));
-  animation: btn-anim2 1s linear infinite;
-  animation-delay: 2.2s;
+select.form-control:focus {
+  color: black !important;
 }
 
-.login-box:hover {
-  transition-duration: 0.4s;
-  box-shadow: 0px 0px 19px 11px rgb(255, 183, 0);
-}
-
-@keyframes btn-anim2 {
-  0% {
-    top: -100%;
-  }
-
-  50%,
-  100% {
-    top: 100%;
-  }
-}
-
-@keyframes btn-anim1 {
-  0% {
-    left: -100%;
-  }
-
-  50%,
-  100% {
-    left: 100%;
-  }
-}
-
-.login-box a span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, rgb(255, 183, 0));
-  animation: btn-anim3 1s linear infinite;
-  animation-delay: 2.5s;
-}
-
-@keyframes btn-anim3 {
-  0% {
-    right: -100%;
-  }
-
-  50%,
-  100% {
-    right: 100%;
-  }
-}
-
-.login-box a span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, rgb(255, 183, 0));
-  animation: btn-anim4 1s linear infinite;
-  animation-delay: 2.7s;
-}
-
-@keyframes btn-anim4 {
-  0% {
-    bottom: -100%;
-  }
-
-  50%,
-  100% {
-    bottom: 100%;
-  }
-}
-
-input[type='checkbox'],
-input[type='radio'] {
-  box-sizing: border-box;
+.form-check {
   padding: 0;
-  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.form-check p {
+  margin: 8px;
+}
+
+.form-checkbox {
+  width: 4%;
+  margin: 0rem;
+  margin-right: 0.5rem;
+  position: unset;
+  display: unset;
+}
+
+.form-check-label {
+  color: #fff;
+}
+
+.form-check-link {
+  display: inline-block;
+  margin-left: 0.2rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline !important;
+}
+
+.form-check-link:hover {
+  color: #fff !important;
 }
 
 /* navbar */
@@ -263,9 +188,6 @@ input[type='radio'] {
   font-weight: bold;
 }
 
-
-
-
 .nav-link {
   margin-left: 2rem;
 }
@@ -273,7 +195,7 @@ input[type='radio'] {
 .navbar-nav li a:hover:after {
   width: 100%;
   left: 0;
-} */
+}
 
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255 255 255 / 50%);
@@ -385,8 +307,7 @@ footer p {
     font-size: 25px;
   }
 
-  .login-box .user-box label,
-  .login-box form a {
+  .login-box .user-box label {
     font-size: 14px;
   }
 
@@ -530,8 +451,7 @@ footer p {
     font-size: 25px;
   }
 
-  .login-box .user-box label,
-  .login-box form a {
+  .login-box .user-box label {
     font-size: 14px;
   }
 
@@ -587,3 +507,11 @@ footer p {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .form-check-label {
+    font-size: 0.8rem;
+  }
+  .form-checkbox {
+    width: 15%;
+  }
+}

@@ -77,34 +77,34 @@ body{
 #female + label{
 	color: white;
 }
-.btn{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin-top: 3rem;
 
+button {
+    width: 120px;
+    height: 40px;
+    margin: 30px 95px 100px 90px;
+    transition: all .5s ease;
+    color: #fff;
+    border: 3px solid white;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 3px;
+    outline: none;
+    border-radius: 4px;
 }
-.btn #button{
-	padding:10px 0px 10px 0px;
-	background-color: #46758059;
-	border:1px solid #467580;
-	border-radius: 20px;
-	color: #fff;
-	width: 100%;
-	font-size: 18px;
-	outline: none;
-	margin-top: 4rem;
-}
-.btn #button:hover{
-	background:#467580;
-	cursor: pointer;
+button:hover {
+    color: #001F3F;
+    background-color: #fff;
 }
 
 .redirect{
 	color: white;
 	position: absolute;
 	bottom: 8rem;
-	left: 32%;
+	left: 365px;
 }
 
 /* Exit */
