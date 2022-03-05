@@ -15,11 +15,13 @@ Come forward to donate the books !!!
 
 
 <div align="left">
-<a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://sloc.xyz/github/SauravMukherjee44/Aec-Library-Website" alt="LOC"/></a>
+<a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://tokei.rs/b1/github/SauravMukherjee44/Aec-Library-Website" alt="LOC"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://img.shields.io/github/stars/SauravMukherjee44/Aec-Library-Website" alt="Stars Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/network/members"><img src="https://img.shields.io/github/forks/SauravMukherjee44/Aec-Library-Website" alt="Forks Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/SauravMukherjee44/Aec-Library-Website?color=2b9348"></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://badges.frapsoft.com/os/v2/open-source.svg" alt="Open Source"/></a>
+<a href="https://github.com/SauravMukherjee44/Aec-Library-Website/issues"><img src="https://img.shields.io/github/issues/SauravMukherjee44/Aec-Library-Website" alt="Issues Open"/></a>
+<a href="https://github.com/SauravMukherjee44/Aec-Library-Website/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SauravMukherjee44/Aec-Library-Website" alt="License"/></a>
 </div>
 <a href="https://open.vscode.dev/organization/repository"><img src="https://open.vscode.dev/badges/open-in-vscode.svg" alt="Open in Visual Studio Code"/></a>
 </div>
