@@ -39,7 +39,7 @@ Come forward to donate the books !!!
 ## 📌 Sneak Peek of Main Page
 
 <p align="center">
-<img width="70%" src="https://github.com/SauravMukherjee44/Aec-Library-Website/blob/98ca1f783823e29e2ba5e831e33d09280bc062cf/assets/images/aec%20(2).png" alt="main page">
+<img width="50%" src="https://github.com/SauravMukherjee44/Aec-Library-Website/blob/98ca1f783823e29e2ba5e831e33d09280bc062cf/assets/images/aec%20(2).png" alt="main page">
 </p>
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
