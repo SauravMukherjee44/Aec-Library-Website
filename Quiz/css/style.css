@@ -135,6 +135,7 @@
   border: 0.1rem solid #56a5eb;
   margin-bottom: 1rem;
   color: #56a5eb;
+  border-radius: 10px;
   background-color: white;
 }
 .quiz-btn:hover {
