@@ -28,20 +28,32 @@
 				<span>or use your account</span>
 				<input class="input__tag" type="email" placeholder="Email" validate id="email"  required="" />
 				<span id="mobileno" class="text-danger font-weight-bold"> </span>
-				<input class="input__tag" type="password" placeholder="Password" id="password" required="" />
-				<span id="pass" class="text-danger font-weight-bold"> </span>
+			
+	
+		
 				
-					
-			
-			<div class="pass">
-				<a href="#" class="small text-muted text-underline--dashed border-primary" data-toggle="password-text" data-target="#input-password">Show password</a>
-			
-
-			
-				<input type="checkbox" class="check" name="remember " required value>
-			<label class="remem">Remember me</label> 
+			<input type="password" 
+				value="aeclibrary" id="typepass" > 
+			 
+			<input type="checkbox" onclick="Toggle()" style="font-size: 10px;">
+			<label class="remem" style="font-size: 10px;">Show password</label> 
+			 
+			   <script>
+			   // Change the type of input to password or text
+				   function Toggle() {
+					   var temp = document.getElementById("typepass");
+					   if (temp.type === "password") {
+						   temp.type = "text";
+					   }
+					   else {
+						   temp.type = "password";
+					   }
+				   }
+		   </script>
+			<input type="checkbox" class="check" name="remember " required value>
+			<label class="remem" style="font-size: 10px;">Remember me</label> 
 			  
-			</div>
+			
 			 
 		
         <p id="err_msg"></p>
