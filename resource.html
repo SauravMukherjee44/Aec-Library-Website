@@ -1,303 +1,384 @@
 <!DOCTYPE html>
+
 <head>
-	<title>Resources</title>
+    <title>Resources</title>
     <link rel="icon" href="./assets/logos/finalLogo.png" type="image/x-icon">
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- Title bar icon -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="title" content="AEC Library is a comprehensive library management system">
-    <meta name="description" content="Designed for both large and small library systems, AEC Library is a comprehensive library management system. For managing circulation and stock, this is ideal for institutional, public, and digital libraries. In order to manage and automate the processing of even the largest of libraries, the AEC Library website was developed. According to the end user's requirements, the website is capable of managing Book Issues, Returns, and generating various Reports for Record-Keeping and Review purposes.">
+    <meta name="description"
+        content="Designed for both large and small library systems, AEC Library is a comprehensive library management system. For managing circulation and stock, this is ideal for institutional, public, and digital libraries. In order to manage and automate the processing of even the largest of libraries, the AEC Library website was developed. According to the end user's requirements, the website is capable of managing Book Issues, Returns, and generating various Reports for Record-Keeping and Review purposes.">
     <meta name="keywords" content="AEC, library systems, library, digital libraries, books">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="AEC LIBRARY">
 
     <style media="screen">
-    .carousel-cell {
-    width: 100%;
-    }
+        .carousel-cell {
+            width: 100%;
+        }
 
-    /* cell number */
-    .carousel-cell:before {
-      display: block;
-    }
+        /* cell number */
+        .carousel-cell:before {
+            display: block;
+        }
     </style>
     <!-- Style CSS -->
-    <link rel="stylesheet" href="resource.css"/>
-	 <!-- bootstrap-css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- 
+    <link rel="stylesheet" href="resource.css" />
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- font awseome cdn linking-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <!-- bootstrap script-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <header>
-        <h1>AEC Library</h1>
-        
-       </header>
-       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-       <ul id="myUL">
-         <li><a href="https://aec-library-wbsite.netlify.app/Notes/physicselectricitynotes.pdf">Current Electricity Problem book</a></li>
-         <li><a href="https://aec-library-wbsite.netlify.app/Notes/physicsmagnetism.pdf">Electricity and Magnetism</a></li>
-         <li><a href="https://aec-library-wbsite.netlify.app/Notes/chemsurfacechem.pdf">Chemistry</a></li>
-         <li><a href="https://aec-library-wbsite.netlify.app/Notes/chempblock.pdf">p-Block Elements chemistry </a></li>
-         <li><a href="https://aec-library-wbsite.netlify.app/Notes/csds.pdf">Data structure in C & C++</a></li>
-         <li><a href="https://aec-library-wbsite.netlify.app/Notes/sqldbms.pdf">DBMS</a></li>
-         <li><a href="https://aec-library-wbsite.netlify.app/Notes/bsprincipleofmanagement.pdf">Principal of Management</a></li>
-         <li><a href="https://aec-library-wbsite.netlify.app/Notes/ecomoneyandbanking.pdf">Economics of Money and Banking</a></li>
-         <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/cbse10science.pdf">Science Sample Question Paper for class-10</a></li>
-         <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/cbse10science1.pdf">Science Question Bank for class-10</a></li>
-         <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/class12phy.pdf">Physics Sample Question Paper for class-12</a></li>
-         <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/class12chem.pdf">Chemistry Sample Question Paper for class-12</a></li>
-         <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/class12bio.pdf">Biology Sample Question Paper for class-12</a></li>
-         <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/class12maths.pdf">CBSE Mathmatics Sample Question Paper for class-12</a></li>
-         <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/jee.pdf">JEE MAIN Sample Question Paper</a></li>
-         <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/neet.pdf">NEET Sample Question Paper</a></li>
-         <li><a href="https://drive.google.com/file/d/1IjxZaCtEeMwdmuO2b0Vs45Su8jvG3fwa/view">Science Book for Class-10</a></li>
-         <li><a href="https://drive.google.com/file/d/1cN04y7Gqe03HEb_zXbHdhpeA3AsRW1g5/view">Science Book for Class-09</a></li>
-         <li><a href="https://drive.google.com/file/d/12a0_JGZ2GTqUzckFDdBLLaJGoV8jKKV0/view">Science Book for Class-08</a></li>
-         <li><a href="https://drive.google.com/file/d/1PGqKZZqWD8o6-auHsqLrwxCsXyilPkP6/view">Science Book for Class-07</a></li>
-         <li><a href="https://drive.google.com/file/d/1DlxE-x8-uUY4hWq7AvlKFWWAEhSFFLbw/preview">Physics for Class-12</a></li>
-         <li><a href="https://drive.google.com/file/d/1aXHembo-Cy5xSkt7cdwfk3tUo6rK2PZ-/preview">Chemistry for Class-12</a></li>
-         <li><a href="https://drive.google.com/file/d/1DlAxpsZ5E3clkp-aNUsQOeh1vI1EXd-R/preview">Biology for Class-12</a></li>
-         <li><a href="https://drive.google.com/file/d/0B8buzf-hm2wyZy1fQmVNM1gyTnM/view?resourcekey=0-wVoCHiiwS3rvs7r_dNvj8Q">Economics for Class-12</a></li>
-         <li><a href="https://drive.google.com/drive/folders/1YWwfkGfaiDxxg0agGGCSxZe-1Qmpvahb">Supplementary Reader in English for Class-09</a></li>
-         <li><a href="https://drive.google.com/drive/folders/1OtLBgu-9AVSSH6O1Z0AocQPoYNFUL_3S">Beehive Book for Class-09</a></li>
-         <li><a href="https://drive.google.com/drive/folders/18675WSWNHURqKWQUe4ZGvd0nXOQCk4dk">Mathmatics Book for Class-09</a></li>
-         <li><a href="https://drive.google.com/drive/folders/1b2DM6ed7LigVtZ2jEWCKhyevNegnfUu4">First-Flight Book for Class-10</a></li>
-         <li><a href="https://drive.google.com/drive/folders/1RmpwGFb5QCPXG-yBKhCsquW90V8U6RJZ">NCERT Mathmatics book for Class-10</a></li>
-         <li><a href="https://drive.google.com/drive/folders/1YTmwfxEdDmMT3dLVmCACLW1N-7fGnE_z">Democratic Politics-1 book for Class-09</a></li>
-         <li><a href="https://drive.google.com/drive/folders/1xsnrX7060su6dZ84LYAq8-0QedIatMrh">Contemporary India-1 book for Class-09</a></li>
-         <li><a href="https://drive.google.com/drive/folders/1BRXmQuwjGasfMs04TOb0twQmaL6a_eAT">Social Science Book for Class-09</a></li>
-       </ul>
-    <nav class="" >
+      <a href="index.html" class="nav-link"> <h1>AEC Library</h1></a>
+
+    </header>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <ul id="myUL">
+        <li><a href="https://aec-library-wbsite.netlify.app/Notes/physicselectricitynotes.pdf">Current Electricity
+                Problem book</a></li>
+        <li><a href="https://aec-library-wbsite.netlify.app/Notes/physicsmagnetism.pdf">Electricity and Magnetism</a>
+        </li>
+        <li><a href="https://aec-library-wbsite.netlify.app/Notes/chemsurfacechem.pdf">Chemistry</a></li>
+        <li><a href="https://aec-library-wbsite.netlify.app/Notes/chempblock.pdf">p-Block Elements chemistry </a></li>
+        <li><a href="https://aec-library-wbsite.netlify.app/Notes/csds.pdf">Data structure in C & C++</a></li>
+        <li><a href="https://aec-library-wbsite.netlify.app/Notes/sqldbms.pdf">DBMS</a></li>
+        <li><a href="https://aec-library-wbsite.netlify.app/Notes/bsprincipleofmanagement.pdf">Principal of
+                Management</a></li>
+        <li><a href="https://aec-library-wbsite.netlify.app/Notes/ecomoneyandbanking.pdf">Economics of Money and
+                Banking</a></li>
+        <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/cbse10science.pdf">Science Sample Question Paper
+                for class-10</a></li>
+        <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/cbse10science1.pdf">Science Question Bank for
+                class-10</a></li>
+        <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/class12phy.pdf">Physics Sample Question Paper
+                for class-12</a></li>
+        <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/class12chem.pdf">Chemistry Sample Question Paper
+                for class-12</a></li>
+        <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/class12bio.pdf">Biology Sample Question Paper
+                for class-12</a></li>
+        <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/class12maths.pdf">CBSE Mathmatics Sample
+                Question Paper for class-12</a></li>
+        <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/jee.pdf">JEE MAIN Sample Question Paper</a></li>
+        <li><a href="http://aec-library-wbsite.netlify.app/Samplepapers/neet.pdf">NEET Sample Question Paper</a></li>
+        <li><a href="https://drive.google.com/file/d/1IjxZaCtEeMwdmuO2b0Vs45Su8jvG3fwa/view">Science Book for
+                Class-10</a></li>
+        <li><a href="https://drive.google.com/file/d/1cN04y7Gqe03HEb_zXbHdhpeA3AsRW1g5/view">Science Book for
+                Class-09</a></li>
+        <li><a href="https://drive.google.com/file/d/12a0_JGZ2GTqUzckFDdBLLaJGoV8jKKV0/view">Science Book for
+                Class-08</a></li>
+        <li><a href="https://drive.google.com/file/d/1PGqKZZqWD8o6-auHsqLrwxCsXyilPkP6/view">Science Book for
+                Class-07</a></li>
+        <li><a href="https://drive.google.com/file/d/1DlxE-x8-uUY4hWq7AvlKFWWAEhSFFLbw/preview">Physics for Class-12</a>
+        </li>
+        <li><a href="https://drive.google.com/file/d/1aXHembo-Cy5xSkt7cdwfk3tUo6rK2PZ-/preview">Chemistry for
+                Class-12</a></li>
+        <li><a href="https://drive.google.com/file/d/1DlAxpsZ5E3clkp-aNUsQOeh1vI1EXd-R/preview">Biology for Class-12</a>
+        </li>
+        <li><a
+                href="https://drive.google.com/file/d/0B8buzf-hm2wyZy1fQmVNM1gyTnM/view?resourcekey=0-wVoCHiiwS3rvs7r_dNvj8Q">Economics
+                for Class-12</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1YWwfkGfaiDxxg0agGGCSxZe-1Qmpvahb">Supplementary Reader in
+                English for Class-09</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1OtLBgu-9AVSSH6O1Z0AocQPoYNFUL_3S">Beehive Book for
+                Class-09</a></li>
+        <li><a href="https://drive.google.com/drive/folders/18675WSWNHURqKWQUe4ZGvd0nXOQCk4dk">Mathmatics Book for
+                Class-09</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1b2DM6ed7LigVtZ2jEWCKhyevNegnfUu4">First-Flight Book for
+                Class-10</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1RmpwGFb5QCPXG-yBKhCsquW90V8U6RJZ">NCERT Mathmatics book for
+                Class-10</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1YTmwfxEdDmMT3dLVmCACLW1N-7fGnE_z">Democratic Politics-1
+                book for Class-09</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1xsnrX7060su6dZ84LYAq8-0QedIatMrh">Contemporary India-1 book
+                for Class-09</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1BRXmQuwjGasfMs04TOb0twQmaL6a_eAT">Social Science Book for
+                Class-09</a></li>
+    </ul>
+    <nav class="">
         <div class="">
             <div class="grid-container">
-               <a class="grid-item " href="./index.html">Home</a>
+                <a class="grid-item " href="./index.html">Home</a>
                 <a class="grid-item " href="#courses">Courses</a>
                 <a class="grid-item " href="#yt">Youtube Channels</a>
                 <a class="grid-item " href="#qb">Question Banks</a>
                 <a class="grid-item " href="#study">Study Materials</a>
                 <a class="grid-item " href="about.html">About</a>
-              </div>
-        
-    </div>
+            </div>
+
+        </div>
     </nav>
     <div id="topBtn" title="Navigate to Top Button">
         <a href="#"><span class="fa fa-angle-up"></span></a>
     </div>
 
-   
-<main>
-    <section id = "courses">
-    <h2 class="hover-underline-animation">Courses</h2><br/>
-    <h3 class="hover-underline-animation">Web Development Courses</h3><br/><br/>
-    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-	  <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">
-	  <img width="33%" height="300" src="https://oilab.in/public/img/courses/full-stack-web-developer.jpg"> 
-        </a>
-		 <a href="https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/" target="_blank">
-	<img width="33%" height="300" src="https://mgdvq45m3ss2gaon92odwxol-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/Web-Development.jpg">
-        </a>
-		 <a href="https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide/" target="_blank">
-	<img width="33%" height="300" src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1024x784.jpg">
-        </a>
-	
-		</div> 
 
-		<div class="carousel-cell">
-		<a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">
-	  <img width="33%" height="300" src="https://industrialtraining.pro/wp-content/uploads/2021/12/web-development-1.png">
-        </a>
-		<a href="https://www.udemy.com/course/the-complete-web-developer-course-2/" target="_blank">
-	<img width="33%" height="300" src="https://cdn3.vectorstock.com/i/1000x1000/11/77/web-development-courses-concept-banner-header-vector-31221177.jpg">
-        </a>
-		<a href="https://www.udemy.com/course/web-developer-course/" target="_blank">
-	<img width="33%" height="300" src="https://www.acewebacademy.com/blog/wp-content/uploads/2013/09/44-Why-to-Choose-Web-Development-Courses-min.png">
-        </a>
-		</div>
-	</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <br><br>
-  
-    <h3 class="hover-underline-animation">App Development Courses</h3><br/><br/>
-    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
+    <main>
+        <section id="courses">
+            <h2 class="hover-underline-animation">Courses</h2><br />
+            <h3 class="hover-underline-animation">Web Development Courses</h3><br /><br />
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://oilab.in/public/img/courses/full-stack-web-developer.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://mgdvq45m3ss2gaon92odwxol-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/Web-Development.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1024x784.jpg">
+                    </a>
 
-	  <a href="https://www.udemy.com/course/master-android-7-nougat-java-app-development-step-by-step/" target="_blank">
-	  <img width="33%" height="300" src="https://5.imimg.com/data5/YO/AC/GLADMIN-61733573/mobile-app-development-courses-500x500.png"> 
-        </a>
-		  <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/" target="_blank">
-	<img width="33%" height="300" src="https://slaconsultantsgurgaon.in/wp_files/wp-content/uploads_gurgaon/2018/10/Mobile-Application-Training-Course-in-Gurgaon.png">
-        </a>
-		<a href="https://www.udemy.com/course/react-native-the-practical-guide/" target="_blank">
-	<img width="33%" height="300" src="https://viit.pk/frontend/img/android-app-designing.png">
-        </a>
-	
-		</div> 
+                </div>
 
-		<div class="carousel-cell">
-		<a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">
-	  <img width="33%" height="300" src="https://edu.varistor.in/wp-content/uploads/android-app-changes.png">
-        </a>
-		<a href="https://www.udemy.com/course/the-complete-web-developer-course-2/" target="_blank">
-	<img width="33%" height="300" src="https://www.aptechlearningdelhi.com/images/course/full/mobile-app-development.jpg">
-        </a>
-		<a href="https://www.udemy.com/course/web-developer-course/" target="_blank">
-	<img width="33%" height="300" src="https://1qkeyv41u1op36vgbm47q0i6-wpengine.netdna-ssl.com/wp-content/uploads/2021/08/Mobile-App-Development-Process.png">
-        </a>
-		</div>
-	</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <br><br>
+                <div class="carousel-cell">
+                    <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://industrialtraining.pro/wp-content/uploads/2021/12/web-development-1.png">
+                    </a>
+                    <a href="https://www.udemy.com/course/the-complete-web-developer-course-2/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://cdn3.vectorstock.com/i/1000x1000/11/77/web-development-courses-concept-banner-header-vector-31221177.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/web-developer-course/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://www.acewebacademy.com/blog/wp-content/uploads/2013/09/44-Why-to-Choose-Web-Development-Courses-min.png">
+                    </a>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <br><br>
 
-    <h3 class="hover-underline-animation">Programming Languages Courses</h3><br/><br/>
-    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
+            <h3 class="hover-underline-animation">App Development Courses</h3><br /><br />
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
 
-	  <a href="https://www.udemy.com/course/beg-modern-cpp/" target="_blank">
-	  <img width="33%" height="300" src="https://hackernoon.com/images/VyvcKdbWHbTaN3QzRCQQS7pXASq1-9x7p315b.jpeg"> 
-        </a>
-		  <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/" target="_blank">
-	<img width="33%" height="300" src="https://preview.redd.it/31b2ii8hchi31.jpg?auto=webp&s=309fe75e96212cf42c4120ca5adedaef52c41e01">
-        </a>
-		<a href="https://www.udemy.com/course/master-practical-java-development/" target="_blank">
-	<img width="33%" height="300" src="https://i.pinimg.com/originals/2b/d2/ec/2bd2ec72b3391c8b8df8c7d274b877e2.jpg">
-        </a>
-	
-		</div> 
+                    <a href="https://www.udemy.com/course/master-android-7-nougat-java-app-development-step-by-step/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://5.imimg.com/data5/YO/AC/GLADMIN-61733573/mobile-app-development-courses-500x500.png">
+                    </a>
+                    <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://slaconsultantsgurgaon.in/wp_files/wp-content/uploads_gurgaon/2018/10/Mobile-Application-Training-Course-in-Gurgaon.png">
+                    </a>
+                    <a href="https://www.udemy.com/course/react-native-the-practical-guide/" target="_blank">
+                        <img width="33%" height="300" src="https://viit.pk/frontend/img/android-app-designing.png">
+                    </a>
 
-		<div class="carousel-cell">
-		<a href="https://www.udemy.com/course/javascript-essentials/" target="_blank">
-	  <img width="33%" height="300" src="https://mpng.subpng.com/20180417/ite/kisspng-web-development-javascript-logo-java-plum-5ad58e75bc9174.9127947515239450777724.jpg">
-        </a>
-		<a href="https://www.udemy.com/course/r-basics/" target="_blank">
-	<img width="33%" height="300" src="https://d1zx6djv3kb1v7.cloudfront.net/wp-content/media/2020/05/R-PROGRAMMING-LANGUAGE-i2tutorials.jpg">
-        </a>
-		<a href="https://www.udemy.com/course/go-programming-language-crash-course/" target="_blank">
-	<img width="33%" height="300" src="https://www.atatus.com/blog/content/images/size/w960/2020/06/golang-auto-build-versioning.png">
-        </a>
-		</div>
-	</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <br><br>
+                </div>
 
-    <h3 class="hover-underline-animation">Data Science Courses</h3><br/><br/>
-    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
+                <div class="carousel-cell">
+                    <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://edu.varistor.in/wp-content/uploads/android-app-changes.png">
+                    </a>
+                    <a href="https://www.udemy.com/course/the-complete-web-developer-course-2/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://www.aptechlearningdelhi.com/images/course/full/mobile-app-development.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/web-developer-course/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://1qkeyv41u1op36vgbm47q0i6-wpengine.netdna-ssl.com/wp-content/uploads/2021/08/Mobile-App-Development-Process.png">
+                    </a>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <br><br>
 
-	  <a href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/" target="_blank">
-	  <img width="33%" height="300" src="https://skillsupedu.com/image/all-courses/data-science-with-python-training.jpg"> 
-        </a>
-		  <a href="https://www.udemy.com/course/deeplearning/" target="_blank">
-	<img width="33%" height="300" src="https://www.meritglobaltraining.com/images/data1.png">
-        </a>
-		<a href="https://www.udemy.com/course/datascience/" target="_blank">
-	<img width="33%" height="300" src="https://www.promosystech.com/temp/assets/img/demo/datas.png">
-        </a>
-	
-		</div> 
+            <h3 class="hover-underline-animation">Programming Languages Courses</h3><br /><br />
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
 
-		<div class="carousel-cell">
-		<a href="https://www.udemy.com/course/statistics-for-data-science-and-business-analysis/" target="_blank">
-	  <img width="33%" height="300" src="https://sgp1.digitaloceanspaces.com/hh-certificates/images/1617166416garfg.webp">
-        </a>
-		<a href="https://www.udemy.com/course/data-science-and-machine-learning-bootcamp-with-r/" target="_blank">
-	<img width="33%" height="300" src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2014/04/datasc-adv-datasc-trainingimg1.jpg">
-        </a>
-		<a href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/" target="_blank">
-	<img width="33%" height="300" src="https://www.iimtindia.net/Blog/wp-content/uploads/2021/06/Data-Science.jpg">
-        </a>
-		</div>
-	</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <br><br>
+                    <a href="https://www.udemy.com/course/beg-modern-cpp/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://hackernoon.com/images/VyvcKdbWHbTaN3QzRCQQS7pXASq1-9x7p315b.jpeg">
+                    </a>
+                    <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://preview.redd.it/31b2ii8hchi31.jpg?auto=webp&s=309fe75e96212cf42c4120ca5adedaef52c41e01">
+                    </a>
+                    <a href="https://www.udemy.com/course/master-practical-java-development/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://i.pinimg.com/originals/2b/d2/ec/2bd2ec72b3391c8b8df8c7d274b877e2.jpg">
+                    </a>
 
-    <h3 class="hover-underline-animation">Database Design & Development Courses</h3><br/><br/>
-    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
+                </div>
 
-	  <a href="https://www.udemy.com/course/the-complete-oracle-sql-certification-course/" target="_blank">
-	  <img width="33%" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy7XhADect5JBubSvySQbd_l_ov6yRyVZ9LWuaVcX1uRC70nC_7955hUPqX9mBHNUVuw&usqp=CAU"> 
-        </a>
-		  <a href="https://www.udemy.com/course/mongodb-the-complete-developers-guide/" target="_blank">
-	<img width="33%" height="300" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.png">
-        </a>
-		<a href="https://www.udemy.com/course/datascience/" target="_blank">
-	<img width="33%" height="300" src="https://logosvector.net/wp-content/uploads/2015/10/mongodb-logo-vector-download.jpg">
-        </a>
-	
-		</div> 
+                <div class="carousel-cell">
+                    <a href="https://www.udemy.com/course/javascript-essentials/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://mpng.subpng.com/20180417/ite/kisspng-web-development-javascript-logo-java-plum-5ad58e75bc9174.9127947515239450777724.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/r-basics/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://d1zx6djv3kb1v7.cloudfront.net/wp-content/media/2020/05/R-PROGRAMMING-LANGUAGE-i2tutorials.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/go-programming-language-crash-course/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://www.atatus.com/blog/content/images/size/w960/2020/06/golang-auto-build-versioning.png">
+                    </a>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <br><br>
 
-		<div class="carousel-cell">
-		<a href="https://www.udemy.com/course/learn-graphql-with-net-core-for-absolute-beginners/" target="_blank">
-	  <img width="33%" height="300" src="https://engineering.icf.com/wp-content/uploads/2020/03/graphql.png">
-        </a>
-		<a href="https://www.udemy.com/course/xslt-xpath-and-xquery-fundamentals/" target="_blank">
-	<img width="33%" height="300" src="https://cdn.educba.com/academy/wp-content/uploads/2020/04/XQuery-Functions.jpg">
-        </a>
-		<a href="https://www.udemy.com/course/sql-master-sql-with-phpmyadmin-and-mysql-engine/" target="_blank">
-	<img width="33%" height="300" src="https://jusksmith.files.wordpress.com/2020/06/phpmyadmin-logo.jpg">
-        </a>
-		</div>
-	</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <br><br>
+            <h3 class="hover-underline-animation">Data Science Courses</h3><br /><br />
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
 
-    <h3 class="hover-underline-animation">Game Development Courses</h3><br/><br/>
-    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
+                    <a href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://skillsupedu.com/image/all-courses/data-science-with-python-training.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/deeplearning/" target="_blank">
+                        <img width="33%" height="300" src="https://www.meritglobaltraining.com/images/data1.png">
+                    </a>
+                    <a href="https://www.udemy.com/course/datascience/" target="_blank">
+                        <img width="33%" height="300" src="https://www.promosystech.com/temp/assets/img/demo/datas.png">
+                    </a>
 
-	  <a href="https://www.udemy.com/course/unrealcourse/" target="_blank">
-	  <img width="33%" height="300" src="https://img-c.udemycdn.com/course/240x135/657932_c7e0_4.jpg"> 
-        </a>
-		  <a href="https://www.udemy.com/course/unitycourse2/" target="_blank">
-	<img width="33%" height="300" src="https://img-c.udemycdn.com/course/240x135/1178124_76bb_10.jpg">
-        </a>
-		<a href="https://www.udemy.com/course/the-ultimate-guide-to-game-development-with-unity/" target="_blank">
-	<img width="33%" height="300" src="https://img-c.udemycdn.com/course/240x135/1328572_b05d_5.jpg">
-        </a>
-	
-		</div> 
+                </div>
 
-		<div class="carousel-cell">
-		<a href="https://www.udemy.com/course/unrealblueprint/" target="_blank">
-	  <img width="33%" height="300" src="https://img-c.udemycdn.com/course/240x135/1946104_668a_2.jpg">
-        </a>
-		<a href="https://www.udemy.com/course/make-games-without-code-unity-visual-scripting/" target="_blank">
-	<img width="33%" height="300" src="https://img-c.udemycdn.com/course/240x135/3597670_8349_2.jpg">
-        </a>
-		<a href="https://www.udemy.com/course/unityandroidgamecourse/" target="_blank">
-	<img width="33%" height="300" src="https://thumbs.dreamstime.com/b/game-development-outline-icon-element-gaming-mobile-concept-web-apps-thin-line-can-be-used-white-background-165647954.jpg">
-        </a>
-		</div>
-	</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <br><br>
-    </section>
+                <div class="carousel-cell">
+                    <a href="https://www.udemy.com/course/statistics-for-data-science-and-business-analysis/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://sgp1.digitaloceanspaces.com/hh-certificates/images/1617166416garfg.webp">
+                    </a>
+                    <a href="https://www.udemy.com/course/data-science-and-machine-learning-bootcamp-with-r/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2014/04/datasc-adv-datasc-trainingimg1.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://www.iimtindia.net/Blog/wp-content/uploads/2021/06/Data-Science.jpg">
+                    </a>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <br><br>
+
+            <h3 class="hover-underline-animation">Database Design & Development Courses</h3><br /><br />
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+
+                    <a href="https://www.udemy.com/course/the-complete-oracle-sql-certification-course/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy7XhADect5JBubSvySQbd_l_ov6yRyVZ9LWuaVcX1uRC70nC_7955hUPqX9mBHNUVuw&usqp=CAU">
+                    </a>
+                    <a href="https://www.udemy.com/course/mongodb-the-complete-developers-guide/" target="_blank">
+                        <img width="33%" height="300" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.png">
+                    </a>
+                    <a href="https://www.udemy.com/course/datascience/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://logosvector.net/wp-content/uploads/2015/10/mongodb-logo-vector-download.jpg">
+                    </a>
+
+                </div>
+
+                <div class="carousel-cell">
+                    <a href="https://www.udemy.com/course/learn-graphql-with-net-core-for-absolute-beginners/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://engineering.icf.com/wp-content/uploads/2020/03/graphql.png">
+                    </a>
+                    <a href="https://www.udemy.com/course/xslt-xpath-and-xquery-fundamentals/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://cdn.educba.com/academy/wp-content/uploads/2020/04/XQuery-Functions.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/sql-master-sql-with-phpmyadmin-and-mysql-engine/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://jusksmith.files.wordpress.com/2020/06/phpmyadmin-logo.jpg">
+                    </a>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <br><br>
+
+            <h3 class="hover-underline-animation">Game Development Courses</h3><br /><br />
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+
+                    <a href="https://www.udemy.com/course/unrealcourse/" target="_blank">
+                        <img width="33%" height="300" src="https://img-c.udemycdn.com/course/240x135/657932_c7e0_4.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/unitycourse2/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://img-c.udemycdn.com/course/240x135/1178124_76bb_10.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/the-ultimate-guide-to-game-development-with-unity/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://img-c.udemycdn.com/course/240x135/1328572_b05d_5.jpg">
+                    </a>
+
+                </div>
+
+                <div class="carousel-cell">
+                    <a href="https://www.udemy.com/course/unrealblueprint/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://img-c.udemycdn.com/course/240x135/1946104_668a_2.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/make-games-without-code-unity-visual-scripting/"
+                        target="_blank">
+                        <img width="33%" height="300"
+                            src="https://img-c.udemycdn.com/course/240x135/3597670_8349_2.jpg">
+                    </a>
+                    <a href="https://www.udemy.com/course/unityandroidgamecourse/" target="_blank">
+                        <img width="33%" height="300"
+                            src="https://thumbs.dreamstime.com/b/game-development-outline-icon-element-gaming-mobile-concept-web-apps-thin-line-can-be-used-white-background-165647954.jpg">
+                    </a>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <br><br>
+        </section>
 
 
 
-    <!-- <section id="courses">
+        <!-- <section id="courses">
         
         
         <video src="images/8.mp4" width="33%" poster="images/11.jpg" controls></video>
@@ -311,549 +392,551 @@
         <video src="images/8.mp4" width="33%" poster="images/16.jpg" controls></video>
     </section> -->
 
-<section id = "yt">
-    <h2 class="hover-underline-animation">Informative Youtube Channels</h2>
-	<br>
-	<h3 class="hover-underline-animation">Open Source Tutorials</h3>
-    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-        <!-- <iframe width="33%" src="https://www.youtube.com/embed/hmS6rhq8jkI" alt="Open-Source" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <a href="https://www.youtube.com/watch?v=hmS6rhq8jkI&t=276s" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt1.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=KxUj-0R2yxM" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt2.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=3HqN-YS8eso" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt3.jpg" alt="Open-Source">
-        </a>
-        </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=yzeVMecydCE&t=10s" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt4.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=SXW_bA4SGqA" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt5.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=Hkoml2mXDD8" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt6.jpg" alt="Open-Source">
-        </a>
-        </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=8xRwsJ2ahfw" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt7.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=fMdfDnGX9S8" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt8.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=LNyWK1mdFMw" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt9.jpg" alt="Open-Source">
-        </a>
-        </div>
-    </div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <br><br>
-	<h3 class="hover-underline-animation">Git & Github</h3>
-	    <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=PQsJR8ci3J0" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt10.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=uaeKhfhYE0U" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt11.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=apGV9Kg7ics" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt12.jpg" alt="Open-Source">
-        </a>
-        </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=gwWKnnCMQ5c" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt13.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=uj4fy4kpaOA" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt14.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=RGOj5yH7evk" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt15.jpg" alt="Open-Source">
-        </a>
-        </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=WbwIoQYP6no" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt16.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=SWYqp7iY_Tc" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt17.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=iR5WIknxdkY&t=95s" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt18.jpg" alt="Open-Source">
-        </a>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
-	 </div>
-    </div>
-	<br><br>
-	<h3 class="hover-underline-animation">HTML Tutorials</h3>
-	 <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt19.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=BsDoLVMnmZs&t=37s" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt20.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt21.jpg" alt="Open-Source">
-        </a>
-      </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=QMnv3QrjZoU" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt24.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=88PXJAA6szs" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt23.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=Ut4RpySLM6Y" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt22.jpg" alt="Open-Source">
-        </a> 
-    </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=MDLn5-zSQQI" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt25.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=THp_EowtJ0M" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt26.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=FNGoExJlLQY" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt27.jpg" alt="Open-Source">
-        </a>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
-	 </div>
-    </div>
-	<br><br>
-	<h3 class="hover-underline-animation">Machine Learning</h3>
-	 <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=lUSixxX9pK4&t=13s" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt28.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=GwIo3gDZCVQ" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt29.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=IoZGSQ07e8g" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt30.jpg" alt="Open-Source">
-        </a>
-      </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=Pj0neYUp9Tc" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt36.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=RnFGwxJwx-0" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt31.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=NWONeJKn6kc" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt32.jpg" alt="Open-Source">
-        </a>
-        </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=eq7KF7JTinU" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt33.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=7eh4d6sabA0" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt34.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=Q59X518JZHE" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt35.jpg" alt="Open-Source">
-        </a>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
-	 </div>
-    </div>
-	<br><br>
-	   <h3 class="hover-underline-animation">DevOps Tutorials</h3>
-	 <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=j5Zsa_eOXeY" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt37.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=hQcFE0RD0cQ" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt38.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=5KtRF4NuUWE" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt39.jpg" alt="Open-Source">
-        </a>
-      </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=S_0q75eD8Yc" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt40.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=wUz5iuKz1OU" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt41.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=tgmM3_2dZwg" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt42.jpg" alt="Open-Source">
-        </a>    
-    </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=JHoy3lDZOfY" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt43.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=ZtvpS5eVVDs" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt44.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=a9_oMNSgX2g" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt45.jpg" alt="Open-Source">
-        </a>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
-	 </div>
-    </div>
-	<br><br>
-	<h3 class="hover-underline-animation">Node.js Tutorials</h3>
-	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=TlB_eWDSMt4" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt46.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=IIpiLZGTWuo&list=PLwGdqUZWnOp00IbeN0OtL9dmnasipZ9x8" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt47.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=ENrzD9HAZK4" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt48.jpg" alt="Open-Source">
-        </a>
-	  </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=KE_wDYp-Xu8" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt49.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=8u1o-OmOeGQ" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt54.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=fBNz5xF-Kx4" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt50.jpg" alt="Open-Source">
-        </a>
-        </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=BLl32FvcdVM" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt51.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=ipnWAKoiBtY" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt52.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=JnvKXcSI7yk" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt53.jpg" alt="Open-Source">
-        </a>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
-	 </div>
-    </div>
-	<br><br>
-	  <h3 class="hover-underline-animation">MERN Tutorials</h3>
-	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=7CqJlxBYj-M" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt55.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=YhJ-lPiCfyc" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt56.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=ngc9gnGgUdA" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt57.jpg" alt="Open-Source">
-        </a>
-      </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=9tn82yBrX90&list=PLUVqY59GNZQMcLXlrBo4T557kWjbKHMLS" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt58.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=-Vd5RRZXIyo" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt59.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=Ejg7es3ba2kA" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt60.jpg" alt="Open-Source">
-        </a>
-        </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=mrHNSanmqQ4" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt63.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=I7EDAR2GRVo" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt61.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=ktjafK4SgWM" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt62.jpg" alt="Open-Source">
-        </a>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
-	 </div>
-    </div>
-	<br><br>
-	  <h3 class="hover-underline-animation">CSS Tutorials</h3>
-	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=u5-K_ua9sOw" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt64.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=1PnVor36_40" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt65.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=yfoY53QXEnI" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt66.jpg" alt="Open-Source">
-        </a>
-      </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=Edsxf_NBFrw" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt67.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=12s" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt68.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=3_9znKVNe5g" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt69.jpg" alt="Open-Source">
-        </a>
-        </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=WyxzAU3p8CE" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt70.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=FqmB-Zj2-PA" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt71.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=w2z7BMr4MY0" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt72.jpg" alt="Open-Source">
-        </a>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
-	 </div>
-    </div>
-	<br><br>
-   <h3 class="hover-underline-animation">Bootstrap Tutorials</h3>
-	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=vpAJ0s5S2t0" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt73.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt74.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=jeZ-URjZM_M" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt75.jpg" alt="Open-Source">
-        </a>
-      </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=QE5oQh63gGE" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt76.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=4sosXZsdy-s" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt77.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=eow125xV5-c" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt78.jpg" alt="Open-Source">
-        </a>
-        </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt81.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=008dZPBZtLQ" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt80.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=Qb8DLdSYBAo" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt79.jpg" alt="Open-Source">
-        </a>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
-	 </div>
-    </div>
-	<br><br>
-	 <h3 class="hover-underline-animation">C++ Tutorials</h3>
-	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt82.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=yGB9jhsEsr8" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt83.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=BClS40yzssA" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt84.jpg" alt="Open-Source">
-        </a>
-      </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=GQp1zzTwrIg" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt85.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=Umm1ZQ5ltZw" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt86.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=McojvctVsUs" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt87.jpg" alt="Open-Source">
-        </a>
-        </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=KC47C8sg2zQ" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt88.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=_bYFu9mBnr4" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt89.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=VJ6YdCuKsfw" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt90.jpg" alt="Open-Source">
-        </a>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
-	 </div>
-    </div>
-	<br><br>
-<h3 class="hover-underline-animation">Data Structure and Algorithm Tutorials</h3>
-	  <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=8hly31xKli0" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt91.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=hCrO_cR7kno" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt92.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=BBpAmxU_NQo" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt93.jpg" alt="Open-Source">
-        </a>
-      </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=RBSGKlAvoiM" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt94.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=B31LgI4Y4DQ" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt95.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=MtVZAXepMPM" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt96.jpg" alt="Open-Source">
-        </a>
-        </div>
-      <div class="carousel-cell">
-        <a href="https://www.youtube.com/watch?v=YOfXMQnUlZY" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt97.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=4iFALQ1ACdA" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt99.jpg" alt="Open-Source">
-        </a>
-        <a href="https://www.youtube.com/watch?v=5_5oE5lgrhw" target="_blank">
-            <img width="33%" class="iframe" src="./yt_imgs/yt98.jpg" alt="Open-Source">
-        </a>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>     
-	 </div>
-    </div>
-	<br><br>
-</section>  
+        <section id="yt">
+            <h2 class="hover-underline-animation">Informative Youtube Channels</h2>
+            <br>
+            <h3 class="hover-underline-animation">Open Source Tutorials</h3>
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <!-- <iframe width="33%" src="https://www.youtube.com/embed/hmS6rhq8jkI" alt="Open-Source" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    <a href="https://www.youtube.com/watch?v=hmS6rhq8jkI&t=276s" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt1.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=KxUj-0R2yxM" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt2.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=3HqN-YS8eso" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt3.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=yzeVMecydCE&t=10s" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt4.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=SXW_bA4SGqA" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt5.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Hkoml2mXDD8" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt6.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=8xRwsJ2ahfw" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt7.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=fMdfDnGX9S8" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt8.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=LNyWK1mdFMw" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt9.jpg" alt="Open-Source">
+                    </a>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <br><br>
+            <h3 class="hover-underline-animation">Git & Github</h3>
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=PQsJR8ci3J0" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt10.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=uaeKhfhYE0U" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt11.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=apGV9Kg7ics" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt12.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=gwWKnnCMQ5c" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt13.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=uj4fy4kpaOA" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt14.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=RGOj5yH7evk" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt15.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=WbwIoQYP6no" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt16.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=SWYqp7iY_Tc" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt17.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=iR5WIknxdkY&t=95s" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt18.jpg" alt="Open-Source">
+                    </a>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="hover-underline-animation">HTML Tutorials</h3>
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt19.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=BsDoLVMnmZs&t=37s" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt20.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt21.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=QMnv3QrjZoU" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt24.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=88PXJAA6szs" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt23.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Ut4RpySLM6Y" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt22.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=MDLn5-zSQQI" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt25.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=THp_EowtJ0M" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt26.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=FNGoExJlLQY" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt27.jpg" alt="Open-Source">
+                    </a>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="hover-underline-animation">Machine Learning</h3>
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=lUSixxX9pK4&t=13s" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt28.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=GwIo3gDZCVQ" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt29.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=IoZGSQ07e8g" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt30.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=Pj0neYUp9Tc" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt36.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=RnFGwxJwx-0" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt31.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=NWONeJKn6kc" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt32.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=eq7KF7JTinU" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt33.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=7eh4d6sabA0" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt34.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Q59X518JZHE" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt35.jpg" alt="Open-Source">
+                    </a>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="hover-underline-animation">DevOps Tutorials</h3>
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=j5Zsa_eOXeY" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt37.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=hQcFE0RD0cQ" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt38.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=5KtRF4NuUWE" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt39.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=S_0q75eD8Yc" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt40.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=wUz5iuKz1OU" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt41.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=tgmM3_2dZwg" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt42.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=JHoy3lDZOfY" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt43.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=ZtvpS5eVVDs" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt44.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=a9_oMNSgX2g" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt45.jpg" alt="Open-Source">
+                    </a>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="hover-underline-animation">Node.js Tutorials</h3>
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=TlB_eWDSMt4" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt46.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=IIpiLZGTWuo&list=PLwGdqUZWnOp00IbeN0OtL9dmnasipZ9x8"
+                        target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt47.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=ENrzD9HAZK4" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt48.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=KE_wDYp-Xu8" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt49.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=8u1o-OmOeGQ" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt54.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=fBNz5xF-Kx4" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt50.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=BLl32FvcdVM" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt51.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=ipnWAKoiBtY" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt52.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=JnvKXcSI7yk" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt53.jpg" alt="Open-Source">
+                    </a>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="hover-underline-animation">MERN Tutorials</h3>
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=7CqJlxBYj-M" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt55.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=YhJ-lPiCfyc" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt56.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=ngc9gnGgUdA" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt57.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=9tn82yBrX90&list=PLUVqY59GNZQMcLXlrBo4T557kWjbKHMLS"
+                        target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt58.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=-Vd5RRZXIyo" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt59.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Ejg7es3ba2kA" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt60.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=mrHNSanmqQ4" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt63.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=I7EDAR2GRVo" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt61.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=ktjafK4SgWM" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt62.jpg" alt="Open-Source">
+                    </a>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="hover-underline-animation">CSS Tutorials</h3>
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=u5-K_ua9sOw" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt64.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=1PnVor36_40" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt65.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=yfoY53QXEnI" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt66.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=Edsxf_NBFrw" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt67.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=12s" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt68.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=3_9znKVNe5g" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt69.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=WyxzAU3p8CE" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt70.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=FqmB-Zj2-PA" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt71.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=w2z7BMr4MY0" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt72.jpg" alt="Open-Source">
+                    </a>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="hover-underline-animation">Bootstrap Tutorials</h3>
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=vpAJ0s5S2t0" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt73.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt74.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=jeZ-URjZM_M" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt75.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=QE5oQh63gGE" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt76.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=4sosXZsdy-s" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt77.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=eow125xV5-c" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt78.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt81.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=008dZPBZtLQ" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt80.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Qb8DLdSYBAo" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt79.jpg" alt="Open-Source">
+                    </a>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="hover-underline-animation">C++ Tutorials</h3>
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt82.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=yGB9jhsEsr8" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt83.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=BClS40yzssA" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt84.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=GQp1zzTwrIg" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt85.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Umm1ZQ5ltZw" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt86.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=McojvctVsUs" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt87.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=KC47C8sg2zQ" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt88.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=_bYFu9mBnr4" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt89.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=VJ6YdCuKsfw" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt90.jpg" alt="Open-Source">
+                    </a>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                </div>
+            </div>
+            <br><br>
+            <h3 class="hover-underline-animation">Data Structure and Algorithm Tutorials</h3>
+            <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=8hly31xKli0" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt91.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=hCrO_cR7kno" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt92.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=BBpAmxU_NQo" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt93.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=RBSGKlAvoiM" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt94.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=B31LgI4Y4DQ" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt95.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=MtVZAXepMPM" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt96.jpg" alt="Open-Source">
+                    </a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="https://www.youtube.com/watch?v=YOfXMQnUlZY" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt97.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=4iFALQ1ACdA" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt99.jpg" alt="Open-Source">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=5_5oE5lgrhw" target="_blank">
+                        <img width="33%" class="iframe" src="./yt_imgs/yt98.jpg" alt="Open-Source">
+                    </a>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                </div>
+            </div>
+            <br><br>
+        </section>
 
-<h2 class="hover-underline-animation"> NCERT Books </h2>
-       
-<section id="ncert">
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/file/d/1IjxZaCtEeMwdmuO2b0Vs45Su8jvG3fwa/view?usp=sharing"><img
-                class="books" src="images\Class X.jpg" alt=""></a>
-    </div>
+        <h2 class="hover-underline-animation"> NCERT Books </h2>
 
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/file/d/1cN04y7Gqe03HEb_zXbHdhpeA3AsRW1g5/view?usp=sharing"><img
-                class="books" src="images\class IX.jpg" alt=""></a>
-    </div>
+        <section id="ncert">
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/file/d/1IjxZaCtEeMwdmuO2b0Vs45Su8jvG3fwa/view?usp=sharing"><img
+                        class="books" src="images\Class X.jpg" alt=""></a>
+            </div>
 
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/file/d/12a0_JGZ2GTqUzckFDdBLLaJGoV8jKKV0/view?usp=sharing"><img
-                class="books" src="images\hesc1cc.jpg" alt=""></a>
-    </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/file/d/1cN04y7Gqe03HEb_zXbHdhpeA3AsRW1g5/view?usp=sharing"><img
+                        class="books" src="images\class IX.jpg" alt=""></a>
+            </div>
 
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/file/d/1PGqKZZqWD8o6-auHsqLrwxCsXyilPkP6/view?usp=sharing"><img
-                class="books" src="images\class vii.jpg" alt=""></a>
-    </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/file/d/12a0_JGZ2GTqUzckFDdBLLaJGoV8jKKV0/view?usp=sharing"><img
+                        class="books" src="images\hesc1cc.jpg" alt=""></a>
+            </div>
 
-    <div id="ncert_books" class="NC"> <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/file/d/1DlxE-x8-uUY4hWq7AvlKFWWAEhSFFLbw/preview"><img class="books"
-                src="images\Class12.jpg" alt=""></a>
-    </div>
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/file/d/1aXHembo-Cy5xSkt7cdwfk3tUo6rK2PZ-/preview"><img class="books"
-                src="images\class12chem.jpg" alt=""></a>
-    </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/file/d/1PGqKZZqWD8o6-auHsqLrwxCsXyilPkP6/view?usp=sharing"><img
+                        class="books" src="images\class vii.jpg" alt=""></a>
+            </div>
 
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/file/d/1DlAxpsZ5E3clkp-aNUsQOeh1vI1EXd-R/preview"><img class="books"
-                src="images\class12bio.jpg" alt=""></a>
-    </div>
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/file/d/0B8buzf-hm2wyZy1fQmVNM1gyTnM/view?resourcekey=0-wVoCHiiwS3rvs7r_dNvj8Q"><img
-                class="books" src="images\class12eco.jpg" alt=""></a>
-    </div>
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/drive/folders/1YWwfkGfaiDxxg0agGGCSxZe-1Qmpvahb"><img class="books"
-                src="images\moments9th.jpg" alt=""></a>
-    </div>
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/drive/folders/1OtLBgu-9AVSSH6O1Z0AocQPoYNFUL_3S"><img class="books"
-                src="images\beehive9th.jpg" alt=""></a>
-    </div>
+            <div id="ncert_books" class="NC"> <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/file/d/1DlxE-x8-uUY4hWq7AvlKFWWAEhSFFLbw/preview"><img class="books"
+                        src="images\Class12.jpg" alt=""></a>
+            </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/file/d/1aXHembo-Cy5xSkt7cdwfk3tUo6rK2PZ-/preview"><img class="books"
+                        src="images\class12chem.jpg" alt=""></a>
+            </div>
 
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/drive/folders/18675WSWNHURqKWQUe4ZGvd0nXOQCk4dk"><img class="books"
-                src="images\maths9th.jpg" alt=""></a>
-    </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/file/d/1DlAxpsZ5E3clkp-aNUsQOeh1vI1EXd-R/preview"><img class="books"
+                        src="images\class12bio.jpg" alt=""></a>
+            </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/file/d/0B8buzf-hm2wyZy1fQmVNM1gyTnM/view?resourcekey=0-wVoCHiiwS3rvs7r_dNvj8Q"><img
+                        class="books" src="images\class12eco.jpg" alt=""></a>
+            </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/drive/folders/1YWwfkGfaiDxxg0agGGCSxZe-1Qmpvahb"><img class="books"
+                        src="images\moments9th.jpg" alt=""></a>
+            </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/drive/folders/1OtLBgu-9AVSSH6O1Z0AocQPoYNFUL_3S"><img class="books"
+                        src="images\beehive9th.jpg" alt=""></a>
+            </div>
 
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/drive/folders/1b2DM6ed7LigVtZ2jEWCKhyevNegnfUu4"><img class="books"
-                src="images\first_flight10th.jpg" alt=""></a>
-    </div>
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/drive/folders/1RmpwGFb5QCPXG-yBKhCsquW90V8U6RJZ"><img class="books"
-                src="images\maths10th.jpg" alt=""></a>
-    </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/drive/folders/18675WSWNHURqKWQUe4ZGvd0nXOQCk4dk"><img class="books"
+                        src="images\maths9th.jpg" alt=""></a>
+            </div>
 
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/drive/folders/1YTmwfxEdDmMT3dLVmCACLW1N-7fGnE_z"><img class="books"
-                src="images\class9thcivics.jpg" alt=""></a>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/drive/folders/1b2DM6ed7LigVtZ2jEWCKhyevNegnfUu4"><img class="books"
+                        src="images\first_flight10th.jpg" alt=""></a>
+            </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/drive/folders/1RmpwGFb5QCPXG-yBKhCsquW90V8U6RJZ"><img class="books"
+                        src="images\maths10th.jpg" alt=""></a>
+            </div>
 
-    </div>
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/drive/folders/1xsnrX7060su6dZ84LYAq8-0QedIatMrh"><img class="books"
-                src="images\class9thgeo.jpg" alt=""></a>
-    </div>
-    <div id="ncert_books" class="NC">
-        <a class="ncertbooks" target="_blank"
-            href="https://drive.google.com/drive/folders/1BRXmQuwjGasfMs04TOb0twQmaL6a_eAT"><img class="books"
-                src="images\class9thhis.jpg" alt=""></a>
-    </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/drive/folders/1YTmwfxEdDmMT3dLVmCACLW1N-7fGnE_z"><img class="books"
+                        src="images\class9thcivics.jpg" alt=""></a>
 
-    </section>
- 
- <h2 class="hover-underline-animation">Question Banks</h2>
-  
-    <section id="qb">
-        <div class="study-card">
+            </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/drive/folders/1xsnrX7060su6dZ84LYAq8-0QedIatMrh"><img class="books"
+                        src="images\class9thgeo.jpg" alt=""></a>
+            </div>
+            <div id="ncert_books" class="NC">
+                <a class="ncertbooks" target="_blank"
+                    href="https://drive.google.com/drive/folders/1BRXmQuwjGasfMs04TOb0twQmaL6a_eAT"><img class="books"
+                        src="images\class9thhis.jpg" alt=""></a>
+            </div>
+
+        </section>
+
+        <h2 class="hover-underline-animation">Question Banks</h2>
+
+        <section id="qb">
+            <div class="study-card">
                 <div class="study-base">
-                    <a target="_blank" href="Samplepapers/cbse10science.pdf"><img class="books" src="images/science1.jpg" alt=""
-                            width="24%" height="60%"></a>
-    
+                    <a target="_blank" href="Samplepapers/cbse10science.pdf"><img class="books"
+                            src="images/science1.jpg" alt="" width="24%" height="60%"></a>
+
                 </div>
             </div>
             <div class="study-card">
                 <div class="study-base">
-                    <a target="_blank" href="Samplepapers/cbse10science1.pdf"><img class="books" src="images/science2.jpg"
-                            alt="" width="24%" height="60%"></a>
+                    <a target="_blank" href="Samplepapers/cbse10science1.pdf"><img class="books"
+                            src="images/science2.jpg" alt="" width="24%" height="60%"></a>
                 </div>
             </div>
             <div class="study-card">
@@ -864,456 +947,476 @@
             </div>
             <div class="study-card">
                 <div class="study-base">
-                    <a target="_blank" href="Samplepapers/class12chem.pdf"><img class="books" src="images/chem.png" alt=""
+                    <a target="_blank" href="Samplepapers/class12chem.pdf"><img class="books" src="images/chem.png"
+                            alt="" width="24%" height="60%"></a>
+                </div>
+            </div>
+            <div class="study-card">
+                <div class="study-base">
+                    <a target="_blank" href="Samplepapers/class12bio.pdf"><img class="books" src="images/bio.jpg" alt=""
                             width="24%" height="60%"></a>
                 </div>
+            </div>
+            <div class="study-card">
+                <div class="study-base">
+                    <a target="_blank" href="Samplepapers/class12maths.pdf"><img class="books" src="images/maths1.jpg"
+                            alt="" width="24%" height="60%"></a>
                 </div>
-                <div class="study-card">
+            </div>
+            <div class="study-card">
+                <div class="study-base">
+                    <a target="_blank" href="Samplepapers/jee.pdf"><img class="books" src="images/jee.jpg" alt=""
+                            width="24%" height="60%"></a>
+                </div>
+            </div>
+            <div class="study-card">
+                <div class="study-base">
+                    <a target="_blank" href="Samplepapers/neet.pdf"><img class="books" src="images/neet.jpg" alt=""
+                            width="24%" height="60%"></a>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="hover-underline-animation">Audio Books</h2>
+        <section id="audio-books" class="audio-books-container"
+            style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('assets/images/Background1.jpg');margin-left:5px;margin-right:5px;border-radius:8px;max-width:1340px;">
+            <div class="audio-book-card ">
+                <div class="audio-book-thumbnail">
+                    <img src="assets/images/Penetration Testing with Python.png" alt="image1">
+                </div>
+                <audio src="assets/audioBooks/Cyber Security and Penetration Testing with Python.mp3"></audio>
+                <div class="progressbar-container" id="progress-container">
+                    <div class="progress-duration-meter">
+                        <div class="current-time" id="current-time">0:00</div>
+                        <div class="duration" id="duration">14:01</div>
+                    </div>
+                    <div class="progress-div" id="progress-div-1">
+                        <div class="progress" id="progress-1"></div>
+                    </div>
+                </div>
+                <h3>
+                    <p class="play-button-container">
+                        <i class="fa fa-play play-button not-playing"></i>
+                    </p>
+                    <p class="volume-button-container">
+                        <i class="fa fa-volume-up volume-button"></i>
+                        <input type="range" value="100" class="volume-indicator not-showing">
+                    </p>
+                    <h3>
+            </div>
+            <div class="audio-book-card ">
+                <div class="audio-book-thumbnail">
+                    <img src="assets/images/Automate the Boring Stuff with Python.jpg" alt="image2">
+                </div>
+                <audio src="assets/audioBooks/Automate the Boring Stuff with Python.mp3"></audio>
+                <div class="progressbar-container" id="progress-container">
+                    <div class="progress-duration-meter">
+                        <div class="current-time">0:00</div>
+                        <div class="duration">11:05</div>
+                    </div>
+                    <div class="progress-div" id="progress-div-2">
+                        <div class="progress" id="progress-2"></div>
+                    </div>
+                </div>
+                <h3>
+                    <p class="play-button-container">
+                        <i class="fa fa-play play-button not-playing"></i>
+                    </p>
+                    <p class="volume-button-container">
+                        <i class="fa fa-volume-up volume-button"></i>
+                        <input type="range" value="100" class="volume-indicator not-showing">
+                    </p>
+                </h3>
+            </div>
+            <div class="audio-book-card">
+                <div class="audio-book-thumbnail">
+                    <img src="assets/images/Data Science from Scratch.jpg" alt="image3">
+                </div>
+                <audio src="assets/audioBooks/Data Science from Scratch.mp3"></audio>
+                <div class="progressbar-container" id="progress-container">
+                    <div class="progress-duration-meter">
+                        <div class="current-time">0:00</div>
+                        <div class="duration">11:02</div>
+                    </div>
+                    <div class="progress-div" id="progress-div-3">
+                        <div class="progress" id="progress-3"></div>
+                    </div>
+                </div>
+                <h3>
+                    <p class="play-button-container">
+                        <i class="fa fa-play play-button not-playing"></i>
+                    </p>
+                    <p class="volume-button-container">
+                        <i class="fa fa-volume-up volume-button"></i>
+                        <input type="range" value="100" class="volume-indicator not-showing">
+                    </p>
+                    <h3>
+            </div>
+            <div class="audio-book-card">
+                <div class="audio-book-thumbnail">
+                    <img src="assets/images/Asynchronous JavaScript.png" alt="image4">
+                </div>
+                <audio src="assets/audioBooks/JavaScript Asynchronous Programming.mp3"></audio>
+                <div class="progressbar-container" id="progress-container">
+                    <div class="progress-duration-meter">
+                        <div class="current-time">0:00</div>
+                        <div class="duration">13:56</div>
+                    </div>
+                    <div class="progress-div" id="progress-div-4">
+                        <div class="progress" id="progress-4"></div>
+                    </div>
+                </div>
+                <h3>
+                    <p class="play-button-container">
+                        <i class="fa fa-play play-button not-playing"></i>
+                    </p>
+                    <p class="volume-button-container">
+                        <i class="fa fa-volume-up volume-button"></i>
+                        <input type="range" value="100" class="volume-indicator not-showing">
+                    </p>
+                    <h3>
+            </div>
+
+        </section>
+
+        <!-- ---- -->
+        <div class="filter">
+            <h2 class="hover-underline-animation">Study Materials</h2>
+            <section id="study" class="study-container"
+                style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('assets/images/Background1.jpg');margin-left:5px;margin-right:5px;border-radius:8px;max-width:1340px;">
+                <div class="study-card ">
                     <div class="study-base">
-                        <a target="_blank" href="Samplepapers/class12bio.pdf"><img class="books" src="images/bio.jpg" alt=""
-                                width="24%" height="60%"></a>
+                        <img class="books" src="images/currentelectricity.jpg" alt="image1">
                     </div>
+                    <h3><a target="_blank" class="view" href="Notes/physicselectricitynotes.pdf">View</a>
+                        <h3>
+                </div>
+                <div class="study-card ">
+                    <div class="study-base">
+                        <img class="books" src="images/magntism.jpg" alt="image1">
                     </div>
-                    <div class="study-card">
-                        <div class="study-base">
-                            <a target="_blank" href="Samplepapers/class12maths.pdf"><img class="books" src="images/maths1.jpg" alt=""
-                                    width="24%" height="60%"></a>
-                        </div>
-                        </div>
-                        <div class="study-card">
-                            <div class="study-base">
-                                <a target="_blank" href="Samplepapers/jee.pdf"><img class="books" src="images/jee.jpg" alt=""
-                                        width="24%" height="60%"></a>
-                            </div>
-                            </div>
-                            <div class="study-card">
-                                <div class="study-base">
-                                    <a target="_blank" href="Samplepapers/neet.pdf"><img class="books" src="images/neet.jpg" alt=""
-                                            width="24%" height="60%"></a>
-                                </div>
-                                </div>
-    </section>
+                    <h3><a target="_blank" class="view" href="Notes/physicsmagnetism.pdf">View</a>
+                        <h3>
+                </div>
+                <div class="study-card ">
+                    <div class="study-base">
+                        <img class="books" src="images/surfacechem.jpg" alt="image2">
+                    </div>
+                    <h3><a target="_blank" class="view" href="Notes/chemsurfacechem.pdf">View</a>
+                        <h3>
+                </div>
+                <div class="study-card ">
+                    <div class="study-base">
+                        <img class="books" src="images/pblock.jpg" alt="image1">
+                    </div>
+                    <h3><a target="_blank" class="view" href="Notes/chempblock.pdf">View</a>
+                        <h3>
+                </div>
+                <div class="study-card ">
+                    <div class="study-base">
+                        <img class="books" src="images/datastructure.jpg" alt="image1">
+                    </div>
+                    <h3><a target="_blank" class="view" href="Notes/csds.pdf">View</a>
+                        <h3>
+                </div>
+                <div class="study-card ">
+                    <div class="study-base">
+                        <img class="books" src="images/dbms.jpg" alt="image1">
+                    </div>
+                    <h3><a target="_blank" class="view" href="Notes/sqldbms.pdf">View</a>
+                        <h3>
+                </div>
+                <div class="study-card ">
+                    <div class="study-base">
+                        <img class="books" src="images/principlepfmanagement.png" alt="image1">
+                    </div>
+                    <h3><a target="_blank" class="view" href="Notes/bsprincipleofmanagement.pdf">View</a>
+                        <h3>
+                </div>
+                <div class="study-card ">
+                    <div class="study-base">
+                        <img class="books" src="images/moneyandbanking.jpg" alt="image1">
+                    </div>
+                    <h3><a target="_blank" class="view" href="Notes/ecomoneyandbanking.pdf">View</a>
+                        <h3>
+                </div>
 
-    <h2 class="hover-underline-animation">Audio Books</h2>
-    <section id="audio-books" class="audio-books-container" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('assets/images/Background1.jpg');margin-left:5px;margin-right:5px;border-radius:8px;max-width:1340px;">
-         <div class="audio-book-card ">
-            <div class="audio-book-thumbnail">
-                <img src="assets/images/Penetration Testing with Python.png" alt="image1">
-            </div>
-            <audio  src="assets/audioBooks/Cyber Security and Penetration Testing with Python.mp3"></audio>
-            <div class="progressbar-container" id="progress-container">
-                <div class="progress-duration-meter">
-                    <div class="current-time" id="current-time">0:00</div>
-                    <div class="duration" id="duration">14:01</div>
-                </div>
-                <div class="progress-div" id="progress-div-1">
-                    <div class="progress" id="progress-1"></div>
-                </div>
-            </div>
-            <h3>
-                <p class="play-button-container">
-                    <i class="fa fa-play play-button not-playing"></i>
-                </p>
-                <p class="volume-button-container">
-                    <i class="fa fa-volume-up volume-button"></i>
-                        <input type="range" value="100" class="volume-indicator not-showing">
-                </p>
-                <h3>
-        </div>
-        <div class="audio-book-card ">
-            <div class="audio-book-thumbnail">
-                <img src="assets/images/Automate the Boring Stuff with Python.jpg" alt="image2">
-            </div>
-            <audio  src="assets/audioBooks/Automate the Boring Stuff with Python.mp3"></audio>
-            <div class="progressbar-container" id="progress-container">
-                <div class="progress-duration-meter">
-                    <div class="current-time">0:00</div>
-                    <div class="duration">11:05</div>
-                </div>
-                <div class="progress-div" id="progress-div-2">
-                    <div class="progress" id="progress-2"></div>
-                </div>
-            </div>
-            <h3>
-                <p class="play-button-container">
-                    <i class="fa fa-play play-button not-playing"></i>
-                </p>
-                <p class="volume-button-container">
-                    <i class="fa fa-volume-up volume-button"></i>
-                        <input type="range" value="100" class="volume-indicator not-showing">
-                </p>
-            </h3>
-        </div>
-        <div class="audio-book-card">
-            <div class="audio-book-thumbnail">
-                <img src="assets/images/Data Science from Scratch.jpg" alt="image3">
-            </div>
-            <audio  src="assets/audioBooks/Data Science from Scratch.mp3"></audio>
-            <div class="progressbar-container" id="progress-container">
-                <div class="progress-duration-meter">
-                    <div class="current-time">0:00</div>
-                    <div class="duration">11:02</div>
-                </div>
-                <div class="progress-div" id="progress-div-3">
-                    <div class="progress" id="progress-3"></div>
-                </div>
-            </div>
-            <h3>
-                <p class="play-button-container">
-                    <i class="fa fa-play play-button not-playing"></i>
-                </p>
-                <p class="volume-button-container">
-                    <i class="fa fa-volume-up volume-button"></i>
-                        <input type="range" value="100" class="volume-indicator not-showing">
-                </p>
-                <h3>
-        </div>
-        <div class="audio-book-card">
-            <div class="audio-book-thumbnail">
-                <img src="assets/images/Asynchronous JavaScript.png" alt="image4">
-            </div>
-            <audio src="assets/audioBooks/JavaScript Asynchronous Programming.mp3"></audio>
-            <div class="progressbar-container" id="progress-container">
-                <div class="progress-duration-meter">
-                    <div class="current-time">0:00</div>
-                    <div class="duration">13:56</div>
-                </div>
-                <div class="progress-div" id="progress-div-4">
-                    <div class="progress" id="progress-4"></div>
-                </div>
-            </div>
-            <h3>
-                <p class="play-button-container">
-                    <i class="fa fa-play play-button not-playing"></i>
-                </p>
-                <p class="volume-button-container">
-                    <i class="fa fa-volume-up volume-button"></i>
-                        <input type="range" value="100" class="volume-indicator not-showing">
-                </p>
-                <h3>
-        </div>
-    
-    </section>
+            </section>
+    </main>
 
-    <!-- ---- -->
-    <div class="filter"> 
-        <h2 class="hover-underline-animation">Study Materials</h2>
-    <section id="study" class="study-container" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('assets/images/Background1.jpg');margin-left:5px;margin-right:5px;border-radius:8px;max-width:1340px;">
-         <div class="study-card ">
-            <div class="study-base">
-                <img class="books" src="images/currentelectricity.jpg" alt="image1">
-            </div>
-            <h3><a target="_blank" class="view" href="Notes/physicselectricitynotes.pdf">View</a><h3>
-        </div>
-        <div class="study-card ">
-            <div class="study-base">
-                <img class="books" src="images/magntism.jpg" alt="image1">
-            </div>
-            <h3><a target="_blank" class="view" href="Notes/physicsmagnetism.pdf">View</a><h3>
-        </div>
-        <div class="study-card ">
-            <div class="study-base">
-                <img class="books" src="images/surfacechem.jpg" alt="image2">
-            </div>
-            <h3><a target="_blank" class="view" href="Notes/chemsurfacechem.pdf">View</a><h3>
-        </div>
-        <div class="study-card ">
-            <div class="study-base">
-                <img class="books" src="images/pblock.jpg" alt="image1">
-            </div>
-            <h3><a target="_blank" class="view" href="Notes/chempblock.pdf">View</a><h3>
-        </div>
-        <div class="study-card ">
-            <div class="study-base">
-                <img class="books" src="images/datastructure.jpg" alt="image1">
-            </div>
-            <h3><a target="_blank" class="view" href="Notes/csds.pdf">View</a><h3>
-        </div>
-        <div class="study-card ">
-            <div class="study-base">
-                <img class="books" src="images/dbms.jpg" alt="image1">
-            </div>
-            <h3><a target="_blank" class="view" href="Notes/sqldbms.pdf">View</a><h3>
-        </div>
-        <div class="study-card ">
-            <div class="study-base">
-                <img class="books" src="images/principlepfmanagement.png" alt="image1">
-            </div>
-            <h3><a target="_blank" class="view" href="Notes/bsprincipleofmanagement.pdf">View</a><h3>
-        </div>
-        <div class="study-card ">
-            <div class="study-base">
-                <img class="books" src="images/moneyandbanking.jpg" alt="image1">
-            </div>
-            <h3><a target="_blank" class="view" href="Notes/ecomoneyandbanking.pdf">View</a><h3>
-        </div>
-    
-    </section>
-</main>
-    
- <!-- ------- -->
- <script>
-    function myFunction() {
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName("li");
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-            } else {
-                li[i].style.display = "none";
+    <!-- ------- -->
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
             }
         }
-    }
     </script>
-   
-<!--FOoTer section Updated-->
 
-<footer>
-    <div class="footer-1">
-      <div class="content">
-           <div class="left box">
-                <div class="upper">
-                 <div class="topic">About us</div>
-                  <p>We have gathered a list of some of the catchiest books of Various genre that shine brightly within the industry.
-                   These remarkable Books are followed by the Greatest People of All-Time.The power to be found between the pages of a 
-                   book is formidable, indeed.</p>
-                </div>
-               <div class="lower">
-                     <div class="topic"><a href="./public/contact us .html" style="color: antiquewhite;">Contact Us </a></div>
-                     <!-- <div class="phone">
+    <!--FOoTer section Updated-->
+
+    <footer>
+        <div class="footer-1">
+            <div class="content">
+                <div class="left box">
+                    <div class="upper">
+                        <div class="topic">About us</div>
+                        <p>We have gathered a list of some of the catchiest books of Various genre that shine brightly
+                            within the industry.
+                            These remarkable Books are followed by the Greatest People of All-Time.The power to be found
+                            between the pages of a
+                            book is formidable, indeed.</p>
+                    </div>
+                    <div class="lower">
+                        <div class="topic"><a href="./public/contact us .html" style="color: antiquewhite;">Contact Us
+                            </a></div>
+                        <!-- <div class="phone">
                          <a href="#"><i class="fa fa-volume-control-phone"></i>+91 123 456 7891</a>
                      </div> -->
-                         <div class="email">
-                             <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><i class="fa fa-github-square"></i>Github</a> <br>
-                             <!-- <a href=""><i class="fa fa-user-circle"></i></a> -->
-                           </div>
-                 </div>
-             </div>
-                 <div class="middle box">
-                      <div class="topic">General Message </div>
-                       <div><a href="#">Books are a uniquely portable magic,</a></div>
-                       <div><a href="#">Take a good book to bed with you—books do not snore.</a></div>
-                        <div><a href="#"><i class="fa fa-smile-o" , style="color:#e0b02c"></i>
+                        <div class="email">
+                            <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><i
+                                    class="fa fa-github-square"></i>Github</a> <br>
+                            <!-- <a href=""><i class="fa fa-user-circle"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="middle box">
+                    <div class="topic">General Message </div>
+                    <div><a href="#">Books are a uniquely portable magic,</a></div>
+                    <div><a href="#">Take a good book to bed with you—books do not snore.</a></div>
+                    <div><a href="#"><i class="fa fa-smile-o" , style="color:#e0b02c"></i>
                             <i class="fa fa-smile-o" , style="color:#e0b02c"></i>
                             <i class="fa fa-smile-o" , style="color:#e0b02c"></i></a></div>
-                 </div>
-                    <div class="right box">
-                         <div class="topic">Feedback</div>
-                             <form action="#" name="feedbackform" onsubmit="return feedbackvalidate()">
-                                 <input type="text" placeholder="Enter your valuable feedback" name="feedback">
-                                 <button type="submit" class="btn">Send</button>
-                                    <div class="social-container">
-                                         <ul class="social-icons">
+                </div>
+                <div class="right box">
+                    <div class="topic">Feedback</div>
+                    <form action="#" name="feedbackform" onsubmit="return feedbackvalidate()">
+                        <input type="text" placeholder="Enter your valuable feedback" name="feedback">
+                        <button type="submit" class="btn">Send</button>
+                        <div class="social-container">
+                            <ul class="social-icons">
 
-                                         <a class="Twitter" href="https://twitter.com/mesourav44" target="_blank"><i class="fab fa-twitter"></i></a>
-                                         <a class="Instagram" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                                         <a class="linkedin" href="https://www.linkedin.com/in/sauravmukherjee44/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                         <a class="Github" href="https://github.com/SauravMukherjee44/" target="_blank"><i class="fab fa-github-square"></i></a>
-                                         <a class="Blog" href="#" target="_blank"><i class="fa fa-rss-square" ></i></a>
-
-                                     </div>
-                             </form>
-                            </div>
-                         </div>
-             <div class="bottom">
-				<p>Copyright © 2021 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"> @ AEC Library </a> All rights reserved</p>
+                                <a class="Twitter" href="https://twitter.com/mesourav44" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="Instagram" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="linkedin" href="https://www.linkedin.com/in/sauravmukherjee44/"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a class="Github" href="https://github.com/SauravMukherjee44/" target="_blank"><i
+                                        class="fab fa-github-square"></i></a>
+                                <a class="Blog" href="#" target="_blank"><i class="fa fa-rss-square"></i></a>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
             </div>
-                               
-         </div>
-     </div>                     
-</footer>
-  <!-- Navigate to Top Button  -->
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(window).scrollTop() > 40) {
-          $('#topBtn').css({
-            "opacity": "1", "pointer-events": "auto"
-          });
-        } else {
-          $('#topBtn').css({
-            "opacity": "0", "pointer-events": "none"
-          });
-        }
-      });
+            <div class="bottom">
+                <p>Copyright © 2021 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"> @ AEC Library
+                    </a> All rights reserved</p>
+            </div>
 
-      $("#topBtn").click(function () {
-        $('html ,body').animate({ scrollTop: 0 }, 400);
-      });
-    });
-  </script>
-  
-<script >
+        </div>
+        </div>
+    </footer>
+    <!-- Navigate to Top Button  -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 40) {
+                    $('#topBtn').css({
+                        "opacity": "1", "pointer-events": "auto"
+                    });
+                } else {
+                    $('#topBtn').css({
+                        "opacity": "0", "pointer-events": "none"
+                    });
+                }
+            });
 
-    const play = document.querySelectorAll(".play-button");
-    const audioBooks = document.querySelectorAll("audio");
-    let progress = document.querySelectorAll('.progress');
-    let durationIndicator = document.querySelectorAll(".duration");
-    let currentTimeIndicator = document.querySelectorAll(".current-time");
-    const progressBar = document.querySelectorAll('.progress-div');
-    const volumeIcon = document.querySelectorAll(".volume-button");
-    const volumeIndicator = document.querySelectorAll(".volume-indicator");
-    const card = document.querySelectorAll(".audio-book-card");
-    let isAudioPlaying = false;
+            $("#topBtn").click(function () {
+                $('html ,body').animate({ scrollTop: 0 }, 400);
+            });
+        });
+    </script>
 
-   
-    for(let j =0;j<play.length;j++){
-          //Increase or Decrease Volume
-          let initialVolume = volumeIndicator[j].value;
-          volumeIcon[j].addEventListener("mouseover",()=>{
-            volumeIcon[j].style.right = "100px";
-              let volumeBarNotVisible = document.querySelectorAll(".not-showing");
-              let volumeBarVisible = document.querySelectorAll(".showing");
-              if(volumeBarVisible.length == 0){
-                  volumeIndicator[j].style.display = "block";
-                  volumeIndicator[j].classList.replace("not-showing","showing");
-              }
-              else{
-                  volumeBarVisible.forEach((volume_bar)=>{
-                      volume_bar.style.display ="none";
-                      volume_bar.classList.replace("showing","not-showing");
-                  })
-                  volumeIndicator[j].style.display = "block";
-                  volumeIndicator[j].classList.replace("not-showing","showing");
-                  
-              }
-          })
+    <script>
 
-    
-          volumeIndicator[j].addEventListener("mouseout",()=>{
-              volumeIndicator[j].style.display = "none";
-              volumeIcon[j].style.right = "20px";
-          })
-          
+        const play = document.querySelectorAll(".play-button");
+        const audioBooks = document.querySelectorAll("audio");
+        let progress = document.querySelectorAll('.progress');
+        let durationIndicator = document.querySelectorAll(".duration");
+        let currentTimeIndicator = document.querySelectorAll(".current-time");
+        const progressBar = document.querySelectorAll('.progress-div');
+        const volumeIcon = document.querySelectorAll(".volume-button");
+        const volumeIndicator = document.querySelectorAll(".volume-indicator");
+        const card = document.querySelectorAll(".audio-book-card");
+        let isAudioPlaying = false;
 
 
-          volumeIcon[j].addEventListener("click",()=>{
-              audioBooks[j].volume = 0;
-              if(volumeIcon[j].classList.contains('fa-volume-off')==true){
-                      audioBooks[j].volume = initialVolume/100;
-                      volumeIndicator[j].value=initialVolume;
-                      volumeIcon[j].classList.replace("fa-volume-off","fa-volume-up");
-              }else{
-                  volumeIcon[j].classList.replace("fa-volume-up","fa-volume-off");
-                  volumeIndicator[j].value=0;
-      
-              }
-          })
-          volumeIndicator[j].addEventListener("input",()=>{
-              audioBooks[j].volume = (volumeIndicator[j].value)/100;
-              if(volumeIndicator[j].value==0){
-                  audioBooks[0].volume = 0;
-                  volumeIcon[j].classList.replace("fa-volume-up","fa-volume-off");
-              }else{
-              volumeIcon[j].classList.replace("fa-volume-off","fa-volume-up");
-      
-          }
-      
-          })
-        //Pause functionality
-        const pauseAudioBook = ()=>{
-            isAudioPlaying = false;
-            audioBooks[j].pause();
-            play[j].classList.replace('fa-pause','fa-play');
-            play[j].style.left = "2px";
-            play[j].classList.add("not-playing");
-        };
-        // Play functionality
-        const playAudioBook = ()=>{
-            isAudioPlaying = true;
-            let noOfAudioNotPlaying = document.querySelectorAll(".not-playing");
-            if(noOfAudioNotPlaying.length ==4){
-                audioBooks[j].play();
-                play[j].classList.replace('fa-play','fa-pause');
-                play[j].style.left = "1px";
-                play[j].classList.remove("not-playing");
-
-            }else{
-                if(noOfAudioNotPlaying.length < 4){
-                    noOfAudioNotPlaying.forEach((audio_book)=>{
-                        let audioTag = audio_book.parentElement.parentElement.parentElement.querySelector("audio");
-                        audioTag.pause();
+        for (let j = 0; j < play.length; j++) {
+            //Increase or Decrease Volume
+            let initialVolume = volumeIndicator[j].value;
+            volumeIcon[j].addEventListener("mouseover", () => {
+                volumeIcon[j].style.right = "100px";
+                let volumeBarNotVisible = document.querySelectorAll(".not-showing");
+                let volumeBarVisible = document.querySelectorAll(".showing");
+                if (volumeBarVisible.length == 0) {
+                    volumeIndicator[j].style.display = "block";
+                    volumeIndicator[j].classList.replace("not-showing", "showing");
+                }
+                else {
+                    volumeBarVisible.forEach((volume_bar) => {
+                        volume_bar.style.display = "none";
+                        volume_bar.classList.replace("showing", "not-showing");
                     })
-                    if(noOfAudioNotPlaying.length==4){
-                        audioBooks[j].play();
-                        play[j].classList.replace('fa-play','fa-pause');
-                        play[j].style.left = "1px";
-                        play[j].classList.remove("not-playing");
-                    }
-                
-            };
-            }
-    };
+                    volumeIndicator[j].style.display = "block";
+                    volumeIndicator[j].classList.replace("not-showing", "showing");
 
-        play[j].addEventListener("click",()=>{
-        if(isAudioPlaying){
-                pauseAudioBook();
-            }
-            else{
+                }
+            })
+
+
+            volumeIndicator[j].addEventListener("mouseout", () => {
+                volumeIndicator[j].style.display = "none";
+                volumeIcon[j].style.right = "20px";
+            })
+
+
+
+            volumeIcon[j].addEventListener("click", () => {
+                audioBooks[j].volume = 0;
+                if (volumeIcon[j].classList.contains('fa-volume-off') == true) {
+                    audioBooks[j].volume = initialVolume / 100;
+                    volumeIndicator[j].value = initialVolume;
+                    volumeIcon[j].classList.replace("fa-volume-off", "fa-volume-up");
+                } else {
+                    volumeIcon[j].classList.replace("fa-volume-up", "fa-volume-off");
+                    volumeIndicator[j].value = 0;
+
+                }
+            })
+            volumeIndicator[j].addEventListener("input", () => {
+                audioBooks[j].volume = (volumeIndicator[j].value) / 100;
+                if (volumeIndicator[j].value == 0) {
+                    audioBooks[0].volume = 0;
+                    volumeIcon[j].classList.replace("fa-volume-up", "fa-volume-off");
+                } else {
+                    volumeIcon[j].classList.replace("fa-volume-off", "fa-volume-up");
+
+                }
+
+            })
+            //Pause functionality
+            const pauseAudioBook = () => {
+                isAudioPlaying = false;
+                audioBooks[j].pause();
+                play[j].classList.replace('fa-pause', 'fa-play');
+                play[j].style.left = "2px";
+                play[j].classList.add("not-playing");
+            };
+            // Play functionality
+            const playAudioBook = () => {
+                isAudioPlaying = true;
+                let noOfAudioNotPlaying = document.querySelectorAll(".not-playing");
+                if (noOfAudioNotPlaying.length == 4) {
+                    audioBooks[j].play();
+                    play[j].classList.replace('fa-play', 'fa-pause');
+                    play[j].style.left = "1px";
+                    play[j].classList.remove("not-playing");
+
+                } else {
+                    if (noOfAudioNotPlaying.length < 4) {
+                        noOfAudioNotPlaying.forEach((audio_book) => {
+                            let audioTag = audio_book.parentElement.parentElement.parentElement.querySelector("audio");
+                            audioTag.pause();
+                        })
+                        if (noOfAudioNotPlaying.length == 4) {
+                            audioBooks[j].play();
+                            play[j].classList.replace('fa-play', 'fa-pause');
+                            play[j].style.left = "1px";
+                            play[j].classList.remove("not-playing");
+                        }
+
+                    };
+                }
+            };
+
+            play[j].addEventListener("click", () => {
+                if (isAudioPlaying) {
+                    pauseAudioBook();
+                }
+                else {
                     playAudioBook();
                 }
             });
-        //Audio Time Change functionality
-        audioBooks[j].addEventListener('timeupdate',(event)=>{
-            const {currentTime, duration} = event.srcElement;
-            let audioProgressTime = (currentTime/duration) * 100;
-            progress[j].style.width = `${audioProgressTime}%`;
-            let minuteDuration = Math.floor(duration/60);
-            let secondDuration = Math.floor(duration %60);
-            if(secondDuration<10){
-                secondDuration = `0${secondDuration}`;
-            }
-            let totalDuration = `${minuteDuration}:${secondDuration}`;
-            durationIndicator[j].textContent = `${totalDuration}`;
-            let minuteCurrentTime = Math.floor(currentTime/60);
-            let secondCurrentTime = Math.floor(currentTime %60);
-            if(secondCurrentTime <10){
-                secondCurrentTime = `0${secondCurrentTime}`;
-            }
-            let totalCurrentTime = `${minuteCurrentTime}:${secondCurrentTime}`;
-            currentTimeIndicator[j].textContent = `${totalCurrentTime}`;
-    
-            
-        })
-        progressBar[j].addEventListener("click",(event)=>{
-            const { duration} = audioBooks[j];
-            let move_progress = ((event.offsetX / event.srcElement.clientWidth)*duration);
-            audioBooks[j].currentTime = move_progress;
-        })
-        audioBooks[j].addEventListener("ended",(event)=>{
-            play[j].classList.replace('fa-pause','fa-repeat');
-            pauseAudioBook();
-            play[j].addEventListener('click',(event)=>{
-                playAudioBook();
-                play[j].classList.replace('fa-repeat','fa-pause');
-                play[j].addEventListener('click',(event)=>{
-
-                if(isAudioPlaying){
-                    pauseAudioBook();
+            //Audio Time Change functionality
+            audioBooks[j].addEventListener('timeupdate', (event) => {
+                const { currentTime, duration } = event.srcElement;
+                let audioProgressTime = (currentTime / duration) * 100;
+                progress[j].style.width = `${audioProgressTime}%`;
+                let minuteDuration = Math.floor(duration / 60);
+                let secondDuration = Math.floor(duration % 60);
+                if (secondDuration < 10) {
+                    secondDuration = `0${secondDuration}`;
                 }
-                else{
-                    playAudioBook();
-                                }                })
-            })
-        })
-}
+                let totalDuration = `${minuteDuration}:${secondDuration}`;
+                durationIndicator[j].textContent = `${totalDuration}`;
+                let minuteCurrentTime = Math.floor(currentTime / 60);
+                let secondCurrentTime = Math.floor(currentTime % 60);
+                if (secondCurrentTime < 10) {
+                    secondCurrentTime = `0${secondCurrentTime}`;
+                }
+                let totalCurrentTime = `${minuteCurrentTime}:${secondCurrentTime}`;
+                currentTimeIndicator[j].textContent = `${totalCurrentTime}`;
 
-function feedbackvalidate (){
-    let x=document.forms["feedbackform"]["feedback"].value;
-    if(x==""){
-        alert("Feedback must be filled out");
-        return false;
-    }
-    else{
-        alert("Thanks for your feedback");
-        return true;
-    } 
-}
-</script>   
+
+            })
+            progressBar[j].addEventListener("click", (event) => {
+                const { duration } = audioBooks[j];
+                let move_progress = ((event.offsetX / event.srcElement.clientWidth) * duration);
+                audioBooks[j].currentTime = move_progress;
+            })
+            audioBooks[j].addEventListener("ended", (event) => {
+                play[j].classList.replace('fa-pause', 'fa-repeat');
+                pauseAudioBook();
+                play[j].addEventListener('click', (event) => {
+                    playAudioBook();
+                    play[j].classList.replace('fa-repeat', 'fa-pause');
+                    play[j].addEventListener('click', (event) => {
+
+                        if (isAudioPlaying) {
+                            pauseAudioBook();
+                        }
+                        else {
+                            playAudioBook();
+                        }
+                    })
+                })
+            })
+        }
+
+        function feedbackvalidate() {
+            let x = document.forms["feedbackform"]["feedback"].value;
+            if (x == "") {
+                alert("Feedback must be filled out");
+                return false;
+            }
+            else {
+                alert("Thanks for your feedback");
+                return true;
+            }
+        }
+    </script>
 </body>
+
 </html>

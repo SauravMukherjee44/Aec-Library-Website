@@ -714,7 +714,8 @@ footer .content .lower i {
 
 
 footer .content .middle {
-  padding-left: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 footer .content .middle a {
@@ -722,7 +723,7 @@ footer .content .middle a {
   font-size: 16px;
   /* font-family: cursive; */
   font-family: 'Roboto', sans-serif;
-  color: orange;
+  color: rgb(147, 238, 245);
 }
 
 footer .content .right input[type="text"] {
@@ -916,7 +917,7 @@ ul {
 
 footer .bottom {
   width: 100%;
-  text-align: right;
+  text-align: center;
   color: #d9d9d9;
   padding: 0 40px 5px 0;
   font-family: 'Roboto', sans-serif;
@@ -933,6 +934,22 @@ footer a {
 footer a:hover {
   color: #eb2f06;
 }
+
+.social-icons a {
+  margin: 10px 5px;
+}
+
+.social-container a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
 
 @media (max-width: 1100px) {
   footer .content .middle {
