@@ -2269,3 +2269,23 @@ div.desc {
   100% {opacity:0}
 }
 
+/* Filter Modal Css */
+.filter_modal{
+  text-align: left;
+}
+.filter_modal h2{
+  text-align: left;
+  font-size: 27px;
+}
+
+.filter_modal label{
+  color: black;
+}
+
+.modal_body .form_check{
+  width: 229px;
+}
+
+.filter_modal .form-check-input{
+  margin-top: 6px;
+}

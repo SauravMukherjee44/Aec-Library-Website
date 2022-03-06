@@ -249,7 +249,7 @@
 
         <!-- Modal -->
 <div style="color: black;" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Filter</h5>
@@ -260,13 +260,16 @@
       <div class="modal-body filter_modal">
         <h2>Date</h2>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <input class="form-check-input filter_date_checkbox" type="checkbox" name="exampleRadios" id="exampleRadios1"  value="option1">
           <label class="form-check-label" for="exampleRadios1">
             Newest first
           </label>
         </div>
         
         <h2>Author</h2>
+        
+        
+
         <div class="col">
 
           <select class="form-check-input1" name="author" id="author" onchange='CheckAuthor(this.value);' style="z-index: 1;" >
@@ -294,11 +297,60 @@
           </select>
            <input type="text" class="input-box" id="other_author" name="other_author" placeholder="Enter Author" style='display:none;' />
         </div>
+        <hr>
+        <h2>Category</h2>
 
+        
+           
+
+            <div class="col" style="height: 82px;">
+              
+                <select class="form-check-input" name="category" id="category" style="z-index: 1;">
+                  <option value="N/A">Select Category</option>
+                  <option value="Arts & Music">Arts & Music</option>
+                  <option value="Biographies">Biographies</option>
+                  <option value="Business">Business</option>
+                  <option value="Comics">Comics</option>
+                  <option value="Computer & Tech">Computers & Tech</option>
+                  <option value="Cooking">Cooking</option>
+                  <option value="Education & Reference">Education & Reference</option>
+                  <option value="Entertainment">Entertainment</option>
+                  <option value="Health & Fitness">Health & Fitness</option>
+                  <option value="History">History</option>
+                  <option value="Hobbies & Crafts">Hobbies & Crafts</option>
+                  <option value="Home & Garden">Home & Garden</option>
+                  <option value="Horror">Horror</option>
+                  <option value="Kids">Kids</option>
+                  <option value="Literature & Fiction">Literature & Fiction</option>
+                  <option value="Medical">Medical</option>
+                  <option value="Mystery">Mystery</option>
+                  <option value="Parenting">Parenting</option>
+                  <option value="Religion">Religion</option>
+                  <option value="Romance">Romance</option>
+                  <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
+                  <option value="Science & Maths">Science & Maths</option>
+                  <option value="Self-Help">Self-Help</option>
+                  <option value="Social Sciences">Social Sciences</option>
+                  <option value="Sports">Sports</option>
+                  <option value="Travel">Travel</option>
+                  <option value="True Crime">True Crime</option>
+                </select>
+              
+           </div>
+      
+
+        <hr>
+
+        <h2>Name</h2>
+      
+          <div class="col">
+            <input type="text" class="input-box" id="bookName" placeholder="Book Name" />
+          </div>
+        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" id="filter">Save changes</button>
       </div>
     </div>
   </div>
