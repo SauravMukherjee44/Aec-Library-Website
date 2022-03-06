@@ -242,6 +242,68 @@
     <div class="hero-right">
       <div id="table">
         <h1>Your Books</h1>
+        <!-- Filter Button -->
+        <button style="margin-top: 0px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Filter
+        </button>
+
+        <!-- Modal -->
+<div style="color: black;" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Filter</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body filter_modal">
+        <h2>Date</h2>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Newest first
+          </label>
+        </div>
+        
+        <h2>Author</h2>
+        <div class="col">
+
+          <select class="form-check-input1" name="author" id="author" onchange='CheckAuthor(this.value);' style="z-index: 1;" >
+
+
+            <option value="N/A">Select Author</option>
+            <option value="Agatha Christie">Agatha Christie</option>
+            <option value="Charles Dickens">Charles Dickens</option>
+            <option value="Dan Brown">Dan Brown</option>
+            <option value="Emily Bronte">Emily Bronte</option>
+            <option value="George Elliot">George Elliot</option>
+            <option value="J.K. Rowling">J.K. Rowling</option>
+            <option value="Jane Austen">Jane Austen</option>
+            <option value="John Green">John Green</option>
+            <option value="Mark Twain">Mark Twain</option>
+            <option value="Oscar Wilde">Oscar Wilde</option>
+            <option value="Rabindranath Tagore">Rabindranath Tagore</option>
+            <option value="Roald Dahl">Roald Dahl</option>
+            <option value="Rudyard Kipling">Rudyard Kipling</option>
+            <option value="Ruskin Bond">Ruskin Bond</option>
+            <option value="Sarah J. Maas">Sarah J. Maas</option>
+            <option value="Sylvia Plath">Sylvia Plath</option>
+            <option value="William Shakespeare">William Shakespeare</option>
+            <option value="Other">Other</option>
+          </select>
+           <input type="text" class="input-box" id="other_author" name="other_author" placeholder="Enter Author" style='display:none;' />
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
         <div style="overflow-x:auto;" id="books-content">
           <table class="table table-striped" id="mytable">
             <thead>
