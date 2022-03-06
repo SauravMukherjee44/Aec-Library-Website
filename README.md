@@ -15,11 +15,13 @@ Come forward to donate the books !!!
 
 
 <div align="left">
-<a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://sloc.xyz/github/SauravMukherjee44/Aec-Library-Website" alt="LOC"/></a>
+<a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://tokei.rs/b1/github/SauravMukherjee44/Aec-Library-Website" alt="LOC"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://img.shields.io/github/stars/SauravMukherjee44/Aec-Library-Website" alt="Stars Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/network/members"><img src="https://img.shields.io/github/forks/SauravMukherjee44/Aec-Library-Website" alt="Forks Badge"/></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/SauravMukherjee44/Aec-Library-Website?color=2b9348"></a>
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://badges.frapsoft.com/os/v2/open-source.svg" alt="Open Source"/></a>
+<a href="https://github.com/SauravMukherjee44/Aec-Library-Website/issues"><img src="https://img.shields.io/github/issues/SauravMukherjee44/Aec-Library-Website" alt="Issues Open"/></a>
+<a href="https://github.com/SauravMukherjee44/Aec-Library-Website/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SauravMukherjee44/Aec-Library-Website" alt="License"/></a>
 </div>
 <a href="https://open.vscode.dev/organization/repository"><img src="https://open.vscode.dev/badges/open-in-vscode.svg" alt="Open in Visual Studio Code"/></a>
 </div>
@@ -36,7 +38,9 @@ Come forward to donate the books !!!
 
 ## 📌 Sneak Peek of Main Page
 
-![image](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/98ca1f783823e29e2ba5e831e33d09280bc062cf/assets/images/aec%20(2).png)
+<p align="center">
+<img width="100%" src="https://raw.githubusercontent.com/SauravMukherjee44/Aec-Library-Website/main/assets/images/aec%20(2).png" alt="main page">
+</p>
 
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
@@ -79,7 +83,7 @@ If you want to contact me, you can reach me through below handles.
  <div align="center">
       
    <h1 align="center">CodeIN Community</h1>
-      <img width="10%" align="center"   src="https://github.com/SauravMukherjee44/SauravMukherjee44/blob/01033044396cd45db3731e6ac37284dc5386e2cd/CodeIN%20Logo.png" >
+      <img width="50%" align="center"   src="https://github.com/abhilipsasahoo03/Aec-Library-Website/blob/main/CodeIN_Logo.png" >
  
 I have started a Community named CodeIN Community [Community of Coding Enthusiasts] Where we share Resources, Roadmaps to learn different technologies and share opportunities related to different tech programs. Also, We organize Events on different technologies to help people to get started with these technologies.
 
