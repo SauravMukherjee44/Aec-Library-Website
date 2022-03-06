@@ -4,8 +4,10 @@ var nyanBtn = document.getElementById('nyan-btn');
 function playPause(song) {
     if (song.paused && song.currentTime >= 0 && !song.ended) {
         song.play();
+        nyanBtn.innerHTML = "Pause";
     } else {
         song.pause();
+        nyanBtn.innerHTML = "Play";
     }
 }
 
