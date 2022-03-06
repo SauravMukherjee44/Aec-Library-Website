@@ -83,7 +83,7 @@ If you want to contact me, you can reach me through below handles.
  <div align="center">
       
    <h1 align="center">CodeIN Community</h1>
-      <img width="50%" align="center"   src="https://github.com/abhilipsasahoo03/Aec-Library-Website/blob/main/CodeIN_Logo.png" >
+       <img width="10%" align="center"   src="https://github.com/SauravMukherjee44/SauravMukherjee44/blob/01033044396cd45db3731e6ac37284dc5386e2cd/CodeIN%20Logo.png" >
  
 I have started a Community named CodeIN Community [Community of Coding Enthusiasts] Where we share Resources, Roadmaps to learn different technologies and share opportunities related to different tech programs. Also, We organize Events on different technologies to help people to get started with these technologies.
 
