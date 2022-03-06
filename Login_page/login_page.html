@@ -12,8 +12,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
   <title>LOGIN - AEC Library</title>
+  
 		<link rel="stylesheet" type="text/css" href="login_style.css" />
+		
 		<link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon">
+	
 	</head>
 	<body>
 		<a href="../index.html"><h2 style="color: white;">AEC Library</h2></a>
@@ -25,9 +28,37 @@
 				<span>or use your account</span>
 				<input class="input__tag" type="email" placeholder="Email" validate id="email"  required="" />
 				<span id="mobileno" class="text-danger font-weight-bold"> </span>
-				<input class="input__tag" type="password" placeholder="Password" id="password" required="" />
-				<span id="pass" class="text-danger font-weight-bold"> </span>
+			
+	
+		
+				
+		<input type="password" 
+				type="password" placeholder="Password" id="typepass" required="" / > 
+			 
+			<input type="checkbox" onclick="Toggle()" style="font-size: 10px;">
+			<label class="remem" style="font-size: 10px;">Show password</label> 
+			 
+			   <script>
+			   // Change the type of input to password or text
+				   function Toggle() {
+					   var temp = document.getElementById("typepass");
+					   if (temp.type === "password") {
+						   temp.type = "text";
+					   }
+					   else {
+						   temp.type = "password";
+					   }
+				   }
+		   </script>
+			<input type="checkbox" class="check" name="remember " required value>
+			<label class="remem" style="font-size: 10px;">Remember me</label> 
+			  
+			
+			 
+		
         <p id="err_msg"></p>
+		
+		
         <a href="../Forgot_Password/">Forgot your password?</a>
 				<button>Sign In</button>
 
