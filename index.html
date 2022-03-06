@@ -1010,7 +1010,9 @@
               { method : "post", body : new FormData(newsletterForm)}
             )
             .then( (res)=>
-              { swal("Thanks For connecting !","We will contact you soon !","success")})
+              { swal("Thanks For connecting !","We will contact you soon !","success")
+                newsletterForm.reset();            
+              })
             .catch( (err)=>{ swal("Error !", "Please try again !","error")})
           }
 
