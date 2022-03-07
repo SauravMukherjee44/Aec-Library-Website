@@ -68,13 +68,16 @@ window.onload = function () {
 
 // Display Constructor
 function Display() {}
+//All the books added by user
 
+const totalBooks=[];
 // Add methods to display prototype
 let countBooks = 0;
 Display.prototype.add = function (book) {
   console.log("Adding to UI");
   tableBody = document.getElementById("tableBody");
   countBooks = countBooks + 1;
+  totalBooks.push(book);
   let uiString = `<tr id="${countBooks}" style = "background: rgba( 148, 10, 10, 0.35 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 8.5px );
@@ -98,6 +101,7 @@ Display.prototype.edit = function (book) {
   console.log("Adding to UI");
   tableBody = document.getElementById("tableBody");
   const info=(document.getElementById(countBooks).childNodes);
+  
   info[1].textContent=book.date;
   info[3].textContent=book.name;
   info[5].textContent=book.author;
@@ -319,3 +323,119 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+
+
+//Filter logic
+
+const filterButton=document.getElementById('filter');
+
+const author=document.getElementById('filter_author');
+const category=document.getElementById('filter_category');
+const bookName=document.getElementById('filter_bookName');
+const remove=document.getElementById('remove_filters');
+console.log(remove);
+
+author.addEventListener('change',(e)=>{
+  filter(e);
+});
+
+category.addEventListener('change',(e)=>{
+  
+  filter(e);
+});
+
+
+remove.addEventListener('click',()=>{
+  console.log("rmoe");
+  display(totalBooks);
+  dateCheckbox.value=undefined
+    author.value='N/A';
+    category.value='N/A';
+    
+})
+
+
+function filter(event){
+  let filteredBooks=[...totalBooks];
+  console.log(filteredBooks);
+  const {name,value}=(event.target);
+  
+  
+  
+  
+  
+  if(name==='date'){
+    console.log("date");
+    if(value==='asc'){
+      filteredBooks=filteredBooks.sort((b1,b2)=>{
+        if(b1.date>b2.date) return 1;
+        else if(b1.date<b2.date) return -1;
+        else return 0;
+      })
+    }
+    if(value==='dsc'){
+      filteredBooks=filteredBooks.sort((b1,b2)=>{
+        if(b1.date>b2.date) return -1;
+        else if(b1.date<b2.date) return 1;
+        else return 0;
+      })
+    }
+   
+  }
+
+  if(author.value!=='N/A'){
+    
+    filteredBooks=filteredBooks.filter(book=>{
+      console.log(author.value===book.author);
+      if(author.value===book.author) return book;
+    })
+  }
+
+
+  if(category.value!=='N/A'){
+    console.log('here');
+    filteredBooks=filteredBooks.filter(book=>{
+      if(category.value===book.type) return book;
+    })
+  }
+
+
+    console.log('fil'+filteredBooks);
+    display(filteredBooks);
+    
+  }
+
+
+  function display(filteredBooks){
+    tableBody = document.getElementById("tableBody");
+    tableBody.innerHTML='';
+  
+    filteredBooks.forEach((book,index) => {
+     
+      
+      let uiString = `<tr style = "background: rgba( 148, 10, 10, 0.35 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 8.5px );
+      -webkit-backdrop-filter: blur( 8.5px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 ); color: white; font-weight: 900; font-size: 1.5rem;">
+                              <td> ${book.date}</td>
+                              <td>${book.name}</td>
+                              <td>${book.author}</td>
+                              <td>${book.type}</td>
+                              <td><button style="margin-top: 0px;" class="btn btn-success" id="edit" onclick="editfunction('${book.name}','${book.author}','${book.type}','${countBooks}','${book.date}')">Edit</button>
+                              </td?
+                              <td><button style="margin-top: 0px" class="btn btn-danger" id="edit" onclick="deletefunction('${countBooks}')">Delete</button>
+                              </td>
+                          </tr>`;
+      tableBody.innerHTML+=uiString
+    });
+  }
+
+  
+  
+
+  
+ 
+
+

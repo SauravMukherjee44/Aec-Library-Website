@@ -259,12 +259,10 @@
       </div>
       <div class="modal-body filter_modal">
         <h2>Date</h2>
-        <div class="form-check">
-          <input class="form-check-input filter_date_checkbox" type="checkbox" name="exampleRadios" id="exampleRadios1"  value="option1">
-          <label class="form-check-label" for="exampleRadios1">
-            Newest first
-          </label>
-        </div>
+        
+
+         
+       
         
         <h2>Author</h2>
         
@@ -272,7 +270,7 @@
 
         <div class="col">
 
-          <select class="form-check-input1" name="author" id="author" onchange='CheckAuthor(this.value);' style="z-index: 1;" >
+          <select class="form-check-input1" name="filter_author" id="filter_author" style="z-index: 1;" >
 
 
             <option value="N/A">Select Author</option>
@@ -305,7 +303,7 @@
 
             <div class="col" style="height: 82px;">
               
-                <select class="form-check-input" name="category" id="category" style="z-index: 1;">
+                <select class="form-check-input" name="filter_category" id="filter_category" style="z-index: 1;">
                   <option value="N/A">Select Category</option>
                   <option value="Arts & Music">Arts & Music</option>
                   <option value="Biographies">Biographies</option>
@@ -341,16 +339,11 @@
 
         <hr>
 
-        <h2>Name</h2>
-      
-          <div class="col">
-            <input type="text" class="input-box" id="bookName" placeholder="Book Name" />
-          </div>
         
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="filter">Save changes</button>
+        <button type="button" id="remove_filters" class="btn btn-secondary" data-dismiss="modal">Remove filters</button>
+        <button type="button" class="btn btn-primary" id="filter">Filter</button>
       </div>
     </div>
   </div>

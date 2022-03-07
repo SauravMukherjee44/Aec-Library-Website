@@ -2273,6 +2273,10 @@ div.desc {
 .filter_modal{
   text-align: left;
 }
+
+.filter_modal .filter_date_checkbox{
+  width: 53%;
+}
 .filter_modal h2{
   text-align: left;
   font-size: 27px;
