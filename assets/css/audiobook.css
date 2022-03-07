@@ -11,15 +11,20 @@
     border-radius: 5px;
     font-size: 1rem;
     transition: 0.5s;
-
+    opacity: 0.9;
     cursor: pointer;
     display: inline-block;
     padding: 10px;
     background: #3590f8;
-    border-radius: 4px;
-    color: #fff;
+    border-radius: 10px;
+    color: #fff !important;
     text-transform: uppercase;
     line-height: 20px;
+    background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
+   background-image: -moz-linear-gradient(top, #5282d4, #28667d);
+   background-image: -ms-linear-gradient(top, #5282d4, #28667d);
+   background-image: -o-linear-gradient(top, #5282d4, #28667d);
+   background-image: linear-gradient(to bottom, #5282d4, #28667d);
     @include transition(box-shadow .25s ease);
 
     &:after {
@@ -43,4 +48,10 @@
             content: '';
         }
     }
+}
+.audiobook:hover, .audiobook:focus, .audiobook:active{
+	opacity: 1;
+    transform: scale(0.97);
+    box-shadow: 0 2px #174c85; 
+
 }

@@ -77,7 +77,7 @@
     <img src="./assets/images/bubble.png" alt="bubble">
   </div>
 
-
+  <!--Go to Top Button-->
   <div id="topBtn" title="Go to Top">
     <a href="#"><span class="fa fa-angle-up"></span></a>
   </div>
@@ -144,8 +144,8 @@
 
   <header class="header">
     <ul>
-      <li class="logo"><img src="assets/logos/finalLogo.png"
-          alt="AEC Library" class="logo-img"> AEC LIBRARY</li>
+      <li class="logo"><a class="nav-link" href="index.html"><img src="assets/logos/finalLogo.png"
+        alt="AEC Library" class="logo-img"> AEC LIBRARY</a></li>
       <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i class="fas fa-sign-in-alt"></i> LOGIN </a></li>
     </ul>
   </header>
@@ -163,7 +163,7 @@
             <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
             <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
             <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
-            <li class="nav-item"><a href="./sign up page/index.html"><i class="fas fa-sign-in-alt"></i>SIGN UP</a></li>
+            <li class="nav-item"><a href="./blog.html"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
             <li class="nav-item"><a href="./public/contact us .html"><i class="fas fa-address-book"></i>CONTACT US</a></li>
             <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
           </ul>
@@ -261,7 +261,7 @@
             <select class="form-check-input1" name="category" id="category" style="z-index: 1;">
 
 
-              <option value="N/A">Select Category</option>
+              <option value="" disabled selected>Select Category</option>
               <option value="Arts & Music">Arts & Music</option>
               <option value="Biographies">Biographies</option>
               <option value="Business">Business</option>
@@ -335,22 +335,22 @@
             <h2 class="search-heading">Choose and read books</h2>
               <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
               <ul id="myUL">
-                <li><a href="http://Notes/physicselectricitynotes.pdf">Current Electricity Problem book</a></li>
-                <li><a href="http://Notes/physicsmagnetism.pdf">Electricity and Magnetism</a></li>
-                <li><a href="http://Notes/chemsurfacechem.pdf">Chemistry</a></li>
-                <li><a href="http://Notes/chempblock.pdf">p-Block Elements chemistry </a></li>
-                <li><a href="http://Notes/csds.pdf">Data structure in C & C++</a></li>
-                <li><a href="http://Notes/sqldbms.pdf">DBMS</a></li>
-                <li><a href="http://Notes/bsprincipleofmanagement.pdf">Principal of Management</a></li>
-                <li><a href="http://Notes/ecomoneyandbanking.pdf">Economics of Money and Banking</a></li>
-                <li><a href="http://Samplepapers/cbse10science.pdf">Science Sample Question Paper for class-10</a></li>
-                <li><a href="http://Samplepapers/cbse10science1.pdf">Science Question Bank for class-10</a></li>
-                <li><a href="http://Samplepapers/class12phy.pdf">Physics Sample Question Paper for class-12</a></li>
-                <li><a href="http://Samplepapers/class12chem.pdf">Chemistry Sample Question Paper for class-12</a></li>
-                <li><a href="http://Samplepapers/class12bio.pdf">Biology Sample Question Paper for class-12</a></li>
-                <li><a href="http://Samplepapers/class12maths.pdf">CBSE Mathmatics Sample Question Paper for class-12</a></li>
-                <li><a href="http://Samplepapers/jee.pdf">JEE MAIN Sample Question Paper</a></li>
-                <li><a href="http://Samplepapers/neet.pdf">NEET Sample Question Paper</a></li>
+                <li><a href="./Notes/physicselectricitynotes.pdf">Current Electricity Problem book</a></li>
+                <li><a href="./Notes/physicsmagnetism.pdf">Electricity and Magnetism</a></li>
+                <li><a href="./Notes/chemsurfacechem.pdf">Chemistry</a></li>
+                <li><a href="./Notes/chempblock.pdf">p-Block Elements chemistry </a></li>
+                <li><a href="./Notes/csds.pdf">Data structure in C & C++</a></li>
+                <li><a href="./Notes/sqldbms.pdf">DBMS</a></li>
+                <li><a href="./Notes/bsprincipleofmanagement.pdf">Principal of Management</a></li>
+                <li><a href="./Notes/ecomoneyandbanking.pdf">Economics of Money and Banking</a></li>
+                <li><a href="./Samplepapers/cbse10science.pdf">Science Sample Question Paper for class-10</a></li>
+                <li><a href="./Samplepapers/cbse10science1.pdf">Science Question Bank for class-10</a></li>
+                <li><a href="./Samplepapers/class12phy.pdf">Physics Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/class12chem.pdf">Chemistry Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/class12bio.pdf">Biology Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/class12maths.pdf">CBSE Mathmatics Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/jee.pdf">JEE MAIN Sample Question Paper</a></li>
+                <li><a href="./Samplepapers/neet.pdf">NEET Sample Question Paper</a></li>
                 <li><a href="https://drive.google.com/file/d/1IjxZaCtEeMwdmuO2b0Vs45Su8jvG3fwa/view">Science Book for Class-10</a></li>
                 <li><a href="https://drive.google.com/file/d/1cN04y7Gqe03HEb_zXbHdhpeA3AsRW1g5/view">Science Book for Class-09</a></li>
                 <li><a href="https://drive.google.com/file/d/12a0_JGZ2GTqUzckFDdBLLaJGoV8jKKV0/view">Science Book for Class-08</a></li>
@@ -545,7 +545,7 @@
             <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <a class="audiobook" id="nyan-btn">play / pause</a>
+            <a class="audiobook" id="nyan-btn">play</a>
           </div>
 
 
@@ -558,7 +558,7 @@
             <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <a class="audiobook" id="nyan-btn">play / pause</a>
+            <a class="audiobook" id="nyan-btn">play</a>
           </div>
 
 
@@ -570,7 +570,7 @@
             <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <a class="audiobook" id="nyan-btn">play / pause</a>
+            <a class="audiobook" id="nyan-btn">play</a>
           </div>
 
 
@@ -583,7 +583,7 @@
             <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <a class="audiobook" id="nyan-btn">play / pause</a>
+            <a class="audiobook" id="nyan-btn">play</a>
           </div>
 
 
@@ -968,34 +968,62 @@
       <li><a href="#">Careers</a></li>
       <li><a href="#">Information</a></li>
     </ul>
-   <ul>
-    <li class="newsletter-heading"><a href="" class="heading" onclick="return false;">Subscribe to our newsletter</a> </li>
-    <form method="post" autocomplete="off" name="google-sheet" bgcolor="#00000">
-      <div class="newsletter-form">
-         <div class="newsletter-name"> <input type="text" class="input" name="Name" required placeholder="&#xf007;   Enter your name"></div>
-        <div class="newsletter-email"> <input type="text" class="input" name="Email" required placeholder="&#xf0e0;   Enter your email"></div>
-     <div class="newsletter-submit"><button type="submit" id="btnSubmit" onclick="alert('Thank You.. \n Your Valuable Response is Stored successfully!!')">SUBSCRIBE</button></div> 
-    </div>    
-		 <div id="msg"></div>
-		 <script>
-				const scriptURL = 'https://script.google.com/macros/s/AKfycbz5WCRS6VpGC_cjBpJNlY4A-MkwiOUCDv0BSSniX0d0AgcVmFPU/exec'
-				const form = document.forms['google-sheet']
+    <ul>
+        <li class="newsletter-heading">
+          <a href="" class="heading">Subscribe to our newsletter</a> 
+        </li>
 
-				form.addEventListener('submit', e =>{
-				e.preventDefault()
-				fetch(scriptURL, {method: 'post', body: new FormData(form)})
-				.then(reponse => alart("Thanks For Connecting..! We will Contact you soon..."))
-				.catch(error => console.error('Error!', error.message))
-				})
-
-			</script>
-			<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" >
-
+      <form method="post" autocomplete="off" name="google-sheet" bgcolor="#00000" action="">
+        <div class="newsletter-form">
+          <div class="newsletter-name"> <input type="text" class="input" name="Name" id="newsletterName"  placeholder="&#xf007;   Enter your name"></div>
+          <div class="newsletter-email"> <input type="text" class="input" name="Email" id="newsletterEmail"  placeholder="&#xf0e0;   Enter your email"></div>
+          <div class="newsletter-submit"><button type="submit" id="btnSubmit" >SUBSCRIBE</button></div> 
+        </div>    
+        <div id="msg"></div>
       </form>
-
     </ul>
+
+    <!-- newsletter form validation starts  -->
+		 <script>
+				const scriptURL = 'https://script.google.com/macros/s/AKfycbz5WCRS6VpGC_cjBpJNlY4A-MkwiOUCDv0BSSniX0d0AgcVmFPU/exec';
+				const newsletterForm= document.forms['google-sheet'];
+        const btnSubmit = document.getElementById("btnSubmit");
+        const email = document.getElementById("newsletterEmail");
+        const name = document.getElementById("newsletterName");
+
+        function isEmail(email) {
+          let regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return regexp.test(String(email).toLowerCase());
+        }
+
+        newsletterForm.addEventListener("submit",(event)=>{
+          event.preventDefault();
+          if(name.value == ""){
+            swal("Error!","Please enter a valid name !","error");
+          }
+          else if (!isEmail(email.value)){
+            swal("Error!","Please enter a valid email !","error");
+          }
+          else{
+            fetch(
+              scriptURL,
+              { method : "post", body : new FormData(newsletterForm)}
+            )
+            .then( (res)=>
+              { swal("Thanks For connecting !","We will contact you soon !","success")
+                newsletterForm.reset();            
+              })
+            .catch( (err)=>{ swal("Error !", "Please try again !","error")})
+          }
+
+        })
+
+			</script>      
+    <!-- newsletter form validation ends  -->
+
   </div>
+		<!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" >
   <div>
     <footer>
       <div class="footer-wrapper">
@@ -1051,7 +1079,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="./assets/js/script.js"></script>
 
-  <!-- Go to Top  -->
+  <!-- Go to Top Button-->
   <script>
     $(document).ready(function () {
       $(window).scroll(function () {
@@ -1071,6 +1099,7 @@
       });
     });
   </script>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
@@ -1086,6 +1115,7 @@
       duration: 1000,
     });
   </script>
+
   <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 
   <script>
@@ -1102,8 +1132,8 @@
    else
      element.style.display='none';
   }
-
   </script>
+
   <script>
     count1 = 0;
         urlarray1 = ["Blog/img1.jpg","Blog/img2.jpg","Blog/img3.jpg","Blog/img5.jpg","Blog/img2.jpg"]

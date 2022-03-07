@@ -23,6 +23,7 @@
 
   <link rel="icon" href=../assets/Favicons/8.png> <title>Donate Books</title>
   <style>
+   
   table {
   border-collapse: collapse;
   width: 100%;
@@ -52,12 +53,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home <span
               class="sr-only">(current)</span></a>
                  </li>
                 <li class="nav-item"><a href="../about.html" class="nav-link" target="_blank"> <i class="fas fa-book"></i> About </a></li>
-        <li class="nav-item"><a href="#" class="nav-link" target="_blank" onclick="return false;"> <i
+        <li class="nav-item active"><a href="#" class="nav-link" target="_blank" onclick="return false;"> <i
               class="fas fa-book"></i> Donate Books </a></li>
         <li class="nav-item"><a href=".././resource.html" class="nav-link"> <i class="fas fa-external-link-alt"></i>
             Resources</a></li>
@@ -74,75 +75,61 @@ tr:nth-child(even) {background-color: #f2f2f2;}
       <h2>Book Donation Form 📚</h2>
       <form id="donation_form">
         <div class="user-box">
-          <input type="text" id="name" name="" required="">
+          <input class="form__input form-control" type="text" id="name" name="" required="">
           <label>Name of Donated Book</label>
         </div>
         <div class="user-box">
-          <input type="email" id="email" name="" required="">
+          <input class="form__input form-control" type="email" id="email" name="" required="">
           <label>Email</label>
         </div>
         <div class="user-box">
-          <input type="number" id="contact" name="" required="">
+          <input class="form__input form-control" type="tel" id="contact" name="" required="">
           <label>Contact Number</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" id="address" required="">
+          <input class="form__input form-control" type="text" name="" id="address" required="">
           <label>Address</label>
         </div>
         <div class="user-box">
           <label>Select Country: </label><br><br>
-          <select name="state" class="country" id="countySel" size="1" required="">
+          <select name="state" class="country form-control" id="countySel" size="1" required="">
            <option value="" selected="selected">Select Country</option>
           </select>
-          <br>
-          <br>
         </div>
         <div class="user-box">
           <label>Select State: </label><br><br>
-          <select name="country" class="state" id="stateSel" size="1" required="">
+          <select name="country" class="state form-control" id="stateSel" size="1" required="">
           <option value="" selected="selected">Please select State first</option>
           </select>
-          <br>
-          <br>
         </div>
         <div class="user-box">
           <label>Select City: </label><br><br>
-          <select name="district" class="city" id="districtSel" size="1" required="">
+          <select name="district" class="city form-control" id="districtSel" size="1" required="">
          <option value="" selected="selected">Please select City first</option>
          </select>
-         <br>
-          <br>
         </div>
         <div class="user-box">
-          <input id="zip" type="text" name="" required="">
+          <input class="form__input form-control" id="zip" type="text" name="" required="">
           <label>Zip</label>
         </div>
-
-        <div>
-          <a href="terms&conditions.html"> <u> Terms and Conditions </u></a>
-        </div>
-
         <div class="user-box">
-          <input type="text" name="" required="">
+          <input class="form__input form-control" type="text" name="" required="">
           <label>Landmark (Optional)</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
+          <input class="form__input form-control" type="text" name="" required="">
           <label>Alternate Phone (Optional)</label>
         </div>
-        <input class="form-check-input" type="checkbox" id="gridCheck" required="">
-        <div class="user-box">
-          <label class="form-check-label" for="gridCheck">
-            I have read and understood the terms and conditions
-          </label>
+        <div class="form-check">
+          <input type="checkbox" class="form-control form-check-input form-checkbox" id="gridCheck" required>
+          <p>
+            <label class="form-check-label" for="gridCheck">I have read and understood the </label>
+            <a class="form-check-label form-check-link" href="terms&conditions.html"> Terms and Conditions</a>
+          </p>
         </div>
-        <Button class="submit-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="submit-btn">
           Submit
-        </Button>
+        </button>
       </form>
     </div>
   </div>
