@@ -413,7 +413,7 @@ function filter(event){
     filteredBooks.forEach((book,index) => {
      
       
-      let uiString = `<tr style = "background: rgba( 148, 10, 10, 0.35 );
+      let uiString = `<tr id=${index} style = "background: rgba( 148, 10, 10, 0.35 );
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
       backdrop-filter: blur( 8.5px );
       -webkit-backdrop-filter: blur( 8.5px );
