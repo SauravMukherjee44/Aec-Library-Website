@@ -101,7 +101,13 @@ Display.prototype.edit = function (book) {
   console.log("Adding to UI");
   tableBody = document.getElementById("tableBody");
   const info=(document.getElementById(countBooks).childNodes);
-  
+  console.log(totalBooks);
+  console.log(countBooks);
+  totalBooks[countBooks-1].name=book.name;
+  totalBooks[countBooks-1].author=book.author
+  totalBooks[countBooks-1].type=book.type
+  totalBooks[countBooks-1].date=book.date
+
   info[1].textContent=book.date;
   info[3].textContent=book.name;
   info[5].textContent=book.author;
