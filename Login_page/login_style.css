@@ -68,9 +68,10 @@ a {
 button {
   background-color: #296288;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
   padding: 1px 15px;
+  margin-bottom: 30px;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
