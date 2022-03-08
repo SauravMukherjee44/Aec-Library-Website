@@ -356,7 +356,7 @@ footer {
     position: relative;
     width: 100%;
     
-    background-color: #6f4e37b0 !important
+    background-color: rgba(73, 46, 13, 0.781) !important
 
   }
   
@@ -384,10 +384,10 @@ footer {
   .footer-col ul li a {
     text-decoration: none;
     opacity: 0.8 ;
-    color: rgb(241, 181, 16);
+    color: cornsilk;
   }
   .footer-col ul li a:hover{
-    color:#00ffd5;
+    color:#24190b;
   }
 
   .footer-col ul li {
@@ -420,6 +420,11 @@ footer {
     margin: 0.2rem 0;
     gap: 0.3rem;
   }
+  .ql{
+  font-size:32px;
+  color: bisque;
+  font-weight: 750;
+  }
   
   .icons ul {
     display: flex;
@@ -449,7 +454,7 @@ footer {
   
   .icons ul li a .icon {
     position: relative;
-    color: #262626;
+    color: #161616;
     transition: 0.5s;
     z-index: 3;
   }
@@ -570,11 +575,15 @@ footer {
 .libpos{
   border-radius: 10%;
 }
-
+.btn1{
+  font-size:22px;
+  font-weight:600;
+  color:white;
+}
 .animated-border-button {
-  background-color: #c08d41;
+  background-color: #eea63be0;
   border: none;
-  color: #ffffff;
+  /* color: #ffffff; */
   outline: none;
   padding: 12px 40px 10px;
   position: relative;
@@ -588,18 +597,18 @@ footer {
   content: '';
   height: 0;
   position: absolute;
-  width: 24px;
+  width: 22px;
 }
 
 .animated-border-button:before {
-  border-top: 2px solid #3f2c10;
+  border-top: 3px solid #2e200c;
   right: 0;
-  top: -4px;
+  top: -5px;
 }
 
 .animated-border-button:after {
-  border-bottom: 2px solid #3f2c10;
-  bottom: -4px;
+  border-bottom: 3px solid #2e200c;
+  bottom: -5px;
   left: 0;
 }
 
