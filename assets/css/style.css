@@ -2210,7 +2210,7 @@ select {
 .nav-item a {
 	text-decoration: none;
 }
-.faq-heading {
+#faq-heading {
 	text-align: center;
 	padding: 10px 60px;
 	color: black;
