@@ -146,7 +146,7 @@ label {
 }
 
 .body-style {
-	background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
+	background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");	
 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -517,7 +517,7 @@ footer p {
 }
 
 .logo-img {
-	margin-left: 40px;
+	margin-left: 0px;
 	/* Width and height same to make icon look more professional */
 	height: 3rem;
 	width: 3rem;
@@ -534,7 +534,7 @@ footer p {
 a.nav-link {
 	/* To heighlight */
 	color: floralwhite !important;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
@@ -545,9 +545,16 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 	height: 45px;
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index:1;
+}
+
 a.nav-link {
-	padding-left: 2rem !important;
-	padding-right: 2rem !important;
+	padding-left: 0rem !important;
+	padding-right: 0.5rem !important;
 	padding-bottom: 0rem;
 }
 
@@ -1397,8 +1404,8 @@ p {
 
 /* Contact form position styles*/
 .login-box {
-	width: 60%;
-	padding: 40px;
+	width: 50%;
+	padding: 20px;
 	background: rgba(0, 0, 0, 0.25);
 	box-sizing: border-box;
 	border-radius: 20px;
@@ -1411,7 +1418,7 @@ p {
 
 .login-box .user-box {
 	position: relative;
-	margin: 3em 0;
+	margin: 2em 0;
 	width: 100%;
 }
 
@@ -1798,7 +1805,7 @@ a {
 	list-style: none;
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: large;
-	margin: 5px;
+	margin: 3px;
 }
 .contact .email {
 	width: 100%;
@@ -1882,7 +1889,7 @@ a {
 	/* margin-top: 17px; */
 	display: flex;
 	margin: 0 auto;
-	margin-bottom: 2px;
+	margin-bottom: 1px;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
@@ -1893,13 +1900,13 @@ a {
 }
 
 .new-nav button {
-	margin-top: 5px;
+	margin-top: 2px;
 	margin-left: 85%;
 }
 
 .new-nav li {
 	font-family: sans-serif;
-	margin: 10px 25px;
+	margin: 4px 8px;
 	list-style-type: none;
 }
 
@@ -1919,7 +1926,7 @@ a {
 
 .contain {
   height: 355px;
-  width: 100%;
+  width: 90%;
   color: white;
   margin-top: 21px;
   margin-left: 50px;
@@ -1998,8 +2005,9 @@ a {
 	display: flex;
 	margin-left: 20px;
 	width: 100%;
-	margin-right: 0;
+	margin-right: 30px;
 	padding-left: 30px;
+	padding-top: 60px;
 	margin-left: 60px;
 }
 /* filter book by name */
@@ -2199,7 +2207,7 @@ select {
 }
 
 .nav-item a {
-	padding: 10px 10px 15px;
+	padding: 10px 5px 15px;
 }
 
 .nav-item :hover {
@@ -2231,7 +2239,7 @@ select {
 	cursor: pointer;
 	padding: 20px 20px;
 	width: 60%;
-	font-size: 1.47rem;
+	font-size: 1rem;
 	transition: 1.4s ease;
 	margin: auto;
 	border-bottom: 2px solid #000;
@@ -2241,7 +2249,7 @@ select {
 	margin: auto;
 	width: 60%;
 	padding: 0px 18px;
-	font-size: 1.36rem;
+	font-size: 1rem;
 	background-color: #f3d094;
 	display: none;
 	overflow: hidden;
@@ -2367,7 +2375,7 @@ select {
 		font-size: 1rem;
 	}
 	.logo-img {
-		margin-left: 5px;
+		margin-left: 2px;
 	}
 	.new-nav ul {
 		flex-direction: column;
