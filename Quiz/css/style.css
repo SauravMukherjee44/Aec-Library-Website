@@ -134,6 +134,7 @@
   text-align: center;
   border: 0.1rem solid #56a5eb;
   margin-bottom: 1rem;
+  border-radius: 10px;
   color: #56a5eb;
   background-color: white;
 }

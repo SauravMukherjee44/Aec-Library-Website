@@ -1085,6 +1085,7 @@ strong {
 	font-family: "Poppins", sans-serif;
 	display: flex;
 	justify-content: center;
+	margin-top: 15px;
 	align-items: center;
 	font-size: 32px;
 	font-weight: 500;
@@ -1403,7 +1404,8 @@ p {
 	box-sizing: border-box;
 	border-radius: 20px;
 	transition-duration: 0.5s;
-	margin: 0 auto;
+	margin-bottom: 50px !important;
+	margin-left: 80px;
 	box-shadow: 0px 0px 15px 5px lavender;
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
@@ -1419,10 +1421,10 @@ p {
 	position: relative;
 	width: max-content;
 	margin: 0 auto 0.7em;
-	text-decoration: none;
-	font-size: 1.8rem;
-	color: rgb(255, 183, 0);
-	letter-spacing: 3px;
+	text-decoration: underline;
+	font-size: 2.8rem;
+	color: rgb(235, 245, 247);
+	letter-spacing: 1.5px;
 }
 
 /* styles for input fields  */
@@ -1919,10 +1921,10 @@ a {
 
 .contain {
   height: 355px;
-  width: 100%;
+  width: 80%;
   color: white;
   margin-top: 21px;
-  margin-left: 50px;
+  margin-left: 80px !important;
   background: rgba(92, 92, 81, 0.582);
   border-radius: 30px;
   display: flex;
@@ -1962,6 +1964,7 @@ a {
 	display: inline-block;
 	border: 1px solid grey;
 	border-radius: 12px;
+	margin-left: 30px;
 	align-items: center;
 }
 
