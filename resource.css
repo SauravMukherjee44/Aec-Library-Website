@@ -865,6 +865,11 @@ ul {
   ul li:hover span {
     color:#fff;
   }
+
+  /* Footer section update */
+  .contact{
+    background: linear-gradient(to right,coral,orange);
+  }
   
   ul li:hover:nth-child(1) a{
     background: #3b5998;
