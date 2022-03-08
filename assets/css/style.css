@@ -1678,7 +1678,7 @@ input[type="radio"] {
 .contact {
 	display: flex;
 	flex-flow: row wrap;
-	background-color: rgb(153, 150, 150);
+	background:linear-gradient(to right, lightblue,gray);;
 	width: 100%;
 	justify-content: space-around;
 	padding: 1.2rem;
@@ -1792,10 +1792,11 @@ input[type="radio"] {
 
 /* end of newsletter styles */
 
-.contact ul li,
-a {
+.contact ul li, a
+ {
 	color: black;
 	list-style: none;
+	text-decoration: none;
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: large;
 	margin: 5px;
@@ -1815,6 +1816,10 @@ a {
 	font-weight: bolder;
 	padding-bottom: 2%;
 	padding-right: 18px;
+	cursor: pointer;
+}
+.heading:hover{
+	color: #002bff;
 }
 
 .footer {
