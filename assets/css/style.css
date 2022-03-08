@@ -1102,8 +1102,8 @@ strong {
 }
 
 .suggestion .list {
-	padding: 0;
-	margin: 0;
+	padding: 80px;
+    margin-top: 20px;
 }
 
 .suggestion .list .suggest {
