@@ -517,7 +517,7 @@ footer p {
 }
 
 .logo-img {
-	margin-left: 0px;
+	margin-left: 40px;
 	/* Width and height same to make icon look more professional */
 	height: 3rem;
 	width: 3rem;
@@ -534,7 +534,7 @@ footer p {
 a.nav-link {
 	/* To heighlight */
 	color: floralwhite !important;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
@@ -545,16 +545,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 	height: 45px;
 }
 
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index:1;
-}
-
 a.nav-link {
-	padding-left: 0rem !important;
-	padding-right: 0.5rem !important;
+	padding-left: 2rem !important;
+	padding-right: 2rem !important;
 	padding-bottom: 0rem;
 }
 
@@ -1404,8 +1397,8 @@ p {
 
 /* Contact form position styles*/
 .login-box {
-	width: 50%;
-	padding: 20px;
+	width: 60%;
+	padding: 40px;
 	background: rgba(0, 0, 0, 0.25);
 	box-sizing: border-box;
 	border-radius: 20px;
@@ -1418,7 +1411,7 @@ p {
 
 .login-box .user-box {
 	position: relative;
-	margin: 2em 0;
+	margin: 3em 0;
 	width: 100%;
 }
 
@@ -1805,7 +1798,7 @@ a {
 	list-style: none;
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: large;
-	margin: 3px;
+	margin: 5px;
 }
 .contact .email {
 	width: 100%;
@@ -1900,13 +1893,13 @@ a {
 }
 
 .new-nav button {
-	margin-top: 2px;
+	margin-top: 5px;
 	margin-left: 85%;
 }
 
 .new-nav li {
 	font-family: sans-serif;
-	margin: 4px 8px;
+	margin: 10px 25px;
 	list-style-type: none;
 }
 
