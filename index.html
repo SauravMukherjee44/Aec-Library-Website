@@ -647,7 +647,7 @@
          <p>October 30, 2021</p>
       </div>
       <div class="info">
-        <p>Web development refers to building, creating, and maintaining websites. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.
+        <p>Web development refers to building, creating, and maintaining websites. The web development process includes web design, web content development,client-side/server-side scripting and network security configuration, among other tasks.
        </p>
       </div>
       <a href=https://www.w3schools.com/whatis/" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
@@ -679,7 +679,60 @@
       <a href=https://www.codecademy.com/catalog/language/python" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
      </div>
     </div>
+<!-----------------------------newline------------------------------->
+    <div class="blog-container">
+      <div class="card1">
+       <div class="card-bg"></div>
+        <div class="owner">
+          <h1>C++</h1>
+          <p>Posted by Geeksforgeeks </p>
+          <p>November 26, 2019</p>
+        </div>
+        <div class="info">
+          <p>C++ is a general purpose programming language and widely used now a days for competitive programming. It has imperative, object-oriented and generic programming features. C++ runs on lots of platform like Windows, Linux, Unix, Mac etc.</p>
+        </div>
+        <a href="https://www.geeksforgeeks.org/cpp-tutorial/"target="_blank" class="read-more"> Read more<span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
+      </div>
+      <div class="card2">
+       <div class="card-bg"></div>
+       <div class="owner">
+         <h1>Data structure</h1>
+          <p>Posted by  studytonight</p>
+          <p>January 24 2021</p>
+       </div>
+       <div class="info">
+         <p>Data Structures are structures programmed to store ordered data, so that various operations can be performed on it easily. It represents the knowledge of data to be organized in memory. It should be designed and implemented in such a way that it reduces the complexity and increases the efficiency.</p>
+       </div>
+       <a href="https://www.studytonight.com/data-structures/" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
+      </div>
+      <div class="card3">
+       <div class="card-bg"></div>
+       <div class="owner">
+         <h1>Robot Programming </h1>
+          <p>Posted by  Nick McCrea</p>
+          <p>October 16, 2018</p>
+       </div>
+       <div class="info">
+         <p>Let's face it, robots are cool. In this post, Toptal Engineer Nick McCrea provides a step-by-step, easy-to-follow tutorial (with code samples) that walks you through the process of building a basic autonomous mobile robot.</p>
+       </div>
+       <a href="https://www.toptal.com/robotics/programming-a-robot-an-introductory-tutorial" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
+      </div>
+      <div class="card4">
+       <div class="card-bg"></div>
+       <div class="owner">
+         <h1>Android Develpoment</h1>
+          <p>Posted by  Developer</p>
+          <p>february 20, 2022</p>
+       </div>
+       <div class="info">
+         <p>Welcome to Android Basics in Kotlin! In this course, you'll learn the basics of building Android apps with the Kotlin programming language. Along the way, you'll develop a collection of apps to start your journey as an Android developer.This course will help prepare you for the Associate Android Developer certification exam.</p>
+       </div>
+       <a href="https://developer.android.com/courses/android-basics-kotlin/course" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
+      </div>
+     </div>
 
+    
+<!--------------------------------endline------------------------------>
 
 
   <div class="update">
@@ -912,7 +965,7 @@
       <li><a href="#">Information</a></li>
     </ul>
    <ul>
-      <li><a href="" class="heading" onclick="return false;">Subscribe to our newsletter</a> </li>
+      <li><a href="" class="heading" onclick="false;">Subscribe to our newsletter</a> </li>
 <br>
       <form method="post" autocomplete="off" name="google-sheet" bgcolor="#00000">
 
@@ -928,11 +981,11 @@
 		 <div id="msg"></div>
 		 <script>
 				const scriptURL = 'https://script.google.com/macros/s/AKfycbz5WCRS6VpGC_cjBpJNlY4A-MkwiOUCDv0BSSniX0d0AgcVmFPU/exec'
-				const form = document.forms['google-sheet']
+				const forms = document.forms['google-sheet']
 
-				form.addEventListener('submit', e =>{
+				forms.addEventListener('submit', e =>{
 				e.preventDefault()
-				fetch(scriptURL, {method: 'post', body: new FormData(form)})
+				fetch(scriptURL, {method: 'post', body: new FormData(forms)})
 				.then(reponse => alart("Thanks For Connecting..! We will Contact you soon..."))
 				.catch(error => console.error('Error!', error.message))
 				})
