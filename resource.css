@@ -354,6 +354,9 @@ h3.hover-underline-animation {
   width: 22%;
   margin-top: 10px;
 }
+.NC:hover{
+  transform: scale(1.04);
+}
 /* Audio Books*/
 #audio-books {
   width: 100%;
