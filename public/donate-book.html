@@ -83,7 +83,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
           <label>Email</label>
         </div>
         <div class="user-box">
-          <input class="form__input form-control" type="tel" id="contact" name="" required="">
+          <input class="form__input form-control" type="tel" id="contact" name="" required="" onchange="validate_phone(document.getElementById('contact'))">
           <label>Contact Number</label>
         </div>
         <div class="user-box">
@@ -117,7 +117,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
           <label>Landmark (Optional)</label>
         </div>
         <div class="user-box">
-          <input class="form__input form-control" type="text" name="" required="">
+          <input class="form__input form-control" id="alt_contact" type="text" name="" required="" onchange="validate_phone(document.getElementById('alt_contact'))">
           <label>Alternate Phone (Optional)</label>
         </div>
         <div class="form-check">
@@ -198,7 +198,22 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   const _supabase = createClient(supabaseUrl, supabaseAnonKey);
 
   const donatedBook = document.querySelector('.donated_book');
+  function validate_phone(input){
+    var phone = /^\d{10}$/;
+    if(input.value.match(phone)){
+      return true;
+    }
+    else{
+      alert("Please enter a valid phone number")
+      return false;
+    }
 
+  }
+
+  function reset_form(){
+    document.getElementById("donation_form").reset();
+
+  }
 
   donationForm.addEventListener('submit',e=>{
     e.preventDefault();
@@ -221,6 +236,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         }
         else{
         alert('Data Added');
+        reset_form();
         }
       })
   })
