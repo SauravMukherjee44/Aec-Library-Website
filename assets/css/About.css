@@ -355,7 +355,10 @@ a.nav-link {
 footer {
     position: relative;
     width: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #6f4e37b0 !important
 
   }
@@ -365,6 +368,9 @@ footer {
   }
 
   .footer-col ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 0;
     padding: 0;
     list-style: none;
@@ -373,12 +379,6 @@ footer {
     text-align: center;
     border-radius: 0px;
     color:rgb(255, 255, 255);
-    display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          align-content: center;
-          justify-content: center;
-    
   }
 
   .footer-col ul li a {
@@ -392,7 +392,6 @@ footer {
 
   .footer-col ul li {
     display: inline-block;
-
     padding: 0px 20px;
     margin: 10px;
 
@@ -404,13 +403,13 @@ footer {
     text-align: center;
   }
 
-  .footer-col ul {
+  /* .footer-col ul {
     margin-left: 140px;
   }
 
   .footer-col .address{
     margin-left: 10px;
-  }
+  } */
 
   
   .footer-wrapper {
@@ -418,6 +417,7 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: 0.2rem 0;
+    padding: 10px;
     gap: 0.3rem;
   }
   
@@ -426,21 +426,27 @@ footer {
     margin: 0;
     padding: 0;
   }
+  .icons i{
+    font-size: 30px;
+  }
   
   .icons ul li {
     list-style: none;
   }
   
   .icons ul li a {
-    display: block;
+    /* display: block; */
+    display: flex;
     position: relative;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     background-color: #fff;
     text-align: center;
     line-height: 20px;
     font-size: 15px;
     margin: 0 0 0 20px;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     overflow: hidden;
     z-index: 1;
@@ -560,6 +566,9 @@ footer {
     footer {
         font-size: 12px;
     }
+    .icons i{
+      font-size: 25px;
+    }
 
     a.nav-link {
         margin: 5px 40px;
@@ -568,7 +577,11 @@ footer {
 }
 
 .libpos{
-  border-radius: 10%;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-bottom: 20px;
 }
 
 .animated-border-button {

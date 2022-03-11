@@ -474,30 +474,46 @@ footer p {
 	color: black;
 }
 
+/* Go to Top Button styling */
+
 #topBtn {
-	position: fixed;
-	bottom: 10px;
-	right: 30px;
-	z-index: 9;
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 0.3 ease-in-out;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  z-index: 9;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
 }
 
 #topBtn a {
-	height: 39px;
-	width: 37px;
-	text-align: center;
-	background: #000;
-	display: block;
-	border-radius: 10px;
-	cursor: pointer;
+  height: 40px;
+  width: 38px;
+  text-align: center;
+  background: #361500;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 #topBtn a span {
-	color: #f2f2f2;
-	line-height: 39px;
-	font-size: 28px;
+  color: #EFFFFD;
+  width: 38px;
+  line-height: 39px;
+  font-size: 32px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#topBtn a span:hover {
+  color: #362706;
+  background: #CC9544;
+  transform-origin: center center;
+}
+
+#topBtn a:hover {
+  background: #CC9544;
+  transform-origin: center center;
 }
 
 .logo-img {
@@ -1662,7 +1678,7 @@ input[type="radio"] {
 .contact {
 	display: flex;
 	flex-flow: row wrap;
-	background-color: rgb(153, 150, 150);
+	background:linear-gradient(to right, lightblue,gray);;
 	width: 100%;
 	justify-content: space-around;
 	padding: 1.2rem;
@@ -1776,10 +1792,11 @@ input[type="radio"] {
 
 /* end of newsletter styles */
 
-.contact ul li,
-a {
+.contact ul li, a
+ {
 	color: black;
 	list-style: none;
+	text-decoration: none;
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: large;
 	margin: 5px;
@@ -1799,6 +1816,10 @@ a {
 	font-weight: bolder;
 	padding-bottom: 2%;
 	padding-right: 18px;
+	cursor: pointer;
+}
+.heading:hover{
+	color: #002bff;
 }
 
 .footer {
@@ -1902,16 +1923,16 @@ a {
 }
 
 .contain {
-	height: 300px;
-	width: 100%;
-	color: white;
-	margin-top: 50px;
-	margin-left: 50px;
+  height: 355px;
+  width: 100%;
+  color: white;
+  margin-top: 21px;
+  margin-left: 50px;
+  background: rgba(92, 92, 81, 0.582);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
 
-	background: rgba(92, 92, 81, 0.582);
-	border-radius: 30px;
-	display: flex;
-	flex-direction: column;
 }
 
 .contain:hover {
@@ -1977,7 +1998,6 @@ a {
 	/* width: 50%; */
 	margin-left: 0;
 }
-
 .container {
 	gap: 2rem;
 	display: flex;
@@ -1987,7 +2007,48 @@ a {
 	padding-left: 30px;
 	margin-left: 60px;
 }
+/* filter book by name */
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 12rem;
+  background-color: transparent;
+  width: 100%;
+  overflow: scroll;
+ 
+}
 
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; 
+
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+.search-heading{
+  padding:0  !important; 
+}
+
+/* ----------------------- */
 .col-sm-10 input,
 .form-check-input1,
 .form-check-input {

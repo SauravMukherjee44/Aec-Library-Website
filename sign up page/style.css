@@ -32,7 +32,7 @@ body{
 .signUp-form::before{
 	content: "AEC Library - Sign Up ";
 	position: absolute;
-	top: 7rem;
+	top: 10rem;
 	left: 40%;
 	color: white;
 	font-size: 25px;
@@ -105,6 +105,22 @@ button:hover {
 	position: absolute;
 	bottom: 8rem;
 	left: 365px;
+}
+
+.redirect a{
+    background-color: #296288;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 15px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  border: 2px solid #296288;
+  outline: none;
+  bottom: 10px;
+  border-radius: 15px;
 }
 
 /* Exit */
