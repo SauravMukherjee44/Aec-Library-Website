@@ -129,30 +129,11 @@
   </div>
   <script src="../assets/js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  
   <!-- Go to Top  -->
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(window).scrollTop() > 40) {
-          $("#topBtn").css({
-            opacity: "1",
-            "pointer-events": "auto",
-          });
-        } else {
-          $("#topBtn").css({
-            opacity: "0",
-            "pointer-events": "none",
-          });
-        }
-      });
+  <script src="./JS/ScrollTop.js"></script>
 
-      $("#topBtn").click(function () {
-        $("html ,body").animate({
-          scrollTop: 0
-        }, 400);
-      });
-    });
-  </script>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
@@ -162,47 +143,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-  <script>
-    AOS.init({
-      offset: 200,
-      duration: 1000,
-    });
-  </script>
+  
+  <script src="./JS/AOS1.js"></script>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-  <script>
-    let contributorsReference = [];
-    const searchBox = document.getElementById("searchBox");
-    const contributorsContainer = document.getElementById('contributors_container');
-    searchBox.addEventListener('keyup', (key_value) => {
-      const inputValueLower = key_value.target.value.toLowerCase();
-      const filteredData = contributorsReference.filter(reference => {
-        return reference.login.toLowerCase().includes(inputValueLower);
-      });
-      displayDataCards(filteredData);
-    })
-    const contributorInfo = async function() {
-      try {
-        const data = await fetch('https://api.github.com/repos/SauravMukherjee44/Aec-Library-Website/contributors?per_page=100');
-        contributorsReference = await data.json();
-        displayDataCards(contributorsReference);
-      } catch (err) {
-        console.error(err);
-      }
-    };
 
-    const displayDataCards = function(contributorReferences){
-      const textLiteral = contributorReferences
-        .map((contribReference) => {
-          return `
-        <div class="contributor_div"><a href="${contribReference.html_url}" target="_blank_"><img src="${contribReference.avatar_url}"/></a><div><h4>${contribReference.login}</h4><p>Contributions: ${contribReference.contributions}</p></div></div>
-        `;
-        })
-        .join('');
-      contributorsContainer.innerHTML = textLiteral;
-    };
+  <script src="./JS/ContributorReference.js"></script>
 
-    contributorInfo();
-  </script>
 </body>
 
 </html>
