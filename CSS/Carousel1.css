@@ -1,0 +1,8 @@
+.carousel-cell {
+    width: 100%;
+}
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+}
