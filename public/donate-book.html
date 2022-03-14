@@ -22,20 +22,8 @@
   <link rel="stylesheet" href="../assets/css/donate-book.css">
 
   <link rel="icon" href=../assets/Favicons/8.png> <title>Donate Books</title>
-  <style>
-   
-  table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {background-color: #f2f2f2;}
-  </style>
+  
+  <link rel="stylesheet" href="./TableStyle.css" />
 
 </head>
 
@@ -137,12 +125,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     </div>
   </div>
 
-    <script>
-      function resetFunction(){
-        document.getElementById("donation_form").reset();
-      }
-    </script>
-
+    <script src="./Reset.js"></script>
+    
   <!-- adding name,image,name of book of people who made donation -->   <!-- here -->
 
   <footer>
@@ -188,53 +172,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
-  <script>
-    window.onload = function () {
-      document.getElementById('loading').style.display = "none";
-      document.getElementById('container').style.display = "block";
-    }
-    particlesJS.load("particles-js", "../assets/js/config.json", function () {
-      console.log("callback - particles.js config loaded");
-    });
-  </script>
-<script src="https://unpkg.com/@supabase/supabase-js"></script>
-  <script>
-  const donationForm = document.getElementById('donation_form');
-  const { createClient } = supabase
-  const supabaseUrl = `https://cvhyilfsattdglfdmvcu.supabase.co`
-  const supabaseAnonKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2aHlpbGZzYXR0ZGdsZmRtdmN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ1NTE5MTksImV4cCI6MTk2MDEyNzkxOX0.wvKZxYcBbeUy9aJTw3XzbySmBJ8PkxVGXeopoucQpGY`
+  
+  <script src="./WindowOnLoad.js"></script>
 
-  const _supabase = createClient(supabaseUrl, supabaseAnonKey);
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
 
-  const donatedBook = document.querySelector('.donated_book');
-
-
-  donationForm.addEventListener('submit',e=>{
-    e.preventDefault();
-    const { data, error } = _supabase
-      .from('donated_book')
-      .insert([
-        {
-          email:document.getElementById('email').value,
-          name:document.getElementById('name').value,
-          contact : document.getElementById('contact').value,
-          address : document.getElementById('address').value,
-          country : document.querySelector('.country').value,
-          city : document.querySelector('.city').value,
-          zip : document.getElementById('zip').value,
-        }
-      ]).then(res=>{
-        console.log(res);
-        if(res.error){
-          alert(res.error.message);
-        }
-        else{
-        alert('Data Added');
-        }
-      })
-  })
-  </script>
-
+  <script src="./DonationForm.js"></script>
 
 
 </body>
