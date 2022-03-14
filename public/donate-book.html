@@ -130,9 +130,18 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <button class="submit-btn">
           Submit
         </button>
+
+        <button class="reset-btn" onclick="resetFunction()"> Reset</button>
+
       </form>
     </div>
   </div>
+
+    <script>
+      function resetFunction(){
+        document.getElementById("donation_form").reset();
+      }
+    </script>
 
   <!-- adding name,image,name of book of people who made donation -->   <!-- here -->
 
