@@ -1,0 +1,22 @@
+body{
+  overflow-y: hidden;
+}
+#highScoresList {
+  list-style: none;
+  padding-left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#highScores {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#highScore:hover {
+  transform: scale(1.025);
+}
+
+a{
+  text-decoration: none;
+}
