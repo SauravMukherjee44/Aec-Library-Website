@@ -20,7 +20,7 @@ fetch(url)
     .then((loadedQuestions) => {
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
-                question: loadedQuestion.question,
+                question: decodeHtmlEntities(loadedQuestion.question),
             };
 
             const answerChoices = [...loadedQuestion.incorrect_answers];
@@ -32,7 +32,7 @@ fetch(url)
             );
 
             answerChoices.forEach((choice, index) => {
-                formattedQuestion['choice' + (index + 1)] = choice;
+                formattedQuestion['choice' + (index + 1)] = decodeHtmlEntities(choice);
             });
 
             return formattedQuestion;
@@ -108,3 +108,10 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerHTML = score;
 };
+
+
+function decodeHtmlEntities(inputStr) {
+    var textarea = document.createElement("textarea");
+    textarea.innerHTML = inputStr;
+    return textarea.value;
+}
