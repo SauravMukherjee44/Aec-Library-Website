@@ -41,7 +41,7 @@
 }
 .card-body > h5{
     font-weight: bold;
-    color: green;
+    color: rgb(73, 2, 73);
 }
 .card{
   height: 475px;
