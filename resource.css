@@ -80,12 +80,35 @@ nav {
   background-image: url('/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 70%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
-  margin-bottom: 12px;
+  margin: 5px;
 }
+
+.home-tab{
+  float:right;
+  background-color: rgb(31, 31, 31);
+  color: antiquewhite; 
+  font-size: 15px;
+  padding: 8px 12px; 
+  border-radius: 15px; 
+  width: 100px; 
+  text-align: center; 
+  margin: 6px;
+  text-decoration: none;
+}
+
+.home-tab:hover{
+  text-decoration: none;
+  background-color: rgb(78, 74, 74);
+  color: rgb(233, 221, 221);
+  text-shadow: 0px 0px 14px rgb(233, 221, 221);
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+
 #myUL {
   list-style-type: none;
   padding: 0;
@@ -94,7 +117,6 @@ nav {
   background-color: transparent;
   width: 100%;
   overflow: scroll;
- 
 }
 
 #myUL li a {
