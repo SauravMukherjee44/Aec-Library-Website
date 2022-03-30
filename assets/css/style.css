@@ -2599,7 +2599,10 @@ select {
 }
 
 
-
+/*Styling for aligning download buttons in Recommended Books Section*/
+#btn-download{
+	margin-right:90px;
+}
 
 
 
@@ -2680,6 +2683,10 @@ select {
 	.desc-carousel p {
 		font-size: 1rem;
 	}
+	/*Styling for aligning download buttons in Recommended Books Section for max-width: 912px Screen*/
+	#btn-download{
+		margin-right:200px;
+	}
 }
 
 @media only screen and (max-width: 650px) {
@@ -2727,13 +2734,23 @@ select {
 	.donate div h4 {
 		font-size: 18px;
 	}
+	/*Styling for aligning download buttons in Recommended Books Section max-width:650px screen*/
+	#btn-download{
+		margin-right:90px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
 	.new-nav button {
 		margin-left: 80%;
 	}
+
+	/*Styling for aligning download buttons in Recommended Books Section for 500px Screen*/
+	#btn-download{
+		margin-right:60px;
+	}
 }
+
 
 @media only screen and (max-width: 414px) {
 
@@ -2777,6 +2794,11 @@ select {
     font-size: 15px;
     /* padding: 8px; */
   }
+
+/*Styling for aligning download buttons in Recommended Books Section*/
+	#btn-download{
+		margin-right:70px;
+	}
 }
 
 
