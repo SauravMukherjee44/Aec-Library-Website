@@ -71,7 +71,8 @@
           <label>Email</label>
         </div>
         <div class="user-box">
-          <input class="form__input form-control" type="tel" id="contact" name="" required="">
+          <input class="form__input form-control" type="tel" id="contact" name="" required="" >
+          <!--onchange="validate_phone(document.getElementById('contact'))"-->
           <label>Contact Number</label>
         </div>
         <div class="user-box">
@@ -105,7 +106,8 @@
           <label>Landmark (Optional)</label>
         </div>
         <div class="user-box">
-          <input class="form__input form-control" type="text" name="" required="">
+          <input class="form__input form-control" id="alt_contact" type="text" name="" required="">
+          <!--onchange="validate_phone(document.getElementById('alt_contact'))"-->
           <label>Alternate Phone (Optional)</label>
         </div>
         <div class="form-check">
@@ -172,10 +174,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
+
   
   <script src="./WindowOnLoad.js"></script>
 
   <script src="https://unpkg.com/@supabase/supabase-js"></script>
+
 
   <script src="./DonationForm.js"></script>
 
