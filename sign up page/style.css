@@ -15,15 +15,16 @@ body {
 
 .section {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  width: 60%;
-  height: 34rem;
+  /* min-width: 60%; */
+  padding: 20% 40%;
+  /* min-height: 34; */
   padding: 0;
   margin: 0;
   background-image: url("bg1.jpg");
@@ -33,19 +34,31 @@ body {
   box-shadow: 4px 6px 23px 4px rgba(0, 0, 0, 0.75);
 }
 
-.signUp-form::before {
-  content: "AEC Library - Sign Up ";
-  position: absolute;
-  top: 10rem;
-  left: 40%;
-  color: white;
+.header {
+  color: #fff;
   font-size: 25px;
+  padding: 2%;
+  text-align: center;
 }
-.signUp-box {
+
+.cover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6rem 5rem;
+}
+.signUp-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+.main-box {
+  margin: 2% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .signUp-form {
@@ -58,6 +71,9 @@ body {
   outline: none;
   color: #fff;
   margin: 10px;
+}
+.first-box {
+  padding-left: 0%;
 }
 .form-group {
   border-bottom: 1px solid #fff;
@@ -107,12 +123,12 @@ button:hover {
 .redirect {
   color: white;
   position: absolute;
-  bottom: 8rem;
-  left: 365px;
+  left: 22%;
+  bottom: 15%;
 }
 
 .redirect a {
-  background-color: #296288;
+  background: transparent;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
@@ -121,10 +137,18 @@ button:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
-  border: 2px solid #296288;
+  border: 2px solid #fff;
   outline: none;
   bottom: 10px;
   border-radius: 15px;
+}
+
+.redirect a:hover {
+  font-size: 12px;
+  font-weight: bold;
+  background: #fff;
+  border: 2px solid #fff;
+  color: #000;
 }
 
 /* Exit */
@@ -151,129 +175,37 @@ a {
   color: #56a5eb;
 }
 
-@media only screen and (max-width: 425px) {
-  .section {
-    height: 100vh;
-  }
-  .container {
-    width: 90%;
-    height: 95vh;
-  }
-  .signUp-form::before {
-    font-size: 15px;
-    top: 2.5rem;
-    left: 31%;
+@media only screen and (max-width: 700px) {
+  /* * {
+    margin: 0;
+    padding: 0;
+  } */
+  .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .signUp-form {
+    display: flex;
     flex-direction: column;
-    top: -2rem;
-  }
-  .signUp-box {
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .first-box {
-    height: 40vh;
-  }
-  .second-box {
-    height: 40vh;
-  }
-
-  .signUp-form input {
-    padding: 0;
-  }
-
-  .form-group input {
-    font-size: 10px;
-  }
-
-  .form-group i {
-    font-size: 10px;
-  }
-
-  #male,
-  #female {
-    margin-top: 0.6rem;
-  }
-  #male + label,
-  #female + label {
-    font-size: 10px;
-  }
-
-  #fullName {
-    margin-top: 3rem;
-  }
-
-  .btn #button {
-    padding: 8px 0px 8px 0px;
-    width: 80%;
-    font-size: 10px;
-    margin-top: 2rem;
+    width: 100%;
   }
 
   .redirect {
-    font-size: 10px;
-    bottom: 7rem;
-  }
-
-  .quiz-exit {
-    position: absolute;
-    bottom: 0;
-    left: 1rem;
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    margin: 2rem;
-  }
-}
-
-@media only screen and (max-width: 768px) and (min-width: 426px) {
-  .container {
-    width: 80%;
-  }
-  .signUp-form::before {
-    font-size: 24px;
-    top: 2.5rem;
-    left: 35%;
-  }
-
-  .signUp-form input {
-    padding: 0;
-  }
-
-  .form-group input {
-    font-size: 14px;
-    padding-left: 1rem;
-  }
-
-  .form-group i {
-    font-size: 14px;
     position: relative;
-    top: 1.6rem;
-  }
-
-  #male + label,
-  #female + label {
-    font-size: 14px;
-  }
-
-  .btn #button {
-    padding: 8px 0px 8px 0px;
-    width: 80%;
-    font-size: 14px;
-  }
-
-  .redirect {
-    font-size: 14px;
-    bottom: 6rem;
-    left: 22.5%;
+    left: 0%;
   }
 
   .quiz-exit {
-    left: 5rem;
-    padding: 0;
-    width: 30px;
-    height: 30px;
+    position: relative;
+    left: 0%;
+    bottom: 0;
   }
 }
 
