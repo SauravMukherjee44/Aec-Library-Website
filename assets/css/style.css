@@ -18,6 +18,8 @@ nav.navbar {
 
 
 
+
+
 /* #table {
   border: none;
   border-radius: 20px;
@@ -2147,16 +2149,16 @@ select {
 */
 /*scrolling effect starts from here*/
 
-#scrollpath {
+/* #scrollpath {
 	position: fixed;
 	top: 0;
 	right: 0;
 	width: 10px;
 	height: 100%;
 	background: rgba(255, 255, 255, 0.05);
-}
+} */
 
-#progressbar {
+/* #progressbar {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -2164,9 +2166,9 @@ select {
 	height: 100%;
 	background: linear-gradient(to top, #008aff, #00ffe7);
 	animation: animate 5s linear infinite;
-}
+} */
 
-#progressbar:before {
+/* #progressbar:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -2175,9 +2177,9 @@ select {
 	height: 100%;
 	background: linear-gradient(to top, #008aff, #00ffe7);
 	filter: blur(10px);
-}
+} */
 
-#progressbar:after {
+/* #progressbar:after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -2186,7 +2188,7 @@ select {
 	height: 100%;
 	background: linear-gradient(to top, #008aff, #00ffe7);
 	filter: blur(30px);
-}
+} */
 
 @keyframes animate {
 	0%,
@@ -2200,7 +2202,20 @@ select {
 }
 
 ::-webkit-scrollbar {
-	width: 0;
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #008aff, #00ffe7);
+	animation: animate 5s linear infinite;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to top, #008aff, #00ffe7);
+	animation: animate 5s linear infinite;
+    border: solid 2px rgb(41, 2, 10);
 }
 
 .nav-item a {
