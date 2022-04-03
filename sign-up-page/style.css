@@ -35,10 +35,31 @@ body {
 }
 
 .header {
+  position: relative;
   color: #fff;
   font-size: 25px;
   padding: 2%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.header:hover::before {
+  width: 100%;
+  cursor: pointer;
 }
 
 .cover {
