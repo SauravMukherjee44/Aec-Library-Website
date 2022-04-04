@@ -22,9 +22,9 @@
 
   <!-- Adding new font -> Playfair-display -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!--Adding AOS in it-->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -93,7 +93,7 @@
   <!-- Navbar ended -->
 
   <!-- about content started -->
-  <div class="about-container">
+  <div class="about-container" data-aos="fade-up">
     <!-- <div class="my-5"> -->
     <h1 class="text-center">About Us</h1>
     <div class="py-3 mx-md-5 mx-3">
@@ -253,12 +253,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
-  <script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 400, // offset (in px) from the original trigger point
+          delay: 0, // values from 0 to 3000, with step 50ms
+          duration: 1000 // values from 0 to 3000, with step 50ms
+        });
+      </script>
+
+  <!-- <script>
     AOS.init({
       offset: 200,
       duration: 1000,
     });
-  </script>
+  </script> -->
 </body>
 
 </html>
