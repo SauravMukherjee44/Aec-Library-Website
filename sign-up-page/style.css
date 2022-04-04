@@ -197,10 +197,10 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
-  /* * {
-    margin: 0;
-    padding: 0;
-  } */
+  body {
+    overflow-x: hidden;
+  }
+  
   .cover {
     display: flex;
     flex-direction: column;
@@ -218,9 +218,18 @@ a {
     width: 100%;
   }
 
+  .form-group {
+    display: flex;
+  }
+
   .redirect {
     position: relative;
     left: 0%;
+  }
+
+  .redirect a {
+    position: relative;
+    left: 20%;
   }
 
   .quiz-exit {
@@ -234,6 +243,7 @@ a {
   .container {
     width: 80%;
   }
+
   .signUp-form::before {
     font-size: 26px;
     top: 4rem;
@@ -263,6 +273,12 @@ a {
     font-size: 16px;
     bottom: 5rem;
     left: 22.5%;
+  }
+
+  .redirect a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .quiz-exit {
     left: 6rem;
