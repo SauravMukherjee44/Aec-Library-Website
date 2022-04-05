@@ -63,6 +63,7 @@ body {
 }
 
 .cover {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,6 +127,8 @@ body {
 #male + label,
 #female + label {
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 button {
@@ -153,8 +156,8 @@ button:hover {
 .redirect {
   color: white;
   position: absolute;
-  left: 22%;
-  bottom: 15%;
+  left: 0%;
+  bottom: 10%;
 }
 
 .redirect a {
