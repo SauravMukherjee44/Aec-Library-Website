@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(
+    to right,
+    rgba(70, 77, 128, 1) 0%,
+    rgba(70, 117, 128, 1) 50%,
+    rgba(142, 196, 207, 1) 100%
+  );
+}
+::placeholder {
+  color: #fff;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  /* min-width: 60%; */
+  padding: 20% 40%;
+  /* min-height: 34; */
+  padding: 0;
+  margin: 0;
+  background-image: url("bg1.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+  box-shadow: 4px 6px 23px 4px rgba(0, 0, 0, 0.75);
+}
+
+.header {
+  position: relative;
+  color: #fff;
+  font-size: 25px;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.header:hover::before {
+  width: 100%;
+  cursor: pointer;
+}
+
+.cover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUp-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+.main-box {
+  margin: 2% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUp-form {
+  display: flex;
+}
+.signUp-form input {
+  padding: 0%;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  margin: 10px;
+}
+.first-box {
+  padding-left: 0%;
+  padding-top: 1%;
+  width: 100%;
+}
+
+.second-box {
+  padding-right: 0%;
+  padding-top: 1%;
+  width: 100%;
+}
+.form-group {
+  border-bottom: 1px solid #fff;
+  margin: 15px;
+  display: flex;
+}
+.form-group i {
+  color: #fff;
+  font-size: 24px;
+}
+
+.no-border {
+  border: none;
+}
+
+#male,
+#female {
+  margin-top: 1rem;
+}
+
+#male + label,
+#female + label {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  margin: 30px 95px 100px 90px;
+  transition: all 0.5s ease;
+  color: #fff;
+  border: 3px solid white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 3px;
+  outline: none;
+  border-radius: 4px;
+}
+button:hover {
+  color: #001f3f;
+  background-color: #fff;
+}
+
+.redirect {
+  color: white;
+  position: absolute;
+  left: 0%;
+  bottom: 10%;
+}
+
+.redirect a {
+  background: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 15px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  border: 2px solid #fff;
+  outline: none;
+  bottom: 10px;
+  border-radius: 15px;
+}
+
+.redirect a:hover {
+  font-size: 12px;
+  font-weight: bold;
+  background: #fff;
+  border: 2px solid #fff;
+  color: #000;
+}
+
+/* Exit */
+.quiz-exit {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  margin: 2rem;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #56a5eb;
+}
+.quiz-exit:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+a {
+  text-decoration: none;
+  color: #56a5eb;
+}
+
+@media only screen and (max-width: 425px) {
+  .section {
+    height: 100vh;
+  }
+  .container {
+    width: 90%;
+    height: 95vh;
+  }
+  .signUp-form::before {
+    font-size: 15px;
+    top: 2.5rem;
+    left: 31%;
+  }
+  .signUp-form {
+    flex-direction: column;
+    top: -2rem;
+  }
+  .signUp-box {
+    padding: 1rem;
+  }
+
+  .first-box {
+    height: 40vh;
+  }
+  .second-box {
+    height: 40vh;
+  }
+
+  .signUp-form input {
+    padding: 0;
+  }
+
+  .form-group input {
+    font-size: 10px;
+  }
+
+  .form-group i {
+    font-size: 10px;
+  }
+
+  #male,
+  #female {
+    margin-top: 0.6rem;
+  }
+  #male + label,
+  #female + label {
+    font-size: 10px;
+  }
+
+  #fullName {
+    margin-top: 1rem;
+  }
+
+  .btn #button {
+    padding: 8px 0px 8px 0px;
+    width: 80%;
+    font-size: 10px;
+    margin-top: 2rem;
+  }
+
+  .redirect {
+    font-size: 10px;
+    bottom: 7rem;
+  }
+
+  .quiz-exit {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .signUp-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-box {
+    width: 100%;
+    height: 50%;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .redirect {
+    position: relative;
+    left: 0%;
+  }
+
+  .redirect a {
+    position: relative;
+    left: 20%;
+  }
+
+  .quiz-exit {
+    position: relative;
+    left: 0%;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    width: 80%;
+  }
+
+  .signUp-form::before {
+    font-size: 26px;
+    top: 4rem;
+    left: 38%;
+  }
+
+  .form-group input {
+    font-size: 16px;
+  }
+
+  .form-group i {
+    font-size: 16px;
+  }
+
+  #male + label,
+  #female + label {
+    font-size: 16px;
+  }
+
+  .btn #button {
+    padding: 10px 0px 10px 0px;
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .redirect {
+    font-size: 16px;
+    bottom: 5rem;
+    left: 22.5%;
+  }
+
+  .redirect a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .quiz-exit {
+    left: 6rem;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.icon {
+  margin-left: 4rem;
+  margin-right: 0.5rem;
+}
