@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+/* To enhance scroll-bar  */
+
+  
+::-webkit-scrollbar {
+    width: 15px;
+    background:wheat;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+  
+/* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0a0a0a99;
+    border-radius: 7px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+/* --------------- */
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+  
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color:rgb(235, 225, 204);
+    font-weight: bolder;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 12px black;
+}
+  
+header {
+    padding: 40px;
+    background: url("images/ncert_header.jpg") center;
+    background-size: cover;
+    text-align: center;
+}
+
+.nav{
+    border-top:  2px solid rgb(119, 2, 2);
+}
+
+.nav-link-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: wheat;
+    text-shadow: 0px 0px 12px wheat;
+  }
+  
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: wheat;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+  
+
+.main{
+    background-image: url("images/ncert_background.jpg");
+    background-repeat: repeat;
+    padding: 10px;
+}
+
+.class-container{
+    margin: 50px 30px;
+    border: solid 4px rgb(255, 225, 208);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+}
+
+.class-head{
+    color: rgb(22, 19, 19);
+    text-shadow: 0px 0px 12px whitesmoke;
+    background-color: rgba(226, 101, 43, 0.514);
+    padding: 10px;
+    text-align: center;
+    border-bottom:4px solid rgb(255, 225, 208);
+    text-transform: uppercase;
+}
+
+.class-subject{
+    background-color: rgba(211, 181, 147, 0.425);
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;   
+    justify-content: space-evenly;
+    padding-bottom: 22px;
+    padding-right: 5px;
+}
+
+.books{
+    width: 22%;
+    margin-top: 10px;
+}
+
+.books:hover{
+    transform: scale(1.04);
+}
+
+.book-img{
+    padding: 10px;
+    box-shadow: 5px 3px gainsboro;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 900px){
+    .books{
+      width: 30%;
+      margin-top: 15px;
+    }
+    .book-img{
+      height: 300px;
+    }
+  }
+
+@media screen and (max-width: 700px){
+  .books{
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .books{
+    width: 70%;
+  }
+}
+
+
+/* styling footer*/
+
+footer{
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+footer a{
+    color: aqua;
+}
+
+footer a:hover{
+    color: blue;
+}
