@@ -648,26 +648,26 @@ strong {
 
 /* scroll bar design */
 /* width */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 9px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
 	background: rgb(77, 32, 32);
-}
+} */
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
 	background: #c68b59;
-	border-radius: 10px;
-}
+	border-radius: 10px; */
+/* } */ */
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
 	background: #865439;
 	border: solid 2px rgb(41, 2, 10);
-}
+} */
 
 /* scroll bar end */
 /* preloader */
@@ -1628,26 +1628,26 @@ p {
 
 /* scroll bar design */
 /* width */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 10px;
-}
+} */
 
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
 	background: rgb(77, 32, 32);
-}
+} */
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
 	background: #c68b59;
 	border-radius: 10px;
-}
+} */
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
 	background: #c68b59;
 	border: solid 2px rgb(41, 2, 10);
-}
+} */
 
 /* scroll bar end */
 
@@ -2203,6 +2203,8 @@ select {
 
 ::-webkit-scrollbar {
 	width: 10px;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	animation: animate 5s linear infinite;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -2213,8 +2215,6 @@ select {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to top, #008aff, #00ffe7);
-	animation: animate 5s linear infinite;
     border: solid 2px rgb(41, 2, 10);
 }
 
