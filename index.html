@@ -43,6 +43,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
+  <!--Animation on scroll-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
@@ -214,7 +217,7 @@
   <!---->
 
 
-  <div id="issueSection" class="container my-5">
+  <div id="issueSection" class="container my-5" data-aos="fade">
 
     <div class="hero-left" autofocus>
        <h2 id="IssueHere">Issue Here</h2>
@@ -442,7 +445,7 @@
 
   </script> -->
   <!-- ****************************************************done******************************************** -->
-  <div class="suggestion">
+  <div class="suggestion" data-aos="fade-up">
     <ul class="list">
         <li>
             <div class="suggest"><span class="counter" data-target="518">0</span>+</div>
@@ -478,23 +481,23 @@
 </script>
 
 
-  <div>
+  <div data-aos="fade-up">
     <h1>Recommended books</h1>
       <br>
       <p>Read some books on HTML, CSS and JavaScript for free using the Library</p>
 
 
 
-     <div class="books1" id="recommended_books"></div>
+     <div class="books1" id="recommended_books" data-aos="fade"></div>
      <script src="./recommended_books.js"></script>
 
 
 
-      <div>
+      <div data-aos="fade-down">
         <br>
         <center><h3>Listen to Audiobooks</h3></center>
 
-        <div class="books1">
+        <div class="books1" data-aos="fade">
           <link rel="stylesheet" href="assets/css/audiobook.css">
           <script src="assets/js/audiobook.js"></script>
 
@@ -562,7 +565,7 @@
 
   </section>
 
-  <div class="member">
+  <div class="member" data-aos="fade-up">
     <section class="donate">
       <div class="text"><b>Become a member</b>
         <br><h4>By donating your books to </h4> <br> <h4>help others</h4>
@@ -574,9 +577,9 @@
     <section class="photo"><img src="images/8.png" alt=""><img src="images/17.png.png" alt=""></section>
   </div>
   <br>
-  <div class="member" id="res">
+  <div class="member" id="res" data-aos="fade-down">
     <section class="photo"><img src="images/8.png" alt=""><img src="images/17.png.png" alt=""></section>
-    <section class="donate">
+    <section class="donate" >
       <div class="text"><b>Resources</b>
         <br>get an exclusive access to all <br>the materials available in our <br>environment which help you
         <br>to satisfy your needs and wants
@@ -588,7 +591,7 @@
   </div>
   <br><br>
 
-  <div class="blogs">
+  <div class="blogs" data-aos="fade-up">
     <h1><b class='latest-blogs'> Latest Blogs</b></h1>
     <p class="latest-blogs-p">Regular records of your thoughts, opinions or experiences that you put on the <br>internet for other people to
       read </p>
@@ -645,8 +648,8 @@
   </div>
  </div>
 
-  <div class="blog-container">
-     <div class="card1">
+  <div class="blog-container" data-aos="fade-down">
+     <div class="card1" data-aos="fade">
       <div class="card-bg"></div>
        <div class="owner">
          <h1>Machine-Learning</h1>
@@ -658,7 +661,7 @@
        </div>
        <a href="https://www.simplilearn.com/tutorials/machine-learning-tutorial/what-is-machine-learning"target="_blank" class="read-more"> Read more<span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
      </div>
-     <div class="card2">
+     <div class="card2" data-aos="fade">
       <div class="card-bg"></div>
       <div class="owner">
         <h1>Web development</h1>
@@ -671,7 +674,7 @@
       </div>
       <a href="https://www.w3schools.com/whatis/" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
      </div>
-     <div class="card3">
+     <div class="card3" data-aos="fade">
       <div class="card-bg"></div>
       <div class="owner">
         <h1>HTML</h1>
@@ -684,7 +687,7 @@
       </div>
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
      </div>
-     <div class="card4">
+     <div class="card4" data-aos="fade">
       <div class="card-bg"></div>
       <div class="owner">
         <h1>Python</h1>
@@ -701,9 +704,9 @@
 
 
 
-  <div class="update">
+  <div class="update" data-aos="fade-up">
     <img src="./assets/images/feedback.jpg" alt="feedback" />
-    <div class="login-box">
+    <div class="login-box" data-aos="fade">
       <h1 class="title">Get In Touch</h1>
       <form id="feedbackForm" method="POST" action="">
         <div class="user-box">
@@ -766,7 +769,7 @@
   </div>
 
 <!-- Quiz section under issue #534  ********** Starts *********-->
-  <div class="quiz-section" id="box">
+  <div class="quiz-section" id="box" data-aos="fade">
     <img class="quiz-svg" src="/Quiz/quiz.svg" alt="">
     <div class="quiz-main">
         <div class="quiz-text" style="color:black">Bored ? Here's a quick quiz for you </div>
@@ -780,9 +783,9 @@
 <!-- Quiz section under issue #534  ********* Ends ********** -->
 
 
-        <section class="faq-container" id="faq">
+        <section class="faq-container" id="faq" data-aos="fade-up">
         <h1 class="faq-heading">FAQ'S</h1>
-            <div class="faq-one">
+            <div class="faq-one" data-aos="fade">
                 <!-- faq question -->
                 <h3 class="faq-page">Q: What is AEC Library?</h3>
                 <!-- faq answer -->
@@ -791,7 +794,7 @@
                 </div>
             </div>
 
-            <div class="faq-two">
+            <div class="faq-two" data-aos="fade">
                 <!-- faq question -->
                 <h3 class="faq-page">Q: What is the best part of AEC Library?</h3>
                 <!-- faq answer -->
@@ -799,7 +802,7 @@
                     <p>The best part about the website is that you can also contribute to the website for others to use the resourses by donating the books you have , all categories of books are welcomed for donation.</p>
                 </div>
             </div>
-            <div class="faq-three">
+            <div class="faq-three" data-aos="fade">
                 <!-- faq question -->
               <h3 class="faq-page">Q: How to become a member? </h3>
                 <!-- faq answer -->
@@ -807,7 +810,7 @@
                     <p>By donating any book of your choice you can become a member of the AEC Library.</p>
                 </div>
             </div>
-            <div class="faq-four">
+            <div class="faq-four" data-aos="fade">
               <!-- faq question -->
             <h1 class="faq-page">Q: What is the registration fee? </h1>
               <!-- faq answer -->
@@ -815,7 +818,7 @@
                   <p>There is no registration fees! One simply needs to donate a book to become a member.</p>
               </div>
           </div>
-          <div class="faq-five">
+          <div class="faq-five" data-aos="fade">
             <!-- faq question -->
           <h1 class="faq-page">Q: I forgot my login credentials. What should I do? </h1>
             <!-- faq answer -->
@@ -823,7 +826,7 @@
                 <p>No worries! Click on the "Forgot your Password?" link. An email containing the instructions to reset your password will be sent to your registered email-ID</p>
             </div>
         </div>
-        <div class="faq-six">
+        <div class="faq-six" data-aos="fade">
           <!-- faq question -->
         <h1 class="faq-page">Q: I can't find the book I am looking for. What to do? </h1>
           <!-- faq answer -->
@@ -831,7 +834,7 @@
               <p>The library has a huge collection of books of multiple genres. However, if you can't find the book you're looking for, do reach out to us! Drop us a message through the "Contact Us" section.</p>
           </div>
         </div>
-        <div class="faq-four">
+        <div class="faq-four" data-aos="fade">
           <!-- faq question -->
         <h1 class="faq-page">Q: How can I donate a book? </h1>
           <!-- faq answer -->
@@ -839,7 +842,7 @@
               <p>Click on the "Donate books" button and fill out the form with your details. We will reach out to you with further details.</p>
           </div>
         </div>
-        <div class="faq-five">
+        <div class="faq-five" data-aos="fade">
           <!-- faq question -->
         <h1 class="faq-page">Q: What is the benefits of an account in Aec-Library ? </h1>
           <!-- faq answer -->
@@ -855,7 +858,7 @@
               </ol></p>
           </div>
         </div>
-        <div class="faq-six">
+        <div class="faq-six" data-aos="fade">
           <!-- faq question -->
         <h1 class="faq-page">Q: How can I find a book here? </h1>
           <!-- faq answer -->
@@ -863,7 +866,7 @@
               <p>Go to the "CHoose and read books" section and search the book you are looking for .</p>
           </div>
         </div>
-        <div class="faq-seven">
+        <div class="faq-seven" data-aos="fade">
           <!-- faq question -->
         <h1 class="faq-page">Q: I haven't found a book but it's not readable format>Is something wrong? </h1>
           <!-- faq answer -->
@@ -871,7 +874,7 @@
               <p>This is not supposed to happen but if it happens please leave a message on out "Contact us" section.We will definitely look in it. </p>
           </div>
         </div>
-        <div class="faq-eight">
+        <div class="faq-eight" data-aos="fade">
           <!-- faq question -->
         <h1 class="faq-page">Q: How can I download a book? </h1>
           <!-- faq answer -->
@@ -880,7 +883,7 @@
                 Happy reading :)</p>
           </div>
         </div>
-        <div class="faq-nine">
+        <div class="faq-nine" data-aos="fade">
           <!-- faq question -->
         <h1 class="faq-page">Q: How many books can I check-out at once? </h1>
           <!-- faq answer -->
@@ -888,7 +891,7 @@
               <p>You can check-out as many books as you want.</p>
           </div>
         </div>
-        <div class="faq-ten">
+        <div class="faq-ten" data-aos="fade">
           <!-- faq question -->
         <h1 class="faq-page">Q: How can I access in Online library? </h1>
           <!-- faq answer -->
@@ -903,7 +906,7 @@
 
 
 
-  <div class="contact">
+  <div class="contact" data-aos="fade-down">
     <img src="https://thumbs.gfycat.com/AcceptableWillingBushsqueaker-max-1mb.gif" alt="">
     <ul>
       <li class="heading">Contact:</li>
@@ -1171,6 +1174,14 @@ myModal.toggle();
     loader.style.height = "0px";
   }
 </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000 // values from 0 to 3000, with step 50ms
+      });
+    </script>
 
 
 </body>

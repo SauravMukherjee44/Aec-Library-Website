@@ -379,6 +379,29 @@ h3.hover-underline-animation {
 .NC:hover{
   transform: scale(1.04);
 }
+
+.more_books_btn{
+  width: 100%;
+  padding-top: 30px;
+  margin: 3px;
+}
+
+.ncert-btn{
+  color: whitesmoke;
+  background-color: #432ffc;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+.ncert-btn:hover{
+  color: rgb(233, 233, 233);
+  text-shadow: 0px 0px 14px rgb(233, 233, 233);
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+  background-color: #3e2dd8;
+  text-decoration: none;
+}
+
 /* Audio Books*/
 #audio-books {
   width: 100%;
