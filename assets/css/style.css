@@ -1085,6 +1085,7 @@ strong {
 	font-family: "Poppins", sans-serif;
 	display: flex;
 	justify-content: center;
+	margin-top: 15px;
 	align-items: center;
 	font-size: 32px;
 	font-weight: 500;
@@ -1403,7 +1404,8 @@ p {
 	box-sizing: border-box;
 	border-radius: 20px;
 	transition-duration: 0.5s;
-	margin: 0 auto;
+	margin-bottom: 50px !important;
+	/* margin-left: 80px; */
 	box-shadow: 0px 0px 15px 5px lavender;
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
@@ -1417,12 +1419,12 @@ p {
 
 .login-box .title {
 	position: relative;
-	width: max-content;
+	/* width: max-content; */
 	margin: 0 auto 0.7em;
-	text-decoration: none;
-	font-size: 1.8rem;
-	color: rgb(255, 183, 0);
-	letter-spacing: 3px;
+	text-decoration: underline;
+	font-size: 2.8rem;
+	color: rgb(235, 245, 247);
+	letter-spacing: 1.5px;
 }
 
 /* styles for input fields  */
@@ -1816,11 +1818,8 @@ input[type="radio"] {
 	font-weight: bolder;
 	padding-bottom: 2%;
 	padding-right: 18px;
-	cursor: pointer;
 }
-.heading:hover{
-	color: #002bff;
-}
+
 
 .footer {
 	background-color: rgb(56, 55, 55);
@@ -1924,10 +1923,10 @@ input[type="radio"] {
 
 .contain {
   height: 355px;
-  width: 100%;
+  width: 80%;
   color: white;
   margin-top: 21px;
-  margin-left: 50px;
+  /* margin-left: 80px !important; */
   background: rgba(92, 92, 81, 0.582);
   border-radius: 30px;
   display: flex;
@@ -1967,6 +1966,7 @@ input[type="radio"] {
 	display: inline-block;
 	border: 1px solid grey;
 	border-radius: 12px;
+	margin-left: 30px;
 	align-items: center;
 }
 
@@ -2596,7 +2596,10 @@ select {
 }
 
 
-
+/*Styling for aligning download buttons in Recommended Books Section*/
+#btn-download{
+	margin-right:90px;
+}
 
 
 
@@ -2677,6 +2680,10 @@ select {
 	.desc-carousel p {
 		font-size: 1rem;
 	}
+	/*Styling for aligning download buttons in Recommended Books Section for max-width: 912px Screen*/
+	#btn-download{
+		margin-right:200px;
+	}
 }
 
 @media only screen and (max-width: 650px) {
@@ -2724,13 +2731,23 @@ select {
 	.donate div h4 {
 		font-size: 18px;
 	}
+	/*Styling for aligning download buttons in Recommended Books Section max-width:650px screen*/
+	#btn-download{
+		margin-right:90px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
 	.new-nav button {
 		margin-left: 80%;
 	}
+
+	/*Styling for aligning download buttons in Recommended Books Section for 500px Screen*/
+	#btn-download{
+		margin-right:60px;
+	}
 }
+
 
 @media only screen and (max-width: 414px) {
 
@@ -2763,18 +2780,34 @@ select {
   }
 }
 @media(max-width:425px){
+	.update{
+		/* background-color: #fff; */
+	}
   .update img{
     margin-left: 0;
     padding: 0;
-   width: 0px;
-   height: 0px;
-
+   width: 7.5rem;
+   height: 7.5rem;
+ position: relative;
+ margin-bottom: 2.7rem;
   }
+  .login-box{
+	  margin-left: 0.3rem;
+	  margin-right: 0;
+	  /* position:absolute; */
+  }
+  
   .login-box .user-box input{
     font-size: 15px;
     /* padding: 8px; */
   }
+
+/*Styling for aligning download buttons in Recommended Books Section*/
+	#btn-download{
+		margin-right:70px;
+	}
 }
+
 
 
 

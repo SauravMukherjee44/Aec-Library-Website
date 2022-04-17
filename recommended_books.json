@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "img": "images/bookimage1.png",
+        "url": "https://www.alvinisd.net/cms/lib03/TX01001897/Centricity/Domain/1077/pro_html5_and_css3_design_patterns.pdf"
+    },
+    {
+        "id": "2",
+        "img": "images/bookimage2.png",
+        "url": "https://bawar.net/data0/books/5d626a582939a/pdf/web-design-with-html-and-css-digital-classroom.pdf"
+    },
+    {
+        "id": "3",
+        "img": "images/bookimage3.png",
+        "url": "https://www.ciwcertified.com/resources/documents/sample-chapter/CCT02CDHTCSCK1405.PDF"
+    },
+    {
+        "id": "4",
+        "img": "images/bookimage4.png",
+        "url": "https://www.doc-developpement-durable.org/file/Projets-informatiques/cours-&-manuels-informatiques/htm-html-xml-ccs/Sams%20Teach%20Yourself%20HTML,%20CSS,%20and%20JavaScript%20All%20in%20One.pdf"
+    },
+    {
+        "id": "5",
+        "img": "images/bookimage5.png",
+        "url": "https://wtf.tw/ref/duckett.pdf"
+    },
+    {
+        "id": "6",
+        "img": "images/bookimage6.png",
+        "url": "https://www.mbit.edu.in/wp-content/uploads/2020/05/Web-Design123uo00es0523.pdf"
+    },
+    {
+        "id": "7",
+        "img": "images/bookimage7.png",
+        "url": "https://wtf.tw/ref/robbins.pdf"
+    },
+    {
+        "id": "8",
+        "img": "images/bookimage8.png",
+        "url": "https://www.dcpehvpm.org/E-Content/BCA/BCA-II/Web%20Technology/the-complete-reference-html-css-fifth-edition.pdf"
+    },
+    {
+        "id": "9",
+        "img": "images/bookimage9.png",
+        "url": "http://artsites.ucsc.edu/sdaniel/170a_2014/Head_First_HTML_CSS_XHTML.pdf"
+    },
+    {
+        "id": "10",
+        "img": "images/bookimage10.png",
+        "url": "https://pepa.holla.cz/wp-content/uploads/2015/11/JavaScript-A-Beginners-Guide-Fourth-Edition1.pdf"
+    }
+]
