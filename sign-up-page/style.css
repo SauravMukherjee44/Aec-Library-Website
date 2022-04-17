@@ -106,7 +106,9 @@ button:hover {
   text-transform: uppercase;
   transition: transform 80ms ease-in;
   outline: none;
-  border-radius: 15px;
+  border: solid white 3px;
+  border-radius: 2px;
+  padding: 5px;
 }
 
 .redirect a:hover {
