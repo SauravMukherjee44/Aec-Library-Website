@@ -490,7 +490,13 @@ footer p {
   border-color: #000000cc;
 }
 
+.reset-btn {
+  margin: 70px 0 0 30px !important;
+  border: 2px solid rgb(247, 227, 162);
+  border-radius: 5px;
+  
 
+}
 
 
 @media (max-width: 767px) {
