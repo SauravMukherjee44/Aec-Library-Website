@@ -1,7 +1,7 @@
 
 var stateObject = {
 "India": { 
-"Andrha Pradesh":["Visakapatnam","Guntur","Nellor"],
+"Andhra Pradesh":["Visakapatnam","Guntur","Nellor"],
 "Arunachal Pradesh":["Itanagr","Tezu"],
 "Assam":["Dispur","Guwahati"],
 "Bihar":["Patna","Gaya"],
