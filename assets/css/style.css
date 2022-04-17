@@ -1405,7 +1405,7 @@ p {
 	border-radius: 20px;
 	transition-duration: 0.5s;
 	margin-bottom: 50px !important;
-	margin-left: 80px;
+	/* margin-left: 80px; */
 	box-shadow: 0px 0px 15px 5px lavender;
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
@@ -1419,7 +1419,7 @@ p {
 
 .login-box .title {
 	position: relative;
-	width: max-content;
+	/* width: max-content; */
 	margin: 0 auto 0.7em;
 	text-decoration: underline;
 	font-size: 2.8rem;
@@ -1926,7 +1926,7 @@ input[type="radio"] {
   width: 80%;
   color: white;
   margin-top: 21px;
-  margin-left: 80px !important;
+  /* margin-left: 80px !important; */
   background: rgba(92, 92, 81, 0.582);
   border-radius: 30px;
   display: flex;
@@ -2780,13 +2780,23 @@ select {
   }
 }
 @media(max-width:425px){
+	.update{
+		/* background-color: #fff; */
+	}
   .update img{
     margin-left: 0;
     padding: 0;
-   width: 0px;
-   height: 0px;
-
+   width: 7.5rem;
+   height: 7.5rem;
+ position: relative;
+ margin-bottom: 2.7rem;
   }
+  .login-box{
+	  margin-left: 0.3rem;
+	  margin-right: 0;
+	  /* position:absolute; */
+  }
+  
   .login-box .user-box input{
     font-size: 15px;
     /* padding: 8px; */
@@ -2797,6 +2807,7 @@ select {
 		margin-right:70px;
 	}
 }
+
 
 
 
