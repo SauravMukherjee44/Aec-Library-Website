@@ -5,40 +5,49 @@
 
 
 <!DOCTYPE html>
-<body style="background-color:powderblue;">
+<body>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+	integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>PASSWORD RECOVERY - AEC Library</title>
 		<link rel="stylesheet" type="text/css" href="login_style.css" />
 		<link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon">
 	</head>
 	<body>
-		<a href="../index.html"><h2 style="color: white;">AEC Library</h2></a>
-
-
 	<div class="container" id="container">
 		<div class="form-container sign-in-container">
-			<form id="recovery_form">
-				<h1>Recover Your Account</h1>
-				<input class="input__tag" type="email" placeholder="Email" validate id="email"  required="" />
-				<span id="mobileno" class="text-danger font-weight-bold"> </span>
+			<form id="login_form">
+				<h1 id ="heading">Recover Your Account</h1>
+				<div class="password-field">
+						<input class="input_tag" type="email" placeholder="Email" validate id="email" required="" />
+						<span id="mobileno" class="text-danger font-weight-bold"> </span>
+						<i class="fa-solid fa-envelope"></i>
+				</div>
 
         <p id="err_msg"></p>
-				<button>Submit</button>
+				<button class ="btn">Submit</button>
 
 			</form>
 
 		</div>
 	</div>
-	<a href="../index.html"><h4 style="color: black; background-color: lightskyblue; border-radius: 10px; padding: 10px;">◀ Go back to Home</h4></a>
+	<!-- <a href="../index.html"><h4 style="color: black; background-color: lightskyblue; border-radius: 10px; padding: 10px;">◀ Go back to Home</h4></a> -->
 
 	<footer>
 		<p>
 		</p>
 	</footer>
+		<div class="go-back">
+			<div class="home-page">
+				<a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+			</div>
+		
+		</div>
 </body>
 <script src="https://unpkg.com/@supabase/supabase-js"></script>
 <script type="text/javascript">
