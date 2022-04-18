@@ -81,35 +81,37 @@
 			   </ul>
 		   </div>
 	   </div>
-	   <div class="contact-form">
+	   <form id="contact-form" class="contact-form">
 		   <h2><strong> Send a Message</strong></h2>
 		   <div class="form">
 			   <div class="inputBox w50">
-				   <input type="text"  name="" required>
+				   <input type="text"  id="fname" name="" required>
 				   <span>First Name</span>
 			   </div>
 			   <div class="inputBox w50">
-				   <input type="text" name="" required>
+				   <input type="text" id="lname" name="" required>
 				   <span>Last Name</span>
 			   </div>
 			   <div class="inputBox w50">
-				   <input type="text" name="" required>
+				   <input type="text" id="email" name="" required>
 				   <span>Email Adress</span>
 			   </div>
 			   <div class="inputBox w50">
-				   <input type="text"  name="" required>
+				   <input type="text"  id="mobile" name="" required>
 				   <span>Mobile Number</span>
 			   </div>
 			   <div class="inputBox w100">
-				   <textarea name="" required></textarea>
+				   <textarea name="" id="message" required></textarea>
 				   <span>Write your message here</span>
 			   </div>
-			   <div class="inputBox w100">
-				   <input type="submit" value="Send">
-			   </div>
+			  
+			   <button class="submit-btn">
+				Submit
+			  </button>
+			  
 	
 		   </div>
-	   </div>
+		</form>
 	</div>
     <!-- footer started -->
   <div>
@@ -144,10 +146,11 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="../assets/js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!--<script src="../assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>-->
+
   <!-- Go to Top  -->
-  <script>
+  <!--<script>
     $(document).ready(function () {
       $(window).scroll(function () {
         if ($(window).scrollTop() > 40) {
@@ -169,6 +172,49 @@
         }, 400);
       });
     });
+  </script>-->
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+  <script>
+	  const contactForm = document.getElementById('contact-form');
+	  const { createClient } = supabase;
+	  const supabaseUrl = `https://cvhyilfsattdglfdmvcu.supabase.co`;
+	  const supabaseAnonKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2aHlpbGZzYXR0ZGdsZmRtdmN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ1NTE5MTksImV4cCI6MTk2MDEyNzkxOX0.wvKZxYcBbeUy9aJTw3XzbySmBJ8PkxVGXeopoucQpGY`
+	  const contactDetails = document.querySelector('.contact_details');
+
+	  const listOfInput = document.querySelectorAll('.contact-form input')
+
+	const _supabase = createClient(supabaseUrl, supabaseAnonKey);
+	function reset_form(){
+    document.getElementsByClassName("contact-form").reset();
+	}
+
+	
+	contactForm.addEventListener('submit', e=>{
+		alert('in listener');
+		e.preventDefault();
+		const { data,error } = _supabase
+		.from('contact_details')
+		.insert([
+			{
+				fname:document.getElementById('fname').value,
+          		lname:document.getElementById('lname').value,
+          		email : document.getElementById('email').value,
+          		mobile : document.getElementById('mobile').value,
+          		message : document.getElementById('message').value,
+			}
+		]).then(res=>{
+			console.log(res);
+			if(res.error){
+				alert(res.error.message)
+			}
+			else{
+				alert('Message sent');
+			}
+		})
+	})
+
+
+  
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
