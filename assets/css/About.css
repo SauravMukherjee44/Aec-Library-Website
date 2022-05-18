@@ -367,12 +367,20 @@ footer {
     margin: 0;
   }
 
+  .q-link-header {
+    font-family: "Playfair Display", serif;
+    color: bisque;
+    text-align: center;
+    padding: 10px 60px;
+    font-size: 30px;
+  }
+
   .footer-col ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 0;
-    padding: 0;
+    padding: 15px 0px;
     list-style: none;
     font-size: 20px;
     margin-bottom: 0;
@@ -396,6 +404,14 @@ footer {
     margin: 10px;
 
     
+  }
+
+  .footer-col .text{
+    padding: 5px;
+  }
+
+  .footer-col .fa-map-marker-alt {
+    width: 16px;
   }
 
   .quickcenter {
