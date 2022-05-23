@@ -12,14 +12,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
   <title>LOGIN - AEC Library</title>
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="login_style.css" />
 		
-		<link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon">
-	
+	 <!-- Bootstrap CSS -->
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+ 
+ 
+   <!-- Adding new font -> Playfair-display -->
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+ 
+   <!--Adding AOS in it-->
+   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ 
 	</head>
 	<body>
 		<a href="../index.html"><h2 style="color: white;">AEC Library</h2></a>
+		<a href="../index.html"><h6 style="color: black; background-color: lightskyblue; border-radius: 5px; padding: 5px;">◀ Back to Home</h6></a>
 
 	<div class="container" id="container">
 		<div class="form-container sign-in-container">
@@ -68,12 +82,39 @@
         	</p>
 		</div>
 	</div>
-	<a href="../index.html"><h4 style="color: black; background-color: lightskyblue; border-radius: 10px; padding: 10px;">◀ Go back to Home</h4></a>
 
-	<footer>
-		<p>
-		</p>
-	</footer>
+
+	
+  <footer>
+    <div class="footer-wrapper">
+      <div class="icons">
+
+        <ul>
+          <li>
+            <a title="linkedin" target="_blank" href="https://www.linkedin.com/in/sauravmukherjee44/"><i
+                class="fab fa-linkedin-in icon"></i></a>
+          </li>
+          <li>
+            <a title="github" target="_blank" href="https://github.com/SauravMukherjee44/"> <i
+                class="fab fa-github icon"></i> </a>
+          </li>
+          <li>
+            <a title="twitter" target="_blank" href="https://twitter.com/mesourav44/"><i
+                class="fab fa-twitter icon"></i></a>
+          </li>
+          <li>
+            <a title="youtube" target="_blank" href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw/"><i
+                class="fab fa-youtube icon"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+		
+        <!-- <p>©2021 Copyright AEC Library</p> -->
+      </div>
+    </div>
+  </footer>
+
 </body>
 <script src="https://unpkg.com/@supabase/supabase-js"></script>
 <script type="text/javascript">

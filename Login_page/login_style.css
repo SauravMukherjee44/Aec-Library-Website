@@ -119,7 +119,7 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 10px;
+  padding: 0 5px;
   height: 100%;
   text-align: center;
 }
@@ -128,7 +128,7 @@ input {
   outline: none;
   background-color: #00000012;
   border: none;
-  padding: 12px 15px;
+  padding: 10px 10px;
   margin: 8px 0;
   width: 90%;
   border-radius: 20px;
@@ -149,9 +149,10 @@ input {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
-  width: 768px;
-  max-width: 100%;
-  min-height: 480px;
+  width: 668px;
+  min-width: 410px;
+  width: 40%;
+  min-height: 460px;
   bottom: 15px;
 }
 
@@ -408,3 +409,113 @@ footer a {
   text-align: right;
   font-size: 10px;
 }
+/* scroll bar design */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(77, 32, 32);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c68b59;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c68b59;
+  border: solid 2px rgb(41, 2, 10);
+}
+
+ .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.2rem 0;
+    padding: 5px;
+    gap: 0.3rem;
+  }
+  
+  .icons ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .icons i{
+    font-size: 30px;
+  }
+  
+  .icons ul li {
+    list-style: none;
+  }
+  
+  .icons ul li a {
+    /* display: block; */
+    display: flex;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    margin: 0 0 0 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    border: 3px solid #fff;
+  }
+  
+  .icons ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  
+  .icons ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .icons ul li a:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #55acee;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  
+  .icons ul li a:hover:before {
+    top: 0;
+  }
+  
+  .icons ul li:nth-child(2) a:before {
+    background: black;
+  }
+  .icons ul li:nth-child(4) a:before {
+    background: red;
+  }
+  .ml-auto {
+    margin-top: 13px;
+    font-size: 20px;
+  }
+  
+  .table thead th {
+    vertical-align: bottom;
+    border: none;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    color: black;
+  }
