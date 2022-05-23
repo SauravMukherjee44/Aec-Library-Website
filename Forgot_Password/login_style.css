@@ -397,3 +397,25 @@ footer a {
     width: 100%;
   }
 }
+/* scroll bar design */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(77, 32, 32);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c68b59;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c68b59;
+  border: solid 2px rgb(41, 2, 10);
+}

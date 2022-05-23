@@ -343,6 +343,12 @@ footer p {
 .icons ul li:nth-child(2) a:before {
   background: black;
 }
+.icons ul li:nth-child(3) a:before {
+  background: red;
+}
+.icons ul li:nth-child(4) a:before {
+  background: #55acee;
+}
 
 /* Media Query */
 
