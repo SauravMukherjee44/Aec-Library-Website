@@ -2,9 +2,11 @@
 
 .audiobook {
 
-    margin: 40px 70px;
+    margin-top: 40px ;
+    margin-bottom: 40px;
+    margin-left : 0px;
+    margin-right : 95px;
     padding: 10px 10px;
-
     text-decoration: none;
     text-align: center;
     width: 190px;
