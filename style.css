@@ -1,0 +1,7 @@
+.hero-left{
+    max-width: 45%;
+}
+.hero-right{
+    max-width: 60%;
+    align-items: center;
+}
