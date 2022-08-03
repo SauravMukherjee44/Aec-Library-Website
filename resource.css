@@ -85,6 +85,12 @@ nav {
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin: 5px;
+  transition: all;
+  transition-duration: 500ms;
+  border-radius: 10px;
+}
+#myInput:focus{
+  width: 80%;
 }
 
 .home-tab{
@@ -92,7 +98,7 @@ nav {
   background-color: rgb(31, 31, 31);
   color: antiquewhite; 
   font-size: 15px;
-  padding: 8px 12px; 
+  padding: 12px 12px; 
   border-radius: 15px; 
   width: 100px; 
   text-align: center; 
@@ -103,7 +109,7 @@ nav {
 .home-tab:hover{
   text-decoration: none;
   background-color: rgb(78, 74, 74);
-  color: rgb(233, 221, 221);
+  color: rgb(211, 211, 211);
   text-shadow: 0px 0px 14px rgb(233, 221, 221);
   transition-delay: 0.1s;
   transition-timing-function: ease;
@@ -361,7 +367,7 @@ h3.hover-underline-animation {
 }
 /* NCERT */
 #ncert {
-  width: 100%;
+  width: 99%;
   border-radius: 8px;
   margin: 20px;
   margin-left: 6px !important;
