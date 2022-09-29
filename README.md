@@ -1,5 +1,11 @@
 <h1 align="center">Open-Source Library Website </h1>
 
+
+<p align="center">
+<img width="100%" src="https://github.com/SauravMukherjee44/CodeIN-Community-Website/raw/main/assets/img/hack.jpg" alt="main page">
+</p>
+<h1 align="center">HacktoberFest Accepted </h1>
+
 This is an Open-Source Library Website in which you get Resources to learn different topics, Donate book section to donate your old books, and a Book issue section to keep a record of all the books issued.
 This website helps you to find the books easily without any cost and the best part about the website is that you can also contribute to the website for others to use the resourses by donating the books you have , all categories of books are welcomed for donation. 
 Come forward to donate the books !!!  
