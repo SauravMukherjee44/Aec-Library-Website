@@ -2410,8 +2410,13 @@ select {
 	}
 
 	#search {
-		margin-top: 0px;
-		width: 100%;
+		margin-top: 8%;
+		/* width: 100%; */
+	}
+
+	.contain{
+		align-items: center;
+    	justify-content: center;
 	}
 
 	.list {
