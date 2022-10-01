@@ -77,8 +77,7 @@
   <link rel="stylesheet" href="assets/css/audiobook.css">
   <!-- Pop-up msg -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
-<!--The css file linking -->
-<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body class="body-style">
@@ -222,6 +221,9 @@
 
     <div class="hero-left" autofocus>
        <h2 id="IssueHere">Issue Here</h2>
+
+
+
        <form id="libraryForm">
         <div class="form-group row">
           <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
@@ -241,6 +243,8 @@
           <div class="col">
 
             <select class="form-check-input1" name="author" id="author" onchange='CheckAuthor(this.value);' style="z-index: 1;" required>
+
+
               <option value="" disabled selected>Select Author</option>
               <option value="Agatha Christie">Agatha Christie</option>
               <option value="Charles Dickens">Charles Dickens</option>
