@@ -1,3 +1,4 @@
+let booksList=""
 const recommended_books = document.getElementById("recommended_books")
 const url = "./recommended_books.json"
 fetch(url)
@@ -6,7 +7,7 @@ fetch(url)
 {
   console.log(data)
   for(let i=0; i<data.length; i++){
-    recommended_books.innerHTML += `
+    booksList += `
         <div>
           <img src="${data[i].img}" alt="book ${data[i].id}">
           <a href="${data[i].url}" target="_blank">
@@ -16,4 +17,5 @@ fetch(url)
           </a>
         </div>`   
   }
+  recommended_books.innerHTML+=booksList
 })
