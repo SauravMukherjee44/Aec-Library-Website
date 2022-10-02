@@ -47,9 +47,13 @@
 }
 .card{
   height: 510px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
   padding:2%;
-  margin:3%;
+  margin: auto;
   border:solid green;
+  border-radius: 15px;
+
   
 }
 .card-body{
