@@ -9,7 +9,6 @@ body {
   height: 100vh;
   background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
   background-size: cover;
-  /* box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; */
   z-index: 1;
   font-family: 'Poppins', sans-serif;
 }
