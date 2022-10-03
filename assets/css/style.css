@@ -582,7 +582,7 @@ strong {
 
 .bubbles img {
 	width: 50px;
-	animation: bubble 9s linear infinite;
+	animation: bubble 6s linear infinite;
 }
 
 .bubbles {
@@ -714,7 +714,7 @@ strong {
 	--text: #6c7486;
 	--page: rgba(255, 255, 255, 0.36);
 	--page-fold: rgba(255, 255, 255, 0.52);
-	--duration: 4s;
+	--duration: 2s;
 	width: 200px;
 	height: 140px;
 	position: relative;

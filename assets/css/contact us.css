@@ -472,8 +472,8 @@ footer p {
 .container .contact-form{
   position: absolute;
   padding: 70px;
-  padding-left: 250px;
-  margin-left: 150px;
+  padding-left: 400px;
+  margin-left: -26px;
   width:calc(100% - 150px);
   height: 100%;
   background: #ffffff;
