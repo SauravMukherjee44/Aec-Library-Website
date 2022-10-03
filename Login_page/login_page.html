@@ -26,17 +26,24 @@
 			<form id="login_form">
 				<h1>Sign in</h1>
 				<span>or use your account</span>
-				<input class="input__tag" type="email" placeholder="Email" validate id="email"  required="" />
-				<span id="mobileno" class="text-danger font-weight-bold"> </span>
+				<input class="input__tag" type="email" placeholder="Email" validate id="email"  required="" >
+				<!--<span id="mobileno" class="text-danger font-weight-bold"> </span>-->
+		        <input type="password" placeholder="Password" id="typepass" required="" /> 
+			<div style="
+			display: grid;
+			grid-template-columns: 160px 160px;">
+                <div>
+					<input type="checkbox" onclick="Toggle()" style="font-size: 10px;  width: 20px; position: relative;">
+					<label class="remem" style="font-size: 10px;">Show password</label>
+				</div>
+				 
+				<div>
+					<input type="checkbox" class="check" name="remember " style="font-size: 10px;  width: 20px; position: relative;">
+			        <label class="remem" style="font-size: 10px;">Remember me</label> 
+				</div>
+			</div>
 			
-	
-		
-				
-		<input type="password" 
-				type="password" placeholder="Password" id="typepass" required="" / > 
-			 
-			<input type="checkbox" onclick="Toggle()" style="font-size: 10px;">
-			<label class="remem" style="font-size: 10px;">Show password</label> 
+			
 			 
 			   <script>
 			   // Change the type of input to password or text
@@ -50,8 +57,7 @@
 					   }
 				   }
 		   </script>
-			<input type="checkbox" class="check" name="remember " required value>
-			<label class="remem" style="font-size: 10px;">Remember me</label> 
+			
 			  
 			
 			 

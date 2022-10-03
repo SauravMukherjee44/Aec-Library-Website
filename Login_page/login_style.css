@@ -138,7 +138,7 @@ input {
 .input__tag:focus {
   /* border: 2px solid #167683; */
   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.4);
-  margin: 6px 0px;
+  margin: 2px 0px;
   padding: 12px 13px;
   outline: none;
 }
