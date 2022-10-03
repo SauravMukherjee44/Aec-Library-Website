@@ -601,7 +601,9 @@ footer {
 }
 
 .animated-border-button {
-  background-color: #c08d41;
+  
+ /* As per color of homepage( looks good now ) */
+  background-color: #f3d094;
   border: none;
   color: #ffffff;
   outline: none;
