@@ -88,13 +88,13 @@ nav {
 }
 
 .home-tab{
-  float:right;
+  float:left;
   background-color: rgb(31, 31, 31);
   color: antiquewhite; 
-  font-size: 15px;
-  padding: 8px 12px; 
+  font-size: 19px;
+  padding: 9px 12px; 
   border-radius: 15px; 
-  width: 100px; 
+  width: 200px; 
   text-align: center; 
   margin: 6px;
   text-decoration: none;
