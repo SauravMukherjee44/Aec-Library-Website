@@ -42,12 +42,6 @@ Come forward to donate the books !!!
 ![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 
-## 📌 Sneak Peek of Main Page
-
-<p align="center">
-<img width="100%" src="https://github.com/SauravMukherjee44/Aec-Library-Website/blob/b55f514942f13fbbe87f0657b12446b2233dca62/assets/images/Snap.png" alt="main page">
-</p>
-
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
 Happy Submissions :slightly_smiling_face:

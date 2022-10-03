@@ -1933,7 +1933,7 @@ input[type="radio"] {
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-
+  transition: all 0.3s ease;
 }
 
 .contain:hover {
@@ -2052,13 +2052,20 @@ input[type="radio"] {
 
 /* ----------------------- */
 .col-sm-10 input,
-.form-check-input1,
 .form-check-input {
 	width: 95%;
 	padding: 3%;
 	margin-left: 16px;
 	border-radius: 10px;
 	outline: none;
+}
+.form-check-input1 {
+	width: 95%;
+	padding: 15px;
+	margin-left: 16px;
+	border-radius: 10px;
+	outline: none;
+	height: 57px;
 }
 #issueDate {
 	border-radius: 5px;
@@ -2220,6 +2227,11 @@ select {
 
 .nav-item a {
 	padding: 10px 10px 15px;
+}
+
+.nav-item i:hover {
+	background-color: #000;
+	transform: rotate(10deg);
 }
 
 .nav-item :hover {
@@ -2410,8 +2422,13 @@ select {
 	}
 
 	#search {
-		margin-top: 0px;
-		width: 100%;
+		margin-top: 8%;
+		/* width: 100%; */
+	}
+
+	.contain{
+		align-items: center;
+    	justify-content: center;
 	}
 
 	.list {
