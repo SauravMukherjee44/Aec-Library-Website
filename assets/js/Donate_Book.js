@@ -16,7 +16,7 @@ var stateObject = {
 "Jharkhand":["Ranchi","Jamshedpur"],
 "Karnataka":["Bengaluru"],
 "Kerala": ["Thiruvananthapuram", "Palakkad"],
-"Madhya Pradesh":["Bopal","Indore"],
+"Madhya Pradesh":["Betul","Bhind","Bhopal","Burhanpur","Chhatarpur","Chhindwara","Damoh","Dewas","Guna","Gwalior","Hoshangabad","Indore","Jabalpur","Katni","Khandwa","Khargone","Mandsaur","Neemuch","Ratlam","Rewa","Sagar","Satna","Sehore","Seoni","Shivpuri","Singrauli","Vidisha"],
 "Maharashtra":["Mumbai","Navi-Mumbai","Thane"],
 "Manipur":["Impal"],
 "Meghalaya":["Shillong"],
