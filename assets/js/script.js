@@ -284,7 +284,6 @@ $(window).on("scroll load resize", function(){
   console.log($(window).scrollTop());
 });
 function checkScroll(){
-  if($(window).scrollTop() > 330){
     const counters = document.querySelectorAll('.counter');
 
     counters.forEach(counter => {
@@ -301,12 +300,7 @@ function checkScroll(){
       };
       updateCount();
     });
-  } else {
-    const counters = document.querySelectorAll('.counter');
-    counters.forEach(counter => {
-      counter.innerText=0;
-    });
-  }
+  
 }
 //Chat-Bot Added
 
