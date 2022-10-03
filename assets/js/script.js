@@ -72,7 +72,6 @@ function Display() {}
 // Add methods to display prototype
 let countBooks = 0;
 Display.prototype.add = function (book) {
-  console.log("Adding to UI");
   tableBody = document.getElementById("tableBody");
   countBooks = countBooks + 1;
   let uiString = `<tr id="${countBooks}" style = "background: rgba( 148, 10, 10, 0.35 );
@@ -95,7 +94,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); color: white; font-weight: 900; f
 
 
 Display.prototype.edit = function (book) {
-  console.log("Adding to UI");
   tableBody = document.getElementById("tableBody");
   const info=(document.getElementById(countBooks).childNodes);
   info[1].textContent=book.date;
@@ -138,7 +136,6 @@ libraryForm.addEventListener("submit", libraryFormSubmit);
 
 function libraryFormSubmit(e) {
   e.preventDefault();
-  console.log("YOu have submitted library form");
   let date = document.getElementById("issueDate").value;
   let name = document.getElementById("bookName").value;
   let author = document.getElementById("author").value;
@@ -151,13 +148,11 @@ function libraryFormSubmit(e) {
 
     //  display.show("danger", "Sorry you cannot add this book");
      let book = new Book(date, name, author, category);
-     console.log(book);
  
      if (display.validate(book)) {
        let edit =document.getElementById("addBook").classList.contains("edit");
        if(edit){
          display.edit(book);
-         console.log("I am in edit");
          document.getElementById("addBook").textContent="Add Book";
         document.getElementById("addBook").classList.remove("edit");
        }
@@ -179,7 +174,6 @@ let searchForm = document.getElementById("searchForm");
 searchForm.addEventListener("submit", searchFormSubmit);
 
 function searchFormSubmit(e) {
-  console.log("You have submitted search form");
   const searchText = document.getElementById("searchTxt").value;
   if (searchText == "") {
     window.alert("Search text is Empty! Please Enter Something");
@@ -250,7 +244,9 @@ timer1 = setInterval(() => {
   setTimeout(timer1);
 }, 4500);
 let timer2 = setInterval(() => {
-  nav.classList.remove("nav_beforepreload");
+  if(nav){
+    nav.classList.remove("nav_beforepreload");
+  }
   setTimeout(timer2);
   document.body.style.transition = "0s none";
   document.body.style.transition.delay = "none";
@@ -281,7 +277,7 @@ for (i = 0; i < faq.length; i++) {
 // counter on home page
 $(window).on("scroll load resize", function(){
   checkScroll();
-  console.log($(window).scrollTop());
+  // console.log($(window).scrollTop());
 });
 function checkScroll(){
     const counters = document.querySelectorAll('.counter');
