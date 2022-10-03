@@ -14,7 +14,7 @@ var stateObject = {
 "Himachal Pradesh":["Shimla","Solan"],
 "Jammu and Kashmir":["Srinagar"],
 "Jharkhand":["Ranchi","Jamshedpur"],
-"Karnataka":["Bengaluru"],
+"Karnataka":["Bengaluru","Hubli-Dharwad","Mysore","Mangalore"],
 "Kerala": ["Thiruvananthapuram", "Palakkad"],
 "Madhya Pradesh":["Bopal","Indore"],
 "Maharashtra":["Mumbai","Navi-Mumbai","Thane"],
