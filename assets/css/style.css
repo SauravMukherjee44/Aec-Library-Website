@@ -823,6 +823,14 @@ strong {
 	color: var(--text);
 }
 
+.btn-zoom {
+	transition: transform .2s;
+}
+
+.btn-zoom:hover {
+	transform:scale(1.25);
+}
+
 @-webkit-keyframes page-2 {
 	0% {
 		transform: rotateY(180deg);
@@ -2028,12 +2036,12 @@ input[type="radio"] {
   background-color: transparent;
   width: 100%;
   overflow: scroll;
- 
+
 }
 
 #myUL li a {
   border: 1px solid #ddd;
-  margin-top: -1px; 
+  margin-top: -1px;
 
   background-color: #f6f6f6;
   padding: 12px;
@@ -2047,7 +2055,7 @@ input[type="radio"] {
   background-color: #eee;
 }
 .search-heading{
-  padding:0  !important; 
+  padding:0  !important;
 }
 
 /* ----------------------- */
@@ -2651,7 +2659,7 @@ select {
 .blog-container > *:hover .card-bg {
   opacity: 1;
   z-index: -1;
-  
+
 }
 
 .blog-container > *:hover {
@@ -2828,7 +2836,7 @@ select {
 	  margin-right: 0;
 	  /* position:absolute; */
   }
-  
+
   .login-box .user-box input{
     font-size: 15px;
     /* padding: 8px; */
@@ -2839,8 +2847,3 @@ select {
 		margin-right:70px;
 	}
 }
-
-
-
-
-
