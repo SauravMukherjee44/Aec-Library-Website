@@ -7,7 +7,6 @@ LoginForm.addEventListener('submit', (e) => {
     email: email.value,
     password: password.value,
   }).then(res=>{
-    console.log(res);
     if(res.error!=null){
       document.getElementById('err_msg').innerHTML = res.error.message;
     }
@@ -18,7 +17,7 @@ LoginForm.addEventListener('submit', (e) => {
 // console.log(session);
 
 _supabase.auth.onAuthStateChange((event, session) => {
-  if (event == 'SIGNED_IN') console.log('SIGNED_IN', session);
+  // if (event == 'SIGNED_IN') console.log('SIGNED_IN', session);
   document.getElementById('err_msg').innerHTML = "Logged In";
   location.reload();
 })
