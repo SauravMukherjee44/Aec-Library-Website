@@ -1936,7 +1936,7 @@ input[type="radio"] {
   width: 80%;
   color: white;
   margin-top: 21px;
-  /* margin-left: 80px !important; */
+  margin-left: 65px !important; 
   background: rgba(92, 92, 81, 0.582);
   border-radius: 30px;
   display: flex;
