@@ -16,8 +16,12 @@
   <title>Blogs | AEC Library</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
   <!-- Style CSS -->
   <link rel="stylesheet" href="assets/css/About.css" />
   <link rel="stylesheet" href="blogs.css" />
@@ -50,48 +54,50 @@
 
   <!-- Navbar started -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand" href="index.html"><img src="assets/logos/finalLogo.png" alt="AEC Library"
-        class="logo-img" /></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home
-            <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link active" target="_blank" onclick="return false;">
-            <i class="fas fa-book"></i> Blogs</a>
-        </li>
-        <li class="nav-item">
-          <a href="./public/donate-book.html" class="nav-link" target="_blank">
-            <i class="fas fa-book"></i> Donate Books
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="resource.html" class="nav-link" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Resources</a>
-        </li>
-        <li class="nav-item">
-          <a href="./Login_page/login_page.html" class="nav-link" target="_blank">
-            <i class="fas fa-sign-in-alt"></i> Login
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="./sign-up-page/index.html" class="nav-link" target="_blank">
-            <i class="fas fa-sign-in-alt"></i> Sign up
-          </a>
-        </li>
-
-      </ul>
-
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="assets/logos/finalLogo.png" alt="AEC Library"
+          class="logo-img" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home
+              <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active" target="_blank" onclick="return false;">
+              <i class="fas fa-book"></i> Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a href="./public/donate-book.html" class="nav-link" target="_blank">
+              <i class="fas fa-book"></i> Donate Books
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="resource.html" class="nav-link" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Resources</a>
+          </li>
+          <li class="nav-item">
+            <a href="./Login_page/login_page.html" class="nav-link" target="_blank">
+              <i class="fas fa-sign-in-alt"></i> Login
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./sign-up-page/index.html" class="nav-link" target="_blank">
+              <i class="fas fa-sign-in-alt"></i> Sign up
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
+
+
   <!-- Navbar ended -->
 
   <!-- Blogs Coding Started -->
@@ -167,77 +173,73 @@
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top"
-        src="https://miro.medium.com/max/1400/1*Rbi90NP7BILx39ZoAjMJ2A.png"
-        alt="Card image">
+      <img class="card-img-top" src="https://miro.medium.com/max/1400/1*Rbi90NP7BILx39ZoAjMJ2A.png" alt="Card image">
       <div class="card-body">
         <h5>What is Cloud Computing?</h5>
-        <p>Cloud will be synonymous with the word Web. 
-            Can you think of a business today that’s not on the internet?
-             If you don’t get on the cloud your company could be falling behind quickly.
+        <p>Cloud will be synonymous with the word Web.
+          Can you think of a business today that’s not on the internet?
+          If you don’t get on the cloud your company could be falling behind quickly.
 
           This article will help you to get what the cloud is. </p>
         <a href="https://medium.com/future-vision/what-is-cloud-computing-713bd6c3b105" target="_blank_">Read more</a>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top"
-        src="https://miro.medium.com/max/1400/1*j0PH-FYpX5NHxAR7YBkcPQ.jpeg"
-        alt="Card image">
+      <img class="card-img-top" src="https://miro.medium.com/max/1400/1*j0PH-FYpX5NHxAR7YBkcPQ.jpeg" alt="Card image">
       <div class="card-body">
         <h5>Artificial Intelligence</h5>
         <p>AI is a word widely used today.
           Unfortunately, most of us do not understand what is it, what it does or how it works.
-          
+
           Goal of this blog is to give you information about AI. </p>
-        <a href="https://medium.com/technology-hits/an-introduction-to-artificial-intelligence-b3a1bdef97f3" target="_blank_">Read more</a>
+        <a href="https://medium.com/technology-hits/an-introduction-to-artificial-intelligence-b3a1bdef97f3"
+          target="_blank_">Read more</a>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top"
-        src="https://miro.medium.com/max/1050/1*1X0-98EiQNkwBJj2vnTTqQ.jpeg"
-        alt="Card image">
+      <img class="card-img-top" src="https://miro.medium.com/max/1050/1*1X0-98EiQNkwBJj2vnTTqQ.jpeg" alt="Card image">
       <div class="card-body">
         <h5>Becoming a Full-Stack Developer</h5>
         <p>Are you looking for a roadmap that will teach you software development step by step from scratch?
           This blog gives 8 steps to become a Full-stack Web Developer. </p>
-        <a href="https://medium.com/@theSDEshow/becoming-a-full-stack-developer-from-scratch-in-2020-9718dd4a2616" target="_blank_">Read more</a>
+        <a href="https://medium.com/@theSDEshow/becoming-a-full-stack-developer-from-scratch-in-2020-9718dd4a2616"
+          target="_blank_">Read more</a>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top"
-        src="https://miro.medium.com/max/1400/1*KN0r63vdx5aDm2IpjuGIMg.jpeg"
-        alt="Card image">
+      <img class="card-img-top" src="https://miro.medium.com/max/1400/1*KN0r63vdx5aDm2IpjuGIMg.jpeg" alt="Card image">
       <div class="card-body">
         <h5>Computer Programming Languages</h5>
-        <p>This blog explains 14 programming languages (C, C#, C++, HTML, CSS, Java,JavaScript, ObjectiveC, PHP, Perl, Python, Ruby, SQL,Swift) with uses. </p>
-        <a href="https://medium.com/nerd-for-tech/14-different-programming-languages-and-their-uses-explained-8d654f0c1788" target="_blank_">Read more</a>
+        <p>This blog explains 14 programming languages (C, C#, C++, HTML, CSS, Java,JavaScript, ObjectiveC, PHP, Perl,
+          Python, Ruby, SQL,Swift) with uses. </p>
+        <a href="https://medium.com/nerd-for-tech/14-different-programming-languages-and-their-uses-explained-8d654f0c1788"
+          target="_blank_">Read more</a>
       </div>
     </div>
-  
+
     <div class="card">
-      <img class="card-img-top"
-        src="https://miro.medium.com/max/1400/1*TriVn-OMmn-niO4fwGAE8A.jpeg"
-        alt="Card image">
+      <img class="card-img-top" src="https://miro.medium.com/max/1400/1*TriVn-OMmn-niO4fwGAE8A.jpeg" alt="Card image">
       <div class="card-body">
         <h5>Learning Android Development</h5>
-        <p>This article is for Anyone who wants to learn Android Development but 
-            has no idea where to start.
+        <p>This article is for Anyone who wants to learn Android Development but
+          has no idea where to start.
           Also for someone who started on Android Development
-           but wants to learn the advanced topics.</p>
-        <a href="https://medium.com/mindorks/learning-android-development-in-2019-a-practical-guide-ddc71e008696" target="_blank_">Read more</a>
+          but wants to learn the advanced topics.</p>
+        <a href="https://medium.com/mindorks/learning-android-development-in-2019-a-practical-guide-ddc71e008696"
+          target="_blank_">Read more</a>
       </div>
     </div>
-  <div class="card">
+    <div class="card">
       <img class="card-img-top"
         src="https://res.cloudinary.com/upskilled/image/fetch/w_600,h_400,c_crop,c_fill,g_face:auto,f_auto/https://www.upskilled.edu.au/getmedia%2F164d8e1f-58ea-42b7-9e5c-d6350271481f%2Fcareer-in-computer-networking-HERO.jpg%3B.aspx%3Fwidth%3D1000%26height%3D667%26ext%3D.jpg"
         alt="Card image">
       <div class="card-body">
         <h5>Computer Networking</h5>
         <p>In this article, concept of Computer Network is discussed briefly with OSI,Protocols,Socket,DNS Server,
-            ARP,Internet,URI & many more concpets.
+          ARP,Internet,URI & many more concpets.
         </p>
-        <a href="https://medium.com/@computerscienceengineering/basics-of-computer-networking-6c7b961f4e14" target="_blank_">Read more</a>
+        <a href="https://medium.com/@computerscienceengineering/basics-of-computer-networking-6c7b961f4e14"
+          target="_blank_">Read more</a>
       </div>
     </div>
     <div class="card">
@@ -246,20 +248,23 @@
         alt="Card image">
       <div class="card-body">
         <h5>Guide to Game Development</h5>
-        <p>In this blog, we learn about the Unity software, it's growing popularity, how to use it as a beginner in game development, writing code in C# and including it in the aforementioned software.
+        <p>In this blog, we learn about the Unity software, it's growing popularity, how to use it as a beginner in game
+          development, writing code in C# and including it in the aforementioned software.
         </p>
-        <a href="https://xccelerate.medium.com/how-to-get-started-with-game-development-using-unity-6bb65dccac3d" target="_blank_">Read more</a>
+        <a href="https://xccelerate.medium.com/how-to-get-started-with-game-development-using-unity-6bb65dccac3d"
+          target="_blank_">Read more</a>
       </div>
     </div>
     <div class="card">
       <img class="card-img-top"
-        src="https://res.cloudinary.com/drvvhphww/image/upload/w_600,h_400/v1664709928/OS1_zqh4y5.jpg"
-        alt="Card image">
+        src="https://res.cloudinary.com/drvvhphww/image/upload/w_600,h_400/v1664709928/OS1_zqh4y5.jpg" alt="Card image">
       <div class="card-body">
         <h5>Introduction to Operating Systems</h5>
-        <p>As a beginner this article will help you understand operating systems, its funtions, structure(for iOS, android), its components, system-services and give you a brief introduction to system calls.
+        <p>As a beginner this article will help you understand operating systems, its funtions, structure(for iOS,
+          android), its components, system-services and give you a brief introduction to system calls.
         </p>
-        <a href="https://medium.com/@demozeik/introduction-to-operating-system-3274f0ff947d" target="_blank_">Read more</a>
+        <a href="https://medium.com/@demozeik/introduction-to-operating-system-3274f0ff947d" target="_blank_">Read
+          more</a>
       </div>
     </div>
     <div class="card">
@@ -268,7 +273,8 @@
         alt="Card image">
       <div class="card-body">
         <h5>MySQL vs MongoDB</h5>
-        <p>This blog will help you go through an introduction to both the databases, their respective pros and cons, a very brief yet informative comparison chart and help you decide on a database for your next project!
+        <p>This blog will help you go through an introduction to both the databases, their respective pros and cons, a
+          very brief yet informative comparison chart and help you decide on a database for your next project!
         </p>
         <a href="https://medium.com/@toprak.mhmt/mysql-vs-mongodb-8b3460acfcdd" target="_blank_">Read more</a>
       </div>
@@ -279,7 +285,8 @@
         alt="Card image">
       <div class="card-body">
         <h5>Introduction to CRUD</h5>
-        <p>In modern day web development, users interact with databases. Create, Update, Read and Delete are the actions that take place on database following the interaction. This blog will help you read more upon it.
+        <p>In modern day web development, users interact with databases. Create, Update, Read and Delete are the actions
+          that take place on database following the interaction. This blog will help you read more upon it.
         </p>
         <a href="https://flatlogic.com/blog/crud-app/" target="_blank_">Read more</a>
       </div>
@@ -290,9 +297,11 @@
         alt="Card image">
       <div class="card-body">
         <h5>Chatbot with Python and DL</h5>
-        <p>Chatbots are needed everywhere, they help run businesses in today's world. This blog helps you step-by-step build your very own chatbot, required Deep Learning Model and a GUI for the same.
+        <p>Chatbots are needed everywhere, they help run businesses in today's world. This blog helps you step-by-step
+          build your very own chatbot, required Deep Learning Model and a GUI for the same.
         </p>
-        <a href="https://towardsdatascience.com/how-to-create-a-chatbot-with-python-deep-learning-in-less-than-an-hour-56a063bdfc44" target="_blank_">Read more</a>
+        <a href="https://towardsdatascience.com/how-to-create-a-chatbot-with-python-deep-learning-in-less-than-an-hour-56a063bdfc44"
+          target="_blank_">Read more</a>
       </div>
     </div>
     <div class="card">
@@ -301,12 +310,13 @@
         alt="Card image">
       <div class="card-body">
         <h5>Introduction to DevOps</h5>
-        <p>We've been hearing the terms DevOps, Docker, Kubernetes a lot as of late. This article will help you understand the what, why and how of DevOps. It will help you get started in this field as a beginner.
+        <p>We've been hearing the terms DevOps, Docker, Kubernetes a lot as of late. This article will help you
+          understand the what, why and how of DevOps. It will help you get started in this field as a beginner.
         </p>
         <a href="https://mayankchourasia2.medium.com/devops-for-beginners-cbc509d9c61e" target="_blank_">Read more</a>
       </div>
     </div>
-</div>
+  </div>
 
 
 
@@ -425,27 +435,19 @@
 
         <p>©2021 Copyright AEC Library</p>
       </div>
-      <!--
-        <div class="ml-auto">
-          <p>
-            <a href="./public/contact us .html" style="color: antiquewhite;"> </a>
-            &emsp;&emsp;
-          </p>
-
-        </div>
-        -->
     </div>
   </footer>
-
+    
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset: 400, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 1000 // values from 0 to 3000, with step 50ms
-    });
-  </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 400, // offset (in px) from the original trigger pointt
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1000 // values from 0 to 3000, with step 50ms
+  });
+</script>
 
 </html>
