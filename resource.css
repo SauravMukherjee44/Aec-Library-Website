@@ -180,6 +180,8 @@ main {
   background-color: white;
   text-align: center;
   background: url("assets/images/Resource_Background.jpg");
+  filter: brightness(90%);
+  background-repeat: repeat-y;
 }
 
 h2 {
@@ -203,7 +205,7 @@ video {
   padding: 10px;
   box-shadow: 5px 3px gainsboro;
   width: 100%;
-  height: 400px;
+  height: 300px;
   border-radius: 15px;
 }
 
@@ -212,10 +214,13 @@ section h5 {
 }
 
 .hover-underline-animation {
+  font-family:'Trebuchet MS';
   display: inline-block;
   position: relative;
-  color: wheat;
-  text-shadow: 0px 0px 12px wheat;
+  color: white;
+  font-weight: bolder;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px rgb(250, 184, 4);
 }
 
 .hover-underline-animation:after {
@@ -227,11 +232,13 @@ section h5 {
   bottom: 0;
   left: 0;
   background-color: wheat;
+  color: white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 
 .hover-underline-animation:hover:after {
+  color: white;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -307,6 +314,7 @@ section h5 {
 h3.hover-underline-animation {
   margin-top: 0px;
   margin-bottom: 8px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* Navigate to Top Button styling */
 
@@ -351,6 +359,7 @@ h3.hover-underline-animation {
 }
 /* QUESTION BANK */
 #qb {
+  width: 90%;
   display: flex;
   text-align: center;
   justify-content: space-around;
@@ -359,9 +368,22 @@ h3.hover-underline-animation {
   margin-right: 5px;
   border-radius: 8px;
 }
-/* NCERT */
+/* NCERT and CBSE NOTES*/
+#cbse_notes {
+  width: 90%;
+  border-radius: 8px;
+  margin: 20px;
+  margin-left: 6px !important;
+  margin-right: 5px !important;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 #ncert {
-  width: 100%;
+  width: 90%;
   border-radius: 8px;
   margin: 20px;
   margin-left: 6px !important;
@@ -377,7 +399,8 @@ h3.hover-underline-animation {
   margin-top: 10px;
 }
 .NC:hover{
-  transform: scale(1.04);
+  transform: scale(1.04);  
+  transition: 0.3s ease-in-out;
 }
 
 .more_books_btn{
@@ -388,17 +411,35 @@ h3.hover-underline-animation {
 
 .ncert-btn{
   color: whitesmoke;
+  font-weight: bold;
   background-color: #432ffc;
   border-radius: 15px;
   padding: 10px 20px;
 }
 
 .ncert-btn:hover{
-  color: rgb(233, 233, 233);
+  color: #3e2dd8;
   text-shadow: 0px 0px 14px rgb(233, 233, 233);
   transition-delay: 0.1s;
   transition-timing-function: ease;
-  background-color: #3e2dd8;
+  background-color: white;
+  text-decoration: none;
+}
+
+.notes-btn{
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #432ffc;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+.notes-btn:hover{
+  color: #3e2dd8;
+  text-shadow: 0px 0px 14px rgb(233, 233, 233);
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+  background-color: white;
   text-decoration: none;
 }
 
