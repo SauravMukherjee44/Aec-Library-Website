@@ -219,12 +219,12 @@ label[for="dateIssue"] {
 
 .navbar-light .navbar-nav .nav-link {
 	color: rgb(255 255 255 / 50%);
-	transition-duration: 0.3s;
+	transition-duration: 0.1s;
 	font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-	transition-duration: 0.3s;
+	transition-duration: 0.1s;
 	color: rgb(255 255 255 / 100%);
 }
 
@@ -291,7 +291,7 @@ html {
 }
 
 #searchTxt {
-	border-radius: 10px;
+	border-radius: 20px;
 	height: 30px;
 }
 
@@ -377,7 +377,7 @@ html {
 }
 
 .space {
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 /* footer */
@@ -821,6 +821,14 @@ strong {
 	margin-top: 20px;
 	text-align: center;
 	color: var(--text);
+}
+
+.btn-zoom {
+	transition: transform .2s;
+}
+
+.btn-zoom:hover {
+	transform:scale(1.25);
 }
 
 @-webkit-keyframes page-2 {
@@ -2011,7 +2019,7 @@ input[type="radio"] {
 }
 /* filter book by name */
 #myInput {
-  background-image: url('/css/searchicon.png');
+  /* background-image: url('/css/searchicon.png'); */
   background-position: 10px 12px;
   background-repeat: no-repeat;
   width: 100%;
@@ -2028,12 +2036,12 @@ input[type="radio"] {
   background-color: transparent;
   width: 100%;
   overflow: scroll;
- 
+
 }
 
 #myUL li a {
   border: 1px solid #ddd;
-  margin-top: -1px; 
+  margin-top: -1px;
 
   background-color: #f6f6f6;
   padding: 12px;
@@ -2047,7 +2055,7 @@ input[type="radio"] {
   background-color: #eee;
 }
 .search-heading{
-  padding:0  !important; 
+  padding:0  !important;
 }
 
 /* ----------------------- */
@@ -2237,6 +2245,7 @@ select {
 .nav-item :hover {
 	background-color: rgb(247, 191, 9);
 	opacity: 1;
+	transition-duration: inherit;
 }
 
 .nav-item a {
@@ -2651,7 +2660,7 @@ select {
 .blog-container > *:hover .card-bg {
   opacity: 1;
   z-index: -1;
-  
+
 }
 
 .blog-container > *:hover {
@@ -2828,7 +2837,7 @@ select {
 	  margin-right: 0;
 	  /* position:absolute; */
   }
-  
+
   .login-box .user-box input{
     font-size: 15px;
     /* padding: 8px; */
@@ -2839,8 +2848,3 @@ select {
 		margin-right:70px;
 	}
 }
-
-
-
-
-

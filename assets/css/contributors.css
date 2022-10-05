@@ -248,6 +248,10 @@ body{
                
   
   }
+
+  .contributor_div:hover{
+    cursor: pointer;
+  }
   /* footer */
 /* footer {
     position: relative;
