@@ -1777,7 +1777,8 @@ input[type="radio"] {
 	background: transparent;
 }
 
-.newsletter-submit {
+/* Old subscribe button */
+/* .newsletter-submit {
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
@@ -1792,7 +1793,45 @@ input[type="radio"] {
 	background-color: #d9e4f5;
 	background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
 	border-radius: 40px;
+	
+} */
+
+/* New subscribe button */
+.newsletter-submit{
+	width: 132x;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 52px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+	background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+	padding: 14px;
+	font-family: 'bootstrap-icons';
 }
+
+.newsletter-submit:hover{
+	background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#btnSubmit{
+	color: white;
+}
+
+
 
 /* end of newsletter styles */
 
