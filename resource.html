@@ -55,10 +55,20 @@
 
     <header>
       <a href="index.html" class="nav-link"> <h1>AEC Library</h1></a>
+      <div class="search-box-container">
+        <div class="search-box">
+            <input type="text" id="search-bar">
+            <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
     </header>
     
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-    <a href="./index.html" class="home-tab">Home</a>
+    <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <a href="./index.html" class="home-tab">Home</a> -->
 
     <nav class="">
         <div class="">
@@ -66,6 +76,7 @@
                 <a class="grid-item " href="#courses">Courses</a>
                 <a class="grid-item " href="#yt">Youtube Channels</a>
                 <a class="grid-item " href="#ncert">NCERT Books</a>
+                <a class="grid-item " href="#cbse_notes">CBSE Notes</a>
                 <a class="grid-item " href="#qb">Question Banks</a>
                 <a class="grid-item " href="#audio-books">Audio Books</a>
                 <a class="grid-item " href="#study">Study Materials</a>
@@ -775,6 +786,7 @@
             <br><br>
         </section>
 
+        <center>
         <h2 class="hover-underline-animation"> NCERT Books </h2>
 
         <section id="ncert">
@@ -871,6 +883,69 @@
             </div>
 
         </section>
+    
+            <!-- cbse notes for class 11 and 12 -->
+            <h2 class="hover-underline-animation"> CBSE Notes </h2>
+
+            <section id="cbse_notes">
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/physics_11.zip">
+                        <img class="books" src="cbse_notes/images/PHY11.png" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/chemistry_11.zip">
+                        <img class="books" src="cbse_notes/images/CH11.jpg" alt=""></a>
+                </div>
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/maths_11.zip">
+                        <img class="books" src="cbse_notes/images/M11.jpg" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/geography_11.zip">
+                        <img class="books" src="cbse_notes/images/GEO11.webp" alt=""></a>
+                </div>
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/cs_11.pdf">
+                        <img class="books" src="cbse_notes/images/CS11.jpg" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/business_12.zip">
+                        <img class="books" src="cbse_notes/images/BUS12.jfif" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/accountancy_12.zip">
+                        <img class="books" src="cbse_notes/images/ACC12.jpg" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/biology_12.zip">
+                        <img class="books" src="cbse_notes/images/BIO12.jfif" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/history_12.zip">
+                        <img class="books" src="cbse_notes/images/HIST12.jpg" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/psychology_12.zip">
+                        <img class="books" src="cbse_notes/images/PSYCHO12.jpg" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/economic_12.zip">
+                        <img class="books" src="cbse_notes/images/MECO12.jpg" alt=""></a>
+                </div>
+
+                <div class="more_books_btn">
+                    <a class="notes-btn" href="./cbse_notes.html"> More Notes </a>
+                </div>
+    
+            </section>
 
         <h2 class="hover-underline-animation">Question Banks</h2>
 
@@ -1112,9 +1187,10 @@
                     </div>
                 </section>
             
-            
+         
+<br> <br>   
     </main>
-
+</center>
     <!-- ------- -->
     <script>
         function myFunction() {
@@ -1391,4 +1467,3 @@
 </body>
 
 </html>
-
