@@ -76,7 +76,7 @@ nav {
   background-position: center;
   background-size: cover;
 }
-#myInput {
+/* #myInput {
   background-image: url('/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
@@ -85,6 +85,33 @@ nav {
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin: 5px;
+} */
+.search-box-container{
+  display: flex;
+  justify-content: flex-end;
+}
+.search-box{
+  border: 1px solid wheat;
+  border-radius: 9px;
+  background-color: wheat;
+}
+input:focus{
+  outline: none;
+  border:none;
+  padding-left: 5px;
+}
+#search-bar{
+  border:none;
+  background-color: transparent;
+  border-radius: 9px;
+}
+.search-btn{
+  background: transparent;
+  color: black;
+  border: none;
+  position: relative;
+  right: 8px;
+  bottom: 3px;
 }
 
 .home-tab{
