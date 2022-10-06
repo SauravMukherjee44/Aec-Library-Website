@@ -30,6 +30,7 @@
     <!-- bootstrap-css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap.min.css">
 
     <!-- font awseome cdn linking-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -1137,68 +1138,78 @@
 
     <!--FOoTer section Updated-->
 
-    <footer>
-        <div class="footer-1">
-            <div class="content">
-                <div class="left box">
-                    <div class="upper">
-                        <div class="topic">About us</div>
-                        <p>We have gathered a list of some of the catchiest books of Various genre that shine brightly
-                            within the industry.
-                            These remarkable Books are followed by the Greatest People of All-Time.The power to be found
-                            between the pages of a
-                            book is formidable, indeed.</p>
-                    </div>
-                    <div class="lower">
-                        <div class="topic"><a href="./public/contact us .html" style="color: antiquewhite;">Contact Us
-                            </a></div>
-                        <!-- <div class="phone">
-                         <a href="#"><i class="fa fa-volume-control-phone"></i>+91 123 456 7891</a>
-                     </div> -->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <section id="tile-1" class="col-sm-4">
+                    <div class="footer-section">
+                        <div>
+                            <blockquote>
+                                <cite>
+                                    "Books are a uniquely portable magic, Take a good book to bed with you — books do not snore."
+                                </cite>
+                            </blockquote>
+                        </div>
+                            <form action="#" name="feedbackform" onsubmit="return feedbackvalidate()">
+                                <input class="feed" type="text" placeholder="Enter your valuable feedback" name="feedback">
+                                <button type="submit" class="btn">Send</button>
+                            </form>
+                        </div>
+                    <hr class="d-block d-sm-none">
+                </section>
 
-                         <div class="email">
-                             <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><i class="fa fa-github-square"></i>Github</a> <br>
-                             <!-- <a href=""><i class="fa fa-user-circle"></i></a> -->
-                           </div>
+                <section id="tile-2" class="col-sm-4">
+                    <span><u>About Us</u></span><br>
+                    <div class="footer-section">
+                        <div class="about-content">
+                            We have gathered a list of some of the catchiest books of Various genre that shine brightly within the industry. These remarkable Books are followed by the Greatest People of All-Time.The power to be found between the pages of a book is formidable, indeed.
                         </div>
                     </div>
-                 <div class="middle box">
-                      <div class="topic">General Message </div>
-                       <p>Books are a uniquely portable magic,</br>
-                       Take a good book to bed with you—books do not snore.</p>
-                        <div><i class="fa fa-smile-o" , style="color:#e0b02c"></i>
-                            <i class="fa fa-smile-o" , style="color:#e0b02c"></i>
-                            <i class="fa fa-smile-o" , style="color:#e0b02c"></i></div>
-                </div>
-                <div class="right box">
-                    <div class="topic">Feedback</div>
-                    <form action="#" name="feedbackform" onsubmit="return feedbackvalidate()">
-                        <input type="text" placeholder="Enter your valuable feedback" name="feedback">
-                        <button type="submit" class="btn">Send</button>
+                    <hr class="d-block d-sm-block d-md-none">
+                </section>
+
+                <section id="tile-3" class="col-sm-4">
+                    <span>
+                        <a href="./public/contact us .html" style="color: antiquewhite;"><u>Contact Us</u></a>
+                    </span>
+                    <div class="footer-section">
+                        <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><i class="fa fa-github-square"></i>Github</a>
+                    </div>
+
+                    <span><u>Social</u></span>
+                    <div class="footer-section">
                         <div class="social-container">
                             <ul class="social-icons">
-
-                                <a class="Twitter" href="https://twitter.com/mesourav44" target="_blank"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="Instagram" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a class="linkedin" href="https://www.linkedin.com/in/sauravmukherjee44/"
-                                    target="_blank"><i class="fab fa-linkedin"></i></a>
-                                <a class="Github" href="https://github.com/SauravMukherjee44/" target="_blank"><i
-                                        class="fab fa-github-square"></i></a>
-                                <a class="Blog" href="#" target="_blank"><i class="fa fa-rss-square"></i></a>
+                               <li>
+                                    <a class="Twitter" href="https://twitter.com/mesourav44" target="_blank"><i class="fab fa-twitter"></i></a>
+                               </li>
+                                <li>
+                                    <a class="Instagram" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a class="linkedin" href="https://www.linkedin.com/in/sauravmukherjee44/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a class="Github" href="https://github.com/SauravMukherjee44/" target="_blank"><i class="fab fa-github-square"></i></a>
+                                </li>
+                                <li>
+                                    <a class="Blog" href="#" target="_blank"><i class="fa fa-rss-square"></i></a>
+                                </li>
                             </ul>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="bottom">
-                <p>Copyright © 2021 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"> @ AEC Library
-                    </a> All rights reserved</p>
-            </div>
+                    </div>
+                    <hr class="d-block d-sm-none">
+                </section>
+                <hr class="rule">
 
+            </div>
+            <div class="text-center copy">
+                Copyright © 2021
+                <a href="https://github.com/SauravMukherjee44/Aec-Library-Website">&copy;AEC Library</a>
+                All rights reserved
+            </div>
         </div>
-        </div>
-    </footer>
+    </footer> 
     <!-- Navigate to Top Button  -->
     <script>
         $(document).ready(function () {
