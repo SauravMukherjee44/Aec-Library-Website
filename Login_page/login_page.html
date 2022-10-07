@@ -1,70 +1,47 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login AEC Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="login_style.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <title>LOGIN - AEC Library</title>
-</head>
+  <body>
 
-<body>
-  <h1 id="err"></h1>
-  <div class="section">
-    <div class="header">
-      AEC Library - Login
-    </div>
-    <form class="login_form" id="form">
-      <div class="first-box">
-        <div class="form-group">
-            <i class="fa fa-envelope"></i>
-            <input type="email" name="" id="email" placeholder="Email" />
+    <section class="Form my-4 mx-5">
+      <div class="container no-gutters">
+        <div class="row ">
+          <div class="col-lg-5">
+            <img src="./Login_background.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 px-5 pt-5">
+            <h1 class="font-weight-bold py-3">AEC Library Login</h1>
+            <form>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <input type="email" class="form-control my-3 p-2" placeholder="Email-Address">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <input type="password" class="form-control my-3 p-2" placeholder="password">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <button type="button" class="btn1 mt-3 mb-5">Login</button>
+                </div>
+              </div>
+              <a href="#" >Forgot password</a>
+              <p>Don't have an account? <a href="#">Register here</a></p>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="second-box">
-        <div class="form-group">
-            <i class="fa fa-unlock-alt"></i>
-            <input type="password" name="" id="password" placeholder="Password" />
-            <i class="fa fa-eye-slash icon" id="newPassword"></i>
-        </div>
-      </div>
-      <div class="button">
-          <button style="color: white">submit</button>
-      </div>
-    </form>
-    <div class="redirect">
-      Don't have an account ? 
-      <button>
-        <a href="../sign-up-page/index.html" style="color: white">Sign-Up</a>
-      </button>
-    </div>
-    
-  </div>
-  <div class="logged_in" style="display: block">
-    <span id="username">You Are Already Logged In</span>
-    <button id="logged_out">Log Out</button>
-  </div>
+    </section>
 
-  <div class="quiz-exit">
-    <a href="/index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #635147;">
-        <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
-      </svg></a>
-  </div>
-
-<script src="https://unpkg.com/@supabase/supabase-js"></script>
-<script type="text/javascript">
-  const { createClient } = supabase
-  const supabaseUrl = `https://cvhyilfsattdglfdmvcu.supabase.co`
-  const supabaseAnonKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2aHlpbGZzYXR0ZGdsZmRtdmN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ1NTE5MTksImV4cCI6MTk2MDEyNzkxOX0.wvKZxYcBbeUy9aJTw3XzbySmBJ8PkxVGXeopoucQpGY`
-
-  const _supabase = createClient(supabaseUrl, supabaseAnonKey)
-
-  //console.log(_supabase);
-</script>
-
-<script src = "login.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
 </html>
