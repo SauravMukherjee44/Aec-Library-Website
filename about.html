@@ -205,7 +205,7 @@
         </div>
         <div>
 
-          <p style="color: cornsilk;">&#169 2021 Copyright AEC Library</p>
+          <p style="color: cornsilk;">&#169 <span id="footer-year"></span> Copyright AEC Library</p>
         </div>
         
     </footer>
@@ -265,6 +265,11 @@
       duration: 1000,
     });
   </script> -->
+    <!-- Footer Year Calculator -->
+  <script>
+    var year = new Date().getFullYear();
+    document.getElementById("footer-year").innerHTML = year;
+  </script>
 </body>
 
 </html>
