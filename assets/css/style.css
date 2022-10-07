@@ -2839,8 +2839,10 @@ select {
 		margin-right:70px;
 	}
 }
-
-
+#nyan-btn{
+	width: 100px;
+	height: 100px;
+}
 
 
 
