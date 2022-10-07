@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-image: url("library-bg-1.jpg");
+  background-color: #635147;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+  font-family: 'Josefin Sans',
+  sans-serif;
+  color: #fff;
+}
+::placeholder {
+  color: #fff;
+}
+.header{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.signUp-form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 1.2rem;
+}
+.signUp-form input {
+  padding: 0%;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0.7rem;
+  font-family: 'Josefin Sans',
+    sans-serif;
+}
+
+.form-group {
+  border-bottom: 1px solid #fff;
+  margin: 1rem;
+  display: flex;
+}
+
+.form-group i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.no-border {
+  border: none;
+}
+#male,
+#female {
+  font-size: 3rem;
+}
+
+#male+label,
+#female+label {
+  color: white;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  color: #fff;
+  border: 3px solid white;
+  font-family: 'Josefin Sans',
+    sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: transparent;
+  padding: 1rem;
+  outline: none;
+  border-radius: 4px;
+}
+button:hover {
+  color: #635147;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.redirect {
+  margin: 25px 50px 75px 100px;
+  color: white;
+  font-size: 1.4rem;
+}
+
+button {
+  border-radius: 6px;
+  background-color: #c35047;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 150px;
+  height: 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+
+}
+
+button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+  font-size: medium;
+}
+
+button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+  background-color: black;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.quiz-exit {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  margin: 2rem;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #635147;
+  ;
+}
+
+.quiz-exit:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #635147;
+  ;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+a {
+  text-decoration: none;
+  color: #635147;
+}
+
+@media only screen and (max-width: 700px) {
+  html{
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signUp-form {
+    display: block;
+  }
+  .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .redirect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .quiz-exit {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+
+
+/* .cover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUp-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+.signUp-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUp-form {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+/* Exit */
+/* 
+
+@media only screen and (max-width: 425px) {
+  .section {
+    height: 100vh;
+  }
+
+  .container {
+    width: 90%;
+    height: 95vh;
+  }
+
+  .signUp-form::before {
+    font-size: 15px;
+    top: 2.5rem;
+    left: 31%;
+  }
+
+  .signUp-form {
+    flex-direction: column;
+    top: -2rem;
+  }
+
+  .signUp-box {
+    padding: 1rem;
+  }
+
+  .first-box {
+    height: 40vh;
+  }
+
+  .second-box {
+    height: 40vh;
+  }
+
+  .signUp-form input {
+    padding: 0;
+  }
+
+  .form-group input {
+    font-size: 10px;
+  }
+
+  .form-group i {
+    font-size: 10px;
+  }
+
+  #male,
+  #female {
+    margin-top: 0.6rem;
+  }
+
+  #male+label,
+  #female+label {
+    font-size: 10px;
+  }
+
+  #fullName {
+    margin-top: 1rem;
+  }
+
+  .btn #button {
+    padding: 8px 0px 8px 0px;
+    width: 80%;
+    font-size: 10px;
+    margin-top: 2rem;
+  }
+
+  .redirect {
+    font-size: 10px;
+    bottom: 7rem;
+  }
+
+  .quiz-exit {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    margin: 2rem;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+  .form-group input {
+    font-size: 16px;
+  }
+
+  .form-group i {
+    font-size: 16px;
+  }
+
+  #male+label,
+  #female+label {
+    font-size: 16px;
+  }
+
+  .btn #button {
+    padding: 10px 0px 10px 0px;
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .redirect {
+    font-size: 16px;
+    bottom: 5rem;
+    left: 22.5%;
+  }
+
+  .redirect a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quiz-exit {
+    left: 6rem;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
