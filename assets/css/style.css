@@ -1410,7 +1410,7 @@ p {
 .login-box {
 	width: 60%;
 	padding: 40px;
-	background: rgba(0, 0, 0, 0.25);
+	background: rgba(0, 0, 0, 0.75);
 	box-sizing: border-box;
 	border-radius: 20px;
 	transition-duration: 0.5s;
@@ -1433,7 +1433,7 @@ p {
 	margin: 0 auto 0.7em;
 	text-decoration: underline;
 	font-size: 2.8rem;
-	color: rgb(235, 245, 247);
+	color: rgb(255, 183, 0);
 	letter-spacing: 1.5px;
 }
 
