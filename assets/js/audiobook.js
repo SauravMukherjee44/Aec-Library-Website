@@ -36,8 +36,10 @@ function progress(btn, song) {
     }, 133.7);
 }
 
-nyanBtn.addEventListener('click', function () {
-    nyanBtn.classList.toggle('playing');
-    playPause(nyan);
-    progress(nyanBtn, nyan);
-});
+if(nyanBtn){
+    nyanBtn.addEventListener('click', function () {
+        nyanBtn.classList.toggle('playing');
+        playPause(nyan);
+        progress(nyanBtn, nyan);
+    });
+}
