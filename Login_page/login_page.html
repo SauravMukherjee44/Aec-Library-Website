@@ -11,48 +11,49 @@
 </head>
 
 <body>
-  <h1 id="err"></h1>
-  <div class="section">
-    <div class="header">
-      AEC Library - Login
-    </div>
-    <form class="login_form" id="form">
-      <div class="first-box">
-        <div class="form-group">
-            <i class="fa fa-envelope"></i>
-            <input type="email" name="" id="email" placeholder="Email" />
+  <main>
+    <h1 id="err"></h1>
+    <div class="section">
+      <div class="header">
+        AEC Library - Login
+      </div>
+      <form class="login_form" id="form">
+        <div class="first-box">
+          <div class="form-group">
+              <i class="fa fa-envelope"></i>
+              <input type="email" name="" id="email" placeholder="Email" />
+          </div>
         </div>
-      </div>
-      <div class="second-box">
-        <div class="form-group">
-            <i class="fa fa-unlock-alt"></i>
-            <input type="password" name="" id="password" placeholder="Password" />
-            <i class="fa fa-eye-slash icon" id="newPassword"></i>
+        <div class="second-box">
+          <div class="form-group">
+              <i class="fa fa-unlock-alt"></i>
+              <input type="password" name="" id="password" placeholder="Password" />
+              <i class="fa fa-eye-slash icon" id="newPassword"></i>
+          </div>
         </div>
+        <div class="button">
+            <button style="color: white">submit</button>
+        </div>
+      </form>
+      <div class="redirect">
+        Don't have an account ? 
+        <button>
+          <a href="../sign-up-page/index.html" style="color: white">Sign-Up</a>
+        </button>
       </div>
-      <div class="button">
-          <button style="color: white">submit</button>
-      </div>
-    </form>
-    <div class="redirect">
-      Don't have an account ? 
-      <button>
-        <a href="../sign-up-page/index.html" style="color: white">Sign-Up</a>
-      </button>
+
     </div>
-    
-  </div>
-  <div class="logged_in" style="display: block">
-    <span id="username">You Are Already Logged In</span>
-    <button id="logged_out">Log Out</button>
-  </div>
+    <div class="logged_in" style="display: block">
+      <span id="username">You Are Already Logged In</span>
+      <button id="logged_out">Log Out</button>
+    </div>
 
-  <div class="quiz-exit">
-    <a href="/index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #635147;">
-        <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
-      </svg></a>
-  </div>
-
+    <div class="quiz-exit">
+      <a href="/index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #635147;">
+          <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
+        </svg></a>
+    </div>
+  </main>
 <script src="https://unpkg.com/@supabase/supabase-js"></script>
 <script type="text/javascript">
   const { createClient } = supabase
