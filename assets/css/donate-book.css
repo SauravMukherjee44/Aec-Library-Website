@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+/* scroll bar design */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(77, 32, 32);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c68b59;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c68b59;
+  border: solid 2px rgb(41, 2, 10);
+}
+
+/* particle.js */
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* reset universal */
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(https://img-cdn.inc.com/image/upload/images/panoramic/GettyImages-577674005_492115_zfpgiw.jpg);
+
+}
+
+.wrapper {
+  position: relative;
+  width: 55%;
+  margin: auto;
+  z-index: 1;
+}
+
+.login-box {
+  padding: 60px;
+  background: rgba(73, 46, 13, 0.781);
+  background-repeat:no-repeat;
+  object-fit: cover;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+  margin: 60px 0;
+  
+}
+
+.login-box h2 {
+ 
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input.form__input:focus~label,
+.login-box .user-box input.form__input:valid~label {
+  top: -20px;
+  left: 0;
+  color: white;
+  font-size: 12px;
+  padding: 0px;
+}
+
+.submit-btn {
+  margin: 70px 0 0 0 !important;
+  border: 2px solid rgb(247, 227, 162); border-radius: 5px;
+
+}
+
+input.form-control {
+  padding: 1rem;
+  border-radius: 0px;
+}
+
+.form-control {
+  margin-bottom: 2rem;
+  background: transparent;
+  color: #fff !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  background: transparent;
+}
+
+select.form-control:focus {
+  color: black !important;
+}
+
+.form-check {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.form-check p {
+  margin: 8px;
+}
+
+.form-checkbox {
+  width: 4%;
+  margin: 0rem;
+  margin-right: 0.5rem;
+  position: unset;
+  display: unset;
+}
+
+.form-check-label {
+  color: #fff;
+}
+
+.form-check-link {
+  display: inline-block;
+  margin-left: 0.2rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline !important;
+}
+
+.form-check-link:hover {
+  color: #fff !important;
+}
+
+/* navbar */
+/* navbar */
+.navbar {
+  /* Changes bg color of navbar as per color of other elements( looks good now ) */
+  
+  background-color: rgba(73, 46, 13, 0.781) !important;
+  /* box-shadow: 0px 0px 16px 9px black; */
+  
+}
+
+.navbar-nav li a:hover:after {
+  width: 100%;
+  left: 0;
+ 
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: rgb(243 243 243);
+  font-weight: bold;
+}
+
+.nav-link {
+  margin-left: 2rem;
+}
+
+.navbar-nav li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255 255 255 / 50%);
+  transition-duration: 0.3s;
+ 
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  transition-duration: 0.3s;
+  color: rgb(255 255 255 / 100%);
+}
+
+a.nav-link {
+  font-size: 20px;
+}
+.logo-img
+{
+  height:3rem;
+  width:3rem;
+  margin-right:140px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #000000cc;
+  color: rgb(255, 183, 0);
+  box-shadow: 0px 0px 16px 2px black;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+footer p {
+  margin: 0;
+}
+
+.icons ul {
+  display: flex;
+  margin: 0;
+}
+
+.icons ul li {
+  list-style: none;
+}
+
+.icons ul li a {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  margin: 0 0 0 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  border: 3px solid #fff;
+}
+
+.icons ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.icons ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.icons ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #55acee;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.icons ul li a:hover:before {
+  top: 0;
+}
+
+.icons ul li:nth-child(2) a:before {
+  background: black;
+}
+.icons ul li:nth-child(4) a:before {
+  background: red;
+}
+/* Media Query */
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .login-box {
+    padding: 40px;
+  }
+
+  .login-box h2 {
+    font-size: 25px;
+  }
+
+  .login-box .user-box label {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+    color: rgb(255, 183, 0);
+  }
+
+  a.nav-link {
+    margin: 5px 40px;
+    font-size: 18px;
+  
+  }
+}
+.btn-dark {
+  color: #fff;
+  background-color: #000000cc;
+  border-color: #000000cc;
+}
+
+/* adding name,image,nameof book */
+#donation-info {
+  height: 50rem;
+  width: 50rem;
+  background-image: linear-gradient(to bottom right, #fda085, #fad354 );
+
+  border-radius: 20px;
+  margin: auto;
+}
+.donater-img {
+  height: 30%;
+  margin-top: 50px;
+  border-radius: 100%;
+}
+.carousel-item-section {
+  padding: 209px;
+  padding-top: 104px;
+  margin: auto;
+}
+h3 {
+  color: white;
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 6%;
+}
+h1 {
+  color: white;
+  font-size: 31px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #000000cc;
+  color: rgb(255, 183, 0);
+  box-shadow: 0px 0px 16px 2px black;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 80px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.icons ul {
+  display: flex;
+  margin: 0;
+}
+
+.icons ul li {
+  list-style: none;
+}
+
+.icons ul li a {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  margin: 0 0 0 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  border: 3px solid #fff;
+}
+
+.icons ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.icons ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.icons ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #55acee;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.icons ul li a:hover:before {
+  top: 0;
+}
+
+.icons ul li:nth-child(2) a:before {
+  background: black;
+}
+.icons ul li:nth-child(4) a:before {
+  background: red;
+}
+/* Media Query */
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .login-box {
+    padding: 40px;
+  }
+
+  .login-box h2 {
+    font-size: 25px;
+  }
+
+  .login-box .user-box label {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+    color: rgb(255, 183, 0);
+  }
+
+  a.nav-link {
+    margin: 5px 40px;
+    font-size: 18px;
+  }
+
+  /* donate-sec */
+  #donation-info {
+    width: 90%;
+  }
+  .carousel-item-section {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20%;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .donater-img {
+    padding: 0% 20%;
+  }
+}
+.btn-dark {
+  color: #fff;
+  background-color: #000000cc;
+  border-color: #000000cc;
+}
+
+.reset-btn {
+  margin: 70px 0 0 30px !important;
+  border: 2px solid rgb(247, 227, 162);
+  border-radius: 5px;
+  
+
+}
+
+
+@media (max-width: 767px) {
+  #searchForm {
+    margin: 0px 20px 0px 20px;
+  }
+
+  footer{
+    padding: 12px 8px 12px 8px;
+  }
+
+  .icons ul {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-check-label {
+    font-size: 0.8rem;
+  }
+  .form-checkbox {
+    width: 15%;
+  }
+}

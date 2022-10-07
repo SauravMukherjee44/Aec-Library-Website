@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('Login_background.jpg');
+  background-color: #464646;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  margin: -20px 0 50px;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 35px;
+  font-size: 2.1em;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+span {
+  font-size: 12px;
+  margin-top: 1px;
+  margin-bottom: 12px;
+}
+
+a {
+  /* color: rgb(255, 255, 255); */
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+  outline: none;
+}
+
+.tgt {
+  border-radius: 20px;
+  background-color: #296288;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 5px;
+}
+
+button {
+  background-color: #296288;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  border: 2px solid #296288;
+  outline: none;
+
+  /* box-shadow: 3px 2px 2px #424242; */
+  box-shadow: 4px 3px 8px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+button a {
+  color: rgb(255, 255, 255);
+}
+
+input:hover {
+  outline: none;
+}
+
+button:hover {
+  background-color: black;
+  cursor: pointer;
+  border-color: black;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10px;
+  height: 100%;
+  text-align: center;
+}
+
+input {
+  outline: none;
+  background-color: #00000012;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 90%;
+  border-radius: 20px;
+  /* box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.4); */
+}
+
+.input__tag:focus {
+  /* border: 2px solid #167683; */
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.4);
+  margin: 6px 0px;
+  padding: 12px 13px;
+  outline: none;
+}
+
+.container {
+  background-image: url('Capture.PNG');
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.signup_link {
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  width: 80%;
+}
+
+.signup_link a {
+  font-size: 16px;
+}
+
+.container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+@keyframes show {
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.overlay {
+  background: #167683;
+  background: -webkit-linear-gradient(to right, #167683, #167683);
+  background: linear-gradient(to right, #167683, #167683);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+  transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer i {
+  color: red;
+}
+
+footer a {
+  color: #3c97bf;
+  text-decoration: none;
+}
+
+.input__tag {
+  outline: none;
+}
+
+.animate1 {
+  font-size: 50px;
+  font-size: 2.1em;
+  text-align: center; 
+  font-weight: 750;
+  letter-spacing:5px;
+  margin-bottom: -20px;
+  position: relative;
+}
+
+.animate2 {
+  font-size: 20px;
+  text-align: center; 
+  line-height: 30px;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+/* Animation */
+
+.animate1 {
+  animation: text 2s 1;
+}
+
+.text-danger{
+  color: red;
+  font-size: bold;
+}
+
+/* text animation */
+
+@keyframes text {
+  0% {
+    color: #296288;
+    margin-bottom: -40px;
+  }
+
+  30% {
+    letter-spacing: 20px;
+    margin-bottom: -40px;
+  }
+
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    overflow-y: scroll;
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .form-container {
+    position: absolute;
+    top: 280px;
+  }
+  .sign-in-container {
+    width: 100%;
+  }
+  .overlay-container {
+    position: absolute;
+    left: 0;
+    height: 60%;
+    width: 100%;
+  }
+}
