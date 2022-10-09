@@ -61,7 +61,7 @@ header h1 {
 }
 
 header {
-  padding: 40px;
+  padding: 45px;
   background: url("images/10.jpg") center;
   background-color: wheat;
   text-align: center;
@@ -89,11 +89,13 @@ nav {
 .search-box-container{
   display: flex;
   justify-content: flex-end;
+  
 }
 .search-box{
   border: 1px solid wheat;
   border-radius: 9px;
   background-color: wheat;
+  
 }
 input:focus{
   outline: none;
@@ -104,6 +106,7 @@ input:focus{
   border:none;
   background-color: transparent;
   border-radius: 9px;
+
 }
 .search-btn{
   background: transparent;
@@ -111,17 +114,17 @@ input:focus{
   border: none;
   position: relative;
   right: 8px;
-  bottom: 3px;
+  bottom: 1px;
 }
 
 .home-tab{
-  float:right;
-  background-color: rgb(31, 31, 31);
+  float:left;
+  /* background-color: rgb(31, 31, 31); */
   color: antiquewhite; 
-  font-size: 15px;
-  padding: 8px 12px; 
+  font-size: 19px;
+  /* padding: 9px 12px;  */
   border-radius: 15px; 
-  width: 100px; 
+  /* width: 200px;  */
   text-align: center; 
   margin: 6px;
   text-decoration: none;
@@ -129,9 +132,9 @@ input:focus{
 
 .home-tab:hover{
   text-decoration: none;
-  background-color: rgb(78, 74, 74);
+  /* background-color: rgb(158, 134, 134); */
   color: rgb(233, 221, 221);
-  text-shadow: 0px 0px 14px rgb(233, 221, 221);
+  text-shadow: 0px 0px 25px rgb(233, 221, 221);
   transition-delay: 0.1s;
   transition-timing-function: ease;
 }
