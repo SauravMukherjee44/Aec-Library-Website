@@ -7,6 +7,7 @@ var stateObject = {
 "Bihar":["Patna","Gaya", "Darbhanga", "Muzaffarpur", "Bagaha", "Katihar", "Chapra", "Nalanda", "Motihari", "Sasaram"],
 "Chandigarh":["Ludhiana"],
 
+
 "Chhattisgarh":["Bilaspur","Raipur", "Korba", "Raigarh", "Jagdalpur", "Ambikapur", "Dhamdha", "Bilha", "Bhatapara"],
 "Delhi": ["New Delhi", "Bhati","Sultanpur", "Mandoli", "Burari", "Gurugram", "Gharoli", "Sambhalka", "Pooth Kalan"],
 "Goa": ["Panaji", "Margao", "Mapusa", "Mormugao", "Ponda", "Sanguem", "Canacona", "Quepem", "Candolim", "Bicholim"],
@@ -33,6 +34,7 @@ var stateObject = {
 "Uttar Pradesh":["Lucknow","Kanpur", "Varanasi", "Meerut", "Jhansi", "Aligarh", "Shahjahanpur", "Firozabad", "Gorakhpur"],
 "Uttarakhand":["Gairsain","Dehradun","Haridwar", "Rishikesh", "Nainital", "Ranikhet", "Kashipur", "Mussoorie", "Srinagar"],
 "West Bengal":["Kolkata", "Siliguri", "Durgapur", "Malda", "Haldia", "Jalpaiguri", "Howrah", "Nadia"],
+
 
 },
 "Australia": {

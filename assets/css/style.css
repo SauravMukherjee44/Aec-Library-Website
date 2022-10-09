@@ -219,12 +219,12 @@ label[for="dateIssue"] {
 
 .navbar-light .navbar-nav .nav-link {
 	color: rgb(255 255 255 / 50%);
-	transition-duration: 0.3s;
+	transition-duration: 0.1s;
 	font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-	transition-duration: 0.3s;
+	transition-duration: 0.1s;
 	color: rgb(255 255 255 / 100%);
 }
 
@@ -291,7 +291,7 @@ html {
 }
 
 #searchTxt {
-	border-radius: 10px;
+	border-radius: 20px;
 	height: 30px;
 }
 
@@ -377,7 +377,7 @@ html {
 }
 
 .space {
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 /* footer */
@@ -1410,7 +1410,7 @@ p {
 .login-box {
 	width: 60%;
 	padding: 40px;
-	background: rgba(0, 0, 0, 0.25);
+	background: rgba(0, 0, 0, 0.75);
 	box-sizing: border-box;
 	border-radius: 20px;
 	transition-duration: 0.5s;
@@ -1433,7 +1433,7 @@ p {
 	margin: 0 auto 0.7em;
 	text-decoration: underline;
 	font-size: 2.8rem;
-	color: rgb(235, 245, 247);
+	color: rgb(255, 183, 0);
 	letter-spacing: 1.5px;
 }
 
@@ -1936,7 +1936,7 @@ input[type="radio"] {
   width: 80%;
   color: white;
   margin-top: 21px;
-  /* margin-left: 80px !important; */
+  margin-left: 65px !important; 
   background: rgba(92, 92, 81, 0.582);
   border-radius: 30px;
   display: flex;
@@ -2245,6 +2245,7 @@ select {
 .nav-item :hover {
 	background-color: rgb(247, 191, 9);
 	opacity: 1;
+	transition-duration: inherit;
 }
 
 .nav-item a {
