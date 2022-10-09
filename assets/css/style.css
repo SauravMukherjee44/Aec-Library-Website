@@ -2042,6 +2042,7 @@ input[type="radio"] {
 
 #myUL li a {
   border: 1px solid #ddd;
+  border-radius: 25px;
   margin-top: -1px;
 
   background-color: #f6f6f6;
