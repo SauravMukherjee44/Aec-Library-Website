@@ -445,7 +445,7 @@
       </div>
       <div>
 
-        <p>©2021 Copyright AEC Library</p>
+        <p>©<span id="footer-year"></span> Copyright AEC Library</p>
       </div>
     </div>
   </footer>
@@ -461,5 +461,10 @@
     duration: 1000 // values from 0 to 3000, with step 50ms
   });
 </script>
+  <!-- Footer Year Calculator -->
+  <script>
+    var year = new Date().getFullYear();
+    document.getElementById("footer-year").innerHTML = year;
+  </script>
 
 </html>
