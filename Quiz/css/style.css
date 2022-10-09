@@ -46,14 +46,16 @@
     }
   }
   .quiz-container {
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 80rem;
-    margin: 0 auto;
     padding: 2rem;
+   
+   
   }
   .quiz-container::before{
     content: "";
@@ -61,7 +63,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.35;
+    opacity: 0.65;
     z-index: -1;
     height: 100vh;
     width: 100vw;
@@ -127,21 +129,25 @@
   text-decoration: none;
 }
 .quiz-btn{
-  margin-left:3rem;
-  font-size: 1.8rem;
+  /* margin-left:-1rem; */
+  font-size: 26px;
   padding: 1rem 0;
-  width: 10rem;
+  width: 12rem;
   text-align: center;
-  border: 0.1rem solid #56a5eb;
-  margin-bottom: 1rem;
+  border: 2px solid black;
+  margin-bottom: 35px;
+  margin-top: 25px;
   border-radius: 10px;
-  color: #56a5eb;
-  background-color: white;
+  color: black;
+  background-color: burlywood;
+  font-family:Arial, Helvetica, sans-serif;
+  
+ 
 }
 .quiz-btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-  transform: translateY(-0.1rem);
+  box-shadow: 0 0.4rem 1.4rem 0 burlywood;
+  transform: translateY(-0.4rem);
   transition: transform 150ms;
 }
 
@@ -150,13 +156,34 @@
   box-shadow: none;
   transform: none;
 }
+h1{
+  font-size: 38px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:500;
+ text-decoration: 2px solid underline;
+
+  
+}
+
+
+
 /* FORMS */
 .highscore-form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
+#highScores{
+  background-color: beige;
+  opacity: 0.9;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 500px;
+}
+
+
 
 #username {
   margin-bottom: 1rem;
@@ -171,7 +198,8 @@
   color: #aaa;
 }
 
-@media screen and (max-width : 425px) {
+
+@media screen and (min-width: 250px) and (max-width : 425px) {
   .quiz-section{
     flex-direction: column;
     height: max-content;
@@ -198,10 +226,17 @@
   }
 
   .quiz-btn{
-    margin: auto;
-    width: 90%;
+    /* margin: auto; */
+    width: 9rem;
+    height:1.5rem;
+    font-size: 22px;
   }
+  h1 {
+       font-size: 28px;
+  }
+  
 }
+
 
 @media screen and (max-width : 768px) and (min-width : 426px) {
   .quiz-img{
