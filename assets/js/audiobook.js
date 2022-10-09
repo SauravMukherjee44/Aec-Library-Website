@@ -1,6 +1,5 @@
 var nyan = document.getElementById("nyan");
 var nyanBtn = document.getElementById("nyan-btn");
-// nyanBtn.style.background = "url(play.png)";
 
 nyanBtn.onclick = function(){
     if (nyan.paused && nyan.currentTime >= 0 && !nyan.ended) {
@@ -10,7 +9,7 @@ nyanBtn.onclick = function(){
     nyan.pause();
     nyanBtn.src ="media/play.png"
 }
- } 
+} 
 
 function reset(btn, song) {
     if (btn.classList.contains('playing')) {
