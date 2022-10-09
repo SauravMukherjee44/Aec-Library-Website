@@ -116,12 +116,12 @@ input:focus{
 
 .home-tab{
   float:left;
-  background-color: rgb(31, 31, 31);
+  /* background-color: rgb(31, 31, 31); */
   color: antiquewhite; 
   font-size: 19px;
-  padding: 9px 12px; 
+  /* padding: 9px 12px;  */
   border-radius: 15px; 
-  width: 200px; 
+  /* width: 200px;  */
   text-align: center; 
   margin: 6px;
   text-decoration: none;
@@ -129,9 +129,9 @@ input:focus{
 
 .home-tab:hover{
   text-decoration: none;
-  background-color: rgb(78, 74, 74);
+  /* background-color: rgb(158, 134, 134); */
   color: rgb(233, 221, 221);
-  text-shadow: 0px 0px 14px rgb(233, 221, 221);
+  text-shadow: 0px 0px 25px rgb(233, 221, 221);
   transition-delay: 0.1s;
   transition-timing-function: ease;
 }
