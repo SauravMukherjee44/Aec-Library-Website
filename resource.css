@@ -61,7 +61,7 @@ header h1 {
 }
 
 header {
-  padding: 40px;
+  padding: 45px;
   background: url("images/10.jpg") center;
   background-color: wheat;
   text-align: center;
@@ -89,11 +89,13 @@ nav {
 .search-box-container{
   display: flex;
   justify-content: flex-end;
+  
 }
 .search-box{
   border: 1px solid wheat;
   border-radius: 9px;
   background-color: wheat;
+  
 }
 input:focus{
   outline: none;
@@ -104,6 +106,7 @@ input:focus{
   border:none;
   background-color: transparent;
   border-radius: 9px;
+
 }
 .search-btn{
   background: transparent;
@@ -111,7 +114,7 @@ input:focus{
   border: none;
   position: relative;
   right: 8px;
-  bottom: 3px;
+  bottom: 1px;
 }
 
 .home-tab{
