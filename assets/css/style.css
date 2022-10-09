@@ -78,6 +78,7 @@ nav.navbar {
 
 #books-content {
 	padding: 10px;
+	background-color: white;
 }
 .dataTables_wrapper .dataTables_filter input {
 	border: 1px solid #aaa;
@@ -108,7 +109,7 @@ select {
 }
 
 label {
-	color: white;
+	color: black;
 	font-weight: bold;
 }
 
