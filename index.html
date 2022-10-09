@@ -1,2850 +1,1154 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-html,
-body {
-	font-family: "Playfair Display", serif;
-	width: 100%;
-	overflow: hidden;
-}
-nav.navbar {
-	/* margin-right: 12px !important; */
-	/* padding-right: 12px !important; */
-	right: 0;
-}
-
-
-
-
-
-/* #table {
-  border: none;
-  border-radius: 20px;
-  /* background: linear-gradient(to right, #3898dd, #36d4f0, #85daa8); */
-/* background: linear-gradient(to bottom, #0c0c0c, #2a2a2a, #646665); */
-/*background: linear-gradient(to right, #0a5f81, #093b3f, #1b1b1b);
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  border: 3px solid black;
-  box-shadow: 2px 2px 5px 2px black;
-*/
-
-#table {
-	text-align: center;
-	border-radius: 20px;
-	background-color: rgba(0, 0, 0, 0.7);
-	/* background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8); */
-	/* padding-right: 15px;
-    padding-left: 15px; */
-	padding-bottom: 10px;
-	border: none;
-	/* box-shadow: 2px 2px 5px 2px #ddbcbc; */
-	box-shadow: 2px 2px 5px 2px black;
-}
-.hero-left + .hero-right {
-	margin-right: -10rem;
-}
-#table {
-	border-radius: 20px;
-	background: rgb(0, 0, 0, 0.5);
-	cursor: auto;
-
-	padding-right: 15px;
-	padding-left: 15px;
-	padding-bottom: 10px;
-	border: 3px solid #efe088;
-	box-shadow: 2px 2px 5px 2px #ddbcbc;
-}
-
-.table thead th {
-	vertical-align: bottom;
-	border: none;
-
-	color: white;
-
-	vertical-align: bottom;
-	border: none;
-
-	color: black;
-}
-
-#table h1 {
-	color: white;
-}
-
-#books-content {
-	padding: 10px;
-}
-.dataTables_wrapper .dataTables_filter input {
-	border: 1px solid #aaa;
-	border-radius: 3px;
-	padding: 5px;
-	background-color: transparent;
-	margin-left: 3px;
-	color: red;
-	font-weight: bold;
-}
-
-.odd {
-	display: none;
-}
-
-select {
-	color: black;
-}
-
-.dataTables_wrapper .dataTables_length select {
-	border: 1px solid #aaa;
-	border-radius: 3px;
-	padding: 5px;
-	color: #c42821;
-	padding: 4px;
-
-	font-weight: bold;
-}
-
-label {
-	color: white;
-	font-weight: bold;
-}
-
-.datTables_paginate {
-	color: white;
-}
-
-.pagination-right,
-.pagination-left {
-	color: white;
-}
-
-.navbar-nav li a:after {
-	bottom: 0;
-	content: "";
-	display: block;
-	height: 2px;
-	left: 50%;
-	position: relative;
-	background: #fff;
-	transition: width 0.3s ease 0s, left 0.3s ease 0s;
-	width: 0;
-}
-
-.navbar-nav li a:hover:after {
-	width: 100%;
-	left: 0;
-}
-
-/* .nav-item{
-  padding-right: 15px;
-} */
-#loading {
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-}
-
-.body-style {
-	background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
-
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-color: rgba(0, 0, 0, 0.9);
-	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
-	z-index: 1;
-}
-
-.bg-info {
-	/*   background-color: #2e2e2e!important;
-  box-shadow: 0px 0px 16px 9px black; */
-	background-color: #343a40 !important;
-	box-shadow: 0px 0px 16px 9px black;
-}
-
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link {
-	color: rgb(243 243 243);
-	font-weight: bold;
-}
-
-/* Category */
-.form-check-input {
-	border-radius: 15px;
-	margin-top: 10px;
-	padding: 5px;
-	width: 25%;
-	cursor: pointer;
-}
-label[for="category"] {
-	display: none;
-}
-
-#IssueHere {
-	color: white;
-	margin-left: 35%;
-	margin-right: 40%;
-	padding-top: 40px;
-	width: 300px;
-}
-/* Authors */
-.form-check-input1 {
-	border-radius: 20px;
-	margin-top: 10px;
-	padding: 5px;
-	width: 25%;
-	cursor: pointer;
-}
-
-label[for="Author"] {
-	display: none;
-}
-label[for="bookName"] {
-	display: none;
-}
-label[for="dateIssue"] {
-	display: none;
-}
-.container h1 {
-	padding-top: 40px;
-	color: rgb(255, 255, 255);
-	/* font-family: "Poiret One", cursive; */
-	font-weight: bolder;
-	letter-spacing: 0.1em;
-}
-
-.navbar-light .navbar-nav .nav-link {
-	color: rgb(255 255 255 / 50%);
-	transition-duration: 0.1s;
-	font-weight: bold;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-	transition-duration: 0.1s;
-	color: rgb(255 255 255 / 100%);
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-#issueDate {
-	border-radius: 15px;
-	height: 30px;
-}
-
-.input-box {
-	border: none;
-	border-bottom: 1.5px solid rgba(168, 154, 154, 0.322);
-	border-radius: 0px;
-	transition: none;
-	width: 33%;
-	height: 30px;
-	padding-bottom: 2px;
-	border-radius: 15px;
-	margin-top: 14px;
-	padding-left: 10px;
-}
-
-.input-box:focus {
-	outline: none;
-	border-bottom: 1.5px solid yellowgreen;
-	/* zoom: 1.1; */
-	transform: scaleY(1.05);
-}
-
-.input-box {
-	transition: border 0.5s ease-out;
-	/* transition: transform 0.5s ease-out; */
-}
-
-.btn {
-
-  width: 150px;
-  height: 41px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #5282d4;
-  opacity: 0.9;
-  background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
-  background-image: -moz-linear-gradient(top, #5282d4, #28667d);
-  background-image: -ms-linear-gradient(top, #5282d4, #28667d);
-  background-image: -o-linear-gradient(top, #5282d4, #28667d);
-  background-image: linear-gradient(to bottom, #5282d4, #28667d);
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  margin-top: 1rem;
-  margin-left: 80px;
-
-}
-
-#searchsymbol {
-	width: 41px;
-	height: 41px;
-}
-
-#searchTxt {
-	border-radius: 20px;
-	height: 30px;
-}
-
-.btn:before {
-	content: "";
-	background: linear-gradient(
-		45deg,
-		#ff0000,
-		#ff7300,
-		#fffb00,
-		#48ff00,
-		#00ffd5,
-		#002bff,
-		#7a00ff,
-		#ff00c8,
-		#ff0000
-	);
-	position: absolute;
-	top: -2px;
-	left: -2px;
-	background-size: 400%;
-	z-index: -1;
-	filter: blur(5px);
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
-	animation: glowing 20s linear infinite;
-	opacity: 0;
-	transition: opacity 0.4s ease-in-out;
-	border-radius: 10px;
-	box-shadow: 0 9px blueviolet;
-}
-
-.btn-primary {
-	margin-top: 4rem;
-}
-
-.btn:active {
-	color: #000;
-	box-shadow: 0 4px black;
-}
-
-.btn:active:after {
-	background: transparent;
-	animation: glowing 50s linear infinite;
-	transition: opacity 0.4s ease-in-out;
-}
-
-.btn:hover:before {
-	opacity: 1;
-	box-shadow: 0 4px black;
-}
-
-.btn:after {
-	z-index: -1;
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: #5282d4;
-	background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
-	background-image: -moz-linear-gradient(top, #5282d4, #28667d);
-	background-image: -ms-linear-gradient(top, #5282d4, #28667d);
-	background-image: -o-linear-gradient(top, #5282d4, #28667d);
-	background-image: linear-gradient(to bottom, #5282d4, #28667d);
-	left: 0;
-	top: 0;
-	border-radius: 10px;
-	/* box-shadow: 0 4px black; */
-}
-
-@keyframes glowing {
-	0% {
-		background-position: 0 0;
-	}
-
-	50% {
-		background-position: 400% 0;
-	}
-
-	100% {
-		background-position: 0 0;
-	}
-}
-
-.space {
-	margin-top: 8px;
-}
-
-/* footer */
-footer {
-	position: relative;
-	width: 100%;
-	background-color: rgb(52, 58, 64);
-	color: white;
-	box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
-	padding: 15px 0px;
-	text-align: center;
-}
-
-footer p {
-	margin: 0;
-}
-
-.footer-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0.2rem 0;
-	gap: 0.3rem;
-}
-
-.icons ul {
-	display: flex;
-	margin: 0;
-	padding: 0;
-}
-
-.icons ul li {
-	list-style: none;
-}
-
-.icons ul li a {
-	display: block;
-	position: relative;
-	width: 25px;
-	height: 25px;
-	background-color: #fff;
-	text-align: center;
-	line-height: 20px;
-	font-size: 15px;
-	margin: 0 0 0 20px;
-	border-radius: 50%;
-	overflow: hidden;
-	z-index: 1;
-	border: 3px solid #fff;
-}
-
-.icons ul li a .icon {
-	position: relative;
-	color: #262626;
-	transition: 0.5s;
-	z-index: 3;
-}
-
-.icons ul li a:hover .icon {
-	color: #fff;
-	transform: rotateY(360deg);
-}
-
-.icons ul li a:before {
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #55acee;
-	transition: 0.5s;
-	z-index: 2;
-}
-
-.icons ul li a:hover:before {
-	top: 0;
-}
-
-.icons ul li:nth-child(2) a:before {
-	background: black;
-}
-.icons ul li:nth-child(4) a:before {
-	background: red;
-}
-.ml-auto {
-	margin-top: 13px;
-	font-size: 20px;
-}
-
-.table thead th {
-	vertical-align: bottom;
-	border: none;
-	background: rgb(255, 255, 255);
-	text-align: center;
-	color: black;
-}
-
-/* Go to Top Button styling */
-
-#topBtn {
-  position: fixed;
-  bottom: 10px;
-  right: 30px;
-  z-index: 9;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease-in-out;
-}
-
-#topBtn a {
-  height: 40px;
-  width: 38px;
-  text-align: center;
-  background: #361500;
-  display: block;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-#topBtn a span {
-  color: #EFFFFD;
-  width: 38px;
-  line-height: 39px;
-  font-size: 32px;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-#topBtn a span:hover {
-  color: #362706;
-  background: #CC9544;
-  transform-origin: center center;
-}
-
-#topBtn a:hover {
-  background: #CC9544;
-  transform-origin: center center;
-}
-
-.logo-img {
-	margin-left: 40px;
-	/* Width and height same to make icon look more professional */
-	height: 3rem;
-	width: 3rem;
-}
-
-@media only screen and (max-width: 500px) {
-	.icons ul p {
-		position: absolute;
-		left: 41.1%;
-		top: 20px;
-	}
-}
-
-a.nav-link {
-	/* To heighlight */
-	color: floralwhite !important;
-	font-size: 24px;
-}
-
-nav.navbar.navbar-expand-lg.navbar-light.bg-info {
-	/* To make nav-bar sticky */
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 45px;
-}
-
-a.nav-link {
-	padding-left: 2rem !important;
-	padding-right: 2rem !important;
-	padding-bottom: 0rem;
-}
-
-h1 {
-	/* To make headings look more appealing */
-	text-decoration: overline;
-}
-
-.bg-info {
-	/* To make proper distance between nav bar icons */
-	/* To make nav-bar background transparent and shadow effect */
-	/*     background-color: #ada39f00!important;
-    box-shadow: 0px 0px 16px 9px #efecec4d; */
-	z-index: 100;
-}
-
-strong {
-	/* To make text more visible */
-	color: floralwhite;
-	font-size: 25px;
-}
-
-.row {
-	/* To remove the overlapping due to responsive width change */
-	display: flex;
-	flex-direction: column;
-}
-
-/* Animation */
-
-.bubbles img {
-	width: 50px;
-	animation: bubble 9s linear infinite;
-}
-
-.bubbles {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	position: absolute;
-	bottom: -70px;
-}
-
-@keyframes bubble {
-	0% {
-		transform: translate(0);
-		opacity: 0;
-	}
-
-	50% {
-		opacity: 1;
-	}
-
-	70% {
-		opacity: 1;
-	}
-
-	100% {
-		transform: translateY(-80vh);
-		opacity: 0;
-	}
-}
-
-.bubbles img:nth-child(1) {
-	animation-delay: 2s;
-	width: 25px;
-}
-
-.bubbles img:nth-child(2) {
-	animation-delay: 1s;
-}
-
-.bubbles img:nth-child(3) {
-	animation-delay: 3s;
-	width: 25px;
-}
-
-.bubbles img:nth-child(4) {
-	animation-delay: 4.5s;
-}
-
-.bubbles img:nth-child(5) {
-	animation-delay: 3s;
-}
-
-.bubbles img:nth-child(6) {
-	animation-delay: 6s;
-	width: 20px;
-}
-
-.bubbles img:nth-child(7) {
-	animation-delay: 7s;
-	width: 35px;
-}
-
-/* scroll bar design */
-/* width */
-/* ::-webkit-scrollbar {
-	width: 9px;
-}
-
-/* Track */
-/* ::-webkit-scrollbar-track {
-	background: rgb(77, 32, 32);
-} */
-
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-	background: #c68b59;
-	border-radius: 10px; */
-/* } */ */
-
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-	background: #865439;
-	border: solid 2px rgb(41, 2, 10);
-} */
-
-/* scroll bar end */
-/* preloader */
-.headervdo_afterpreload {
-	transition: ease-in 5s;
-	opacity: 100;
-}
-
-.endpreloadopacity {
-	opacity: 0;
-	transition: 1s;
-}
-
-.preloader {
-	z-index: 9999;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background: radial-gradient(
-		circle,
-		#020c19 100%,
-		#040c1a 80%,
-		#160b1e 60%,
-		#2c0e29 40%,
-		#400f2f 40%,
-		#511036 48%,
-		#3e0f2f 56%,
-		#290e26 56%,
-		#100c1d 8.32%,
-		#020c17 8.32%
-	);
-	/*to be removed*/
-}
-
-.loader {
-	--background: linear-gradient(135deg, #23c4f8, #275efe);
-	--shadow: rgba(39, 94, 254, 0.28);
-	--text: #6c7486;
-	--page: rgba(255, 255, 255, 0.36);
-	--page-fold: rgba(255, 255, 255, 0.52);
-	--duration: 4s;
-	width: 200px;
-	height: 140px;
-	position: relative;
-}
-
-.loader:before,
-.loader:after {
-	--r: -6deg;
-	content: "";
-	position: absolute;
-	bottom: 8px;
-	width: 120px;
-	top: 80%;
-	box-shadow: 0 16px 12px var(--shadow);
-	transform: rotate(var(--r));
-}
-
-.loader:before {
-	left: 4px;
-}
-
-.loader:after {
-	--r: 6deg;
-	right: 4px;
-}
-
-.loader div {
-	width: 100%;
-	height: 100%;
-	border-radius: 13px;
-	position: relative;
-	z-index: 1;
-	perspective: 600px;
-	box-shadow: 0 4px 6px var(--shadow);
-	background-image: var(--background);
-}
-
-.loader div ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	position: relative;
-}
-
-.loader div ul li {
-	--r: 180deg;
-	--o: 0;
-	--c: var(--page);
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	transform-origin: 100% 50%;
-	color: var(--c);
-	opacity: var(--o);
-	transform: rotateY(var(--r));
-	-webkit-animation: var(--duration) ease infinite;
-	animation: var(--duration) ease infinite;
-}
-
-.loader div ul li:nth-child(2) {
-	--c: var(--page-fold);
-	-webkit-animation-name: page-2;
-	animation-name: page-2;
-}
-
-.loader div ul li:nth-child(3) {
-	--c: var(--page-fold);
-	-webkit-animation-name: page-3;
-	animation-name: page-3;
-}
-
-.loader div ul li:nth-child(4) {
-	--c: var(--page-fold);
-	-webkit-animation-name: page-4;
-	animation-name: page-4;
-}
-
-.loader div ul li:nth-child(5) {
-	--c: var(--page-fold);
-	-webkit-animation-name: page-5;
-	animation-name: page-5;
-}
-
-.loader div ul li svg {
-	width: 90px;
-	height: 120px;
-	display: block;
-}
-
-.loader div ul li:first-child {
-	--r: 0deg;
-	--o: 1;
-}
-
-.loader div ul li:last-child {
-	--o: 1;
-}
-
-.loader span {
-	display: block;
-	left: 0;
-	right: 0;
-	top: 100%;
-	margin-top: 20px;
-	text-align: center;
-	color: var(--text);
-}
-
-.btn-zoom {
-	transition: transform .2s;
-}
-
-.btn-zoom:hover {
-	transform:scale(1.25);
-}
-
-@-webkit-keyframes page-2 {
-	0% {
-		transform: rotateY(180deg);
-		opacity: 0;
-	}
-
-	20% {
-		opacity: 1;
-	}
-
-	35%,
-	100% {
-		opacity: 0;
-	}
-
-	50%,
-	100% {
-		transform: rotateY(0deg);
-	}
-}
-
-@keyframes page-2 {
-	0% {
-		transform: rotateY(180deg);
-		opacity: 0;
-	}
-
-	20% {
-		opacity: 1;
-	}
-
-	35%,
-	100% {
-		opacity: 0;
-	}
-
-	50%,
-	100% {
-		transform: rotateY(0deg);
-	}
-}
-
-@-webkit-keyframes page-3 {
-	15% {
-		transform: rotateY(180deg);
-		opacity: 0;
-	}
-
-	35% {
-		opacity: 1;
-	}
-
-	50%,
-	100% {
-		opacity: 0;
-	}
-
-	65%,
-	100% {
-		transform: rotateY(0deg);
-	}
-}
-
-@keyframes page-3 {
-	15% {
-		transform: rotateY(180deg);
-		opacity: 0;
-	}
-
-	35% {
-		opacity: 1;
-	}
-
-	50%,
-	100% {
-		opacity: 0;
-	}
-
-	65%,
-	100% {
-		transform: rotateY(0deg);
-	}
-}
-
-@-webkit-keyframes page-4 {
-	30% {
-		transform: rotateY(180deg);
-		opacity: 0;
-	}
-
-	50% {
-		opacity: 1;
-	}
-
-	65%,
-	100% {
-		opacity: 0;
-	}
-
-	80%,
-	100% {
-		transform: rotateY(0deg);
-	}
-}
-
-@keyframes page-4 {
-	30% {
-		transform: rotateY(180deg);
-		opacity: 0;
-	}
-
-	50% {
-		opacity: 1;
-	}
-
-	65%,
-	100% {
-		opacity: 0;
-	}
-
-	80%,
-	100% {
-		transform: rotateY(0deg);
-	}
-}
-
-@-webkit-keyframes page-5 {
-	45% {
-		transform: rotateY(180deg);
-		opacity: 0;
-	}
-
-	65% {
-		opacity: 1;
-	}
-
-	80%,
-	100% {
-		opacity: 0;
-	}
-
-	95%,
-	100% {
-		transform: rotateY(0deg);
-	}
-}
-
-@keyframes page-5 {
-	45% {
-		transform: rotateY(180deg);
-		opacity: 0;
-	}
-
-	65% {
-		opacity: 1;
-	}
-
-	80%,
-	100% {
-		opacity: 0;
-	}
-
-	95%,
-	100% {
-		transform: rotateY(0deg);
-	}
-}
-
-/* preloader end */
-
-/* For making responsive */
-@media (max-width: 800px) {
-	/*   html {
-    width:73.7rem;
-  } */
-	.hero-left + .hero-right {
-		margin-right: 0;
-	}
-	#loading {
-		width: 73.7;
-	}
-	.preloader {
-		width: 100%;
-		height: 100%;
-	}
-	/* .member{
-   font-size: 5rem;
- } */
-
-	/*  .latest-blogs {
-    font-size: 4rem;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+    <meta name="theme-color" content="#f2f2f2">
+    <meta name="msapplication-navbutton-color" content="#f2f2f2">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f2f2f2">
+    <meta name="og:title" content="AEC Library is a comprehensive library management system">
+    <meta name="og:description" content="Designed for both large and small library systems, AEC Library is a comprehensive library management system. For managing circulation and stock, this is ideal for institutional, public, and digital libraries. In order to manage and automate the processing of even the largest of libraries, the AEC Library website was developed. According to the end user's requirements, the website is capable of managing Book Issues, Returns, and generating various Reports for Record-Keeping and Review purposes.">
+
+    <meta property="og:image" content="assets/logos/finalLogo.png">
+    <meta name="og:type" content="library">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEC Library</title>
+
+    <link rel="icon" href="assets/logos/finalLogo.png" type="image/x-icon">
+
+  <meta name="title" content="AEC Library is a comprehensive library management system">
+  <meta name="description"
+    content="Designed for both large and small library systems, AEC Library is a comprehensive library management system. For managing circulation and stock, this is ideal for institutional, public, and digital libraries. In order to manage and automate the processing of even the largest of libraries, the AEC Library website was developed. According to the end user's requirements, the website is capable of managing Book Issues, Returns, and generating various Reports for Record-Keeping and Review purposes.">
+  <meta name="keywords" content="AEC, library systems, library, digital libraries, books">
+  <!-- <meta http-equiv="Content-Type" content="text/html" charset="utf-8"> -->
+  <meta name="language" content="English">
+  <meta name="author" content="AEC LIBRARY">
+
+
+  <!-- Bootstrap CSS -->
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!--Animation on scroll-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <!-- Style CSS -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+  </style>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Title bar icon -->
+  <link rel="icon" href="./assets/logos/finalLogo.png" type="image/x-icon">
+
+  <!-- Adding new font -> Playfair-display -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!--Adding AOS in it-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Quiz css  -->
+  <link rel="stylesheet" href="/Quiz/css/style.css">
+  <!--data table-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+  <script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+
+  <!-- Audiobook css -->
+  <link rel="stylesheet" href="assets/css/audiobook.css">
+  <!-- Pop-up msg -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
+
+</head>
+
+<body class="body-style">
+
+  <div class="bubbles">
+    <img src="./assets/images/bubble.png" alt="bubble">
+    <img src="./assets/images/bubble.png" alt="bubble">
+    <img src="./assets/images/bubble.png" alt="bubble">
+    <img src="./assets/images/bubble.png" alt="bubble">
+    <img src="./assets/images/bubble.png" alt="bubble">
+    <img src="./assets/images/bubble.png" alt="bubble">
+    <img src="./assets/images/bubble.png" alt="bubble">
+  </div>
+
+  <!--Go to Top Button-->
+  <div id="topBtn" title="Go to Top">
+    <a href="#"><span class="fa fa-angle-up"></span></a>
+  </div>
+
+<!--scroll bar feature addition-->
+          <div id="progressbar"></div>
+	       <div id="scrollpath"></div>
+	     <div id="percent"></div>
+<!--scroll bar feature ends here-->
+
+  <!-- pre-loader -->
+  <div id="loading"></div>
+    <div class="preloader">
+      <div class="loader">
+        <div>
+          <ul>
+            <li>
+              <svg viewBox="0 0 90 120" fill="currentColor">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <svg viewBox="0 0 90 120" fill="currentColor">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <svg viewBox="0 0 90 120" fill="currentColor">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <svg viewBox="0 0 90 120" fill="currentColor">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <svg viewBox="0 0 90 120" fill="currentColor">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <svg viewBox="0 0 90 120" fill="currentColor">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"
+                ></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <span>Loading</span>
+      </div>
+    </div>
+
+  <header class="header">
+    <ul>
+      <li class="logo"><a class="nav-link" href="index.html"><img src="assets/logos/finalLogo.png"
+        alt="AEC Library" class="logo-img"> AEC LIBRARY</a></li>
+      <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i class="fas fa-sign-in-alt"></i> LOGIN </a></li>
+    </ul>
+  </header>
+      <nav class="new-nav navbar-expand-lg navbar-light">
+        <!-- navbar brand -->
+        <!-- <a href="index.html" class="navbar-brand" id="nb"> Pictionary </a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- hamburger menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- navbar items -->
+          <ul class="ms-auto">
+            <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+            <li class="nav-item"><a href="about.html" target="_blank"><i class="fas fa-book"></i>ABOUT</a></li>
+            <li class="nav-item"><a href="./public/donate-book.html" target="_blank"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
+            <li class="nav-item"><a href="resource.html" target="_blank"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
+            <li class="nav-item"><a href="./blogs.html" target="_blank"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
+            <li class="nav-item"><a href="./public/contact us .html"  target="_blank"><i class="fas fa-address-book"></i>CONTACT US</a></li>
+            <li class="nav-item"><a href="contributors.html" target="_blank"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
+          </ul>
+        </div>
+      </nav>
+  <!--<nav class="new-nav">
+    <ul>
+      <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+      <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
+      <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
+      <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
+      <li class="nav-item"><a href="./sign up page/index.html"><i class="fas fa-sign-in-alt"></i>SIGN UP</a></li>
+      <li class="nav-item"><a href="./public/contact us .html"><i class="fas fa-address-book"></i>CONTæACT US</a></li>
+      <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
+    </ul>
+  </nav>-->
+
+  <!--modal-->
+  <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel">Wanna Play Some Quiz?</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <span>Play Quiz to Enhance Yourself</span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="location='/Quiz/pages/game.html'" class="btn btn-primary">Let's Go</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---->
+
+
+  <div id="issueSection" class="container my-5" data-aos="fade">
+
+    <div class="hero-left" autofocus>
+       <h2 id="IssueHere">Issue Here</h2>
+
+
+
+       <form id="libraryForm">
+        <div class="form-group row">
+          <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
+          <label for="dateIssue" class="issue"><span>Date of Issue</span></label>
+          <div class="col">
+            <input type="date" id="issueDate" name="issueDate">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="bookName" class="col col-form-label"> <strong>Name</strong></label>
+          <div class="col">
+            <input type="text" class="input-box" id="bookName" placeholder="Book Name" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Author" class="col col-form-label"> <strong>Author</strong></label>
+          <div class="col">
+
+            <select class="form-check-input1" name="author" id="author" onchange='CheckAuthor(this.value);' style="z-index: 1;" required>
+
+
+              <option value="" disabled selected>Select Author</option>
+              <option value="Agatha Christie">Agatha Christie</option>
+              <option value="Charles Dickens">Charles Dickens</option>
+              <option value="Dan Brown">Dan Brown</option>
+              <option value="Emily Bronte">Emily Bronte</option>
+              <option value="George Elliot">George Elliot</option>
+              <option value="J.K. Rowling">J.K. Rowling</option>
+              <option value="Jane Austen">Jane Austen</option>
+              <option value="John Green">John Green</option>
+              <option value="Mark Twain">Mark Twain</option>
+              <option value="Oscar Wilde">Oscar Wilde</option>
+              <option value="Rabindranath Tagore">Rabindranath Tagore</option>
+              <option value="Roald Dahl">Roald Dahl</option>
+              <option value="Rudyard Kipling">Rudyard Kipling</option>
+              <option value="Ruskin Bond">Ruskin Bond</option>
+              <option value="Sarah J. Maas">Sarah J. Maas</option>
+              <option value="Sylvia Plath">Sylvia Plath</option>
+              <option value="William Shakespeare">William Shakespeare</option>
+              <option value="Other">Other</option>
+            </select>
+             <input type="text" class="input-box" id="other_author" name="other_author" placeholder="Enter Author" style='display:none;' />
+          </div>
+
+        </div>
+        <div class="form-group row">
+          <label for="Author" class="col col-form-label"> <strong>Category</strong></label>
+          <div class="col">
+
+            <select class="form-check-input1" name="category" id="category" style="z-index: 1;">
+
+
+              <option value="" disabled selected>Select Category</option>
+              <option value="Arts & Music">Arts & Music</option>
+              <option value="Biographies">Biographies</option>
+              <option value="Business">Business</option>
+              <option value="Comics">Comics</option>
+              <option value="Computer & Tech">Computers & Tech</option>
+              <option value="Cooking">Cooking</option>
+              <option value="Education & Reference">Education & Reference</option>
+              <option value="Entertainment">Entertainment</option>
+              <option value="Health & Fitness">Health & Fitness</option>
+              <option value="History">History</option>
+              <option value="Hobbies & Crafts">Hobbies & Crafts</option>
+              <option value="Home & Garden">Home & Garden</option>
+              <option value="Horror">Horror</option>
+              <option value="Kids">Kids</option>
+              <option value="Literature & Fiction">Literature & Fiction</option>
+              <option value="Medical">Medical</option>
+              <option value="Mystery">Mystery</option>
+              <option value="Parenting">Parenting</option>
+              <option value="Religion">Religion</option>
+              <option value="Romance">Romance</option>
+              <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
+              <option value="Science & Maths">Science & Maths</option>
+              <option value="Self-Help">Self-Help</option>
+              <option value="Social Sciences">Social Sciences</option>
+              <option value="Sports">Sports</option>
+              <option value="Travel">Travel</option>
+              <option value="True Crime">True Crime</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col">
+            <button type="submit" class="btn btn-primary" id="addBook">Add Book</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="hero-right">
+      <div id="table" >
+        <h1>Your Books</h1>
+        <div style="overflow-x:auto;" id="books-content">
+          <table class="table table-striped" id="mytable" style="cursor: default">
+            <thead>
+              <tr id="data">
+                <th scope="col">Date of Issue</th>
+                <th scope="col">Name</th>
+                <th scope="col">Author</th>
+                <th scope="col">Type</th>
+                <th scope="col">Category</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <!-- <ul>
+                <li></li>
+              </ul> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="contain">
+        <!-- <div class="line"><b id="bold"> Choose and read books </b><br>from your comfort zone </div> -->
+        <div id="search"  >
+          <form id="searchForm" class="form-inline my-2 my-lg-0">
+             <!-- <button class="btn btn-dark my-2 my-sm-0">Keyword</button>
+            <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search for a book"
+              aria-label="Search" name="search" style="border: none;" onkeyup="searchbooks()" />
+            <button class="btn btn-dark my-2 my-sm-0" id="searchsymbol" type="submit">
+              &#128269;
+            </button>  -->
+            <h2 class="search-heading">Choose and read books</h2>
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+              <ul id="myUL">
+                <li><a href="./Notes/physicselectricitynotes.pdf" target="_blank">Current Electricity Problem book</a></li>
+                <li><a href="./Notes/physicsmagnetism.pdf" target="_blank">Electricity and Magnetism</a></li>
+                <li><a href="./Notes/chemsurfacechem.pdf" target="_blank">Chemistry</a></li>
+                <li><a href="./Notes/chempblock.pdf" target="_blank">p-Block Elements chemistry </a></li>
+                <li><a href="./Notes/csds.pdf" target="_blank">Data structure in C & C++</a></li>
+                <li><a href="./Notes/sqldbms.pdf" target="_blank">DBMS</a></li>
+                <li><a href="./Notes/bsprincipleofmanagement.pdf" target="_blank">Principal of Management</a></li>
+                <li><a href="./Notes/ecomoneyandbanking.pdf" target="_blank">Economics of Money and Banking</a></li>
+                <li><a href="./Samplepapers/cbse10science.pdf" target="_blank">Science Sample Question Paper for class-10</a></li>
+                <li><a href="./Samplepapers/cbse10science1.pdf" target="_blank">Science Question Bank for class-10</a></li>
+                <li><a href="./Samplepapers/class12phy.pdf" target="_blank">Physics Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/class12chem.pdf" target="_blank">Chemistry Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/class12bio.pdf" target="_blank">Biology Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/class12maths.pdf" target="_blank">CBSE Mathmatics Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/jee.pdf" target="_blank">JEE MAIN Sample Question Paper</a></li>
+                <li><a href="./Samplepapers/neet.pdf" target="_blank">NEET Sample Question Paper</a></li>
+                <li><a href="https://drive.google.com/file/d/1IjxZaCtEeMwdmuO2b0Vs45Su8jvG3fwa/view" target="_blank">Science Book for Class-10</a></li>
+                <li><a href="https://drive.google.com/file/d/1cN04y7Gqe03HEb_zXbHdhpeA3AsRW1g5/view" target="_blank">Science Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/file/d/12a0_JGZ2GTqUzckFDdBLLaJGoV8jKKV0/view" target="_blank">Science Book for Class-08</a></li>
+                <li><a href="https://drive.google.com/file/d/1PGqKZZqWD8o6-auHsqLrwxCsXyilPkP6/view" target="_blank">Science Book for Class-07</a></li>
+                <li><a href="https://drive.google.com/file/d/1DlxE-x8-uUY4hWq7AvlKFWWAEhSFFLbw/preview" target="_blank">Physics for Class-12</a></li>
+                <li><a href="https://drive.google.com/file/d/1aXHembo-Cy5xSkt7cdwfk3tUo6rK2PZ-/preview" target="_blank">Chemistry for Class-12</a></li>
+                <li><a href="https://drive.google.com/file/d/1DlAxpsZ5E3clkp-aNUsQOeh1vI1EXd-R/preview" target="_blank">Biology for Class-12</a></li>
+                <li><a href="https://drive.google.com/file/d/0B8buzf-hm2wyZy1fQmVNM1gyTnM/view?resourcekey=0-wVoCHiiwS3rvs7r_dNvj8Q" target="_blank">Economics for Class-12</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1YWwfkGfaiDxxg0agGGCSxZe-1Qmpvahb" target="_blank">Supplementary Reader in English for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1OtLBgu-9AVSSH6O1Z0AocQPoYNFUL_3S" target="_blank">Beehive Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/18675WSWNHURqKWQUe4ZGvd0nXOQCk4dk" target="_blank">Mathmatics Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1b2DM6ed7LigVtZ2jEWCKhyevNegnfUu4" target="_blank">First-Flight Book for Class-10</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1RmpwGFb5QCPXG-yBKhCsquW90V8U6RJZ" target="_blank">NCERT Mathmatics book for Class-10</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1YTmwfxEdDmMT3dLVmCACLW1N-7fGnE_z" target="_blank">Democratic Politics-1 book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1xsnrX7060su6dZ84LYAq8-0QedIatMrh" target="_blank">Contemporary India-1 book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1BRXmQuwjGasfMs04TOb0twQmaL6a_eAT" target="_blank">Social Science Book for Class-09</a></li>
+              </ul>
+
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+
+  <!-- *****************************************************changes*********************************************** -->
+
+  <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+  <!-- <script>
+    function searchbooks()
+    {
+      var q = document.getElementById("searchTxt");
+  var v = q.value.toLowerCase();
+  var rows = document.getElementsByTagName("tr");
+  //var on = 0;
+  for ( var i = 0; i < rows.length; i++ ) {
+    var fullname = rows[i].getElementsByTagName("td");
+    fullname = fullname[1].innerHTML.toLowerCase();
+    if ( fullname.indexOf(v) > -1  ) {
+        if ( fullname.indexOf(v) > -1 )  {
+        rows[i].style.display = "";
+      } else {
+        rows[i].style.display = "none";
+      }
+    }
   }
+  // var n = document.getElementById("noresults");
+  // if ( on == 0 && n ) {
+  //   n.style.display = "";
+  //   document.getElementById("qt").innerHTML = q.value;
+  // } else {
+  //   n.style.display = "none";
+  // }
+    }
 
- .latest-blogs-p{
-   font-size: 3.5rem;
- } */
+  </script> -->
+  <!-- ****************************************************done******************************************** -->
+  <div class="suggestion" data-aos="fade-up">
+    <ul class="list">
+        <li>
+            <div class="suggest"><span class="counter" data-target="518">0</span>+</div>
+            <div>Journals</div>
+        </li>
+        <li>
+            <div class="suggest"><span class="counter" data-target="213">0</span>+</div>
+            <div>Referrals</div>
+        </li>
+        <li>
+            <div class="suggest"><span class="counter" data-target="1052">0</span>+</div>
+            <div>E-books</div>
+        </li>
+    </ul>
+  </div>
+  <section class="book">
+    <h1 class="tex">
 
-	/*
+      <div class="alan-btn"></div>
 
-  .body-style {
-    box-shadow: none;
-    padding: 1rem;
+      <script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "f65cbb6930ad9e79c7e788c4b0caed3c2e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+        //call client code that will react on the received command
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
+
+
+  <div data-aos="fade-up">
+    <h1>Recommended books</h1>
+      <br>
+      <p>Read some books on HTML, CSS and JavaScript for free using the Library</p>
+
+
+
+     <div class="books1" id="recommended_books" data-aos="fade"></div>
+     <script src="./recommended_books.js"></script>
+
+
+
+      <div data-aos="fade-down">
+        <br>
+        <center><h3>Listen to Audiobooks</h3></center>
+
+        <div class="books1" data-aos="fade">
+          <link rel="stylesheet" href="assets/css/audiobook.css">
+          <script src="assets/js/audiobook.js"></script>
+
+          <div>
+            <!-- Book 1 -->
+            <a href="https://www.audible.in/pd/Python-Computer-Programming-for-Beginners-Step-by-Step-Audiobook/B089HJ4KQF?qid=1643917101&sr=1-1&ref=a_search_c3_lProduct_1_1&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=2A4794TMRTZFE4TBBDMR" target="_blank">
+              <img src="https://m.media-amazon.com/images/I/51qDbDDGT7L._SL500_.jpg">
+
+            </a>
+            <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <a class="audiobook" id="nyan-btn">play</a>
+          </div>
+
+
+          <div>
+            <!-- Book 2 -->
+            <a href="https://www.audible.in/pd/Computer-Networking-Audiobook/B07NPZL5VQ?qid=1643917101&sr=1-2&ref=a_search_c3_lProduct_1_2&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=2A4794TMRTZFE4TBBDMR" target="_blank">
+              <img src="https://m.media-amazon.com/images/I/51vpG4hU6FL._SL500_.jpg">
+
+            </a>
+            <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <a class="audiobook" id="nyan-btn">play</a>
+          </div>
+
+
+          <div>
+            <!-- Book 3 -->
+            <a href="https://www.audible.in/pd/Computer-Programming-The-Bible-Audiobook/B07MNV3JY9?qid=1643917101&sr=1-7&ref=a_search_c3_lProduct_1_7&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=2A4794TMRTZFE4TBBDMR"target="_blank">
+              <img src="https://m.media-amazon.com/images/I/51hVSO2ONDL._SL500_.jpg" target="_blank">
+            </a>
+            <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <a class="audiobook" id="nyan-btn">play</a>
+          </div>
+
+
+          <div>
+            <!-- Book 4 -->
+            <a href="https://www.audible.in/pd/Computer-Programming-and-Cyber-Security-for-Beginners-Audiobook/B0862GMM48?qid=1643917584&sr=1-3&ref=a_search_c3_lProduct_1_3&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=J0S3TXBQ6VERVE765ER4" target="_blank">
+              <img src="https://m.media-amazon.com/images/I/511KH-QzPeL._SL500_.jpg">
+
+            </a>
+            <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <a class="audiobook" id="nyan-btn">play</a>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+  </section>
+
+  <div class="member" data-aos="fade-up">
+    <section class="donate">
+      <div class="text"><b>Become a member</b>
+        <br><h4>By donating your books to </h4> <br> <h4>help others</h4>
+      </div>
+      <div>
+        <button class="donate-btn"><a href="./public/donate-book.html" target="_blank">DONATE NOW</a></button>
+      </div>
+    </section>
+    <section class="photo"><img src="images/8.png" alt=""><img src="images/17.png.png" alt=""></section>
+  </div>
+  <br>
+  <div class="member" id="res" data-aos="fade-down">
+    <section class="photo"><img src="images/8.png" alt=""><img src="images/17.png.png" alt=""></section>
+    <section class="donate" >
+      <div class="text"><b>Resources</b>
+        <br>get an exclusive access to all <br>the materials available in our <br>environment which help you
+        <br>to satisfy your needs and wants
+      </div>
+      <div>
+        <button class="donate-btn"><a href="resource.html">All Resources</a></button>
+      </div>
+    </section>
+  </div>
+  <br><br>
+
+  <div class="blogs" data-aos="fade-up">
+    <h1><b class='latest-blogs'> Latest Blogs</b></h1>
+    <p class="latest-blogs-p">Regular records of your thoughts, opinions or experiences that you put on the <br>internet for other people to
+      read </p>
+      <div class="blog-content">
+    <div class="blog-carousel">
+      <div class="inner">
+      <img src="./Blog/img1.jpg" >
+      <img src="./Blog/img2.jpg" >
+      <img src="./Blog/img3.jpg" >
+      <img src="./Blog/img4.jpg" >
+      <img src="./Blog/img5.jpg" >
+      <img src="./Blog/img6.jpg" >
+      <img src="./Blog/img7.jpg" >
+      <img src="./Blog/img11.jpg" >
+      </div>
+    </div>
+    <div class="desc-carousel">
+      <div class="inner">
+        <div class="desc">
+          <h1>Books are the most Truste Friends you'll ever have.</h1>
+          <p> And books can be our best friends for life, for all the right reasons. Good books enrich our mind and broaden our perspective towards life.</p>
+        </div>
+        <div class="desc">
+          <h1>Distance-Learning programmes on BOOM</h1>
+          <p>Blog about pursuing an MBA, Masters Degree, Online MBA, DBA, Bachelors or PGCE via Online Learning or Distance learning.</p>
+        </div>
+        <div class="desc">
+          <h1>Our Future is our YOUTH</h1>
+          <p>Higher education is looking beyond the dwindling market of 18-year-olds to lifelong, professional and continuing ed to sustain enrollments.</p>
+        </div>
+        <div class="desc">
+          <h1>The Digital Era of Education</h1>
+          <p>Current trends indicate that digital formats will be an integral part of educational institutions in the post-Covid-19 world. </p>
+        </div>
+        <div class="desc">
+          <h1>Innovation in the field of Literature</h1>
+          <p>The main parts of innovation have been highlighted and the aim of this review is to give a good insight in research field</p>
+        </div>
+        <div class="desc">
+          <h1>The Habit Of Book-Reading</h1>
+          <p>The habit of reading is one of the best qualities that a person can possess. Books are known to be your best friend for a reason.</p>
+        </div>
+        <div class="desc">
+          <h1>The Magic of Literature</h1>
+          <p>Magical realism is a genre of literature that depicts the real world as a magic or fantasy. </p>
+        </div>
+        <div class="desc">
+          <h1>How to Write and Publish Childrens' Books
+          </h1>
+          <p>Kids Book Review is a voluntary children's literature and book review which works with authors, illustrators and publishers. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+  <div class="blog-container" data-aos="fade-down">
+     <div class="card1" data-aos="fade">
+      <div class="card-bg"></div>
+       <div class="owner">
+         <h1>Machine-Learning</h1>
+         <p>Posted by  Rudramadhaba Mishra</p>
+         <p>October 23, 2021</p>
+       </div>
+       <div class="info">
+         <p>Machine Learning is the field of study that gives computers the capability to learn without being explicitly programmed. ML is one of the most exciting technologies that one would have ever come across.</p>
+       </div>
+       <a href="https://www.simplilearn.com/tutorials/machine-learning-tutorial/what-is-machine-learning"target="_blank" class="read-more"> Read more<span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
+     </div>
+     <div class="card2" data-aos="fade">
+      <div class="card-bg"></div>
+      <div class="owner">
+        <h1>Web development</h1>
+         <p>Posted by  Palak Bhogra</p>
+         <p>October 30, 2021</p>
+      </div>
+      <div class="info">
+        <p>Web development refers to building, creating, and maintaining websites. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.
+       </p>
+      </div>
+      <a href="https://www.w3schools.com/whatis/" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
+     </div>
+     <div class="card3" data-aos="fade">
+      <div class="card-bg"></div>
+      <div class="owner">
+        <h1>HTML</h1>
+         <p>Posted by  Himansu Hansda</p>
+         <p>November 1, 2021</p>
+      </div>
+      <div class="info">
+        <p>Hyper Text Markup Language is used for creating web pages and web applications.
+</p>
+      </div>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
+     </div>
+     <div class="card4" data-aos="fade">
+      <div class="card-bg"></div>
+      <div class="owner">
+        <h1>Python</h1>
+         <p>Posted by  Mantosh</p>
+         <p>October 29, 2021</p>
+      </div>
+      <div class="info">
+        <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming.
+</p>
+      </div>
+      <a href="https://www.codecademy.com/resources/docs/python" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
+     </div>
+    </div>
+
+
+
+  <div class="update" data-aos="fade-up">
+    <img src="./assets/images/feedback.jpg" alt="feedback" />
+    <div class="login-box" data-aos="fade">
+      <h1 class="title">Get In Touch</h1>
+      <form id="feedbackForm" method="POST" action="">
+        <div class="user-box">
+          <input type="text" name="feedbackName" id="feedbackName" required>
+          <span class="line"></span>
+          <label>Name</label>
+        </div>
+        <div class="user-box">
+          <input type="email" name="feedbackEmail" id="feedbackEmail" required>
+          <span class="line"></span>
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+
+          <textarea id="txtid" name="txtname" rows="1" maxlength="200" required></textarea>
+          <span class="line2"></span>
+          <label>Message</label>
+
+        </div>
+        <a href="#feedbackForm" id="formAnchor">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+    </div>
+    <script>
+      const btn = document.getElementById("formAnchor");
+      const form = document.getElementById("feedbackForm");
+      const feedbackName = document.getElementById("feedbackName");
+      const feedbackEmail = document.getElementById("feedbackEmail");
+      const msg = document.getElementById("txtid");
+
+      function isEmail(email) {
+        let regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return regexp.test(String(email).toLowerCase());
+      }
+
+      btn.addEventListener("click", () => {
+        if (feedbackName.value == "") {
+          swal("Error !", "Please enter a valid name", "error");
+        }
+        else if (!isEmail(feedbackEmail.value)) {
+          swal("Error !", "Please enter a valid email", "error");
+        }
+        else if (msg.value == "") {
+          swal("Error !", "Please enter a message", "error");
+        }
+        else {
+          swal("Thank You !", "Your feedback is posted !", "success");
+          form.reset();
+        }
+      })
+
+    </script>
+
+    <!-- <div class="stay-update">STAY UPDATED</div> -->
+  </div>
+
+<!-- Quiz section under issue #534  ********** Starts *********-->
+  <div class="quiz-section" id="box" data-aos="fade">
+    <img class="quiz-svg" src="/Quiz/quiz.svg" alt="">
+    <div class="quiz-main">
+        <div class="quiz-text" style="color:black">Bored ? Here's a quick quiz for you </div>
+        <!-- ***************** Game Page ***************** -->
+        <a class="quiz-btn" href="/Quiz/pages/game.html"target="_blank">Play</a>
+        <!-- ***************** Highscore Page ***************** -->
+        <a class="quiz-btn" href="/Quiz/pages/highscore.html"target="_blank">High Scores</a>
+    </div>
+    <img class="quiz-img" src="/Quiz/brain.png" alt="">
+  </div>
+<!-- Quiz section under issue #534  ********* Ends ********** -->
+
+
+        <section class="faq-container" id="faq" data-aos="fade-up">
+        <h1 class="faq-heading">FAQ'S</h1>
+            <div class="faq-one" data-aos="fade">
+                <!-- faq question -->
+                <h3 class="faq-page">Q: What is AEC Library?</h3>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>This is an Open-Source Library Website in which you get Resources to learn different topics, Donate book section to donate your old books, and a Book issue section to keep a record of all the books issued. </p>
+                </div>
+            </div>
+
+            <div class="faq-two" data-aos="fade">
+                <!-- faq question -->
+                <h3 class="faq-page">Q: What is the best part of AEC Library?</h3>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>The best part about the website is that you can also contribute to the website for others to use the resourses by donating the books you have , all categories of books are welcomed for donation.</p>
+                </div>
+            </div>
+            <div class="faq-three" data-aos="fade">
+                <!-- faq question -->
+              <h3 class="faq-page">Q: How to become a member? </h3>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>By donating any book of your choice you can become a member of the AEC Library.</p>
+                </div>
+            </div>
+            <div class="faq-four" data-aos="fade">
+              <!-- faq question -->
+            <h1 class="faq-page">Q: What is the registration fee? </h1>
+              <!-- faq answer -->
+              <div class="faq-body">
+                  <p>There is no registration fees! One simply needs to donate a book to become a member.</p>
+              </div>
+          </div>
+          <div class="faq-five" data-aos="fade">
+            <!-- faq question -->
+          <h1 class="faq-page">Q: I forgot my login credentials. What should I do? </h1>
+            <!-- faq answer -->
+            <div class="faq-body">
+                <p>No worries! Click on the "Forgot your Password?" link. An email containing the instructions to reset your password will be sent to your registered email-ID</p>
+            </div>
+        </div>
+        <div class="faq-six" data-aos="fade">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: I can't find the book I am looking for. What to do? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>The library has a huge collection of books of multiple genres. However, if you can't find the book you're looking for, do reach out to us! Drop us a message through the "Contact Us" section.</p>
+          </div>
+        </div>
+        <div class="faq-four" data-aos="fade">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How can I donate a book? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>Click on the "Donate books" button and fill out the form with your details. We will reach out to you with further details.</p>
+          </div>
+        </div>
+        <div class="faq-five" data-aos="fade">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: What is the benefits of an account in Aec-Library ? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p><ol>
+                <li>Contriibute to Aec-library :
+                    Aec-library is a community initiative to build a robust book catalog.Anyone can add or edit data about books and blogs.
+                </li>
+                <li>
+                  Personalize your experience :
+                  We are always adding new features to our site so you can make your experience more personal .
+                </li>
+              </ol></p>
+          </div>
+        </div>
+        <div class="faq-six" data-aos="fade">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How can I find a book here? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>Go to the "CHoose and read books" section and search the book you are looking for .</p>
+          </div>
+        </div>
+        <div class="faq-seven" data-aos="fade">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: I haven't found a book but it's not readable format>Is something wrong? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>This is not supposed to happen but if it happens please leave a message on out "Contact us" section.We will definitely look in it. </p>
+          </div>
+        </div>
+        <div class="faq-eight" data-aos="fade">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How can I download a book? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>Go to our "Recommended Book" secion. Choose your book which you want to download then click on the "Download as pdf".
+                Happy reading :)</p>
+          </div>
+        </div>
+        <div class="faq-nine" data-aos="fade">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How many books can I check-out at once? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>You can check-out as many books as you want.</p>
+          </div>
+        </div>
+        <div class="faq-ten" data-aos="fade">
+          <!-- faq question -->
+        <h1 class="faq-page">Q: How can I access in Online library? </h1>
+          <!-- faq answer -->
+          <div class="faq-body">
+              <p>Go to our "Resources" section.Cick on the "All resources". You can find out in our environment all recources to satisfy your need. </p>
+          </div>
+        </div>
+
+        </section>
+
+
+
+
+
+  <div class="contact" data-aos="fade-down">
+    <img src="https://thumbs.gfycat.com/AcceptableWillingBushsqueaker-max-1mb.gif" alt="">
+    <ul>
+      <li class="heading">Contact:</li>
+
+      <li><a href="tel:95768xyza">Ph:95768xyza</a></li>
+      <li><a href="mailto:hello@acelibrary.com">E:hello@acelibrary.com</a></li>
+      <li><a href="https://www.linkedin.com/in/sauravmukherjee44/"> Linkedin</a></li>
+
+
+      <li><a href="https://github.com/SauravMukherjee44" target="github">Github</a></li>
+      <li><a href="https://twitter.com/mesourav44" target="twitter"> Twitter</a></li>
+      <li><a href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw" target="YouTube">YouTube</a></li>
+    </ul>
+    <ul>
+      <li class="heading">Community</li>
+      <li><a href="#">Our Story</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Refund Policy</a></li>
+      <li><a href="#">Terms Of use</a> </li>
+      <li><a href="#">Accessibility</a></li>
+      <li><a href="#">Publishing process</a> </li>
+    </ul>
+    <ul>
+      <li class="heading">Company</li>
+      <li><a href="public/contact us .html" target="_blank">Contact us</a> </li>
+      <li><a href="./public/terms&conditions.html">Terms and conditions</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Information</a></li>
+    </ul>
+    <ul>
+        <li class="newsletter-heading">
+
+          <p class="heading">Subscribe to our newsletter</p>
+
+        </li>
+
+      <form method="post" autocomplete="off" name="google-sheet" bgcolor="#00000" action="">
+        <div class="newsletter-form">
+          <div class="newsletter-name"> <input type="text" class="input" name="Name" id="newsletterName"  placeholder="&#xf007;   Enter your name"></div>
+          <div class="newsletter-email"> <input type="text" class="input" name="Email" id="newsletterEmail"  placeholder="&#xf0e0;   Enter your email"></div>
+          <div class="newsletter-submit btn-zoom"><button type="submit" id="btnSubmit">SUBSCRIBE</button></div>
+        </div>
+        <div id="msg"></div>
+      </form>
+    </ul>
+
+    <!-- newsletter form validation starts  -->
+		 <script>
+				const scriptURL = 'https://script.google.com/macros/s/AKfycbz5WCRS6VpGC_cjBpJNlY4A-MkwiOUCDv0BSSniX0d0AgcVmFPU/exec';
+				const newsletterForm= document.forms['google-sheet'];
+        const btnSubmit = document.getElementById("btnSubmit");
+        const email = document.getElementById("newsletterEmail");
+        const name = document.getElementById("newsletterName");
+
+        function isEmail(email) {
+          let regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return regexp.test(String(email).toLowerCase());
+        }
+
+        newsletterForm.addEventListener("submit",(event)=>{
+          event.preventDefault();
+          if(name.value == ""){
+            swal("Error!","Please enter a valid name !","error");
+          }
+          else if (!isEmail(email.value)){
+            swal("Error!","Please enter a valid email !","error");
+          }
+          else{
+            fetch(
+              scriptURL,
+              { method : "post", body : new FormData(newsletterForm)}
+            )
+            .then( (res)=>
+              { swal("Thanks For connecting !","We will contact you soon !","success")
+                newsletterForm.reset();
+              })
+            .catch( (err)=>{ swal("Error !", "Please try again !","error")})
+          }
+
+        })
+
+			</script>
+    <!-- newsletter form validation ends  -->
+
+  </div>
+		<!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" >
+  <div>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="icons">
+
+          <ul>
+            <li>
+              <a title="linkedin" target="_blank" href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
+            </li>
+            <li>
+              <a title="github" target="_blank" href="https://github.com/SauravMukherjee44/"> <i class="fab fa-github icon"></i> </a>
+            </li>
+	          <li>
+              <a title="twitter" target="_blank" href="https://twitter.com/mesourav44/"><i class="fab fa-twitter icon"></i></a>
+            </li>
+            <li>
+              <a title="youtube" target="_blank" href="https://bit.ly/CodeINYouTube"><i class="fab fa-youtube icon"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+
+          <p>©2021 Copyright AEC Library</p>
+        </div>
+        <!--
+        <div class="ml-auto">
+          <p>
+            <a href="./public/contact us .html" style="color: antiquewhite;"> </a>
+            &emsp;&emsp;
+          </p>
+
+        </div>
+        -->
+      </div>
+    </footer>
+
+  </div>
+  </div>
+
+      <!--scroll featuring-->
+<script type ="text/javascript">
+	  let progressbar = document.getElementById('progressbar');
+	  let totalHeight = document.body.scrollHeight - window.innerHeight;
+	  window.onscroll = function(){
+	      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progressbar.style.height = progressHeight + "%";
+		  }
+		  </script>
+      <!--scrolling feature end here-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Go to Top Button-->
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 40) {
+          $('#topBtn').css({
+            "opacity": "1", "pointer-events": "auto"
+          });
+        } else {
+          $('#topBtn').css({
+            "opacity": "0", "pointer-events": "none"
+          });
+        }
+      });
+
+      $("#topBtn").click(function () {
+        $('html ,body').animate({ scrollTop: 0 }, 400);
+      });
+    });
+  </script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+    });
+  </script>
+
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+  <script>
+    // $(document).ready(function () {
+      $('#mytable').DataTable();
+    // });
+  </script>
+
+<script type="text/javascript">
+  function CheckAuthor(val){
+   var element=document.getElementById('other_author');
+   if(val=='Other')
+     element.style.display='block';
+   else
+     element.style.display='none';
   }
-
-*/
-
-	/*   #table {
-    width: 29rem;
-    height: 10rem;
-  } */
-
-	.body-style {
-		width: 100%;
-	}
-
-	.input-box {
-		width: 15rem;
-	}
-
-	.nav-link {
-		margin-left: 2rem;
-	}
-
-	.form-control {
-		margin-left: 1.5rem;
-	}
-
-	/*   .my-sm-0 {
-    margin-left: 1.5rem;
-  } */
-}
-
-.suggestion {
-	background-color: white;
-	display: flex;
-	overflow: hidden;
-	overflow-x: auto;
-	align-items: center;
-}
-
-.list li {
-	width: 100vw;
-	height: 120px;
-	text-align: center;
-	font-size: 1cm;
-	list-style: none;
-	text-shadow: 3px 4px 8px #c4c4c4;
-}
-
-.list {
-	display: flex;
-	justify-content: space-evenly;
-	width: 100%;
-}
-
-.suggestion .list {
-	padding: 0;
-	margin: 0;
-}
-
-.suggestion .list .suggest {
-	font-family: "Poppins", sans-serif;
-	display: flex;
-	justify-content: center;
-	margin-top: 15px;
-	align-items: center;
-	font-size: 32px;
-	font-weight: 500;
-	line-height: 1.2;
-	color: #033150;
-}
-
-.suggestion .list {
-	display: flex;
-}
-
-.suggestion .list li {
-	display: flex;
-	flex-direction: column;
-}
-
-.suggestion .list {
-	padding: 0;
-	margin: 0;
-}
-
-.suggestion .list .suggest {
-	font-family: "Poppins", sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 32px;
-	font-weight: 500;
-	line-height: 1.2;
-	color: #033150;
-}
-
-.book {
-	background-color: #f3d094;
-	padding: 2rem;
-}
-
-.tex {
-	text-align: center;
-}
-
-.book .tex {
-	margin-top: 0;
-	font-family: "Poppins", sans-serif;
-	font-size: 17px;
-}
-
-.tex b {
-	font-family: "Playfair Display", serif;
-	font-weight: 700;
-	line-height: 1;
-	font-size: 48px;
-	margin-bottom: 40px;
-	display: inline-block;
-}
-
-.book div {
-	height: max-content;
-	font-family: "Source Sans Pro", sans-serif;
-}
-
-.books {
-	display: flex;
-	gap: 1rem;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	list-style: none;
-}
-
-.books li img {
-	width: 200px;
-	height: 300px;
-	box-shadow: 2px 2px 3px rgba(1, 53, 88, 0.589);
-	transition: all 0.3s;
-}
-
-.book .books li:hover img {
-	box-shadow: 2px 2px 3px rgba(1, 53, 88, 0.342);
-}
-
-@keyframes bookBounce {
-	0% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(-6px);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
-}
-.books1 {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-	justify-content: space-around;
-}
-
-.books1 div {
-	align-self: center;
-}
-
-.books1 img {
-	margin: 30px 50px;
-	width: 250px;
-	height: 300px;
-	object-fit: cover;
-	display: block;
-	transition: 0.5s;
-}
-
-.books1 img:hover {
-	margin: 30px 50px;
-	width: 250px;
-	height: 300px;
-	transform: scale(1.1);
-	object-fit: cover;
-	display: block;
-}
-.book p {
-	font-size: 1rem;
-}
-
-.bookbtn {
-	margin: 40px 70px;
-	padding: 10px 10px;
-
-	text-decoration: none;
-	background: #00a9d4;
-	color: #fff;
-
-	cursor: pointer;
-	text-align: center;
-	width: 190px;
-	border-radius: 5px;
-	font-size: 1rem;
-	transition: 0.5s;
-}
-.bookbtn:hover {
-	text-decoration: none;
-	color: #fff;
-	background: #00729d;
-}
-
-.options {
-	display: flex;
-	margin: 1rem 0;
-	padding: 0 1rem;
-	justify-content: center;
-	gap: 0.5rem;
-	overflow-x: auto;
-	flex-wrap: wrap;
-}
-
-.book .options {
-	margin-top: -4px;
-	margin-bottom: 18px;
-}
-
-.book-option {
-	background-color: #f1dab3;
-	font-family: "Poppins", sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	margin: 0px 15px;
-	border: none;
-	border-radius: 15px;
-	padding: 4px 20px;
-	transition: all 0.3s ease 0s;
-}
-
-.book-option:hover {
-	background-color: #d1af74;
-}
-
-.member {
-	min-height: 400px;
-	display: flex;
-	justify-content: space-between;
-	padding: 2rem 0;
-	background-color: white;
-}
-
-.member section {
-	/* border: 2px solid rgb(235, 167, 167); */
-	width: 50%;
-}
-
-.donate {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 1.2rem 0;
-	align-items: center;
-	flex: 1;
-}
-
-.donate div {
-	text-align: center;
-	margin-top: 60px;
-	font-size: 0.5cm;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.donate div:first-child {
-	margin-top: 0;
-	font-family: "Poppins", sans-serif;
-	font-size: 18px;
-}
-
-.donate div:last-child {
-	margin-top: 40px;
-	font-family: "Poppins", sans-serif;
-	font-size: 18px;
-}
-
-.text b {
-	font-size: 10px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.donate div b {
-	font-family: "Playfair Display", serif;
-	font-weight: 700;
-	line-height: 1;
-	font-size: 48px;
-	margin-bottom: 40px;
-	display: inline-block;
-}
-
-.donate-btn {
-	background-color: rgb(35, 108, 156);
-	height: 45px;
-	width: 155px;
-	border-radius: 10px;
-}
-
-.donate div:last-child .donate-btn {
-	outline: none;
-	border-radius: 6px;
-	border: none;
-	display: flex;
-	position: relative;
-	z-index: 1;
-	justify-content: center;
-	align-items: center;
-	padding: 0;
-	box-shadow: 2px 2px 4px rgb(1 53 88 / 59%);
-	transition: all 0.3s;
-}
-
-.donate div:last-child .donate-btn:hover {
-	transform: translate(1px, 1px);
-	box-shadow: 1px 1px 3px rgba(1, 53, 88, 0.342);
-}
-
-.donate div:last-child .donate-btn a {
-	font-weight: 400;
-	color: white;
-
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	letter-spacing: 1px;
-	font-family: "Poppins", sans-serif;
-	font-size: 16px;
-	border-radius: 6px;
-}
-
-.donate div:last-child .donate-btn a:hover {
-	text-decoration: none;
-}
-
-.photo {
-	display: flex;
-	flex: 1;
-	align-items: center;
-	justify-content: space-around;
-}
-/*
-#res .photo {
-  justify-content: end;
-}
-*/
-.photo img {
-	height: 100%;
-	max-width: 310px;
-	max-height: 400px;
-	min-width: 0;
-	object-fit: contain;
-}
-
-.blogs h1,
-p {
-	text-align: center;
-	font-family: "Poppins", sans-serif;
-}
-
-.update {
-	margin: 10px;
-	padding: 2rem 0;
-	color: white;
-	display: flex;
-}
-
-/* Contact form position styles*/
-.login-box {
-	width: 60%;
-	padding: 40px;
-	background: rgba(0, 0, 0, 0.75);
-	box-sizing: border-box;
-	border-radius: 20px;
-	transition-duration: 0.5s;
-	margin-bottom: 50px !important;
-	/* margin-left: 80px; */
-	box-shadow: 0px 0px 15px 5px lavender;
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.login-box .user-box {
-	position: relative;
-	margin: 3em 0;
-	width: 100%;
-}
-
-.login-box .title {
-	position: relative;
-	/* width: max-content; */
-	margin: 0 auto 0.7em;
-	text-decoration: underline;
-	font-size: 2.8rem;
-	color: rgb(255, 183, 0);
-	letter-spacing: 1.5px;
-}
-
-/* styles for input fields  */
-.login-box .user-box input,
-.login-box .user-box textarea {
-	width: 90%;
-	color: #fff;
-	font-size: 1rem;
-	padding: 5px 20px;
-	height: 1.875em;
-	font-size: 1rem;
-	border: none;
-	outline: none;
-	background: none;
-	opacity: 0.8;
-}
-
-.login-box .user-box textarea {
-	position: relative;
-	height: 3em 0;
-	resize: none;
-}
-
-.login-box .user-box label {
-	position: absolute;
-	top: 50%;
-	font-size: 1.2rem;
-	color: #f1f1f1;
-	left: 10px;
-	transform: translateY(-80%);
-	pointer-events: none;
-	transition: 0.5s;
-}
-
-.login-box .user-box textarea label {
-	transform: translateY(-90%);
-}
-
-/*for line below user-box field */
-.login-box .user-box .line::before,
-.login-box .user-box .line2::before {
-	content: "";
-	position: absolute;
-	top: 35px;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background: #f1f1f1;
-	transition: 0.5s;
-}
-
-.login-box .user-box :focus ~ label,
-.login-box .user-box :valid ~ label {
-	top: -1px;
-	font-size: 1rem;
-	color: rgb(255, 183, 0);
-}
-
-.login-box .user-box :focus ~ .line::before,
-.login-box .user-box :valid ~ .line::before {
-	background: rgb(255, 183, 0);
-}
-
-.login-box .user-box textarea :focus ~ label,
-.login-box .user-box textarea :valid ~ label {
-	top: -1.5px;
-	font-size: 1rem;
-	color: rgb(255, 183, 0);
-}
-
-.login-box .user-box :focus ~ .line2::before,
-.login-box .user-box :valid ~ .line2::before {
-	background: rgb(255, 183, 0);
-}
-
-/* button styles */
-.login-box form a {
-	position: relative;
-	display: inline-block;
-	padding: 10px 20px;
-	color: rgb(255, 183, 0);
-	font-size: 16px;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	transition: 1s;
-	margin-top: 1.5rem;
-	letter-spacing: 4px;
-	background-color: rgb(54, 47, 47);
-}
-
-#txtid::placeholder {
-	color: white;
-}
-
-.update img {
-	border-radius: 200px;
-	height: 20rem;
-	width: 20rem;
-	margin-left: 30px;
-	margin-top: 60px;
-	margin-bottom: 20px;
-	margin-right: 20px;
-}
-
-.login-box a:hover {
-	background: rgb(7, 7, 7);
-	color: #fff;
-	border-radius: 5px;
-}
-
-.login-box:hover {
-	transition-duration: 0.4s;
-	box-shadow: 0 0px 15px 5px rgb(255, 183, 0);
-}
-/* styles for transition around button */
-.login-box a span {
-	position: absolute;
-	display: block;
-}
-
-.login-box a span:nth-child(1) {
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 3px;
-	background: linear-gradient(to right, transparent, rgba(255, 183, 0, 0.6));
-	animation: btn-anim1 1s linear infinite;
-}
-
-.login-box a span:nth-child(2) {
-	top: -100%;
-	right: 0;
-	width: 3px;
-	height: 100%;
-	background: linear-gradient(to bottom, transparent, rgba(255, 183, 0, 0.6));
-	animation: btn-anim2 1s linear 0.25s infinite;
-}
-
-.login-box a span:nth-child(3) {
-	bottom: 0;
-	right: -100%;
-	width: 100%;
-	height: 3px;
-	background: linear-gradient(to left, transparent, rgba(255, 183, 0, 0.6));
-	animation: btn-anim3 1s linear 0.5s infinite;
-}
-
-.login-box a span:nth-child(4) {
-	bottom: -100%;
-	left: 0;
-	width: 3px;
-	height: 100%;
-	background: linear-gradient(to top, transparent, rgba(255, 183, 0, 0.6));
-	animation: btn-anim4 1s linear 0.75s infinite;
-}
-
-/* button animations */
-@keyframes btn-anim1 {
-	0% {
-		left: -100%;
-	}
-	50%,
-	100% {
-		left: 100%;
-	}
-}
-
-@keyframes btn-anim2 {
-	0% {
-		top: -100%;
-	}
-	50%,
-	100% {
-		top: 100%;
-	}
-}
-
-@keyframes btn-anim3 {
-	0% {
-		right: -100%;
-	}
-	50%,
-	100% {
-		right: 100%;
-	}
-}
-
-@keyframes btn-anim4 {
-	0% {
-		bottom: -100%;
-	}
-	50%,
-	100% {
-		bottom: 100%;
-	}
-}
-/* end of contact form styles */
-
-/* scroll bar design */
-/* width */
-/* ::-webkit-scrollbar {
-	width: 10px;
-} */
-
-/* Track */
-/* ::-webkit-scrollbar-track {
-	background: rgb(77, 32, 32);
-} */
-
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-	background: #c68b59;
-	border-radius: 10px;
-} */
-
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-	background: #c68b59;
-	border: solid 2px rgb(41, 2, 10);
-} */
-
-/* scroll bar end */
-
-@media only screen and (max-width: 850px) {
-	.update img {
-		width: 15rem;
-		height: 15rem;
-		margin: 25px;
-	}
-	.login-box {
-		width: 55%;
-	}
-}
-
-@media only screen and (max-width: 720px) {
-	.update {
-		display: block;
-		text-align: center;
-	}
-	.login-box {
-		width: 90%;
-	}
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-	box-sizing: border-box;
-	padding: 0;
-	margin-top: 1rem;
-}
-
-.contact {
-	display: flex;
-	flex-flow: row wrap;
-	background:linear-gradient(to right, lightblue,gray);;
-	width: 100%;
-	justify-content: space-around;
-	padding: 1.2rem;
-	gap: 1rem;
-}
-
-.contact ul {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-}
-#subcribe {
-	border: 2px solid rgb(153, 150, 150);
-	border-radius: 10px 0px 0px 10px;
-	padding-left: 3%;
-	height: 35px;
-	width: 100%;
-	position: relative;
-	outline: none;
-}
-.label {
-	position: absolute;
-	font-size: 0.85rem !important;
-	height: 35px;
-	padding: 10px;
-	padding-left: 0.4%;
-	padding-right: 0.8%;
-	padding-top: 1%;
-	border-radius: 0px 10px 10px 0px;
-	background: #5282d4;
-	background-image: linear-gradient(to bottom, #5282d4, #28667d);
-	cursor: pointer;
-}
-
-.contact ul li {
-	position: relative;
-}
-
-.newsletter {
-	padding-right: 75px;
-}
-
-/* newsletter form styles */
-
-.newsletter-form {
-	border: 2px solid black;
-	padding: 10px 20px 20px 20px;
-	border-radius: 10px;
-}
-
-.newsletter-heading {
-	padding-bottom: 10px;
-}
-
-.newsletter-form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.newsletter-name {
-	border-bottom: 2px solid #dbdbdb;
-	margin-bottom: 20px;
-}
-
-.newsletter-form input {
-	outline: none;
-	border: none;
-	background: transparent;
-	height: 40px;
-	line-height: 1.2;
-	font-size: 16px;
-	color: #111111;
-	font-family: "Font Awesome 5 Free", "Source Sans Pro", sans-serif;
-}
-
-.newsletter-email {
-	border-bottom: 2px solid #dbdbdb;
-	margin-bottom: 20px;
-}
-
-.newsletter-form input::placeholder {
-	color: #e2dcdc;
-}
-
-.newsletter-submit button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-}
-
-.newsletter-submit {
-	display: flex;
-	justify-content: center;
-	margin-top: 10px;
-	align-items: center;
-	padding: 0 20px;
-	min-width: 125px;
-	height: 40px;
-	font-size: 14px;
-	color: #ffffff;
-	line-height: 1.2;
-	font-family: "Source Sans Pro", sans-serif;
-	background-color: #d9e4f5;
-	background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
-	border-radius: 40px;
-}
-
-/* end of newsletter styles */
-
-.contact ul li, a
- {
-	color: black;
-	list-style: none;
-	text-decoration: none;
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: large;
-	margin: 5px;
-}
-.contact .email {
-	width: 100%;
-}
-.contact .email #subcribe {
-	width: 80%;
-}
-.contact .email label {
-	width: 20%;
-}
-.heading {
-	list-style: none;
-	font-family: "Source Sans Pro", sans-serif;
-	font-weight: bolder;
-	padding-bottom: 2%;
-	padding-right: 18px;
-}
-
-
-.footer {
-	background-color: rgb(56, 55, 55);
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 0.8cm;
-	font-weight: bolder;
-	color: white;
-}
-
-.header {
-	min-height: 60px;
-	color: white;
-	background-color: rgb(48, 46, 46);
-	width: 100%;
-}
-
-.header ul {
-	display: flex;
-	flex-direction: row;
-	list-style-type: none;
-	justify-content: space-between;
-	padding: 1rem;
-	margin: 0;
-	align-items: center;
-}
-
-.header ul li {
-	margin-right: 20px;
-}
-.header .logo {
-	display: inline-flex;
-	font-weight: bold;
-	flex-direction: row;
-	align-items: center;
-	gap: 0.5rem;
-	align-content: center;
-}
-
-.header .login a {
-	margin: 0;
-	display: inline-flex;
-	padding: 0;
-	align-items: center;
-}
-.header .logo,
-.header .login a {
-	font-size: 24px;
-}
-.new-nav {
-	/*   height: 50px; */
-	min-height: 50px;
-	background-color: #f3d094;
-	align-items: center;
-}
-
-.fas {
-	margin-right: 6px;
-}
-
-.new-nav ul {
-	/* margin-left: 40px; */
-	/* margin-right: 40px; */
-	/* margin-top: 17px; */
-	display: flex;
-	margin: 0 auto;
-	margin-bottom: 2px;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.icons_ {
-	padding: 0 12px;
-}
-
-.new-nav button {
-	margin-top: 5px;
-	margin-left: 85%;
-}
-
-.new-nav li {
-	font-family: sans-serif;
-	margin: 10px 25px;
-	list-style-type: none;
-}
-
-.new-nav li a {
-	font-weight: 300;
-	font-family: "Source Sans Pro", sans-serif;
-	color: #000;
-}
-
-.new-nav li a:hover {
-	color: #f3d094;
-	background-color: #000;
-	border-radius: 10px;
-	font-weight: 800;
-	transition: all 0.2s ease-in;
-}
-
-.contain {
-  height: 355px;
-  width: 80%;
-  color: white;
-  margin-top: 21px;
-  margin-left: 65px !important; 
-  background: rgba(92, 92, 81, 0.582);
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.3s ease;
-}
-
-.contain:hover {
-	transform: scale(1.1);
-}
-.contain div {
-	font-family: "Source Sans Pro", sans-serif;
-	margin: 30px;
-	text-align: center;
-}
-
-.line {
-	font-size: 0.6cm;
-}
-
-#bold {
-	font-size: 1cm;
-	font-family: "Nunito", sans-serif;
-	font-weight: bolder;
-}
-
-#search {
-	align-items: center;
-}
-
-#searchTxt,
-#searchsymbol {
-	margin: 0;
-}
-
-#searchForm {
-	display: inline-block;
-	border: 1px solid grey;
-	border-radius: 12px;
-	margin-left: 30px;
-	align-items: center;
-}
-
-.nav-link {
-	font-family: sans-serif;
-	font-size: 0.5cm;
-}
-.login {
-	position: relative;
-	color: #f3d094;
-}
-.login a:after {
-	content: "";
-	position: absolute;
-	background-color: wheat;
-	height: 3px;
-	width: 0;
-	left: 22px;
-	bottom: 0;
-	transition: 0.3s;
-}
-
-.login a:hover::after {
-	width: 75%;
-}
-
-.container div {
-	/* border: 2px solid white; */
-	/* width: 50%; */
-	margin-left: 0;
-}
-.container {
-	gap: 2rem;
-	display: flex;
-	margin-left: 20px;
-	width: 100%;
-	margin-right: 0;
-	padding-left: 30px;
-	margin-left: 60px;
-}
-/* filter book by name */
-#myInput {
-  /* background-image: url('/css/searchicon.png'); */
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  height: 12rem;
-  background-color: transparent;
-  width: 100%;
-  overflow: scroll;
-
-}
-
-#myUL li a {
-  border: 1px solid #ddd;
-  margin-top: -1px;
-
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
-.search-heading{
-  padding:0  !important;
-}
-
-/* ----------------------- */
-.col-sm-10 input,
-.form-check-input {
-	width: 95%;
-	padding: 3%;
-	margin-left: 16px;
-	border-radius: 10px;
-	outline: none;
-}
-.form-check-input1 {
-	width: 95%;
-	padding: 15px;
-	margin-left: 16px;
-	border-radius: 10px;
-	outline: none;
-	height: 57px;
-}
-#issueDate {
-	border-radius: 5px;
-	padding-left: 3%;
-	padding: 3%;
-	outline: none;
-	height: 5vh;
-}
-
-.col-sm-10 {
-	width: 300px;
-}
-#libraryForm {
-	display: flex;
-	flex-direction: column;
-	/* flex: 1; */
-	width: 100%;
-}
-#libraryForm .form-check-input {
-	width: 100%;
-	position: relative;
-}
-#libraryForm label {
-	width: 100%;
-	padding: 0 1rem;
-	position: relative;
-}
-#libraryForm input,
-select {
-	width: 95%;
-	border-radius: 10px;
-	padding: 0 1rem;
-	height: 3.5rem;
-	margin: 1rem 0;
-	margin-left: 16px;
-	position: relative;
-}
-#libraryForm .btn-primary {
-	margin: 0;
-	margin-left: 16px;
-}
-.form-group {
-	width: 100%;
-}
-
-.issue {
-	height: 40px;
-	font-size: 25px;
-	padding-left: 5px;
-}
-.hero-left {
-	flex: 1;
-	width: 100%;
-	background: rgba(255, 255, 255, 0.25);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(4px);
-	-webkit-backdrop-filter: blur(4px);
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	/* background-blend-mode:luminosity;
-  background: rgba(0,0,0,0.5);*/
-	border-radius: 5%;
-}
-.hero-right {
-	width: 100%;
-	padding-left: 55px;
-	display: flex;
-	gap: 1rem;
-	flex: 1;
-	padding: 0;
-	margin: 0;
-	padding-right: 0px;
-	justify-items: right;
-	flex-direction: column;
-}
-/*#table{
-  background:rgb(0,0,0,0.5);
-  cursor: auto;
-}*/
-/*#mytable{
-  border-radius:20px;}*/
-
-/*
-#table {
-  width: 92%;
-  padding: 0;
-}
-*/
-/*scrolling effect starts from here*/
-
-/* #scrollpath {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 10px;
-	height: 100%;
-	background: rgba(255, 255, 255, 0.05);
-} */
-
-/* #progressbar {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 10px;
-	height: 100%;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	animation: animate 5s linear infinite;
-} */
-
-/* #progressbar:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	filter: blur(10px);
-} */
-
-/* #progressbar:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	filter: blur(30px);
-} */
-
-@keyframes animate {
-	0%,
-	100% {
-		filter: hue-rotate(0deg);
-	}
-
-	50% {
-		filter: hue-rotate(360deg);
-	}
-}
-
-::-webkit-scrollbar {
-	width: 10px;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	animation: animate 5s linear infinite;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to top, #008aff, #00ffe7);
-	animation: animate 5s linear infinite;
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    border: solid 2px rgb(41, 2, 10);
-}
-
-.nav-item a {
-	padding: 10px 10px 15px;
-}
-
-.nav-item i:hover {
-	background-color: #000;
-	transform: rotate(10deg);
-}
-
-.nav-item :hover {
-	background-color: rgb(247, 191, 9);
-	opacity: 1;
-	transition-duration: inherit;
-}
-
-.nav-item a {
-	text-decoration: none;
-}
-.faq-heading {
-	text-align: center;
-	padding: 10px 60px;
-	color: black;
-	text-decoration: none;
-}
-.faq-container {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	background-color: #f3d094;
-	min-height: 100vh;
-	/* height: 700px; */
-}
-
-/* Style the buttons that are used to open and close the faq-page body */
-.faq-page {
-	color: black;
-	cursor: pointer;
-	padding: 20px 20px;
-	width: 60%;
-	font-size: 1.47rem;
-	transition: 1.4s ease;
-	margin: auto;
-	border-bottom: 2px solid #000;
-	text-decoration: none;
-}
-.faq-body {
-	margin: auto;
-	width: 60%;
-	padding: 0px 18px;
-	font-size: 1.36rem;
-	background-color: #f3d094;
-	display: none;
-	overflow: hidden;
-}
-.faq-body p {
-	margin-top: 28px;
-	font-family: "Source Sans Pro", sans-serif !important;
-}
-/* Add a background color to the button if it is clicked on when you move the mouse over it (hover) */
-.faq-page:hover {
-	background-color: #f1c476;
-}
-/* Style the faq-page panel. Note: hidden by default */
-
-.faq-page:after {
-	content: "\02795";
-	font-size: 13px;
-	color: #777;
-	float: right;
-	margin-left: 5px;
-}
-.active:after {
-	content: "\2796";
-}
-
-.nav-item a {
-	text-decoration: none;
-}
-
-.book-img ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-@media only screen and (max-width: 1000px) {
-	.container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		align-content: center;
-		margin-right: 0;
-		margin: 0 auto;
-		padding-left: 0;
-	}
-
-	.left {
-		padding: 0 0% 10% 25%;
-	}
-
-	#table {
-		width: 100%;
-	}
-
-	.contain {
-		width: 100%;
-	}
-
-	.member {
-		display: flex;
-		flex-flow: row wrap;
-	}
-
-	.member .donate {
-		width: 40%;
-	}
-
-	.photo img {
-		width: 60%;
-		height: 70%;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	.header ul li {
-		margin-right: 0;
-	}
-
-	.hero-right {
-		padding-left: 0;
-	}
-
-	.books1 {
-		display: flex;
-		justify-content: space-around;
-		flex-direction: column;
-	}
-	.books {
-		margin-left: 0px;
-		margin-right: 40px;
-	}
-
-	.member {
-		flex-direction: column;
-		padding-bottom: 30px;
-	}
-
-	.member .donate {
-		width: 100%;
-	}
-
-	.member .photo {
-		width: 100%;
-	}
-
-	.donate div {
-		margin-top: 30px;
-	}
-
-	.photo img {
-		width: 50%;
-		height: 60%;
-	}
-
-	.photo {
-		display: flex;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.header .logo,
-	.header .login a {
-		font-size: 1rem;
-	}
-	.logo-img {
-		margin-left: 5px;
-	}
-	.new-nav ul {
-		flex-direction: column;
-	}
-	.new-nav ul {
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-
-	.new-nav li {
-		margin: 10px 8px;
-	}
-
-	.left {
-		padding: 0 0 5% 5%;
-	}
-
-	.contain {
-		height: 400px;
-	}
-
-	#search {
-		margin-top: 8%;
-		/* width: 100%; */
-	}
-
-	.contain{
-		align-items: center;
-    	justify-content: center;
-	}
-
-	.list {
-		flex-wrap: wrap;
-	}
-	.list li {
-		width: 300px;
-		height: 100px;
-		font-size: 0.8cm;
-	}
-
-	.books li {
-		width: 180px;
-		height: 270px;
-		margin: 20px 0px;
-	}
-}
-
-/*  Blog Section  */
-.blogs {
-	width: 100%;
-	height: 70vh;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 7px;
-	font-family: "Poppins", sans-serif;
-}
-.blog-carousel {
-	height: 80%;
-	width: 50%;
-	overflow: hidden;
-}
-.blog-content {
-	height: 80%;
-	width: 80%;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.blog-carousel {
-	height: 80%;
-	width: 50%;
-	overflow: hidden;
-}
-.blog-carousel img {
-	height: 100%;
-	width: 100%;
-}
-
-.inner {
-	height: 100%;
-	width: 100%;
-	transform: translateY(0%);
-	animation: appear 30s steps(1, end) infinite;
-}
-
-.desc-carousel {
-	height: 50%;
-	width: 50%;
-	overflow: hidden;
-}
-.desc-carousel > div {
-	height: 100%;
-	width: 100%;
-}
-.desc {
-	height: 100%;
-}
-.desc-carousel h1 {
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 1.75rem;
-}
-
-@keyframes appear {
-	0% {
-		transform: translateY(0%);
-	}
-	12.5% {
-		transform: translateY(-100%);
-	}
-	25% {
-		transform: translateY(-200%);
-	}
-	37.5% {
-		transform: translateY(-300%);
-	}
-	50% {
-		transform: translateY(-400%);
-	}
-	62.5% {
-		transform: translateY(-500%);
-	}
-	75% {
-		transform: translateY(-600%);
-	}
-	87.5% {
-		transform: translateY(-700%);
-	}
-	100% {
-		transform: translateY(0%);
-	}
-}
-
-.blog-container {
-	padding: 5% 3%;
-	background-color: white;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: "c1 c2 c3 c4";
-	align-items: center;
-	font-family: "Poppins", sans-serif !important;
-	transition: z-index 0.5s ease;
-}
-
-.card1 {
-  grid-area: c1;
-  border-radius: 3%;
-}
-
-.card2 {
-  grid-area: c2;
-  border-radius: 3%;
-}
-
-.card3 {
-  grid-area: c3;
-  border-radius: 3%;
-}
-
-.card4 {
-  grid-area: c4;
-  border-radius: 3%;
-
-}
-
-.blog-container > * {
-	padding: 5%;
-	margin: 10% 5%;
-	height: 90%;
-	width: 95%;
-	background: #fff2db;
-	position: relative;
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 1fr 2fr 1fr;
-	grid-template-areas:
-		"owner"
-		"info"
-		"btn";
-	transition: backgroud-image 0.5s ease;
-}
-
-.owner {
-	grid-area: owner;
-	padding-bottom: 5%;
-}
-
-.info {
-	grid-area: info;
-}
-
-.read-more {
-	grid-area: btn;
-	height: 50%;
-	border: none;
-	background-color: transparent;
-	text-align: left;
-	font-size: 1rem;
-	padding: 0;
-}
-.blog-container > * > * {
-	margin: 2%;
-}
-
-.blog-container > * h1 {
-	text-decoration: none;
-	font-size: 1.5rem;
-	font-weight: 700;
-}
-
-.owner p {
-	margin: 0;
-	font-size: 0.75rem;
-	text-align: left;
-}
-
-.info p {
-	text-align: justify;
-	font-size: 1rem;
-	font-weight: bold;
-}
-
-
-/*Styling for aligning download buttons in Recommended Books Section*/
-#btn-download{
-	margin-right:90px;
-}
-
-
-
-
-.card-bg {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  width: 100%;
-  top: -1%;
-  left: -2%;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  border-radius: 3%;
-}
-
-.blog-container > *:hover .card-bg {
-  opacity: 1;
-  z-index: -1;
-
-}
-
-.blog-container > *:hover {
-	background-size: cover;
-	color: white;
-	z-index: 100;
-}
-
-.card1:hover {
-	background: url(../../blog1.jpg);
-	background-size: cover;
-}
-.card2:hover {
-	background: url(../../images/blog11.jpg);
-	background-size: cover;
-}
-.card3:hover {
-	background: url(../../images/blog2.png);
-	background-size: cover;
-}
-.card4:hover {
-	background: url(../../images/blog3.jpg);
-	background-size: cover;
-}
-
-.blog-container > *:hover .blog-container {
-	z-index: -1;
-}
-.blog-container > *:hover .read-more {
-	color: white;
-}
-
-.bot-arrow {
-	position: relative;
-	top: -3%;
-}
-
-.read-more:hover .bot-arrow {
-	left: 3%;
-}
-
-.alanBtn-root {
-	bottom: 60px !important;
-}
-
-@media only screen and (max-width: 912px) {
-	.blog-container {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		grid-template-areas:
-			"c1 c2"
-			"c3 c4";
-		align-items: center;
-	}
-	.desc-carousel h1 {
-		font-size: 1.2rem;
-	}
-	.desc-carousel p {
-		font-size: 1rem;
-	}
-	/*Styling for aligning download buttons in Recommended Books Section for max-width: 912px Screen*/
-	#btn-download{
-		margin-right:200px;
-	}
-}
-
-@media only screen and (max-width: 650px) {
-	#bold {
-		font-size: 22px;
-		text-align: center;
-	}
-	.line {
-		font-size: 15px;
-	}
-	.blog-carousel {
-		height: 60%;
-		width: 100%;
-	}
-	.desc-carousel {
-		height: 40%;
-		width: 100%;
-		padding-top: 10px;
-		padding-bottom: 0px;
-	}
-	.blogs h1 {
-		font-size: 28px;
-	}
-	.latest-blogs-p {
-		font-size: 13px;
-	}
-	.desc-carousel h1 {
-		font-size: 1rem;
-	}
-	.desc-carousel p {
-		font-size: 0.8rem;
-	}
-	.blog-content {
-		flex-direction: column;
-	}
-	.faq-page {
-		font-size: 1rem;
-	}
-	.faq-body {
-		font-size: 0.8rem;
-	}
-	.donate div b {
-		font-size: 30px;
-	}
-	.donate div h4 {
-		font-size: 18px;
-	}
-	/*Styling for aligning download buttons in Recommended Books Section max-width:650px screen*/
-	#btn-download{
-		margin-right:90px;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-	.new-nav button {
-		margin-left: 80%;
-	}
-
-	/*Styling for aligning download buttons in Recommended Books Section for 500px Screen*/
-	#btn-download{
-		margin-right:60px;
-	}
-}
-
-
-@media only screen and (max-width: 414px) {
-
-  .blog-container {
-    padding: 5% 7% 5% 0%;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "c1"
-      "c2"
-      "c3"
-      "c4";
-    align-items: center;
+  </script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script src="assets/js/audiobook.js"></script>
+
+<script src="https://unpkg.com/@supabase/supabase-js"></script>
+<script type="text/javascript">
+  const { createClient } = supabase
+  const supabaseUrl = `https://cvhyilfsattdglfdmvcu.supabase.co`
+  const supabaseAnonKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2aHlpbGZzYXR0ZGdsZmRtdmN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ1NTE5MTksImV4cCI6MTk2MDEyNzkxOX0.wvKZxYcBbeUy9aJTw3XzbySmBJ8PkxVGXeopoucQpGY`
+
+  const _supabase = createClient(supabaseUrl, supabaseAnonKey)
+
+  _supabase.auth.onAuthStateChange((event, session) => {
+    if (event == 'PASSWORD_RECOVERY'){
+      var url = window.location.href.toString();
+      var myArr = url.split("#");
+      window.location.replace("/Forgot_Password/recovery.html#"+myArr[1]);
+    }
+  })
+
+</script>
+<script>
+  //modal loading
+  window.onload =function modal(){
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+myModal.toggle();
+    let loader = document.getElementById('loading');
+    loader.style.width ="0px";
+    loader.style.height = "0px";
   }
-  .blog-carousel {
-    height: 50%;
-  }
-  .desc-carousel {
-    height: 50%;
-  }
-  .new-nav button{
-    margin-left: 76%;
-  }
+</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000 // values from 0 to 3000, with step 50ms
+      });
+    </script>
 
-}
-@media(max-width:1024px){
-  .update img{
-    margin-left: 0;
-    padding: 20px;
-  }
-}
-@media(max-width:425px){
-	.update{
-		/* background-color: #fff; */
-	}
-  .update img{
-    margin-left: 0;
-    padding: 0;
-   width: 7.5rem;
-   height: 7.5rem;
- position: relative;
- margin-bottom: 2.7rem;
-  }
-  .login-box{
-	  margin-left: 0.3rem;
-	  margin-right: 0;
-	  /* position:absolute; */
-  }
 
-  .login-box .user-box input{
-    font-size: 15px;
-    /* padding: 8px; */
-  }
+</body>
 
-/*Styling for aligning download buttons in Recommended Books Section*/
-	#btn-download{
-		margin-right:70px;
-	}
-}
+
+</html>
