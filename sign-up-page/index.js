@@ -33,7 +33,6 @@ confirmNewPassword.addEventListener("click", () => {
     confirmNewPassword.setAttribute("class", "fa fa-eye-slash icon");
     confirmPassword.setAttribute("type", "password");
   }
-  console.log("hello2");
 });
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -51,9 +50,7 @@ form.addEventListener("submit", (e) => {
       }
     )
     .then((res) => {
-      console.log(res);
       if (res.error != null) {
-        console.log(res.error.message);
         document.getElementById("err").innerHTML = res.error.message;
       }
       if (res.error == null) {

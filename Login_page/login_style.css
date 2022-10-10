@@ -149,6 +149,9 @@ input {
   background-image: url('/Login_page/images.jfif');
   object-fit:fill;
   /* background-repeat:repeat-x; */
+  background-image: url('LoginFormSideImage.jpg');
+  filter:saturate(1);
+  image-rendering: pixelated;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;

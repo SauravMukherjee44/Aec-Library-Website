@@ -55,10 +55,23 @@
 
     <header>
       <a href="index.html" class="nav-link"> <h1>AEC Library</h1></a>
+      <div class="search-box-container">
+        <div class="search-box">
+            <input type="text" id="search-bar" placeholder=" Type here to Search..">
+            <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <a href="./index.html" class="home-tab">◀ Back to Home</a>
     </header>
+
     
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-    <a href="./index.html" class="home-tab">Home</a>
+    <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <a href="./index.html" class="home-tab">Home</a> -->
+
 
     <nav class="">
         <div class="">
@@ -66,6 +79,7 @@
                 <a class="grid-item " href="#courses">Courses</a>
                 <a class="grid-item " href="#yt">Youtube Channels</a>
                 <a class="grid-item " href="#ncert">NCERT Books</a>
+                <a class="grid-item " href="#cbse_notes">CBSE Notes</a>
                 <a class="grid-item " href="#qb">Question Banks</a>
                 <a class="grid-item " href="#audio-books">Audio Books</a>
                 <a class="grid-item " href="#study">Study Materials</a>
@@ -87,8 +101,9 @@
             <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
                 <div class="carousel-cell">
                     <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/" target="_blank">
+<!--resolved broken image-->
                         <img width="33%" height="300"
-                            src="https://oilab.in/public/img/courses/full-stack-web-developer.jpg">
+                            src="https://courses.wscubetech.com/s/store/courses/606b158f0cf2ff7130547e44/cover.jpg?v=2">
                     </a>
                     <a href="https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/"
                         target="_blank">
@@ -109,11 +124,11 @@
                     </a>
                     <a href="https://www.udemy.com/course/the-complete-web-developer-course-2/" target="_blank">
                         <img width="33%" height="300"
-                            src="https://cdn3.vectorstock.com/i/1000x1000/11/77/web-development-courses-concept-banner-header-vector-31221177.jpg">
+                            src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/FSIjaoI2QtKWZL65cogd">
                     </a>
                     <a href="https://www.udemy.com/course/web-developer-course/" target="_blank">
                         <img width="33%" height="300"
-                            src="https://www.acewebacademy.com/blog/wp-content/uploads/2013/09/44-Why-to-Choose-Web-Development-Courses-min.png">
+                            src="https://img-c.udemycdn.com/course/240x135/446134_383c_3.jpg">
                     </a>
                 </div>
             </div>
@@ -164,21 +179,42 @@
             <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
                 <div class="carousel-cell">
 
-                    <a href="https://www.udemy.com/course/beg-modern-cpp/" target="_blank">
+<!-- Added new programming lang course-->
+
+ <a href="https://www.udemy.com/course/net-basic-course-introduction-to-net-with-csharp-programming/" target="_blank">
+                        <img width="33%" height="300"
+               src="https://d2o9wnd5wywfpj.cloudfront.net/covers/32/s_banner/portfolio-08-large.jpg?1621306513">
+                    </a>
+
+ <a href="https://www.udemy.com/course/swift-5-programming-bootcamp-for-beginners/" target="_blank">
+                        <img width="33%" height="300"
+               src="https://i.pinimg.com/originals/9d/94/a5/9d94a53738b84d6c0e5ab094bcfe2af1.png">
+                    </a>
+
+ <a href="https://www.udemy.com/course/newbie-to-ruby/" target="_blank">
+                        <img width="33%" height="300"
+               src="https://mgdvq45m3ss2gaon92odwxol-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/ruby-2.jpg">
+                    </a>
+                   </div>
+
+  <div class="carousel-cell">
+ <a href="https://www.udemy.com/course/kotlin-tutorial-for-beginners/" target="_blank">
+                        <img width="33%" height="300"
+               src="https://miro.medium.com/max/1200/1*8YPjY2xhNwQylBBs8dYB0g.png">
+                    </a>
+
+
+ <a href="https://www.udemy.com/course/beg-modern-cpp/" target="_blank">
                         <img width="33%" height="300"
                             src="https://hackernoon.com/images/VyvcKdbWHbTaN3QzRCQQS7pXASq1-9x7p315b.jpeg">
                     </a>
+
                     <a href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/"
                         target="_blank">
                         <img width="33%" height="300"
                             src="https://preview.redd.it/31b2ii8hchi31.jpg?auto=webp&s=309fe75e96212cf42c4120ca5adedaef52c41e01">
                     </a>
-                    <a href="https://www.udemy.com/course/master-practical-java-development/" target="_blank">
-                        <img width="33%" height="300"
-                            src="https://i.pinimg.com/originals/2b/d2/ec/2bd2ec72b3391c8b8df8c7d274b877e2.jpg">
-                    </a>
-
-                </div>
+</div> 
 
                 <div class="carousel-cell">
                     <a href="https://www.udemy.com/course/javascript-essentials/" target="_blank">
@@ -209,7 +245,8 @@
                             src="https://skillsupedu.com/image/all-courses/data-science-with-python-training.jpg">
                     </a>
                     <a href="https://www.udemy.com/course/deeplearning/" target="_blank">
-                        <img width="33%" height="300" src="https://www.meritglobaltraining.com/images/data1.png">
+                   <!--Resolved broken images-->
+     <img width="33%" height="300" src="https://s3.us-east-1.amazonaws.com/storage.trumplearning.com/cmsfiles/best-deep-learning-course-certification-training-online-pgpluwzs.jpg">
                     </a>
                     <a href="https://www.udemy.com/course/datascience/" target="_blank">
                         <img width="33%" height="300" src="https://www.promosystech.com/temp/assets/img/demo/datas.png">
@@ -775,6 +812,7 @@
             <br><br>
         </section>
 
+        <center>
         <h2 class="hover-underline-animation"> NCERT Books </h2>
 
         <section id="ncert">
@@ -871,6 +909,69 @@
             </div>
 
         </section>
+    
+            <!-- cbse notes for class 11 and 12 -->
+            <h2 class="hover-underline-animation"> CBSE Notes </h2>
+
+            <section id="cbse_notes">
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/physics_11.zip">
+                        <img class="books" src="cbse_notes/images/PHY11.png" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/chemistry_11.zip">
+                        <img class="books" src="cbse_notes/images/CH11.jpg" alt=""></a>
+                </div>
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/maths_11.zip">
+                        <img class="books" src="cbse_notes/images/M11.jpg" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/geography_11.zip">
+                        <img class="books" src="cbse_notes/images/GEO11.webp" alt=""></a>
+                </div>
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/cs_11.pdf">
+                        <img class="books" src="cbse_notes/images/CS11.jpg" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/business_12.zip">
+                        <img class="books" src="cbse_notes/images/BUS12.jfif" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/accountancy_12.zip">
+                        <img class="books" src="cbse_notes/images/ACC12.jpg" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/biology_12.zip">
+                        <img class="books" src="cbse_notes/images/BIO12.jfif" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/history_12.zip">
+                        <img class="books" src="cbse_notes/images/HIST12.jpg" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/psychology_12.zip">
+                        <img class="books" src="cbse_notes/images/PSYCHO12.jpg" alt=""></a>
+                </div>
+
+                <div id="ncert_books" class="NC">
+                    <a class="ncertbooks" target="_blank" href="cbse_notes/economic_12.zip">
+                        <img class="books" src="cbse_notes/images/MECO12.jpg" alt=""></a>
+                </div>
+
+                <div class="more_books_btn">
+                    <a class="notes-btn" href="./cbse_notes.html"> More Notes </a>
+                </div>
+    
+            </section>
 
         <h2 class="hover-underline-animation">Question Banks</h2>
 
@@ -1112,9 +1213,10 @@
                     </div>
                 </section>
             
-            
+         
+<br> <br>   
     </main>
-
+</center>
     <!-- ------- -->
     <script>
         function myFunction() {
@@ -1156,8 +1258,8 @@
                          <a href="#"><i class="fa fa-volume-control-phone"></i>+91 123 456 7891</a>
                      </div> -->
 
-                         <div class="email">
-                             <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><i class="fa fa-github-square"></i>Github</a> <br>
+                        <div class="email">
+                             <a href="https://github.com/SauravMukherjee44/Aec-Library-Website" target="github"> <i class="fab fa-github icon"></i> </a> <br>
                              <!-- <a href=""><i class="fa fa-user-circle"></i></a> -->
                            </div>
                         </div>
@@ -1192,13 +1294,19 @@
                 </div>
             </div>
             <div class="bottom">
-                <p>Copyright © 2021 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"> @ AEC Library
+                <p>Copyright © <span id="footer-year"></span> <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"> @ AEC Library
                     </a> All rights reserved</p>
             </div>
 
         </div>
         </div>
     </footer>
+    <!-- Footer Year Calculator -->
+    <script>
+        var year = new Date().getFullYear();
+        document.getElementById("footer-year").innerHTML = year;
+    </script>
+
     <!-- Navigate to Top Button  -->
     <script>
         $(document).ready(function () {
@@ -1391,4 +1499,3 @@
 </body>
 
 </html>
-
