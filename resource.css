@@ -914,9 +914,25 @@ h3.hover-underline-animation {
 
 
 
+/* Button style */
+.resource-buttons{
+  width: 100%;
+  height: 40px;
+  border-radius: 9px;
+  margin-top: 15px;
+  color: blue;
+  font-size: 16px;
+  font-weight: 500;
+}
 
+.resource-buttons:hover{
+  background-color: #3b5998;
+  color: white
+}
 
-
+a{
+  text-decoration: none;
+}
 
 
 
