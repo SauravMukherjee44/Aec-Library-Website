@@ -2036,7 +2036,7 @@ input[type="radio"] {
   height: 12rem;
   background-color: transparent;
   width: 100%;
-  overflow: scroll;
+  overflow:auto;
 
 }
 
