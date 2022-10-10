@@ -123,7 +123,7 @@
         </div>
         <div>
 
-          <p style="color: cornsilk;margin-bottom: 4px;">&#169 2022 Copyright&nbsp;<a href="https://github.com/SauravMukherjee44/Aec-Library-Website">@AEC Library</a></p>
+          <p style="color: cornsilk;margin-bottom: 4px;">&#169 <span id="footer-year"></span> Copyright&nbsp;<a href="https://github.com/SauravMukherjee44/Aec-Library-Website">@AEC Library</a></p>
         </div>
         </div>
     </footer>
@@ -203,6 +203,11 @@
     };
 
     contributorInfo();
+  </script>
+  <!-- Footer Year Calculator -->
+  <script>
+    var year = new Date().getFullYear();
+    document.getElementById("footer-year").innerHTML = year;
   </script>
 </body>
 

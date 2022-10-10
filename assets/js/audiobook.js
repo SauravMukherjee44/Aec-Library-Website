@@ -1,15 +1,15 @@
-var nyan = document.getElementById('nyan');
-var nyanBtn = document.getElementById('nyan-btn');
+var nyan = document.getElementById("nyan");
+var nyanBtn = document.getElementById("nyan-btn");
 
-function playPause(song) {
-    if (song.paused && song.currentTime >= 0 && !song.ended) {
-        song.play();
-        nyanBtn.innerHTML = "Pause";
-    } else {
-        song.pause();
-        nyanBtn.innerHTML = "Play";
-    }
+nyanBtn.onclick = function(){
+    if (nyan.paused && nyan.currentTime >= 0 && !nyan.ended) {
+                 nyan.play();
+             nyanBtn.src = "media/pause.png";
+}else {
+    nyan.pause();
+    nyanBtn.src ="media/play.png"
 }
+} 
 
 function reset(btn, song) {
     if (btn.classList.contains('playing')) {

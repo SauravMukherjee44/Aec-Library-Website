@@ -335,9 +335,13 @@
     </section>
 
     <footer>
-        <p>Copyright © 2022 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"> @ AEC Library
+        <p>Copyright © <span id="footer-year"></span> <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"> @ AEC Library
         </a> All rights reserved</p>
     </footer>
-    
+    <!-- Footer Year Calculator -->
+    <script>
+        var year = new Date().getFullYear();
+        document.getElementById("footer-year").innerHTML = year;
+    </script>
 </body>
 </html>
