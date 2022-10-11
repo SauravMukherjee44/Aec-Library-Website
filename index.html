@@ -157,7 +157,7 @@
       </div>
     </div>
 
-  <header class="header">
+  <header class="header" onclick="return false;">
     <ul>
       <li class="logo"><a class="nav-link" href="index.html"><img src="assets/logos/finalLogo.png"
         alt="AEC Library" class="logo-img"> AEC LIBRARY</a></li>
@@ -175,13 +175,13 @@
         <!-- navbar items -->
           <ul class="ms-auto">
 
-            <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
-            <li class="nav-item"><a href="about.html" target="_blank"><i class="fas fa-book"></i>ABOUT</a></li>
-            <li class="nav-item"><a href="./public/donate-book.html" target="_blank"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
-            <li class="nav-item"><a href="resource.html" target="_blank"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
-            <li class="nav-item"><a href="./blogs.html" target="_blank"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
-            <li class="nav-item"><a href="./public/contact us .html"  target="_blank"><i class="fas fa-address-book"></i>CONTACT US</a></li>
-            <li class="nav-item"><a href="contributors.html" target="_blank"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
+            <li class="nav-item"><a href="index.html" onclick="return false;"><i class="fas fa-home"></i>HOME</a></li>
+            <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
+            <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
+            <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
+            <li class="nav-item"><a href="./blogs.html"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
+            <li class="nav-item"><a href="./public/contact us .html" ><i class="fas fa-address-book"></i>CONTACT US</a></li>
+            <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
 
           </ul>
         </div>
@@ -231,7 +231,7 @@
           <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
           <label for="dateIssue" class="issue"><span>Date of Issue</span></label>
           <div class="col">
-            <input type="date" id="issueDate" name="issueDate">
+            <input type="date" id="issueDate" name="issueDate" onkeydown="return false;">
           </div>
         </div>
         <div class="form-group row">
@@ -1166,6 +1166,11 @@ myModal.toggle();
   <script>
     var year = new Date().getFullYear();
     document.getElementById("footer-year").innerHTML = year;
+  </script>
+
+  <!-- IssueDate - not Allowing beyond today -->
+  <script>
+    issueDate.max = new Date().toISOString().split("T")[0];
   </script>
 
 
