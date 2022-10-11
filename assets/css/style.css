@@ -78,6 +78,7 @@ nav.navbar {
 
 #books-content {
 	padding: 10px;
+	background-color: white;
 }
 .dataTables_wrapper .dataTables_filter input {
 	border: 1px solid #aaa;
@@ -108,7 +109,7 @@ select {
 }
 
 label {
-	color: white;
+	color: black;
 	font-weight: bold;
 }
 
@@ -2035,12 +2036,13 @@ input[type="radio"] {
   height: 12rem;
   background-color: transparent;
   width: 100%;
-  overflow: scroll;
+  overflow:auto;
 
 }
 
 #myUL li a {
   border: 1px solid #ddd;
+  border-radius: 25px;
   margin-top: -1px;
 
   background-color: #f6f6f6;
@@ -2847,4 +2849,5 @@ select {
 	#btn-download{
 		margin-right:70px;
 	}
+	
 }

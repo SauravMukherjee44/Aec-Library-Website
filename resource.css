@@ -33,11 +33,22 @@ html {
   scroll-behavior: smooth;
 }
 
-h1,
-h2 {
+h1 {
   color: wheat;
   font-weight: bold;
 }
+
+h2 {
+  color: wheat;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.course-icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+} 
 
 a {
   font-size: 15px;
@@ -95,8 +106,9 @@ nav {
   border: 1px solid wheat;
   border-radius: 9px;
   background-color: wheat;
-  
+  padding: 8px;
 }
+
 input:focus{
   outline: none;
   border:none;
@@ -106,7 +118,6 @@ input:focus{
   border:none;
   background-color: transparent;
   border-radius: 9px;
-
 }
 .search-btn{
   background: transparent;
@@ -118,12 +129,14 @@ input:focus{
 }
 
 .home-tab{
-  float:left;
-  /* background-color: rgb(31, 31, 31); */
-  color: antiquewhite; 
-  font-size: 19px;
-  /* padding: 9px 12px;  */
-  border-radius: 15px; 
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background-color: wheat;
+  color: black; 
+  font-size: 15px;
+  padding: 6px; 
+  border-radius: 10px; 
   /* width: 200px;  */
   text-align: center; 
   margin: 6px;
@@ -132,8 +145,8 @@ input:focus{
 
 .home-tab:hover{
   text-decoration: none;
-  /* background-color: rgb(158, 134, 134); */
-  color: rgb(233, 221, 221);
+  background-color: rgb(233, 221, 221);
+  color: brown;
   text-shadow: 0px 0px 25px rgb(233, 221, 221);
   transition-delay: 0.1s;
   transition-timing-function: ease;
@@ -186,8 +199,8 @@ h3:hover {
 nav a:hover {
   font-weight: bold;
   text-decoration: none;
-  background-color: rgb(78, 74, 74);
-  color: rgb(233, 221, 221);
+  background-color: wheat;
+  color: brown;
   text-shadow: 0px 0px 14px rgb(233, 221, 221);
   transition-delay: 0.2s;
   transition-timing-function: ease;
@@ -195,15 +208,15 @@ nav a:hover {
 
 nav a {
   text-decoration: none;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
   float: left;
   background-color: rgb(233, 221, 221);
   color: rgb(78, 74, 74);
-  border-radius: 29px;
+  border-radius: 10px;
   margin-left: 1rem;
   margin: 10px;
-  padding:9px ;
+  padding: 9px;
 }
 
 main {
@@ -914,9 +927,25 @@ h3.hover-underline-animation {
 
 
 
+/* Button style */
+.resource-buttons{
+  width: 100%;
+  height: 40px;
+  border-radius: 9px;
+  margin-top: 15px;
+  color: blue;
+  font-size: 16px;
+  font-weight: 500;
+}
 
+.resource-buttons:hover{
+  background-color: #3b5998;
+  color: white
+}
 
-
+a{
+  text-decoration: none;
+}
 
 
 
