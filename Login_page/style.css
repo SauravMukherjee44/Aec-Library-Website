@@ -93,7 +93,11 @@ button:hover {
 }
 
 .redirect {
-  margin: 25px 50px 75px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  /* margin: 25px 50px 75px 100px; */
   color: white;
   font-size: 1.4rem;
 }
