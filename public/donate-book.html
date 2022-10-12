@@ -87,10 +87,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
           <!--onchange="validate_phone(document.getElementById('contact'))"-->
           <label>Contact Number</label>
         </div>
+
         <div class="user-box">
-          <input class="form__input form-control" type="text" name="" id="address" required="">
+          <textarea  rows="4" class="form__input form-control" type="text" name="" id="address" required=""></textarea>
           <label>Address</label>
         </div>
+        
         <div class="user-box">
           <label>Select Country: </label><br><br>
           <select name="state" class="country form-control" id="countySel" size="1" required="">
@@ -100,13 +102,20 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <div class="user-box">
           <label>Select State: </label><br><br>
           <select name="country" class="state form-control" id="stateSel" size="1" required="">
-          <option value="" selected="selected">Please select State first</option>
+          <option value="" selected="selected">Please select Country first</option>
           </select>
         </div>
         <div class="user-box">
           <label>Select City: </label><br><br>
           <select name="district" class="city form-control" id="districtSel" size="1" required="">
-         <option value="" selected="selected">Please select City first</option>
+         <option value="" selected="selected">Please select State first</option>
+            <option label="KANPUR">KANPUR</option>
+             <option label="LUCKNOW">LUCKNOW</option>
+             <option label="VARANASI">VARANASI</option>
+             <option label="AGRA">AGRA</option>
+             <option label="GAYA">GAYA</option>
+             <option label="AHMEDABAD">AHMEDABAD</option>
+             <option label="PATNA">PATNA</option>
          </select>
         </div>
         <div class="user-box">

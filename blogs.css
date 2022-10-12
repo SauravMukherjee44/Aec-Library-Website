@@ -46,7 +46,7 @@
     
 }
 .card{
-  height: 475px;
+  height: 510px;
   padding:2%;
   margin:3%;
   border:solid green;
@@ -85,6 +85,7 @@
     padding:2%;
     border:1px black;
     cursor: pointer; 
+    text-decoration: none;
     
 }
 .card a:hover{

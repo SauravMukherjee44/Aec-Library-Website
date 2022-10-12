@@ -93,26 +93,54 @@ button:hover {
 }
 
 .redirect {
+  margin: 25px 50px 75px 100px;
   color: white;
   font-size: 1.4rem;
 }
 
-.redirect a {
-  background: transparent;
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: transform 80ms ease-in;
-  outline: none;
-  border: solid white 3px;
-  border-radius: 2px;
-  padding: 5px;
+button {
+  border-radius: 6px;
+  background-color: #c35047;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 150px;
+  height: 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+
 }
 
-.redirect a:hover {
-  color: #000;
+button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+  font-size: medium;
+}
+
+button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+  background-color: black;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
 }
 
 .quiz-exit {

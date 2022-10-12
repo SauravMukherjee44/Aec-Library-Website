@@ -16,8 +16,12 @@
   <title>Blogs | AEC Library</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
   <!-- Style CSS -->
   <link rel="stylesheet" href="assets/css/About.css" />
   <link rel="stylesheet" href="blogs.css" />
@@ -50,48 +54,50 @@
 
   <!-- Navbar started -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand" href="index.html"><img src="assets/logos/finalLogo.png" alt="AEC Library"
-        class="logo-img" /></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home
-            <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link active" target="_blank" onclick="return false;">
-            <i class="fas fa-book"></i> Blogs</a>
-        </li>
-        <li class="nav-item">
-          <a href="./public/donate-book.html" class="nav-link" target="_blank">
-            <i class="fas fa-book"></i> Donate Books
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="resource.html" class="nav-link" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Resources</a>
-        </li>
-        <li class="nav-item">
-          <a href="./Login_page/login_page.html" class="nav-link" target="_blank">
-            <i class="fas fa-sign-in-alt"></i> Login
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="./sign-up-page/index.html" class="nav-link" target="_blank">
-            <i class="fas fa-sign-in-alt"></i> Sign up
-          </a>
-        </li>
-
-      </ul>
-
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="assets/logos/finalLogo.png" alt="AEC Library"
+          class="logo-img" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home
+              <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active" target="_blank" onclick="return false;">
+              <i class="fas fa-book"></i> Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a href="./public/donate-book.html" class="nav-link" target="_blank">
+              <i class="fas fa-book"></i> Donate Books
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="resource.html" class="nav-link" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Resources</a>
+          </li>
+          <li class="nav-item">
+            <a href="./Login_page/login_page.html" class="nav-link" target="_blank">
+              <i class="fas fa-sign-in-alt"></i> Login
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./sign-up-page/index.html" class="nav-link" target="_blank">
+              <i class="fas fa-sign-in-alt"></i> Sign up
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
+
+
   <!-- Navbar ended -->
 
   <!-- Blogs Coding Started -->
@@ -106,6 +112,36 @@
         <a href="https://medium.com/@royaman644/data-science-998eaf34f9a3" target="_blank_">Read more</a>
       </div>
     </div>
+    
+      <div class="card">
+        <img class="card-img-top" src="https://www.fullstackpython.com/img/headers/python-lambda-sentry.jpg" alt="Card image">
+        <div class="card-body">
+          <h5>Python Programming</h5>
+          <p>Most people when asked about what they want to achieve or pursue in the field of Computer Science and
+            Technology they
+            basically say Data Science or Statistics.</p>
+          <a href="https://www.fullstackpython.com/blog.html" target="_blank_">Read more</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image">
+        <div class="card-body">
+          <h5>About C++</h5>
+          <p>C++ (or “C-plus-plus”) is a general-purpose programming and coding language. C++ is used in developing browsers, operating systems, and applications, as well as in-game programming, software engineering, data structures, etc.</p>
+          <a href="https://www.simplilearn.com/tutorials/cpp-tutorial/top-uses-of-c-plus-plus-programming" target="_blank_">Read more</a>
+        </div>
+      </div>  
+
+     <div class="card">
+        <img class="card-img-top" src="https://miro.medium.com/max/1400/1*Qm1fGLHhyR9_28jAUSVV7g.png">
+        <div class="card-body">
+          <h5>About JAVA</h5>
+          <p>Developers use Java to construct applications in laptops, data centres, game consoles, scientific supercomputers, cell phones, and other devices. Java is the world's third most popular programming language.</p>
+          <a href="https://www.w3schools.com/java/java_intro.asp" target="_blank_">Read more</a>
+        </div>
+      </div>
+    
     <div class="card">
       <img class="card-img-top"
         src="https://blog.internshala.com/wp-content/uploads/2018/09/What-is-SQL-and-how-to-learn-it-Introduction-to-SQL-for-beginners-672x336.png"
@@ -167,80 +203,151 @@
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top"
-        src="https://miro.medium.com/max/1400/1*Rbi90NP7BILx39ZoAjMJ2A.png"
-        alt="Card image">
+      <img class="card-img-top" src="https://miro.medium.com/max/1400/1*Rbi90NP7BILx39ZoAjMJ2A.png" alt="Card image">
       <div class="card-body">
         <h5>What is Cloud Computing?</h5>
-        <p>Cloud will be synonymous with the word Web. 
-            Can you think of a business today that’s not on the internet?
-             If you don’t get on the cloud your company could be falling behind quickly.
+        <p>Cloud will be synonymous with the word Web.
+          Can you think of a business today that’s not on the internet?
+          If you don’t get on the cloud your company could be falling behind quickly.
 
           This article will help you to get what the cloud is. </p>
         <a href="https://medium.com/future-vision/what-is-cloud-computing-713bd6c3b105" target="_blank_">Read more</a>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top"
-        src="https://miro.medium.com/max/1400/1*j0PH-FYpX5NHxAR7YBkcPQ.jpeg"
-        alt="Card image">
+      <img class="card-img-top" src="https://miro.medium.com/max/1400/1*j0PH-FYpX5NHxAR7YBkcPQ.jpeg" alt="Card image">
       <div class="card-body">
         <h5>Artificial Intelligence</h5>
         <p>AI is a word widely used today.
           Unfortunately, most of us do not understand what is it, what it does or how it works.
-          
+
           Goal of this blog is to give you information about AI. </p>
-        <a href="https://medium.com/technology-hits/an-introduction-to-artificial-intelligence-b3a1bdef97f3" target="_blank_">Read more</a>
+        <a href="https://medium.com/technology-hits/an-introduction-to-artificial-intelligence-b3a1bdef97f3"
+          target="_blank_">Read more</a>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top"
-        src="https://miro.medium.com/max/1050/1*1X0-98EiQNkwBJj2vnTTqQ.jpeg"
-        alt="Card image">
+      <img class="card-img-top" src="https://miro.medium.com/max/1050/1*1X0-98EiQNkwBJj2vnTTqQ.jpeg" alt="Card image">
       <div class="card-body">
         <h5>Becoming a Full-Stack Developer</h5>
         <p>Are you looking for a roadmap that will teach you software development step by step from scratch?
           This blog gives 8 steps to become a Full-stack Web Developer. </p>
-        <a href="https://medium.com/@theSDEshow/becoming-a-full-stack-developer-from-scratch-in-2020-9718dd4a2616" target="_blank_">Read more</a>
+        <a href="https://medium.com/@theSDEshow/becoming-a-full-stack-developer-from-scratch-in-2020-9718dd4a2616"
+          target="_blank_">Read more</a>
       </div>
     </div>
     <div class="card">
-      <img class="card-img-top"
-        src="https://miro.medium.com/max/1400/1*KN0r63vdx5aDm2IpjuGIMg.jpeg"
-        alt="Card image">
+      <img class="card-img-top" src="https://miro.medium.com/max/1400/1*KN0r63vdx5aDm2IpjuGIMg.jpeg" alt="Card image">
       <div class="card-body">
         <h5>Computer Programming Languages</h5>
-        <p>This blog explains 14 programming languages(C,C#,C++,HTML,CSS, Java,JavaScript,ObjectiveC,PHP,Perl,Python,Ruby,SQL,Swift)with uses. </p>
-        <a href="https://medium.com/nerd-for-tech/14-different-programming-languages-and-their-uses-explained-8d654f0c1788" target="_blank_">Read more</a>
+        <p>This blog explains 14 programming languages (C, C#, C++, HTML, CSS, Java,JavaScript, ObjectiveC, PHP, Perl,
+          Python, Ruby, SQL,Swift) with uses. </p>
+        <a href="https://medium.com/nerd-for-tech/14-different-programming-languages-and-their-uses-explained-8d654f0c1788"
+          target="_blank_">Read more</a>
       </div>
     </div>
-  
+
     <div class="card">
-      <img class="card-img-top"
-        src="https://miro.medium.com/max/1400/1*TriVn-OMmn-niO4fwGAE8A.jpeg"
-        alt="Card image">
+      <img class="card-img-top" src="https://miro.medium.com/max/1400/1*TriVn-OMmn-niO4fwGAE8A.jpeg" alt="Card image">
       <div class="card-body">
         <h5>Learning Android Development</h5>
-        <p>This article is for Anyone who wants to learn Android Development but 
-            has no idea where to start.
+        <p>This article is for Anyone who wants to learn Android Development but
+          has no idea where to start.
           Also for someone who started on Android Development
-           but wants to learn the advanced topics.</p>
-        <a href="https://medium.com/mindorks/learning-android-development-in-2019-a-practical-guide-ddc71e008696" target="_blank_">Read more</a>
+          but wants to learn the advanced topics.</p>
+        <a href="https://medium.com/mindorks/learning-android-development-in-2019-a-practical-guide-ddc71e008696"
+          target="_blank_">Read more</a>
       </div>
     </div>
-  <div class="card">
+    <div class="card">
       <img class="card-img-top"
         src="https://res.cloudinary.com/upskilled/image/fetch/w_600,h_400,c_crop,c_fill,g_face:auto,f_auto/https://www.upskilled.edu.au/getmedia%2F164d8e1f-58ea-42b7-9e5c-d6350271481f%2Fcareer-in-computer-networking-HERO.jpg%3B.aspx%3Fwidth%3D1000%26height%3D667%26ext%3D.jpg"
         alt="Card image">
       <div class="card-body">
         <h5>Computer Networking</h5>
         <p>In this article, concept of Computer Network is discussed briefly with OSI,Protocols,Socket,DNS Server,
-            ARP,Internet,URI & many more concpets.
+          ARP,Internet,URI & many more concpets.
         </p>
-        <a href="https://medium.com/@computerscienceengineering/basics-of-computer-networking-6c7b961f4e14" target="_blank_">Read more</a>
+        <a href="https://medium.com/@computerscienceengineering/basics-of-computer-networking-6c7b961f4e14"
+          target="_blank_">Read more</a>
       </div>
     </div>
-</div>
+    <div class="card">
+      <img class="card-img-top"
+        src="https://res.cloudinary.com/drvvhphww/image/upload/w_600,h_400/v1664709851/Optimized-Illustration-from-Adobe-Stock-for-ITC-Post-on-AI-in-Game-Development-scaled_tj0bas.jpg"
+        alt="Card image">
+      <div class="card-body">
+        <h5>Guide to Game Development</h5>
+        <p>In this blog, we learn about the Unity software, it's growing popularity, how to use it as a beginner in game
+          development, writing code in C# and including it in the aforementioned software.
+        </p>
+        <a href="https://xccelerate.medium.com/how-to-get-started-with-game-development-using-unity-6bb65dccac3d"
+          target="_blank_">Read more</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top"
+        src="https://res.cloudinary.com/drvvhphww/image/upload/w_600,h_400/v1664709928/OS1_zqh4y5.jpg" alt="Card image">
+      <div class="card-body">
+        <h5>Introduction to Operating Systems</h5>
+        <p>As a beginner this article will help you understand operating systems, its funtions, structure(for iOS,
+          android), its components, system-services and give you a brief introduction to system calls.
+        </p>
+        <a href="https://medium.com/@demozeik/introduction-to-operating-system-3274f0ff947d" target="_blank_">Read
+          more</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top"
+        src="https://res.cloudinary.com/drvvhphww/image/upload/w_600,h_400/v1664710013/mongodb-vs-mysql-1_g5wfoh.png"
+        alt="Card image">
+      <div class="card-body">
+        <h5>MySQL vs MongoDB</h5>
+        <p>This blog will help you go through an introduction to both the databases, their respective pros and cons, a
+          very brief yet informative comparison chart and help you decide on a database for your next project!
+        </p>
+        <a href="https://medium.com/@toprak.mhmt/mysql-vs-mongodb-8b3460acfcdd" target="_blank_">Read more</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top"
+        src="https://res.cloudinary.com/drvvhphww/image/upload/w_600,h_400/v1664710080/CRUD_cpqmsh.jpg"
+        alt="Card image">
+      <div class="card-body">
+        <h5>Introduction to CRUD</h5>
+        <p>In modern day web development, users interact with databases. Create, Update, Read and Delete are the actions
+          that take place on database following the interaction. This blog will help you read more upon it.
+        </p>
+        <a href="https://flatlogic.com/blog/crud-app/" target="_blank_">Read more</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top"
+        src="https://res.cloudinary.com/drvvhphww/image/upload/w_600,h_400/v1664709766/friendly-chatbot_epj7cc.jpg"
+        alt="Card image">
+      <div class="card-body">
+        <h5>Chatbot with Python and DL</h5>
+        <p>Chatbots are needed everywhere, they help run businesses in today's world. This blog helps you step-by-step
+          build your very own chatbot, required Deep Learning Model and a GUI for the same.
+        </p>
+        <a href="https://towardsdatascience.com/how-to-create-a-chatbot-with-python-deep-learning-in-less-than-an-hour-56a063bdfc44"
+          target="_blank_">Read more</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top"
+        src="https://res.cloudinary.com/drvvhphww/image/upload/w_600,h_400/v1664709473/devops_yib3aa.png"
+        alt="Card image">
+      <div class="card-body">
+        <h5>Introduction to DevOps</h5>
+        <p>We've been hearing the terms DevOps, Docker, Kubernetes a lot as of late. This article will help you
+          understand the what, why and how of DevOps. It will help you get started in this field as a beginner.
+        </p>
+        <a href="https://mayankchourasia2.medium.com/devops-for-beginners-cbc509d9c61e" target="_blank_">Read more</a>
+      </div>
+    </div>
+  </div>
+
 
 
   <!-- <br><br><br> -->
@@ -349,36 +456,33 @@
                 class="fab fa-twitter icon"></i></a>
           </li>
           <li>
-            <a title="youtube" target="_blank" href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw/"><i
+            <a title="youtube" target="_blank" href="https://bit.ly/CodeINYouTube"><i
                 class="fab fa-youtube icon"></i></a>
           </li>
         </ul>
       </div>
       <div>
 
-        <p>©2021 Copyright AEC Library</p>
+        <p>©<span id="footer-year"></span> Copyright AEC Library</p>
       </div>
-      <!--
-        <div class="ml-auto">
-          <p>
-            <a href="./public/contact us .html" style="color: antiquewhite;"> </a>
-            &emsp;&emsp;
-          </p>
-
-        </div>
-        -->
     </div>
   </footer>
-
+    
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 400, // offset (in px) from the original trigger pointt
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1000 // values from 0 to 3000, with step 50ms
+  });
+</script>
+  <!-- Footer Year Calculator -->
   <script>
-    AOS.init({
-      offset: 400, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 1000 // values from 0 to 3000, with step 50ms
-    });
+    var year = new Date().getFullYear();
+    document.getElementById("footer-year").innerHTML = year;
   </script>
 
 </html>

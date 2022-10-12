@@ -1,80 +1,58 @@
-
-<!--A simple login page with rich user experience and  flexible for all window sizes(responsive)-->
-
-<!--Hacktoberfest2021-->
-
-
 <!DOCTYPE html>
-<body style="background-color:powderblue;">
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <title>LOGIN - AEC Library</title>
-  
-		<link rel="stylesheet" type="text/css" href="login_style.css" />
-		
-		<link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon">
-	
-	</head>
-	<body>
-		<a href="../index.html"><h2 style="color: white;">AEC Library</h2></a>
+</head>
 
-	<div class="container" id="container">
-		<div class="form-container sign-in-container">
-			<form id="login_form">
-				<h1>Sign in</h1>
-				<span>or use your account</span>
-				<input class="input__tag" type="email" placeholder="Email" validate id="email"  required="" />
-				<span id="mobileno" class="text-danger font-weight-bold"> </span>
-			
-	
-		
-				
-		<input type="password" 
-				type="password" placeholder="Password" id="typepass" required="" / > 
-			 
-			<input type="checkbox" onclick="Toggle()" style="font-size: 10px;">
-			<label class="remem" style="font-size: 10px;">Show password</label> 
-			 
-			   <script>
-			   // Change the type of input to password or text
-				   function Toggle() {
-					   var temp = document.getElementById("typepass");
-					   if (temp.type === "password") {
-						   temp.type = "text";
-					   }
-					   else {
-						   temp.type = "password";
-					   }
-				   }
-		   </script>
-			<input type="checkbox" class="check" name="remember " required value>
-			<label class="remem" style="font-size: 10px;">Remember me</label> 
-			  
-			
-			 
-		
-        <p id="err_msg"></p>
-		
-		
-        <a href="../Forgot_Password/">Forgot your password?</a>
-				<button>Sign In</button>
+<body>
+  <h1 id="err"></h1>
+  <div class="section">
+    <div class="header">
+      AEC Library - Login
+    </div>
+    <form class="login_form" id="form">
+      <div class="first-box">
+        <div class="form-group">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="" id="email" placeholder="Email" />
+        </div>
+      </div>
+      <div class="second-box">
+        <div class="form-group">
+            <i class="fa fa-unlock-alt"></i>
+            <input type="password" name="" id="password" placeholder="Password" />
+            <i class="fa fa-eye-slash icon" id="newPassword"></i>
+        </div>
+      </div>
+      <div class="button">
+          <button style="color: white">submit</button>
+      </div>
+    </form>
+    <div class="redirect">
+      Don't have an account ? 
+      <button>
+        <a href="../sign-up-page/index.html" style="color: white">Sign-Up</a>
+      </button>
+    </div>
+    
+  </div>
+  <div class="logged_in" style="display: block">
+    <span id="username">You Are Already Logged In</span>
+    <button id="logged_out">Log Out</button>
+  </div>
 
-			</form>
-			<p class="signup_link">
-          			Don't Have an account? <a href="../sign-up-page/index.html"><strong>Sign up</strong></a>
-        	</p>
-		</div>
-	</div>
-	<a href="../index.html"><h4 style="color: black; background-color: lightskyblue; border-radius: 10px; padding: 10px;">◀ Go back to Home</h4></a>
+  <div class="quiz-exit">
+    <a href="/index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #635147;">
+        <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
+      </svg></a>
+  </div>
 
-	<footer>
-		<p>
-		</p>
-	</footer>
-</body>
 <script src="https://unpkg.com/@supabase/supabase-js"></script>
 <script type="text/javascript">
   const { createClient } = supabase
@@ -87,4 +65,6 @@
 </script>
 
 <script src = "login.js"></script>
+</body>
+
 </html>

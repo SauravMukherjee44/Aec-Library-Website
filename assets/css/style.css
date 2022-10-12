@@ -78,6 +78,7 @@ nav.navbar {
 
 #books-content {
 	padding: 10px;
+	background-color: white;
 }
 .dataTables_wrapper .dataTables_filter input {
 	border: 1px solid #aaa;
@@ -108,7 +109,7 @@ select {
 }
 
 label {
-	color: white;
+	color: black;
 	font-weight: bold;
 }
 
@@ -219,12 +220,12 @@ label[for="dateIssue"] {
 
 .navbar-light .navbar-nav .nav-link {
 	color: rgb(255 255 255 / 50%);
-	transition-duration: 0.3s;
+	transition-duration: 0.1s;
 	font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-	transition-duration: 0.3s;
+	transition-duration: 0.1s;
 	color: rgb(255 255 255 / 100%);
 }
 
@@ -291,7 +292,7 @@ html {
 }
 
 #searchTxt {
-	border-radius: 10px;
+	border-radius: 20px;
 	height: 30px;
 }
 
@@ -377,7 +378,7 @@ html {
 }
 
 .space {
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 /* footer */
@@ -821,6 +822,14 @@ strong {
 	margin-top: 20px;
 	text-align: center;
 	color: var(--text);
+}
+
+.btn-zoom {
+	transition: transform .2s;
+}
+
+.btn-zoom:hover {
+	transform:scale(1.25);
 }
 
 @-webkit-keyframes page-2 {
@@ -1402,7 +1411,7 @@ p {
 .login-box {
 	width: 60%;
 	padding: 40px;
-	background: rgba(0, 0, 0, 0.25);
+	background: rgba(0, 0, 0, 0.75);
 	box-sizing: border-box;
 	border-radius: 20px;
 	transition-duration: 0.5s;
@@ -1425,7 +1434,7 @@ p {
 	margin: 0 auto 0.7em;
 	text-decoration: underline;
 	font-size: 2.8rem;
-	color: rgb(235, 245, 247);
+	color: rgb(255, 183, 0);
 	letter-spacing: 1.5px;
 }
 
@@ -1928,12 +1937,12 @@ input[type="radio"] {
   width: 80%;
   color: white;
   margin-top: 21px;
-  /* margin-left: 80px !important; */
+  margin-left: 65px !important; 
   background: rgba(92, 92, 81, 0.582);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-
+  transition: all 0.3s ease;
 }
 
 .contain:hover {
@@ -2011,7 +2020,7 @@ input[type="radio"] {
 }
 /* filter book by name */
 #myInput {
-  background-image: url('/css/searchicon.png');
+  /* background-image: url('/css/searchicon.png'); */
   background-position: 10px 12px;
   background-repeat: no-repeat;
   width: 100%;
@@ -2027,13 +2036,14 @@ input[type="radio"] {
   height: 12rem;
   background-color: transparent;
   width: 100%;
-  overflow: scroll;
- 
+  overflow:auto;
+
 }
 
 #myUL li a {
   border: 1px solid #ddd;
-  margin-top: -1px; 
+  border-radius: 25px;
+  margin-top: -1px;
 
   background-color: #f6f6f6;
   padding: 12px;
@@ -2047,18 +2057,25 @@ input[type="radio"] {
   background-color: #eee;
 }
 .search-heading{
-  padding:0  !important; 
+  padding:0  !important;
 }
 
 /* ----------------------- */
 .col-sm-10 input,
-.form-check-input1,
 .form-check-input {
 	width: 95%;
 	padding: 3%;
 	margin-left: 16px;
 	border-radius: 10px;
 	outline: none;
+}
+.form-check-input1 {
+	width: 95%;
+	padding: 15px;
+	margin-left: 16px;
+	border-radius: 10px;
+	outline: none;
+	height: 57px;
 }
 #issueDate {
 	border-radius: 5px;
@@ -2222,9 +2239,15 @@ select {
 	padding: 10px 10px 15px;
 }
 
+.nav-item i:hover {
+	background-color: #000;
+	transform: rotate(10deg);
+}
+
 .nav-item :hover {
 	background-color: rgb(247, 191, 9);
 	opacity: 1;
+	transition-duration: inherit;
 }
 
 .nav-item a {
@@ -2410,8 +2433,13 @@ select {
 	}
 
 	#search {
-		margin-top: 0px;
-		width: 100%;
+		margin-top: 8%;
+		/* width: 100%; */
+	}
+
+	.contain{
+		align-items: center;
+    	justify-content: center;
 	}
 
 	.list {
@@ -2634,7 +2662,7 @@ select {
 .blog-container > *:hover .card-bg {
   opacity: 1;
   z-index: -1;
-  
+
 }
 
 .blog-container > *:hover {
@@ -2811,7 +2839,7 @@ select {
 	  margin-right: 0;
 	  /* position:absolute; */
   }
-  
+
   .login-box .user-box input{
     font-size: 15px;
     /* padding: 8px; */
@@ -2821,9 +2849,5 @@ select {
 	#btn-download{
 		margin-right:70px;
 	}
+	
 }
-
-
-
-
-
