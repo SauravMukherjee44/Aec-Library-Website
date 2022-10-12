@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Sampad18 
+SauravMukherjee44
+/
+Aec-Library-Website
+Public
+Code
+Issues
+112
+Pull requests
+41
+Discussions
+Actions
+Projects
+Security
+Insights
+Aec-Library-Website/index.html
+@ngsanthosh
+ngsanthosh Fixed navigation links and book issue future date bug resolved
+Latest commit 6e76767 15 hours ago
+ History
+ 113 contributors
+@SauravMukherjee44@Rohan749@soujo@ngsanthosh@rahulaarora@patodm@AnkitaPal12@HetviSoni@ShreyaChopra13@KaranKulshrestha@RUDRAMADHABA@Jyoti6828
+1180 lines (1040 sloc)  55.4 KB
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,22 +39,22 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#f2f2f2">
     <meta name="og:title" content="AEC Library is a comprehensive library management system">
     <meta name="og:description" content="Designed for both large and small library systems, AEC Library is a comprehensive library management system. For managing circulation and stock, this is ideal for institutional, public, and digital libraries. In order to manage and automate the processing of even the largest of libraries, the AEC Library website was developed. According to the end user's requirements, the website is capable of managing Book Issues, Returns, and generating various Reports for Record-Keeping and Review purposes.">
-    
+
     <meta property="og:image" content="assets/logos/finalLogo.png">
     <meta name="og:type" content="library">
-	
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AEC Library</title>
-    
+
     <link rel="icon" href="assets/logos/finalLogo.png" type="image/x-icon">
 
   <meta name="title" content="AEC Library is a comprehensive library management system">
   <meta name="description"
     content="Designed for both large and small library systems, AEC Library is a comprehensive library management system. For managing circulation and stock, this is ideal for institutional, public, and digital libraries. In order to manage and automate the processing of even the largest of libraries, the AEC Library website was developed. According to the end user's requirements, the website is capable of managing Book Issues, Returns, and generating various Reports for Record-Keeping and Review purposes.">
   <meta name="keywords" content="AEC, library systems, library, digital libraries, books">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- <meta http-equiv="Content-Type" content="text/html" charset="utf-8"> -->
   <meta name="language" content="English">
   <meta name="author" content="AEC LIBRARY">
 
@@ -157,7 +188,7 @@
       </div>
     </div>
 
-  <header class="header">
+  <header class="header" onclick="return false;">
     <ul>
       <li class="logo"><a class="nav-link" href="index.html"><img src="assets/logos/finalLogo.png"
         alt="AEC Library" class="logo-img"> AEC LIBRARY</a></li>
@@ -174,13 +205,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- navbar items -->
           <ul class="ms-auto">
-            <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+
+            <li class="nav-item"><a href="index.html" onclick="return false;"><i class="fas fa-home"></i>HOME</a></li>
             <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
             <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
             <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
             <li class="nav-item"><a href="./blogs.html"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
-            <li class="nav-item"><a href="./public/contact us .html"><i class="fas fa-address-book"></i>CONTACT US</a></li>
+            <li class="nav-item"><a href="./public/contact us .html" ><i class="fas fa-address-book"></i>CONTACT US</a></li>
             <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
+
           </ul>
         </div>
       </nav>
@@ -229,7 +262,7 @@
           <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
           <label for="dateIssue" class="issue"><span>Date of Issue</span></label>
           <div class="col">
-            <input type="date" id="issueDate" name="issueDate">
+            <input type="date" id="issueDate" name="issueDate" onkeydown="return false;">
           </div>
         </div>
         <div class="form-group row">
@@ -339,7 +372,7 @@
       </div>
       <div class="contain">
         <!-- <div class="line"><b id="bold"> Choose and read books </b><br>from your comfort zone </div> -->
-        <div id="search">
+        <div id="search"  >
           <form id="searchForm" class="form-inline my-2 my-lg-0">
              <!-- <button class="btn btn-dark my-2 my-sm-0">Keyword</button>
             <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search for a book"
@@ -350,40 +383,40 @@
             <h2 class="search-heading">Choose and read books</h2>
               <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
               <ul id="myUL">
-                <li><a href="./Notes/physicselectricitynotes.pdf">Current Electricity Problem book</a></li>
-                <li><a href="./Notes/physicsmagnetism.pdf">Electricity and Magnetism</a></li>
-                <li><a href="./Notes/chemsurfacechem.pdf">Chemistry</a></li>
-                <li><a href="./Notes/chempblock.pdf">p-Block Elements chemistry </a></li>
-                <li><a href="./Notes/csds.pdf">Data structure in C & C++</a></li>
-                <li><a href="./Notes/sqldbms.pdf">DBMS</a></li>
-                <li><a href="./Notes/bsprincipleofmanagement.pdf">Principal of Management</a></li>
-                <li><a href="./Notes/ecomoneyandbanking.pdf">Economics of Money and Banking</a></li>
-                <li><a href="./Samplepapers/cbse10science.pdf">Science Sample Question Paper for class-10</a></li>
-                <li><a href="./Samplepapers/cbse10science1.pdf">Science Question Bank for class-10</a></li>
-                <li><a href="./Samplepapers/class12phy.pdf">Physics Sample Question Paper for class-12</a></li>
-                <li><a href="./Samplepapers/class12chem.pdf">Chemistry Sample Question Paper for class-12</a></li>
-                <li><a href="./Samplepapers/class12bio.pdf">Biology Sample Question Paper for class-12</a></li>
-                <li><a href="./Samplepapers/class12maths.pdf">CBSE Mathmatics Sample Question Paper for class-12</a></li>
-                <li><a href="./Samplepapers/jee.pdf">JEE MAIN Sample Question Paper</a></li>
-                <li><a href="./Samplepapers/neet.pdf">NEET Sample Question Paper</a></li>
-                <li><a href="https://drive.google.com/file/d/1IjxZaCtEeMwdmuO2b0Vs45Su8jvG3fwa/view">Science Book for Class-10</a></li>
-                <li><a href="https://drive.google.com/file/d/1cN04y7Gqe03HEb_zXbHdhpeA3AsRW1g5/view">Science Book for Class-09</a></li>
-                <li><a href="https://drive.google.com/file/d/12a0_JGZ2GTqUzckFDdBLLaJGoV8jKKV0/view">Science Book for Class-08</a></li>
-                <li><a href="https://drive.google.com/file/d/1PGqKZZqWD8o6-auHsqLrwxCsXyilPkP6/view">Science Book for Class-07</a></li>
-                <li><a href="https://drive.google.com/file/d/1DlxE-x8-uUY4hWq7AvlKFWWAEhSFFLbw/preview">Physics for Class-12</a></li>
-                <li><a href="https://drive.google.com/file/d/1aXHembo-Cy5xSkt7cdwfk3tUo6rK2PZ-/preview">Chemistry for Class-12</a></li>
-                <li><a href="https://drive.google.com/file/d/1DlAxpsZ5E3clkp-aNUsQOeh1vI1EXd-R/preview">Biology for Class-12</a></li>
-                <li><a href="https://drive.google.com/file/d/0B8buzf-hm2wyZy1fQmVNM1gyTnM/view?resourcekey=0-wVoCHiiwS3rvs7r_dNvj8Q">Economics for Class-12</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1YWwfkGfaiDxxg0agGGCSxZe-1Qmpvahb">Supplementary Reader in English for Class-09</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1OtLBgu-9AVSSH6O1Z0AocQPoYNFUL_3S">Beehive Book for Class-09</a></li>
-                <li><a href="https://drive.google.com/drive/folders/18675WSWNHURqKWQUe4ZGvd0nXOQCk4dk">Mathmatics Book for Class-09</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1b2DM6ed7LigVtZ2jEWCKhyevNegnfUu4">First-Flight Book for Class-10</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1RmpwGFb5QCPXG-yBKhCsquW90V8U6RJZ">NCERT Mathmatics book for Class-10</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1YTmwfxEdDmMT3dLVmCACLW1N-7fGnE_z">Democratic Politics-1 book for Class-09</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1xsnrX7060su6dZ84LYAq8-0QedIatMrh">Contemporary India-1 book for Class-09</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1BRXmQuwjGasfMs04TOb0twQmaL6a_eAT">Social Science Book for Class-09</a></li>
+                <li><a href="./Notes/physicselectricitynotes.pdf" target="_blank">Current Electricity Problem book</a></li>
+                <li><a href="./Notes/physicsmagnetism.pdf" target="_blank">Electricity and Magnetism</a></li>
+                <li><a href="./Notes/chemsurfacechem.pdf" target="_blank">Chemistry</a></li>
+                <li><a href="./Notes/chempblock.pdf" target="_blank">p-Block Elements chemistry </a></li>
+                <li><a href="./Notes/csds.pdf" target="_blank">Data structure in C & C++</a></li>
+                <li><a href="./Notes/sqldbms.pdf" target="_blank">DBMS</a></li>
+                <li><a href="./Notes/bsprincipleofmanagement.pdf" target="_blank">Principal of Management</a></li>
+                <li><a href="./Notes/ecomoneyandbanking.pdf" target="_blank">Economics of Money and Banking</a></li>
+                <li><a href="./Samplepapers/cbse10science.pdf" target="_blank">Science Sample Question Paper for class-10</a></li>
+                <li><a href="./Samplepapers/cbse10science1.pdf" target="_blank">Science Question Bank for class-10</a></li>
+                <li><a href="./Samplepapers/class12phy.pdf" target="_blank">Physics Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/class12chem.pdf" target="_blank">Chemistry Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/class12bio.pdf" target="_blank">Biology Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/class12maths.pdf" target="_blank">CBSE Mathmatics Sample Question Paper for class-12</a></li>
+                <li><a href="./Samplepapers/jee.pdf" target="_blank">JEE MAIN Sample Question Paper</a></li>
+                <li><a href="./Samplepapers/neet.pdf" target="_blank">NEET Sample Question Paper</a></li>
+                <li><a href="https://drive.google.com/file/d/1IjxZaCtEeMwdmuO2b0Vs45Su8jvG3fwa/view" target="_blank">Science Book for Class-10</a></li>
+                <li><a href="https://drive.google.com/file/d/1cN04y7Gqe03HEb_zXbHdhpeA3AsRW1g5/view" target="_blank">Science Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/file/d/12a0_JGZ2GTqUzckFDdBLLaJGoV8jKKV0/view" target="_blank">Science Book for Class-08</a></li>
+                <li><a href="https://drive.google.com/file/d/1PGqKZZqWD8o6-auHsqLrwxCsXyilPkP6/view" target="_blank">Science Book for Class-07</a></li>
+                <li><a href="https://drive.google.com/file/d/1DlxE-x8-uUY4hWq7AvlKFWWAEhSFFLbw/preview" target="_blank">Physics for Class-12</a></li>
+                <li><a href="https://drive.google.com/file/d/1aXHembo-Cy5xSkt7cdwfk3tUo6rK2PZ-/preview" target="_blank">Chemistry for Class-12</a></li>
+                <li><a href="https://drive.google.com/file/d/1DlAxpsZ5E3clkp-aNUsQOeh1vI1EXd-R/preview" target="_blank">Biology for Class-12</a></li>
+                <li><a href="https://drive.google.com/file/d/0B8buzf-hm2wyZy1fQmVNM1gyTnM/view?resourcekey=0-wVoCHiiwS3rvs7r_dNvj8Q" target="_blank">Economics for Class-12</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1YWwfkGfaiDxxg0agGGCSxZe-1Qmpvahb" target="_blank">Supplementary Reader in English for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1OtLBgu-9AVSSH6O1Z0AocQPoYNFUL_3S" target="_blank">Beehive Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/18675WSWNHURqKWQUe4ZGvd0nXOQCk4dk" target="_blank">Mathmatics Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1b2DM6ed7LigVtZ2jEWCKhyevNegnfUu4" target="_blank">First-Flight Book for Class-10</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1RmpwGFb5QCPXG-yBKhCsquW90V8U6RJZ" target="_blank">NCERT Mathmatics book for Class-10</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1YTmwfxEdDmMT3dLVmCACLW1N-7fGnE_z" target="_blank">Democratic Politics-1 book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1xsnrX7060su6dZ84LYAq8-0QedIatMrh" target="_blank">Contemporary India-1 book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1BRXmQuwjGasfMs04TOb0twQmaL6a_eAT" target="_blank">Social Science Book for Class-09</a></li>
               </ul>
-        
+
             </form>
         </div>
       </div>
@@ -396,7 +429,7 @@
   <br>
 
   <!-- *****************************************************changes*********************************************** -->
- 
+
   <script>
     function myFunction() {
         var input, filter, ul, li, a, i, txtValue;
@@ -425,7 +458,6 @@
   for ( var i = 0; i < rows.length; i++ ) {
     var fullname = rows[i].getElementsByTagName("td");
     fullname = fullname[1].innerHTML.toLowerCase();
-    console.log(fullname);
     if ( fullname.indexOf(v) > -1  ) {
         if ( fullname.indexOf(v) > -1 )  {
         rows[i].style.display = "";
@@ -442,7 +474,6 @@
   //   n.style.display = "none";
   // }
     }
-
   </script> -->
   <!-- ****************************************************done******************************************** -->
   <div class="suggestion" data-aos="fade-up">
@@ -496,6 +527,7 @@
       <div data-aos="fade-down">
         <br>
         <center><h3>Listen to Audiobooks</h3></center>
+        
 
         <div class="books1" data-aos="fade">
           <link rel="stylesheet" href="assets/css/audiobook.css">
@@ -507,10 +539,13 @@
               <img src="https://m.media-amazon.com/images/I/51qDbDDGT7L._SL500_.jpg">
 
             </a>
+            <div class="sound">
+            <img src="media/play.png" id="nyan-btn">
+            </div>
             <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <a class="audiobook" id="nyan-btn">play</a>
+            <a class="audiobook" id="nyan-btn"></a>  
           </div>
 
 
@@ -520,10 +555,13 @@
               <img src="https://m.media-amazon.com/images/I/51vpG4hU6FL._SL500_.jpg">
 
             </a>
+            <div class="sound">
+              <img src="media/play.png" id="nyan-btn">
+            </div>
             <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <a class="audiobook" id="nyan-btn">play</a>
+             <a class="audiobook" id="nyan-btn"></a> 
           </div>
 
 
@@ -532,10 +570,13 @@
             <a href="https://www.audible.in/pd/Computer-Programming-The-Bible-Audiobook/B07MNV3JY9?qid=1643917101&sr=1-7&ref=a_search_c3_lProduct_1_7&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=2A4794TMRTZFE4TBBDMR"target="_blank">
               <img src="https://m.media-amazon.com/images/I/51hVSO2ONDL._SL500_.jpg" target="_blank">
             </a>
+            <div class="sound">
+              <img src="media/play.png" id="nyan-btn">
+            </div>
             <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <a class="audiobook" id="nyan-btn">play</a>
+             <a class="audiobook" id="nyan-btn"></a>
           </div>
 
 
@@ -543,12 +584,14 @@
             <!-- Book 4 -->
             <a href="https://www.audible.in/pd/Computer-Programming-and-Cyber-Security-for-Beginners-Audiobook/B0862GMM48?qid=1643917584&sr=1-3&ref=a_search_c3_lProduct_1_3&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=J0S3TXBQ6VERVE765ER4" target="_blank">
               <img src="https://m.media-amazon.com/images/I/511KH-QzPeL._SL500_.jpg">
-
             </a>
+            <div class="sound">
+            <img src="media/play.png" id="nyan-btn">
+            </div>
             <audio id="nyan" src="assets/AudioBook/Python_1.mp3" preload="metadata" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <a class="audiobook" id="nyan-btn">play</a>
+            <a class="audiobook" id="nyan-btn"></a> 
           </div>
 
 
@@ -571,7 +614,7 @@
         <br><h4>By donating your books to </h4> <br> <h4>help others</h4>
       </div>
       <div>
-        <button class="donate-btn"><a href="./public/donate-book.html">DONATE NOW</a></button>
+        <button class="donate-btn"><a href="./public/donate-book.html" target="_blank">DONATE NOW</a></button>
       </div>
     </section>
     <section class="photo"><img src="images/8.png" alt=""><img src="images/17.png.png" alt=""></section>
@@ -698,7 +741,7 @@
         <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming.
 </p>
       </div>
-      <a href=https://www.codecademy.com/catalog/language/python" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
+      <a href="https://www.codecademy.com/resources/docs/python" target="_blank" class="read-more">Read more <span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
      </div>
     </div>
 
@@ -775,8 +818,10 @@
         <div class="quiz-text" style="color:black">Bored ? Here's a quick quiz for you </div>
         <!-- ***************** Game Page ***************** -->
         <a class="quiz-btn" href="/Quiz/pages/game.html"target="_blank">Play</a>
+        <!--Sampad-->
+        <a class="quiz-btn" href="/Quiz/pages/mathgame.html"target="_blank">Check Math Speed</a>
         <!-- ***************** Highscore Page ***************** -->
-        <a class="quiz-btn" href="/Quiz/pages/highscore.html"target="_blank">High Scores</a>
+        <a class="quiz-btn" href="/Quiz/pages/highscore.html"target="_blank">High Scores</a> 
     </div>
     <img class="quiz-img" src="/Quiz/brain.png" alt="">
   </div>
@@ -863,7 +908,7 @@
         <h1 class="faq-page">Q: How can I find a book here? </h1>
           <!-- faq answer -->
           <div class="faq-body">
-              <p>Go to the "CHoose and read books" section and search the book you are looking for .</p>
+              <p>Go to the "Choose and read books" section and search the book you are looking for .</p>
           </div>
         </div>
         <div class="faq-seven" data-aos="fade">
@@ -879,7 +924,7 @@
         <h1 class="faq-page">Q: How can I download a book? </h1>
           <!-- faq answer -->
           <div class="faq-body">
-              <p>Go to our "Recommended Book" secion. Choose your book which you want to download then click on the "Download as pdf".
+              <p>Go to our "Recommended Book" section. Choose your book which you want to download then click on the "Download as pdf".
                 Happy reading :)</p>
           </div>
         </div>
@@ -910,11 +955,14 @@
     <img src="https://thumbs.gfycat.com/AcceptableWillingBushsqueaker-max-1mb.gif" alt="">
     <ul>
       <li class="heading">Contact:</li>
-      <li>Ph:95768xyza</li>
-      <li>E:hello@acelibrary.com</li>
+
+      <li><a href="tel:95768xyza">Ph:95768xyza</a></li>
+      <li><a href="mailto:hello@acelibrary.com">E:hello@acelibrary.com</a></li>
       <li><a href="https://www.linkedin.com/in/sauravmukherjee44/"> Linkedin</a></li>
+
+
       <li><a href="https://github.com/SauravMukherjee44" target="github">Github</a></li>
-      <li><a href="https://twitter.com/mesourav44"> Twitter</a></li>
+      <li><a href="https://twitter.com/mesourav44" target="twitter"> Twitter</a></li>
       <li><a href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw" target="YouTube">YouTube</a></li>
     </ul>
     <ul>
@@ -937,7 +985,7 @@
     <ul>
         <li class="newsletter-heading">
 
-          <p class="heading">Subscribe to our newsletter</p> 
+          <p class="heading">Subscribe to our newsletter</p>
 
         </li>
 
@@ -945,8 +993,8 @@
         <div class="newsletter-form">
           <div class="newsletter-name"> <input type="text" class="input" name="Name" id="newsletterName"  placeholder="&#xf007;   Enter your name"></div>
           <div class="newsletter-email"> <input type="text" class="input" name="Email" id="newsletterEmail"  placeholder="&#xf0e0;   Enter your email"></div>
-          <div class="newsletter-submit"><button type="submit" id="btnSubmit" >SUBSCRIBE</button></div> 
-        </div>    
+          <div class="newsletter-submit btn-zoom"><button type="submit" id="btnSubmit">SUBSCRIBE</button></div>
+        </div>
         <div id="msg"></div>
       </form>
     </ul>
@@ -979,14 +1027,14 @@
             )
             .then( (res)=>
               { swal("Thanks For connecting !","We will contact you soon !","success")
-                newsletterForm.reset();            
+                newsletterForm.reset();
               })
             .catch( (err)=>{ swal("Error !", "Please try again !","error")})
           }
 
         })
 
-			</script>      
+			</script>
     <!-- newsletter form validation ends  -->
 
   </div>
@@ -1008,13 +1056,13 @@
               <a title="twitter" target="_blank" href="https://twitter.com/mesourav44/"><i class="fab fa-twitter icon"></i></a>
             </li>
             <li>
-              <a title="youtube" target="_blank" href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw/"><i class="fab fa-youtube icon"></i></a>
+              <a title="youtube" target="_blank" href="https://bit.ly/CodeINYouTube"><i class="fab fa-youtube icon"></i></a>
             </li>
           </ul>
         </div>
         <div>
 
-          <p>©2021 Copyright AEC Library</p>
+          <p>©<span id="footer-year"></span> Copyright AEC Library</p>
         </div>
         <!--
         <div class="ml-auto">
@@ -1022,7 +1070,6 @@
             <a href="./public/contact us .html" style="color: antiquewhite;"> </a>
             &emsp;&emsp;
           </p>
-
         </div>
         -->
       </div>
@@ -1033,11 +1080,11 @@
 
       <!--scroll featuring-->
 <script type ="text/javascript">
-	  let progress = document.getElementById('progressbar');
+	  let progressbar = document.getElementById('progressbar');
 	  let totalHeight = document.body.scrollHeight - window.innerHeight;
 	  window.onscroll = function(){
 	      let progressHeight = (window.pageYOffset / totalHeight) * 100;
-		  progress.style.height = progressHeight + "%";
+        progressbar.style.height = progressHeight + "%";
 		  }
 		  </script>
       <!--scrolling feature end here-->
@@ -1087,9 +1134,9 @@
   <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 
   <script>
-    $(document).ready(function () {
+    // $(document).ready(function () {
       $('#mytable').DataTable();
-    });
+    // });
   </script>
 
 <script type="text/javascript">
@@ -1102,42 +1149,7 @@
   }
   </script>
 
-  <script>
-    count1 = 0;
-        urlarray1 = ["Blog/img1.jpg","Blog/img2.jpg","Blog/img3.jpg","Blog/img5.jpg","Blog/img2.jpg"]
-        setInterval(function(){
-          document.getElementById("change1").src = urlarray1[count1%5];
-          count1++;
 
-      },4000);
-
-      count2 = 0;
-        urlarray2 = ["Blog/img2.jpg","Blog/img6.jpg","Blog/img7.jpg","Blog/img8.jpg","Blog/img2.jpg"]
-        setInterval(function(){
-          document.getElementById("change2").src = urlarray2[count2%5];
-          count2++;
-
-      },4000);
-
-      count3 = 0;
-        urlarray3 = ["Blog/img3.jpg","Blog/img9.jpg","Blog/img10.jfif","Blog/img7.jpg","Blog/img3.jpg"]
-        setInterval(function(){
-          document.getElementById("change3").src = urlarray3[count3%5];
-          count3++;
-
-      },4000);
-
-
-  </script>
-  <script>
-    count4 = 0;
-        urlarray4 = ["Blog/img5.jpg","Blog/img4.jpg","Blog/img11.jpg","Blog/img12.jfif","Blog/img9.jfif"]
-        setInterval(function(){
-          document.getElementById("change4").src = urlarray4[count4%5];
-          count4++;
-
-      },4000);
-  </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
@@ -1152,13 +1164,10 @@
 
   const _supabase = createClient(supabaseUrl, supabaseAnonKey)
 
-  console.log('Chutia');
   _supabase.auth.onAuthStateChange((event, session) => {
     if (event == 'PASSWORD_RECOVERY'){
       var url = window.location.href.toString();
       var myArr = url.split("#");
-      console.log(event);
-      console.log(myArr[1])
       window.location.replace("/Forgot_Password/recovery.html#"+myArr[1]);
     }
   })
@@ -1182,9 +1191,36 @@ myModal.toggle();
         duration: 1000 // values from 0 to 3000, with step 50ms
       });
     </script>
+  
+
+  <!-- Footer Year Calculator -->
+  <script>
+    var year = new Date().getFullYear();
+    document.getElementById("footer-year").innerHTML = year;
+  </script>
+
+  <!-- IssueDate - not Allowing beyond today -->
+  <script>
+    issueDate.max = new Date().toISOString().split("T")[0];
+  </script>
 
 
 </body>
 
 
 </html>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Aec-Library-Website/index.html at main · SauravMukherjee44/Aec-Library-Website

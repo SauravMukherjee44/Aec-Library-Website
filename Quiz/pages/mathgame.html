@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/* remove basic style for the page and border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* centering to demo */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 20px 'Montserrat', sans-serif;
+}
+
+/* the container */
+.math-games {
+  background: #fcfcfc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px #34495e;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  border: 1px dashed #333;
+  outline: none;
+  border-radius: 5px;
+  background: none;
+}
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+.math-games span {
+  font: 40px "Indie Flower", cursive;
+}
+button {
+  border: none;
+  background: #1abc9c;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+}
+button:hover {
+  cursor: pointer;
+}
+.items {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+/* Styling the modal */
+.modal-container {
+  position: absolute;
+  right: 50px; 
+  bottom: 40px;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #555;
+  padding: 20px;
+  background: #e74c3c;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 2px #555;
+  display: none;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+}
+.close:hover {
+  cursor: pointer;
+}
+    </style>
+    <body>
+
+       <!-- The Game -->
+       <div class="math-games">
+           <span class="items">
+               <span class="blue">4</span> - <span class="red">2</span> = ?
+           </span>
+           <input id="input-el" type="text" class="items" placeholder="type your answer ">
+           <button id="check-btn" class="items">Check</button>
+       </div>
+
+       
+  <!-- Modal for wrong and right answers-->
+
+  <div id="myModal" class="modal-container">
+    <span class="close">&times;</span>
+      <p class="theAnswer">The answer</p>
+  </div>
+
+
+        <script src="app.js" async defer></script>
+    </body>
+</html>
+<script>
+    console.clear();
+
+// The game variables 
+const inputEl = document.querySelector("#input-el")
+const checkBtn = document.querySelector("#check-btn")
+
+
+
+// the modal variables 
+// modal, the answer, x sign
+const modal = document.querySelector("#myModal")
+const theAnswer = document.querySelector(".theAnswer")
+const closeBtn = document.querySelector(".close")
+
+
+// Answers: "Correct, good work" , "Incorrect, try again"
+let answerOptions = ["Correct, good work", "Incorrect, try again"]
+
+// check btn function 
+checkBtn.addEventListener("click", function() {
+    modal.style.display = "block"
+    let userInput = parseInt(inputEl.value) // number
+    if(userInput === 2) {
+        modal.style.background = "rgb(46, 204, 113)"
+        theAnswer.textContent = answerOptions[0]
+    } else {
+        modal.style.background = "#e74c3c"
+        theAnswer.textContent = answerOptions[1]
+    }
+})
+
+closeBtn.addEventListener("click", function() {
+    modal.style.display = "none"
+})
+</script>
