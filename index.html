@@ -155,40 +155,36 @@
     </div>
   </div>
 
-  <header class="header">
+  <header class="header" onclick="return false;">
     <ul>
       <li class="logo"><a class="nav-link" href="index.html"><img src="assets/logos/finalLogo.png" alt="AEC Library"
             class="logo-img"> AEC LIBRARY</a></li>
       <li class="login"><a href="./Login_page/login_page.html" class="nav-link" target="_blank"><i class="fas fa-sign-in-alt"></i> LOGIN </a></li>
     </ul>
   </header>
-  <nav class="new-nav navbar-expand-lg navbar-light">
-    <!-- navbar brand -->
-    <!-- <a href="index.html" class="navbar-brand" id="nb"> Pictionary </a> -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- hamburger menu -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- navbar items -->
-      <ul class="ms-auto">
 
-        <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
-        <li class="nav-item"><a href="about.html" target="_blank"><i class="fas fa-book"></i>ABOUT</a></li>
-        <li class="nav-item"><a href="./public/donate-book.html" target="_blank"><i class="fas fa-book"></i>DONATE
-            BOOKS</a></li>
-        <li class="nav-item"><a href="resource.html" target="_blank"><i
-              class="fas fa-external-link-alt"></i>RESOURCES</a></li>
-        <li class="nav-item"><a href="./blogs.html" target="_blank"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
-        <li class="nav-item"><a href="./public/contact us .html" target="_blank"><i
-              class="fas fa-address-book"></i>CONTACT US</a></li>
-        <li class="nav-item"><a href="contributors.html" target="_blank"><i style="font-size: 21px;"
-              class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
+      <nav class="new-nav navbar-expand-lg navbar-light">
+        <!-- navbar brand -->
+        <!-- <a href="index.html" class="navbar-brand" id="nb"> Pictionary </a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- hamburger menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- navbar items -->
+          <ul class="ms-auto">
 
-      </ul>
-    </div>
-  </nav>
+            <li class="nav-item"><a href="index.html" onclick="return false;"><i class="fas fa-home"></i>HOME</a></li>
+            <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
+            <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
+            <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
+            <li class="nav-item"><a href="./blogs.html"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
+            <li class="nav-item"><a href="./public/contact us .html" ><i class="fas fa-address-book"></i>CONTACT US</a></li>
+            <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
+
+          </ul>
+        </div>
+      </nav>
   <!--<nav class="new-nav">
     <ul>
       <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
@@ -235,7 +231,7 @@
           <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
           <label for="dateIssue" class="issue"><span>Date of Issue</span></label>
           <div class="col">
-            <input type="date" id="issueDate" name="issueDate">
+            <input type="date" id="issueDate" name="issueDate" onkeydown="return false;">
           </div>
         </div>
         <div class="form-group row">
@@ -1225,21 +1221,41 @@
       loader.style.width = "0px";
       loader.style.height = "0px";
     }
-  </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset: 400, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 1000 // values from 0 to 3000, with step 50ms
-    });
-  </script>
+
+  })
+
+</script>
+<script>
+  //modal loading
+  window.onload =function modal(){
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+myModal.toggle();
+    let loader = document.getElementById('loading');
+    loader.style.width ="0px";
+    loader.style.height = "0px";
+  }
+</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000 // values from 0 to 3000, with step 50ms
+      });
+    </script>
+  
 
   <!-- Footer Year Calculator -->
   <script>
     var year = new Date().getFullYear();
     document.getElementById("footer-year").innerHTML = year;
   </script>
+
+  <!-- IssueDate - not Allowing beyond today -->
+  <script>
+    issueDate.max = new Date().toISOString().split("T")[0];
+  </script>
+
 
 </body>
 
