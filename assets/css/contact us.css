@@ -241,13 +241,15 @@ border-radius: 10px;
 
 /* footer */
 footer {
-  position: relative;
-  width: 100%;
-  background-color: #5a5757;
-  color: #b6a485;
-  box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
-  padding: 15px 0px;
-  text-align: center;
+position: fixed;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+    background-color: #5a5757;
+    color: #b6a485;
+    box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
+    padding: 15px 0px;
+    text-align: center;
 }
 
 footer p {

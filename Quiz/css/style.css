@@ -228,21 +228,42 @@ h1{
   .quiz-btn{
     /* margin: auto; */
     width: 9rem;
-    height:1.5rem;
-    font-size: 22px;
+    height:4rem;
+    font-size: 20px;
   }
   h1 {
        font-size: 28px;
   }
   
 }
-
+/* 426px */
 
 @media screen and (max-width : 768px) and (min-width : 426px) {
   .quiz-img{
     width: 120px;
     height: 120px;
-    margin: 5rem auto;
-  }
+    margin: 5rem auto ;
+    margin-left: -1rem;
   
+  }
+  .quiz-btn{
+    width: 160px;
+    height:65px;
+    font-size: 21px;
+    margin-left:-40px;
+  }
+  .quiz-svg{
+    margin:20px;
+  }
+ 
+}
+@media screen and (min-width: 768px) and (max-width: 938px){
+     .quiz-svg{
+      width: 100px;
+      margin-left: 3rem;
+
+     }
+     .quiz-img{
+      width: 20%;
+     }
 }
