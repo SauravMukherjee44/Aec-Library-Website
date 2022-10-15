@@ -45,9 +45,9 @@ nav.navbar {
 	/* box-shadow: 2px 2px 5px 2px #ddbcbc; */
 	box-shadow: 2px 2px 5px 2px black;
 }
-.hero-left + .hero-right {
+/* .hero-left + .hero-right {
 	margin-right: -10rem;
-}
+} */
 #table {
 	border-radius: 20px;
 	background: rgb(0, 0, 0, 0.5);
@@ -216,6 +216,11 @@ label[for="dateIssue"] {
 	/* font-family: "Poiret One", cursive; */
 	font-weight: bolder;
 	letter-spacing: 0.1em;
+}
+@media only screen and (max-width: 400px) {
+	.container{
+		padding-right: 0px !important;
+	}
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -2321,6 +2326,9 @@ select {
 }
 
 @media only screen and (max-width: 1000px) {
+	.contain{
+		margin-left: 0px !important; 
+	}
 	.container {
 		display: flex;
 		flex-direction: column;
