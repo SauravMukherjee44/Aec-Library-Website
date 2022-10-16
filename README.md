@@ -7,7 +7,7 @@
 <h1 align="center">HacktoberFest Accepted </h1>
 
 This is an Open-Source Library Website in which you get Resources to learn different topics, Donate book section to donate your old books, and a Book issue section to keep a record of all the books issued.
-This website helps you to find the books easily without any cost and the best part about the website is that you can also contribute to the website for others to use the resourses by donating the books you have , all categories of books are welcomed for donation. 
+This website helps you to find books easily without any cost and the best part about the website is that you can also contribute to the website for others to use the resources by donating the books you have, all categories of books are welcome for donation. 
 Come forward to donate the books !!!  
 
 <h4>[ In development Phase ] 
@@ -66,7 +66,7 @@ Happy Submissions :slightly_smiling_face:
 
 <h2>📬 Contact</h2>
 
-If you want to contact me, you can reach me through below handles.
+If you want to contact me, you can reach me through the below handles.
 <div align="center">
 
 <a  href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw" target="_blank"><img alt="YouTube" src="https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" /></a>
@@ -101,11 +101,11 @@ I have started a Community named CodeIN Community [Community of Coding Enthusias
 
 ### Git & GitHub
 
-Before we proceed, it's better to know the difference between Git and Github. Git is a version control system (VCS) that allows us to keep track of the history of our source code , whereas GitHub is a service that hosts Git projects. 
+Before we proceed, it's better to know the difference between Git and GitHub. Git is a version control system (VCS) that allows us to keep track of the history of our source code, whereas GitHub is a service that hosts Git projects. 
 
 We assume you have created an account on Github and installed Git on your System.
 
-Now enter your name and E-mail (used on Github) address in Git, by using following command.
+Now enter your name and E-mail (used on Github) address in Git, by using the following command.
 
 `$ git config --global user.name "YOUR NAME"`
 ` $ git config --global user.email "YOUR EMAIL ADDRESS"`
@@ -115,10 +115,10 @@ This is an important step to mark your commits to your name and email.
 
 ### Fork a project
 
-You can make a copy of the project to your account. This process is called forking a project to your Github account. On Upper right side of project page on Github, you can see -
+You can make a copy of the project to your account. This process is called forking a project to your GitHub account. On the Upper right side of the project page on Github, you can see -
 
 <p align="center">  <img  src="https://i.imgur.com/P0n6f97.png">  </p>
-Click on fork to create a copy of project to your account. This creates a separate copy for you to work on.
+Click on the fork to create a copy of the project to your account. This creates a separate copy for you to work on.
 
 <br />
 
@@ -126,26 +126,26 @@ Click on fork to create a copy of project to your account. This creates a separa
 
 ### Clone the forked project
 
-You have forked the project you want to contribute to your github account. To get this project on your development machine we use clone command of git.
+You have forked the project you want to contribute to your GitHub account. To get this project on your development machine we use the clone command of git.
 
 `$ git clone https://github.com/SauravMukherjee44/Aec-Library-Website.git` <br/>
 Now you have the project on your local machine.
 
 <br />
 
-### Add a remote (upstream) to original project repository
+### Add a remote (upstream) to the original project repository
 
-Remote means the remote location of project on Github. By cloning, we have a remote called origin which points to your forked repository. Now we will add a remote to the original repository from where we had forked.
+Remote means the remote location of the project on Github. By cloning, we have a remote called origin which points to your forked repository. Now we will add a remote to the original repository from where we had forked.
 
 `$ cd <your-forked-project-folder>`
 `$ git remote add upstream https://github.com/SauravMukherjee44/Aec-Library-Website.git` <br/>
-You will see the benefits of adding remote later.
+You will see the benefits of adding a remote later.
 
 <br />
 
 ### Synchronizing your fork
 
-Open Source projects have a number of contributors who can push code anytime. So it is necessary to make your forked copy equal with the original repository. The remote added above called Upstream helps in this.
+Open Source projects have a number of contributors who can push code anytime. So it is necessary to make your forked copy equal to the original repository. The remote added above called Upstream helps in this.
 
 `$ git checkout main`
 `$ git fetch upstream`
@@ -157,14 +157,14 @@ The last command pushes the latest code to your forked repository on Github. The
 
 ### Create a new branch for a feature or bugfix
 
-Usually, all repositories have a main branch that is regarded to be stable, and any new features should be developed on a separate branch before being merged into the main branch. As a result, we should establish a new branch for our feature or bugfix and go to work on the issue. 
+Usually, all repositories have the main branch that is regarded to be stable, and any new features should be developed on a separate branch before being merged into the main branch. As a result, we should establish a new branch for our feature or bugfix and go to work on the issue. 
 
 `$ git checkout -b <feature-branch>`
-This will create a new branch out of master branch. Now start working on the problem and commit your changes.
+This will create a new branch out of the master branch. Now start working on the problem and commit your changes.
 
 `$ git add --all`
 `$ git commit -m "<commit message>"`
-The first command adds all the files or you can add specific files by removing -a and adding the file names. The second command gives a message to your changes so you can know in future what changes this commit makes. If you are solving an issue on original repository, you should add the issue number like #35 to your commit message. This will show the reference to commits in the issue.
+The first command adds all the files or you can add specific files by removing -a and adding the file names. The second command gives a message to your changes so you can know in the future what changes this commit makes. If you are solving an issue on the original repository, you should add the issue number like #35 to your commit message. This will show the reference to commits in the issue.
 
 <br />
 
@@ -173,15 +173,15 @@ The first command adds all the files or you can add specific files by removing -
 You now have a new branch containing the modifications you want in the project you forked. Now, push your new branch to your remote github fork. 
 
 `$ git push origin main`
-Now you are ready to help the project by opening a pull request means you now tell the project managers to add the feature or bug fix to original repository. You can open a pull request by clicking on green icon -
+Now you are ready to help the project by opening a pull request means you now tell the project managers to add the feature or bug fix to the original repository. You can open a pull request by clicking on the green icon -
 
 <p align="center">  <img  src="https://i.imgur.com/aGaqAD5.png">  </p>
 
-Remember your upstream base branch should be main and source should be your feature branch. Click on create pull request and add a name to your pull request. You can also describe your feature.
+Remember your upstream base branch should be the main and the source should be your feature branch. Click on create a pull request and add a name to your pull request. You can also describe your feature.
 
 Congratulations! You've already made your first contribution.🥳
 
-Good Luck for your journey
+Good Luck with your journey
 
 
 
@@ -189,3 +189,6 @@ Good Luck for your journey
 This project is licensed under the [**MIT license**](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/main/LICENSE).
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+
+
