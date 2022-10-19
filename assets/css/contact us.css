@@ -40,7 +40,7 @@ body {
 
 /* navbar */
 .navbar {
-  background-color: #5a5757 !important;
+  background-color: rgba(73, 46, 13, 0.781) !important;
   box-shadow: 0px 0px 16px 9px black;
 }
 
@@ -68,7 +68,10 @@ body {
   color: rgb(243 243 243);
   font-weight: bold;
 }
-
+.ml-4
+{
+  padding-right: 150px;
+}
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-info {
   position: relative;
@@ -245,7 +248,7 @@ position: fixed;
     bottom: 0px;
     height: 80px;
     width: 100%;
-    background-color: #5a5757;
+    background-color: rgba(73, 46, 13, 0.781);
     color: #b6a485;
     box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
     padding: 15px 0px;
