@@ -103,7 +103,7 @@ nav {
 .home-tab:hover{
   text-decoration: none;
   background-color: rgb(78, 74, 74);
-  color: rgb(233, 221, 221);
+  color: rgb(233, 223, 221);
   text-shadow: 0px 0px 14px rgb(233, 221, 221);
   transition-delay: 0.1s;
   transition-timing-function: ease;
@@ -281,7 +281,7 @@ section h5 {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   padding: 12px 24px 12px 24px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* YouTube Recommendation */
