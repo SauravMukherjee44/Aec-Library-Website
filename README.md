@@ -154,7 +154,7 @@ Open Source projects have a number of contributors who can push code anytime. So
 The last command pushes the latest code to your forked repository on Github. The origin is the remote pointing to your forked repository on github.
 
 <br />
-
+<br>
 ### Create a new branch for a feature or bugfix
 
 Usually, all repositories have a main branch that is regarded to be stable, and any new features should be developed on a separate branch before being merged into the main branch. As a result, we should establish a new branch for our feature or bugfix and go to work on the issue. 
