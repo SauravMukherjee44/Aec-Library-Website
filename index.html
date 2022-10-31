@@ -52,23 +52,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
- 
-    .dark-mode { 
-
-        background-color: black; 
-
-        color: white; 
-
-      } 
-
-      .light-mode { 
-
-        background-color: white; 
-
-        color: black; 
-
-      } 
-  
   </style>
   <link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -1277,40 +1260,8 @@ myModal.toggle();
   <script>
     issueDate.max = new Date().toISOString().split("T")[0];
   </script>
-<p style="text-align: center"> Copyright &copy; 2021-<script>document.write(new Date().getFullYear())</script> Ace Library Website All Rights Reserved</p>
 
-  <button color='light pink' onclick="darkMode()">Darkmode</button> 
 
-    <button color='yellow' onclick="lightMode()">LightMode</button> 
-
-    <script> 
-
-      function darkMode() { 
-
-        var element = document.body; 
-
-        var content = document.getElementById("DarkModetext"); 
-
-        element.className = "dark-mode"; 
-
-        content.innerText = "Dark Mode is ON"; 
-
-      } 
-
-      function lightMode() { 
-
-        var element = document.body; 
-
-        var content = document.getElementById("DarkModetext"); 
-
-        element.className = "light-mode"; 
-
-        content.innerText = "Dark Mode is OFF"; 
-
-      } 
-
-    </script>
-  
 </body>
 
 
