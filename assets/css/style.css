@@ -2859,3 +2859,11 @@ select {
 	}
 	
 }
+
+
+#myModalLabel{
+	font-weight: bold;
+	line-height: normal;
+	font-size: 1.5em;
+	text-align: center;
+}
