@@ -157,34 +157,37 @@
 
   <header class="header">
     <ul>
-      <li class="logo"><a class="nav-link" href="index.html" onclick="return false;"><img src="assets/logos/finalLogo.png" alt="AEC Library"
-            class="logo-img"> AEC LIBRARY</a></li>
-      <li class="login"><a href="./Login_page/login_page.html" class="nav-link"><i class="fas fa-sign-in-alt"></i> LOGIN </a></li>
+      <li class="logo"><a class="nav-link" href="index.html" onclick="return false;"><img
+            src="assets/logos/finalLogo.png" alt="AEC Library" class="logo-img"> AEC LIBRARY</a></li>
+      <li class="login"><a href="./Login_page/login_page.html" class="nav-link"><i class="fas fa-sign-in-alt"></i> LOGIN
+        </a></li>
     </ul>
   </header>
 
-      <nav class="new-nav navbar-expand-lg navbar-light">
-        <!-- navbar brand -->
-        <!-- <a href="index.html" class="navbar-brand" id="nb"> Pictionary </a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- hamburger menu -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- navbar items -->
-          <ul class="ms-auto">
+  <nav class="new-nav navbar-expand-lg navbar-light">
+    <!-- navbar brand -->
+    <!-- <a href="index.html" class="navbar-brand" id="nb"> Pictionary </a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- hamburger menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- navbar items -->
+      <ul class="ms-auto">
 
-            <li class="nav-item"><a href="index.html" onclick="return false;"><i class="fas fa-home"></i>HOME</a></li>
-            <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
-            <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
-            <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
-            <li class="nav-item"><a href="./blogs.html"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
-            <li class="nav-item"><a href="./public/contact us .html" ><i class="fas fa-address-book"></i>CONTACT US</a></li>
-            <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
+        <li class="nav-item"><a href="index.html" onclick="return false;"><i class="fas fa-home"></i>HOME</a></li>
+        <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
+        <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
+        <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
+        <li class="nav-item"><a href="./blogs.html"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
+        <li class="nav-item"><a href="./public/contact us .html"><i class="fas fa-address-book"></i>CONTACT US</a></li>
+        <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;"
+              class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
 
-          </ul>
-        </div>
-      </nav>
+      </ul>
+    </div>
+  </nav>
   <!--<nav class="new-nav">
     <ul>
       <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
@@ -202,9 +205,9 @@
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header bg-primary bg-gradient-light">
           <h5 class="modal-title" id="myModalLabel">Wanna Play Some Quiz?</h5>
-          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="  btn-close" data-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <span>Play Quiz to Enhance Yourself</span>
@@ -1229,26 +1232,26 @@
     }
 
 
-</script>
-<script>
-  //modal loading
-  window.onload =function modal(){
-    var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
-myModal.toggle();
-    let loader = document.getElementById('loading');
-    loader.style.width ="0px";
-    loader.style.height = "0px";
-  }
-</script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 400, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 1000 // values from 0 to 3000, with step 50ms
-      });
-    </script>
-  
+  </script>
+  <script>
+    //modal loading
+    window.onload = function modal() {
+      var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+      myModal.toggle();
+      let loader = document.getElementById('loading');
+      loader.style.width = "0px";
+      loader.style.height = "0px";
+    }
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000 // values from 0 to 3000, with step 50ms
+    });
+  </script>
+
 
   <!-- Footer Year Calculator -->
   <script>
