@@ -139,9 +139,9 @@ label {
 	left: 0;
 }
 
-/* .nav-item{
-  padding-right: 15px;
-} */
+.nav-item{
+	padding-top: 2px;
+}
 #loading {
 	position: fixed;
 	width: 100%;
@@ -2241,7 +2241,7 @@ select {
 }
 
 .nav-item a {
-	padding: 10px 10px 15px;
+	padding: 10px 10px;
 }
 
 .nav-item i:hover {
@@ -2867,3 +2867,6 @@ select {
 	font-size: 1.5em;
 	text-align: center;
 }
+
+
+
