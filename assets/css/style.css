@@ -1406,25 +1406,42 @@ p {
 }
 
 .update {
+	/* display: grid;
+	grid-template-columns: repeat(2, 600px);
+	justify-content: center; */
 	margin: 10px;
 	padding: 2rem 0;
 	color: white;
 	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-family: sans-serif;
 }
+.update-img{
+	height: 220px;
+	margin-bottom: 40px;
+}
+.title{
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	border: none;
+}
+
 
 /* Contact form position styles*/
 .login-box {
-	width: 60%;
+	width: 45%;
 	padding: 40px;
-	background: rgba(0, 0, 0, 0.75);
+	background: rgba(0, 0, 0, 1);
 	box-sizing: border-box;
 	border-radius: 20px;
 	transition-duration: 0.5s;
 	margin-bottom: 50px !important;
 	/* margin-left: 80px; */
-	box-shadow: 0px 0px 15px 5px lavender;
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .8);
+	/* border-radius: 10px; */
+	/* border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
 .login-box .user-box {
@@ -1435,9 +1452,7 @@ p {
 
 .login-box .title {
 	position: relative;
-	/* width: max-content; */
 	margin: 0 auto 0.7em;
-	text-decoration: underline;
 	font-size: 2.8rem;
 	color: rgb(255, 183, 0);
 	letter-spacing: 1.5px;
@@ -1536,15 +1551,7 @@ p {
 	color: white;
 }
 
-.update img {
-	border-radius: 200px;
-	height: 20rem;
-	width: 20rem;
-	margin-left: 30px;
-	margin-top: 60px;
-	margin-bottom: 20px;
-	margin-right: 20px;
-}
+
 
 .login-box a:hover {
 	background: rgb(7, 7, 7);
@@ -1553,8 +1560,8 @@ p {
 }
 
 .login-box:hover {
-	transition-duration: 0.4s;
-	box-shadow: 0 0px 15px 5px rgb(255, 183, 0);
+	/* transition-duration: 0.4s; */
+	/* box-shadow: 0 0px 15px 5px rgb(255, 183, 0); */
 }
 /* styles for transition around button */
 .login-box a span {
