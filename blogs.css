@@ -49,8 +49,8 @@
   height: 510px;
   padding:2%;
   margin:3%;
-  border:solid green;
-  
+  border:none;
+  background-color: #f2e7d5e8;
 }
 .card-body{
   align-items: center;
@@ -89,7 +89,7 @@
     
 }
 .card a:hover{
-  background-color:white ;
+  background-color:inherit ;
   color:green;
   border:3px solid;
 }
