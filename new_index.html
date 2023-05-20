@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Add your existing head content here -->
+    <!-- ... -->
+
+    <!-- Add a link to the external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Add a link to the Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Add a link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>SIGN UP - AEC Library</title>
+</head>
+
+<body>
+    <!-- Move the existing code within the body tag into a wrapper div -->
+    <div class="wrapper">
+        <h1 id="err"></h1>
+        <div class="section">
+            <div class="header">
+                AEC Library - Sign Up
+            </div>
+            <form class="signUp-form" id="form">
+                <!-- Move the form content into separate divs for layout -->
+                <div class="form-box">
+                    <div class="form-group">
+                        <!-- Update the icon class to use "fa-address-card-o" instead of "fa-address-book-o" -->
+                        <i class="fa fa-address-card-o"></i>
+                        <input type="text" name="" id="fullName" placeholder="Name" />
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" name="" id="email" placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" name="" id="password" placeholder="Password" />
+                    </div>
+                    <div class="form-group no-border">
+                        <input type="radio" name="gender" id="male" value="MALE" />
+                        <label for="male">Male</label>
+
+                        <input type="radio" name="gender" id="female" value="FEMALE" />
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <div class="redirect">
+                Already have an account?
+                <button>
+                    <a href="/Login_page/login_page.html" style="color: rosybrown">Login</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-exit">
+            <a href="/index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #635147;">
+                    <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Move the script tags to the end of the body tag -->
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
