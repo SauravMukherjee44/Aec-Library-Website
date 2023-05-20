@@ -29,7 +29,7 @@
 .grid-container {
   display: grid;
   padding: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 1rem;
   /* place-content: center; */
   /* align-items: center;
@@ -42,7 +42,7 @@
 }
 .card-body > h5{
     font-weight: bold;
-    color: green;
+    color: rgb(8, 8, 8);
     
 }
 .card{
@@ -50,7 +50,7 @@
   padding:2%;
   margin:3%;
   border:none;
-  background-color: #f2e7d5e8;
+  background-color: #9D5C0D ;
 }
 .card-body{
   align-items: center;
@@ -60,19 +60,19 @@
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.24),0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .card-img-top:hover {
-  box-shadow: 0 0.25em 0.25em -0.1em #fff;
-    box-shadow: 0 0.25em 0.25em -0.1em #006622;
-    border-color: #006622 ;
+  box-shadow: 0 0.25em 0.25em -0.1em #604717;
+    box-shadow: 0 0.30em 0.30em -0.1em #f7c603;
+    border-color: #e0ef08 ;
     transition: 0.4s;
-    color: #006622 ;
+    color: #d8eb08 ;
 }
 .card:hover {
-  box-shadow: 0 0.25em 0.25em -0.1em #fff;
+  box-shadow: 0 0.25em 0.25em -0.1em #eb9e22;
     box-shadow: 0 0.25em 0.25em -0.1em #b5c952;
     transform: translateY(-1.75em);
-    border-color: #006622 ;
+    border-color: #FFB84C;
     transition: 0.4s;
-    color: #006622 ;
+    color: #fff ;
     text-decoration:wavy;
   
 }
@@ -80,7 +80,7 @@
     color: black ;
 }
 .card a{
-    background-color:green ;
+    background-color: #B70404 ;
     color:white;
     padding:2%;
     border:1px black;
@@ -90,7 +90,7 @@
 }
 .card a:hover{
   background-color:inherit ;
-  color:green;
+  color: #FFA931;
   border:3px solid;
 }
 
