@@ -54,7 +54,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
   </style>
   <link rel="stylesheet" href="./assets/css/style.css" />
-
+ <link rel="stylesheet" href="./assets/css/translate.css" />
   <!-- Title bar icon -->
   <link rel="icon" href="./assets/logos/finalLogo.png" type="image/x-icon">
 
@@ -159,6 +159,20 @@
     <ul>
       <li class="logo"><a class="nav-link" href="index.html" onclick="return false;"><img
             src="assets/logos/finalLogo.png" alt="AEC Library" class="logo-img"> AEC LIBRARY</a></li>
+            <li> <div id="google_translate_element"></div>
+                  <script src="../js/translate.js"></script>
+
+              <script type="text/javascript">
+                  function googleTranslateElementInit() {
+                      new google.translate.TranslateElement(
+                          {pageLanguage: 'en'},
+                          'google_translate_element'
+                      );
+                  }
+              </script>
+
+              <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+              </script></li>
       <li class="login"><a href="./Login_page/login_page.html" class="nav-link"><i class="fas fa-sign-in-alt"></i> LOGIN
         </a></li>
     </ul>
@@ -1137,6 +1151,7 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="./assets/js/script.js"></script>
+<script src="./assets/js/translate.js"></script>
 
   <!-- Go to Top Button-->
   <script>
