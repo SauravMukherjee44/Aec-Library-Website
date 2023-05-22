@@ -359,7 +359,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #6f4e37b0 !important
+    background-color: #6f4e37b0 !important;
+  
 
   }
   
@@ -467,6 +468,7 @@ footer {
     overflow: hidden;
     z-index: 1;
     border: 3px solid #fff;
+    text-decoration: none;
   }
   
   .icons ul li a .icon {
