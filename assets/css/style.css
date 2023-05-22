@@ -2258,6 +2258,26 @@ select {
 .nav-item a {
 	text-decoration: none;
 }
+
+.faq-all{
+	background-color: linear-gradient(to right, rgb(151, 190, 203), transparent);
+	box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+	margin: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.faq-sub-container{
+	background-color: var(--info);
+	box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+	padding-top: 5px;
+	margin: auto;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.faq-sub-container:hover{
+	background-color: #00a9d4;
+}
 .faq-heading {
 	text-align: center;
 	padding: 10px 60px;
@@ -2268,11 +2288,17 @@ select {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	background-color: #f3d094;
+	/* background-color: #f3d094; */
+	background: linear-gradient(to right, lightblue, gray);;
 	min-height: 100vh;
 	/* height: 700px; */
 }
-
+.faq-one{
+	margin-top: 10px;
+}
+.faq-ten{
+	margin-bottom: 10px;
+}
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
 	color: black;
@@ -2290,8 +2316,10 @@ select {
 	width: 60%;
 	padding: 0px 18px;
 	font-size: 1.36rem;
-	background-color: #f3d094;
+	/* background-color: #f3d094; */
+	background-color: var(--info);
 	display: none;
+	border-radius: 10px;
 	overflow: hidden;
 }
 .faq-body p {
@@ -2300,7 +2328,9 @@ select {
 }
 /* Add a background color to the button if it is clicked on when you move the mouse over it (hover) */
 .faq-page:hover {
-	background-color: #f1c476;
+	/* background-color: #f1c476; */
+	background-color: #00a9d4;
+	border-radius: 10px;
 }
 /* Style the faq-page panel. Note: hidden by default */
 
