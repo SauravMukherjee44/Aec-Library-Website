@@ -48,5 +48,10 @@
         "id": "10",
         "img": "images/bookimage10.png",
         "url": "https://pepa.holla.cz/wp-content/uploads/2015/11/JavaScript-A-Beginners-Guide-Fourth-Edition1.pdf"
+    },
+    {
+        "id": "11",
+        "img": "images/bookimage11.png",
+        "url": "https://pepa.holla.cz/wp-content/uploads/2016/08/JavaScript-The-Definitive-Guide-6th-Edition.pdf"   
     }
 ]
