@@ -26,7 +26,7 @@
    /* background-image: linear-gradient(to bottom, #5282d4, #28667d); */
 
    @include transition(box-shadow .25s ease); 
- } 
+ }
 
 
      &:after {
