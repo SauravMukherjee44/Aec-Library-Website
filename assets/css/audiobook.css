@@ -28,7 +28,6 @@
    @include transition(box-shadow .25s ease); 
  }
 
-
      &:after {
         content: '';
         display: inline-block;
