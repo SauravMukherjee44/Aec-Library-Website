@@ -388,7 +388,7 @@ html {
 
 /* footer */
 footer {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	background-color: rgb(52, 58, 64);
 	color: white;

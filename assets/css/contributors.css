@@ -102,7 +102,7 @@ body{
     margin-left: 4rem;
   }
    
-  }
+  
   /* .navbar-light .navbar-nav .nav-link:hover {
     transition-duration: 0.3s;
     color: rgb(255 255 255 / 100%);
@@ -332,7 +332,7 @@ body{
   .footer-col ul li {
     display: inline-block;
     text-align: left;
-    padding: 0px 50px;
+    padding: 0px 50px 0 0;
     padding-top: 10px;
     
   }
