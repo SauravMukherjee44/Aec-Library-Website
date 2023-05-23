@@ -68,5 +68,10 @@
         "id": "14",
         "img": "images/bookimage14.png",
         "url": "https://people.inf.elte.hu/zirtaai/html_ebooks/HTML5_The_Missing_Manual.pdf"   
+    },
+    {
+        "id": "15",
+        "img": "images/bookimage15.png",
+        "url": "https://elibrary.ceiti.md/files/12/CSS3_for_Web_Designers.pdf"
     }
 ]
