@@ -4,6 +4,51 @@
   margin: 0;
 }
 
+/*To apply the navigation bar on the resource page*/
+.topnav {
+  background-color: #5C4033;
+  overflow: auto;
+  margin:0;
+  width: 100%;
+  top:0;
+  left:0;
+  position:absolute;
+}
+.topnav i {
+  margin-right: 5px; /* Add space between icon and text */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 17px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  width:13%;
+}
+.logo-img {
+  margin-left: 40px;
+  /* Width and height same to make icon look more professional */
+  height: 2rem;
+  width: 2rem;
+}
+.logo-img a:hover{
+  background-color:#5C4033 ;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #966919;
+  text-decoration:none;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 
 /* To enhance scroll-bar  */
 
