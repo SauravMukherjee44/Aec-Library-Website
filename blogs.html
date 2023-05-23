@@ -560,6 +560,10 @@
     
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <div id="topBtn" title="Navigate to Top Button">
+    <a href="#"><span class="fa fa-angle-up"></span></a>
+  </div>
+  
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -573,6 +577,26 @@
   <script>
     var year = new Date().getFullYear();
     document.getElementById("footer-year").innerHTML = year;
+  </script>
+  <!-- Navigate to Top Button  -->
+  <script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 40) {
+                $('#topBtn').css({
+                    "opacity": "1", "pointer-events": "auto"
+                });
+            } else {
+                $('#topBtn').css({
+                    "opacity": "0", "pointer-events": "none"
+                });
+            }
+        });
+  
+        $("#topBtn").click(function () {
+            $('html ,body').animate({ scrollTop: 0 }, 400);
+        });
+    });
   </script>
 
 </html>
