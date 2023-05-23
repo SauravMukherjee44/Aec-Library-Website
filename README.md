@@ -6,8 +6,8 @@
 </p>
 <h1 align="center">HacktoberFest Accepted </h1>
 
-This is an Open-Source Library Website in which you get Resources to learn different topics, Donate book section to donate your old books, and a Book issue section to keep a record of all the books issued.
-This website helps you to find the books easily without any cost and the best part about the website is that you can also contribute to the website for others to use the resourses by donating the books you have , all categories of books are welcomed for donation. 
+This is an Open-Source Library Website where you get a Resources section to learn different topics, a Donate book section to donate your old books, and a Book issue section to keep a record of all the books issued.
+This website helps you to find the books easily without any cost and the best part about the website is that you can also contribute to the website for others to use the resources by donating the books you have. All categories of books are welcomed for donation. 
 Come forward to donate the books !!!  
 
 <h4>[ In development Phase ] 
