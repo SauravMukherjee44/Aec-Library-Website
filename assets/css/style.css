@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
+} 
 
 html,
 body {
@@ -1919,7 +1919,7 @@ input[type="radio"] {
 
 .new-nav li {
 	font-family: sans-serif;
-	margin: 10px 25px;
+	margin: 10px 18px;
 	list-style-type: none;
 }
 
@@ -2325,6 +2325,16 @@ select {
 	padding: 0;
 }
 
+
+
+@media only screen and (min-width: 1200px) {	
+	.new-nav li {
+	  margin: 10px 14px;
+    }
+
+}
+
+
 @media only screen and (max-width: 1000px) {
 	.contain{
 		margin-left: 0px !important; 
@@ -2364,6 +2374,7 @@ select {
 		width: 60%;
 		height: 70%;
 	}
+
 }
 
 @media only screen and (max-width: 800px) {
