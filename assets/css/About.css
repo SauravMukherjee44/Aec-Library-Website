@@ -434,7 +434,7 @@ footer {
     align-items: center;
     margin: 0.2rem 0;
     padding: 10px;
-    gap: 0.3rem;
+    gap: 0.9rem;
   }
   
   .icons ul {
@@ -466,9 +466,12 @@ footer {
     border-radius: 50%;
     overflow: hidden;
     z-index: 1;
-    border: 3px solid #fff;
-  }
-  
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+.icons ul li a:hover{
+  border: 3px solid #cfcccc;
+}
   .icons ul li a .icon {
     position: relative;
     color: #262626;
@@ -478,7 +481,7 @@ footer {
   
   .icons ul li a:hover .icon {
     color: #fff;
-    transform: rotateY(360deg);
+    /* transform: rotateY(360deg); */
   }
   
   .icons ul li a:before {
