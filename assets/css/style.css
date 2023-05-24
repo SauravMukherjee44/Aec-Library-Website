@@ -98,6 +98,12 @@ select {
 	color: black;
 }
 
+select[name="mytable_length"] {
+	margin:0 !important;
+	max-width: 33%;
+	height: 2.5rem
+}
+
 .dataTables_wrapper .dataTables_length select {
 	border: 1px solid #aaa;
 	border-radius: 3px;

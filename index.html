@@ -327,7 +327,7 @@
         <h1>Your Books</h1>
         <div style="overflow-x:auto;" id="books-content">
           <table class="table table-striped" id="mytable" style="cursor: default">
-            <thead>
+            <thead> 
               <tr id="data">
                 <th scope="col">Date of Issue</th>
                 <th scope="col">Name</th>
@@ -1179,7 +1179,9 @@
 
   <script>
     // $(document).ready(function () {
-    $('#mytable').DataTable();
+    $('#mytable').DataTable({
+      
+    });
     // });
   </script>
 
