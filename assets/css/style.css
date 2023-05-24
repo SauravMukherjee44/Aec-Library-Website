@@ -223,6 +223,7 @@ label[for="dateIssue"] {
 	}
 }
 
+
 .navbar-light .navbar-nav .nav-link {
 	color: rgb(255 255 255 / 50%);
 	transition-duration: 0.1s;
@@ -2144,6 +2145,49 @@ select {
   background: rgba(0,0,0,0.5);*/
 	border-radius: 5%;
 }
+
+
+#libraryForm .form-group.row small
+{
+  visibility: hidden;
+}
+
+#libraryForm .form-group.row.success .col input
+{
+	border-color: #2ecc71;
+	border-width: thick;
+}
+#libraryForm .form-group.row.success .col select
+{
+	border-bottom-color: #2ecc71;
+	border-width: thick;
+	padding-bottom: 0px;
+	padding-top: 2px;
+
+}
+#libraryForm .form-group.row.error .col input
+{
+	border-color: #e74c3c;
+	border-width: thick;
+}
+#libraryForm .form-group.row.error .col select
+{
+	border-bottom-color: #e74c3c;
+	border-width: thick;
+	padding-bottom: 0px;
+	padding-top: 2px;
+}
+#libraryForm .form-group.row.error small{
+	color:#ff1c04;
+	visibility: visible;
+	padding-left: 33px;
+	font-size: large;
+	font-weight: bolder;
+	margin-top: -15px;
+
+  }
+  
+
 .hero-right {
 	width: 100%;
 	padding-left: 55px;
