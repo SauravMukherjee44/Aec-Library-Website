@@ -229,19 +229,21 @@
 
 
 
-      <form id="libraryForm">
+      <form id="libraryForm" class="libraryForm" action="#" method="post">
         <div class="form-group row">
           <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
           <label for="dateIssue" class="issue"><span>Date of Issue</span></label>
           <div class="col">
             <input type="date" id="issueDate" name="issueDate" onkeydown="return false;">
           </div>
+          <small class="small"></small>
         </div>
         <div class="form-group row">
           <label for="bookName" class="col col-form-label"> <strong>Name</strong></label>
           <div class="col">
-            <input type="text" class="input-box" id="bookName" placeholder="Book Name" />
+            <input type="text" class="input-box" id="bookName" placeholder="Book Name"/>
           </div>
+          <small class="small"></small>
         </div>
         <div class="form-group row">
           <label for="Author" class="col col-form-label"> <strong>Author</strong></label>
@@ -273,8 +275,10 @@
             </select>
             <input type="text" class="input-box" id="other_author" name="other_author" placeholder="Enter Author"
               style='display:none;' />
-          </div>
 
+              
+          </div>
+          <small class="small"></small>
         </div>
         <div class="form-group row">
           <label for="Author" class="col col-form-label"> <strong>Category</strong></label>
@@ -313,11 +317,12 @@
               <option value="True Crime">True Crime</option>
             </select>
           </div>
+          <small class="small"></small>
         </div>
 
         <div class="form-group row">
           <div class="col">
-            <button type="submit" class="btn btn-primary" id="addBook">Add Book</button>
+            <button type="submit" onclick="validateIssue()"" class="btn btn-primary" id="addBook">Add Book</button>
           </div>
         </div>
       </form>
@@ -1264,7 +1269,85 @@
     issueDate.max = new Date().toISOString().split("T")[0];
   </script>
 
+<!--issue form validation-->
+  <script>
 
+    const issueform = document.getElementById('libraryForm');
+    const issuedate = document.getElementById('issueDate');
+    const bookname = document.getElementById('bookName');
+    const author = document.getElementById('author');
+    const category = document.getElementById('category');
+    
+    function validateIssue(){
+
+      console.log("called");
+      if(checkInputs())
+      return true;
+      else
+      return false;
+
+    }
+
+    function checkInputs()
+    {
+         //get values from input fields
+         const issuedateval = issuedate.value.trim();
+         const bookval = bookname.value.trim();
+         const authorval = author.value.trim();
+         const categoryval = category.value.trim();
+    
+         if(issuedateval === '')
+         { setErrorFor(issuedate,'Please select a issue date');}
+         else
+         { setSuccessFor(issuedate);}
+
+         if(bookval === '')
+         { setErrorFor(bookname,'Please enter a book name');}
+         else
+         { setSuccessFor(bookname);}
+ 
+          if(authorval == ""){
+          setErrorFor(author,"Please select book author");
+          }else{
+          setSuccessFor(author);
+        }
+
+        if(categoryval == ""){
+          setErrorFor(category,"Please select book category");
+          }else{
+          setSuccessFor(category);
+        }
+    
+         
+         if(issuedateval!='' &&  bookval !== '' && authorval !== '' && categoryval != '') 
+         { 
+           return true; 
+          }
+        
+    }
+    
+    function setErrorFor(input,showerror)
+    {
+      let formControl = input.parentElement.parentElement;
+     // console.log(formControl);
+
+      const small = formControl.querySelector('small');
+      small.innerText = showerror;
+
+      formControl.classList.remove('success');
+      formControl.classList.add('error');
+      //console.log(showerror);
+ 
+    }
+
+    function setSuccessFor(input)
+    {
+      let formControl = input.parentElement.parentElement;
+      formControl.classList.remove('error');
+      formControl.classList.add('success');
+    }
+
+  </script>
 </body>
 
 
