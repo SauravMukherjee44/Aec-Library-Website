@@ -11,6 +11,14 @@ This website helps you to find the books easily without any cost and the best pa
 Come forward to donate the books !!!  
 
 <h4>[ In development Phase ] 
+	
+## Table of Content
+
+- [Tech Stack](#tech)
+- [Project Maintainer](#project)
+- [OUR VALUABLE CONTRIBUTORS](#contributor)
+- [Contact](#contact)
+- [Contributing Guidelines](#contribution)
 
 <h2> 
 📌<a href="https://aec-library-wbsite.netlify.app/" target="_blank">Visit our website 🚀</a>
@@ -35,6 +43,7 @@ Come forward to donate the books !!!
 
 # Contribution is fun! 🧡
 
+<a name="tech"></a>
 ## 📌 Tech Stack
 
 ![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
@@ -45,13 +54,13 @@ Come forward to donate the books !!!
 In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
 
 Happy Submissions :slightly_smiling_face:
-
+<a name="project"></a>
 <h1 align=center> Project Maintainer ⚡ </h1>
 <p align="center">
   <a href="https://github.com/SauravMukherjee44"><img src="https://github.com/SauravMukherjee44/Aec-Library-Website/blob/e2d7870b91f240964e9841a2a147aaf564b5fdb7/images/admin.jpg" width=150px height=150px /></a> 
 	<p align="center">
 
-
+<a name="contributor"></a>
 <h1 align=center> OUR VALUABLE CONTRIBUTORS✨ </h1>
 <p align="center">
   
@@ -63,7 +72,7 @@ Happy Submissions :slightly_smiling_face:
 <h1 align=center>Happy Coding 👨‍💻 </h1>
 
 ---
-
+<a name="contact"></a>
 <h2>📬 Contact</h2>
 
 If you want to contact me, you can reach me through below handles.
@@ -94,7 +103,7 @@ I have started a Community named CodeIN Community [Community of Coding Enthusias
    
  </div>
 
-
+<a name="contribution"></a>
 <h1> Contributing Guidelines </h1>
 
 ## Basics of Git and GitHub
