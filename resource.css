@@ -1130,7 +1130,7 @@ footer .content .right .btn{
 ul {
     position:absolute;
     top:70%;
-    left:60%;
+    left: 52%;
     transform:translate(-70%, -60%);
     display:flex;
     margin:0;
@@ -1281,7 +1281,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #eb2f06;
+  color: white;
 }
 
 .social-icons a {
@@ -1310,7 +1310,9 @@ footer a:hover {
   footer .content .box {
     width: 50%;
   }
-
+  ul{
+    top:57%
+  }
   .content .right {
     margin-top: 40px;
   }
@@ -1320,7 +1322,13 @@ footer a:hover {
   footer {
     position: relative;
   }
-
+  ul{
+    left:60%;
+    top:67%;
+  }
+  .emoji{
+    display: none;
+  }
   footer .content .box {
     width: 100%;
     margin-top: 30px;
