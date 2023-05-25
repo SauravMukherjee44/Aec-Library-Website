@@ -471,7 +471,7 @@ footer {
     height: 35px;
     background-color: #fff;
     text-align: center;
-    line-height: 20px;
+    line-height: 45px;
     font-size: 15px;
     margin: 0 0 0 20px;
     align-items: center;
@@ -479,11 +479,31 @@ footer {
     border-radius: 50%;
     overflow: hidden;
     z-index: 1;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     text-decoration: none;
+
+    /* added by ePSA-eJya */
+    color: #ababab;
+	text-decoration: none;
+	font-size: 30px;
+	flex-basis: 35%;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: inline-block;
+	transition: transform 0.5s;
+
 }
 .icons ul li a:hover{
-  border: 3px solid #cfcccc;
+  border: 1px solid #cfcccc;
+
+  /* added by ePSA-eJya */
+  color: #f05011;
+	transform: translateY(-6px);
+	transform: scale(1.5);
+	text-decoration: none;
+	font-size: 30px;
+	margin-left: 20px;
+
 }
   .icons ul li a .icon {
     position: relative;
@@ -513,6 +533,11 @@ footer {
     top: 0;
   }
   
+  /* added by ePSA-eJya */
+  .icons ul li:nth-child(1) a:before {
+    background: #0A66C2;
+  }
+
   .icons ul li:nth-child(2) a:before {
     background: black;
   }

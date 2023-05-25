@@ -329,13 +329,21 @@ footer p {
   height: 30px;
   background-color: #fff;
   text-align: center;
-  line-height: 20px;
-  font-size: 15px;
+  line-height: 40px;
   margin: 0 0 0 20px;
   border-radius: 50%;
   overflow: hidden;
-  z-index: 1;
-  border: 3px solid #fff;
+  z-index: 3;
+
+  /* added by ePSA-eJya */
+	color: #ababab;
+	text-decoration: none;
+	font-size: 25px;
+	flex-basis: 35%;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: inline-block;
+	transition: transform 0.5s;
 }
 
 .icons ul li a .icon {
@@ -345,9 +353,25 @@ footer p {
   z-index: 3;
 }
 
+.icons ul li a:hover{
+	border: 1px solid #cfcccc;
+  
+	/* added by ePSA-eJya */
+	color: #f05011;
+	  transform: translateY(-6px);
+	  transform: scale(1.5);
+    line-height: 25px;
+	  text-decoration: none;
+	  font-size: 18px;
+	  margin-left: 20px;
+  
+  }
+
 .icons ul li a:hover .icon {
   color: #fff;
   transform: rotateY(360deg);
+
+  
 }
 
 .icons ul li a:before {
@@ -366,6 +390,10 @@ footer p {
   top: 0;
 }
 
+/* added by ePSA-eJya */
+.icons ul li:nth-child(1) a:before {
+  background: #0A66C2;
+}
 .icons ul li:nth-child(2) a:before {
   background: black;
 }

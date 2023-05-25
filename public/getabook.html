@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="title" content="AEC Library is a comprehensive library management system">
+  <meta name="description" content="Designed for both large and small library systems, AEC Library is a comprehensive library management system. For managing circulation and stock, this is ideal for institutional, public, and digital libraries. In order to manage and automate the processing of even the largest of libraries, the AEC Library website was developed. According to the end user's requirements, the website is capable of managing Book Issues, Returns, and generating various Reports for Record-Keeping and Review purposes.">
+  <meta name="keywords" content="AEC, library systems, library, digital libraries, books">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="AEC LIBRARY">
+
+  <!-- Bootstrap v4.3 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="../assets/css/donate-book.css">
+
+  <link rel="icon" href=../assets/Favicons/8.png> <title>Donate Books</title>
+  <style>
+   
+  table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+  </style>
+
+</head>
+
+<body>
+  <!-- particle.js -->
+  <div id="particles-js"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <a class="navbar-brand ml-4" href="../index.html"><img src="../assets/logos/finalLogo.png" alt="AEC Library"
+        class="logo-img"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home <span
+              class="sr-only">(current)</span></a>
+                 </li>
+                <li class="nav-item"><a href="../about.html" class="nav-link" target="_blank"> <i class="fas fa-book"></i> About </a></li>
+        <li class="nav-item active"><a href="#" class="nav-link" target="_blank" onclick="return false;"> <i
+              class="fas fa-book"></i> Donate Books </a></li>
+        <li class="nav-item"><a href=".././resource.html" class="nav-link"> <i class="fas fa-external-link-alt"></i>
+            Resources</a></li>
+        <li class="nav-item"><a href="../Login_page/login_page.html" class="nav-link" target="_blank"> <i
+              class="fas fa-sign-in-alt"></i> Login </a></li>
+        <li class="nav-item"><a href="../sign-up-page/index.html" class="nav-link" target="_blank"> <i
+              class="fas fa-sign-in-alt"></i> SIGN UP </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <div class="login-box">
+      <h2>Get a book </h2>
+      <form id="getabook_form">
+        
+        <div class="user-box">
+          <input class="form__input form-control" type="email" id="email" name="" required="">
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input class="form__input form-control" type="tel" id="contact" name="" required="" >
+          <!--onchange="validate_phone(document.getElementById('contact'))"-->
+          <label>Contact Number</label>
+        </div>
+        <div class="user-box">
+          <input class="form__input form-control" id="zip" type="text" name="" required="">
+          <label>Zip</label>
+        </div>
+       
+        <div class="form-check">
+          <input type="checkbox" class="form-control form-check-input form-checkbox" id="gridCheck" required>
+          <p>
+            <label class="form-check-label" for="gridCheck">I have read and understood the </label>
+            <a class="form-check-label form-check-link" href="terms&conditions.html"> Terms and Conditions</a>
+          </p>
+        </div>
+        <button class="submit-btn">
+          Submit
+        </button>
+
+        <button class="reset-btn" onclick="resetFunction()"> Reset</button>
+
+      </form>
+    </div>
+  </div>
+
+    <script>
+      function resetFunction(){
+        document.getElementById("getabook_form").reset();
+      }
+    </script>
+
+  <!-- adding name,image,name of book of people who made donation -->   <!-- here -->
+
+  <footer>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="icons">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/mesourav44"><i class="fab fa-twitter icon"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw"><i class="fab fa-youtube icon"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p>©2021 Copyright AEC Library</p>
+      </div>
+      <div>
+        <p>
+          <a href="contact us .html" style="color: rgb(255, 183, 0);">Contact Us </a>
+          &emsp;&emsp;
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script>
+    window.onload = function () {
+      document.getElementById('loading').style.display = "none";
+      document.getElementById('container').style.display = "block";
+    }
+    particlesJS.load("particles-js", "../assets/js/config.json", function () {
+      console.log("callback - particles.js config loaded");
+    });
+  </script>
+<script src="https://unpkg.com/@supabase/supabase-js"></script>
+  <script>
+  const donationForm = document.getElementById('donation_form');
+  const { createClient } = supabase
+  const supabaseUrl = `https://cvhyilfsattdglfdmvcu.supabase.co`
+  const supabaseAnonKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2aHlpbGZzYXR0ZGdsZmRtdmN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ1NTE5MTksImV4cCI6MTk2MDEyNzkxOX0.wvKZxYcBbeUy9aJTw3XzbySmBJ8PkxVGXeopoucQpGY`
+
+  const _supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+  const donatedBook = document.querySelector('.donated_book');
+  function validate_phone(input){
+    var phone = /^\d{10}$/;
+    if(input.value.match(phone)){
+      return true;
+    }
+    /*else{
+      alert("Please enter a valid phone number")
+      return false;
+    }*/
+
+  }
+
+  function reset_form(){
+    document.getElementById("getabook_form").reset();
+
+  }
+
+  donationForm.addEventListener('submit',e=>{
+    if(validate_phone(document.getElementById('contact'))){
+    e.preventDefault();
+    const { data, error } = _supabase
+      .from('getabook_form')
+      .insert([
+        {
+          email:document.getElementById('email').value,
+         
+          contact : document.getElementById('contact').value,
+          zip : document.getElementById('zip').value,
+        }
+      ]).then(res=>{
+        console.log(res);
+        if(res.error){
+          alert(res.error.message);
+        }
+        else{
+        alert('Data Added');
+        reset_form();
+        }
+      })
+  }
+  else{
+    alert("Please enter a valid phone number")
+  }
+    })
+
+  </script>
+
+
+
+</body>
+ <script src="../assets/js/Donate_Book.js"></script>
+</html>
