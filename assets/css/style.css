@@ -148,10 +148,12 @@ label {
 	height: 100vh;
 }
 
-.body-style {
+.body-style{
+    background-image: linear-gradient(hsla(41, 72%, 17%, 0.89), rgba(149, 86, 27, 0.644), rgba(56, 23, 10, 0.896));
+}
+#issueSection {
 	background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
-
-	background-size: cover;
+    background-size: cover;
 	background-repeat: no-repeat;
 	background-color: rgba(0, 0, 0, 0.9);
 	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
