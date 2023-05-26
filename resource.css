@@ -6,8 +6,11 @@
 
 
 /* To enhance scroll-bar  */
-
-
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
 
 ::-webkit-scrollbar {
   width: 15px;
@@ -99,14 +102,18 @@ nav {
 } */
 .search-box-container{
   display: flex;
-  justify-content: flex-end;
-  
+  justify-content:end;
+  margin-top: 0;
+  padding: 0;
+   /* float: right;
+    */
 }
 .search-box{
   border: 1px solid wheat;
   border-radius: 9px;
   background-color: wheat;
   padding: 8px;
+  /* float: right; */
 }
 
 input:focus{
@@ -285,7 +292,14 @@ section h5 {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
+.carousel-cell img{
+  margin: 10px;
+  /* margin-left: 15px;
+  margin-right: 15px; */
+  /* width: 250px; */
+  border-radius: 20px;
+  /* border: 10px solid black; */
+}
 /* COURSES */
 /*  #courses {
   display: flex;
@@ -305,7 +319,7 @@ section h5 {
 } */
 
 .courseCard{
-  margin: 5px;
+  margin: 10px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
   width: 30%;
@@ -322,6 +336,7 @@ section h5 {
 .courseCardImage{
   height: 60px;
   width: 100%;
+  margin: 20px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -345,6 +360,11 @@ section h5 {
   margin-right: 4px;
   padding: 5px;
 }*/
+
+/* .imge{
+  margin: 5px;
+  box-shadow: 2px 2px 8px rgba(253, 208, 126, 0.342)
+} */
 .iframe {
   border-radius: 10px;
   padding-left: 3px;
