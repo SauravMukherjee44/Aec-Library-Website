@@ -1,29 +1,39 @@
 * {
   box-sizing: border-box;
 }
-
+label{
+  font-family:Lucida Console,monospace;
+}
+p{
+  font-family:Lucida Handwriting,cursive;
+}
+h2{
+  font-family:copperplate,fantasy;
+}
 /* Style inputs */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid gray;
   margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   resize: vertical;
-  font-size: large;
+  font-size: medium;
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: gray;
   color: white;
   padding: 12px 20px;
-  border: none;
+  border: 0;
+  border-radius:30px;
   cursor: pointer;
   font-size: x-large;
 }
 
 input[type=submit]:hover {
   background-color: #45a049;
+  border-radius:30px;
 }
 
 /* Style the container/contact section */
