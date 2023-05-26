@@ -2292,22 +2292,31 @@ select {
 		filter: hue-rotate(360deg);
 	}
 }
-
+/* -----------------Scroll Bar----------- */
 ::-webkit-scrollbar {
 	width: 10px;
-	background: linear-gradient(to top, #008aff, #00ffe7);
+	size:12px;
+	/* background: linear-gradient(to top, #008aff, #00ffe7); */
 	animation: animate 5s linear infinite;
 }
+::-webkit-scrollbar-track{
+	background:rgb(0 0 0 / 30%);
 
+}
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to top, #008aff, #00ffe7);
+    
+	background:radial-gradient(#f3d094,#f3ab2f);
+	box-shadow:inset;
+	color: #f3d094;
 	animation: animate 5s linear infinite;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    border: solid 2px rgb(41, 2, 10);
+    background:#f4b242;
+	/* box-shadow:1px#000000 inset; */
+
 }
 
 .nav-item a {
