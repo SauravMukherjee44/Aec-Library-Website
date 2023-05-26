@@ -172,7 +172,7 @@ input:focus{
 #myUL li a {
   border: 1px solid #ddd;
   margin-top: -1px; 
-
+transition: 1s ease-in-out;
   background-color: #f6f6f6;
   padding: 12px;
   text-decoration: none;
@@ -183,6 +183,7 @@ input:focus{
 
 #myUL li a:hover:not(.header) {
   background-color: #eee;
+  transform: scale(0.7);
 }
 .search-heading{
   padding:0  !important; 
@@ -299,6 +300,10 @@ section h5 {
   /* width: 250px; */
   border-radius: 20px;
   /* border: 10px solid black; */
+  transition: 1s ease-in-out;
+}
+.carousel-cell img:hover{
+  transform: scale(0.8);
 }
 /* COURSES */
 /*  #courses {
