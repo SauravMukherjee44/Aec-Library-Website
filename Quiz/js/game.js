@@ -57,6 +57,9 @@ startGame = () => {
     quizLoader.classList.add('hidden');
 };
 
+const options = document.querySelectorAll('.choice-text'); 
+
+
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
@@ -70,6 +73,7 @@ getNewQuestion = () => {
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     question.innerHTML = currentQuestion.question;
+
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
@@ -88,21 +92,27 @@ choices.forEach((choice) => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
 
+
         const classToApply =
             selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
 
         if (classToApply === 'correct') {
             incrementScore(CORRECT_BONUS);
         }
 
+        options[currentQuestion.answer-1].parentElement.classList.add('correct')
+
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
+            options[currentQuestion.answer-1].parentElement.classList.remove('correct')
             getNewQuestion();
         }, 1000);
     });
 });
+
 
 incrementScore = (num) => {
     score += num;
