@@ -72,12 +72,9 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
   <div class="wrapper">
     <div class="login-box">
-      <h2>Book Donation Form 📚</h2>
-      <form id="donation_form">
-        <div class="user-box">
-          <input class="form__input form-control" type="text" id="name" name="" required="">
-          <label>Name of Donated Book</label>
-        </div>
+      <h2>Get a book </h2>
+      <form id="getabook_form">
+        
         <div class="user-box">
           <input class="form__input form-control" type="email" id="email" name="" required="">
           <label>Email</label>
@@ -87,50 +84,11 @@ tr:nth-child(even) {background-color: #f2f2f2;}
           <!--onchange="validate_phone(document.getElementById('contact'))"-->
           <label>Contact Number</label>
         </div>
-
-        <div class="user-box">
-          <textarea  rows="4" class="form__input form-control" type="text" name="" id="address" required=""></textarea>
-          <label>Address</label>
-        </div>
-        
-        <div class="user-box">
-          <label>Select Country: </label><br><br>
-          <select name="state" class="country form-control" id="countySel" size="1" required="">
-           <option value="" selected="selected">Select Country</option>
-          </select>
-        </div>
-        <div class="user-box">
-          <label>Select State: </label><br><br>
-          <select name="country" class="state form-control" id="stateSel" size="1" required="">
-          <option value="" selected="selected">Please select Country first</option>
-          </select>
-        </div>
-        <div class="user-box">
-          <label>Select City: </label><br><br>
-          <select name="district" class="city form-control" id="districtSel" size="1" required="">
-         <option value="" selected="selected">Please select State first</option>
-            <option label="KANPUR">KANPUR</option>
-             <option label="LUCKNOW">LUCKNOW</option>
-             <option label="VARANASI">VARANASI</option>
-             <option label="AGRA">AGRA</option>
-             <option label="GAYA">GAYA</option>
-             <option label="AHMEDABAD">AHMEDABAD</option>
-             <option label="PATNA">PATNA</option>
-         </select>
-        </div>
         <div class="user-box">
           <input class="form__input form-control" id="zip" type="text" name="" required="">
           <label>Zip</label>
         </div>
-        <div class="user-box">
-          <input class="form__input form-control" type="text" name="" required="">
-          <label>Landmark (Optional)</label>
-        </div>
-        <div class="user-box">
-          <input class="form__input form-control" id="alt_contact" type="text" name="" required="">
-          <!--onchange="validate_phone(document.getElementById('alt_contact'))"-->
-          <label>Alternate Phone (Optional)</label>
-        </div>
+       
         <div class="form-check">
           <input type="checkbox" class="form-control form-check-input form-checkbox" id="gridCheck" required>
           <p>
@@ -150,7 +108,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
     <script>
       function resetFunction(){
-        document.getElementById("donation_form").reset();
+        document.getElementById("getabook_form").reset();
       }
     </script>
 
@@ -188,7 +146,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
   <!-- scripts -->
 
-  <script src="../assets/js/Donate_Book.js"></script>
+  
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -231,7 +189,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   }
 
   function reset_form(){
-    document.getElementById("donation_form").reset();
+    document.getElementById("getabook_form").reset();
 
   }
 
@@ -239,15 +197,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     if(validate_phone(document.getElementById('contact'))){
     e.preventDefault();
     const { data, error } = _supabase
-      .from('donated_book')
+      .from('getabook_form')
       .insert([
         {
           email:document.getElementById('email').value,
-          name:document.getElementById('name').value,
+         
           contact : document.getElementById('contact').value,
-          address : document.getElementById('address').value,
-          country : document.querySelector('.country').value,
-          city : document.querySelector('.city').value,
           zip : document.getElementById('zip').value,
         }
       ]).then(res=>{
@@ -268,29 +223,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
   </script>
 
-<div id="topBtn" title="Navigate to Top Button">
-  <a href="#"><span class="fa fa-angle-up"></span></a>
-</div>
-<!-- Navigate to Top Button  -->
-<script>
-  $(document).ready(function () {
-      $(window).scroll(function () {
-          if ($(window).scrollTop() > 40) {
-              $('#topBtn').css({
-                  "opacity": "1", "pointer-events": "auto"
-              });
-          } else {
-              $('#topBtn').css({
-                  "opacity": "0", "pointer-events": "none"
-              });
-          }
-      });
-
-      $("#topBtn").click(function () {
-          $('html ,body').animate({ scrollTop: 0 }, 400);
-      });
-  });
-</script>
 
 
 </body>

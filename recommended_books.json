@@ -48,5 +48,30 @@
         "id": "10",
         "img": "images/bookimage10.png",
         "url": "https://pepa.holla.cz/wp-content/uploads/2015/11/JavaScript-A-Beginners-Guide-Fourth-Edition1.pdf"
+    },
+    {
+        "id": "11",
+        "img": "images/bookimage11.png",
+        "url": "https://pepa.holla.cz/wp-content/uploads/2016/08/JavaScript-The-Definitive-Guide-6th-Edition.pdf"   
+    },
+    {
+        "id": "12",
+        "img": "images/bookimage12.png",
+        "url": "https://bedford-computing.co.uk/learning/wp-content/uploads/2015/10/JavaScript-and-JQuery-Interactive-Front-End-Web-Development-Introduction.pdf" 
+    },
+    {
+        "id": "13",
+        "img": "images/bookimage13.png",
+        "url": "https://www.snggdcg.ac.in/pdf/study-material/computer-science/0071611436%20HTML.pdf"  
+    },
+    {
+        "id": "14",
+        "img": "images/bookimage14.png",
+        "url": "https://people.inf.elte.hu/zirtaai/html_ebooks/HTML5_The_Missing_Manual.pdf"   
+    },
+    {
+        "id": "15",
+        "img": "images/bookimage15.png",
+        "url": "https://elibrary.ceiti.md/files/12/CSS3_for_Web_Designers.pdf"
     }
 ]
