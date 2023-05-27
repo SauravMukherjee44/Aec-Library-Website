@@ -1162,24 +1162,32 @@ strong {
 }
 
 .book {
-	background-color: #f3d094;
+	/* background-color: #f3d094; */
+	/* background-image:linear-gradient(30deg,black,#362101,#c58921,#dc9b2b,#e2a845,rgb(216, 168, 86),#eac17b); */
+	/* background: rgb(2,0,36); */
+/* background: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgba(121,71,9,0.9501050420168067) , rgba(221,135,14,1) ); */
+background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115),rgb(191,175,153), rgb(255,234,205),rgb(254,244,229));
+
 	padding: 2rem;
 }
 
 .tex {
 	text-align: center;
+	text-decoration: none;
 }
 
 .book .tex {
 	margin-top: 0;
 	font-family: "Poppins", sans-serif;
 	font-size: 17px;
+	text-decoration: none;
 }
 
 .tex b {
 	font-family: "Playfair Display", serif;
 	font-weight: 700;
 	line-height: 1;
+	text-decoration: none;
 	font-size: 48px;
 	margin-bottom: 40px;
 	display: inline-block;
@@ -1197,19 +1205,45 @@ strong {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	list-style: none;
+	/* border-radius: 10px solid black; */
 }
-
+.fade-up{
+	/* border-radius: 10px solid black; */
+}
+.bheads
+{
+	text-shadow: 2px 4px 10px rgb(85, 50, 3);
+	font-size: 50px;
+	font-family: "Poppins", sans-serif;
+	text-decoration: none;
+	font-weight: bolder;
+	
+}
 .books li img {
 	width: 200px;
 	height: 300px;
-	box-shadow: 2px 2px 3px rgba(1, 53, 88, 0.589);
+	box-shadow: 2px 2px 3px rgba(10, 12, 14, 0.589);
 	transition: all 0.3s;
+	border-radius: 10px solid black;
 }
 
 .book .books li:hover img {
 	box-shadow: 2px 2px 3px rgba(1, 53, 88, 0.342);
 }
+.bborder{
+	box-shadow: 2px 2px 8px rgba(253, 208, 126, 0.342);
+	/* padding-left: 30px; */
+	/* display: flex; */
+	/* justify-content: space-evenly; */
+	padding-bottom: 20px;
+	/* padding-right: 10px; */
+	background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115));
 
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 @keyframes bookBounce {
 	0% {
 		transform: translateY(0);
@@ -1227,6 +1261,9 @@ strong {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 	justify-content: space-around;
+	box-shadow: 3px 3px 3px rgba(116, 72, 3, 0.329);
+	padding-bottom: 30px;
+	padding-right: 20px;
 }
 
 .books1 div {
@@ -1238,6 +1275,15 @@ strong {
 	width: 250px;
 	height: 300px;
 	object-fit: cover;
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+	/* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+	/* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+	/* box-shadow: rgba(108, 107, 107, 0.15) 1.95px 1.95px 2.6px; */
+	/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+	/* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	border-radius: 5px;
 	display: block;
 	transition: 0.5s;
 }
@@ -1248,18 +1294,20 @@ strong {
 	height: 300px;
 	transform: scale(1.1);
 	object-fit: cover;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 	display: block;
 }
 .book p {
-	font-size: 1rem;
+	font-size: 1.5rem;
+	text-decoration: none;
 }
 
 .bookbtn {
 	margin: 40px 70px;
-	padding: 10px 10px;
+	padding: 15px  10px 10px 10px;
 
 	text-decoration: none;
-	background: #00a9d4;
+	background-color: #6d3b03;
 	color: #fff;
 
 	cursor: pointer;
