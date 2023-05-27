@@ -1812,7 +1812,7 @@ input[type="radio"] {
 
 .contact ul li, a
  {
-	color: black;
+	/* color: #134D58; */
 	list-style: none;
 	text-decoration: none;
 	font-family: "Source Sans Pro", sans-serif;
@@ -2831,9 +2831,6 @@ select {
   }
 }
 @media(max-width:425px){
-	.update{
-		/* background-color: #fff; */
-	}
   .update img{
     margin-left: 0;
     padding: 0;
@@ -2866,4 +2863,15 @@ select {
 	line-height: normal;
 	font-size: 1.5em;
 	text-align: center;
+}
+.contact a{
+	text-decoration: none;
+	color: #134D58;
+}
+.contact a:hover{
+	padding-left: 7px;
+}
+.contact .heading{
+	color: black;
+	font-size: 20px;
 }
