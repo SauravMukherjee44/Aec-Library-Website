@@ -2,6 +2,8 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: 'Baloo 2', cursive;
+
 } 
 
 html,
@@ -74,12 +76,20 @@ nav.navbar {
 
 #table h1 {
 	color: white;
+	text-decoration: none;
+	border-bottom: 4px solid white;
+}
+#table .heading{
+	display: flex;
+	justify-content: center;
 }
 
 #books-content {
 	padding: 10px;
 	background-color: white;
 }
+
+
 .dataTables_wrapper .dataTables_filter input {
 	border: 1px solid #aaa;
 	border-radius: 3px;
@@ -194,11 +204,27 @@ label[for="category"] {
 }
 /* Authors */
 .form-check-input1 {
-	border-radius: 20px;
-	margin-top: 10px;
-	padding: 5px;
-	width: 25%;
-	cursor: pointer;
+  width: 95%;
+  padding: 15px;
+  margin-left: 16px;
+  border-radius: 10px;
+  outline: none;
+  height: 57px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding-right: 40px; /* Adjust the padding to accommodate the icon */
+}
+
+.form-check-input1:hover,
+.form-check-input1:focus {
+  background-color: #f2f2f2;
+  border-color: #aaa;
 }
 
 label[for="Author"] {
@@ -2021,7 +2047,7 @@ input[type="radio"] {
 }
 
 .contain {
-  height: 355px;
+  height: 100%;
   width: 80%;
   color: white;
   margin-top: 21px;
@@ -2034,7 +2060,7 @@ input[type="radio"] {
 }
 
 .contain:hover {
-	transform: scale(1.1);
+	transform: scale(1.03);
 }
 .contain div {
 	font-family: "Source Sans Pro", sans-serif;
@@ -2063,7 +2089,7 @@ input[type="radio"] {
 
 #searchForm {
 	display: inline-block;
-	border: 1px solid grey;
+	border: 2px solid grey;
 	border-radius: 12px;
 	margin-left: 30px;
 	align-items: center;
@@ -2129,24 +2155,31 @@ input[type="radio"] {
 }
 
 #myUL li a {
-  border: 1px solid #ddd;
-  border-radius: 25px;
-  margin-top: -1px;
-
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
+	border: 1px solid #ddd;
+	border-radius: 25px;
+	margin-top: -1px;
+	background-color: #f6f6f6;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #000;
+	display: block;
+	background-color: #cda867;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #myUL li a:hover:not(.header) {
+	background-color: #dfc18d;
+  }
+  
 .search-heading{
   padding:0  !important;
+  border-bottom: 3px solid white;
+  margin: 0px auto 20px;
+  width: fit-content;
 }
+
 
 /* ----------------------- */
 .col-sm-10 input,
@@ -2348,35 +2381,36 @@ select {
 		filter: hue-rotate(360deg);
 	}
 }
-/* -----------------Scroll Bar----------- */
+
+
+/* Scrollbar Track */
 ::-webkit-scrollbar {
 	width: 10px;
-	size:12px;
-	/* background: linear-gradient(to top, #008aff, #00ffe7); */
-	animation: animate 5s linear infinite;
-}
-::-webkit-scrollbar-track{
-	background:rgb(0 0 0 / 30%);
+  }
+  
+  /* Scrollbar Track Background */
+  ::-webkit-scrollbar-track {
+	background: linear-gradient(to top, #008aff, #00ffe7);
+  }
+  
+  /* Scrollbar Thumb */
+  ::-webkit-scrollbar-thumb {
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	border-radius: 10px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Scrollbar Thumb on Hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(to top, #0065bd, #2df3df);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
 
-}
-::-webkit-scrollbar-thumb {
-    
-	background:radial-gradient(#f3d094,#f3ab2f);
-	box-shadow:inset;
-	color: #f3d094;
-	animation: animate 5s linear infinite;
-    border-radius: 20px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background:#f4b242;
-	/* box-shadow:1px#000000 inset; */
-
-}
 
 .nav-item a {
-	padding: 10px 10px 15px;
+	padding: 10px 15px;
+	border-radius: 10px;
 }
 
 .nav-item i:hover {
@@ -2393,6 +2427,7 @@ select {
 .nav-item a {
 	text-decoration: none;
 }
+
 .faq-heading {
 	text-align: center;
 	padding: 10px 60px;

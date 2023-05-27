@@ -70,6 +70,10 @@
   <!--data table-->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
   <script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Merriweather:wght@300&display=swap" rel="stylesheet">
 
   <!-- Audiobook css -->
   <link rel="stylesheet" href="assets/css/audiobook.css">
@@ -174,7 +178,7 @@
     <!-- hamburger menu -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- navbar items -->
-      <ul class="ms-auto">
+      <ul class="ms-auto" style="padding-top: 1px;">
 
         <li class="nav-item"><a href="index.html" onclick="return false;"><i class="fas fa-home"></i>HOME</a></li>
         <li class="nav-item"><a href="about.html" target="_blank"><i class="fas fa-book"></i>ABOUT</a></li>
@@ -321,7 +325,7 @@
         </div>
 
         <div class="form-group row">
-          <div class="col">
+          <div class="col d-flex justify-content-center">
             <button type="submit" onclick="validateIssue()"" class="btn btn-primary" id="addBook">Add Book</button>
           </div>
         </div>
@@ -329,7 +333,9 @@
     </div>
     <div class="hero-right">
       <div id="table">
-        <h1>Your Books</h1>
+        <div class="heading mb-3">
+          <h1>Your Books</h1>
+        </div>
         <div style="overflow-x:auto;" id="books-content">
           <table class="table table-striped" id="mytable" style="cursor: default">
             <thead>
@@ -352,15 +358,15 @@
       <div class="contain">
         <!-- <div class="line"><b id="bold"> Choose and read books </b><br>from your comfort zone </div> -->
         <div id="search">
-          <form id="searchForm" class="form-inline my-2 my-lg-0">
+          <form id="searchForm" class="form-inline my-2 my-lg-0 p-3">
             <!-- <button class="btn btn-dark my-2 my-sm-0">Keyword</button>
             <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search for a book"
               aria-label="Search" name="search" style="border: none;" onkeyup="searchbooks()" />
             <button class="btn btn-dark my-2 my-sm-0" id="searchsymbol" type="submit">
               &#128269;
             </button>  -->
-            <h2 class="search-heading">Choose and read books</h2>
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
+            <h2 class="search-heading ">Choose and read books</h2>
+            <input type="text" id="myInput" class="form-check-input1 mx-auto" onkeyup="myFunction()" placeholder="Search for names.."
               title="Type in a name">
             <ul id="myUL">
               <li><a href="./Notes/physicselectricitynotes.pdf" target="_blank">Current Electricity Problem book</a>
