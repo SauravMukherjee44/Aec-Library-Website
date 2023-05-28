@@ -102,7 +102,7 @@ body{
     margin-left: 4rem;
   }
    
-  }
+  
   /* .navbar-light .navbar-nav .nav-link:hover {
     transition-duration: 0.3s;
     color: rgb(255 255 255 / 100%);
@@ -146,11 +146,14 @@ body{
     height: 3rem;
     width: 3rem;
   }
+
+
   .container_header{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  /*
   .container_header input{
     width: 85%;
     border: 2px solid #656464;
@@ -169,7 +172,8 @@ body{
   .container_header input:focus{
     border-color: rgb(156, 155, 155);
     box-shadow: 0px 0px 15px black;
-  }
+  }*/
+
   .container_header h1{
     color: var(--nav-bg);
       color: white;
@@ -179,6 +183,59 @@ body{
       text-shadow: 2px 2px 8px rgba(199, 199, 199, 0.788);
   }
   
+  .container_header .searchBar{
+    width: 100%;
+    margin-top: 15px;
+    max-width: 800px;
+    background-color: #1a2238ed;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 10px;
+    height: 50px;
+    backdrop-filter: blur(5px) saturate(180%);
+  }
+
+  .container_header .searchBar input{
+    background:transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    color:white;
+    font-size: 18px;
+  }
+
+  .container_header .searchBar input::placeholder{
+    color: white;
+    text-size-adjust: 40px;
+  }
+
+  .container_header .searchBar .searchIcon{
+    border: 0;
+    border-radius: 50%;
+    width:45px;
+    height:45px;
+    background:transparent;
+    font-size: large;
+  }
+
+  .container_header .searchBar .searchIcon i{
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .container_header .searchBar:focus-within {
+    border-color: white;
+    box-shadow: 0px 0px 15px black;
+      width: 100%;
+       
+    }
+  
+
   #contributors_container {
     padding: 30px;
     display: flex;
@@ -332,7 +389,7 @@ body{
   .footer-col ul li {
     display: inline-block;
     text-align: left;
-    padding: 0px 50px;
+    padding: 0px 50px 0 0;
     padding-top: 10px;
     
   }
@@ -370,6 +427,46 @@ body{
     padding-top: 6px;
     border:none;
   } */
+
+  #topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #topBtn a:hover {
+    background: #F0FFC2;
+    transform-origin: center center;
+  }
+  
+  #topBtn a span:hover {
+    background: #ca995d;
+    color: #362706;
+    transform-origin: center center;
+  }
+  
+  #topBtn a {
+    display: block;
+    text-align: center;
+    height: 40px;
+    width: 38px;
+    background: #9D5C0D;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  #topBtn a span {
+    color: #EEEEEE;
+    width: 38px;
+    border-radius: 15px;
+    line-height: 39px;
+    text-decoration: none;
+    font-size: 32px;
+  }
   .icons ul {
     display: flex;
     margin: 0;

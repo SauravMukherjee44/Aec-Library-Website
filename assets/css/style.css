@@ -2,7 +2,9 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
+	font-family: 'Baloo 2', cursive;
+
+} 
 
 html,
 body {
@@ -74,12 +76,20 @@ nav.navbar {
 
 #table h1 {
 	color: white;
+	text-decoration: none;
+	border-bottom: 4px solid white;
+}
+#table .heading{
+	display: flex;
+	justify-content: center;
 }
 
 #books-content {
 	padding: 10px;
 	background-color: white;
 }
+
+
 .dataTables_wrapper .dataTables_filter input {
 	border: 1px solid #aaa;
 	border-radius: 3px;
@@ -194,11 +204,27 @@ label[for="category"] {
 }
 /* Authors */
 .form-check-input1 {
-	border-radius: 20px;
-	margin-top: 10px;
-	padding: 5px;
-	width: 25%;
-	cursor: pointer;
+  width: 95%;
+  padding: 15px;
+  margin-left: 16px;
+  border-radius: 10px;
+  outline: none;
+  height: 57px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding-right: 40px; /* Adjust the padding to accommodate the icon */
+}
+
+.form-check-input1:hover,
+.form-check-input1:focus {
+  background-color: #f2f2f2;
+  border-color: #aaa;
 }
 
 label[for="Author"] {
@@ -222,6 +248,7 @@ label[for="dateIssue"] {
 		padding-right: 0px !important;
 	}
 }
+
 
 .navbar-light .navbar-nav .nav-link {
 	color: rgb(255 255 255 / 50%);
@@ -422,7 +449,7 @@ html {
 }
 /* footer */
 footer {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	background-color: rgb(52, 58, 64);
 	color: white;
@@ -456,19 +483,40 @@ footer p {
 .icons ul li a {
 	display: block;
 	position: relative;
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 	background-color: #fff;
 	text-align: center;
-	line-height: 20px;
-	font-size: 15px;
+	line-height: 30px;
 	margin: 0 0 0 20px;
 	border-radius: 50%;
 	overflow: hidden;
 	z-index: 1;
-	border: 3px solid #fff;
+	/* border: 3px solid #fff; */
+
+	/* added by ePSA-eJya */
+	color: #ababab;
+	text-decoration: none;
+	font-size: 20px;
+	flex-basis: 35%;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: inline-block;
+	transition: transform 0.5s;
 }
 
+/* added by ePSA-eJya */
+.icons ul li a:hover{
+	border: 1px solid #cfcccc;
+  
+	color: #f05011;
+	  transform: translateY(-6px);
+	  transform: scale(1.5);
+	  text-decoration: none;
+	  font-size: 20px;
+	  margin-left: 20px;
+  
+  }
 .icons ul li a .icon {
 	position: relative;
 	color: #262626;
@@ -488,7 +536,7 @@ footer p {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #55acee;
+	background: #00acee;
 	transition: 0.5s;
 	z-index: 2;
 }
@@ -496,6 +544,11 @@ footer p {
 .icons ul li a:hover:before {
 	top: 0;
 }
+
+/* added by ePSA-eJya */
+.icons ul li:nth-child(1) a:before {
+    background: #0A66C2;
+  }
 
 .icons ul li:nth-child(2) a:before {
 	background: black;
@@ -2009,7 +2062,7 @@ input[type="radio"] {
 
 .new-nav li {
 	font-family: sans-serif;
-	margin: 10px 25px;
+	margin: 10px 18px;
 	list-style-type: none;
 }
 
@@ -2028,7 +2081,7 @@ input[type="radio"] {
 }
 
 .contain {
-  height: 355px;
+  height: 100%;
   width: 80%;
   color: white;
   margin-top: 21px;
@@ -2041,7 +2094,7 @@ input[type="radio"] {
 }
 
 .contain:hover {
-	transform: scale(1.1);
+	transform: scale(1.03);
 }
 .contain div {
 	font-family: "Source Sans Pro", sans-serif;
@@ -2070,7 +2123,7 @@ input[type="radio"] {
 
 #searchForm {
 	display: inline-block;
-	border: 1px solid grey;
+	border: 2px solid grey;
 	border-radius: 12px;
 	margin-left: 30px;
 	align-items: center;
@@ -2136,24 +2189,31 @@ input[type="radio"] {
 }
 
 #myUL li a {
-  border: 1px solid #ddd;
-  border-radius: 25px;
-  margin-top: -1px;
-
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
+	border: 1px solid #ddd;
+	border-radius: 25px;
+	margin-top: -1px;
+	background-color: #f6f6f6;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #000;
+	display: block;
+	background-color: #cda867;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #myUL li a:hover:not(.header) {
+	background-color: #dfc18d;
+  }
+  
 .search-heading{
   padding:0  !important;
+  border-bottom: 3px solid white;
+  margin: 0px auto 20px;
+  width: fit-content;
 }
+
 
 /* ----------------------- */
 .col-sm-10 input,
@@ -2234,6 +2294,49 @@ select {
   background: rgba(0,0,0,0.5);*/
 	border-radius: 5%;
 }
+
+
+#libraryForm .form-group.row small
+{
+  visibility: hidden;
+}
+
+#libraryForm .form-group.row.success .col input
+{
+	border-color: #2ecc71;
+	border-width: thick;
+}
+#libraryForm .form-group.row.success .col select
+{
+	border-bottom-color: #2ecc71;
+	border-width: thick;
+	padding-bottom: 0px;
+	padding-top: 2px;
+
+}
+#libraryForm .form-group.row.error .col input
+{
+	border-color: #e74c3c;
+	border-width: thick;
+}
+#libraryForm .form-group.row.error .col select
+{
+	border-bottom-color: #e74c3c;
+	border-width: thick;
+	padding-bottom: 0px;
+	padding-top: 2px;
+}
+#libraryForm .form-group.row.error small{
+	color:#ff1c04;
+	visibility: visible;
+	padding-left: 33px;
+	font-size: large;
+	font-weight: bolder;
+	margin-top: -15px;
+
+  }
+  
+
 .hero-right {
 	width: 100%;
 	padding-left: 55px;
@@ -2313,25 +2416,35 @@ select {
 	}
 }
 
+
+/* Scrollbar Track */
 ::-webkit-scrollbar {
 	width: 10px;
+  }
+  
+  /* Scrollbar Track Background */
+  ::-webkit-scrollbar-track {
 	background: linear-gradient(to top, #008aff, #00ffe7);
-	animation: animate 5s linear infinite;
-}
+  }
+  
+  /* Scrollbar Thumb */
+  ::-webkit-scrollbar-thumb {
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	border-radius: 10px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Scrollbar Thumb on Hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(to top, #0065bd, #2df3df);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
 
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to top, #008aff, #00ffe7);
-	animation: animate 5s linear infinite;
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    border: solid 2px rgb(41, 2, 10);
-}
 
 .nav-item a {
-	padding: 10px 10px 15px;
+	padding: 10px 15px;
+	border-radius: 10px;
 }
 
 .nav-item i:hover {
@@ -2348,6 +2461,7 @@ select {
 .nav-item a {
 	text-decoration: none;
 }
+
 .faq-heading {
 	text-align: center;
 	padding: 10px 60px;
@@ -2415,6 +2529,16 @@ select {
 	padding: 0;
 }
 
+
+
+@media only screen and (min-width: 1200px) {	
+	.new-nav li {
+	  margin: 10px 14px;
+    }
+
+}
+
+
 @media only screen and (max-width: 1000px) {
 	.contain{
 		margin-left: 0px !important; 
@@ -2454,6 +2578,7 @@ select {
 		width: 60%;
 		height: 70%;
 	}
+
 }
 
 @media only screen and (max-width: 800px) {

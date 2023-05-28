@@ -4,6 +4,51 @@
   margin: 0;
 }
 
+/*To apply the navigation bar on the resource page*/
+.topnav {
+  background-color: #5C4033;
+  overflow: auto;
+  margin:0;
+  width: 100%;
+  top:0;
+  left:0;
+  position:absolute;
+}
+.topnav i {
+  margin-right: 5px; /* Add space between icon and text */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 17px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  width:13%;
+}
+.logo-img {
+  margin-left: 40px;
+  /* Width and height same to make icon look more professional */
+  height: 2rem;
+  width: 2rem;
+}
+.logo-img a:hover{
+  background-color:#5C4033 ;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #966919;
+  text-decoration:none;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
 
 /* To enhance scroll-bar  */
 .grid-container {
@@ -1032,10 +1077,51 @@ footer .content .lower .topic a {
   font-style: inherit;
 }
 
+/* added by ePSA-eJya */
+
 footer .content .lower i {
-  padding-right: 16px;
+  padding-right: 20px;
+  font-size: 45px;
 }
 
+footer .content .lower .email a{
+  display: flex;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background-color: #111111;
+    text-align: center;
+    line-height: 45px;
+    font-size: 15px;
+    margin: 0 0 0 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 3;
+    /* border: 1px solid #fff; */
+    text-decoration: none;
+    color: #f05011;
+	text-decoration: none;
+	font-size: 30px;
+	flex-basis: 35%;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: inline-block;
+	transition: transform 0.5s;
+}
+
+footer .content .lower .email a:hover{
+  
+
+  /* added by ePSA-eJya */
+  color: #f05011;
+	transform: translateY(-6px);
+	transform: scale(1.5);
+	text-decoration: none;
+	font-size: 30px;
+	margin-left: 20px;
+}
 
 footer .content .middle {
   padding-left: 50px;
@@ -1110,7 +1196,7 @@ footer .content .right .btn{
 ul {
     position:absolute;
     top:70%;
-    left:60%;
+    left: 52%;
     transform:translate(-70%, -60%);
     display:flex;
     margin:0;
@@ -1153,6 +1239,17 @@ ul {
     transform: rotate(-30deg) skew(25deg) translate(0,0);
     transition:.5s;
     box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+
+
+    /* added by ePSA-eJya */
+	color: #ababab;
+	text-decoration: none;
+	font-size: 18px;
+	flex-basis: 35%;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: inline-block;
+	transition: transform 0.5s;
   }
   ul li a:before {
     content: '';
@@ -1177,9 +1274,23 @@ ul {
     transform: rotate(0deg) skewX(-45deg);
   }
   
+  .icons ul li a:hover{
+    border: 3px solid #cfcccc;
+    
+    /* added by ePSA-eJya */
+    color: #f05011;
+      transform: translateY(-6px);
+      transform: scale(1.5);
+      text-decoration: none;
+      font-size: 15px;
+      margin-left: 20px;
+    
+    }
   ul li a:hover {
     transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
     box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+
+    
   }
   
   ul li:hover .fa {
@@ -1194,6 +1305,7 @@ ul {
   .contact{
     background: linear-gradient(to right,coral,orange);
   }
+  
   
   ul li:hover:nth-child(1) a{
     background: #3b5998;
@@ -1261,7 +1373,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #eb2f06;
+  color: white;
 }
 
 .social-icons a {
@@ -1269,7 +1381,7 @@ footer a:hover {
 }
 
 .social-container a {
-  border: 1px solid #dddddd;
+  /* border: 1px solid #dddddd; */
   border-radius: 50%;
   display: inline-flex;
   justify-content: center;
@@ -1279,6 +1391,58 @@ footer a:hover {
   width: 40px;
 }
 
+/* added by ePSA-eJya */
+.social-container ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-container ul a {
+  
+  display: flex;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #111111;
+  /* 161819 */
+  text-align: center;
+  line-height: 45px;
+  font-size: 15px;
+  margin: 0 0 0 20px;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  z-index: 1;
+  /* border: 1px solid #fff; */
+  text-decoration: none;
+
+  color: #f05011;
+  /* color: #ababab; */
+text-decoration: none;
+font-size: 30px;
+flex-basis: 35%;
+margin-left: 20px;
+margin-top: 20px;
+display: inline-block;
+transition: transform 0.5s;
+
+}
+.social-container ul a:hover{
+  /* border: 3px solid #cfcccc; */
+ 
+  /* color: #f05011; */
+	transform: translateY(-6px);
+	transform: scale(1.5);
+	text-decoration: none;
+	font-size: 30px;
+	margin-left: 20px;
+
+}
+/* .social-container ul li:nth-child(1) a:before {
+  color: #e74a79;
+} */
 
 @media (max-width: 1100px) {
   footer .content .middle {
@@ -1290,7 +1454,9 @@ footer a:hover {
   footer .content .box {
     width: 50%;
   }
-
+  ul{
+    top:57%
+  }
   .content .right {
     margin-top: 40px;
   }
@@ -1300,7 +1466,13 @@ footer a:hover {
   footer {
     position: relative;
   }
-
+  ul{
+    left:60%;
+    top:67%;
+  }
+  .emoji{
+    display: none;
+  }
   footer .content .box {
     width: 100%;
     margin-top: 30px;

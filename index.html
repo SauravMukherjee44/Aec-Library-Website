@@ -54,7 +54,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
   </style>
   <link rel="stylesheet" href="./assets/css/style.css" />
-
+  
   <!-- Title bar icon -->
   <link rel="icon" href="./assets/logos/finalLogo.png" type="image/x-icon">
 
@@ -70,6 +70,10 @@
   <!--data table-->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
   <script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Merriweather:wght@300&display=swap" rel="stylesheet">
 
   <!-- Audiobook css -->
   <link rel="stylesheet" href="assets/css/audiobook.css">
@@ -174,15 +178,15 @@
     <!-- hamburger menu -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- navbar items -->
-      <ul class="ms-auto">
+      <ul class="ms-auto" style="padding-top: 1px;">
 
         <li class="nav-item"><a href="index.html" onclick="return false;"><i class="fas fa-home"></i>HOME</a></li>
-        <li class="nav-item"><a href="about.html"><i class="fas fa-book"></i>ABOUT</a></li>
-        <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
-        <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
-        <li class="nav-item"><a href="./blogs.html"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
-        <li class="nav-item"><a href="./public/contact us .html"><i class="fas fa-address-book"></i>CONTACT US</a></li>
-        <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;"
+        <li class="nav-item"><a href="about.html" target="_blank"><i class="fas fa-book"></i>ABOUT</a></li>
+        <li class="nav-item"><a href="./public/donate-book.html" target="_blank"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
+        <li class="nav-item"><a href="resource.html" target="_blank"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
+        <li class="nav-item"><a href="./blogs.html" target="_blank"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
+        <li class="nav-item"><a href="./public/contact us .html" target="_blank"><i class="fas fa-address-book"></i>CONTACT US</a></li>
+        <li class="nav-item"><a href="contributors.html" target="_blank"><i style="font-size: 21px;"
               class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
 
       </ul>
@@ -213,7 +217,7 @@
           <span>Play Quiz to Enhance Yourself</span>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="location='/Quiz/pages/game.html'" class="btn btn-primary">Let's Go</button>
+          <button type="button" onclick="location='./Quiz/pages/game.html'" class="btn btn-primary">Let's Go</button>
         </div>
       </div>
     </div>
@@ -229,19 +233,21 @@
 
 
 
-      <form id="libraryForm">
+      <form id="libraryForm" class="libraryForm" action="#" method="post">
         <div class="form-group row">
           <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
           <label for="dateIssue" class="issue"><span>Date of Issue</span></label>
           <div class="col">
             <input type="date" id="issueDate" name="issueDate" onkeydown="return false;">
           </div>
+          <small class="small"></small>
         </div>
         <div class="form-group row">
           <label for="bookName" class="col col-form-label"> <strong>Name</strong></label>
           <div class="col">
-            <input type="text" class="input-box" id="bookName" placeholder="Book Name" />
+            <input type="text" class="input-box" id="bookName" placeholder="Book Name"/>
           </div>
+          <small class="small"></small>
         </div>
         <div class="form-group row">
           <label for="Author" class="col col-form-label"> <strong>Author</strong></label>
@@ -273,8 +279,10 @@
             </select>
             <input type="text" class="input-box" id="other_author" name="other_author" placeholder="Enter Author"
               style='display:none;' />
-          </div>
 
+              
+          </div>
+          <small class="small"></small>
         </div>
         <div class="form-group row">
           <label for="Author" class="col col-form-label"> <strong>Category</strong></label>
@@ -313,18 +321,21 @@
               <option value="True Crime">True Crime</option>
             </select>
           </div>
+          <small class="small"></small>
         </div>
 
         <div class="form-group row">
-          <div class="col">
-            <button type="submit" class="btn btn-primary" id="addBook">Add Book</button>
+          <div class="col d-flex justify-content-center">
+            <button type="submit" onclick="validateIssue()"" class="btn btn-primary" id="addBook">Add Book</button>
           </div>
         </div>
       </form>
     </div>
     <div class="hero-right">
       <div id="table">
-        <h1>Your Books</h1>
+        <div class="heading mb-3">
+          <h1>Your Books</h1>
+        </div>
         <div style="overflow-x:auto;" id="books-content">
           <table class="table table-striped" id="mytable" style="cursor: default">
             <thead>
@@ -347,15 +358,15 @@
       <div class="contain">
         <!-- <div class="line"><b id="bold"> Choose and read books </b><br>from your comfort zone </div> -->
         <div id="search">
-          <form id="searchForm" class="form-inline my-2 my-lg-0">
+          <form id="searchForm" class="form-inline my-2 my-lg-0 p-3">
             <!-- <button class="btn btn-dark my-2 my-sm-0">Keyword</button>
             <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search for a book"
               aria-label="Search" name="search" style="border: none;" onkeyup="searchbooks()" />
             <button class="btn btn-dark my-2 my-sm-0" id="searchsymbol" type="submit">
               &#128269;
             </button>  -->
-            <h2 class="search-heading">Choose and read books</h2>
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
+            <h2 class="search-heading ">Choose and read books</h2>
+            <input type="text" id="myInput" class="form-check-input1 mx-auto" onkeyup="myFunction()" placeholder="Search for names.."
               title="Type in a name">
             <ul id="myUL">
               <li><a href="./Notes/physicselectricitynotes.pdf" target="_blank">Current Electricity Problem book</a>
@@ -623,7 +634,7 @@
     <section class="photo"><img src="images/8.png" alt=""><img src="images/17.png.png" alt=""></section>
     <section class="donate">
       <div class="text"><b>Resources</b>
-        <br>get an exclusive access to all <br>the materials available in our <br>environment which help you
+        <br>Get exclusive access to all <br>the materials available in our <br>environment which will help you
         <br>to satisfy your needs and wants
       </div>
       <div>
@@ -654,7 +665,7 @@
       <div class="desc-carousel">
         <div class="inner">
           <div class="desc">
-            <h1>Books are the most Truste Friends you'll ever have.</h1>
+            <h1>Books are the most Trusted Friends you'll ever have.</h1>
             <p> And books can be our best friends for life, for all the right reasons. Good books enrich our mind and
               broaden our perspective towards life.</p>
           </div>
@@ -708,7 +719,7 @@
       </div>
       <div class="info">
         <p>Machine Learning is the field of study that gives computers the capability to learn without being explicitly
-          programmed. ML is one of the most exciting technologies that one would have ever come across.</p>
+          programmed. ML is one of the most exciting technologies that one would ever come across.</p>
       </div>
       <a href="https://www.simplilearn.com/tutorials/machine-learning-tutorial/what-is-machine-learning" target="_blank"
         class="read-more"> Read more<span><i class="bot-arrow bi bi-arrow-right"></i></span></a>
@@ -850,7 +861,7 @@
       <h3 class="faq-page">Q: What is AEC Library?</h3>
       <!-- faq answer -->
       <div class="faq-body">
-        <p>This is an Open-Source Library Website in which you get Resources to learn different topics, Donate book
+        <p>This is an Open-Source Library Website that contains a Resources section to learn different topics, Donate book
           section to donate your old books, and a Book issue section to keep a record of all the books issued. </p>
       </div>
     </div>
@@ -862,7 +873,7 @@
       <!-- faq answer -->
       <div class="faq-body">
         <p>The best part about the website is that you can also contribute to the website for others to use the
-          resourses by donating the books you have , all categories of books are welcomed for donation.</p>
+          resourses by donating the books you have. All categories of books are welcomed for donation.</p>
       </div>
     </div>
     <div class="faq-three" data-aos="fade">
@@ -870,7 +881,7 @@
       <h3 class="faq-page">Q: How to become a member? </h3>
       <!-- faq answer -->
       <div class="faq-body">
-        <p>By donating any book of your choice you can become a member of the AEC Library.</p>
+        <p>By donating any book of your choice, you can become a member of the AEC Library.</p>
       </div>
     </div>
     <div class="faq-four" data-aos="fade">
@@ -887,7 +898,7 @@
       <!-- faq answer -->
       <div class="faq-body">
         <p>No worries! Click on the "Forgot your Password?" link. An email containing the instructions to reset your
-          password will be sent to your registered email address</p>
+          password will be sent to your registered email address.</p>
       </div>
     </div>
     <div class="faq-six" data-aos="fade">
@@ -910,18 +921,18 @@
     </div>
     <div class="faq-five" data-aos="fade">
       <!-- faq question -->
-      <h1 class="faq-page">Q: What is the benefits of an account in Aec-Library ? </h1>
+      <h1 class="faq-page">Q: What are the benefits of an account in Aec-Library? </h1>
       <!-- faq answer -->
       <div class="faq-body">
         <p>
         <ol>
           <li>Contribute to Aec-library :
-            Aec-library is a community initiative to build a robust book catalog.Anyone can add or edit data about books
+            Aec-library is a community initiative to build a robust book catalog. Anyone can add or edit data about books
             and blogs.
           </li>
           <li>
             Personalize your experience :
-            We are always adding new features to our site so you can make your experience more personal .
+            We are always adding new features to our site so you can make your experience more personal.
           </li>
         </ol>
         </p>
@@ -932,18 +943,18 @@
       <h1 class="faq-page">Q: How can I find a book here? </h1>
       <!-- faq answer -->
       <div class="faq-body">
-        <p>Go to the "Choose and read books" section and search the book you are looking for .</p>
+        <p>Go to the "Choose and read books" section and search the book you are looking for.</p>
       </div>
     </div>
     <div class="faq-seven" data-aos="fade">
       <!-- faq question -->
 
-      <h1 class="faq-page">Q: I haven't found a book but it's not readable format ? Is something wrong ? </h1>
+      <h1 class="faq-page">Q: I haven't found a book but it's not readable format? Is something wrong? </h1>
 
       <!-- faq answer -->
       <div class="faq-body">
         <p>This is not supposed to happen but if it happens please leave a message on our "Contact us" section. We will
-          definitely look in it. </p>
+          definitely look into it. </p>
       </div>
     </div>
     <div class="faq-eight" data-aos="fade">
@@ -951,8 +962,8 @@
       <h1 class="faq-page">Q: How can I download a book? </h1>
       <!-- faq answer -->
       <div class="faq-body">
-        <p>Go to our "Recommended Book" section. Choose the book which you want to download then click on the "Download
-          as pdf".
+        <p>Go to our "Recommended Book" section. Choose the book you want to download then click on the "Download
+          as pdf" button.
           Happy reading :)</p>
       </div>
     </div>
@@ -966,10 +977,10 @@
     </div>
     <div class="faq-ten" data-aos="fade">
       <!-- faq question -->
-      <h1 class="faq-page">Q: How can I access in Online library? </h1>
+      <h1 class="faq-page">Q: How can I access the Online library? </h1>
       <!-- faq answer -->
       <div class="faq-body">
-        <p>Go to our "Resources" section.Click on the "All resources". You can find out in our environment all recources
+        <p>Go to our "Resources" section. Click on the "All resources" button. You can find in our environment all recources
           to satisfy your need. </p>
       </div>
     </div>
@@ -1256,7 +1267,85 @@
     issueDate.max = new Date().toISOString().split("T")[0];
   </script>
 
+<!--issue form validation-->
+  <script>
 
+    const issueform = document.getElementById('libraryForm');
+    const issuedate = document.getElementById('issueDate');
+    const bookname = document.getElementById('bookName');
+    const author = document.getElementById('author');
+    const category = document.getElementById('category');
+    
+    function validateIssue(){
+
+      console.log("called");
+      if(checkInputs())
+      return true;
+      else
+      return false;
+
+    }
+
+    function checkInputs()
+    {
+         //get values from input fields
+         const issuedateval = issuedate.value.trim();
+         const bookval = bookname.value.trim();
+         const authorval = author.value.trim();
+         const categoryval = category.value.trim();
+    
+         if(issuedateval === '')
+         { setErrorFor(issuedate,'Please select a issue date');}
+         else
+         { setSuccessFor(issuedate);}
+
+         if(bookval === '')
+         { setErrorFor(bookname,'Please enter a book name');}
+         else
+         { setSuccessFor(bookname);}
+ 
+          if(authorval == ""){
+          setErrorFor(author,"Please select book author");
+          }else{
+          setSuccessFor(author);
+        }
+
+        if(categoryval == ""){
+          setErrorFor(category,"Please select book category");
+          }else{
+          setSuccessFor(category);
+        }
+    
+         
+         if(issuedateval!='' &&  bookval !== '' && authorval !== '' && categoryval != '') 
+         { 
+           return true; 
+          }
+        
+    }
+    
+    function setErrorFor(input,showerror)
+    {
+      let formControl = input.parentElement.parentElement;
+     // console.log(formControl);
+
+      const small = formControl.querySelector('small');
+      small.innerText = showerror;
+
+      formControl.classList.remove('success');
+      formControl.classList.add('error');
+      //console.log(showerror);
+ 
+    }
+
+    function setSuccessFor(input)
+    {
+      let formControl = input.parentElement.parentElement;
+      formControl.classList.remove('error');
+      formControl.classList.add('success');
+    }
+
+  </script>
 </body>
 
 
