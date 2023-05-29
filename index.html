@@ -70,6 +70,10 @@
   <!--data table-->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
   <script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Merriweather:wght@300&display=swap" rel="stylesheet">
 
   <!-- Audiobook css -->
   <link rel="stylesheet" href="assets/css/audiobook.css">
@@ -174,7 +178,7 @@
     <!-- hamburger menu -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- navbar items -->
-      <ul class="ms-auto">
+      <ul class="ms-auto" style="padding-top: 1px;">
 
         <li class="nav-item"><a href="index.html" onclick="return false;"><i class="fas fa-home"></i>HOME</a></li>
         <li class="nav-item"><a href="about.html" target="_blank"><i class="fas fa-book"></i>ABOUT</a></li>
@@ -321,15 +325,18 @@
 
         <div class="form-group row">
 
-          <div class="col">
-            <button type="submit" onclick="validateIssue()"" class="btn btn-primary add-Book" id="addBook">Add Book</button>
+          <div class="col d-flex justify-content-center">
+            <button type="submit" onclick="validateIssue()" class="btn btn-primary add-Book" id="addBook">Add Book</button>
+
           </div>
         </div>
       </form>
     </div>
     <div class="hero-right">
       <div id="table">
-        <h1>Your Books</h1>
+        <div class="heading mb-3">
+          <h1>Your Books</h1>
+        </div>
         <div style="overflow-x:auto;" id="books-content">
           <table class="table table-striped" id="mytable" style="cursor: default">
             <thead> 
@@ -352,15 +359,17 @@
       <div class="contain">
         <!-- <div class="line"><b id="bold"> Choose and read books </b><br>from your comfort zone </div> -->
         <div id="search">
-          <form id="searchForm" class="form-inline my-2 my-lg-0">
+          <form id="searchForm" class="form-inline my-2 my-lg-0 p-3">
             <!-- <button class="btn btn-dark my-2 my-sm-0">Keyword</button>
             <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search for a book"
               aria-label="Search" name="search" style="border: none;" onkeyup="searchbooks()" />
             <button class="btn btn-dark my-2 my-sm-0" id="searchsymbol" type="submit">
               &#128269;
             </button>  -->
+
             <h1 class="search-heading">Read Books</h2>
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
+
               title="Type in a name">
             <ul id="myUL">
               <li><a href="./Notes/physicselectricitynotes.pdf" target="_blank">Current Electricity Problem book</a>
@@ -517,27 +526,27 @@
 
 
       <div data-aos="fade-up">
-        <br>
-        <h1>Recommended books</h1>
+
+        <h1 class="bheads">Recommended books</h1>
         <br>
         <p>Read some books on HTML, CSS and JavaScript for free using the Library</p>
-
-        <div class="books1" id="recommended_books" data-aos="fade"></div>
+        <div class="books1 " id="recommended_books" data-aos="fade"></div>
         <script src="./recommended_books.js"></script>
 
         <div data-aos="fade-down">
           <br>
           <center>
+
             <hr>
             <br>
-            <h1 class="audiobooks-heading">Listen to Audiobooks</h1>
+            <h1 class="bheads audiobooks-heading">Listen to Audiobooks</h1>
           </center>
-          <div class="books1" data-aos="fade">
+          <div class="books1 abborder " data-aos="fade">
             <link rel="stylesheet" href="assets/css/audiobook.css">
             <script src="assets/js/audiobook.js"></script>
 
-            <!-- Book 1 -->
-            <div class="books-audios">
+            <div class="faddy books-audios">
+              <!-- Book 1 -->
               <a href="https://www.audible.in/pd/Python-Computer-Programming-for-Beginners-Step-by-Step-Audiobook/B089HJ4KQF?qid=1643917101&sr=1-1&ref=a_search_c3_lProduct_1_1&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=2A4794TMRTZFE4TBBDMR"
                 target="_blank">
                 <img src="https://m.media-amazon.com/images/I/51qDbDDGT7L._SL500_.jpg">
@@ -550,12 +559,13 @@
               </audio>
             </div>
 
-            <!-- Book 2 -->
-            <div class="books-audios">
+
+
+            <div class="faddy books-audios">
+              <!-- Book 2 -->
               <a href="https://www.audible.in/pd/Computer-Networking-Audiobook/B07NPZL5VQ?qid=1643917101&sr=1-2&ref=a_search_c3_lProduct_1_2&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=2A4794TMRTZFE4TBBDMR"
                 target="_blank">
                 <img src="https://m.media-amazon.com/images/I/51vpG4hU6FL._SL500_.jpg">
-
               </a>
               <div class="sound">
                 <img src="media/play.png" id="nyan-btn">
@@ -565,8 +575,9 @@
               </audio>
             </div>
 
-            <!-- Book 3 -->
-            <div class="books-audios">
+
+            <div class="faddy books-audios">
+              <!-- Book 3 -->
               <a href="https://www.audible.in/pd/Computer-Programming-The-Bible-Audiobook/B07MNV3JY9?qid=1643917101&sr=1-7&ref=a_search_c3_lProduct_1_7&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=2A4794TMRTZFE4TBBDMR"
                 target="_blank">
                 <img src="https://m.media-amazon.com/images/I/51hVSO2ONDL._SL500_.jpg" target="_blank">
@@ -579,8 +590,10 @@
               </audio>
             </div>
 
-            <!-- Book 4 -->
-             <div class="books-audios">
+
+
+            <div class="faddy books-audios" >
+              <!-- Book 4 -->
               <a href="https://www.audible.in/pd/Computer-Programming-and-Cyber-Security-for-Beginners-Audiobook/B0862GMM48?qid=1643917584&sr=1-3&ref=a_search_c3_lProduct_1_3&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=J0S3TXBQ6VERVE765ER4"
                 target="_blank">
                 <img src="https://m.media-amazon.com/images/I/511KH-QzPeL._SL500_.jpg">

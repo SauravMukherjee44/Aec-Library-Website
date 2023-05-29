@@ -7,8 +7,8 @@ fetch(url)
 {
   console.log(data)
   for(let i=0; i<data.length; i++){
-    booksList+= `<div>
-          <img src="${data[i].img}" alt="book ${data[i].id} class="sizing-img">
+    booksList+= `<div class="bborder">
+          <img src="${data[i].img}" alt="book ${data[i].id}">
           <a href="${data[i].url}" target="_blank">
             <button class="btn btn-default" id="btn-download">
               Download as pdf
