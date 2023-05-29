@@ -2397,7 +2397,7 @@ select {
 
 .faq-link-inner {
 	font-style: italic;
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 }
 
 .faq-link-inner:hover {
