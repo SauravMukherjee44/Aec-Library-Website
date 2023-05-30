@@ -27,6 +27,25 @@ LoginForm.addEventListener('submit', (e) => {
   })
 });
 
+const form = document.getElementById("form");
+const submitButton = document.getElementById("submitButton");
+const messageContainer = document.getElementById("messageContainer");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  
+  messageContainer.style.display = "block"; // Show the message container
+
+  // Redirect to the main page (index.html) after 3 seconds
+  setTimeout(function () {
+    window.location.replace("/index.html");
+
+  }, 2000);
+});
+
+
+
+
 // const session = _supabase.auth.session();
 // console.log(session);
 
