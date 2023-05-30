@@ -110,9 +110,9 @@ nav.navbar {
 	background: #424136;
 	border-color: #8f8b63;
 	text-decoration: none;
-  }
 	border-bottom: 4px solid white;
 }
+
 #table .heading{
 	display: flex;
 	justify-content: center;
@@ -2231,7 +2231,7 @@ input[type="radio"] {
   }
   
 .search-heading{
-  padding:0  !important;
+  padding:2px 12px  !important;
   border-bottom: 3px solid white;
   margin: 0px auto 20px;
   width: fit-content;
