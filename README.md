@@ -1,10 +1,10 @@
-<h1 align="center">Open-Source Library Website </h1>
+<h1 align="center"> Aec-Library-Website 📊</h1>
+ 
+<h2 align="center">
 
 
-<p align="center">
-<img width="100%" src="https://github.com/SauravMukherjee44/CodeIN-Community-Website/raw/main/assets/img/hack.jpg" alt="main page">
-</p>
-<h1 align="center">HacktoberFest Accepted </h1>
+
+
 
 AEC-Library is an Open-Source library website that will help people in need of books. It has the following categories:
 
