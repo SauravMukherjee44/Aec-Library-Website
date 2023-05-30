@@ -77,33 +77,42 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <div class="user-box">
           <input class="form__input form-control" type="text" id="name" name="" required="">
           <label>Name of Donated Book</label>
+          <small class="small"></small>
         </div>
         <div class="user-box">
-          <input class="form__input form-control" type="email" id="email" name="" required="">
+          <input class="form__input form-control" type="text" id="email" name="" required="">
           <label>Email</label>
+          <small class="small"></small>
         </div>
         <div class="user-box">
           <input class="form__input form-control" type="tel" id="contact" name="" required="" >
           <!--onchange="validate_phone(document.getElementById('contact'))"-->
           <label>Contact Number</label>
+          <small class="small"></small>
         </div>
 
         <div class="user-box">
+          <label>Address</label><br><br>
           <textarea  rows="4" class="form__input form-control" type="text" name="" id="address" required=""></textarea>
-          <label>Address</label>
+         
+          <small class="small"></small>
         </div>
         
         <div class="user-box">
           <label>Select Country: </label><br><br>
-          <select name="state" class="country form-control" id="countySel" size="1" required="">
+          <select name="state" class="country form-control" id="contrySel" size="1" required="">
            <option value="" selected="selected">Select Country</option>
+           <option value="India">India</option>
           </select>
+          <small class="small"></small>
         </div>
         <div class="user-box">
           <label>Select State: </label><br><br>
           <select name="country" class="state form-control" id="stateSel" size="1" required="">
-          <option value="" selected="selected">Please select Country first</option>
+          <option value="" selected="selected">Please select State</option>
+          <option value="Delhi">Delhi</option>
           </select>
+          <small class="small"></small>
         </div>
         <div class="user-box">
           <label>Select City: </label><br><br>
@@ -117,14 +126,17 @@ tr:nth-child(even) {background-color: #f2f2f2;}
              <option label="AHMEDABAD">AHMEDABAD</option>
              <option label="PATNA">PATNA</option>
          </select>
+         <small class="small"></small>
         </div>
         <div class="user-box">
           <input class="form__input form-control" id="zip" type="text" name="" required="">
           <label>Zip</label>
+          <small class="small"></small>
         </div>
         <div class="user-box">
           <input class="form__input form-control" type="text" name="" required="">
           <label>Landmark (Optional)</label>
+          <small class="small"></small>
         </div>
         <div class="user-box">
           <input class="form__input form-control" id="alt_contact" type="text" name="" required="">
@@ -137,8 +149,9 @@ tr:nth-child(even) {background-color: #f2f2f2;}
             <label class="form-check-label" for="gridCheck">I have read and understood the </label>
             <a class="form-check-label form-check-link" href="terms&conditions.html"> Terms and Conditions</a>
           </p>
+          <small class="small"></small>
         </div>
-        <button class="submit-btn">
+        <button class="submit-btn"  onclick="validateIssue()">
           Submit
         </button>
 
@@ -218,18 +231,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   const _supabase = createClient(supabaseUrl, supabaseAnonKey);
 
   const donatedBook = document.querySelector('.donated_book');
-  function validate_phone(input){
-    var phone = /^\d{10}$/;
-    if(input.value.match(phone)){
-      return true;
-    }
-    /*else{
-      alert("Please enter a valid phone number")
-      return false;
-    }*/
-
-  }
-
+ 
   function reset_form(){
     document.getElementById("donation_form").reset();
 
@@ -292,6 +294,141 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   });
 </script>
 
+
+<script>
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const contact = document.getElementById('contact');
+  const address = document.getElementById('address');
+  const country = document.getElementById('contrySel');
+  const state = document.getElementById('stateSel');
+  const city = document.getElementById('districtSel');
+  const zip = document.getElementById('zip'); 
+  const grid = document.getElementById('gridCheck');
+  
+  function validateIssue(){
+  
+    console.log("called");
+    if(checkInputs())
+    return true;
+    else
+    return false;
+  
+  }
+  
+  function checkInputs()
+  {
+       //get values from input fields
+       const nameval = name.value.trim();
+       const emailval = email.value.trim();
+       const contactval = contact.value.trim();
+       const addressval = address.value.trim();
+       const countryval = country.value.trim();
+       const stateval = state.value.trim();
+       const cityval = city.value.trim();
+       const zipval = zip.value.trim();
+    
+       if(nameval === '')
+       { setErrorFor(name,'Please enter a Book Name');}
+       else
+       { setSuccessFor(name);}
+  
+       if(emailval === '')
+       { setErrorFor(email,'Please enter a E-mail');}
+       else
+       {
+            if(!validEmail(emailval))
+          { setErrorFor(email,'Please enter a valid E-mail');}
+            else
+           { setSuccessFor(email);}
+       }
+
+           if(contactval == ""){
+        setErrorFor(contact,"Please enter a contact no");
+        }else{
+
+          if(!validPhone(contactval))
+          { setErrorFor(contact,'Please enter a valid 10 digit contact no');}
+            else
+           {  setSuccessFor(contact);}
+       
+        }
+      
+  
+      if(addressval == ""){
+        setErrorFor(address,"Please enter address");
+        }else{
+        setSuccessFor(address);
+      }
+  
+      if(countryval == ""){
+        setErrorFor(country,"Please select country");
+        }else{
+        setSuccessFor(country);
+      }
+  
+      if(stateval == ""){
+        setErrorFor(state,"Please select state");
+        }else{
+        setSuccessFor(state);
+      }
+       
+      if(cityval == ""){
+        setErrorFor(city,"Please select city");
+        }else{
+        setSuccessFor(city);
+      }
+       
+  
+      if(zipval == ""){
+        setErrorFor(zip,"Please enter zip");
+        }else{
+        setSuccessFor(zip);
+      }
+  
+   
+       if(nameval!='' && emailval!='' && contactval!='' && addressval!='' &&  countryval !== '' && stateval !== '' && cityval!='' && zipval != '') 
+       { 
+         return true; 
+        }
+      
+  }
+
+  function validEmail(email) {
+  const res = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return res.test(String(email).toLowerCase());
+}
+
+function validPhone(phone)
+{
+  var phoneno = /^\d{10}$/;
+  if((phone.match(phoneno)))
+  return true;
+  else
+  return false;
+}
+  
+  function setErrorFor(input,showerror)
+  {
+    let formControl = input.parentElement;
+   // console.log(formControl);
+  
+    const small = formControl.querySelector('small');
+    small.innerText = showerror;
+  
+    formControl.classList.remove('success');
+    formControl.classList.add('error');
+    //console.log(showerror);
+  
+  }
+  
+  function setSuccessFor(input)
+  {
+    let formControl = input.parentElement;
+    formControl.classList.remove('error');
+    formControl.classList.add('success');
+  }
+  </script>
 
 </body>
  <script src="../assets/js/Donate_Book.js"></script>
