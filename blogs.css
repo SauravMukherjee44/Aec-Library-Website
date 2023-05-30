@@ -38,7 +38,7 @@
 .card-img-top{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 .card-body > h5{
     font-weight: bold;
@@ -51,6 +51,16 @@
   margin:3%;
   border:none;
   background-color: #9D5C0D ;
+}
+@media screen and (max-width: 476px){
+  .card{
+    max-width: 75vw;
+  }
+}
+@media screen and (max-width: 380px){
+  .card{
+    max-width: 70vw;
+  }
 }
 .card-body{
   align-items: center;
