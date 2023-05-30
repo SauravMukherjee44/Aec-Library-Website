@@ -73,5 +73,20 @@
         "id": "15",
         "img": "images/bookimage15.png",
         "url": "https://elibrary.ceiti.md/files/12/CSS3_for_Web_Designers.pdf"
+    },
+    {
+        "id": "16",
+        "img": "images/bookimage16.png",
+        "url": "https://drive.google.com/file/d/1nGiLBDW7hsPi-Kl-BS4XN-K_8tWQWIQf/view?usp=share_link"
+    },
+    {
+        "id": "17",
+        "img": "images/bookimage17.png",
+        "url": "https://drive.google.com/file/d/1hEtTSHc0BYBjgkpgeP2zPZ1Bt7DTTV0M/view?usp=share_link"
+    },
+    {
+        "id": "18",
+        "img": "images/bookimage18.jpg",
+        "url": "https://drive.google.com/file/d/1wOWgrwP2vLmyx8P4irFzEYmsv-lAktrx/view?usp=share_link"
     }
 ]
