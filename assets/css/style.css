@@ -2485,6 +2485,26 @@ select {
 	content: "\2796";
 }
 
+.faq-body p .faq-link:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+
+.faq-link {
+	font-size: 1.34rem;
+}
+
+.faq-link-inner {
+	font-style: italic;
+	transition: 0.3s ease;
+}
+
+.faq-link-inner:hover {
+	color: #777;
+	text-decoration: none;
+}
+
 .nav-item a {
 	text-decoration: none;
 }
