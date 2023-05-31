@@ -397,10 +397,17 @@ section h5 {
   padding-left: 3px;
   padding-right: 3px;
   padding: 4px;
+  transition: 1s ease;
 }
-.iframe:hover {
-  transform: scaleY(1.01);
+
+.iframe:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+
 }
+
 h3.hover-underline-animation {
   margin-top: 0px;
   margin-bottom: 8px;
