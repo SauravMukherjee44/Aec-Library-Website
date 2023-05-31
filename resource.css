@@ -10,7 +10,7 @@
   overflow: auto;
   margin:0;
   width: 100%;
-  top:0;
+  top: -3px;;
   left:0;
   position:absolute;
 }
@@ -117,6 +117,7 @@ header h1 {
   font-family: monospace;
   text-transform: uppercase;
   text-shadow: 0px 0px 12px #fff;
+  padding: 11px;
 }
 
 header {
