@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
 }
-
-
 body {
     width: 100%;
     height: 100vh;
     background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
     background-size: cover;
+    /* opacity: 50%; */
+   
     box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
     z-index: 1;
     font-family: 'Poppins', sans-serif;
@@ -258,7 +258,9 @@ a.nav-link {
 .about-container {
     width: 75%;
     margin: 100px auto 50px auto;
-    background: rgba(73, 46, 13, 0.781);
+    background: rgb(108 87 62 / 78%);
+    box-shadow: rgba(244, 238, 238, 0.3) 0px 19px 38px, rgba(239, 237, 237, 0.22) 0px 15px 12px;
+    /* box-shadow: rgba(252, 249, 249, 0.09) 0px 2px 1px, rgba(227, 225, 225, 0.09) 0px 4px 2px, rgba(180, 180, 180, 0.09) 0px 8px 4px, rgba(142, 141, 141, 0.09) 0px 16px 8px, rgba(90, 89, 89, 0.09) 0px 32px 16px; */
     z-index: 10;
     border-radius: 10px;
 }
@@ -282,7 +284,26 @@ a.nav-link {
     font-weight: 500;
     font-size: 20px;
 }
+ .first{
+  transition: all 2s ease;
+  /* box-shadow: rgba(204, 196, 196, 0.17) 0px -23px 25px 0px inset, rgba(213, 208, 208, 0.15) 0px -36px 30px 0px inset, rgba(222, 220, 220, 0.1) 0px -79px 40px 0px inset, rgba(229, 226, 226, 0.06) 0px 2px 1px, rgba(192, 189, 189, 0.09) 0px 4px 2px, rgba(180, 177, 177, 0.09) 0px 8px 4px, rgba(142, 141, 141, 0.09) 0px 16px 8px, rgba(113, 112, 112, 0.09) 0px 32px 16px; */
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin: 20px;
 
+ }
+ .first:hover{
+  transform: scale(0.8);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+ }
+ .text-white{
+  color: white;
+ }
+ .readm{
+  margin-top: 6px;
+  text-align: center;
+
+ }
 /* Bubble  */
 
 .bubbles img {
