@@ -56,15 +56,30 @@
     <header>
 
         <!--Navigation BAR-->
-        <div class="topnav">
+        
+        <nav class="topnav">
             <a class="navbar-brand ml-4" href="index.html"><img src="assets/logos/finalLogo.png" alt="AEC Library" class="logo-img"></a>
-            <a href="index.html"><i class="fas fa-home"></i>Home</a>
-            <a href="about.html"><i class="fas fa-book"></i>About</a>
-            <a href="public/donate-book.html"><i class="fas fa-book"></i>Donate Books</a>
-            <a href="resource.html"><i class="fas fa-external-link-alt"></i>Resource</a>
-            <a href="Login_page/login_page.html"><i class="fas fa-sign-in-alt"></i>Login</a>
-            <a href="sign-up-page/index.html"><i class="fas fa-sign-in-alt"></i>Signup</a>
-          </div>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="nav__link hide">
+                <a href="index.html"><i class="fas fa-home"></i>Home</a>
+                <a href="about.html"><i class="fas fa-book"></i>About</a>
+                <a href="public/donate-book.html"><i class="fas fa-book"></i>Donate Books</a>
+                <a href="resource.html"><i class="fas fa-external-link-alt"></i>Resource</a>
+                <a href="Login_page/login_page.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+                <a href="sign-up-page/index.html"><i class="fas fa-sign-in-alt"></i>Signup</a>
+            </div>
+        </nav>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLink = document.querySelector('.nav__link');
+            hamburger.addEventListener('click', () => {
+            navLink.classList.toggle('hide');
+            });
+        </script>
       <a href="index.html" class="nav-link"> <h1>AEC Library</h1></a>
       <div class="search-box-container">
         <div class="search-box">
