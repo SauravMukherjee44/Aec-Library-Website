@@ -22,9 +22,10 @@ body {
   color: #fff;
 }
 .header{
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
+  margin: 20px;
 }
 .login_form{
   display: grid;
@@ -105,12 +106,12 @@ button {
   color: #fff;
   text-align: center;
   font-size: 32px;
-  padding: 16px;
+  padding: inherit;
   width: 150px;
   height: 40px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 36px;
+  margin: 20px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 
 }
@@ -145,11 +146,11 @@ button:hover:after {
 
 .quiz-exit {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 1rem;
-  margin: 2rem;
-  width: 36px;
-  height: 36px;
+  margin: 10px;
+  width: 32px;
+  height: 32px;
   background-color: white;
   padding: 0.5rem;
   border-radius: 50%;
@@ -183,7 +184,11 @@ a {
   }
 
   .login_form {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 35px;
+    padding: 20px;
   }
   .button{
     display: flex;
@@ -198,7 +203,7 @@ a {
   .quiz-exit {
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0;
   }
 }
 
