@@ -54,7 +54,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
   </style>
   <link rel="stylesheet" href="./assets/css/style.css" />
-  
+
   <!-- Title bar icon -->
   <link rel="icon" href="./assets/logos/finalLogo.png" type="image/x-icon">
 
@@ -70,10 +70,11 @@
   <!--data table-->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
   <script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Merriweather:wght@300&display=swap"
+    rel="stylesheet">
 
   <!-- Audiobook css -->
   <link rel="stylesheet" href="assets/css/audiobook.css">
@@ -182,10 +183,13 @@
 
         <li class="nav-item"><a href="index.html" onclick="return false;"><i class="fas fa-home"></i>HOME</a></li>
         <li class="nav-item"><a href="about.html" target="_blank"><i class="fas fa-book"></i>ABOUT</a></li>
-        <li class="nav-item"><a href="./public/donate-book.html" target="_blank"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
-        <li class="nav-item"><a href="resource.html" target="_blank"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
+        <li class="nav-item"><a href="./public/donate-book.html" target="_blank"><i class="fas fa-book"></i>DONATE
+            BOOKS</a></li>
+        <li class="nav-item"><a href="resource.html" target="_blank"><i
+              class="fas fa-external-link-alt"></i>RESOURCES</a></li>
         <li class="nav-item"><a href="./blogs.html" target="_blank"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
-        <li class="nav-item"><a href="./public/contact us .html" target="_blank"><i class="fas fa-address-book"></i>CONTACT US</a></li>
+        <li class="nav-item"><a href="./public/contact us .html" target="_blank"><i
+              class="fas fa-address-book"></i>CONTACT US</a></li>
         <li class="nav-item"><a href="contributors.html" target="_blank"><i style="font-size: 21px;"
               class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
 
@@ -232,105 +236,106 @@
     <div class="hero-left" autofocus>
       <h1 id="IssueHere">Issue Here</h1>
       <form id="libraryForm">
-      <form id="libraryForm" class="libraryForm" action="#" method="post">
-        <div class="form-group row">
-          <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
-          <label for="dateIssue" class="issue"><span>Date of Issue</span></label>
-          <div class="col">
-            <input type="date" id="issueDate" name="issueDate" onkeydown="return false;">
+        <form id="libraryForm" class="libraryForm" action="#" method="post">
+          <div class="form-group row">
+            <!-- <label for="dateIssue" class="col-sm-2 col-form-label"> Date of Issue</label> -->
+            <label for="dateIssue" class="issue"><span>Date of Issue</span></label>
+            <div class="col">
+              <input type="date" id="issueDate" name="issueDate" onkeydown="return false;">
+            </div>
+            <small class="small"></small>
           </div>
-          <small class="small"></small>
-        </div>
-        <div class="form-group row">
-          <label for="bookName" class="col col-form-label"> <strong>Name</strong></label>
-          <div class="col">
-            <input type="text" class="input-box" id="bookName" placeholder="Book Name"/>
+          <div class="form-group row">
+            <label for="bookName" class="col col-form-label"> <strong>Name</strong></label>
+            <div class="col">
+              <input type="text" class="input-box" id="bookName" placeholder="Book Name" />
+            </div>
+            <small class="small"></small>
           </div>
-          <small class="small"></small>
-        </div>
-        <div class="form-group row">
-          <label for="Author" class="col col-form-label"> <strong>Author</strong></label>
-          <div class="col">
+          <div class="form-group row">
+            <label for="Author" class="col col-form-label"> <strong>Author</strong></label>
+            <div class="col">
 
-            <select class="form-check-input1" name="author" id="author" onchange='CheckAuthor(this.value);'
-              style="z-index: 1;" required>
+              <select class="form-check-input1" name="author" id="author" onchange='CheckAuthor(this.value);'
+                style="z-index: 1;" required>
 
 
-              <option value="" disabled selected>Select Author</option>
-              <option value="Agatha Christie">Agatha Christie</option>
-              <option value="Charles Dickens">Charles Dickens</option>
-              <option value="Dan Brown">Dan Brown</option>
-              <option value="Emily Bronte">Emily Bronte</option>
-              <option value="George Elliot">George Elliot</option>
-              <option value="J.K. Rowling">J.K. Rowling</option>
-              <option value="Jane Austen">Jane Austen</option>
-              <option value="John Green">John Green</option>
-              <option value="Mark Twain">Mark Twain</option>
-              <option value="Oscar Wilde">Oscar Wilde</option>
-              <option value="Rabindranath Tagore">Rabindranath Tagore</option>
-              <option value="Roald Dahl">Roald Dahl</option>
-              <option value="Rudyard Kipling">Rudyard Kipling</option>
-              <option value="Ruskin Bond">Ruskin Bond</option>
-              <option value="Sarah J. Maas">Sarah J. Maas</option>
-              <option value="Sylvia Plath">Sylvia Plath</option>
-              <option value="William Shakespeare">William Shakespeare</option>
-              <option value="Other">Other</option>
-            </select>
-            <input type="text" class="input-box" id="other_author" name="other_author" placeholder="Enter Author"
-              style='display:none;' />
+                <option value="" disabled selected>Select Author</option>
+                <option value="Agatha Christie">Agatha Christie</option>
+                <option value="Charles Dickens">Charles Dickens</option>
+                <option value="Dan Brown">Dan Brown</option>
+                <option value="Emily Bronte">Emily Bronte</option>
+                <option value="George Elliot">George Elliot</option>
+                <option value="J.K. Rowling">J.K. Rowling</option>
+                <option value="Jane Austen">Jane Austen</option>
+                <option value="John Green">John Green</option>
+                <option value="Mark Twain">Mark Twain</option>
+                <option value="Oscar Wilde">Oscar Wilde</option>
+                <option value="Rabindranath Tagore">Rabindranath Tagore</option>
+                <option value="Roald Dahl">Roald Dahl</option>
+                <option value="Rudyard Kipling">Rudyard Kipling</option>
+                <option value="Ruskin Bond">Ruskin Bond</option>
+                <option value="Sarah J. Maas">Sarah J. Maas</option>
+                <option value="Sylvia Plath">Sylvia Plath</option>
+                <option value="William Shakespeare">William Shakespeare</option>
+                <option value="Other">Other</option>
+              </select>
+              <input type="text" class="input-box" id="other_author" name="other_author" placeholder="Enter Author"
+                style='display:none;' />
 
-              
+
+            </div>
+            <small class="small"></small>
           </div>
-          <small class="small"></small>
-        </div>
-        <div class="form-group row">
-          <label for="Author" class="col col-form-label"> <strong>Category</strong></label>
-          <div class="col">
+          <div class="form-group row">
+            <label for="Author" class="col col-form-label"> <strong>Category</strong></label>
+            <div class="col">
 
-            <select class="form-check-input1" name="category" id="category" style="z-index: 1;">
+              <select class="form-check-input1" name="category" id="category" style="z-index: 1;">
 
 
-              <option value="" disabled selected>Select Category</option>
-              <option value="Arts & Music">Arts & Music</option>
-              <option value="Biographies">Biographies</option>
-              <option value="Business">Business</option>
-              <option value="Comics">Comics</option>
-              <option value="Computer & Tech">Computers & Tech</option>
-              <option value="Cooking">Cooking</option>
-              <option value="Education & Reference">Education & Reference</option>
-              <option value="Entertainment">Entertainment</option>
-              <option value="Health & Fitness">Health & Fitness</option>
-              <option value="History">History</option>
-              <option value="Hobbies & Crafts">Hobbies & Crafts</option>
-              <option value="Home & Garden">Home & Garden</option>
-              <option value="Horror">Horror</option>
-              <option value="Kids">Kids</option>
-              <option value="Literature & Fiction">Literature & Fiction</option>
-              <option value="Medical">Medical</option>
-              <option value="Mystery">Mystery</option>
-              <option value="Parenting">Parenting</option>
-              <option value="Religion">Religion</option>
-              <option value="Romance">Romance</option>
-              <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
-              <option value="Science & Maths">Science & Maths</option>
-              <option value="Self-Help">Self-Help</option>
-              <option value="Social Sciences">Social Sciences</option>
-              <option value="Sports">Sports</option>
-              <option value="Travel">Travel</option>
-              <option value="True Crime">True Crime</option>
-            </select>
+                <option value="" disabled selected>Select Category</option>
+                <option value="Arts & Music">Arts & Music</option>
+                <option value="Biographies">Biographies</option>
+                <option value="Business">Business</option>
+                <option value="Comics">Comics</option>
+                <option value="Computer & Tech">Computers & Tech</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Education & Reference">Education & Reference</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Health & Fitness">Health & Fitness</option>
+                <option value="History">History</option>
+                <option value="Hobbies & Crafts">Hobbies & Crafts</option>
+                <option value="Home & Garden">Home & Garden</option>
+                <option value="Horror">Horror</option>
+                <option value="Kids">Kids</option>
+                <option value="Literature & Fiction">Literature & Fiction</option>
+                <option value="Medical">Medical</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Parenting">Parenting</option>
+                <option value="Religion">Religion</option>
+                <option value="Romance">Romance</option>
+                <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
+                <option value="Science & Maths">Science & Maths</option>
+                <option value="Self-Help">Self-Help</option>
+                <option value="Social Sciences">Social Sciences</option>
+                <option value="Sports">Sports</option>
+                <option value="Travel">Travel</option>
+                <option value="True Crime">True Crime</option>
+              </select>
+            </div>
+            <small class="small"></small>
           </div>
-          <small class="small"></small>
-        </div>
 
-        <div class="form-group row">
+          <div class="form-group row">
 
-          <div class="col d-flex justify-content-center">
-            <button type="submit" onclick="validateIssue()" class="btn btn-primary add-Book" id="addBook">Add Book</button>
+            <div class="col d-flex justify-content-center">
+              <button type="submit" onclick="validateIssue()" class="btn btn-primary add-Book" id="addBook">Add
+                Book</button>
 
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
     </div>
     <div class="hero-right">
       <div id="table">
@@ -339,7 +344,7 @@
         </div>
         <div style="overflow-x:auto;" id="books-content">
           <table class="table table-striped" id="mytable" style="cursor: default">
-            <thead> 
+            <thead>
               <tr id="data">
                 <th scope="col">Date of Issue</th>
                 <th scope="col">Name</th>
@@ -368,67 +373,68 @@
             </button>  -->
 
             <h1 class="search-heading">Read Books</h2>
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
-
-              title="Type in a name">
-            <ul id="myUL">
-              <li><a href="./Notes/physicselectricitynotes.pdf" target="_blank">Current Electricity Problem book</a>
-              </li>
-              <li><a href="./Notes/physicsmagnetism.pdf" target="_blank">Electricity and Magnetism</a></li>
-              <li><a href="./Notes/chemsurfacechem.pdf" target="_blank">Chemistry</a></li>
-              <li><a href="./Notes/chempblock.pdf" target="_blank">p-Block Elements chemistry </a></li>
-              <li><a href="./Notes/csds.pdf" target="_blank">Data structure in C & C++</a></li>
-              <li><a href="./Notes/sqldbms.pdf" target="_blank">DBMS</a></li>
-              <li><a href="./Notes/bsprincipleofmanagement.pdf" target="_blank">Principal of Management</a></li>
-              <li><a href="./Notes/ecomoneyandbanking.pdf" target="_blank">Economics of Money and Banking</a></li>
-              <li><a href="./Samplepapers/cbse10science.pdf" target="_blank">Science Sample Question Paper for
-                  class-10</a></li>
-              <li><a href="./Samplepapers/cbse10science1.pdf" target="_blank">Science Question Bank for class-10</a>
-              </li>
-              <li><a href="./Samplepapers/class12phy.pdf" target="_blank">Physics Sample Question Paper for class-12</a>
-              </li>
-              <li><a href="./Samplepapers/class12chem.pdf" target="_blank">Chemistry Sample Question Paper for
-                  class-12</a></li>
-              <li><a href="./Samplepapers/class12bio.pdf" target="_blank">Biology Sample Question Paper for class-12</a>
-              </li>
-              <li><a href="./Samplepapers/class12maths.pdf" target="_blank">CBSE Mathmatics Sample Question Paper for
-                  class-12</a></li>
-              <li><a href="./Samplepapers/jee.pdf" target="_blank">JEE MAIN Sample Question Paper</a></li>
-              <li><a href="./Samplepapers/neet.pdf" target="_blank">NEET Sample Question Paper</a></li>
-              <li><a href="https://drive.google.com/file/d/1IjxZaCtEeMwdmuO2b0Vs45Su8jvG3fwa/view"
-                  target="_blank">Science Book for Class-10</a></li>
-              <li><a href="https://drive.google.com/file/d/1cN04y7Gqe03HEb_zXbHdhpeA3AsRW1g5/view"
-                  target="_blank">Science Book for Class-09</a></li>
-              <li><a href="https://drive.google.com/file/d/12a0_JGZ2GTqUzckFDdBLLaJGoV8jKKV0/view"
-                  target="_blank">Science Book for Class-08</a></li>
-              <li><a href="https://drive.google.com/file/d/1PGqKZZqWD8o6-auHsqLrwxCsXyilPkP6/view"
-                  target="_blank">Science Book for Class-07</a></li>
-              <li><a href="https://drive.google.com/file/d/1DlxE-x8-uUY4hWq7AvlKFWWAEhSFFLbw/preview"
-                  target="_blank">Physics for Class-12</a></li>
-              <li><a href="https://drive.google.com/file/d/1aXHembo-Cy5xSkt7cdwfk3tUo6rK2PZ-/preview"
-                  target="_blank">Chemistry for Class-12</a></li>
-              <li><a href="https://drive.google.com/file/d/1DlAxpsZ5E3clkp-aNUsQOeh1vI1EXd-R/preview"
-                  target="_blank">Biology for Class-12</a></li>
-              <li><a
-                  href="https://drive.google.com/file/d/0B8buzf-hm2wyZy1fQmVNM1gyTnM/view?resourcekey=0-wVoCHiiwS3rvs7r_dNvj8Q"
-                  target="_blank">Economics for Class-12</a></li>
-              <li><a href="https://drive.google.com/drive/folders/1YWwfkGfaiDxxg0agGGCSxZe-1Qmpvahb"
-                  target="_blank">Supplementary Reader in English for Class-09</a></li>
-              <li><a href="https://drive.google.com/drive/folders/1OtLBgu-9AVSSH6O1Z0AocQPoYNFUL_3S"
-                  target="_blank">Beehive Book for Class-09</a></li>
-              <li><a href="https://drive.google.com/drive/folders/18675WSWNHURqKWQUe4ZGvd0nXOQCk4dk"
-                  target="_blank">Mathmatics Book for Class-09</a></li>
-              <li><a href="https://drive.google.com/drive/folders/1b2DM6ed7LigVtZ2jEWCKhyevNegnfUu4"
-                  target="_blank">First-Flight Book for Class-10</a></li>
-              <li><a href="https://drive.google.com/drive/folders/1RmpwGFb5QCPXG-yBKhCsquW90V8U6RJZ"
-                  target="_blank">NCERT Mathmatics book for Class-10</a></li>
-              <li><a href="https://drive.google.com/drive/folders/1YTmwfxEdDmMT3dLVmCACLW1N-7fGnE_z"
-                  target="_blank">Democratic Politics-1 book for Class-09</a></li>
-              <li><a href="https://drive.google.com/drive/folders/1xsnrX7060su6dZ84LYAq8-0QedIatMrh"
-                  target="_blank">Contemporary India-1 book for Class-09</a></li>
-              <li><a href="https://drive.google.com/drive/folders/1BRXmQuwjGasfMs04TOb0twQmaL6a_eAT"
-                  target="_blank">Social Science Book for Class-09</a></li>
-            </ul>
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
+                title="Type in a name">
+              <ul id="myUL">
+                <li><a href="./Notes/physicselectricitynotes.pdf" target="_blank">Current Electricity Problem book</a>
+                </li>
+                <li><a href="./Notes/physicsmagnetism.pdf" target="_blank">Electricity and Magnetism</a></li>
+                <li><a href="./Notes/chemsurfacechem.pdf" target="_blank">Chemistry</a></li>
+                <li><a href="./Notes/chempblock.pdf" target="_blank">p-Block Elements chemistry </a></li>
+                <li><a href="./Notes/csds.pdf" target="_blank">Data structure in C & C++</a></li>
+                <li><a href="./Notes/sqldbms.pdf" target="_blank">DBMS</a></li>
+                <li><a href="./Notes/bsprincipleofmanagement.pdf" target="_blank">Principal of Management</a></li>
+                <li><a href="./Notes/ecomoneyandbanking.pdf" target="_blank">Economics of Money and Banking</a></li>
+                <li><a href="./Samplepapers/cbse10science.pdf" target="_blank">Science Sample Question Paper for
+                    class-10</a></li>
+                <li><a href="./Samplepapers/cbse10science1.pdf" target="_blank">Science Question Bank for class-10</a>
+                </li>
+                <li><a href="./Samplepapers/class12phy.pdf" target="_blank">Physics Sample Question Paper for
+                    class-12</a>
+                </li>
+                <li><a href="./Samplepapers/class12chem.pdf" target="_blank">Chemistry Sample Question Paper for
+                    class-12</a></li>
+                <li><a href="./Samplepapers/class12bio.pdf" target="_blank">Biology Sample Question Paper for
+                    class-12</a>
+                </li>
+                <li><a href="./Samplepapers/class12maths.pdf" target="_blank">CBSE Mathmatics Sample Question Paper for
+                    class-12</a></li>
+                <li><a href="./Samplepapers/jee.pdf" target="_blank">JEE MAIN Sample Question Paper</a></li>
+                <li><a href="./Samplepapers/neet.pdf" target="_blank">NEET Sample Question Paper</a></li>
+                <li><a href="https://drive.google.com/file/d/1IjxZaCtEeMwdmuO2b0Vs45Su8jvG3fwa/view"
+                    target="_blank">Science Book for Class-10</a></li>
+                <li><a href="https://drive.google.com/file/d/1cN04y7Gqe03HEb_zXbHdhpeA3AsRW1g5/view"
+                    target="_blank">Science Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/file/d/12a0_JGZ2GTqUzckFDdBLLaJGoV8jKKV0/view"
+                    target="_blank">Science Book for Class-08</a></li>
+                <li><a href="https://drive.google.com/file/d/1PGqKZZqWD8o6-auHsqLrwxCsXyilPkP6/view"
+                    target="_blank">Science Book for Class-07</a></li>
+                <li><a href="https://drive.google.com/file/d/1DlxE-x8-uUY4hWq7AvlKFWWAEhSFFLbw/preview"
+                    target="_blank">Physics for Class-12</a></li>
+                <li><a href="https://drive.google.com/file/d/1aXHembo-Cy5xSkt7cdwfk3tUo6rK2PZ-/preview"
+                    target="_blank">Chemistry for Class-12</a></li>
+                <li><a href="https://drive.google.com/file/d/1DlAxpsZ5E3clkp-aNUsQOeh1vI1EXd-R/preview"
+                    target="_blank">Biology for Class-12</a></li>
+                <li><a
+                    href="https://drive.google.com/file/d/0B8buzf-hm2wyZy1fQmVNM1gyTnM/view?resourcekey=0-wVoCHiiwS3rvs7r_dNvj8Q"
+                    target="_blank">Economics for Class-12</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1YWwfkGfaiDxxg0agGGCSxZe-1Qmpvahb"
+                    target="_blank">Supplementary Reader in English for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1OtLBgu-9AVSSH6O1Z0AocQPoYNFUL_3S"
+                    target="_blank">Beehive Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/18675WSWNHURqKWQUe4ZGvd0nXOQCk4dk"
+                    target="_blank">Mathmatics Book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1b2DM6ed7LigVtZ2jEWCKhyevNegnfUu4"
+                    target="_blank">First-Flight Book for Class-10</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1RmpwGFb5QCPXG-yBKhCsquW90V8U6RJZ"
+                    target="_blank">NCERT Mathmatics book for Class-10</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1YTmwfxEdDmMT3dLVmCACLW1N-7fGnE_z"
+                    target="_blank">Democratic Politics-1 book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1xsnrX7060su6dZ84LYAq8-0QedIatMrh"
+                    target="_blank">Contemporary India-1 book for Class-09</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1BRXmQuwjGasfMs04TOb0twQmaL6a_eAT"
+                    target="_blank">Social Science Book for Class-09</a></li>
+              </ul>
 
           </form>
         </div>
@@ -527,7 +533,16 @@
 
       <div data-aos="fade-up">
 
-        <h1 class="bheads">Recommended books</h1>
+        <h1 class="bheads auto-type"></h1>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+          var typed = new Typed(".auto-type", {
+            strings: ["Recommended books"],
+            typeSpeed: 150,
+            backspeed: 150,
+            loop: true
+          })
+        </script>
         <br>
         <p>Read some books on HTML, CSS and JavaScript for free using the Library</p>
         <div class="books1 " id="recommended_books" data-aos="fade"></div>
@@ -539,7 +554,16 @@
 
             <hr>
             <br>
-            <h1 class="bheads audiobooks-heading">Listen to Audiobooks</h1>
+            <h1 class="bheads audiobooks-heading auto-type2"></h1>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                var typed = new Typed(".auto-type2", {
+                    strings: ["Listen to Audiobooks"],
+                    typeSpeed: 150,
+                    backspeed: 150,
+                    loop: true
+                })
+            </script>
           </center>
           <div class="books1 abborder " data-aos="fade">
             <link rel="stylesheet" href="assets/css/audiobook.css">
@@ -592,7 +616,7 @@
 
 
 
-            <div class="faddy books-audios" >
+            <div class="faddy books-audios">
               <!-- Book 4 -->
               <a href="https://www.audible.in/pd/Computer-Programming-and-Cyber-Security-for-Beginners-Audiobook/B0862GMM48?qid=1643917584&sr=1-3&ref=a_search_c3_lProduct_1_3&pf_rd_p=2d02bc98-4366-4f94-99d9-5e898cda0766&pf_rd_r=J0S3TXBQ6VERVE765ER4"
                 target="_blank">
@@ -855,7 +879,11 @@
       <h3 class="faq-page">Q: What is AEC Library?</h3>
       <!-- faq answer -->
       <div class="faq-body">
-        <p>This is an Open-Source Library Website that contains a <a class="faq-link" href="resource.html" target="_blank"><span class="faq-link-inner">Resources</span> section</a> to learn different topics, <a class="faq-link" href="./public/donate-book.html" target="_blank"><span class="faq-link-inner">Donate book</span> section</a> to donate your old books, and a <a class="faq-link" href = "#table"><span class="faq-link-inner">Book issue</span> section </a>to keep a record of all the books issued. </p>
+        <p>This is an Open-Source Library Website that contains a <a class="faq-link" href="resource.html"
+            target="_blank"><span class="faq-link-inner">Resources</span> section</a> to learn different topics, <a
+            class="faq-link" href="./public/donate-book.html" target="_blank"><span class="faq-link-inner">Donate
+              book</span> section</a> to donate your old books, and a <a class="faq-link" href="#table"><span
+              class="faq-link-inner">Book issue</span> section </a>to keep a record of all the books issued. </p>
       </div>
     </div>
 
@@ -900,7 +928,9 @@
       <!-- faq answer -->
       <div class="faq-body">
         <p>The library has a huge collection of books of multiple genres. However, if you can't find the book you're
-          looking for, do reach out to us! Drop us a message through the <a class="faq-link" href="public/contact us .html" target="_blank"><span class="faq-link-inner">Contact us</span> section</a>.</p>
+          looking for, do reach out to us! Drop us a message through the <a class="faq-link"
+            href="public/contact us .html" target="_blank"><span class="faq-link-inner">Contact us</span> section</a>.
+        </p>
       </div>
     </div>
     <div class="faq-four" data-aos="fade">
@@ -908,7 +938,9 @@
       <h1 class="faq-page">Q: How can I donate a book? </h1>
       <!-- faq answer -->
       <div class="faq-body">
-        <p>Click on the <a class="faq-link" href="./public/donate-book.html" target="_blank"><span class="faq-link-inner">Donate books</span> button</a> and fill out the form with your details. We will reach out to you with
+        <p>Click on the <a class="faq-link" href="./public/donate-book.html" target="_blank"><span
+              class="faq-link-inner">Donate books</span> button</a> and fill out the form with your details. We will
+          reach out to you with
           further details.</p>
       </div>
     </div>
@@ -920,7 +952,8 @@
         <p>
         <ol>
           <li>Contribute to Aec-library :
-            Aec-library is a community initiative to build a robust book catalog. Anyone can add or edit data about books
+            Aec-library is a community initiative to build a robust book catalog. Anyone can add or edit data about
+            books
             and blogs.
           </li>
           <li>
@@ -936,7 +969,8 @@
       <h1 class="faq-page">Q: How can I find a book here? </h1>
       <!-- faq answer -->
       <div class="faq-body">
-        <p>Go to the <a class="faq-link" href = "#search"><span class="faq-link-inner">Choose and read books</span> section</a> and search the book you are looking for.</p>
+        <p>Go to the <a class="faq-link" href="#search"><span class="faq-link-inner">Choose and read books</span>
+            section</a> and search the book you are looking for.</p>
       </div>
     </div>
     <div class="faq-seven" data-aos="fade">
@@ -946,7 +980,9 @@
 
       <!-- faq answer -->
       <div class="faq-body">
-        <p>This is not supposed to happen but if it happens please leave a message on our <a class="faq-link" href="public/contact us .html" target="_blank"><span class="faq-link-inner">Contact us</span> section</a>. We will
+        <p>This is not supposed to happen but if it happens please leave a message on our <a class="faq-link"
+            href="public/contact us .html" target="_blank"><span class="faq-link-inner">Contact us</span> section</a>.
+          We will
           definitely look into it. </p>
       </div>
     </div>
@@ -955,7 +991,8 @@
       <h1 class="faq-page">Q: How can I download a book? </h1>
       <!-- faq answer -->
       <div class="faq-body">
-        <p>Go to our <a class="faq-link" href = "#recommended_books"><span class="faq-link-inner">Recommended Book</span> section</a>. Choose the book you want to download then click on the "Download
+        <p>Go to our <a class="faq-link" href="#recommended_books"><span class="faq-link-inner">Recommended Book</span>
+            section</a>. Choose the book you want to download then click on the "Download
           as pdf" button.
           Happy reading :)</p>
       </div>
@@ -973,7 +1010,9 @@
       <h1 class="faq-page">Q: How can I access the Online library? </h1>
       <!-- faq answer -->
       <div class="faq-body">
-        <p>Go to our <a class="faq-link" href="resource.html" target="_blank"><span class="faq-link-inner">Resources</span> section</a>. Click on the "All resources" button. You can find in our environment all recources
+        <p>Go to our <a class="faq-link" href="resource.html" target="_blank"><span
+              class="faq-link-inner">Resources</span> section</a>. Click on the "All resources" button. You can find in
+          our environment all recources
           to satisfy your need. </p>
       </div>
     </div>
@@ -1176,7 +1215,7 @@
   <script>
     // $(document).ready(function () {
     $('#mytable').DataTable({
-      
+
     });
     // });
   </script>
@@ -1262,7 +1301,7 @@
     issueDate.max = new Date().toISOString().split("T")[0];
   </script>
 
-<!--issue form validation-->
+  <!--issue form validation-->
   <script>
 
     const issueform = document.getElementById('libraryForm');
@@ -1270,59 +1309,52 @@
     const bookname = document.getElementById('bookName');
     const author = document.getElementById('author');
     const category = document.getElementById('category');
-    
-    function validateIssue(){
+
+    function validateIssue() {
 
       console.log("called");
-      if(checkInputs())
-      return true;
+      if (checkInputs())
+        return true;
       else
-      return false;
+        return false;
 
     }
 
-    function checkInputs()
-    {
-         //get values from input fields
-         const issuedateval = issuedate.value.trim();
-         const bookval = bookname.value.trim();
-         const authorval = author.value.trim();
-         const categoryval = category.value.trim();
-    
-         if(issuedateval === '')
-         { setErrorFor(issuedate,'Please select a issue date');}
-         else
-         { setSuccessFor(issuedate);}
+    function checkInputs() {
+      //get values from input fields
+      const issuedateval = issuedate.value.trim();
+      const bookval = bookname.value.trim();
+      const authorval = author.value.trim();
+      const categoryval = category.value.trim();
 
-         if(bookval === '')
-         { setErrorFor(bookname,'Please enter a book name');}
-         else
-         { setSuccessFor(bookname);}
- 
-          if(authorval == ""){
-          setErrorFor(author,"Please select book author");
-          }else{
-          setSuccessFor(author);
-        }
+      if (issuedateval === '') { setErrorFor(issuedate, 'Please select a issue date'); }
+      else { setSuccessFor(issuedate); }
 
-        if(categoryval == ""){
-          setErrorFor(category,"Please select book category");
-          }else{
-          setSuccessFor(category);
-        }
-    
-         
-         if(issuedateval!='' &&  bookval !== '' && authorval !== '' && categoryval != '') 
-         { 
-           return true; 
-          }
-        
+      if (bookval === '') { setErrorFor(bookname, 'Please enter a book name'); }
+      else { setSuccessFor(bookname); }
+
+      if (authorval == "") {
+        setErrorFor(author, "Please select book author");
+      } else {
+        setSuccessFor(author);
+      }
+
+      if (categoryval == "") {
+        setErrorFor(category, "Please select book category");
+      } else {
+        setSuccessFor(category);
+      }
+
+
+      if (issuedateval != '' && bookval !== '' && authorval !== '' && categoryval != '') {
+        return true;
+      }
+
     }
-    
-    function setErrorFor(input,showerror)
-    {
+
+    function setErrorFor(input, showerror) {
       let formControl = input.parentElement.parentElement;
-     // console.log(formControl);
+      // console.log(formControl);
 
       const small = formControl.querySelector('small');
       small.innerText = showerror;
@@ -1330,11 +1362,10 @@
       formControl.classList.remove('success');
       formControl.classList.add('error');
       //console.log(showerror);
- 
+
     }
 
-    function setSuccessFor(input)
-    {
+    function setSuccessFor(input) {
       let formControl = input.parentElement.parentElement;
       formControl.classList.remove('error');
       formControl.classList.add('success');
