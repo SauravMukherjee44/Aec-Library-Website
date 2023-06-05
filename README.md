@@ -1,10 +1,6 @@
-<h1 align="center">Open-Source Library Website </h1>
-
-
-<p align="center">
-<img width="100%" src="https://github.com/SauravMukherjee44/CodeIN-Community-Website/raw/main/assets/img/hack.jpg" alt="main page">
-</p>
-<h1 align="center">HacktoberFest Accepted </h1>
+<h1 align="center"> Aec-Library-Website </h1>
+ 
+## 🚀 About 
 
 AEC-Library is an Open-Source library website that will help people in need of books. It has the following categories:
 
@@ -13,6 +9,12 @@ AEC-Library is an Open-Source library website that will help people in need of b
 - **Book Issue:** A section to keep a record of all the books issued
 
 This website helps you to find the books easily without any cost. The best part about the website is that you can also contribute to the website for others to use the resources by donating the books you have. All categories of books are welcome for donation. Come forward to donate the books!  
+
+
+ 
+ # This project is a part of the following Open Source Program!
+
+![68747470733a2f2f692e706f7374696d672e63632f6b34306e747356342f31353030783530302e6a7067](https://github.com/swarnavopramanik/Aec-Library-Website/assets/105142693/da2274d0-4d87-42a5-abe0-89e542822f42)
 
 <h4>[ In development Phase ] 
 	
