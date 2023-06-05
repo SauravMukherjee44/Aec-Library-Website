@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 *{
-  overflow: hidden;
+  overflow-y: auto;
 }
 body {
   width: 100vw;
@@ -30,10 +30,16 @@ body {
   text-align: center;
 }
 .signUp-form{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  display: flex;
+  /* grid-template-columns: repeat(2,1fr); */
   padding: 1.2rem;
 }
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
 .signUp-form input {
   padding: 0%;
   border: none;
@@ -108,12 +114,12 @@ button {
   color: #fff;
   text-align: center;
   font-size: 32px;
-  padding: 16px;
+  padding: 10px;
   width: 150px;
   height: 40px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 36px;
+  margin: 10px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 
 }
@@ -124,6 +130,7 @@ button{
   position: relative;
   transition: 0.3s;
   font-size: medium;
+  overflow: hidden;
 }
 
 button:after {
@@ -148,16 +155,16 @@ button:hover:after {
 
 .quiz-exit {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 1rem;
-  margin: 2rem;
-  width: 36px;
-  height: 36px;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
   background-color: white;
   padding: 0.5rem;
   border-radius: 50%;
   border: 2px solid #635147;
-  ;
+  overflow: hidden;
 }
 
 .quiz-exit:hover {
@@ -173,7 +180,7 @@ a {
   color: #635147;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 582px) {
   html{
     overflow-x: hidden;
   }
@@ -185,9 +192,38 @@ a {
     justify-content: center;
   }
 
-  .signUp-form {
-    display: block;
+  .header{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
   }
+
+  .signUp-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .first-box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .second-box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+
   .button{
     display: flex;
     align-items: center;
@@ -201,7 +237,7 @@ a {
   .quiz-exit {
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0;
   }
 }
 
