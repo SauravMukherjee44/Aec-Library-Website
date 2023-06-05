@@ -1,5 +1,5 @@
 * {
-	box-sizing: border-box;
+	git ox-sizing: border-box;
 	margin: 0;
 	padding: 0;
 } 
@@ -2375,7 +2375,7 @@ select {
 /* Style the faq-page panel. Note: hidden by default */
 
 .faq-page:after {
-	content: "\02795";
+	content: "\02795"; 
 	font-size: 13px;
 	color: #777;
 	float: right;
