@@ -2904,13 +2904,14 @@ select {
 	background-color: #00ffd5 ;
 } */
 #btn-download {
-	background: #8f8b63;
+	background: #63698f;
 	border-color: #8f8b63;
 	background-image: -webkit-linear-gradient(top, #8f8b63, #424136);
 	background-image: -moz-linear-gradient(top, #8f8b63, #424136);
 	background-image: -ms-linear-gradient(top, #8f8b63, #424136);
 	background-image: -o-linear-gradient(top, #8f8b63, #424136);
-	background-image: linear-gradient(to bottom, #8f8b63, #424136);
+	/* background-image: linear-gradient(to bottom, #8f8b63, #424136); */
+	background-image: linear-gradient(to bottom, #0876e0f7, #2b40ffd9);
 	-webkit-border-radius: 6;
 	-moz-border-radius: 6;
 	border-radius: 6px;
@@ -2924,9 +2925,17 @@ select {
   }
   
 #btn-download:hover {
-	background: #424136;
+	background: #2a33e4ca;
 	border-color: #8f8b63;
 	text-decoration: none;
+
+	background: linear-gradient(#1610c1 0 0) var(--p, 0)  no-repeat;
+	transition: .6s, background-position 0s;
+}
+
+  .hover:hover {
+	--p: 100%;
+	color: #0700c9;
   }
 
 .card-bg {
