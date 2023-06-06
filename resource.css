@@ -243,11 +243,33 @@ a {
 .view {
   display: block;
   padding: 10px;
+  color:white;
+  transition:0.5;
+  position:relative;
+  border:white 1px inset;
+  background-color:black;
+  border-radius: 9px;
+ 
 }
+.view:hover{
+  color:white;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+  box-shadow:0 0 35px white;
+  text-decoration: none;
+ 
+
+}
+.view::before{
+  content:"";
+  position:absolute;
+  inset: 2px;
+  }
 
 h3:hover {
   position: relative;
   top: -3px;
+  
 }
 
 nav a:hover {
@@ -524,38 +546,46 @@ h3.hover-underline-animation {
 }
 
 .ncert-btn{
-  color: whitesmoke;
+  position:relative;
   font-weight: bold;
-  background-color: #432ffc;
-  border-radius: 15px;
+ transition:0.5s;
   padding: 10px 20px;
+  color:white;
+  border: 1px white solid;
 }
 
 .ncert-btn:hover{
-  color: #3e2dd8;
-  text-shadow: 0px 0px 14px rgb(233, 233, 233);
+  color:white;
   transition-delay: 0.1s;
   transition-timing-function: ease;
-  background-color: white;
+  box-shadow:0 0 35px white;
   text-decoration: none;
 }
-
+.ncert-btn::before{
+  content:"";
+  position:absolute;
+  inset: 2px;
+  }
 .notes-btn{
-  color: whitesmoke;
+ position:relative;
   font-weight: bold;
-  background-color: #432ffc;
-  border-radius: 15px;
+ transition:0.5s;
   padding: 10px 20px;
+  color:white;
+  border: 1px white solid;
 }
-
 .notes-btn:hover{
-  color: #3e2dd8;
-  text-shadow: 0px 0px 14px rgb(233, 233, 233);
+  color:white;
   transition-delay: 0.1s;
   transition-timing-function: ease;
-  background-color: white;
+  box-shadow:0 0 35px white;
   text-decoration: none;
 }
+.notes-btn::before{
+  content:"";
+  position:absolute;
+  inset: 2px;
+  }
 
 /* Audio Books*/
 #audio-books {
@@ -1004,15 +1034,26 @@ h3.hover-underline-animation {
   height: 40px;
   border-radius: 9px;
   margin-top: 15px;
-  color: blue;
+  color: white;
   font-size: 16px;
   font-weight: 500;
+  background-color: #000;
+  border: white 1px inset;
+  position: relative;
 }
 
 .resource-buttons:hover{
-  background-color: #3b5998;
-  color: white
+color: white;
+transition-delay:0.1s;
+transition-timing-function: ease;
+box-shadow:0 0 35px white;
+text-decoration: none;
 }
+.resource-buttons::before{
+  content:"";
+  position:absolute;
+  inset: 2px;
+  }
 
 a{
   text-decoration: none;
