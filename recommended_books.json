@@ -88,5 +88,35 @@
         "id": "18",
         "img": "images/bookimage18.jpg",
         "url": "https://drive.google.com/file/d/1wOWgrwP2vLmyx8P4irFzEYmsv-lAktrx/view?usp=share_link"
+    },
+    {
+        "id": "19",
+        "img": "images/bookimage19.jpg",
+        "url": "https://www.mediafire.com/file/6lqvwsq89kc0nx1/JavaScript_%2526_jQuery.pdf/file"
+    },
+    {
+        "id": "20",
+        "img": "images/bookimage20.png",
+        "url": "https://www.mediafire.com/file/0ubh4gijs7t4h5y/Learning_web_design.pdf/file"
+    },
+    {
+        "id": "21",
+        "img": "images/bookimage21.jpg",
+        "url": "https://www.mediafire.com/file/iifsff22cfpjlz6/Professional_JavaScript_for_Web_Developers%252C_4th_Edition.pdf/file"
+    },
+    {
+        "id": "22",
+        "img": "images/bookimage22.png",
+        "url": "https://www.mediafire.com/file/53l7mscagd0pwp0/Secrets_of_the_JavaScript_Ninja.pdf/file"
+    },
+    {
+        "id": "23",
+        "img" : "images/bookimage23.png",
+        "url" : "https://www.mediafire.com/file/lxb6hiksaad8bgq/Eloquent_JavaScript_small.pdf/file"
+    },
+    {
+        "id": "24",
+        "img": "images/bookimage24.png",
+        "url": "https://www.mediafire.com/file/ywo61cdf13tnz8v/Bulltetproof_web_design.pdf/file"
     }
 ]
