@@ -419,8 +419,8 @@ footer p {
   min-height: 550px;
   display: flex;
   z-index: 1000;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   
 }
 .container .contact-info{

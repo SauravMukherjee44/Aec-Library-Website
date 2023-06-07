@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="icon" href="/assets/logos/finalLogo.png" type="image/x-icon">
-  <link rel="stylesheet" href="/Quiz/css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <title>Congrats!</title>
   <style>
     * {
@@ -22,8 +22,14 @@
     }
 
     h1 {
+      background-color: rgba(169, 169, 169, 0.598);
+      padding: 10px;
+      width: 70px;
+      text-align: center;
+      margin: 25px;
       font-size: 5.4rem;
-      color: #56a5eb;
+      font-weight:600;
+      color: #f7f8f8;
       margin-bottom: 5rem;
     }
 
@@ -39,15 +45,15 @@
       <h1 id="finalScore"></h1>
       <form class="highscore-form">
         <input type="text" name="username" id="username" placeholder="username" />
-        <button type="submit" class="quiz-btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+        <button type="submit" class="quiz-btn" id="saveScoreBtn" onclick="location='../../index.html'"  disabled>
           Save
         </button>
       </form>
-      <a class="quiz-btn" href="/Quiz/pages/game.html">Play Again</a>
-      <a class="quiz-btn" href="/index.html">Go Home</a>
+      <a class="quiz-btn" href="../pages/game.html">Play Again</a>
+      <a class="quiz-btn" href="../../index.html">Go Home</a>
     </div>
   </div>
-  <script src="/Quiz/js/end.js"></script>
+  <script src="../js/end.js"></script>
 </body>
 
 </html>
