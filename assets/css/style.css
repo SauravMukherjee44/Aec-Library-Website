@@ -6,7 +6,7 @@
 
 } 
 
-html,
+html, 
 body {
 	font-family: "Playfair Display", serif;
 	width: 100%;
@@ -277,10 +277,13 @@ label[for="dateIssue"] {
 	display: none;
 }
 .container h1 {
-	padding-top: 40px;
+	padding-top: 20px;
 	color: rgb(255, 255, 255);
 	/* font-family: "Poiret One", cursive; */
 	font-weight: bolder;
+	/* border-bottom: 3px solid white;
+	width: fit-content;
+	margin: 0 auto; */
 	letter-spacing: 0.1em;
 }
 @media only screen and (max-width: 400px) {
@@ -2129,9 +2132,9 @@ input[type="radio"] {
 
 #searchForm {
 	display: inline-block;
-	border: 2px solid grey;
-	border-radius: 12px;
-	margin-left: 30px;
+	/* border: 2px solid grey;
+	border-radius: 12px; */
+	/* margin-left: 30px; */
 	align-items: center;
 }
 
@@ -2177,15 +2180,16 @@ input[type="radio"] {
   /* background-image: url('/css/searchicon.png'); */
   background-position: 10px 12px;
   background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
+  width: 90%;
+  font-size: 20px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
-  margin-bottom: 12px;
+  border-radius: 17px;
+  margin: 0 auto;
 }
 #myUL {
   list-style-type: none;
-  padding: 0;
+  padding: 1.2rem;
   margin: 0;
   height: 10rem;
   background-color: transparent;
@@ -2208,35 +2212,28 @@ input[type="radio"] {
 #myUL li a:hover:not(.header) {
   background-color: #fefee8;
 }
+
 .search-heading{
-  padding:15px 0 20px 0  !important;
-  font-family: 'Playfair Display';
-  text-decoration: none;
-	border: 1px solid #ddd;
-	border-radius: 25px;
-	margin-top: -1px;
-	background-color: #f6f6f6;
+	padding:15px 0 20px 0  !important;
+	font-family: 'Playfair Display';
+	text-decoration: none;
+	/* border: 1px solid #ddd; */
+	/* border-radius: 25px;
+	margin-top: -1px; */
+	/* background-color: #f6f6f6; */
 	padding: 12px;
 	text-decoration: none;
-	font-size: 18px;
-	color: #000;
+	font-size: 43px;
+	/* color: #000; */
 	display: block;
-	background-color: #cda867;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	/* background-color: #cda867; */
+	/* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 	transition: background-color 0.3s, color 0.3s;
   }
   
   #myUL li a:hover:not(.header) {
 	background-color: #dfc18d;
   }
-  
-.search-heading{
-  padding:0  !important;
-  border-bottom: 3px solid white;
-  margin: 0px auto 20px;
-  width: fit-content;
-}
-
 
 /* ----------------------- */
 .col-sm-10 input,
