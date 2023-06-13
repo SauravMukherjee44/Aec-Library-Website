@@ -110,9 +110,9 @@ nav.navbar {
 	background: #424136;
 	border-color: #8f8b63;
 	text-decoration: none;
-  }
 	border-bottom: 4px solid white;
-}
+  }
+
 #table .heading{
 	display: flex;
 	justify-content: center;
@@ -1083,7 +1083,8 @@ strong {
     width:73.7rem;
   } */
 	.hero-left + .hero-right {
-		margin-right: 0;
+		margin-right: 2rem;
+		margin-left: 2rem;
 	}
 	#loading {
 		width: 73.7;
