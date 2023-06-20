@@ -171,14 +171,12 @@ nav {
 .search-box-container{
   display: flex;
   justify-content: flex-end;
-  
 }
 .search-box{
   border: 1px solid wheat;
   border-radius: 9px;
   background-color: wheat;
   padding: 8px;
-  margin-left: -43px;
 }
 
 input:focus{
@@ -716,6 +714,10 @@ h3.hover-underline-animation {
   }
   .NC{
     width: 70%;
+  }
+  .search-box-container{
+    display: flex;
+    justify-content: center;
   }
 }
 .play-button-container:hover {
