@@ -68,8 +68,11 @@
 @media screen and (max-width: 450px){
   .topnav a {
     padding: 17px 12px;
-    font-size: .8rem;
+    font-size: .75rem;
     width:14%;
+  }
+  .topnav {
+    padding: 0px 0.5%;
   }
 }
 
