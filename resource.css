@@ -3,6 +3,38 @@
   padding: 0;
   margin: 0;
 }
+/*To apply the navigation bar on the resource page*/
+.link{
+  background-color: black;
+  border-radius: 30px;
+
+  
+}
+.link ul1{
+  overflow: auto;
+}
+.link li{
+  float:left;
+  list-style: none; 
+  margin: 13px 20px;
+  
+}
+.link li a{
+  padding: 3px 3px;
+  text-decoration: none;
+  color: rgb(230, 78, 78);
+}
+.link li a:hover{
+  color: red
+}
+
+
+.link input{
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 3px 17px;
+  width: 129px;
+}
 
 /*To apply the navigation bar on the resource page*/
 .topnav {
