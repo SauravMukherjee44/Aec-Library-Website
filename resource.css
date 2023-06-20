@@ -1,18 +1,18 @@
 * {
   box-sizing: border-box;
-  padding: 0;
+  padding: 2px;
   margin: 0;
 }
-
 /*To apply the navigation bar on the resource page*/
 .topnav {
-  background-color: #5C4033;
+  background-color: black;
   overflow: auto;
   margin:0;
   width: 100%;
   top: -3px;;
   left:0;
-  position:absolute;
+  position:fixed;
+  font-family:serif;
 }
 .topnav i {
   margin-right: 5px; /* Add space between icon and text */
@@ -81,6 +81,7 @@ html {
 h1 {
   color: wheat;
   font-weight: bold;
+  font-family:sans-serif;
 }
 
 h2 {
@@ -145,13 +146,14 @@ nav {
 } */
 .search-box-container{
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-begin;
   
 }
 .search-box{
-  border: 1px solid wheat;
+  border: 1.5px solid black;
   border-radius: 9px;
-  background-color: wheat;
+  width:100%;
+  background-color: white;
   padding: 8px;
   margin-left: -43px;
 }
