@@ -6,9 +6,13 @@
 </p>
 <h1 align="center">HacktoberFest Accepted </h1>
 
-This is an Open-Source Library Website where you get a Resources section to learn different topics, a Donate book section to donate your old books, and a Book issue section to keep a record of all the books issued.
-This website helps you to find the books easily without any cost and the best part about the website is that you can also contribute to the website for others to use the resources by donating the books you have. All categories of books are welcomed for donation. 
-Come forward to donate the books !!!  
+AEC-Library is an Open-Source library website that will help people in need of books. It has the following categories:
+
+- **Resources:** A section that provides you resources to learn about different topics
+- **Donate Books:** A section to donate your old books
+- **Book Issue:** A section to keep a record of all the books issued
+
+This website helps you to find the books easily without any cost. The best part about the website is that you can also contribute to the website for others to use the resources by donating the books you have. All categories of books are welcome for donation. Come forward to donate the books!  
 
 <h4>[ In development Phase ] 
 	
