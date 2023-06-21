@@ -17,7 +17,9 @@ h1 > span {
 }
 
 h2 {
-  font-size: 4.2rem;
+  padding: 5px;
+  background-color: rgba(240, 248, 255, 0.285);
+  font-size: 25px;
   margin-bottom: 4rem;
   font-weight: 700;
 }
@@ -37,8 +39,9 @@ h3 {
   
   .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-    transform: translateY(-0.1rem);
+    background-color:#56a6eb9d;
+    border: 1px solid black;
+    transform: translateY(+0.1rem);
     transition: transform 150ms;
   }
   
@@ -67,11 +70,19 @@ h3 {
     display: flex;
     justify-content: space-between;
   }
-  
+  #hud-item{
+    width: max-content;
+    height: 120px;
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.763);
+    padding: 10px;
+    margin: 25px;
+    padding-bottom: 0;
+  }
   .hud-prefix {
     text-align: center;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 900;
   }
   
   .hud-main-text {
