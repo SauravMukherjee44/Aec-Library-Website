@@ -67,9 +67,7 @@
     color: #d8eb08 ;
 }
 .card:hover {
-  box-shadow: 0 0.25em 0.25em -0.1em #eb9e22;
-    box-shadow: 0 0.25em 0.25em -0.1em #b5c952;
-    transform: translateY(-1.75em);
+    scale: 1.09;
     border-color: #FFB84C;
     transition: 0.4s;
     color: #fff ;
