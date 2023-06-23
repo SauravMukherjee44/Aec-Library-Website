@@ -110,9 +110,9 @@ nav.navbar {
 	background: #424136;
 	border-color: #8f8b63;
 	text-decoration: none;
-  }
 	border-bottom: 4px solid white;
 }
+
 #table .heading{
 	display: flex;
 	justify-content: center;
@@ -1261,11 +1261,9 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 }
 .sound{
 	size: 10px;
-	padding-left: 80px;
-	padding-top: 0;
 	margin-top: 0;
 	/* margin-bottom: 20px; */
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 .bheads
 {
@@ -1370,6 +1368,8 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 	transform: scale(1.1);
 }
 .books-audios{
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 150px;
 }
 
@@ -2231,7 +2231,7 @@ input[type="radio"] {
   }
   
 .search-heading{
-  padding:0  !important;
+  padding:2px 12px  !important;
   border-bottom: 3px solid white;
   margin: 0px auto 20px;
   width: fit-content;
