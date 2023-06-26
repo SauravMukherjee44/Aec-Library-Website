@@ -309,7 +309,7 @@ html {
 	border-radius: 15px;
 	height: 10px;
 }
-
+	
 .input-box {
 	border: none;
 	border-bottom: 1.5px solid rgba(168, 154, 154, 0.322);
@@ -323,6 +323,9 @@ html {
 	padding-left: 10px;
 }
 
+.input-box:hover{
+	border: 1.5px solid black;
+}
 .input-box:focus {
 	outline: none;
 	border-bottom: 1.5px solid yellowgreen;
