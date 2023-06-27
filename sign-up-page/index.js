@@ -1,4 +1,4 @@
-const form = document.getElementById("form");
+/*const form = document.getElementById("form");
 const fullName = document.getElementById("firstName");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
@@ -72,4 +72,38 @@ logged_out.addEventListener("click", (e) => {
   e.preventDefault();
   const { error } = _supabase.auth.signOut();
   location.reload();
+});
+*/
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const fullName = document.getElementById("fullName").value;
+    const email = document.getElementById("email").value;
+    // You can add additional form field values as needed
+
+    // Perform any necessary validation here
+
+    // Simulate successful sign-up
+    displaySuccessMessage(fullName, email);
+});
+
+function displaySuccessMessage(fullName, email) {
+    const successMessage = `Congratulations, ${fullName}! You have successfully signed up with email ${email}.`;
+    alert(successMessage);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the form element
+    var form = document.getElementById('form');
+
+    // Attach an event listener for form submission
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        // Get the input values
+        var fullName = document.getElementById('fullName').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var gender = document.querySelector('input[name="gender"]:checked').value;
+        window.location.href = '/success.html';
+    });
 });

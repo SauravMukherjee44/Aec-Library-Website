@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
-*{
-  overflow-y: auto;
-}
-body {
+
+/*body {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -31,7 +28,7 @@ body {
 }
 .signUp-form{
   display: flex;
-  /* grid-template-columns: repeat(2,1fr); */
+   grid-template-columns: repeat(2,1fr);
   padding: 1.2rem;
 }
 
@@ -239,8 +236,7 @@ a {
     left: 0;
     top: 0;
   }
-}
-
+}*/
 
 
 /* .cover {
@@ -275,6 +271,8 @@ a {
 
 
 /* Exit */
+
+
 /* 
 
 @media only screen and (max-width: 425px) {
@@ -399,4 +397,165 @@ a {
     width: 30px;
     height: 30px;
   }
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("library-bg-1.jpg");
+    background-color: #635147;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("library-bg-1.jpg");
+    background-color: #635147;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.signUp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.form-group input {
+    padding: 10px;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0.7rem;
+    font-family: 'Josefin Sans', sans-serif;
+    border-bottom: 1px solid #fff;
+}
+
+.form-group.no-border {
+    border: none;
+}
+
+#male,
+#female {
+    font-size: 1.8rem;
+}
+
+#male+label,
+#female+label {
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #c35047;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #4e3c33;
+}
+
+.redirect {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redirect button {
+    margin-left: 0.5rem;
+}
+
+.redirect a {
+    text-decoration: none;
+    color: #4e3c33;
+}
+
+.quiz-exit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.quiz-exit a {
+    color: #635147;
+    font-size: 2rem;
+}
+
+.quiz-exit a:hover {
+    color: #4e3c33;
 }
