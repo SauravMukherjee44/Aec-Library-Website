@@ -164,25 +164,12 @@ nav {
   background-position: center;
   background-size: cover;
 }
-/* #myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  width: 70%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin: 5px;
-} */
+
 .search-box-container{
   display: flex;
-
   justify-content:end;
   margin-top: 0;
   padding: 0;
-   /* float: right;
-    */
-
 }
 .search-box{
   border: 1px solid wheat;
@@ -314,7 +301,6 @@ nav a:hover {
 
 nav a {
   text-decoration: none;
-  /* padding: 20px; */
   text-align: center;
   float: left;
   background-color: rgb(233, 221, 221);
@@ -393,33 +379,12 @@ section h5 {
 }
 .carousel-cell img{
   margin: 10px;
-  /* margin-left: 15px;
-  margin-right: 15px; */
-  /* width: 250px; */
   border-radius: 20px;
-  /* border: 10px solid black; */
   transition: 1s ease-in-out;
 }
 .carousel-cell img:hover{
   transform: scale(0.8);
 }
-/* COURSES */
-/*  #courses {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  border-radius: 8px;
-  margin-left: 4px;
-  margin-right: 4px;
-} */
-/* #courses video {
-  border-radius: 20px;
-  padding: none !important;
-}
-#courses video:hover {
-  transform: scaleY(1.019);
-} */
 
 .courseCard{
   margin: 10px;
@@ -453,21 +418,7 @@ section h5 {
 }
 
 /* YouTube Recommendation */
-/*#yt {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  border-radius: 8px;
-  margin-left: 4px;
-  margin-right: 4px;
-  padding: 5px;
-}*/
 
-/* .imge{
-  margin: 5px;
-  box-shadow: 2px 2px 8px rgba(253, 208, 126, 0.342)
-} */
 .iframe {
   border-radius: 10px;
   padding-left: 3px;
@@ -927,15 +878,7 @@ h3.hover-underline-animation {
   }
 }
 
-
-
-
-
-
-
-
 /*REGIONAL LANGUAGE SECTION*/
-/* .regLAN-container { */
   #regLAN{
     max-width: 100%;
     z-index: 10000;
@@ -1023,7 +966,6 @@ h3.hover-underline-animation {
     }
   
     /*study material for smaller screens*/
-    .regLAN-container .study-card {
       margin: 30px 0px;
     }
   
@@ -1059,12 +1001,6 @@ h3.hover-underline-animation {
     }
   }
 
-
-
-
-
-
-
 /* Button style */
 .resource-buttons{
   width: 100%;
@@ -1095,15 +1031,6 @@ text-decoration: none;
 a{
   text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
 
 /*footer styling*/
 
@@ -1231,27 +1158,7 @@ footer .content .right .btn{
   border: 1px solid #eb2f06;
   transition-delay: .2s;
 }
-/*footer .content .media-icons a {
-  font-size: 16px;
-  height: 45px;
-  width: 45px;
-  display: inline-block;
-  text-align: center;
-  line-height: 43px;
-  border-radius: 5px;
-  border: 2px solid #222222;
-  margin: 30px 5px 0 0;
-  transition: all 0.3s ease;
-}
 
-.content .media-icons a:hover {
-   border-color: #eb2f06;
-  background-color: #eb2f06;
-  color: #0087ca; 
-  border-color: #f93d14;
-  background-color: #f93d14;
-  color:wheat;
-}*/
 ul {
     position:absolute;
     top:70%;
@@ -1441,7 +1348,6 @@ footer a:hover {
 }
 
 .social-container a {
-  /* border: 1px solid #dddddd; */
   border-radius: 50%;
   display: inline-flex;
   justify-content: center;
@@ -1465,21 +1371,16 @@ footer a:hover {
   width: 50px;
   height: 50px;
   background-color: #111111;
-  /* 161819 */
   text-align: center;
   line-height: 45px;
   font-size: 15px;
   margin: 0 0 0 20px;
   align-items: center;
   justify-content: center;
-  /* border-radius: 50%; */
   overflow: hidden;
   z-index: 1;
-  /* border: 1px solid #fff; */
   text-decoration: none;
-
   color: #f05011;
-  /* color: #ababab; */
 text-decoration: none;
 font-size: 30px;
 flex-basis: 35%;
@@ -1490,9 +1391,6 @@ transition: transform 0.5s;
 
 }
 .social-container ul a:hover{
-  /* border: 3px solid #cfcccc; */
- 
-  /* color: #f05011; */
 	transform: translateY(-6px);
 	transform: scale(1.5);
 	text-decoration: none;
@@ -1500,9 +1398,6 @@ transition: transform 0.5s;
 	margin-left: 20px;
 
 }
-/* .social-container ul li:nth-child(1) a:before {
-  color: #e74a79;
-} */
 
 @media (max-width: 1100px) {
   footer .content .middle {
@@ -1560,34 +1455,11 @@ transition: transform 0.5s;
     margin-left: 0;
   }
 }
-
-
 /* FOOTER styling over here*/
-
-/*footer {
-  background-color: #333;
-  overflow: hidden;
-}*/
-
-/*footer a {
-  text-decoration: none;
-  padding: 20px;
-  text-align: center;
-  float: left;
-  color: white;
-  margin-left: 4.5rem;
-}*/
 
 .card {
   display: inline;
 }
-
-/* img {
-  box-shadow: 5px 3px gainsboro;
-  height: 450px;
-  border-radius: 15px;
-} */
-
 .card-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1631,32 +1503,5 @@ transition: transform 0.5s;
   }
 }
 
-/* for making Youtube section, course video section responsive */
-/*@media only screen and (max-width: 470px) {
-  #yt iframe {
-    width: 100%;
-    height: 200px;
-    padding: 7px 10px;
-  }
 
-  #courses .courseCardImage{
-    width: 100%;
-    height: 80px;
-    padding: 7px 10px;
-  }
-}*/
-
-/*@media only screen and (min-width: 470px) and (max-width: 650px) {
-  #yt iframe {
-    width: 50%;
-    height: 200px;
-    padding: 7px 10px;
-  }
-
-  #courses .courseCardImage{
-    width: 50%;
-    height: 80px;
-    padding: 7px 10px;
-  }
-}*/
 
