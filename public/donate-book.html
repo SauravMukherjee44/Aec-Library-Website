@@ -88,10 +88,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
           <label>Contact Number</label>
         </div>
 
-        <div class="user-box">
-          <textarea  rows="4" class="form__input form-control" type="text" name="" id="address" required=""></textarea>
-          <label>Address</label>
+        <div  class="user-box">
+          <h6>Address<h6>
+          <textarea  row="4" class="form-control" type="text" name="" id="address" required=""></textarea>
+          <label for="floatingTextarea2">Address</label>
         </div>
+
+       
         
         <div class="user-box">
           <label>Select Country: </label><br><br>
@@ -119,15 +122,15 @@ tr:nth-child(even) {background-color: #f2f2f2;}
          </select>
         </div>
         <div class="user-box">
-          <input class="form__input form-control" id="zip" type="text" name="" required="">
+          <input class="form__input form-control" id="zip" type="text" name=""  required="">
           <label>Zip</label>
         </div>
         <div class="user-box">
-          <input class="form__input form-control" type="text" name="" required="">
+          <input class="form__input form-control" type="text" name="">
           <label>Landmark (Optional)</label>
         </div>
         <div class="user-box">
-          <input class="form__input form-control" id="alt_contact" type="text" name="" required="">
+          <input class="form__input form-control" id="alt_contact" type="text" name="">
           <!--onchange="validate_phone(document.getElementById('alt_contact'))"-->
           <label>Alternate Phone (Optional)</label>
         </div>
@@ -223,12 +226,18 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     if(input.value.match(phone)){
       return true;
     }
+  }
     /*else{
       alert("Please enter a valid phone number")
       return false;
     }*/
 
-  }
+   
+
+  
+
+ 
+  
 
   function reset_form(){
     document.getElementById("donation_form").reset();
@@ -236,6 +245,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   }
 
   donationForm.addEventListener('submit',e=>{
+    
     if(validate_phone(document.getElementById('contact'))){
     e.preventDefault();
     const { data, error } = _supabase
@@ -255,6 +265,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         if(res.error){
           alert(res.error.message);
         }
+
+
         else{
         alert('Data Added');
         reset_form();
@@ -264,6 +276,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   else{
     alert("Please enter a valid phone number")
   }
+  
+ 
     })
 
   </script>
