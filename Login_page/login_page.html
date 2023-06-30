@@ -16,6 +16,7 @@
     <div class="header">
       AEC Library - Login
     </div>
+    <p id="errormsg"></p>
     <form class="login_form" id="form">
       <div class="first-box">
         <div class="form-group">
@@ -31,7 +32,7 @@
         </div>
       </div>
       <div class="button">
-          <button style="color: white"  id="submitButton" >submit</button>
+          <button style="color: white" onclick="validate()"  id="submitButton" >submit</button>
       </div>
     </form>
 
@@ -43,6 +44,21 @@
   color: rgb(230, 236, 230);
 }
 
+
+#errormsg
+{
+  color: #ffaaa4;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: 25%;
+}
+.form-group.error{
+  border-bottom: 1px solid red;
+}
+
+.form-group.success{
+  border-bottom: 1px solid green;
+}
 
     </style>
   <div id="messageContainer">Thank you for submitting the form!</div> 
@@ -72,7 +88,53 @@
   //console.log(_supabase);
 </script>
 
-<script src = "login.js"></script>
+<script>
+
+  const useremail = document.getElementById('email');
+  const userpassword = document.getElementById('password');
+ 
+ 
+  function validate(){
+    if(checkInputs())
+    return true;
+    else
+    return false;
+ 
+  }
+ 
+  function checkInputs()
+  {
+   console.log("called");
+   event.preventDefault();
+       //get values from input fields
+        const emailval = useremail.value.trim();
+       const passwdval = userpassword.value.trim();
+       const error = document.getElementById('errormsg');
+     
+       if(emailval === '')
+      {
+        error.innerHTML="*Please enter your Email!";
+         useremail.parentElement.classList.add('error'); useremail.parentElement.classList.remove('success');
+      }
+    
+      else if(passwdval === '')
+      {
+       useremail.parentElement.classList.add('success'); useremail.parentElement.classList.remove('error');
+        error.innerHTML="*Please enter your Password!";
+         userpassword.parentElement.classList.add('error'); userpassword.parentElement.classList.remove('success');
+      }
+  
+      else
+      {
+         error.innerHTML="";
+         window.location.reload("login.js");
+      }
+  }
+  
+ </script>
+ 
+
+<!--<script src = "login.js"></script>-->
 </body>
 
 </html>
