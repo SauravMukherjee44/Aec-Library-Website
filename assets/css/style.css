@@ -175,8 +175,8 @@ label {
 
 	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSx7xZCUqCoVHL6EVHc477XyKxKz-98SdZUA&usqp=CAU");
 
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-size: contain;
+	
 	background-color: rgba(0, 0, 0, 0.9);
 	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 	z-index: 1;
