@@ -1060,7 +1060,7 @@ strong {
 	}
   .body-style {
     box-shadow: none;
-    padding: 1rem;
+    padding: -2rem;
   }
 
 	.body-style {
@@ -1899,8 +1899,8 @@ input[type="radio"] {
 	flex-direction: row;
 	list-style-type: none;
 	justify-content: space-between;
-	padding: 1rem;
-	margin: 0;
+	padding: -3rem;
+	margin: -3px;
 	align-items: center;
 }
 
@@ -2491,7 +2491,7 @@ select {
 		font-size: 1rem;
 	}
 	.logo-img {
-		margin-left: 5px;
+		margin-left: -69px;
 	}
 	.new-nav ul {
 		flex-direction: column;
