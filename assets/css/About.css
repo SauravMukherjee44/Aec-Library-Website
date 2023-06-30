@@ -413,8 +413,8 @@ footer {
 
   .footer-col ul li {
     display: inline-block;
-    padding: 0px 20px;
-    margin: 10px;
+    padding: 0px 28px;
+    margin: 20px;
 
     
   }
@@ -647,12 +647,13 @@ footer {
 .animated-border-button {
   
  /* As per color of homepage( looks good now ) */
-  background-color: #f7c46c;
+  background-color: #e5b45f;
   border: none;
   color: #ffffff;
   outline: none;
   padding: 12px 40px 10px;
   position: relative;
+  transition: transform 0.5s;
 }
 
 .animated-border-button:before,
@@ -669,15 +670,27 @@ footer {
   border-top: 2px solid #fffcd9;
   right: 0;
   top: -4px;
+
 }
 
 .animated-border-button:after {
   border-bottom: 2px solid #fffcd9;
   bottom: -4px;
   left: 0;
+
 }
 
 .animated-border-button:hover:before,
 .animated-border-button:hover:after {
   width: 100%;
 }
+
+.animated-border-button:hover{
+  font-size: 1vh;
+}
+
+.animated-border-button:hover{
+  transform: scale(1.1);
+}
+
+
