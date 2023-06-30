@@ -43,7 +43,7 @@ nav.navbar {
 	padding-left: 15px;
 	padding-bottom: 10px;
 	border: 0.1px solid #efe088;
-	background: rgb(0, 0, 0, 0.5);
+	background: rgb(38 74 118);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
@@ -59,7 +59,7 @@ nav.navbar {
 #table h1 {
 	color: white;
 	text-decoration: none;
-	padding: 4% 0 4% 0;
+	padding: 1% 0 0% 0;
 	font-family: 'Playfair Display';
 }
 
@@ -94,7 +94,7 @@ nav.navbar {
 }
 
 #books-content {
-	padding: 10px;
+	padding: 0px;
 	background-color: white;
 	border-radius: 2%;
 }
@@ -171,12 +171,17 @@ label {
 }
 
 .body-style {
-	background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-color: rgba(0, 0, 0, 0.9);
-	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
-	z-index: 1;
+	/* background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true"); */
+	/* background-size: cover; */
+	background-image: url("https://images.unsplash.com/photo-1533638978312-8a4eaa2fbeaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80");
+	/* background-repeat: no-repeat; */
+	/* background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; */
+	/* z-index: 1; */
+	
+	
+	
+	
 }
 
 .bg-info {
@@ -207,7 +212,7 @@ label[for="category"] {
 #IssueHere {
 	color: white;
 	text-align: center;
-	padding: 20px 0 25px 0;
+	padding: 3px 0 0px 0;
 	font-family: 'Playfair Display';
 	text-decoration: none;
 }
@@ -246,7 +251,7 @@ label[for="dateIssue"] {
 	display: none;
 }
 .container h1 {
-	padding-top: 40px;
+	padding-top: 0px;
 	color: rgb(255, 255, 255);
 	/* font-family: "Poiret One", cursive; */
 	font-weight: bolder;
@@ -1873,7 +1878,7 @@ input[type="radio"] {
 	list-style: none;
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: bolder;
-	padding-bottom: 2%;
+	padding-bottom: 0%;
 	padding-right: 18px;
 }
 
@@ -1890,7 +1895,7 @@ input[type="radio"] {
 .header {
 	min-height: 60px;
 	color: white;
-	background-color: rgb(48, 46, 46);
+	background-color:rgb(22 27 57);
 	width: 100%;
 }
 
@@ -1900,8 +1905,9 @@ input[type="radio"] {
 	list-style-type: none;
 	justify-content: space-between;
 	padding: -3rem;
-	margin: -3px;
+	margin: -4px;
 	align-items: center;
+	margin-top: -10px;
 }
 
 .header ul li {
@@ -1924,11 +1930,11 @@ input[type="radio"] {
 }
 .header .logo,
 .header .login a {
-	font-size: 24px;
+	font-size: 17px;
 }
 .new-nav {
 	min-height: 50px;
-	background-color: #f3d094;
+	background-color: #ffffff;
 	align-items: center;
 }
 
@@ -1975,12 +1981,12 @@ input[type="radio"] {
 }
 
 .contain {
-  height: 355px;
+  height: 305px;
   width: 100%;
   color: white;
-  margin-top: 21px; 
+  margin-top: 0px; 
   border: 0.1px solid #efe088;
-  background: rgb(0, 0, 0, 0.5);
+  background:rgb(38 74 118);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 30px;
   display: flex;
@@ -1989,7 +1995,7 @@ input[type="radio"] {
 }
 .contain div {
 	font-family: "Source Sans Pro", sans-serif;
-	margin: 30px;
+	margin: 2px;
 	text-align: center;
 }
 
@@ -2014,7 +2020,7 @@ input[type="radio"] {
 
 #searchForm {
 	display: inline-block;
-	border: 2px solid grey;
+
 	border-radius: 12px;
 	margin-left: 30px;
 	align-items: center;
@@ -2022,8 +2028,9 @@ input[type="radio"] {
 
 .nav-link {
 	font-family: sans-serif;
-	font-size: 0.5cm;
+	font-size: 0.5px
 }
+
 .login {
 	position: relative;
 	color: #f3d094;
@@ -2053,7 +2060,7 @@ input[type="radio"] {
 	width: 100%;
 	margin-right: 0;
 	padding-left: 30px;
-	margin-left: 60px;
+	margin-left: 150px;
 }
 /* filter book by name */
 #myInput {
@@ -2079,7 +2086,7 @@ input[type="radio"] {
 #myUL li a {
   border-radius: 25px;
   margin-top: 1px;
-  background-color: rgb(212, 202, 168);
+  background-color: rgb(255, 255, 255);
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
@@ -2103,7 +2110,7 @@ input[type="radio"] {
 	font-size: 18px;
 	color: #000;
 	display: block;
-	background-color: #cda867;
+	background-color: #f7f7f7;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	transition: background-color 0.3s, color 0.3s;
   }
@@ -2115,7 +2122,7 @@ input[type="radio"] {
 .search-heading{
   padding:2px 12px  !important;
   border-bottom: 3px solid white;
-  margin: 0px auto 20px;
+  margin: -44px auto 20px;
   width: fit-content;
 }
 
@@ -2190,11 +2197,12 @@ select {
 .hero-left {
 	flex: 1;
 	align-items: center;
-	width: 100%;
-	padding: 15px;
-	border: 0.1px solid #efe088;
-	background: rgb(0, 0, 0, 0.5);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	width: 98%;
+	height: 80%;
+	padding: 0px;
+	border: 0.1px solid #ffb444;
+	background: rgb(38 74 118);
+	/* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
 	border-radius: 10px;
 	border-radius: 5%;
 }
@@ -2961,13 +2969,8 @@ select {
 }
 
 .btn-primary {
-	background: #ffc96b;
-	border-color: #ffc96b;
-	background-image: -webkit-linear-gradient(top, #ffc96b, #a56902);
-	background-image: -moz-linear-gradient(top, #ffc96b, #a56902);
-	background-image: -ms-linear-gradient(top, #ffc96b, #a56902);
-	background-image: -o-linear-gradient(top, #ffc96b, #a56902);
-	background-image: linear-gradient(to bottom, #ffc96b, #a56902);
+	background: linear-gradient(rgb(146 246 230), rgb(20 165 2)) rgb(255 255 255);
+    border-color: rgb(255 255 255);
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0px;
@@ -2981,8 +2984,8 @@ select {
   }
   
   .btn-primary:hover {
-	background: #a56902;
-	border-color: #ffc96b;
+	background: #ff9a02;
+	border-color: #322b4b;
 	text-decoration: none;
   }
 #myModalLabel{
@@ -2990,4 +2993,12 @@ select {
 	line-height: normal;
 	font-size: 1.5em;
 	text-align: center;
+}
+
+
+.mb-3, .my-3 {
+    margin-bottom: 0rem!important;
+}
+.p-3 {
+    padding: 0rem!important;
 }
