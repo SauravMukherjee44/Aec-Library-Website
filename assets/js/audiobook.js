@@ -4,10 +4,10 @@ var nyanBtn = document.getElementById("nyan-btn");
 nyanBtn.onclick = function(){
     if (nyan.paused && nyan.currentTime >= 0 && !nyan.ended) {
                  nyan.play();
-             nyanBtn.src = "media/pause.png";
+             nyanBtn.src = "media/pause.webp";
 }else {
     nyan.pause();
-    nyanBtn.src ="media/play.png"
+    nyanBtn.src ="media/play.webp"
 }
 } 
 
