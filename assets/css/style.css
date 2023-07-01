@@ -411,7 +411,7 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    /* background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); */
     min-height: 100vh;
 	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 	padding-bottom: 50px;
@@ -444,7 +444,7 @@ html {
 footer {
 	position: absolute;
 	width: 100%;
-	background-color: rgb(52, 58, 64);
+	background-color: rgb(30, 43, 56);
 	color: white;
 	box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
 	padding: 15px 0px;
@@ -1749,11 +1749,12 @@ input[type="radio"] {
 .contact {
 	display: flex;
 	flex-flow: row wrap;
-	background:linear-gradient(to right, lightblue,gray);;
+	background: rgb(218, 218, 218);
 	width: 100%;
 	justify-content: space-around;
 	padding: 1.2rem;
 	gap: 1rem;
+	color: white;
 }
 
 .contact ul {
@@ -1762,6 +1763,7 @@ input[type="radio"] {
 	align-items: center;
 	margin: 0;
 	padding: 0;
+	
 }
 #subcribe {
 	border: 2px solid rgb(153, 150, 150);
@@ -1887,6 +1889,7 @@ input[type="radio"] {
 	font-weight: bolder;
 	padding-bottom: 0%;
 	padding-right: 18px;
+	color: white;
 }
 
 
@@ -2326,7 +2329,7 @@ select {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	background-color: #f3d094;
+	background-color: #ffffff;
 	min-height: 100vh;
 }
 
@@ -2682,7 +2685,9 @@ select {
 	margin: 10% 5%;
 	height: 90%;
 	width: 95%;
-	background: #fff2db;
+	/* background: rgb(38, 74, 118); */
+	background: rgb(255,207,182);
+background: radial-gradient(circle, rgba(255,207,182,1) 0%, rgba(31,105,192,1) 100%);
 	position: relative;
 	display: grid;
 	grid-template-columns: auto;
@@ -2692,6 +2697,9 @@ select {
 		"info"
 		"btn";
 	transition: backgroud-image 0.5s ease;
+	color: white;
+	border:solid;
+	border-color: #00acee;
 }
 
 .owner {
@@ -2738,8 +2746,8 @@ select {
 
 #btn-download {
 	
-	background: linear-gradient(rgb(118 143 99), rgb(12 101 35)) rgb(255 255 255);
-    border-color: rgb(143, 139, 99);
+	background: rgb(19, 65, 83);
+background: linear-gradient(180deg, rgba(144,224,255,1) 0%, rgb(18, 65, 112) 19%);
 	-webkit-border-radius: 6;
 	-moz-border-radius: 6;
 	border-radius: 6px;
@@ -2750,11 +2758,13 @@ select {
 	margin-top: 10px !important;
 	width: 200px; */
 	text-decoration: none;
+	border:solid;
+	border-color: #eabb4e;
   }
   
 #btn-download:hover {
-	background: #f1e456;
-	border-color: #8f8b63;
+	background: #04b852;
+	border-color: #ffffff;
 	text-decoration: none;
   }
 
@@ -3012,4 +3022,9 @@ select {
     font-size: 1.75rem;
     font-family: 'Playfair Display';
 	/* aec libraby name */
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
