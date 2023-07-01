@@ -1151,8 +1151,10 @@ strong {
 }
 
 .book {
-background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115),rgb(191,175,153), rgb(255,234,205),rgb(254,244,229));
+/* background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115),rgb(191,175,153), rgb(255,234,205),rgb(254,244,229)); */
 	padding: 2rem;
+	background: rgb(22,27,57);
+background: linear-gradient(180deg, rgba(22,27,57,1) 3%, rgba(1,170,239,1) 29%, rgba(205,248,255,1) 72%);
 }
 
 .tex {
@@ -1192,11 +1194,12 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 }
 .faddy{
 	max-height: 520px;
-	background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115));
+	background-image:  linear-gradient(190deg,rgb(246 246 246),rgb(210 210 210), rgb(165 165 165));
 	margin-top: 20px;
 	margin-bottom: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
+	border-radius: 20px;
 }
 .sound{
 	size: 10px;
@@ -1205,12 +1208,15 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 }
 .bheads
 {
-	text-shadow: 2px 4px 10px rgb(85, 50, 3);
-	font-size: 50px;
+	font-size: 45px;
 	font-family: "Poppins", sans-serif;
 	text-decoration: none;
 	font-weight: bolder;
+	color: white;
 	
+}
+#listen{
+	color: black;
 }
 .books li img {
 	width: 200px;
@@ -1224,13 +1230,14 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 	box-shadow: 2px 2px 3px rgba(1, 53, 88, 0.342);
 }
 .bborder{
-	box-shadow: 2px 2px 8px rgba(253, 208, 126, 0.342);
+	box-shadow: 2px 2px 8px rgba(24, 10, 91, 0.342);
 	padding-bottom: 20px;
-	background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115));
+	background-image: linear-gradient(190deg,rgb(246 246 246),rgb(210 210 210), rgb(165 165 165));
 	margin-top: 20px;
 	margin-bottom: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
+	border-radius: 20px;
 }
 
 @keyframes bookBounce {
@@ -1250,19 +1257,18 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 	justify-content: space-around;
-	box-shadow: 3px 3px 3px rgba(116, 72, 3, 0.329);
-	padding-bottom: 30px;
-	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-right: 0px;
 }
 
 .books1 div {
 	align-self: center;
 	align-items: center;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
 .books1 img {
-	margin: 30px 50px 5px 50px;
+	margin: 20px 70px 20px 70px;
 	width: 200px;
 	height: 250px;
 	object-fit: cover;
@@ -1286,10 +1292,11 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 .book p {
 	font-size: 1.5rem;
 	text-decoration: none;
+	color:white;
 }
 #nyan-btn{
 	border-radius: 200px;
-	background-color: #fff;
+	background-color: white;
 	border: 1px solid #ffffff;
 }
 #nyan-btn:hover{
@@ -1478,7 +1485,7 @@ p {
 }
 
 .update {
-	margin: 10px;
+	margin: 100px;
 	padding: 2rem 0;
 	color: white;
 	display: flex;
@@ -1487,13 +1494,13 @@ p {
 /* Contact form position styles*/
 .login-box {
 	width: 60%;
-	padding: 40px;
+	padding: 20px;
 	background: rgba(0, 0, 0, 0.75);
 	box-sizing: border-box;
 	border-radius: 20px;
 	transition-duration: 0.5s;
 	margin-bottom: 50px !important;
-	box-shadow: 0px 0px 15px 5px lavender;
+	
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -1905,7 +1912,7 @@ input[type="radio"] {
 	list-style-type: none;
 	justify-content: space-between;
 	padding: -3rem;
-	margin: -4px;
+	margin: 0px;
 	align-items: center;
 	margin-top: -10px;
 }
@@ -2274,12 +2281,12 @@ select {
 
 ::-webkit-scrollbar {
 	width: 10px;
-	background: linear-gradient(to top, rgb(247, 191, 9), #6b6234);
+	background: linear-gradient(to top, rgb(255, 255, 255), #c6c6c6);
 	animation: animate 5s linear infinite;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to top, rgb(247, 191, 9), rgb(255, 233, 161));
+    background: linear-gradient(to top, rgb(44, 21, 84), rgb(0, 0, 0));
 	animation: animate 5s linear infinite;
     border-radius: 10px;
 }
@@ -2730,13 +2737,9 @@ select {
 /*Styling for aligning download buttons in Recommended Books Section*/
 
 #btn-download {
-	background: #8f8b63;
-	border-color: #8f8b63;
-	background-image: -webkit-linear-gradient(top, #8f8b63, #424136);
-	background-image: -moz-linear-gradient(top, #8f8b63, #424136);
-	background-image: -ms-linear-gradient(top, #8f8b63, #424136);
-	background-image: -o-linear-gradient(top, #8f8b63, #424136);
-	background-image: linear-gradient(to bottom, #8f8b63, #424136);
+	
+	background: linear-gradient(rgb(118 143 99), rgb(12 101 35)) rgb(255 255 255);
+    border-color: rgb(143, 139, 99);
 	-webkit-border-radius: 6;
 	-moz-border-radius: 6;
 	border-radius: 6px;
@@ -2750,7 +2753,7 @@ select {
   }
   
 #btn-download:hover {
-	background: #424136;
+	background: #f1e456;
 	border-color: #8f8b63;
 	text-decoration: none;
   }
@@ -2965,7 +2968,7 @@ select {
 }
 
 .bg-primary{
-	background-color: #f1c476 !important;
+	background-color: rgb(22 27 57) !important;
 }
 
 .btn-primary {
@@ -2993,6 +2996,9 @@ select {
 	line-height: normal;
 	font-size: 1.5em;
 	text-align: center;
+	color: white;
+	display: flex;
+	
 }
 
 
@@ -3001,4 +3007,9 @@ select {
 }
 .p-3 {
     padding: 0rem!important;
+}
+.h3, h3 {  
+    font-size: 1.75rem;
+    font-family: 'Playfair Display';
+	/* aec libraby name */
 }

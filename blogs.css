@@ -70,15 +70,15 @@
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.24),0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .card-img-top:hover {
-  box-shadow: 0 0.25em 0.25em -0.1em #604717;
-    box-shadow: 0 0.30em 0.30em -0.1em #f7c603;
+  box-shadow: 0 0.25em 0.25em -0.1em #5b91dd;
+    box-shadow: 0 0.30em 0.30em -0.1em #ffffff;
     border-color: #e0ef08 ;
     transition: 0.4s;
-    color: #d8eb08 ;
+    color: #ffffff ;
 }
 .card:hover {
     scale: 1.09;
-    border-color: #FFB84C;
+    border-color: #4386ca;
     transition: 0.4s;
     color: #fff ;
     text-decoration:wavy;
@@ -98,7 +98,7 @@
 }
 .card a:hover{
   background-color:inherit ;
-  color: #FFA931;
+  color: #5ab5fa;
   border:3px solid;
 }
 
