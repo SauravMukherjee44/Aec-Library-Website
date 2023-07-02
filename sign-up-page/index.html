@@ -11,11 +11,14 @@
 </head>
 
 <body>
-  <h1 id="err"></h1>
+  <h1 id="err" style="visibility: hidden;"></h1>
   <div class="section">
     <div class="header">
       AEC Library - Sign Up
     </div>
+    <p id="errormsg"></p>
+    <p id="successmsg"></p>
+   
     <form class="signUp-form" id="form">
       <div class="wrapper">
         <div class="first-box">
@@ -32,7 +35,7 @@
             <input type="tel" name="" id="phone" placeholder="Mobile number" maxlength="10" />
           </div>
           <div class="form-group no-border">
-            <input type="radio" name="gender" id="male" value="MALE" />
+            <input type="radio" name="gender" id="male" value="MALE" checked/>
             <label for="gender">Male</label>
   
             <input type="radio" name="gender" id="female" value="FEMALE" />
@@ -57,7 +60,7 @@
             </label>
           </div>
           <div class="button">
-                  <button style="color: white">submit</button>
+                  <button onclick="validate()" style="color: white">submit</button>
           </div>
         </div>
       </div>
@@ -91,7 +94,88 @@
 
       //console.log(_supabase);
   </script>
+ <script>
+  const name = document.getElementById('fullName');
+ const usrname = document.getElementById('username');
+ const useremail = document.getElementById('email');
+ const userpassword = document.getElementById('password');
+ const usermobile = document.getElementById('phone');
+ const confirmpasswd = document.getElementById('confirmPassword');
+ const error = document.getElementById('errormsg');
+ const success = document.getElementById('successmsg');
 
+ function validate(){
+
+   console.log("called");
+   if(checkInputs())
+   return true;
+   else
+   return false;
+
+ }
+
+ function checkInputs()
+ {
+      //get values from input fields
+      const nameval = name.value.trim();
+      const usernameval = usrname.value.trim();
+      const emailval = useremail.value.trim();
+      const passwdval = userpassword.value.trim();
+      const mobileval = usermobile.value.trim();
+      const confirmpasswdval = confirmpasswd.value.trim();
+
+
+     if(nameval==='')
+     {
+        error.innerHTML="*Please enter your Name!";
+        name.parentElement.classList.add('error'); name.parentElement.classList.remove('success');
+     }
+     else if(usernameval === '')
+     {
+       name.parentElement.classList.add('success'); name.parentElement.classList.remove('error');
+       error.innerHTML="*Please enter your User Name!";
+        usrname.parentElement.classList.add('error'); usrname.parentElement.classList.remove('success');
+     }
+     else if(emailval === '')
+     {
+       usrname.parentElement.classList.add('success'); usrname.parentElement.classList.remove('error');
+       error.innerHTML="*Please enter your Email!";
+        useremail.parentElement.classList.add('error'); useremail.parentElement.classList.remove('success');
+     }
+     else if(mobileval === '')
+     {
+       useremail.parentElement.classList.add('success'); useremail.parentElement.classList.remove('error');
+       error.innerHTML="*Please enter your Mobile!";
+        usermobile.parentElement.classList.add('error'); usermobile.parentElement.classList.remove('success');
+     }
+
+     else if(passwdval === '')
+     {
+       usermobile.parentElement.classList.add('success'); usermobile.parentElement.classList.remove('error');
+       error.innerHTML="*Please enter your Password!";
+        userpassword.parentElement.classList.add('error'); userpassword.parentElement.classList.remove('success');
+     }
+     else if(confirmpasswdval === '')
+     {
+       userpassword.parentElement.classList.add('success'); userpassword.parentElement.classList.remove('error');
+       error.innerHTML="*Please confirm your Password!";
+        confirmpasswd.parentElement.classList.add('error'); confirmpasswd.parentElement.classList.remove('success');
+     }
+     else if(confirmpasswdval !== passwdval)
+     {
+       userpassword.parentElement.classList.add('success'); userpassword.parentElement.classList.remove('error');
+       error.innerHTML="*Password does not match!";
+        confirmpasswd.parentElement.classList.add('error'); confirmpasswd.parentElement.classList.remove('success');
+     }
+     else
+     {
+        success.innerHTML = "Sign up successfully done!!";
+        error.innerHTML="";
+        name.value=" ";usrname.value=" ";useremail.value=" ";userpassword.value=" ";usermobile.value=" ";confirmpasswd.value=" ";
+     }
+ }
+ 
+</script>
   <script src="index.js"></script>
 </body>
 
