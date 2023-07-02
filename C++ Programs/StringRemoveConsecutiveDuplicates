@@ -1,0 +1,34 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+void remove_duplicates(char a[])
+{
+    int l = strlen(a);
+    if(l==0 || l==1)
+    {
+        return;
+    }
+
+    int j = 0;
+    for(int i = 1; i < l; i++)
+    {
+        if(a[i] != a[j])
+        {
+            j++;
+            a[j] = a[i];
+        }
+    }
+    a[j+1] = '\0';
+    return;
+}
+
+int main()
+{
+    char a[1000];
+    cout<<"Enter string: ";
+    cin.getline(a,1000);
+    remove_duplicates(a);
+    cout<<a;
+
+}
