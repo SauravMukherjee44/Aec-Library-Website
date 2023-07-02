@@ -132,14 +132,14 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </div>
         <div class="user-box">
           <input class="form__input form-control" id="landmark" type="text" name="" required="">
-          <label>Landmark</label>
-          <small class="small"></small>
+          <label>Landmark (Optional)</label>
+        
         </div>
         <div class="user-box">
           <input class="form__input form-control" id="alt_contact" type="text" name="" required="">
           <!--onchange="validate_phone(document.getElementById('alt_contact'))"-->
-          <label>Alternate Phone</label>
-          <small class="small"></small>
+          <label>Alternate Phone (Optional)</label>
+          
         </div>
         <div class="form-check">
           <input type="checkbox" class="form-control form-check-input form-checkbox" id="gridCheck" checked required>
@@ -312,9 +312,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   const country = document.getElementById('countySel');
   const state = document.getElementById('stateSel');
   const city = document.getElementById('districtSel');
-  const zip = document.getElementById('zip'); 
-  const landmark = document.getElementById('landmark'); 
-  const alt_contact = document.getElementById('alt_contact'); 
+  const zip = document.getElementById('zip');
   const grid = document.getElementById('gridCheck');
 
   function validateIssue(){
@@ -338,9 +336,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
        const stateval = state.value.trim();
        const cityval = city.value.trim();
        const zipval = zip.value.trim();
-       const landmarkval = landmark.value.trim();
-       const altnoval = alt_contact.value.trim();
-
+     
        if(nameval === '')
        { setErrorFor(name,'Please enter a Book Name');}
        else
@@ -399,18 +395,9 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         setSuccessFor(zip);
       }
 
-      if(landmarkval == ""){
-        setErrorFor(landmark,"Please enter landmark number");
-        }else{
-        setSuccessFor(landmark);
-      }
-      if(altnoval == ""){
-        setErrorFor(alt_contact,"Please enter contact number");
-        }else{
-        setSuccessFor(alt_contact);
-      }
+      
 
-       if(nameval!='' && emailval!='' && contactval!='' && addressval!='' &&  countryval !== '' && stateval !== '' && cityval!='' && zipval != '' && landmark!='' && alt_contact!='') 
+       if(nameval!='' && emailval!='' && contactval!='' && addressval!='' &&  countryval !== '' && stateval !== '' && cityval!='' && zipval != '') 
        { 
          return true; 
         }
