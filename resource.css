@@ -1077,7 +1077,6 @@ footer .content p {
 .lower{
   max-width: 1350px; 
   margin: auto;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1088,17 +1087,6 @@ footer .content p {
   height: 60px;
   display: flex;
   justify-content: left;
-}
-
-.lower .social-container ul{
-  position: absolute;
-  top: 80%;
-  left: 26%;
-  margin-left: 0;
-}
-
-.lower .social-container ul a{
-  margin-top: 0;
 }
 
 .lower .topic a{
