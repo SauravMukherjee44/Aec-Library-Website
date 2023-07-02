@@ -17,7 +17,8 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-     <!-- Style CSS -->
+     
+	  <!-- Style CSS -->
   <link rel="stylesheet" href="../assets/css/contact us.css" />
 
   <!-- Adding new font -> Playfair-display -->
@@ -83,34 +84,53 @@
 	   </div>
 	   <div class="contact-form">
 		   <h2><strong> Send a Message</strong></h2>
+		   <form onsubmit="return false">
 		   <div class="form">
 			   <div class="inputBox w50">
-				   <input type="text"  name="" required>
+				   <input type="text"  name="firstname" required>
 				   <span>First Name</span>
+				   <span class = "error"> </span>
 			   </div>
 			   <div class="inputBox w50">
-				   <input type="text" name="" required>
-				   <span>Last Name</span>
+				   <input type="text" name="lastname" required>
+				   <span >Last Name </span>
+				   <span class="error"> </span>
 			   </div>
 			   <div class="inputBox w50">
-				   <input type="text" name="" required>
+				   <input type="email" name="email" required>
 				   <span>Email Address</span>
+				   <span class = "error"></span>
 			   </div>
 			   <div class="inputBox w50">
-				   <input type="text"  name="" required>
+				   <input type="number"  name="mobilenumber" required>
 				   <span>Mobile Number</span>
+				   <span class = "error"></span>
 			   </div>
 			   <div class="inputBox w100">
-				   <textarea name="" required></textarea>
+				   <textarea name="message" required></textarea>
 				   <span>Write your message here</span>
+				   <span class = "error"></span>
 			   </div>
 			   <div class="inputBox w100">
 				   <input type="submit" value="Send">
 			   </div>
 	
 		   </div>
+		   </form> 
+
+		   <!-- <script>
+			function validateForm(){
+				let x = document.forms["myForm"]["fname"].value;
+				if (x == ""){
+					alert("Name must be filled out");
+					return false;
+				}
+			}
+		   </script> -->
 	   </div>
 	</div>
+
+	
     <!-- footer started -->
   <div>
     <footer>
