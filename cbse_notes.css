@@ -60,6 +60,9 @@ header {
 
 .nav{
     border-top:  2px solid rgb(119, 2, 2);
+    position: sticky;
+    top: 0%;
+    z-index: 9900;
 }
 
 .nav-link-container{

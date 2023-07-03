@@ -12,7 +12,9 @@
   width: 100%;
   top: -3px;;
   left:0;
-  position:absolute;
+  position:fixed; 
+  top: 0px;
+  z-index: 9900;
 }
 .topnav i {
   margin-right: 5px; /* Add space between icon and text */

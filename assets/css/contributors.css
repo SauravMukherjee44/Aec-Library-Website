@@ -126,8 +126,9 @@ body{
   }
   nav.navbar.navbar-expand-lg.navbar-light.bg-info {
     /* To make nav-bar sticky */
-    position: relative;
+    position: fixed;
     top: 0;
+    z-index: 9999;
     width: 100%;
   }
   .navbar-brand{

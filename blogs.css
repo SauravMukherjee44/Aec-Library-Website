@@ -139,3 +139,10 @@
   text-decoration: none;
   font-size: 32px;
 }
+.navbar{
+  position: fixed;
+  top: 0%;
+  z-index: 9600;
+  width: 100%;
+ 
+}

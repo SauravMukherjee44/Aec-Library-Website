@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
   }
-  
+   
   
 /* To enhance scroll-bar  */
 
@@ -58,6 +58,9 @@ header {
 
 .nav{
     border-top:  2px solid rgb(119, 2, 2);
+    position: sticky;
+    top: 0%;
+    z-index: 9999;
 }
 
 .nav-link-container{
