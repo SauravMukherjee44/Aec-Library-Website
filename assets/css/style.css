@@ -43,7 +43,7 @@ nav.navbar {
 	padding-left: 15px;
 	padding-bottom: 10px;
 	border: 0.1px solid #efe088;
-	background: rgb(0, 0, 0, 0.5);
+	background: rgb(38 74 118);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
@@ -59,7 +59,7 @@ nav.navbar {
 #table h1 {
 	color: white;
 	text-decoration: none;
-	padding: 4% 0 4% 0;
+	padding: 1% 0 0% 0;
 	font-family: 'Playfair Display';
 }
 
@@ -94,7 +94,7 @@ nav.navbar {
 }
 
 #books-content {
-	padding: 10px;
+	padding: 0px;
 	background-color: white;
 	border-radius: 2%;
 }
@@ -171,12 +171,17 @@ label {
 }
 
 .body-style {
-	background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-color: rgba(0, 0, 0, 0.9);
-	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
-	z-index: 1;
+	/* background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true"); */
+	/* background-size: cover; */
+	background-image: url("https://images.unsplash.com/photo-1533638978312-8a4eaa2fbeaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80");
+	/* background-repeat: no-repeat; */
+	/* background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; */
+	/* z-index: 1; */
+	
+	
+	
+	
 }
 
 .bg-info {
@@ -207,7 +212,7 @@ label[for="category"] {
 #IssueHere {
 	color: white;
 	text-align: center;
-	padding: 20px 0 25px 0;
+	padding: 3px 0 0px 0;
 	font-family: 'Playfair Display';
 	text-decoration: none;
 }
@@ -246,7 +251,7 @@ label[for="dateIssue"] {
 	display: none;
 }
 .container h1 {
-	padding-top: 40px;
+	padding-top: 0px;
 	color: rgb(255, 255, 255);
 	/* font-family: "Poiret One", cursive; */
 	font-weight: bolder;
@@ -406,7 +411,7 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    /* background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); */
     min-height: 100vh;
 	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 	padding-bottom: 50px;
@@ -439,7 +444,7 @@ html {
 footer {
 	position: absolute;
 	width: 100%;
-	background-color: rgb(52, 58, 64);
+	background-color: rgb(30, 43, 56);
 	color: white;
 	box-shadow: rgb(0 0 0 / 15%) 0px 0px 16px 9px;
 	padding: 15px 0px;
@@ -1060,7 +1065,7 @@ strong {
 	}
   .body-style {
     box-shadow: none;
-    padding: 1rem;
+    padding: -2rem;
   }
 
 	.body-style {
@@ -1146,8 +1151,10 @@ strong {
 }
 
 .book {
-background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115),rgb(191,175,153), rgb(255,234,205),rgb(254,244,229));
+/* background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115),rgb(191,175,153), rgb(255,234,205),rgb(254,244,229)); */
 	padding: 2rem;
+	background: rgb(22,27,57);
+background: linear-gradient(180deg, rgba(22,27,57,1) 3%, rgba(1,170,239,1) 29%, rgba(205,248,255,1) 72%);
 }
 
 .tex {
@@ -1187,11 +1194,12 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 }
 .faddy{
 	max-height: 520px;
-	background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115));
+	background-image:  linear-gradient(190deg,rgb(246 246 246),rgb(210 210 210), rgb(165 165 165));
 	margin-top: 20px;
 	margin-bottom: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
+	border-radius: 20px;
 }
 .sound{
 	size: 10px;
@@ -1200,12 +1208,15 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 }
 .bheads
 {
-	text-shadow: 2px 4px 10px rgb(85, 50, 3);
-	font-size: 50px;
+	font-size: 45px;
 	font-family: "Poppins", sans-serif;
 	text-decoration: none;
 	font-weight: bolder;
+	color: white;
 	
+}
+#listen{
+	color: black;
 }
 .books li img {
 	width: 200px;
@@ -1219,13 +1230,14 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 	box-shadow: 2px 2px 3px rgba(1, 53, 88, 0.342);
 }
 .bborder{
-	box-shadow: 2px 2px 8px rgba(253, 208, 126, 0.342);
+	box-shadow: 2px 2px 8px rgba(24, 10, 91, 0.342);
 	padding-bottom: 20px;
-	background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115));
+	background-image: linear-gradient(190deg,rgb(246 246 246),rgb(210 210 210), rgb(165 165 165));
 	margin-top: 20px;
 	margin-bottom: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
+	border-radius: 20px;
 }
 
 @keyframes bookBounce {
@@ -1245,19 +1257,18 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 	justify-content: space-around;
-	box-shadow: 3px 3px 3px rgba(116, 72, 3, 0.329);
-	padding-bottom: 30px;
-	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-right: 0px;
 }
 
 .books1 div {
 	align-self: center;
 	align-items: center;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
 .books1 img {
-	margin: 30px 50px 5px 50px;
+	margin: 20px 70px 20px 70px;
 	width: 200px;
 	height: 250px;
 	object-fit: cover;
@@ -1281,10 +1292,11 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 .book p {
 	font-size: 1.5rem;
 	text-decoration: none;
+	color:white;
 }
 #nyan-btn{
 	border-radius: 200px;
-	background-color: #fff;
+	background-color: white;
 	border: 1px solid #ffffff;
 }
 #nyan-btn:hover{
@@ -1473,7 +1485,7 @@ p {
 }
 
 .update {
-	margin: 10px;
+	margin: 100px;
 	padding: 2rem 0;
 	color: white;
 	display: flex;
@@ -1482,13 +1494,13 @@ p {
 /* Contact form position styles*/
 .login-box {
 	width: 60%;
-	padding: 40px;
+	padding: 20px;
 	background: rgba(0, 0, 0, 0.75);
 	box-sizing: border-box;
 	border-radius: 20px;
 	transition-duration: 0.5s;
 	margin-bottom: 50px !important;
-	box-shadow: 0px 0px 15px 5px lavender;
+	
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -1737,11 +1749,12 @@ input[type="radio"] {
 .contact {
 	display: flex;
 	flex-flow: row wrap;
-	background:linear-gradient(to right, lightblue,gray);;
+	background: rgb(218, 218, 218);
 	width: 100%;
 	justify-content: space-around;
 	padding: 1.2rem;
 	gap: 1rem;
+	color: white;
 }
 
 .contact ul {
@@ -1750,6 +1763,7 @@ input[type="radio"] {
 	align-items: center;
 	margin: 0;
 	padding: 0;
+	
 }
 #subcribe {
 	border: 2px solid rgb(153, 150, 150);
@@ -1873,8 +1887,9 @@ input[type="radio"] {
 	list-style: none;
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: bolder;
-	padding-bottom: 2%;
+	padding-bottom: 0%;
 	padding-right: 18px;
+	color: white;
 }
 
 
@@ -1890,7 +1905,7 @@ input[type="radio"] {
 .header {
 	min-height: 60px;
 	color: white;
-	background-color: rgb(48, 46, 46);
+	background-color:rgb(22 27 57);
 	width: 100%;
 }
 
@@ -1899,9 +1914,10 @@ input[type="radio"] {
 	flex-direction: row;
 	list-style-type: none;
 	justify-content: space-between;
-	padding: 1rem;
-	margin: 0;
+	padding: -3rem;
+	margin: 0px;
 	align-items: center;
+	margin-top: -10px;
 }
 
 .header ul li {
@@ -1924,11 +1940,11 @@ input[type="radio"] {
 }
 .header .logo,
 .header .login a {
-	font-size: 24px;
+	font-size: 17px;
 }
 .new-nav {
 	min-height: 50px;
-	background-color: #f3d094;
+	background-color: #ffffff;
 	align-items: center;
 }
 
@@ -1975,12 +1991,12 @@ input[type="radio"] {
 }
 
 .contain {
-  height: 355px;
+  height: 305px;
   width: 100%;
   color: white;
-  margin-top: 21px; 
+  margin-top: 0px; 
   border: 0.1px solid #efe088;
-  background: rgb(0, 0, 0, 0.5);
+  background:rgb(38 74 118);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 30px;
   display: flex;
@@ -1989,7 +2005,7 @@ input[type="radio"] {
 }
 .contain div {
 	font-family: "Source Sans Pro", sans-serif;
-	margin: 30px;
+	margin: 2px;
 	text-align: center;
 }
 
@@ -2014,7 +2030,7 @@ input[type="radio"] {
 
 #searchForm {
 	display: inline-block;
-	border: 2px solid grey;
+
 	border-radius: 12px;
 	margin-left: 30px;
 	align-items: center;
@@ -2022,8 +2038,9 @@ input[type="radio"] {
 
 .nav-link {
 	font-family: sans-serif;
-	font-size: 0.5cm;
+	font-size: 0.5px
 }
+
 .login {
 	position: relative;
 	color: #f3d094;
@@ -2053,7 +2070,7 @@ input[type="radio"] {
 	width: 100%;
 	margin-right: 0;
 	padding-left: 30px;
-	margin-left: 60px;
+	margin-left: 150px;
 }
 /* filter book by name */
 #myInput {
@@ -2079,7 +2096,7 @@ input[type="radio"] {
 #myUL li a {
   border-radius: 25px;
   margin-top: 1px;
-  background-color: rgb(212, 202, 168);
+  background-color: rgb(255, 255, 255);
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
@@ -2103,7 +2120,7 @@ input[type="radio"] {
 	font-size: 18px;
 	color: #000;
 	display: block;
-	background-color: #cda867;
+	background-color: #f7f7f7;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	transition: background-color 0.3s, color 0.3s;
   }
@@ -2115,7 +2132,7 @@ input[type="radio"] {
 .search-heading{
   padding:2px 12px  !important;
   border-bottom: 3px solid white;
-  margin: 0px auto 20px;
+  margin: -44px auto 20px;
   width: fit-content;
 }
 
@@ -2190,11 +2207,12 @@ select {
 .hero-left {
 	flex: 1;
 	align-items: center;
-	width: 100%;
-	padding: 15px;
-	border: 0.1px solid #efe088;
-	background: rgb(0, 0, 0, 0.5);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	width: 98%;
+	height: 80%;
+	padding: 0px;
+	border: 0.1px solid #ffb444;
+	background: rgb(38 74 118);
+	/* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
 	border-radius: 10px;
 	border-radius: 5%;
 }
@@ -2266,12 +2284,12 @@ select {
 
 ::-webkit-scrollbar {
 	width: 10px;
-	background: linear-gradient(to top, rgb(247, 191, 9), #6b6234);
+	background: linear-gradient(to top, rgb(255, 255, 255), #c6c6c6);
 	animation: animate 5s linear infinite;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to top, rgb(247, 191, 9), rgb(255, 233, 161));
+    background: linear-gradient(to top, rgb(44, 21, 84), rgb(0, 0, 0));
 	animation: animate 5s linear infinite;
     border-radius: 10px;
 }
@@ -2311,7 +2329,7 @@ select {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	background-color: #f3d094;
+	background-color: #ffffff;
 	min-height: 100vh;
 }
 
@@ -2491,7 +2509,7 @@ select {
 		font-size: 1rem;
 	}
 	.logo-img {
-		margin-left: 5px;
+		margin-left: -69px;
 	}
 	.new-nav ul {
 		flex-direction: column;
@@ -2667,7 +2685,9 @@ select {
 	margin: 10% 5%;
 	height: 90%;
 	width: 95%;
-	background: #fff2db;
+	/* background: rgb(38, 74, 118); */
+	background: rgb(255,207,182);
+background: radial-gradient(circle, rgba(255,207,182,1) 0%, rgba(31,105,192,1) 100%);
 	position: relative;
 	display: grid;
 	grid-template-columns: auto;
@@ -2677,6 +2697,9 @@ select {
 		"info"
 		"btn";
 	transition: backgroud-image 0.5s ease;
+	color: white;
+	border:solid;
+	border-color: #00acee;
 }
 
 .owner {
@@ -2722,13 +2745,9 @@ select {
 /*Styling for aligning download buttons in Recommended Books Section*/
 
 #btn-download {
-	background: #8f8b63;
-	border-color: #8f8b63;
-	background-image: -webkit-linear-gradient(top, #8f8b63, #424136);
-	background-image: -moz-linear-gradient(top, #8f8b63, #424136);
-	background-image: -ms-linear-gradient(top, #8f8b63, #424136);
-	background-image: -o-linear-gradient(top, #8f8b63, #424136);
-	background-image: linear-gradient(to bottom, #8f8b63, #424136);
+	
+	background: rgb(19, 65, 83);
+background: linear-gradient(180deg, rgba(144,224,255,1) 0%, rgb(18, 65, 112) 19%);
 	-webkit-border-radius: 6;
 	-moz-border-radius: 6;
 	border-radius: 6px;
@@ -2739,11 +2758,13 @@ select {
 	margin-top: 10px !important;
 	width: 200px; */
 	text-decoration: none;
+	border:solid;
+	border-color: #eabb4e;
   }
   
 #btn-download:hover {
-	background: #424136;
-	border-color: #8f8b63;
+	background: #04b852;
+	border-color: #ffffff;
 	text-decoration: none;
   }
 
@@ -2957,17 +2978,12 @@ select {
 }
 
 .bg-primary{
-	background-color: #f1c476 !important;
+	background-color: rgb(22 27 57) !important;
 }
 
 .btn-primary {
-	background: #ffc96b;
-	border-color: #ffc96b;
-	background-image: -webkit-linear-gradient(top, #ffc96b, #a56902);
-	background-image: -moz-linear-gradient(top, #ffc96b, #a56902);
-	background-image: -ms-linear-gradient(top, #ffc96b, #a56902);
-	background-image: -o-linear-gradient(top, #ffc96b, #a56902);
-	background-image: linear-gradient(to bottom, #ffc96b, #a56902);
+	background: linear-gradient(rgb(146 246 230), rgb(20 165 2)) rgb(255 255 255);
+    border-color: rgb(255 255 255);
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0px;
@@ -2981,8 +2997,8 @@ select {
   }
   
   .btn-primary:hover {
-	background: #a56902;
-	border-color: #ffc96b;
+	background: #ff9a02;
+	border-color: #322b4b;
 	text-decoration: none;
   }
 #myModalLabel{
@@ -2990,4 +3006,25 @@ select {
 	line-height: normal;
 	font-size: 1.5em;
 	text-align: center;
+	color: white;
+	display: flex;
+	
+}
+
+
+.mb-3, .my-3 {
+    margin-bottom: 0rem!important;
+}
+.p-3 {
+    padding: 0rem!important;
+}
+.h3, h3 {  
+    font-size: 1.75rem;
+    font-family: 'Playfair Display';
+	/* aec libraby name */
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0rem;
+    font-weight: 500;
+    line-height: 1.2;
 }

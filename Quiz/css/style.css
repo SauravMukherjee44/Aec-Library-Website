@@ -138,7 +138,7 @@
   margin-top: 40px;
   border-radius: 10px;
   color: black;
-  background-color: burlywood;
+  background-color: rgb(211, 235, 255);
   font-family:Arial, Helvetica, sans-serif;
   
  
@@ -156,7 +156,7 @@
   transform: none;
 }
 h1{
-  font-size: 38px;
+  font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight:500;
  text-decoration: 2px solid underline;
