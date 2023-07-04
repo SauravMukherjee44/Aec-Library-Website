@@ -46,33 +46,38 @@
           <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home <span
               class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item"><a href="about.html" class="nav-link" target="_blank"> <i class="fas fa-book"></i>
+        <li class="nav-item"><a href="about.html" class="nav-link"> <i class="fas fa-book"></i>
             About</a></li>
-        <li class="nav-item"><a href="public/donate-book.html" class="nav-link" target="_blank"> <i
+        <li class="nav-item"><a href="public/donate-book.html" class="nav-link"> <i
               class="fas fa-book"></i> Donate Books </a></li>
-        <li class="nav-item"><a href="resource.html" class="nav-link" target="_blank"> <i
+        <li class="nav-item"><a href="resource.html" class="nav-link"> <i
               class="fas fa-external-link-alt"></i> Resources</a></li>
-        <li class="nav-item"><a href="Login_page/login_page.html" class="nav-link" target="_blank"> <i
+        <li class="nav-item"><a href="Login_page/login_page.html" class="nav-link"> <i
               class="fas fa-sign-in-alt"></i> Login </a></li>
-        <li class="nav-item"><a href="sign-up-page/index.html" class="nav-link" target="_blank"> <i
+        <li class="nav-item"><a href="sign-up-page/index.html" class="nav-link"> <i
               class="fas fa-sign-in-alt"></i> SIGN UP </a></li>
       </ul>
     </div>
   </nav>
+
+
   <div class="container_header">
     <h1>Our Contributors <i class="fas fa-user-friends"></i></h1>
-    <input  id="searchBox" type="text" placeholder="Search...">
+    <div class="searchBar">
+    <input id="searchBox" type="text" placeholder="Search...">
+    <span class="searchIcon"><i class="fas fa-search"></i></span>
+    </div>
   </div>
+
   <div id="contributors_container">
     <!-- Contributors container -->
   </div>
   <div>
     <footer>
-    
-      <div class="footer-wrapper">
-      <div class ="container" >
-        <div class ="row" style="display: flex;justify-content: space-between;">
-          <div class="footer-col" style="display: flex;flex-direction: column;align-items: center;">
+      <div>
+      <div class ="container">
+        <div class="row" style="display: flex; justify-content: space-between;">
+          <div class="footer-col col pl-md-5" style="display: flex;flex-direction: column;">
             <h4 style="color: rgb(27, 26, 24);font-weight: bold "><u>Quick Links</u></h4>
             <ul style="display: flex;flex-direction: column;">
               <li><a href="index.html" style="color: rgb(243, 240, 235);">Home</a></li>
@@ -82,9 +87,9 @@
               <li><a href="public/privacy-policy.html" style="color:rgb(243, 240, 235);">Privacy Policy</a></li>
               <li><a href="public/terms&conditions.html" style="color:rgb(243, 240, 235);">Terms and Conditions</a></li>
            </ul>  
-           </div>
-            <div class="footer-col footer-col-address">
-              <h4 style="color: rgb(27, 26, 24);font-weight: bold;margin-left: 24px;text-decoration: underline;">Address</h4>
+          </div>
+          <div class="footer-col col footer-col-address pl-md-5">
+              <h4 style="color: rgb(27, 26, 24);font-weight: bold;text-decoration: underline;">Address</h4>
               <div class="content">
                 <div class="place">
                   <span class="fas fa-map-marker-alt" style="color: cornsilk;"></span>
@@ -99,13 +104,12 @@
                 <span class="fas fa-envelope" style="color: cornsilk;"></span>
                 <span class="text" style="color: cornsilk;">contact@example.com</span>
               </div>
-            </div>
+          </div>
           </div>
         </div>
       </div>
-        <div class="footer-wrapper">
+        <div class="footer-wrapper mt-5">
         <div class="icons">
-
           <ul>
             <li>
               <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
@@ -208,6 +212,29 @@
   <script>
     var year = new Date().getFullYear();
     document.getElementById("footer-year").innerHTML = year;
+  </script>
+  <div id="topBtn" title="Navigate to Top Button">
+    <a href="#"><span class="fa fa-angle-up"></span></a>
+  </div>
+  <!-- Navigate to Top Button  -->
+  <script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 40) {
+                $('#topBtn').css({
+                    "opacity": "1", "pointer-events": "auto"
+                });
+            } else {
+                $('#topBtn').css({
+                    "opacity": "0", "pointer-events": "none"
+                });
+            }
+        });
+  
+        $("#topBtn").click(function () {
+            $('html ,body').animate({ scrollTop: 0 }, 400);
+        });
+    });
   </script>
 </body>
 

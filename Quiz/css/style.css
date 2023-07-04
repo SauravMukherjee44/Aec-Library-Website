@@ -59,7 +59,7 @@
   }
   .quiz-container::before{
     content: "";
-    background:url("/Quiz/bg.jpg") no-repeat center center/cover;
+    background:url("https://img.freepik.com/premium-photo/product-presentation-wooden-table-with-background-empty-bookshelf-library_172251-444.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -132,11 +132,10 @@
   /* margin-left:-1rem; */
   font-size: 26px;
   padding: 1rem 0;
-  width: 12rem;
+  width: 20rem;
   text-align: center;
   border: 2px solid black;
-  margin-bottom: 35px;
-  margin-top: 25px;
+  margin-top: 40px;
   border-radius: 10px;
   color: black;
   background-color: burlywood;
@@ -146,7 +145,7 @@
 }
 .quiz-btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 burlywood;
+  box-shadow: 0 0.7rem 1.4rem 0 burlywood;
   transform: translateY(-0.4rem);
   transition: transform 150ms;
 }

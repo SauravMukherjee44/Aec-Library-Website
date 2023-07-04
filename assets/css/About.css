@@ -350,13 +350,14 @@ footer p {
   margin: 0;
 }
 
-.q-link-header {
-  font-family: "Playfair Display", serif;
-  color: bisque;
-  text-align: center;
-  padding: 10px 60px;
-  font-size: 30px;
-}
+  .q-link-header {
+    font-family: "Playfair Display", serif;
+    color: bisque;
+    text-align: center;
+    padding: 20px 60px;
+    font-size: 35px;
+  }
+
 
 .footer-col ul {
   display: flex;
@@ -520,6 +521,7 @@ footer p {
 }
 /* Media Query */
 
+
 @media only screen and (max-width: 1200px) {
   a.nav-link {
     font-size: 17px;
@@ -530,10 +532,12 @@ footer p {
   }
 }
 
+
 @media (max-width: 800px) {
   .about-container {
     width: 90%;
   }
+
 
   .about-container h1 {
     font-size: 30px;
@@ -541,6 +545,7 @@ footer p {
 
   .about-container h2 {
     font-size: 25px;
+
   }
 
   .about-container p {
@@ -569,8 +574,8 @@ footer p {
 }
 
 .animated-border-button {
-  /* As per color of homepage( looks good now ) */
-  background-color: #f3d094;
+ /* As per color of homepage( looks good now ) */
+  background-color: #f7c46c;
   border: none;
   color: #ffffff;
   outline: none;
@@ -590,13 +595,13 @@ footer p {
 }
 
 .animated-border-button:before {
-  border-top: 2px solid #3f2c10;
+  border-top: 2px solid #fffcd9;
   right: 0;
   top: -4px;
 }
 
 .animated-border-button:after {
-  border-bottom: 2px solid #3f2c10;
+  border-bottom: 2px solid #fffcd9;
   bottom: -4px;
   left: 0;
 }

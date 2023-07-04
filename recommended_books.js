@@ -12,7 +12,7 @@ fetch(url)
           <a href="${data[i].url}" target="_blank">
             <button class="btn btn-default" id="btn-download">
               Download as pdf
-            </button>
+            </button> 
           </a>
       </div>`   
   }
