@@ -34,8 +34,18 @@ confirmNewPassword.addEventListener("click", () => {
     confirmPassword.setAttribute("type", "password");
   }
 });
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  if (password.value != confirmPassword.value ) {
+    document.getElementById("err").innerHTML = "Passwords do not match";
+    return;
+  }
+  if (password.value.length > 15  ) {
+    document.getElementById("err").innerHTML = "Password length must not exceed 15 characters";
+    return;
+  }
+
   const { user, session, error } = _supabase.auth
     .signUp(
       {

@@ -25,6 +25,15 @@ body {
 h1 {
   font-weight: bold;
   margin: 0;
+  background-color: #ffffff;
+  color:red;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 50% / 100% 100% 0 0;
+}
+
+h1:empty {
+  padding: 0;
 }
 
 h2 {

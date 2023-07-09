@@ -29,6 +29,20 @@ body {
   font-weight: 700;
   text-align: center;
 }
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+  background-color: #ffffff;
+  color:red;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5% / 100% 100% 100% 100%;
+}
+
+h1:empty {
+  padding: 0;
+}
 .signUp-form{
   display: flex;
   /* grid-template-columns: repeat(2,1fr); */
