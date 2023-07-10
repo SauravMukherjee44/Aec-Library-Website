@@ -41,7 +41,7 @@ nav.navbar {
 	cursor: auto;
 	padding-right: 15px;
 	padding-left: 15px;
-	padding-bottom: 10px;
+	padding-bottom: 0px;
 	border: 0.1px solid #efe088;
 	background: rgb(0, 0, 0, 0.5);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -97,6 +97,7 @@ nav.navbar {
 	padding: 10px;
 	background-color: white;
 	border-radius: 2%;
+	margin-bottom: 10%;
 }
 
 
@@ -171,9 +172,11 @@ label {
 }
 
 .body-style {
-	background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
-	background-size: cover;
-	background-repeat: no-repeat;
+
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSx7xZCUqCoVHL6EVHc477XyKxKz-98SdZUA&usqp=CAU");
+
+	background-size: contain;
+	
 	background-color: rgba(0, 0, 0, 0.9);
 	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 	z-index: 1;
@@ -247,7 +250,7 @@ label[for="dateIssue"] {
 }
 .container h1 {
 	padding-top: 40px;
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	/* font-family: "Poiret One", cursive; */
 	font-weight: bolder;
 	letter-spacing: 0.1em;
@@ -2016,7 +2019,7 @@ input[type="radio"] {
 	display: inline-block;
 	border: 2px solid grey;
 	border-radius: 12px;
-	margin-left: 30px;
+	margin-left: 0px;
 	align-items: center;
 }
 
@@ -2064,6 +2067,7 @@ input[type="radio"] {
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+  border-radius: 25px;
 }
 #myUL {
   list-style-type: none;
@@ -2191,12 +2195,13 @@ select {
 	flex: 1;
 	align-items: center;
 	width: 100%;
-	padding: 15px;
+	padding: 1px;
 	border: 0.1px solid #efe088;
 	background: rgb(0, 0, 0, 0.5);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	border-radius: 10px;
 	border-radius: 5%;
+	margin-left: 16%;
 }
 
 
