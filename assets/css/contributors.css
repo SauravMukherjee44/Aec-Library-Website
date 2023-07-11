@@ -23,7 +23,7 @@ body{
     box-shadow: none;
     background-size: cover;
     /* background: url('.//') */
-    background:url('Background.jpg');
+    background:url('Background.webp');
     line-height:1.5em;
 }
 /* scroll bar design */

@@ -1,92 +1,122 @@
 [
     {
         "id": "1",
-        "img": "images/bookimage1.png",
+        "img": "images/bookimage1.webp",
         "url": "https://www.alvinisd.net/cms/lib03/TX01001897/Centricity/Domain/1077/pro_html5_and_css3_design_patterns.pdf"
     },
     {
         "id": "2",
-        "img": "images/bookimage2.png",
+        "img": "images/bookimage2.webp",
         "url": "https://bawar.net/data0/books/5d626a582939a/pdf/web-design-with-html-and-css-digital-classroom.pdf"
     },
     {
         "id": "3",
-        "img": "images/bookimage3.png",
+        "img": "images/bookimage3.webp",
         "url": "https://www.ciwcertified.com/resources/documents/sample-chapter/CCT02CDHTCSCK1405.PDF"
     },
     {
         "id": "4",
-        "img": "images/bookimage4.png",
+        "img": "images/bookimage4.webp",
         "url": "https://www.doc-developpement-durable.org/file/Projets-informatiques/cours-&-manuels-informatiques/htm-html-xml-ccs/Sams%20Teach%20Yourself%20HTML,%20CSS,%20and%20JavaScript%20All%20in%20One.pdf"
     },
     {
         "id": "5",
-        "img": "images/bookimage5.png",
+        "img": "images/bookimage5.webp",
         "url": "https://wtf.tw/ref/duckett.pdf"
     },
     {
         "id": "6",
-        "img": "images/bookimage6.png",
+        "img": "images/bookimage6.webp",
         "url": "https://www.mbit.edu.in/wp-content/uploads/2020/05/Web-Design123uo00es0523.pdf"
     },
     {
         "id": "7",
-        "img": "images/bookimage7.png",
+        "img": "images/bookimage7.webp",
         "url": "https://wtf.tw/ref/robbins.pdf"
     },
     {
         "id": "8",
-        "img": "images/bookimage8.png",
+        "img": "images/bookimage8.webp",
         "url": "https://www.dcpehvpm.org/E-Content/BCA/BCA-II/Web%20Technology/the-complete-reference-html-css-fifth-edition.pdf"
     },
     {
         "id": "9",
-        "img": "images/bookimage9.png",
+        "img": "images/bookimage9.webp",
         "url": "http://artsites.ucsc.edu/sdaniel/170a_2014/Head_First_HTML_CSS_XHTML.pdf"
     },
     {
         "id": "10",
-        "img": "images/bookimage10.png",
+        "img": "images/bookimage10.webp",
         "url": "https://pepa.holla.cz/wp-content/uploads/2015/11/JavaScript-A-Beginners-Guide-Fourth-Edition1.pdf"
     },
     {
         "id": "11",
-        "img": "images/bookimage11.png",
+        "img": "images/bookimage11.webp",
         "url": "https://pepa.holla.cz/wp-content/uploads/2016/08/JavaScript-The-Definitive-Guide-6th-Edition.pdf"   
     },
     {
         "id": "12",
-        "img": "images/bookimage12.png",
+        "img": "images/bookimage12.webp",
         "url": "https://bedford-computing.co.uk/learning/wp-content/uploads/2015/10/JavaScript-and-JQuery-Interactive-Front-End-Web-Development-Introduction.pdf" 
     },
     {
         "id": "13",
-        "img": "images/bookimage13.png",
+        "img": "images/bookimage13.webp",
         "url": "https://www.snggdcg.ac.in/pdf/study-material/computer-science/0071611436%20HTML.pdf"  
     },
     {
         "id": "14",
-        "img": "images/bookimage14.png",
+        "img": "images/bookimage14.webp",
         "url": "https://people.inf.elte.hu/zirtaai/html_ebooks/HTML5_The_Missing_Manual.pdf"   
     },
     {
         "id": "15",
-        "img": "images/bookimage15.png",
+        "img": "images/bookimage15.webp",
         "url": "https://elibrary.ceiti.md/files/12/CSS3_for_Web_Designers.pdf"
     },
     {
         "id": "16",
-        "img": "images/bookimage16.png",
+        "img": "images/bookimage16.webp",
         "url": "https://drive.google.com/file/d/1nGiLBDW7hsPi-Kl-BS4XN-K_8tWQWIQf/view?usp=share_link"
     },
     {
         "id": "17",
-        "img": "images/bookimage17.png",
+        "img": "images/bookimage17.webp",
         "url": "https://drive.google.com/file/d/1hEtTSHc0BYBjgkpgeP2zPZ1Bt7DTTV0M/view?usp=share_link"
     },
     {
         "id": "18",
-        "img": "images/bookimage18.jpg",
+        "img": "images/bookimage18.webp",
         "url": "https://drive.google.com/file/d/1wOWgrwP2vLmyx8P4irFzEYmsv-lAktrx/view?usp=share_link"
+    },
+    {
+        "id": "19",
+        "img": "images/bookimage19.webp",
+        "url": "https://www.mediafire.com/file/6lqvwsq89kc0nx1/JavaScript_%2526_jQuery.pdf/file"
+    },
+    {
+        "id": "20",
+        "img": "images/bookimage20.webp",
+        "url": "https://www.mediafire.com/file/0ubh4gijs7t4h5y/Learning_web_design.pdf/file"
+    },
+    {
+        "id": "21",
+        "img": "images/bookimage21.webp",
+        "url": "https://www.mediafire.com/file/iifsff22cfpjlz6/Professional_JavaScript_for_Web_Developers%252C_4th_Edition.pdf/file"
+    },
+    {
+        "id": "22",
+        "img": "images/bookimage22.webp",
+        "url": "https://www.mediafire.com/file/53l7mscagd0pwp0/Secrets_of_the_JavaScript_Ninja.pdf/file"
+    },
+    {
+        "id": "23",
+        "img" : "images/bookimage23.webp",
+        "url" : "https://www.mediafire.com/file/lxb6hiksaad8bgq/Eloquent_JavaScript_small.pdf/file"
+    },
+    {
+        "id": "24",
+        "img": "images/bookimage24.webp",
+        "url": "https://www.mediafire.com/file/ywo61cdf13tnz8v/Bulltetproof_web_design.pdf/file"
     }
 ]

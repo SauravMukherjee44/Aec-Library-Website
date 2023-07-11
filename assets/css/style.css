@@ -27,36 +27,15 @@ nav.navbar {
 	padding: 20px 0 20px 0;
 }
 
-
-
-/* #table {
-  border: none;
-  border-radius: 20px;
-  /* background: linear-gradient(to right, #3898dd, #36d4f0, #85daa8); */
-/* background: linear-gradient(to bottom, #0c0c0c, #2a2a2a, #646665); */
-/*background: linear-gradient(to right, #0a5f81, #093b3f, #1b1b1b);
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  border: 3px solid black;
-  box-shadow: 2px 2px 5px 2px black;
-*/
-
 #table {
 	text-align: center;
 	border-radius: 20px;
 	background-color: rgba(0, 0, 0, 0.7);
-	/* background: linear-gradient(to right,#f2c782fa , #cdaa7e , #d3c8a8); */
-	/* padding-right: 15px;
-    padding-left: 15px; */
 	padding-bottom: 10px;
 	border: none;
-	/* box-shadow: 2px 2px 5px 2px #ddbcbc; */
 	box-shadow: 2px 2px 5px 2px black;
 }
-/* .hero-left + .hero-right {
-	margin-right: -10rem;
-} */
+
 #table {
 	border-radius: 20px;
 	cursor: auto;
@@ -66,18 +45,14 @@ nav.navbar {
 	border: 0.1px solid #efe088;
 	background: rgb(0, 0, 0, 0.5);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	/* border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
 .table thead th {
 	vertical-align: bottom;
 	border: none;
-
 	color: white;
-
 	vertical-align: bottom;
 	border: none;
-
 	color: black;
 }
 
@@ -110,9 +85,9 @@ nav.navbar {
 	background: #424136;
 	border-color: #8f8b63;
 	text-decoration: none;
-  }
 	border-bottom: 4px solid white;
 }
+
 #table .heading{
 	display: flex;
 	justify-content: center;
@@ -189,9 +164,6 @@ label {
 	left: 0;
 }
 
-/* .nav-item{
-  padding-right: 15px;
-} */
 #loading {
 	position: fixed;
 	width: 100%;
@@ -199,8 +171,7 @@ label {
 }
 
 .body-style {
-	background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
-
+	background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.webp?raw=true");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: rgba(0, 0, 0, 0.9);
@@ -209,8 +180,6 @@ label {
 }
 
 .bg-info {
-	/*   background-color: #2e2e2e!important;
-  box-shadow: 0px 0px 16px 9px black; */
 	background-color: #343a40 !important;
 	box-shadow: 0px 0px 16px 9px black;
 }
@@ -326,13 +295,11 @@ html {
 .input-box:focus {
 	outline: none;
 	border-bottom: 1.5px solid yellowgreen;
-	/* zoom: 1.1; */
 	transform: scaleY(1.05);
 }
 
 .input-box {
 	transition: border 0.5s ease-out;
-	/* transition: transform 0.5s ease-out; */
 }
 
 .btn {
@@ -435,6 +402,39 @@ html {
 	margin-top: 8px;
 }
 
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    min-height: 100vh;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	padding-bottom: 50px;
+	margin-top: 10px;
+    /* height: 700px; */
+}
+.faq-page{
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+}
+.faq-one{
+	transition: 1s ease-out;
+}
+.faq-body {
+    margin: auto;
+    width: 60%;
+    padding: 0px 18px;
+  font-size: 1.36rem;
+	background-image: linear-gradient(45deg, #c6ffdd, #fbd786, #f7797d);
+    display: none;
+    overflow: hidden;
+}
+.faq-body:hover {
+    
+    background-color: rgb(39, 37, 35);
+   
+}
 /* footer */
 footer {
 	position: absolute;
@@ -480,9 +480,6 @@ footer p {
 	border-radius: 50%;
 	overflow: hidden;
 	z-index: 1;
-	/* border: 3px solid #fff; */
-
-	/* added by ePSA-eJya */
 	color: #ababab;
 	text-decoration: none;
 	font-size: 20px;
@@ -635,10 +632,6 @@ a.nav-link {
 }
 
 .bg-info {
-	/* To make proper distance between nav bar icons */
-	/* To make nav-bar background transparent and shadow effect */
-	/*     background-color: #ada39f00!important;
-    box-shadow: 0px 0px 16px 9px #efecec4d; */
 	z-index: 100;
 }
 
@@ -722,31 +715,7 @@ strong {
 	width: 35px;
 }
 
-/* scroll bar design */
-/* width */
-/* ::-webkit-scrollbar {
-	width: 9px;
-}
 
-/* Track */
-/* ::-webkit-scrollbar-track {
-	background: rgb(77, 32, 32);
-} */
-
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-	background: #c68b59;
-	border-radius: 10px; */
-/* } */ */
-
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-	background: #865439;
-	border: solid 2px rgb(41, 2, 10);
-} */
-
-/* scroll bar end */
-/* preloader */
 .headervdo_afterpreload {
 	transition: ease-in 5s;
 	opacity: 100;
@@ -1079,9 +1048,6 @@ strong {
 
 /* For making responsive */
 @media (max-width: 800px) {
-	/*   html {
-    width:73.7rem;
-  } */
 	.hero-left + .hero-right {
 		margin-right: 0;
 	}
@@ -1092,31 +1058,10 @@ strong {
 		width: 100%;
 		height: 100%;
 	}
-	/* .member{
-   font-size: 5rem;
- } */
-
-	/*  .latest-blogs {
-    font-size: 4rem;
-  }
-
- .latest-blogs-p{
-   font-size: 3.5rem;
- } */
-
-	/*
-
   .body-style {
     box-shadow: none;
     padding: 1rem;
   }
-
-*/
-
-	/*   #table {
-    width: 29rem;
-    height: 10rem;
-  } */
 
 	.body-style {
 		width: 100%;
@@ -1133,10 +1078,6 @@ strong {
 	.form-control {
 		margin-left: 1.5rem;
 	}
-
-	/*   .my-sm-0 {
-    margin-left: 1.5rem;
-  } */
 }
 
 .suggestion {
@@ -1205,12 +1146,7 @@ strong {
 }
 
 .book {
-	/* background-color: #f3d094; */
-	/* background-image:linear-gradient(30deg,black,#362101,#c58921,#dc9b2b,#e2a845,rgb(216, 168, 86),#eac17b); */
-	/* background: rgb(2,0,36); */
-/* background: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgba(121,71,9,0.9501050420168067) , rgba(221,135,14,1) ); */
 background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115),rgb(191,175,153), rgb(255,234,205),rgb(254,244,229));
-
 	padding: 2rem;
 }
 
@@ -1248,10 +1184,8 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 	flex-flow: row wrap;
 	justify-content: space-around;
 	list-style: none;
-	/* border-radius: 10px solid black; */
 }
 .faddy{
-	/* border-radius: 10px solid black; */
 	max-height: 520px;
 	background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115));
 	margin-top: 20px;
@@ -1261,11 +1195,8 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 }
 .sound{
 	size: 10px;
-	padding-left: 80px;
-	padding-top: 0;
 	margin-top: 0;
-	/* margin-bottom: 20px; */
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 .bheads
 {
@@ -1289,13 +1220,8 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 }
 .bborder{
 	box-shadow: 2px 2px 8px rgba(253, 208, 126, 0.342);
-	/* padding-left: 30px; */
-	/* display: flex; */
-	/* justify-content: space-evenly; */
 	padding-bottom: 20px;
-	/* padding-right: 10px; */
 	background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,159,115));
-
 	margin-top: 20px;
 	margin-bottom: 10px;
 	margin-left: 10px;
@@ -1370,6 +1296,8 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 	transform: scale(1.1);
 }
 .books-audios{
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 150px;
 }
 
@@ -1434,7 +1362,6 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 }
 
 .member section {
-	/* border: 2px solid rgb(235, 167, 167); */
 	width: 50%;
 }
 
@@ -1509,7 +1436,6 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 .donate div:last-child .donate-btn a {
 	font-weight: 400;
 	color: white;
-
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -1532,11 +1458,6 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 	align-items: center;
 	justify-content: space-around;
 }
-/*
-#res .photo {
-  justify-content: end;
-}
-*/
 .photo img {
 	height: 100%;
 	max-width: 310px;
@@ -1567,7 +1488,6 @@ p {
 	border-radius: 20px;
 	transition-duration: 0.5s;
 	margin-bottom: 50px !important;
-	/* margin-left: 80px; */
 	box-shadow: 0px 0px 15px 5px lavender;
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
@@ -1785,31 +1705,6 @@ p {
 	}
 }
 /* end of contact form styles */
-
-/* scroll bar design */
-/* width */
-/* ::-webkit-scrollbar {
-	width: 10px;
-} */
-
-/* Track */
-/* ::-webkit-scrollbar-track {
-	background: rgb(77, 32, 32);
-} */
-
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-	background: #c68b59;
-	border-radius: 10px;
-} */
-
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-	background: #c68b59;
-	border: solid 2px rgb(41, 2, 10);
-} */
-
-/* scroll bar end */
 
 @media only screen and (max-width: 850px) {
 	.update img {
@@ -2032,7 +1927,6 @@ input[type="radio"] {
 	font-size: 24px;
 }
 .new-nav {
-	/*   height: 50px; */
 	min-height: 50px;
 	background-color: #f3d094;
 	align-items: center;
@@ -2043,9 +1937,6 @@ input[type="radio"] {
 }
 
 .new-nav ul {
-	/* margin-left: 40px; */
-	/* margin-right: 40px; */
-	/* margin-top: 17px; */
 	display: flex;
 	margin: 0 auto;
 	margin-bottom: 2px;
@@ -2096,12 +1987,6 @@ input[type="radio"] {
   flex-direction: column;
   transition: all 0.3s ease;
 }
-
-
-/* .contain:hover {
-	transform: scale(1.1);
-} */
-
 .contain div {
 	font-family: "Source Sans Pro", sans-serif;
 	margin: 30px;
@@ -2159,8 +2044,6 @@ input[type="radio"] {
 }
 
 .container div {
-	/* border: 2px solid white; */
-	/* width: 50%; */
 	margin-left: 0;
 }
 .container {
@@ -2174,7 +2057,6 @@ input[type="radio"] {
 }
 /* filter book by name */
 #myInput {
-  /* background-image: url('/css/searchicon.png'); */
   background-position: 10px 12px;
   background-repeat: no-repeat;
   width: 100%;
@@ -2231,7 +2113,7 @@ input[type="radio"] {
   }
   
 .search-heading{
-  padding:0  !important;
+  padding:2px 12px  !important;
   border-bottom: 3px solid white;
   margin: 0px auto 20px;
   width: fit-content;
@@ -2314,9 +2196,6 @@ select {
 	background: rgb(0, 0, 0, 0.5);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	border-radius: 10px;
-	
-	/* background-blend-mode:luminosity;
-  background: rgba(0,0,0,0.5);*/
 	border-radius: 5%;
 }
 
@@ -2374,62 +2253,6 @@ select {
 	justify-items: right;
 	flex-direction: column;
 }
-/*#table{
-  background:rgb(0,0,0,0.5);
-  cursor: auto;
-}*/
-/*#mytable{
-  border-radius:20px;}*/
-
-/*
-#table {
-  width: 92%;
-  padding: 0;
-}
-*/
-/*scrolling effect starts from here*/
-
-/* #scrollpath {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 10px;
-	height: 100%;
-	background: rgba(255, 255, 255, 0.05);
-} */
-
-/* #progressbar {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 10px;
-	height: 100%;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	animation: animate 5s linear infinite;
-} */
-
-/* #progressbar:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	filter: blur(10px);
-} */
-
-/* #progressbar:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top, #008aff, #00ffe7);
-	filter: blur(30px);
-} */
-
 @keyframes animate {
 	0%,
 	100% {
@@ -2459,7 +2282,7 @@ select {
 }
 
 .nav-item a {
-	padding: 10px 15px;
+	padding: 10px 5px;
 	border-radius: 10px;
 }
 
@@ -2490,7 +2313,6 @@ select {
 	flex-direction: column;
 	background-color: #f3d094;
 	min-height: 100vh;
-	/* height: 700px; */
 }
 
 /* Style the buttons that are used to open and close the faq-page body */
@@ -2898,11 +2720,7 @@ select {
 
 
 /*Styling for aligning download buttons in Recommended Books Section*/
-/* #btn-download{
-	margin:auto;
-	margin-top: 10px;
-	background-color: #00ffd5 ;
-} */
+
 #btn-download {
 	background: #8f8b63;
 	border-color: #8f8b63;
@@ -2954,19 +2772,19 @@ select {
 }
 
 .card1:hover {
-	background: url(../../blog1.jpg);
+	background: url(../../blog1.webp);
 	background-size: cover;
 }
 .card2:hover {
-	background: url(../../images/blog11.jpg);
+	background: url(../../images/blog11.webp);
 	background-size: cover;
 }
 .card3:hover {
-	background: url(../../images/blog2.png);
+	background: url(../../images/blog2.webp);
 	background-size: cover;
 }
 .card4:hover {
-	background: url(../../images/blog3.jpg);
+	background: url(../../images/blog3.webp);
 	background-size: cover;
 }
 
@@ -3110,7 +2928,6 @@ select {
 }
 @media(max-width:425px){
 	.update{
-		/* background-color: #fff; */
 	}
   .update img{
     margin-left: 0;
