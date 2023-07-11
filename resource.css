@@ -150,7 +150,7 @@ header h1 {
 
 header {
   padding: 45px;
-  background: url("images/10.jpg") center;
+  background: url("images/10.webp") center;
   background-color: wheat;
   text-align: center;
 }
@@ -160,7 +160,7 @@ nav {
   overflow: hidden;
   border-bottom: 1px solid black;
   border-top: 0.1px solid black;
-  background-image:linear-gradient(rgba(0,0,0,.52),rgba(0,0,0,0.52)), url('assets/images/Navbar_background.jpg');
+  background-image:linear-gradient(rgba(0,0,0,.52),rgba(0,0,0,0.52)), url('assets/images/Navbar_background.webp');
   background-position: center;
   background-size: cover;
 }
@@ -314,7 +314,7 @@ nav a {
 main {
   background-color: white;
   text-align: center;
-  background: url("assets/images/Resource_Background.jpg");
+  background: url("assets/images/Resource_Background.webp");
   filter: brightness(90%);
   background-repeat: repeat-y;
 }
@@ -325,7 +325,7 @@ h2 {
 
 /* section:nth-child(even) { */
 section {
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("assets/images/Background1.jpg");
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("assets/images/Background1.webp");
 }
 
 video {
@@ -580,7 +580,7 @@ h3.hover-underline-animation {
   flex-wrap: wrap;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/images/Background1.jpg");
+    url("assets/images/Background1.webp");
 }
 .audio-book-card {
   width: 270px;
@@ -762,7 +762,7 @@ h3.hover-underline-animation {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("assets/images/Background1.jpg");
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("assets/images/Background1.webp");
   background-color: white;
 }
 
@@ -889,7 +889,7 @@ h3.hover-underline-animation {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("assets/images/Background1.jpg");
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("assets/images/Background1.webp");
     background-color: white;
   }
   
