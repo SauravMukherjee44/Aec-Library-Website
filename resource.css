@@ -1320,6 +1320,11 @@ footer .bottom {
   font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 700px) {
+  footer .bottom {
+    margin-left: 4%;
+  }
+}
 footer .bottom a {
   color: aqua;
 }
@@ -1353,6 +1358,7 @@ footer a:hover {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-right: 4.5%;
 }
 
 .social-container .social-icons a {
