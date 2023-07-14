@@ -26,6 +26,7 @@
         }
     </style>
     <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/About.css" />
     <link rel="stylesheet" href="resource.css" />
     <!-- bootstrap-css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -52,31 +53,67 @@
 </head>
 
 <body>
+ <!-- Navbar started -->
 
-  <header>
-        <a href="./index.html" class="home-tab" style="margin-top: 30px;">◀ Back to Home</a>
-        <div class="search-box-container">
-            <div class="search-box">
-                <input type="text" id="search-bar" placeholder=" Type here to Search..">
-                <button class="search-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
-                </button>
-            </div>
-            
+ <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="assets/logos/finalLogo.png" alt="AEC Library"
+          class="logo-img" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home
+              <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link " onclick="return false;">
+              <i class="fas fa-book"></i> Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a href="./public/donate-book.html" class="nav-link">
+              <i class="fas fa-book"></i> Donate Books
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="resource.html" class="nav-link active">
+              <i class="fas fa-external-link-alt"></i> Resources</a>
+          </li>
+          <li class="nav-item">
+            <a href="./Login_page/login_page.html" class="nav-link">
+              <i class="fas fa-sign-in-alt"></i> Login
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./sign-up-page/index.html" class="nav-link">
+              <i class="fas fa-sign-in-alt"></i> Sign up
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar ended -->
+
+    <header>
+
+      <a href="index.html" class="nav-linkk" > <h1 style="font-size: 50px;">AEC Library</h1></a>
+      <div class="search-box-container">
+        <div class="search-box">
+            <input type="text" id="search-bar" placeholder=" Type here to Search..">
+            <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
         </div>
-      <a href="index.html" class="nav-link"> <h1>AEC Library</h1></a>
-
-    
+    </div>
     </header>
-
-    
-    <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-    <a href="./index.html" class="home-tab">Home</a> -->
-
-
-    <nav class="">
+    <nav class="secnav">
         <div class="">
             <div class="grid-container">
                 <a class="grid-item " href="#courses">Courses</a>
@@ -87,7 +124,7 @@
                 <a class="grid-item " href="#audio-books">Study Materials</a>
                 <a class="grid-item " href="#study">Audio Books</a>
                 <a class="grid-item " href="#regLAN">Regional Books</a>
-                <a class="grid-item " href="about.html">Youtube Channels</a>
+                <a class="grid-item " href="#yt">Youtube Channels</a>
             </div>
 
         </div>
@@ -210,16 +247,8 @@
                         <img width="33%" height="300"
                src="https://miro.medium.com/max/1200/1*8YPjY2xhNwQylBBs8dYB0g.png">
                     </a>
-
-
-
-
-
                 </div>
   <div class="carousel-cell">
- 
-
-
  <a href="https://www.udemy.com/course/beg-modern-cpp/" target="_blank">
                         <img width="33%" height="300"
                             src="https://hackernoon.com/images/VyvcKdbWHbTaN3QzRCQQS7pXASq1-9x7p315b.jpeg">
@@ -385,30 +414,12 @@
             <br><br>
         </section>
 
-
-
-        <!-- <section id="courses">
-        
-        
-        <video src="images/8.mp4" width="33%" poster="images/11.jpg" controls></video>
-        <video src="images/8.mp4" width="33%" poster="images/12.jpg" controls></video>
-        <video src="images/8.mp4" width="33%" poster="images/13.jpg" controls></video>
-        <br>
-        
-        <br>
-        <video src="images/8.mp4" width="33%" poster="images/14.jpg" controls></video>
-        <video src="images/8.mp4" width="33%" poster="images/15.jpg" controls></video>
-        <video src="images/8.mp4" width="33%" poster="images/16.jpg" controls></video>
-    </section> -->
-
         <section id="yt">
             <h2 class="hover-underline-animation">Informative Youtube Channels</h2>
             <br>
             <h3 class="hover-underline-animation">Open Source Tutorials</h3>
             <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-                <div class="carousel-cell">
-                    <!-- <iframe width="33%" src="https://www.youtube.com/embed/hmS6rhq8jkI" alt="Open-Source" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <a href="https://www.youtube.com/watch?v=hmS6rhq8jkI&t=276s" target="_blank">
+                <div class="carousel-cell"> <a href="https://www.youtube.com/watch?v=hmS6rhq8jkI&t=276s" target="_blank">
                         <img width="33%" class="iframe" src="./yt_imgs/yt1.jpg" alt="Open-Source">
                     </a>
                     <a href="https://www.youtube.com/watch?v=KxUj-0R2yxM" target="_blank">
@@ -633,8 +644,6 @@
                     </a>
                 </div>
                 <div class="carousel-cell">
-                    <!-- <iframe width="33%" src="https://www.youtube.com/embed/hmS6rhq8jkI" alt="Cloud Computing" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                  
                     <a href="https://www.youtube.com/watch?v=KVBON1lA9N8" target="_blank">
                         <img width="33%" class="iframe" src="https://i.ytimg.com/an_webp/KVBON1lA9N8/mqdefault_6s.webp?du=3000&sqp=COGzppoG&rs=AOn4CLBgZ_G8oR2Uf0ZXgQQ1F9S9-uF7YA" alt="Cloud Computing">
                     </a>
@@ -1332,14 +1341,9 @@
                     <div class="lower">
                         <div class="topic"><a href="./public/contact us .html" style="color: antiquewhite;">Contact Us
                             </a></div>
-                        <!-- <div class="phone">
-                         <a href="#"><i class="fa fa-volume-control-phone"></i>+91 123 456 7891</a>
-                     </div> -->
-
                         <div class="email">
                             <a href="https://github.com/SauravMukherjee44/Aec-Library-Website" target="github"> <i
                                     class="fab fa-github icon"></i> </a> <br>
-                            <!-- <a href=""><i class="fa fa-user-circle"></i></a> -->
                         </div>
                     </div>
 
@@ -1358,19 +1362,6 @@
                     <form action="#" name="feedbackform" onsubmit="return feedbackvalidate()">
                         <input type="text" placeholder="Enter your valuable feedback" name="feedback">
                         <button type="submit" class="btn">Send</button>
-                        <!-- <div class="social-container">
-                            <ul class="social-icons">
-
-                                <a class="Twitter" href="https://twitter.com/mesourav44" target="_blank"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="Instagram" href="https://www.instagram.com/mesouravofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a class="linkedin" href="https://www.linkedin.com/in/sauravmukherjee44/"
-                                    target="_blank"><i class="fab fa-linkedin"></i></a>
-                                <a class="Github" href="https://github.com/SauravMukherjee44/" target="_blank"><i
-                                        class="fab fa-github-square"></i></a>
-                                <a class="Blog" href="#" target="_blank"><i class="fa fa-rss-square"></i></a> 
-                            </ul>
-                        </div> -->
                     </form>
                 </div>
             </div>
