@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 /* scroll bar design */
 /* width */
-::-webkit-scrollbar { 
+::-webkit-scrollbar {
   width: 10px;
 }
 
@@ -42,9 +41,8 @@
 body {
   width: 100%;
   height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-image: url(https://img-cdn.inc.com/image/upload/images/panoramic/GettyImages-577674005_492115_zfpgiw.webp);
-
 }
 
 .wrapper {
@@ -58,7 +56,7 @@ body {
 .login-box {
   padding: 60px;
   background: rgba(9, 5, 0, 0.781);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   object-fit: cover;
   opacity: 3;
   border-radius: 20px;
@@ -67,7 +65,6 @@ body {
 }
 
 .login-box h2 {
- 
   text-align: center;
   font-weight: bolder;
   letter-spacing: 0.2rem;
@@ -99,8 +96,8 @@ body {
   transition: 0.5s;
 }
 
-.login-box .user-box input.form__input:focus~label,
-.login-box .user-box input.form__input:valid~label {
+.login-box .user-box input.form__input:focus ~ label,
+.login-box .user-box input.form__input:valid ~ label {
   top: -20px;
   left: 0;
   color: white;
@@ -217,13 +214,12 @@ select.form-control:focus {
 .navbar-nav li a:hover:after {
   width: 100%;
   left: 0;
- 
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .show > .nav-link {
   color: rgb(243 243 243);
   font-weight: bold;
 }
@@ -240,7 +236,6 @@ select.form-control:focus {
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255 255 255 / 50%);
   transition-duration: 0.3s;
- 
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -251,11 +246,10 @@ select.form-control:focus {
 a.nav-link {
   font-size: 20px;
 }
-.logo-img
-{
-  height:3rem;
-  width:3rem;
-  margin-right:140px;
+.logo-img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 140px;
 }
 
 #topBtn {
@@ -269,7 +263,7 @@ a.nav-link {
 }
 
 #topBtn a:hover {
-  background: #F0FFC2;
+  background: #f0ffc2;
   transform-origin: center center;
 }
 
@@ -284,13 +278,13 @@ a.nav-link {
   text-align: center;
   height: 40px;
   width: 38px;
-  background: #9D5C0D;
+  background: #9d5c0d;
   border-radius: 15px;
   cursor: pointer;
 }
 
 #topBtn a span {
-  color: #EEEEEE;
+  color: #eeeeee;
   width: 38px;
   border-radius: 15px;
   line-height: 39px;
@@ -298,53 +292,43 @@ a.nav-link {
   font-size: 32px;
 }
 
-
-#donation_form .user-box small
-{
+#donation_form .user-box small {
   visibility: hidden;
 }
 
-#donation_form user-box.success input
-{
-	border-color: #2ecc71;
-	border-width: 1.5px;
+#donation_form user-box.success input {
+  border-color: #2ecc71;
+  border-width: 1.5px;
 }
-#donation_form user-box.success select
-{
-	border-bottom-color: #2ecc71;
-	border-width: 1.5px;
-	padding-bottom: 0px;
-	padding-top: 2px;
-
+#donation_form user-box.success select {
+  border-bottom-color: #2ecc71;
+  border-width: 1.5px;
+  padding-bottom: 0px;
+  padding-top: 2px;
 }
-#donation_form .user-box.error input
-{
-	border-color: #e74c3c;
-	border-width: 1.5px;
+#donation_form .user-box.error input {
+  border-color: #e74c3c;
+  border-width: 1.5px;
 }
-#donation_form .user-box.error select
-{
-	border-bottom-color: #e74c3c;
-	border-width: 1.5px;
-	padding-bottom: 0px;
-	padding-top: 2px;
+#donation_form .user-box.error select {
+  border-bottom-color: #e74c3c;
+  border-width: 1.5px;
+  padding-bottom: 0px;
+  padding-top: 2px;
 }
-#donation_form .user-box.error textarea
-{
-	border-bottom-color: #e74c3c;
-	border-width: 1.5px;
-	padding-bottom: 0px;
-	padding-top: 2px;
+#donation_form .user-box.error textarea {
+  border-bottom-color: #e74c3c;
+  border-width: 1.5px;
+  padding-bottom: 0px;
+  padding-top: 2px;
 }
-#donation_form .user-box.error small{
-	color:#ff1c04;
-	visibility: visible;
-	padding-left: 3px;
+#donation_form .user-box.error small {
+  color: #ff1c04;
+  visibility: visible;
+  padding-left: 3px;
   font-size: 16px;
   font-weight: 500;
-  }
-
-
+}
 
 /* footer */
 footer {
@@ -385,14 +369,14 @@ footer p {
   z-index: 3;
 
   /* added by ePSA-eJya */
-	color: #ababab;
-	text-decoration: none;
-	font-size: 25px;
-	flex-basis: 35%;
-	margin-left: 20px;
-	margin-top: 20px;
-	display: inline-block;
-	transition: transform 0.5s;
+  color: #ababab;
+  text-decoration: none;
+  font-size: 25px;
+  flex-basis: 35%;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: transform 0.5s;
 }
 
 .icons ul li a .icon {
@@ -402,25 +386,22 @@ footer p {
   z-index: 3;
 }
 
-.icons ul li a:hover{
-	border: 1px solid #cfcccc;
-  
-	/* added by ePSA-eJya */
-	color: #f05011;
-	  transform: translateY(-6px);
-	  transform: scale(1.5);
-    line-height: 25px;
-	  text-decoration: none;
-	  font-size: 18px;
-	  margin-left: 20px;
-  
-  }
+.icons ul li a:hover {
+  border: 1px solid #cfcccc;
+
+  /* added by ePSA-eJya */
+  color: #f05011;
+  transform: translateY(-6px);
+  transform: scale(1.5);
+  line-height: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+}
 
 .icons ul li a:hover .icon {
   color: #fff;
   transform: rotateY(360deg);
-
-  
 }
 
 .icons ul li a:before {
@@ -441,7 +422,7 @@ footer p {
 
 /* added by ePSA-eJya */
 .icons ul li:nth-child(1) a:before {
-  background: #0A66C2;
+  background: #0a66c2;
 }
 .icons ul li:nth-child(2) a:before {
   background: black;
@@ -478,7 +459,6 @@ footer p {
   a.nav-link {
     margin: 5px 40px;
     font-size: 18px;
-  
   }
 }
 .btn-dark {
@@ -491,7 +471,7 @@ footer p {
 #donation-info {
   height: 50rem;
   width: 50rem;
-  background-image: linear-gradient(to bottom right, #fda085, #fad354 );
+  background-image: linear-gradient(to bottom right, #fda085, #fad354);
 
   border-radius: 20px;
   margin: auto;
@@ -600,11 +580,11 @@ footer p {
 .icons ul li:nth-child(4) a:before {
   background: #b2071d;
 }
-.footer-text{
+.footer-text {
   color: rgb(255, 183, 0);
-  padding-right: 50px; 
+  padding-right: 50px;
 }
-.footer-text:hover{
+.footer-text:hover {
   color: rgb(211, 151, 0);
   text-decoration: underline;
 }
@@ -661,14 +641,12 @@ footer p {
   border-color: #000000cc;
 }
 
-
-
 @media (max-width: 767px) {
   #searchForm {
     margin: 0px 20px 0px 20px;
   }
 
-  footer{
+  footer {
     padding: 12px 8px 12px 8px;
   }
 

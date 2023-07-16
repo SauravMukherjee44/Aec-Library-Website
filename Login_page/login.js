@@ -15,16 +15,18 @@ newPassword.addEventListener("click", () => {
   }
 });
 
-LoginForm.addEventListener('submit', (e) => {
+LoginForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const { user, session, error } = _supabase.auth.signIn({
-    email: email.value,
-    password: password.value,
-  }).then(res=>{
-    if(res.error!=null){
-      document.getElementById('err_msg').innerHTML = res.error.message;
-    }
-  })
+  const { user, session, error } = _supabase.auth
+    .signIn({
+      email: email.value,
+      password: password.value,
+    })
+    .then((res) => {
+      if (res.error != null) {
+        document.getElementById("err_msg").innerHTML = res.error.message;
+      }
+    });
 });
 
 const form = document.getElementById("form");
@@ -33,29 +35,25 @@ const messageContainer = document.getElementById("messageContainer");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  
+
   messageContainer.style.display = "block"; // Show the message container
 
   // Redirect to the main page (index.html) after 3 seconds
   setTimeout(function () {
     window.location.replace("/index.html");
-
   }, 2000);
 });
-
-
-
 
 // const session = _supabase.auth.session();
 // console.log(session);
 
 _supabase.auth.onAuthStateChange((event, session) => {
   // if (event == 'SIGNED_IN') console.log('SIGNED_IN', session);
-  document.getElementById('err_msg').innerHTML = "Logged In";
+  document.getElementById("err_msg").innerHTML = "Logged In";
   location.reload();
-})
+});
 
 const user = _supabase.auth.user();
-if(user){
+if (user) {
   window.location.replace("/sign-up-page/index.html");
 }

@@ -220,10 +220,11 @@ a.nav-link {
   width: 75%;
   margin: 100px auto 50px auto;
   background: rgba(78, 62, 44, 0.78);
-    box-shadow: 0px 1px 2px 0px rgba(249, 151, 3, 0.7),
-            1px 2px 4px 0px rgba(191, 112, 2, 0.7),
-            2px 4px 8px 0px rgba(158, 103, 2, 0.7),
-            2px 4px 16px 0px rgba(166, 111, 2, 0.7);
+  box-shadow:
+    0px 1px 2px 0px rgba(249, 151, 3, 0.7),
+    1px 2px 4px 0px rgba(191, 112, 2, 0.7),
+    2px 4px 8px 0px rgba(158, 103, 2, 0.7),
+    2px 4px 16px 0px rgba(166, 111, 2, 0.7);
   z-index: 10;
   border-radius: 10px;
 }
@@ -350,14 +351,13 @@ footer p {
   margin: 0;
 }
 
-  .q-link-header {
-    font-family: "Playfair Display", serif;
-    color: bisque;
-    text-align: center;
-    padding: 20px 60px;
-    font-size: 35px;
-  }
-
+.q-link-header {
+  font-family: "Playfair Display", serif;
+  color: bisque;
+  text-align: center;
+  padding: 20px 60px;
+  font-size: 35px;
+}
 
 .footer-col ul {
   display: flex;
@@ -521,7 +521,6 @@ footer p {
 }
 /* Media Query */
 
-
 @media only screen and (max-width: 1200px) {
   a.nav-link {
     font-size: 17px;
@@ -532,12 +531,10 @@ footer p {
   }
 }
 
-
 @media (max-width: 800px) {
   .about-container {
     width: 90%;
   }
-
 
   .about-container h1 {
     font-size: 30px;
@@ -545,7 +542,6 @@ footer p {
 
   .about-container h2 {
     font-size: 25px;
-
   }
 
   .about-container p {
@@ -574,7 +570,7 @@ footer p {
 }
 
 .animated-border-button {
- /* As per color of homepage( looks good now ) */
+  /* As per color of homepage( looks good now ) */
   background-color: #f7c46c;
   border: none;
   color: #ffffff;
