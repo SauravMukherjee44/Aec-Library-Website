@@ -99,7 +99,7 @@
 
     <main>
         <section id="courses">
-            <h2 class="hover-underline-animation">COURSES</h2><br />
+            <h2 class="hover-underline-animation auto-type"></h2><br />
             <h3 class="hover-underline-animation">Web Development Courses <img class="course-icon" src="https://cdn-icons-png.flaticon.com/128/3242/3242257.png"></h3><br /><br />
             <div class="lazyLoad" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
                 <div class="carousel-cell">
@@ -1536,6 +1536,15 @@ src="https://i.pinimg.com/originals/9d/94/a5/9d94a53738b84d6c0e5ab094bcfe2af1.pn
             }
         }
     </script>
+               <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+               <script>
+                   var typed = new Typed(".auto-type", {
+                       strings: ["Courses"],
+                       typeSpeed: 150,
+                       backspeed: 150,
+                       loop: true
+                   })
+               </script> 
 </body>
 
 </html>

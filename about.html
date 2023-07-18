@@ -102,7 +102,7 @@
   <div class="about-container" data-aos="fade-up">
     <!-- <div class="my-5"> -->
       <div class="first">
-    <h1 class="text-center">About Us</h1>
+    <h1 class="text-center auto-type"></h1>
     
     <div class="py-3 mx-md-5 mx-3 ">
       <p>
@@ -283,6 +283,15 @@
     var year = new Date().getFullYear();
     document.getElementById("footer-year").innerHTML = year;
   </script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["About Us"],
+            typeSpeed: 150,
+            backspeed: 150,
+            loop: true
+        })
+    </script>
 </body>
 
 </html>
