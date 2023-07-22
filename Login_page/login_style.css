@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-image: url('Login_background.webp');
+  background-image: url("Login_background.webp");
   /* background-image: url('/images/loginpage_img.webp'); */
   background-color: #464646;
   -webkit-background-size: cover;
@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: -20px 0 50px;
 }
 
@@ -87,7 +87,6 @@ button {
 
 button a {
   color: rgb(255, 255, 255);
-  
 }
 
 input:hover {
@@ -146,14 +145,16 @@ input {
 
 .container {
   /* background-image: url('Capture.PNG'); */
-  background-image: url('/Login_page/images.jfif');
-  object-fit:fill;
+  background-image: url("/Login_page/images.jfif");
+  object-fit: fill;
   /* background-repeat:repeat-x; */
-  background-image: url('LoginFormSideImage.webp');
-  filter:saturate(1);
+  background-image: url("LoginFormSideImage.webp");
+  filter: saturate(1);
   image-rendering: pixelated;
   border-radius: 10px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
   width: 768px;
@@ -180,7 +181,7 @@ input {
   text-align: center;
   position: absolute;
   bottom: 0px;
-  
+
   left: 50%;
   transform: translateX(-50%);
   font-size: 10px;
@@ -189,7 +190,6 @@ input {
 
 .signup_link a {
   font-size: 9px;
-  
 }
 
 .container.right-panel-active .sign-in-container {
@@ -202,9 +202,6 @@ input {
   opacity: 0;
   z-index: 1;
 }
-
-
-
 
 .container.right-panel-active .sign-up-container {
   transform: translateX(100%);
@@ -341,16 +338,16 @@ footer a {
 .animate1 {
   font-size: 50px;
   font-size: 2.1em;
-  text-align: center; 
+  text-align: center;
   font-weight: 750;
-  letter-spacing:5px;
+  letter-spacing: 5px;
   margin-bottom: -20px;
   position: relative;
 }
 
 .animate2 {
   font-size: 20px;
-  text-align: center; 
+  text-align: center;
   line-height: 30px;
   color: white;
   letter-spacing: 0.5px;
@@ -362,7 +359,7 @@ footer a {
   animation: text 2s 1;
 }
 
-.text-danger{
+.text-danger {
   color: red;
   font-size: bold;
 }
@@ -414,7 +411,7 @@ footer a {
     width: 100%;
   }
 }
-.pass{
+.pass {
   text-align: right;
   font-size: 10px;
 }

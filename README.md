@@ -1,6 +1,5 @@
 <h1 align="center">Open-Source Library Website </h1>
 
-
 <p align="center">
 <img width="100%" src="https://github.com/SauravMukherjee44/CodeIN-Community-Website/raw/main/assets/img/hack.jpg" alt="main page">
 </p>
@@ -12,7 +11,7 @@ AEC-Library is an Open-Source library website that will help people in need of b
 - **Donate Books:** A section to donate your old books
 - **Book Issue:** A section to keep a record of all the books issued
 
-This website helps you to find the books easily without any cost. The best part about the website is that you can also contribute to the website for others to use the resources by donating the books you have. All categories of books are welcome for donation. Come forward to donate the books!  
+This website helps you to find the books easily without any cost. The best part about the website is that you can also contribute to the website for others to use the resources by donating the books you have. All categories of books are welcome for donation. Come forward to donate the books!
 
 <h4>[ In development Phase ] 
 	
@@ -27,10 +26,9 @@ This website helps you to find the books easily without any cost. The best part 
 <h2> 
 📌<a href="https://aec-library-wbsite.netlify.app/" target="_blank">Visit our website 🚀</a>
 
-
 📌<a href="https://codeincommunity.bio.link/" target="_blank">Join our Tech Community ⚡</a>
-</h2>
 
+</h2>
 
 <div align="left">
 <a href="https://github.com/SauravMukherjee44/Aec-Library-Website"><img src="https://tokei.rs/b1/github/SauravMukherjee44/Aec-Library-Website" alt="LOC"/></a>
@@ -44,10 +42,10 @@ This website helps you to find the books easily without any cost. The best part 
 <a href="https://open.vscode.dev/organization/repository"><img src="https://open.vscode.dev/badges/open-in-vscode.svg" alt="Open in Visual Studio Code"/></a>
 </div>
 
-
 # Contribution is fun! 🧡
 
 <a name="tech"></a>
+
 ## 📌 Tech Stack
 
 ![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
@@ -59,12 +57,14 @@ In order to make a hassle-free environment, I implore you all (_while contributi
 
 Happy Submissions :slightly_smiling_face:
 <a name="project"></a>
+
 <h1 align=center> Project Maintainer ⚡ </h1>
 <p align="center">
   <a href="https://github.com/SauravMukherjee44"><img src="https://github.com/SauravMukherjee44/Aec-Library-Website/blob/e2d7870b91f240964e9841a2a147aaf564b5fdb7/images/admin.jpg" width=150px height=150px /></a> 
 	<p align="center">
 
 <a name="contributor"></a>
+
 <h1 align=center> OUR VALUABLE CONTRIBUTORS✨ </h1>
 <p align="center">
   
@@ -76,10 +76,13 @@ Happy Submissions :slightly_smiling_face:
 <h1 align=center>Happy Coding 👨‍💻 </h1>
 
 ---
+
 <a name="contact"></a>
+
 <h2>📬 Contact</h2>
 
 If you want to contact me, you can reach me through below handles.
+
 <div align="center">
 
 <a  href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw" target="_blank"><img alt="YouTube" src="https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" /></a>
@@ -89,8 +92,8 @@ If you want to contact me, you can reach me through below handles.
 <a  href="https://t.me/Saurav_44"><img alt=" Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a>
 <a  href="https://discord.com/users/758681549993541684"><img alt=" Discord" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white">
 <a  href="https://www.instagram.com/mesouravofficial/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
-   </a> 
-   
+</a>
+
 </div>
 	
  <div align="center">
@@ -100,21 +103,22 @@ If you want to contact me, you can reach me through below handles.
  
 I have started a Community named CodeIN Community [Community of Coding Enthusiasts] Where we share Resources, Roadmaps to learn different technologies and share opportunities related to different tech programs. Also, We organize Events on different technologies to help people to get started with these technologies.
 
-  <span> <h2>Join the Community on Discord ⚡</h2>
+<span> <h2>Join the Community on Discord ⚡</h2>
 <a  href="https://discord.gg/hWwbgP4dz9"><img alt=" Discord" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a>
 <a  href="https://t.me/CodeINCommunity"><img alt=" Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a>
 <a  href="https://www.linkedin.com/company/codein-community/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a></span>
-   
+
  </div>
 
 <a name="contribution"></a>
+
 <h1> Contributing Guidelines </h1>
 
 ## Basics of Git and GitHub
 
 ### Git & GitHub
 
-Before we proceed, it's better to know the difference between Git and Github. Git is a version control system (VCS) that allows us to keep track of the history of our source code , whereas GitHub is a service that hosts Git projects. 
+Before we proceed, it's better to know the difference between Git and Github. Git is a version control system (VCS) that allows us to keep track of the history of our source code , whereas GitHub is a service that hosts Git projects.
 
 We assume you have created an account on Github and installed Git on your System.
 
@@ -170,7 +174,7 @@ The last command pushes the latest code to your forked repository on Github. The
 
 ### Create a new branch for a feature or bugfix
 
-Usually, all repositories have a main branch that is regarded to be stable, and any new features should be developed on a separate branch before being merged into the main branch. As a result, we should establish a new branch for our feature or bugfix and go to work on the issue. 
+Usually, all repositories have a main branch that is regarded to be stable, and any new features should be developed on a separate branch before being merged into the main branch. As a result, we should establish a new branch for our feature or bugfix and go to work on the issue.
 
 `$ git checkout -b <feature-branch>`
 This will create a new branch out of master branch. Now start working on the problem and commit your changes.
@@ -183,7 +187,7 @@ The first command adds all the files or you can add specific files by removing -
 
 ### Push code and create a pull request
 
-You now have a new branch containing the modifications you want in the project you forked. Now, push your new branch to your remote github fork. 
+You now have a new branch containing the modifications you want in the project you forked. Now, push your new branch to your remote github fork.
 
 `$ git push origin main`
 Now you are ready to help the project by opening a pull request means you now tell the project managers to add the feature or bug fix to original repository. You can open a pull request by clicking on green icon -
@@ -195,8 +199,6 @@ Remember your upstream base branch should be main and source should be your feat
 Congratulations! You've already made your first contribution.🥳
 
 Good Luck for your journey
-
-
 
 © 2021 Saurav Mukherjee and contributors\
 This project is licensed under the [**MIT license**](https://github.com/SauravMukherjee44/Aec-Library-Website/blob/main/LICENSE).
