@@ -171,7 +171,7 @@ label {
 }
 
 .body-style {
-	background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.jpg?raw=true");
+	background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.webp?raw=true");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: rgba(0, 0, 0, 0.9);
@@ -425,7 +425,7 @@ html {
     margin: auto;
     width: 60%;
     padding: 0px 18px;
-    font-size: 1.36rem;
+  font-size: 1.36rem;
 	background-image: linear-gradient(45deg, #c6ffdd, #fbd786, #f7797d);
     display: none;
     overflow: hidden;
@@ -2772,19 +2772,19 @@ select {
 }
 
 .card1:hover {
-	background: url(../../blog1.jpg);
+	background: url(../../blog1.webp);
 	background-size: cover;
 }
 .card2:hover {
-	background: url(../../images/blog11.jpg);
+	background: url(../../images/blog11.webp);
 	background-size: cover;
 }
 .card3:hover {
-	background: url(../../images/blog2.png);
+	background: url(../../images/blog2.webp);
 	background-size: cover;
 }
 .card4:hover {
-	background: url(../../images/blog3.jpg);
+	background: url(../../images/blog3.webp);
 	background-size: cover;
 }
 

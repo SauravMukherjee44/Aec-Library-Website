@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
+  <link rel="icon" href="../assets/logos/finalLogo.webp" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <title>LOGIN - AEC Library</title>
@@ -28,7 +28,7 @@
         <div class="form-group">
             <i class="fa fa-unlock-alt"></i>
             <input type="password" name="" id="password" placeholder="Password" />
-            <i class="fa fa-eye-slash icon" id="newPassword"></i>
+            <i class="fa fa-eye-slash icon" id="newPassword" ></i>
         </div>
       </div>
       <div class="button">
@@ -131,6 +131,23 @@
       }
   }
   
+ </script>
+ <script>
+  const togglePassword = document.querySelector('#newPassword');
+  const password = document.querySelector('#password');
+
+  togglePassword.addEventListener('click', function (e) {
+    if (password.type === "password") {
+    password.type = "text";
+    document.getElementById('newPassword').classList.remove('fa-eye-slash');
+    document.getElementById('newPassword').classList.add('fa-eye');
+  } else {
+    password.type = "password";
+    document.getElementById('newPassword').classList.remove('fa-eye');
+    document.getElementById('newPassword').classList.add('fa-eye-slash');
+  }
+   
+});
  </script>
  
 
