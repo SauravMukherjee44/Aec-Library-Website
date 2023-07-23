@@ -14,6 +14,7 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 
 - Take a look at the Existing [Issues](https://github.com/SauravMukherjee44/Aec-Library-Website/issues) or create your own Issues!
 - Fork the Repo and create a Branch for any Issue that you are working upon.
+- It is mandatory to work with Prettier if you are working on any Project File
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this is all about.
 

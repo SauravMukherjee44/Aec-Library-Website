@@ -20,11 +20,10 @@
   box-sizing: border-box;
   
 } */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 .grid-container {
   display: grid;
@@ -35,71 +34,67 @@
   /* align-items: center;
   justify-content: center; */
 }
-.card-img-top{
+.card-img-top {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
-.card-body > h5{
-    font-weight: bold;
-    color: rgb(8, 8, 8);
-    
+.card-body > h5 {
+  font-weight: bold;
+  color: rgb(8, 8, 8);
 }
-.card{
+.card {
   height: 510px;
-  padding:2%;
-  margin:3%;
-  border:none;
-  background-color: #9D5C0D ;
+  padding: 2%;
+  margin: 3%;
+  border: none;
+  background-color: #9d5c0d;
 }
-@media screen and (max-width: 476px){
-  .card{
+@media screen and (max-width: 476px) {
+  .card {
     max-width: 75vw;
   }
 }
-@media screen and (max-width: 380px){
-  .card{
+@media screen and (max-width: 380px) {
+  .card {
     max-width: 70vw;
   }
 }
-.card-body{
+.card-body {
   align-items: center;
-  
 }
-.card:hover{
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.24),0 17px 50px 0 rgba(0, 0, 0, 0.19);
+.card:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .card-img-top:hover {
   box-shadow: 0 0.25em 0.25em -0.1em #604717;
-    box-shadow: 0 0.30em 0.30em -0.1em #f7c603;
-    border-color: #e0ef08 ;
-    transition: 0.4s;
-    color: #d8eb08 ;
+  box-shadow: 0 0.3em 0.3em -0.1em #f7c603;
+  border-color: #e0ef08;
+  transition: 0.4s;
+  color: #d8eb08;
 }
 .card:hover {
-    scale: 1.09;
-    border-color: #FFB84C;
-    transition: 0.4s;
-    color: #fff ;
-    text-decoration:wavy;
-  
+  scale: 1.09;
+  border-color: #ffb84c;
+  transition: 0.4s;
+  color: #fff;
+  text-decoration: wavy;
 }
 .card h5:hover {
-    color: black ;
+  color: black;
 }
-.card a{
-    background-color: #B70404 ;
-    color:white;
-    padding:2%;
-    border:1px black;
-    cursor: pointer; 
-    text-decoration: none;
-    
+.card a {
+  background-color: #b70404;
+  color: white;
+  padding: 2%;
+  border: 1px black;
+  cursor: pointer;
+  text-decoration: none;
 }
-.card a:hover{
-  background-color:inherit ;
-  color: #FFA931;
-  border:3px solid;
+.card a:hover {
+  background-color: inherit;
+  color: #ffa931;
+  border: 3px solid;
 }
 
 .footer-wrapper {
@@ -119,7 +114,7 @@
 }
 
 #topBtn a:hover {
-  background: #F0FFC2;
+  background: #f0ffc2;
   transform-origin: center center;
 }
 
@@ -134,13 +129,13 @@
   text-align: center;
   height: 40px;
   width: 38px;
-  background: #9D5C0D;
+  background: #9d5c0d;
   border-radius: 15px;
   cursor: pointer;
 }
 
 #topBtn a span {
-  color: #EEEEEE;
+  color: #eeeeee;
   width: 38px;
   border-radius: 15px;
   line-height: 39px;

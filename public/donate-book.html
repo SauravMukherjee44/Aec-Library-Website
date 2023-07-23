@@ -1,252 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="title" content="AEC Library is a comprehensive library management system">
-  <meta name="description" content="Designed for both large and small library systems, AEC Library is a comprehensive library management system. For managing circulation and stock, this is ideal for institutional, public, and digital libraries. In order to manage and automate the processing of even the largest of libraries, the AEC Library website was developed. According to the end user's requirements, the website is capable of managing Book Issues, Returns, and generating various Reports for Record-Keeping and Review purposes.">
-  <meta name="keywords" content="AEC, library systems, library, digital libraries, books">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="language" content="English">
-  <meta name="author" content="AEC LIBRARY">
+    <meta
+      name="title"
+      content="AEC Library is a comprehensive library management system"
+    />
+    <meta
+      name="description"
+      content="Designed for both large and small library systems, AEC Library is a comprehensive library management system. For managing circulation and stock, this is ideal for institutional, public, and digital libraries. In order to manage and automate the processing of even the largest of libraries, the AEC Library website was developed. According to the end user's requirements, the website is capable of managing Book Issues, Returns, and generating various Reports for Record-Keeping and Review purposes."
+    />
+    <meta
+      name="keywords"
+      content="AEC, library systems, library, digital libraries, books"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="AEC LIBRARY" />
 
-  <!-- Bootstrap v4.3 -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- Bootstrap v4.3 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="../assets/css/donate-book.css">
+    <link rel="stylesheet" href="../assets/css/donate-book.css" />
 
-  <link rel="icon" href=../assets/Favicons/8.webp> <title>Donate Books</title>
-  <style>
-   
-  table {
-  border-collapse: collapse;
-  width: 100%;
-}
+    <link rel="icon" href=../assets/Favicons/8.webp>
+    <title>Donate Books</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
 
-th, td {
-  text-align: left;
-  padding: 8px;
-}
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+      }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
-  </style>
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
 
-</head>
+  <body>
+    <!-- particle.js -->
+    <div id="particles-js"></div>
 
-<body>
-  <!-- particle.js -->
-  <div id="particles-js"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <a class="navbar-brand ml-4" href="../index.html"
+        ><img
+          src="../assets/logos/finalLogo.webp"
+          alt="AEC Library"
+          class="logo-img"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand ml-4" href="../index.html"><img src="../assets/logos/finalLogo.webp" alt="AEC Library"
-        class="logo-img"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"
+              ><i class="fas fa-home"></i> Home
+              <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="../about.html" class="nav-link">
+              <i class="fas fa-book"></i> About
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="#" class="nav-link" onclick="return false;">
+              <i class="fas fa-book"></i> Donate Books
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href=".././resource.html" class="nav-link">
+              <i class="fas fa-external-link-alt"></i> Resources</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="../Login_page/login_page.html" class="nav-link">
+              <i class="fas fa-sign-in-alt"></i> Login
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../sign-up-page/index.html" class="nav-link">
+              <i class="fas fa-sign-in-alt"></i> SIGN UP
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home <span
-              class="sr-only">(current)</span></a>
-                 </li>
-                <li class="nav-item"><a href="../about.html" class="nav-link"> <i class="fas fa-book"></i> About </a></li>
-        <li class="nav-item active"><a href="#" class="nav-link" onclick="return false;"> <i
-              class="fas fa-book"></i> Donate Books </a></li>
-        <li class="nav-item"><a href=".././resource.html" class="nav-link"> <i class="fas fa-external-link-alt"></i>
-            Resources</a></li>
-        <li class="nav-item"><a href="../Login_page/login_page.html" class="nav-link"> <i
-              class="fas fa-sign-in-alt"></i> Login </a></li>
-        <li class="nav-item"><a href="../sign-up-page/index.html" class="nav-link"> <i
-              class="fas fa-sign-in-alt"></i> SIGN UP </a></li>
-      </ul>
+    <div class="wrapper">
+      <div class="login-box">
+        <h2>Book Donation Form 📚</h2>
+        <form id="donation_form">
+          <div class="user-box">
+            <input
+              class="form__input form-control"
+              type="text"
+              id="name"
+              name=""
+              required=""
+            />
+            <label>Name of Donated Book</label>
+            <small class="small"></small>
+          </div>
+          <div class="user-box">
+            <input
+              class="form__input form-control"
+              type="text"
+              id="email"
+              name=""
+              required=""
+            />
+            <label>Email</label>
+            <small class="small"></small>
+          </div>
+          <div class="user-box">
+            <input
+              class="form__input form-control"
+              type="tel"
+              id="contact"
+              name=""
+              required=""
+            />
+            <!--onchange="validate_phone(document.getElementById('contact'))"-->
+            <label>Contact Number</label>
+            <small class="small"></small>
+          </div>
+
+          <div class="user-box">
+            <label>Address</label><br /><br />
+            <textarea
+              rows="4"
+              class="form__input form-control"
+              type="text"
+              name=""
+              id="address"
+              required=""
+            ></textarea>
+            <small class="small"></small>
+          </div>
+
+          <div class="user-box">
+            <label>Select Country: </label><br /><br />
+            <select
+              name="state"
+              class="country form-control"
+              id="countySel"
+              size="1"
+              required=""
+            >
+              <option value="" selected="selected">Select Country</option>
+            </select>
+            <small class="small"></small>
+          </div>
+          <div class="user-box">
+            <label>Select State: </label><br /><br />
+            <select
+              name="country"
+              class="state form-control"
+              id="stateSel"
+              size="1"
+              required=""
+            >
+              <option value="" selected="selected">
+                Please select Country first
+              </option>
+            </select>
+            <small class="small"></small>
+          </div>
+          <div class="user-box">
+            <label>Select City: </label><br /><br />
+            <select
+              name="district"
+              class="city form-control"
+              id="districtSel"
+              size="1"
+              required=""
+            >
+              <option value="" selected="selected">
+                Please select State first
+              </option>
+              <option label="KANPUR">KANPUR</option>
+              <option label="LUCKNOW">LUCKNOW</option>
+              <option label="VARANASI">VARANASI</option>
+              <option label="AGRA">AGRA</option>
+              <option label="GAYA">GAYA</option>
+              <option label="AHMEDABAD">AHMEDABAD</option>
+              <option label="PATNA">PATNA</option>
+            </select>
+            <small class="small"></small>
+          </div>
+          <div class="user-box">
+            <input
+              class="form__input form-control"
+              id="zip"
+              type="text"
+              name=""
+              required=""
+            />
+            <label>Zip</label>
+            <small class="small"></small>
+          </div>
+          <div class="user-box">
+            <input
+              class="form__input form-control"
+              id="landmark"
+              type="text"
+              name=""
+            />
+            <label>Landmark (Optional)</label>
+          </div>
+          <div class="user-box">
+            <input
+              class="form__input form-control"
+              id="alt_contact"
+              type="text"
+              name=""
+            />
+            <!--onchange="validate_phone(document.getElementById('alt_contact'))"-->
+            <label>Alternate Phone (Optional)</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-control form-check-input form-checkbox"
+              id="gridCheck"
+              checked
+              required
+            />
+            <p>
+              <label class="form-check-label" for="gridCheck"
+                >I have read and understood the
+              </label>
+              <a
+                class="form-check-label form-check-link"
+                href="terms&conditions.html"
+              >
+                Terms and Conditions</a
+              >
+            </p>
+            <small class="small"></small>
+          </div>
+          <button class="submit-btn" onclick="validateIssue()">Submit</button>
+
+          <button class="reset-btn" onclick="resetFunction()">Reset</button>
+        </form>
+      </div>
     </div>
-  </nav>
-
-  <div class="wrapper">
-    <div class="login-box">
-      <h2>Book Donation Form 📚</h2>
-      <form id="donation_form">
-        <div class="user-box">
-          <input class="form__input form-control" type="text" id="name" name="" required="">
-          <label>Name of Donated Book</label>
-          <small class="small"></small>
-        </div>
-        <div class="user-box">
-          <input class="form__input form-control" type="text" id="email" name="" required="">
-          <label>Email</label>
-          <small class="small"></small>
-        </div>
-        <div class="user-box">
-          <input class="form__input form-control" type="tel" id="contact" name="" required="" >
-          <!--onchange="validate_phone(document.getElementById('contact'))"-->
-          <label>Contact Number</label>
-          <small class="small"></small>
-        </div>
-
-        <div class="user-box">
-          <label>Address</label><br><br>
-          <textarea  rows="4" class="form__input form-control" type="text" name="" id="address" required=""></textarea>
-          <small class="small"></small>
-        </div>
-        
-        <div class="user-box">
-          <label>Select Country: </label><br><br>
-          <select name="state" class="country form-control" id="countySel" size="1" required="">
-           <option value="" selected="selected">Select Country</option>
-          </select>
-          <small class="small"></small>
-        </div>
-        <div class="user-box">
-          <label>Select State: </label><br><br>
-          <select name="country" class="state form-control" id="stateSel" size="1" required="">
-          <option value="" selected="selected">Please select Country first</option>
-          </select>
-          <small class="small"></small>
-        </div>
-        <div class="user-box">
-          <label>Select City: </label><br><br>
-          <select name="district" class="city form-control" id="districtSel" size="1" required="">
-         <option value="" selected="selected">Please select State first</option>
-            <option label="KANPUR">KANPUR</option>
-             <option label="LUCKNOW">LUCKNOW</option>
-             <option label="VARANASI">VARANASI</option>
-             <option label="AGRA">AGRA</option>
-             <option label="GAYA">GAYA</option>
-             <option label="AHMEDABAD">AHMEDABAD</option>
-             <option label="PATNA">PATNA</option>
-         </select>
-         <small class="small"></small>
-        </div>
-        <div class="user-box">
-          <input class="form__input form-control" id="zip" type="text" name="" required="">
-          <label>Zip</label>
-          <small class="small"></small>
-        </div>
-        <div class="user-box">
-          <input class="form__input form-control" id="landmark" type="text" name="">
-          <label>Landmark (Optional)</label>
-        
-        </div>
-        <div class="user-box">
-          <input class="form__input form-control" id="alt_contact" type="text" name="">
-          <!--onchange="validate_phone(document.getElementById('alt_contact'))"-->
-          <label>Alternate Phone (Optional)</label>
-          
-        </div>
-        <div class="form-check">
-          <input type="checkbox" class="form-control form-check-input form-checkbox" id="gridCheck" checked required>
-          <p>
-            <label class="form-check-label" for="gridCheck">I have read and understood the </label>
-            <a class="form-check-label form-check-link" href="terms&conditions.html"> Terms and Conditions</a>
-          </p>
-          <small class="small"></small>
-        </div>
-        <button class="submit-btn" onclick="validateIssue()">
-          Submit
-        </button>
-
-        <button class="reset-btn" onclick="resetFunction()"> Reset</button>
-
-      </form>
-    </div>
-  </div>
 
     <script>
-      function resetFunction(){
+      function resetFunction() {
         document.getElementById("donation_form").reset();
       }
     </script>
 
-  <!-- adding name,image,name of book of people who made donation -->   <!-- here -->
+    <!-- adding name,image,name of book of people who made donation -->
+    <!-- here -->
 
-  <footer>
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="icons">
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/sauravmukherjee44/"><i class="fab fa-linkedin-in icon"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/SauravMukherjee44" target="github"> <i class="fab fa-github icon"></i> </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/mesourav44"><i class="fab fa-twitter icon"></i></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw"><i class="fab fa-youtube icon"></i></a>
-          </li>
-        </ul>
+    <footer>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="icons">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/sauravmukherjee44/"
+                ><i class="fab fa-linkedin-in icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/SauravMukherjee44" target="github">
+                <i class="fab fa-github icon"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/mesourav44"
+                ><i class="fab fa-twitter icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCYGVtIgQIAChKBWBmChxzJw"
+                ><i class="fab fa-youtube icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p>©2021 Copyright AEC Library</p>
+        </div>
+        <div>
+          <p>
+            <a href="contact us .html" class="footer-text">Contact Us</a>
+            &emsp;&emsp;
+          </p>
+        </div>
       </div>
-      <div>
-        <p>©2021 Copyright AEC Library</p>
-      </div>
-      <div>
-        <p>
-          <a href="contact us .html" class="footer-text">Contact Us</a>
-          &emsp;&emsp;
-        </p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- scripts -->
+    <!-- scripts -->
 
-  <script src="../assets/js/Donate_Book.js"></script>
+    <script src="../assets/js/Donate_Book.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
-  <script>
-    window.onload = function () {
-      document.getElementById('loading').style.display = "none";
-      document.getElementById('container').style.display = "block";
-    }
-    particlesJS.load("particles-js", "../assets/js/config.json", function () {
-      console.log("callback - particles.js config loaded");
-    });
-  </script>
-<script src="https://unpkg.com/@supabase/supabase-js"></script>
-  <script>
-  const donationForm = document.getElementById('donation_form');
-  const { createClient } = supabase
-  const supabaseUrl = `https://cvhyilfsattdglfdmvcu.supabase.co`
-  const supabaseAnonKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2aHlpbGZzYXR0ZGdsZmRtdmN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ1NTE5MTksImV4cCI6MTk2MDEyNzkxOX0.wvKZxYcBbeUy9aJTw3XzbySmBJ8PkxVGXeopoucQpGY`
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.onload = function () {
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("container").style.display = "block";
+      };
+      particlesJS.load("particles-js", "../assets/js/config.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    <script>
+      const donationForm = document.getElementById("donation_form");
+      const { createClient } = supabase;
+      const supabaseUrl = `https://cvhyilfsattdglfdmvcu.supabase.co`;
+      const supabaseAnonKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN2aHlpbGZzYXR0ZGdsZmRtdmN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ1NTE5MTksImV4cCI6MTk2MDEyNzkxOX0.wvKZxYcBbeUy9aJTw3XzbySmBJ8PkxVGXeopoucQpGY`;
 
-  const _supabase = createClient(supabaseUrl, supabaseAnonKey);
+      const _supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-  const donatedBook = document.querySelector('.donated_book');
-  function validate_phone(input){
-    var phone = /^\d{10}$/;
-    if(input.value.match(phone)){
-      return true;
-    }
-    /*else{
+      const donatedBook = document.querySelector(".donated_book");
+      function validate_phone(input) {
+        var phone = /^\d{10}$/;
+        if (input.value.match(phone)) {
+          return true;
+        }
+        /*else{
       alert("Please enter a valid phone number")
       return false;
     }*/
+      }
 
-  }
+      function reset_form() {
+        document.getElementById("donation_form").reset();
+      }
 
-  function reset_form(){
-    document.getElementById("donation_form").reset();
-
-  }
-
-  /*donationForm.addEventListener('submit',e=>{
+      /*donationForm.addEventListener('submit',e=>{
     if(validate_phone(document.getElementById('contact'))){
     e.preventDefault();
     const { data, error } = _supabase
@@ -277,168 +409,161 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   }
     })
 */
-  </script>
+    </script>
 
-<div id="topBtn" title="Navigate to Top Button">
-  <a href="#"><span class="fa fa-angle-up"></span></a>
-</div>
-<!-- Navigate to Top Button  -->
-<script>
-  $(document).ready(function () {
-      $(window).scroll(function () {
+    <div id="topBtn" title="Navigate to Top Button">
+      <a href="#"><span class="fa fa-angle-up"></span></a>
+    </div>
+    <!-- Navigate to Top Button  -->
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
           if ($(window).scrollTop() > 40) {
-              $('#topBtn').css({
-                  "opacity": "1", "pointer-events": "auto"
-              });
+            $("#topBtn").css({
+              opacity: "1",
+              "pointer-events": "auto",
+            });
           } else {
-              $('#topBtn').css({
-                  "opacity": "0", "pointer-events": "none"
-              });
+            $("#topBtn").css({
+              opacity: "0",
+              "pointer-events": "none",
+            });
           }
+        });
+
+        $("#topBtn").click(function () {
+          $("html ,body").animate({ scrollTop: 0 }, 400);
+        });
       });
+    </script>
 
-      $("#topBtn").click(function () {
-          $('html ,body').animate({ scrollTop: 0 }, 400);
-      });
-  });
-</script>
+    <script>
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const contact = document.getElementById("contact");
+      const address = document.getElementById("address");
+      const country = document.getElementById("countySel");
+      const state = document.getElementById("stateSel");
+      const city = document.getElementById("districtSel");
+      const zip = document.getElementById("zip");
+      const grid = document.getElementById("gridCheck");
 
+      function validateIssue() {
+        console.log("called");
+        if (checkInputs()) return true;
+        else return false;
+      }
 
-<script>
-  const name = document.getElementById('name');
-  const email = document.getElementById('email');
-  const contact = document.getElementById('contact');
-  const address = document.getElementById('address');
-  const country = document.getElementById('countySel');
-  const state = document.getElementById('stateSel');
-  const city = document.getElementById('districtSel');
-  const zip = document.getElementById('zip');
-  const grid = document.getElementById('gridCheck');
+      function checkInputs() {
+        //get values from input fields
+        const nameval = name.value.trim();
+        const emailval = email.value.trim();
+        const contactval = contact.value.trim();
+        const addressval = address.value.trim();
+        const countryval = country.value.trim();
+        const stateval = state.value.trim();
+        const cityval = city.value.trim();
+        const zipval = zip.value.trim();
 
-  function validateIssue(){
-
-    console.log("called");
-    if(checkInputs())
-    return true;
-    else
-    return false;
-
-  }
-
-  function checkInputs()
-  {
-       //get values from input fields
-       const nameval = name.value.trim();
-       const emailval = email.value.trim();
-       const contactval = contact.value.trim();
-       const addressval = address.value.trim();
-       const countryval = country.value.trim();
-       const stateval = state.value.trim();
-       const cityval = city.value.trim();
-       const zipval = zip.value.trim();
-     
-       if(nameval === '')
-       { setErrorFor(name,'Please enter a Book Name');}
-       else
-       { setSuccessFor(name);}
-
-       if(emailval === '')
-       { setErrorFor(email,'Please enter a E-mail');}
-       else
-       {
-            if(!validEmail(emailval))
-          { setErrorFor(email,'Please enter a valid E-mail');}
-            else
-           { setSuccessFor(email);}
-       }
-
-           if(contactval == ""){
-        setErrorFor(contact,"Please enter a contact no");
-        }else{
-
-          if(!validPhone(contactval))
-          { setErrorFor(contact,'Please enter a valid 10 digit contact no');}
-            else
-           {  setSuccessFor(contact);}
-
+        if (nameval === "") {
+          setErrorFor(name, "Please enter a Book Name");
+        } else {
+          setSuccessFor(name);
         }
 
-
-      if(addressval == ""){
-        setErrorFor(address,"Please enter address");
-        }else{
-        setSuccessFor(address);
-      }
-
-      if(countryval == ""){
-        setErrorFor(country,"Please select country");
-        }else{
-        setSuccessFor(country);
-      }
-
-      if(stateval == ""){
-        setErrorFor(state,"Please select state");
-        }else{
-        setSuccessFor(state);
-      }
-
-      if(cityval == ""){
-        setErrorFor(city,"Please select city");
-        }else{
-        setSuccessFor(city);
-      }
-
-
-      if(zipval == ""){
-        setErrorFor(zip,"Please enter zip");
-        }else{
-        setSuccessFor(zip);
-      }
-
-      
-
-       if(nameval!='' && emailval!='' && contactval!='' && addressval!='' &&  countryval !== '' && stateval !== '' && cityval!='' && zipval != '') 
-       { 
-         return true; 
+        if (emailval === "") {
+          setErrorFor(email, "Please enter a E-mail");
+        } else {
+          if (!validEmail(emailval)) {
+            setErrorFor(email, "Please enter a valid E-mail");
+          } else {
+            setSuccessFor(email);
+          }
         }
 
-  }
+        if (contactval == "") {
+          setErrorFor(contact, "Please enter a contact no");
+        } else {
+          if (!validPhone(contactval)) {
+            setErrorFor(contact, "Please enter a valid 10 digit contact no");
+          } else {
+            setSuccessFor(contact);
+          }
+        }
 
-  function validEmail(email) {
-  const res = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-  return res.test(String(email).toLowerCase());
-}
+        if (addressval == "") {
+          setErrorFor(address, "Please enter address");
+        } else {
+          setSuccessFor(address);
+        }
 
-function validPhone(phone)
-{
-  var phoneno = /^\d{10}$/;
-  if((phone.match(phoneno)))
-  return true;
-  else
-  return false;
-}
+        if (countryval == "") {
+          setErrorFor(country, "Please select country");
+        } else {
+          setSuccessFor(country);
+        }
 
-  function setErrorFor(input,showerror)
-  {
-    let formControl = input.parentElement;
-   // console.log(formControl);
+        if (stateval == "") {
+          setErrorFor(state, "Please select state");
+        } else {
+          setSuccessFor(state);
+        }
 
-    const small = formControl.querySelector('small');
-    small.innerText = showerror;
+        if (cityval == "") {
+          setErrorFor(city, "Please select city");
+        } else {
+          setSuccessFor(city);
+        }
 
-    formControl.classList.remove('success');
-    formControl.classList.add('error');
-    //console.log(showerror);
+        if (zipval == "") {
+          setErrorFor(zip, "Please enter zip");
+        } else {
+          setSuccessFor(zip);
+        }
 
-  }
+        if (
+          nameval != "" &&
+          emailval != "" &&
+          contactval != "" &&
+          addressval != "" &&
+          countryval !== "" &&
+          stateval !== "" &&
+          cityval != "" &&
+          zipval != ""
+        ) {
+          return true;
+        }
+      }
 
-  function setSuccessFor(input)
-  {
-    let formControl = input.parentElement;
-    formControl.classList.remove('error');
-    formControl.classList.add('success');
-  }
-  </script>
-</body>
- <script src="../assets/js/Donate_Book.js"></script>
+      function validEmail(email) {
+        const res = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        return res.test(String(email).toLowerCase());
+      }
+
+      function validPhone(phone) {
+        var phoneno = /^\d{10}$/;
+        if (phone.match(phoneno)) return true;
+        else return false;
+      }
+
+      function setErrorFor(input, showerror) {
+        let formControl = input.parentElement;
+        // console.log(formControl);
+
+        const small = formControl.querySelector("small");
+        small.innerText = showerror;
+
+        formControl.classList.remove("success");
+        formControl.classList.add("error");
+        //console.log(showerror);
+      }
+
+      function setSuccessFor(input) {
+        let formControl = input.parentElement;
+        formControl.classList.remove("error");
+        formControl.classList.add("success");
+      }
+    </script>
+  </body>
+  <script src="../assets/js/Donate_Book.js"></script>
 </html>

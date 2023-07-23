@@ -92,15 +92,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 ); color: white; font-weight: 900; f
   tableBody.innerHTML += uiString;
 };
 
-
 Display.prototype.edit = function (book) {
   tableBody = document.getElementById("tableBody");
-  const info=(document.getElementById(countBooks).childNodes);
-  info[1].textContent=book.date;
-  info[3].textContent=book.name;
-  info[5].textContent=book.author;
-  info[7].textContent=book.type;
-
+  const info = document.getElementById(countBooks).childNodes;
+  info[1].textContent = book.date;
+  info[3].textContent = book.name;
+  info[5].textContent = book.author;
+  info[7].textContent = book.type;
 };
 
 // Implement the clear function
@@ -143,30 +141,29 @@ function libraryFormSubmit(e) {
   if (date == "" || name == "" || author == "" || category == "") {
     window.alert("Field is Empty!Please Enter Something");
   } else {
-     // Show error to the user
-     let display = new Display();
+    // Show error to the user
+    let display = new Display();
 
     //  display.show("danger", "Sorry you cannot add this book");
-     let book = new Book(date, name, author, category);
- 
-     if (display.validate(book)) {
-       let edit =document.getElementById("addBook").classList.contains("edit");
-       if(edit){
-         display.edit(book);
-         document.getElementById("addBook").textContent="Add Book";
+    let book = new Book(date, name, author, category);
+
+    if (display.validate(book)) {
+      let edit = document.getElementById("addBook").classList.contains("edit");
+      if (edit) {
+        display.edit(book);
+        document.getElementById("addBook").textContent = "Add Book";
         document.getElementById("addBook").classList.remove("edit");
-       }
-       else{
+      } else {
         display.add(book);
-       }
-       
-       display.clear();
+      }
+
+      display.clear();
       //  display.show("success", "Your book has been successfully added");
-     } else {
-       // Show error to the user
-       display.show("danger", "Sorry you cannot add this book");
-     }
-   }
+    } else {
+      // Show error to the user
+      display.show("danger", "Sorry you cannot add this book");
+    }
+  }
 }
 
 // Add submit event listener to searchForm
@@ -185,12 +182,13 @@ function searchFormSubmit(e) {
       const bookTitle = book.querySelector("td:nth-child(2)").textContent;
       const bookAuthor = book.querySelector("td:nth-child(3)").textContent;
 
-      const bookHasSearchTerms = searchBookTerms(searchTerms, { bookTitle, bookAuthor });
-      if(bookHasSearchTerms)
-        book.style.display = 'table-row';
-      else
-        book.style.display = 'none';
-    })
+      const bookHasSearchTerms = searchBookTerms(searchTerms, {
+        bookTitle,
+        bookAuthor,
+      });
+      if (bookHasSearchTerms) book.style.display = "table-row";
+      else book.style.display = "none";
+    });
   }
   e.preventDefault();
 }
@@ -200,17 +198,16 @@ function searchBookTerms(searchTerms, { ...searchAttrs }) {
 
   Object.values(searchAttrs).forEach((searchAttr) => {
     termFound = termFound || searchTerms.indexOf(searchAttr) != -1;
-  })
+  });
 
   return termFound;
 }
 
 //edit function
-function editfunction(pbookname, pauthorname, ptype, pbookid,pbookdate) {
-  
-  document.getElementById("issueDate").value=pbookdate;
+function editfunction(pbookname, pauthorname, ptype, pbookid, pbookdate) {
+  document.getElementById("issueDate").value = pbookdate;
   document.getElementById("bookName").value = pbookname;
-  document.getElementById("addBook").textContent="Edit";
+  document.getElementById("addBook").textContent = "Edit";
   document.getElementById("addBook").classList.add("edit");
   document.getElementById("author").value = pauthorname;
   document.getElementById("category").value = ptype;
@@ -238,13 +235,13 @@ let preloader = document.querySelector(".preloader");
 let nav = document.querySelector(".navbar");
 timer1 = setInterval(() => {
   preloader.classList.add("endpreloadopacity");
-  $(' html, body').css({
-    overflow: 'auto'
+  $(" html, body").css({
+    overflow: "auto",
   });
   setTimeout(timer1);
 }, 4500);
 let timer2 = setInterval(() => {
-  if(nav){
+  if (nav) {
     nav.classList.remove("nav_beforepreload");
   }
   setTimeout(timer2);
@@ -260,52 +257,53 @@ let timer3 = setInterval(() => {
 var faq = document.getElementsByClassName("faq-page");
 var i;
 for (i = 0; i < faq.length; i++) {
-    faq[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
+  faq[i].addEventListener("click", function () {
+    /* Toggle between adding and removing the "active" class,
         to highlight the button that controls the panel */
-        this.classList.toggle("active");
-        /* Toggle between hiding and showing the active panel */
-        var body = this.nextElementSibling;
-        if (body.style.display === "block") {
-            body.style.display = "none";
-        } else {
-            body.style.display = "block";
-        }
-    });
+    this.classList.toggle("active");
+    /* Toggle between hiding and showing the active panel */
+    var body = this.nextElementSibling;
+    if (body.style.display === "block") {
+      body.style.display = "none";
+    } else {
+      body.style.display = "block";
+    }
+  });
 }
 
 // counter on home page
-$(window).on("scroll load resize", function(){
+$(window).on("scroll load resize", function () {
   checkScroll();
   // console.log($(window).scrollTop());
 });
-function checkScroll(){
-    const counters = document.querySelectorAll('.counter');
+function checkScroll() {
+  const counters = document.querySelectorAll(".counter");
 
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
+  counters.forEach((counter) => {
+    const updateCount = () => {
+      const target = +counter.getAttribute("data-target");
+      const count = +counter.innerText;
 
-        if (count < target) {
-          counter.innerText = count + 1;
-          setTimeout(updateCount, 8);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCount();
-    });
-  
+      if (count < target) {
+        counter.innerText = count + 1;
+        setTimeout(updateCount, 8);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
 }
 //Chat-Bot Added
 
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/61b60cc480b2296cfdd150ce/1fmni3o8e';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
+var Tawk_API = Tawk_API || {},
+  Tawk_LoadStart = new Date();
+(function () {
+  var s1 = document.createElement("script"),
+    s0 = document.getElementsByTagName("script")[0];
+  s1.async = true;
+  s1.src = "https://embed.tawk.to/61b60cc480b2296cfdd150ce/1fmni3o8e";
+  s1.charset = "UTF-8";
+  s1.setAttribute("crossorigin", "*");
+  s0.parentNode.insertBefore(s1, s0);
 })();

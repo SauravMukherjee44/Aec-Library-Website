@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-image: url('Login_background.webp');
+  background-image: url("Login_background.webp");
   background-color: #464646;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: -20px 0 50px;
 }
 
@@ -140,7 +140,7 @@ input {
 }
 
 .container {
-  background-image: url('Capture.webp');
+  background-image: url("Capture.webp");
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
@@ -324,16 +324,16 @@ footer a {
 .animate1 {
   font-size: 50px;
   font-size: 2.1em;
-  text-align: center; 
+  text-align: center;
   font-weight: 750;
-  letter-spacing:5px;
+  letter-spacing: 5px;
   margin-bottom: -20px;
   position: relative;
 }
 
 .animate2 {
   font-size: 20px;
-  text-align: center; 
+  text-align: center;
   line-height: 30px;
   color: white;
   letter-spacing: 0.5px;
@@ -345,7 +345,7 @@ footer a {
   animation: text 2s 1;
 }
 
-.text-danger{
+.text-danger {
   color: red;
   font-size: bold;
 }
