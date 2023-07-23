@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="reviewsection.css">
-</head>
+  <head>
+    <link rel="stylesheet" href="reviewsection.css" />
+  </head>
 
-<body>
-<div class="container">
-    <div style="text-align:center">
-      <h2>Book Review </h2>
-      <p>"The Best Way To Thank An Author Is To Write A Review"</p>
-    </div>
-    <div class="row">
-      <div class="column">
-        <img src="https://ideas.ted.com/wp-content/uploads/sites/3/2020/06/final_booklist_black-writers.webp" style="width:100%">
+  <body>
+    <div class="container">
+      <div style="text-align: center">
+        <h2>Book Review</h2>
+        <p>"The Best Way To Thank An Author Is To Write A Review"</p>
       </div>
-      <div class="column">
-        <form action="/action_page.php">
-          <label for="fname"> Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Book Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="country">Book Genre</label>
-          <select id="country" name="country">
-            <option value="australia">Action and Adventure
-            </option>
-            <option value="canada">Classics
-            </option>
-            <option value="usa">Comic Book or Graphic Novel</option>
-            <option value="Detective and Mystery"> Detective and Mystery</option>
-            <option value="Fantasy">Fantasy</option>
-            <option value="Historical Fiction">Historical Fiction</option>
-            <option value="Horror">Horror</option>
-            <option value="Literary Fiction">Literary Fiction</option>
-            <option value="Science Fiction (Sci-Fi)">Science Fiction (Sci-Fi)</option>
-            <option value="Autobiography">Autobiography</option>
-            <option value="other">others</option>
-          </select>
-          <label for="subject">Review of Book</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
-        </form>
+      <div class="row">
+        <div class="column">
+          <img
+            src="https://ideas.ted.com/wp-content/uploads/sites/3/2020/06/final_booklist_black-writers.webp"
+            style="width: 100%"
+          />
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname"> Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Book Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="country">Book Genre</label>
+            <select id="country" name="country">
+              <option value="australia">Action and Adventure</option>
+              <option value="canada">Classics</option>
+              <option value="usa">Comic Book or Graphic Novel</option>
+              <option value="Detective and Mystery">
+                Detective and Mystery
+              </option>
+              <option value="Fantasy">Fantasy</option>
+              <option value="Historical Fiction">Historical Fiction</option>
+              <option value="Horror">Horror</option>
+              <option value="Literary Fiction">Literary Fiction</option>
+              <option value="Science Fiction (Sci-Fi)">
+                Science Fiction (Sci-Fi)
+              </option>
+              <option value="Autobiography">Autobiography</option>
+              <option value="other">others</option>
+            </select>
+            <label for="subject">Review of Book</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  
-</body>
+  </body>
 </html>
