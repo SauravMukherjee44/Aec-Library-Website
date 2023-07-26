@@ -84,33 +84,33 @@
 	   </div>
 	   <div class="contact-form">
 		   <h2><strong> Send a Message</strong></h2>
-		   <form onsubmit="return false">
+		   <form onsubmit="return false"  aria-label="Contact us form">
 		   <div class="form">
 			   <div class="inputBox w50">
-				   <input type="text"  name="firstname" required>
+				   <input type="text" name="firstname" required aria-required="true" aria-label="Enter your first name" aria-describedby="firstname">
 				   <span>First Name</span>
-				   <span class = "error"> </span>
+				   <span class = "error" role="alert" id="firstname"> </span>
 			   </div>
 			   <div class="inputBox w50">
-				   <input type="text" name="lastname" required>
+				   <input type="text" name="lastname" required aria-required="true" aria-label="Enter your last name" aria-describedby="lastname">
 				   <span >Last Name </span>
-				   <span class="error"> </span>
+				   <span class="error" role="alert" id="lastname"> </span>
 			   </div>
 			   <div class="inputBox w50">
-				   <input type="email" name="email" required>
+				   <input type="email" name="email" required aria-required="true" aria-label="Enter your email" aria-describedby="email">
 				   <span>Email Address</span>
-				   <span class = "error"></span>
+				   <span class = "error" role="alert" id="email"></span>
 			   </div>
 			   <div class="inputBox w50">
 				   <input type="tel"  name="mobilenumber" pattern="[1-9]{1}[0-9]{9}" required 
-				   oninvalid="setCustomValidity('Enter a valid phone number')">
+				   oninvalid="setCustomValidity('Enter a valid phone number')" aria-required="true" aria-label="Enter your mobile number" aria-describedby="mobilenumber">
 				   <span>Mobile Number</span>
-				   <span class = "error"></span>
+				   <span class = "error" role="alert" id="mobilenumber"></span>
 			   </div>
 			   <div class="inputBox w100">
-				   <textarea name="message" required></textarea>
+				   <textarea name="message" required aria-required="true" aria-label="Enter your message" aria-describedby="message"></textarea>
 				   <span>Write your message here</span>
-				   <span class = "error"></span>
+				   <span class = "error" role="alert" id="message"></span>
 			   </div>
 			   <div class="inputBox w100">
 				   <input type="submit" value="Send">

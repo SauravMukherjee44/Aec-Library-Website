@@ -19,42 +19,42 @@
     <p id="errormsg"></p>
     <p id="successmsg"></p>
    
-    <form class="signUp-form" id="form">
+    <form class="signUp-form" id="form" aria-label="Sign up form">
       <div class="wrapper">
         <div class="first-box">
           <div class="form-group">
             <i class="fa fa-address-book-o"></i>
-            <input type="text" name="" id="fullName" placeholder="Name" />
+            <input type="text" name="" id="fullName" placeholder="Name" required aria-required="true" aria-label="Enter your full name"/>
           </div>
           <div class="form-group">
             <i class="fa fa-envelope"></i>
-            <input type="email" name="" id="email" placeholder="Email" />
+            <input type="email" name="" id="email" placeholder="Email" required aria-required="true" aria-label="Enter your email"/>
           </div>
           <div class="form-group">
             <i class="fa fa-phone"></i>
-            <input type="tel" name="" id="phone" placeholder="Mobile number" maxlength="10" />
+            <input type="tel" name="" id="phone" placeholder="Mobile number" maxlength="10" required aria-required="true" aria-label="Enter your mobile number"/>
           </div>
           <div class="form-group no-border">
-            <input type="radio" name="gender" id="male" value="MALE" checked/>
+            <input type="radio" name="gender" id="male" value="MALE" checked aria-checked="true"/>
             <label for="gender">Male</label>
   
-            <input type="radio" name="gender" id="female" value="FEMALE" />
+            <input type="radio" name="gender" id="female" value="FEMALE" aria-label="Enter your mobile number"/>
             <label for="gender">Female</label>
           </div>
         </div>
         <div class="second-box">
           <div class="form-group">
             <i class="fa fa-user-o"></i>
-            <input type="text" name="" id="username" placeholder="Username" />
+            <input type="text" name="username" id="username" placeholder="Username" required aria-required="true" aria-label="Enter your username"/>
           </div>
           <div class="form-group">
             <i class="fa fa-unlock-alt"></i>
-            <input type="password" name="" id="password" placeholder="Password" />
+            <input type="password" name="password" id="password" placeholder="Password" required aria-required="true" aria-label="Enter your password"/>
             <i class="fa fa-eye-slash icon" id="newPassword"></i>
           </div>
           <div class="form-group">
             <i class="fa fa-unlock-alt"></i>
-            <input type="password" name="" id="confirmPassword" placeholder="Confirm password" />
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password" required aria-required="true" aria-label="Confirm your password"/>
             <label>
               <i class="fa fa-eye-slash icon" id="confirmNewPassword"></i>
             </label>
