@@ -700,6 +700,7 @@ h3.hover-underline-animation {
   .search-box-container{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
   }
 }
 .play-button-container:hover {
