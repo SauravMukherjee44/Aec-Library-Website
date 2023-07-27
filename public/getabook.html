@@ -78,15 +78,18 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         <div class="user-box">
           <input class="form__input form-control" type="email" id="email" name="" required="">
           <label>Email</label>
+          <small class="small"></small>
         </div>
         <div class="user-box">
-          <input class="form__input form-control" type="tel" id="contact" name="" required="" >
+          <input class="form__input form-control" type="text" id="contact" name="" required="">
           <!--onchange="validate_phone(document.getElementById('contact'))"-->
           <label>Contact Number</label>
+          <small class="small"></small>
         </div>
         <div class="user-box">
           <input class="form__input form-control" id="zip" type="text" name="" required="">
           <label>Zip</label>
+          <small class="small"></small>
         </div>
        
         <div class="form-check">
@@ -96,7 +99,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
             <a class="form-check-label form-check-link" href="terms&conditions.html"> Terms and Conditions</a>
           </p>
         </div>
-        <button class="submit-btn">
+        <button class="submit-btn" onclick="validateIssue()">
           Submit
         </button>
 
@@ -193,33 +196,89 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
   }
 
-  donationForm.addEventListener('submit',e=>{
-    if(validate_phone(document.getElementById('contact'))){
-    e.preventDefault();
-    const { data, error } = _supabase
-      .from('getabook_form')
-      .insert([
-        {
-          email:document.getElementById('email').value,
-         
-          contact : document.getElementById('contact').value,
-          zip : document.getElementById('zip').value,
-        }
-      ]).then(res=>{
-        console.log(res);
-        if(res.error){
-          alert(res.error.message);
-        }
-        else{
-        alert('Data Added');
+  const email = document.getElementById('email');
+  const contact = document.getElementById('contact');
+  const zip = document.getElementById('zip');
+
+  function validateIssue(){
+    console.log("called");
+    if(checkInputs())
+    return true;
+    else
+    return false;
+
+  }
+
+  function checkInputs()
+  {
+       //get values from input fields
+       const emailval = email.value.trim();
+       const contactval = contact.value.trim();
+        const zipval = zip.value.trim();
+     
+      
+       if(emailval === '')
+       { setErrorFor(email,'Please enter a E-mail');}
+       else if(!validEmail(emailval))
+       { setErrorFor(email,'Please enter a valid E-mail');}
+        else if(contactval == ""){
+          setSuccessFor(email);
+        setErrorFor(contact,"Please enter a contact no");
+        }else if(contactval.length!=10)
+        { setErrorFor(contact,'Please enter a valid 10 digit contact no');}
+        else if(zipval == ""){
+        setSuccessFor(contact);
+        setErrorFor(zip,"Please enter zip");
+        }else{
+              setSuccessFor(zip);
+              const { data, error } = _supabase
+            .from('getabook_form')
+            .insert([
+              {
+                email:document.getElementById('email').value,
+              
+                contact : document.getElementById('contact').value,
+                zip : document.getElementById('zip').value,
+              }
+            ]).then(res=>{
+              console.log(res);
+              if(res.error){
+                alert(res.error.message);
+              }
+              else{
+              alert('Data Added');
+              reset_form();
+              }
+            })
         reset_form();
-        }
-      })
+      }
   }
-  else{
-    alert("Please enter a valid phone number")
+
+  function validEmail(email) {
+  const res = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return res.test(String(email).toLowerCase());
+}
+
+  function setErrorFor(input,showerror)
+  {
+    let formControl = input.parentElement;
+   // console.log(formControl);
+
+    const small = formControl.querySelector('small');
+    small.innerText = showerror;
+
+    formControl.classList.remove('success');
+    formControl.classList.add('error');
+    //console.log(showerror);
+
   }
-    })
+
+  function setSuccessFor(input)
+  {
+    let formControl = input.parentElement;
+    formControl.classList.remove('error');
+    formControl.classList.add('success');
+  }
 
   </script>
 
