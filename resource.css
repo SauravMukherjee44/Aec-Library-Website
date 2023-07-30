@@ -135,6 +135,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+header .nav-link {
+  margin: 0 auto;
+  width: fit-content;
+}
+
 header h1 {
   text-align: center;
   font-size: 40px;
