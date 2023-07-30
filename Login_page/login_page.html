@@ -17,17 +17,17 @@
       AEC Library - Login
     </div>
     <p id="errormsg"></p>
-    <form class="login_form" id="form">
+    <form class="login_form" id="form" aria-label="Login form">
       <div class="first-box">
         <div class="form-group">
             <i class="fa fa-envelope"></i>
-            <input type="email" name="" id="email" placeholder="Email" />
+            <input type="email" name="" id="email" placeholder="Email" required aria-required="true" aria-label="Enter your email"/>
         </div>
       </div>
       <div class="second-box">
         <div class="form-group">
             <i class="fa fa-unlock-alt"></i>
-            <input type="password" name="" id="password" placeholder="Password" />
+            <input type="password" name="" id="password" placeholder="Password"  required aria-required="true" aria-label="Enter your email"/>
             <i class="fa fa-eye-slash icon" id="newPassword" ></i>
         </div>
       </div>
