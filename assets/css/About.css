@@ -38,8 +38,7 @@ body {
 
 /* navbar */
 .navbar {
-  background-color: #6f4e37b0 !important;
-}
+
 .navbar-nav li a:hover:after {
   width: 100%;
   left: 0;
