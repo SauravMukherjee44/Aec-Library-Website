@@ -11,7 +11,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
-  background-image: url("library-bg-1.jpg");
+  background-image: url("library-bg-1.webp");
   background-color: #635147;
   background-size: cover;
   background-position: center;
@@ -39,6 +39,23 @@ body {
   display: flex;
   justify-content: center;
 }
+#errormsg
+{
+  color: #ffaaa4;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: 24%;
+    margin-bottom: -10%;
+ 
+}
+
+#successmsg{
+  color: rgb(118 219 118);
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 24%;
+  margin-top: 10%;
+}
 
 .signUp-form input {
   padding: 0%;
@@ -57,7 +74,13 @@ body {
   margin: 1rem;
   display: flex;
 }
+.form-group.error{
+  border-bottom: 1px solid red;
+}
 
+.form-group.success{
+  border-bottom: 1px solid green;
+}
 .form-group i {
   color: #fff;
   font-size: 2rem;

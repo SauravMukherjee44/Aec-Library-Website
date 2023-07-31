@@ -4,60 +4,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
+  <link rel="icon" href="../assets/logos/finalLogo.webp" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <title>SIGN UP - AEC Library</title>
 </head>
 
 <body>
-  <h1 id="err"></h1>
+  <h1 id="err" style="visibility: hidden;"></h1>
   <div class="section">
     <div class="header">
       AEC Library - Sign Up
     </div>
-    <form class="signUp-form" id="form">
+    <p id="errormsg"></p>
+    <p id="successmsg"></p>
+   
+    <form class="signUp-form" id="form" aria-label="Sign up form">
       <div class="wrapper">
         <div class="first-box">
           <div class="form-group">
             <i class="fa fa-address-book-o"></i>
-            <input type="text" name="" id="fullName" placeholder="Name" />
+            <input type="text" name="" id="fullName" placeholder="Name" required aria-required="true" aria-label="Enter your full name"/>
           </div>
           <div class="form-group">
             <i class="fa fa-envelope"></i>
-            <input type="email" name="" id="email" placeholder="Email" />
+            <input type="email" name="" id="email" placeholder="Email" required aria-required="true" aria-label="Enter your email"/>
           </div>
           <div class="form-group">
             <i class="fa fa-phone"></i>
-            <input type="tel" name="" id="phone" placeholder="Mobile number" maxlength="10" />
+            <input type="tel" name="" id="phone" placeholder="Mobile number" maxlength="10" required aria-required="true" aria-label="Enter your mobile number"/>
           </div>
           <div class="form-group no-border">
-            <input type="radio" name="gender" id="male" value="MALE" />
+            <input type="radio" name="gender" id="male" value="MALE" checked aria-checked="true"/>
             <label for="gender">Male</label>
   
-            <input type="radio" name="gender" id="female" value="FEMALE" />
+            <input type="radio" name="gender" id="female" value="FEMALE" aria-label="Enter your mobile number"/>
             <label for="gender">Female</label>
           </div>
         </div>
         <div class="second-box">
           <div class="form-group">
             <i class="fa fa-user-o"></i>
-            <input type="text" name="" id="username" placeholder="Username" />
+            <input type="text" name="username" id="username" placeholder="Username" required aria-required="true" aria-label="Enter your username"/>
           </div>
           <div class="form-group">
             <i class="fa fa-unlock-alt"></i>
-            <input type="password" name="" id="password" placeholder="Password" />
+            <input type="password" name="password" id="password" placeholder="Password" required aria-required="true" aria-label="Enter your password"/>
             <i class="fa fa-eye-slash icon" id="newPassword"></i>
           </div>
           <div class="form-group">
             <i class="fa fa-unlock-alt"></i>
-            <input type="password" name="" id="confirmPassword" placeholder="Confirm password" />
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password" required aria-required="true" aria-label="Confirm your password"/>
             <label>
               <i class="fa fa-eye-slash icon" id="confirmNewPassword"></i>
             </label>
           </div>
           <div class="button">
-                  <button style="color: white">submit</button>
+                  <button onclick="validate()" style="color: white">submit</button>
           </div>
         </div>
       </div>
@@ -76,7 +79,7 @@
   </div> -->
 
   <div class="quiz-exit">
-    <a href="/index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #635147;">
+    <a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #635147;">
         <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
       </svg></a>
   </div>
@@ -91,7 +94,88 @@
 
       //console.log(_supabase);
   </script>
+ <script>
+  const name = document.getElementById('fullName');
+ const usrname = document.getElementById('username');
+ const useremail = document.getElementById('email');
+ const userpassword = document.getElementById('password');
+ const usermobile = document.getElementById('phone');
+ const confirmpasswd = document.getElementById('confirmPassword');
+ const error = document.getElementById('errormsg');
+ const success = document.getElementById('successmsg');
 
+ function validate(){
+
+   console.log("called");
+   if(checkInputs())
+   return true;
+   else
+   return false;
+
+ }
+
+ function checkInputs()
+ {
+      //get values from input fields
+      const nameval = name.value.trim();
+      const usernameval = usrname.value.trim();
+      const emailval = useremail.value.trim();
+      const passwdval = userpassword.value.trim();
+      const mobileval = usermobile.value.trim();
+      const confirmpasswdval = confirmpasswd.value.trim();
+
+
+     if(nameval==='')
+     {
+        error.innerHTML="*Please enter your Name!";
+        name.parentElement.classList.add('error'); name.parentElement.classList.remove('success');
+     }
+     else if(usernameval === '')
+     {
+       name.parentElement.classList.add('success'); name.parentElement.classList.remove('error');
+       error.innerHTML="*Please enter your User Name!";
+        usrname.parentElement.classList.add('error'); usrname.parentElement.classList.remove('success');
+     }
+     else if(emailval === '')
+     {
+       usrname.parentElement.classList.add('success'); usrname.parentElement.classList.remove('error');
+       error.innerHTML="*Please enter your Email!";
+        useremail.parentElement.classList.add('error'); useremail.parentElement.classList.remove('success');
+     }
+     else if(mobileval === '')
+     {
+       useremail.parentElement.classList.add('success'); useremail.parentElement.classList.remove('error');
+       error.innerHTML="*Please enter your Mobile!";
+        usermobile.parentElement.classList.add('error'); usermobile.parentElement.classList.remove('success');
+     }
+
+     else if(passwdval === '')
+     {
+       usermobile.parentElement.classList.add('success'); usermobile.parentElement.classList.remove('error');
+       error.innerHTML="*Please enter your Password!";
+        userpassword.parentElement.classList.add('error'); userpassword.parentElement.classList.remove('success');
+     }
+     else if(confirmpasswdval === '')
+     {
+       userpassword.parentElement.classList.add('success'); userpassword.parentElement.classList.remove('error');
+       error.innerHTML="*Please confirm your Password!";
+        confirmpasswd.parentElement.classList.add('error'); confirmpasswd.parentElement.classList.remove('success');
+     }
+     else if(confirmpasswdval !== passwdval)
+     {
+       userpassword.parentElement.classList.add('success'); userpassword.parentElement.classList.remove('error');
+       error.innerHTML="*Password does not match!";
+        confirmpasswd.parentElement.classList.add('error'); confirmpasswd.parentElement.classList.remove('success');
+     }
+     else
+     {
+        success.innerHTML = "Sign up successfully done!!";
+        error.innerHTML="";
+        name.value=" ";usrname.value=" ";useremail.value=" ";userpassword.value=" ";usermobile.value=" ";confirmpasswd.value=" ";
+     }
+ }
+ 
+</script>
   <script src="index.js"></script>
 </body>
 

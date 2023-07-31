@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../assets/logos/finalLogo.png" type="image/x-icon" />
+  <link rel="icon" href="../assets/logos/finalLogo.webp" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <title>LOGIN - AEC Library</title>
@@ -16,22 +16,23 @@
     <div class="header">
       AEC Library - Login
     </div>
-    <form class="login_form" id="form">
+    <p id="errormsg"></p>
+    <form class="login_form" id="form" aria-label="Login form">
       <div class="first-box">
         <div class="form-group">
             <i class="fa fa-envelope"></i>
-            <input type="email" name="" id="email" placeholder="Email" />
+            <input type="email" name="" id="email" placeholder="Email" required aria-required="true" aria-label="Enter your email"/>
         </div>
       </div>
       <div class="second-box">
         <div class="form-group">
             <i class="fa fa-unlock-alt"></i>
-            <input type="password" name="" id="password" placeholder="Password" />
-            <i class="fa fa-eye-slash icon" id="newPassword"></i>
+            <input type="password" name="" id="password" placeholder="Password"  required aria-required="true" aria-label="Enter your email"/>
+            <i class="fa fa-eye-slash icon" id="newPassword" ></i>
         </div>
       </div>
       <div class="button">
-          <button style="color: white"  id="submitButton" >submit</button>
+          <button style="color: white" onclick="validate()"  id="submitButton" >submit</button>
       </div>
     </form>
 
@@ -43,6 +44,21 @@
   color: rgb(230, 236, 230);
 }
 
+
+#errormsg
+{
+  color: #ffaaa4;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: 25%;
+}
+.form-group.error{
+  border-bottom: 1px solid red;
+}
+
+.form-group.success{
+  border-bottom: 1px solid green;
+}
 
     </style>
   <div id="messageContainer">Thank you for submitting the form!</div> 
@@ -56,7 +72,7 @@
   </div>
   
   <div class="quiz-exit">
-    <a href="/index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #635147;">
+    <a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #635147;">
         <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
       </svg></a>
   </div>
@@ -72,7 +88,70 @@
   //console.log(_supabase);
 </script>
 
-<script src = "login.js"></script>
+<script>
+
+  const useremail = document.getElementById('email');
+  const userpassword = document.getElementById('password');
+ 
+ 
+  function validate(){
+    if(checkInputs())
+    return true;
+    else
+    return false;
+ 
+  }
+ 
+  function checkInputs()
+  {
+   console.log("called");
+   event.preventDefault();
+       //get values from input fields
+        const emailval = useremail.value.trim();
+       const passwdval = userpassword.value.trim();
+       const error = document.getElementById('errormsg');
+     
+       if(emailval === '')
+      {
+        error.innerHTML="*Please enter your Email!";
+         useremail.parentElement.classList.add('error'); useremail.parentElement.classList.remove('success');
+      }
+    
+      else if(passwdval === '')
+      {
+       useremail.parentElement.classList.add('success'); useremail.parentElement.classList.remove('error');
+        error.innerHTML="*Please enter your Password!";
+         userpassword.parentElement.classList.add('error'); userpassword.parentElement.classList.remove('success');
+      }
+  
+      else
+      {
+         error.innerHTML="";
+         window.location.reload("login.js");
+      }
+  }
+  
+ </script>
+ <script>
+  const togglePassword = document.querySelector('#newPassword');
+  const password = document.querySelector('#password');
+
+  togglePassword.addEventListener('click', function (e) {
+    if (password.type === "password") {
+    password.type = "text";
+    document.getElementById('newPassword').classList.remove('fa-eye-slash');
+    document.getElementById('newPassword').classList.add('fa-eye');
+  } else {
+    password.type = "password";
+    document.getElementById('newPassword').classList.remove('fa-eye');
+    document.getElementById('newPassword').classList.add('fa-eye-slash');
+  }
+   
+});
+ </script>
+ 
+
+<!--<script src = "login.js"></script>-->
 </body>
 
 </html>
