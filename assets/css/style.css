@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Baloo 2', cursive;
-
+   
 } 
 
 html,
@@ -16,18 +16,47 @@ h1{
 	text-decoration: none !important;
 	font-family: 'Playfair Display' !important;
 }
-
 nav.navbar {
 	/* margin-right: 12px !important; */
 	/* padding-right: 12px !important; */
 	right: 0;
 }
-
+/*making nav bar sticky*/
+.sticky{
+	position: fixed;
+	top:90px;
+	width:100%;
+	
+}
+/*making header sticky*/
+.stickon{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	
+}
 .audiobooks-heading{
 	padding: 20px 0 20px 0;
 }
-
-
+/*giving margin to elements in hero section*/
+.ismargin{
+	margin-top: 150px;
+}
+/*giving margin to elements in hero section*/
+.issmargin{
+	margin-top: 150px;
+}
+/*preventing content from overlapping*/
+.header{
+	z-index: 9999;
+}
+nav{
+	z-index: 9999;
+}
+.modal-dialog{
+	margin-top: 150px;
+	z-index: 99999;
+}
 
 /* #table {
   border: none;
@@ -234,6 +263,7 @@ label {
 label[for="category"] {
 	display: none;
 }
+/*giving margin to issue section*/
 
 #IssueHere {
 	color: white;
