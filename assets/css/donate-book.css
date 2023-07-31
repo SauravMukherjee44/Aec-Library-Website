@@ -391,7 +391,14 @@ a.nav-link {
   font-weight: 500;
   }
 
-
+#getabook_form .form-check small
+{
+  color:#ff1c04;
+	visibility: visible;
+	padding-left: 3px;
+  font-size: 16px;
+  font-weight: 500;
+}
 
 /* footer */
 footer {

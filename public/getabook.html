@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" href="../assets/css/donate-book.css">
 
-  <link rel="icon" href=../assets/Favicons/8.webp> <title>Donate Books</title>
+  <link rel="icon" href=../assets/Favicons/8.webp> <title>Get Books</title>
   <style>
    
   table {
@@ -72,7 +72,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
   <div class="wrapper">
     <div class="login-box">
-      <h2>Get a book </h2>
+      <h2>Get Books</h2>
       <form id="getabook_form">
         
         <div class="user-box">
@@ -93,11 +93,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         </div>
        
         <div class="form-check">
-          <input type="checkbox" checked class="form-control form-check-input form-checkbox" id="gridCheck" required>
+          <input type="checkbox" class="form-control form-check-input form-checkbox" id="gridCheck" required>
           <p>
             <label class="form-check-label" for="gridCheck">I have read and understood the </label>
             <a class="form-check-label form-check-link" href="terms&conditions.html"> Terms and Conditions</a>
           </p>
+          <small id="gridmsg"></small>
         </div>
         <button class="submit-btn" onclick="return validInputs()">
           Submit
@@ -189,6 +190,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   const email = document.getElementById('email');
   const contact = document.getElementById('contact');
   const zip = document.getElementById('zip');
+  const checkbox = document.getElementById("gridCheck");
 
   function validPhone(contact)
 {
@@ -202,7 +204,29 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 function validInputs()
 {
   if(checkInputs())
-  return true;
+  {
+        
+    setSuccessFor(zip);
+              const { data, error } = _supabase
+            .from('getabook_form')
+            .insert([
+              {
+                email:document.getElementById('email').value,
+              
+                contact : document.getElementById('contact').value,
+                zip : document.getElementById('zip').value,
+              }
+            ]).then(res=>{
+              console.log(res);
+              if(res.error){
+                alert(res.error.message);
+              }
+              else{
+              alert('Data Added');
+              reset_form();
+              }
+            })
+  }
   else
   return false;
 }
@@ -225,31 +249,12 @@ function validInputs()
       else if(!validPhone(contactval)){ contact.focus(); setErrorFor(contact,'Please enter a valid 10 digit number');}
       else { setSuccessFor(contact);}
 
-      if(zipval === ""){setErrorFor(zip,"Please enter zip");}
+      if(zipval === ""){setErrorFor(zip,"Please enter zip"); }
+      else if(!checkbox.checked)
+      { setSuccessFor(zip); document.getElementById('gridmsg').innerText = '*Required';}
 
-      if(emailval!='' && validEmail(emailval) && contactval!='' && validPhone(contactval) && zipval!='')
-        {
-              setSuccessFor(zip);
-              const { data, error } = _supabase
-            .from('getabook_form')
-            .insert([
-              {
-                email:document.getElementById('email').value,
-              
-                contact : document.getElementById('contact').value,
-                zip : document.getElementById('zip').value,
-              }
-            ]).then(res=>{
-              console.log(res);
-              if(res.error){
-                //alert(res.error.message);
-              }
-              else{
-              alert('Data Added');
-              reset_form();
-              }
-            })
-        reset_form();
+      if(emailval!='' && validEmail(emailval) && contactval!='' && validPhone(contactval) && zipval!='' && checkbox.checked)
+      {
         return true;
       }
   }
