@@ -4,8 +4,8 @@
 }
 
 body {
-  background-image: url('Login_background.jpg');
-  /* background-image: url('/images/loginpage_img.jpg'); */
+  background-image: url('Login_background.webp');
+  /* background-image: url('/images/loginpage_img.webp'); */
   background-color: #464646;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -149,7 +149,7 @@ input {
   background-image: url('/Login_page/images.jfif');
   object-fit:fill;
   /* background-repeat:repeat-x; */
-  background-image: url('LoginFormSideImage.jpg');
+  background-image: url('LoginFormSideImage.webp');
   filter:saturate(1);
   image-rendering: pixelated;
   border-radius: 10px;
