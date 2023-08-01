@@ -21,6 +21,44 @@ nav.navbar {
 	/* padding-right: 12px !important; */
 	right: 0;
 }
+/*adding media querries to make our header more appealing for small screen devices*/
+@media(max-width:430px){
+	.lsize{
+		height: 100px;
+	}
+}
+@media(max-width:360px){
+	.lsize{
+		justify-content: space-between;
+	}
+	.logo{
+		height: 90px;
+		display: flex;
+		padding: 0;
+		justify-content: space-between;
+	}
+	.logo-img{
+		float: left;
+		margin-left: 0;
+	}
+	a>.nav-link{
+	
+		width: 80%;
+		padding: 0;
+	}
+}
+@media (min-width:375px) and (max-width:727px){
+    .logo{
+		height: 80px;
+	}
+	.logo-img{
+		float: left;
+		margin-left: 0;
+	}
+	a>.nav-link{
+		height: 100px;
+	}
+}
 /*making nav bar sticky*/
 .sticky{
 	position: fixed;
@@ -54,8 +92,8 @@ nav{
 	z-index: 9999;
 }
 .modal-dialog{
-	margin-top: 150px;
-	z-index: 99999;
+	margin-top: 190px;
+	z-index: 999999;
 }
 
 /* #table {
