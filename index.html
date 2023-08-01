@@ -65,8 +65,6 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <!-- Quiz css  -->
-  <link rel="stylesheet" href="/Quiz/css/style.css">
   <!--data table-->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
   <script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
@@ -185,6 +183,8 @@
         <li class="nav-item"><a href="./public/donate-book.html"><i class="fas fa-book"></i>DONATE BOOKS</a></li>
         <li class="nav-item"><a href="resource.html"><i class="fas fa-external-link-alt"></i>RESOURCES</a></li>
         <li class="nav-item"><a href="./blogs.html"><i class="fas fa-sign-in-alt"></i>BLOGS</a></li>
+        <!-- Added Quiz page  -->
+        <li class="nav-item"><a href="Quiz/pages/quizhome.html"><i class="fas fa-gamepad"></i>PLAY QUIZ</a></li>
         <li class="nav-item"><a href="./public/contact us .html"><i class="fas fa-address-book"></i>CONTACT US</a></li>
         <li class="nav-item"><a href="#faq" ><i class="fas fa-sign-in-alt"></i>FAQs</a></li>
         <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;"
@@ -204,28 +204,6 @@
       <li class="nav-item"><a href="contributors.html"><i style="font-size: 21px;" class="fas fa-user-friends"></i>CONTRIBUTORS</a></li>
     </ul>
   </nav>-->
-
-  <!--modal-->
-  <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-primary bg-gradient-light">
-          <h5 class="modal-title" id="myModalLabel">Wanna Play Some Quiz?</h5>
-          <button type="button" class="  btn-close" data-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <span>Play Quiz to Enhance Yourself</span>
-        </div>
-        <div class="modal-footer">
-          <button type="button" onclick="location='/Quiz/pages/game.html'" class="btn btn-primary">LET'S GO</button>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!---->
 
 
   <div id="issueSection" class="container my-5 " data-aos="fade">
@@ -832,22 +810,6 @@
     <!-- <div class="stay-update">STAY UPDATED</div> -->
   </div>
 
-  <!-- Quiz section under issue #534  ********** Starts *********-->
-  <div class="quiz-section" id="box" data-aos="fade">
-    <img class="quiz-svg" src="/Quiz/quiz.svg" alt="">
-    <div class="quiz-main">
-
-      <div class="quiz-text" style="color:black">Bored ? Here's a quick quiz for you </div>
-      <!-- ***************** Game Page ***************** -->
-      <a class="quiz-btn" href="/Quiz/pages/game.html" target="_blank">Play</a>
-      <!-- ***************** Highscore Page ***************** -->
-      <a class="quiz-btn" href="/Quiz/pages/highscore.html" target="_blank">High Scores</a>
-
-    </div>
-    <img class="quiz-img" src="/Quiz/brain.webp" alt="">
-  </div>
-  <!-- Quiz section under issue #534  ********* Ends ********** -->
-
 
   <section class="faq-container" id="faq" data-aos="fade-up">
     <h1 class="faq-heading">FAQ'S</h1>
@@ -1223,28 +1185,7 @@
     })
 
   </script>
-  <script>
-    //modal loading
-    window.onload = function modal() {
-      var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
-      myModal.toggle();
-      let loader = document.getElementById('loading');
-      loader.style.width = "0px";
-      loader.style.height = "0px";
-    }
 
-
-  </script>
-  <script>
-    //modal loading
-    window.onload = function modal() {
-      var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
-      myModal.toggle();
-      let loader = document.getElementById('loading');
-      loader.style.width = "0px";
-      loader.style.height = "0px";
-    }
-  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({

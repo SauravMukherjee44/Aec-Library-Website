@@ -1,17 +1,18 @@
   
   /* These will be used for all pages  */
-  
+
   #box {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80vw;
     height: auto;
-    color: white;
+  background: rgba(9, 5, 0, 0.781);
     font-family: 'Raleway';
     font-size: 2.5rem;
     margin-left:10vw;
-    margin-bottom:5vw;
+    margin-bottom:21vh;
+    margin-top: 17vh;
   }
   .quiz-section {
     --borderWidth: 10px;
@@ -26,25 +27,12 @@
     left: calc(-1 * var(--borderWidth));
     height: calc(100% + var(--borderWidth) * 2);
     width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
     border-radius: calc(2 * var(--borderWidth));
     z-index: -1;
     animation: animatedgradient 3s ease alternate infinite;
     background-size: 300% 300%;
   }
-  
-  
-  @keyframes animatedgradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+
   .quiz-container {
     /* width: 100vw;
     height: 100vh; */
@@ -195,6 +183,30 @@ h1{
 
 #username::placeholder {
   color: #aaa;
+}
+
+/* Media Query */
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .login-box {
+    padding: 40px;
+  }
+
+  .login-box h2 {
+    font-size: 25px;
+  }
+
+  .login-box .user-box label {
+    font-size: 14px;
+  }
+}
+.btn-dark {
+  color: #fff;
+  background-color: #000000cc;
+  border-color: #000000cc;
 }
 
 
