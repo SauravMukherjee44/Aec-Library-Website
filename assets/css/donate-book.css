@@ -344,7 +344,60 @@ a.nav-link {
   font-weight: 500;
   }
 
+ 
+  #getabook_form .user-box small
+  {
+    visibility: hidden;
+  }
+  
+  #getabook_form user-box.success input
+  {
+    border-color: #2ecc71;
+    border-width: 1.5px;
+  }
+  #getabook_form user-box.success select
+  {
+    border-bottom-color: #2ecc71;
+    border-width: 1.5px;
+    padding-bottom: 0px;
+    padding-top: 2px;
+  
+  }
+  #getabook_form .user-box.error input
+  {
+    border-color: #e74c3c;
+    border-width: 1.5px;
+  }
+  #getabook_form .user-box.error select
+  {
+    border-bottom-color: #e74c3c;
+    border-width: 1.5px;
+    padding-bottom: 0px;
+    padding-top: 2px;
+  }
+  #getabook_form .user-box.error textarea
+  {
+    border-bottom-color: #e74c3c;
+    border-width: 1.5px;
+    padding-bottom: 0px;
+    padding-top: 2px;
+  }
+  #getabook_form .user-box.error small{
+    color:#ff1c04;
+    visibility: visible;
+    padding-left: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    }
 
+  #getabook_form  #griderror{
+      color:#ff1c04;
+      visibility: visible;
+      padding-left: 3px;
+      font-size: 16px;
+      font-weight: 500;
+      }
+  
 
 /* footer */
 footer {

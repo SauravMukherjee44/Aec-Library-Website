@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" href="../assets/css/donate-book.css">
 
-  <link rel="icon" href=../assets/Favicons/8.webp> <title>Donate Books</title>
+  <link rel="icon" href=../assets/Favicons/8.webp> <title>Get Books</title>
   <style>
    
   table {
@@ -72,31 +72,35 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
   <div class="wrapper">
     <div class="login-box">
-      <h2>Get a book </h2>
+      <h2>Get Books</h2>
       <form id="getabook_form">
         
         <div class="user-box">
           <input class="form__input form-control" type="email" id="email" name="" required="">
           <label>Email</label>
+          <small class="small"></small>
         </div>
         <div class="user-box">
           <input class="form__input form-control" type="tel" id="contact" name="" required="" >
           <!--onchange="validate_phone(document.getElementById('contact'))"-->
           <label>Contact Number</label>
+          <small class="small"></small>
         </div>
         <div class="user-box">
           <input class="form__input form-control" id="zip" type="text" name="" required="">
           <label>Zip</label>
+          <small class="small"></small>
         </div>
        
         <div class="form-check">
-          <input type="checkbox" class="form-control form-check-input form-checkbox" id="gridCheck" required>
+          <input type="checkbox" class="form-control form-check-input form-checkbox" id="gridCheck">
           <p>
             <label class="form-check-label" for="gridCheck">I have read and understood the </label>
             <a class="form-check-label form-check-link" href="terms&conditions.html"> Terms and Conditions</a>
           </p>
+          <small id="griderror"></small>
         </div>
-        <button class="submit-btn">
+        <button class="submit-btn" onclick="return validInputs()">
           Submit
         </button>
 
@@ -193,37 +197,108 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
   }
 
-  donationForm.addEventListener('submit',e=>{
-    if(validate_phone(document.getElementById('contact'))){
-    e.preventDefault();
-    const { data, error } = _supabase
-      .from('getabook_form')
-      .insert([
+  const email = document.getElementById('email');
+  const contact = document.getElementById('contact');
+  const zip = document.getElementById('zip');
+  const grid = document.getElementById('gridCheck');
+
+  function validPhone(contact)
+{
+  var phoneno = /^\d{10}$/;
+  if((contact.match(phoneno)))
+  { return true; }
+  else
+  {return false;}
+}
+
+function validInputs()
+{
+  if(checkInputs())
+  return true;
+  else
+  return false;
+}
+  function checkInputs()
+  {
+       //get values from input fields
+       const emailval = email.value.trim();
+       const contactval = contact.value.trim();
+        const zipval = zip.value.trim();
+        var isNumber = /^\d+\.\d+$/;
+        
+      
+       if(emailval === '')
+       { setErrorFor(email,'Please enter a E-mail');}
+       else if(!validEmail(emailval))
+       { setErrorFor(email,'Please enter a valid E-mail');}
+       else
+       { setSuccessFor(email);}
+
+      if(contactval === ''){ setErrorFor(contact,"Please enter a contact no");}
+      else if(!validPhone(contactval)){ contact.focus(); setErrorFor(contact,'Please enter a valid 10 digit number');}
+      else { setSuccessFor(contact);}
+
+      if(zipval === ""){setErrorFor(zip,"Please enter zip");}
+      else if(!grid.checked)
+      {
+         setSuccessFor(zip);
+         document.getElementById('griderror').innerHTML = '*Required';
+      }
+
+      if(emailval!='' && validEmail(emailval) && contactval!='' && validPhone(contactval) && zipval!='' && grid.checked)
         {
-          email:document.getElementById('email').value,
-         
-          contact : document.getElementById('contact').value,
-          zip : document.getElementById('zip').value,
-        }
-      ]).then(res=>{
-        console.log(res);
-        if(res.error){
-          alert(res.error.message);
-        }
-        else{
-        alert('Data Added');
+          document.getElementById('griderror').innerHTML = '';
+              const { data, error } = _supabase
+            .from('getabook_form')
+            .insert([
+              {
+                email:document.getElementById('email').value,
+              
+                contact : document.getElementById('contact').value,
+                zip : document.getElementById('zip').value,
+              }
+            ]).then(res=>{
+              console.log(res);
+              if(res.error){
+                alert(res.error.message);
+              }
+              else{
+              alert('Data Added');
+              reset_form();
+              }
+            })
         reset_form();
-        }
-      })
+        return true;
+      }
   }
-  else{
-    alert("Please enter a valid phone number")
+
+  function validEmail(email) {
+  const res = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return res.test(String(email).toLowerCase());
+}
+
+  function setErrorFor(input,showerror)
+  {
+    let formControl = input.parentElement;
+   // console.log(formControl);
+
+    const small = formControl.querySelector('small');
+    small.innerText = showerror;
+
+    formControl.classList.remove('success');
+    formControl.classList.add('error');
+    //console.log(showerror);
+
   }
-    })
+
+  function setSuccessFor(input)
+  {
+    let formControl = input.parentElement;
+    formControl.classList.remove('error');
+    formControl.classList.add('success');
+  }
 
   </script>
-
-
 
 </body>
  <script src="../assets/js/Donate_Book.js"></script>
