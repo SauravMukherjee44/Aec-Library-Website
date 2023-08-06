@@ -2156,6 +2156,12 @@ input[type="radio"] {
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+  opacity: 0.8;
+}
+#myInput:hover{
+	background-color: transparent;
+	color:white;
+	font-size: 25px; 
 }
 #myUL {
   list-style-type: none;
@@ -2195,20 +2201,26 @@ input[type="radio"] {
 	font-size: 18px;
 	color: #000;
 	display: block;
-	background-color: #cda867;
+	background-color: #c9b186;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	transition: background-color 0.3s, color 0.3s;
   }
   
   #myUL li a:hover:not(.header) {
-	background-color: #dfc18d;
+	background-color: transparent;
+	color:white;
   }
   
 .search-heading{
   padding:2px 12px  !important;
   border-bottom: 3px solid white;
   margin: 0px auto 20px;
-  width: fit-content;
+  height:33px;
+ 
+}
+.search-heading:hover{
+	background-color: transparent;
+	cursor: pointer;
 }
 
 
