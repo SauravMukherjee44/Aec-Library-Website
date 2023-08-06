@@ -21,6 +21,9 @@ nav.navbar {
 	/* padding-right: 12px !important; */
 	right: 0;
 }
+.header .new-nav{
+	width: 100%;
+}
 /*adding media querries to make our header more appealing for small screen devices*/
 @media(max-width:430px){
 	.lsize{
@@ -715,7 +718,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 }
 
 a.nav-link {
-	padding-left: 2rem !important;
+	/*padding-left: 2rem !important;commenting it out because it is givig 32px padding to nav bar that is not applicable for devices*/
 	padding-right: 2rem !important;
 	padding-bottom: 0rem;
 }
@@ -1149,7 +1152,7 @@ strong {
 	}
   .body-style {
     box-shadow: none;
-    padding: 1rem;
+    /*padding: 1rem; this padding is giving extra space on left side for every responsiveness that why I am commenting it out*/
   }
 
 	.body-style {
