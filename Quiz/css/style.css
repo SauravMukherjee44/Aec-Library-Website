@@ -42,12 +42,29 @@
     align-items: center;
     max-width: 80rem;
     padding: 2rem;
+  margin-top:225px;
    
    
   }
+  .quiz-container{
+
+    flex: 1;
+	align-items: center;
+	width: 100%;
+	padding: 15px;
+	border: 0.1px solid #efe088;
+	background: rgb(0, 0, 0, 0.5);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	border-radius: 10px;
+	border-radius: 5%;
+  }
   .quiz-container::before{
     content: "";
-    background:url("https://img.freepik.com/premium-photo/product-presentation-wooden-table-with-background-empty-bookshelf-library_172251-444.webp") no-repeat center center/cover;
+    background-image: url("https://res.cloudinary.com/dkak37mek/image/upload/v1631569685/alfons-morales-YLSwjSy7stw-unsplash_jdnjxk.webp?raw=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.9);
+	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
     position: absolute;
     top: 0;
     left: 0;

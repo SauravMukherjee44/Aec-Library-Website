@@ -39,15 +39,17 @@ h3 {
   
   .choice-container:hover {
     cursor: pointer;
-    background-color:#56a6eb9d;
+    background-color:white;
+    opacity: 0.5;
     border: 1px solid black;
+    
     transform: translateY(+0.1rem);
     transition: transform 150ms;
   }
   
   .choice-prefix {
     padding: 1.5rem 2.5rem;
-    background-color: #56a5eb;
+    background-color: #efe088;
     color: white;
   }
   
@@ -87,19 +89,19 @@ h3 {
   
   .hud-main-text {
     text-align: center;
-    color: #1985e4;
+    color: black;
   }
   
   #progressBar {
     width: 20rem;
     height: 4rem;
-    border: 0.3rem solid #1985e4;
+    border: 0.3rem solid black;
     margin-top: 1.5rem;
   }
   
   #progressBarFull {
     height: 3.4rem;
-    background-color: #1985e4;
+    background-color: black;
     width: 0%;
 
   }
@@ -108,7 +110,7 @@ h3 {
   #quizLoader {
     border: 1.6rem solid white;
     border-radius: 50%;
-    border-top: 1.6rem solid #56a5eb;
+    border-top: 1.6rem solid white;
     width: 12rem;
     height: 12rem;
     animation: spin 2s linear infinite;
@@ -132,12 +134,13 @@ h3 {
     background-color: white;
     padding: 1rem;
     border-radius: 50%;
-    border: 2px solid #56a5eb;
+    border: 2px solid #efe088;
   }
 
   .quiz-exit svg{
     width: 36px;
     height: 36px;
+    
   }
 
   .quiz-exit:hover {
