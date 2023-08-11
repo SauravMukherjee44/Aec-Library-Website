@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Baloo 2', cursive;
-
+   
 } 
 
 html,
@@ -16,16 +16,104 @@ h1{
 	text-decoration: none !important;
 	font-family: 'Playfair Display' !important;
 }
-
 nav.navbar {
 	/* margin-right: 12px !important; */
 	/* padding-right: 12px !important; */
 	right: 0;
 }
-
+.header .new-nav{
+	width: 100%;
+}
+/*adding media querries to make our header more appealing for small screen devices*/
+@media(max-width:430px){
+	.lsize{
+		height: 100px;
+	}
+}
+@media(max-width:360px){
+	.lsize{
+		justify-content: space-between;
+	}
+	.logo{
+		height: 90px;
+		display: flex;
+		padding: 0;
+		justify-content: space-between;
+	}
+	.logo-img{
+		float: left;
+		margin-left: 0;
+	}
+	a>.nav-link{
+	
+		width: 80%;
+		padding: 0;
+	}
+}
+@media (min-width:375px) and (max-width:727px){
+    .logo{
+		height: 80px;
+	}
+	.logo-img{
+		float: left;
+		margin-left: 0;
+	}
+	a>.nav-link{
+		height: 100px;
+	}
+}
+/*making nav bar sticky*/
+.sticky{
+	position: fixed;
+	top:90px;
+	width:100%;
+	
+}
+/*making header sticky*/
+.stickon{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	
+}
 .audiobooks-heading{
 	padding: 20px 0 20px 0;
 }
+
+/*giving margin to elements in hero section*/
+.ismargin{
+	margin-top: 150px;
+}
+/*giving margin to elements in hero section*/
+.issmargin{
+	margin-top: 150px;
+}
+/*preventing content from overlapping*/
+.header{
+	z-index: 9999;
+}
+nav{
+	z-index: 9999;
+}
+.modal-dialog{
+	margin-top: 190px;
+	z-index: 999999;
+}
+
+/* #table {
+  border: none;
+  border-radius: 20px;
+  /* background: linear-gradient(to right, #3898dd, #36d4f0, #85daa8); */
+/* background: linear-gradient(to bottom, #0c0c0c, #2a2a2a, #646665); */
+/*background: linear-gradient(to right, #0a5f81, #093b3f, #1b1b1b);
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 2px 5px 2px black;
+*/
+=======
+
 
 #table {
 	text-align: center;
@@ -203,6 +291,7 @@ label {
 label[for="category"] {
 	display: none;
 }
+/*giving margin to issue section*/
 
 #IssueHere {
 	color: white;
@@ -278,7 +367,7 @@ html {
 	border-radius: 15px;
 	height: 10px;
 }
-
+	
 .input-box {
 	border: none;
 	border-bottom: 1.5px solid rgba(168, 154, 154, 0.322);
@@ -292,6 +381,9 @@ html {
 	padding-left: 10px;
 }
 
+.input-box:hover{
+	border: 1.5px solid black;
+}
 .input-box:focus {
 	outline: none;
 	border-bottom: 1.5px solid yellowgreen;
@@ -626,7 +718,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-info {
 }
 
 a.nav-link {
-	padding-left: 2rem !important;
+	/*padding-left: 2rem !important;commenting it out because it is givig 32px padding to nav bar that is not applicable for devices*/
 	padding-right: 2rem !important;
 	padding-bottom: 0rem;
 }
@@ -1060,7 +1152,7 @@ strong {
 	}
   .body-style {
     box-shadow: none;
-    padding: 1rem;
+    /*padding: 1rem; this padding is giving extra space on left side for every responsiveness that why I am commenting it out*/
   }
 
 	.body-style {
