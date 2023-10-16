@@ -118,5 +118,15 @@
         "id": "24",
         "img": "images/bookimage24.webp",
         "url": "https://www.mediafire.com/file/ywo61cdf13tnz8v/Bulltetproof_web_design.pdf/file"
+    },
+    {
+        "id": "25",
+        "img": "images/bookimage25.webp",
+        "url": "https://www.mediafire.com/file/xo37uemvmz54w2d/Let_Us_C_Authentic_Guide_to_C_PROGRAMMING_Language_17th_Edition.pdf/file"
+    },
+    {
+        "id": "26",
+        "img": "images/bookimage26.webp",
+        "url": "https://www.mediafire.com/file/o9s1zn28gqz81tq/Let_Us_C++_Dive_into_the_nitty_gritties_of_C++_language_and_learn.pdf/file"
     }
 ]
