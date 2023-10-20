@@ -1386,7 +1386,52 @@ background-image: linear-gradient(190deg,rgb(95,79,57),rgb(127,106,77), rgb(191,
 	box-shadow: 0 0 30px #fff;
 	cursor: pointer;
 	transform: scale(1.1);
+
 }
+#nyan-btn2{
+	border-radius: 200px;
+	background-color: #fff;
+	border: 1px solid #ffffff;
+}
+#nyan-btn2:hover{
+	border-radius: 200px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	box-shadow: 0 0 30px #fff;
+	cursor: pointer;
+	transform: scale(1.1);
+
+}
+#nyan-btn3{
+	border-radius: 200px;
+	background-color: #fff;
+	border: 1px solid #ffffff;
+}
+#nyan-btn3:hover{
+	border-radius: 200px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	box-shadow: 0 0 30px #fff;
+	cursor: pointer;
+	transform: scale(1.1);
+
+}
+#nyan-btn4{
+	border-radius: 200px;
+	background-color: #fff;
+	border: 1px solid #ffffff;
+}
+#nyan-btn4:hover{
+	border-radius: 200px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	box-shadow: 0 0 30px #fff;
+	cursor: pointer;
+	transform: scale(1.1);
+
+}
+
+
 .books-audios{
 	display: flex;
 	flex-direction: column;
